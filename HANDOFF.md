@@ -80,7 +80,8 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 - None blocking. Push works via user's `~/.ssh/id_ed25519` (tested OK as ybagheri).
 - `make` absent on Windows → canonical gate is `python -m tasks check` (documented).
-- No API keys, no Tesseract → pilot extracted via file exchange (ADR-005); anthropic path implemented but untested live.
+- No API keys, no Tesseract → file-exchange extraction (ADR-005); anthropic path untested live.
+- April-pair + Sep-23 axes show 09:00–15:00 (vs PT-style 06:30–13:00): ET feed or cropped axis? DEFAULT: recorded as-shown with PT tz + note; Phase 5 must resolve against real bars before any label→bar attachment.
 
 ## 7. Known issues / tech debt
 
@@ -92,8 +93,12 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 8. Data & artifact state
 
-- Images in data/: 5 | Manifest entries: 5/5 (all ok)
-- Labels extracted: 5/5 first-pass (valid_rate 1.00, 0 quarantined) | Reviewed: 0 | Gold set: 0
+- Images in data/: 33 (15 JPEG + 18 PNG) | Manifest entries: 33/33 (all ok)
+- Labels extracted: 33/33 first-pass (valid_rate 1.00, 0 quarantined, 254 events, 58 unmapped/45 distinct) | Reviewed: 0 | Gold set: 0
+- Dates CONFIRMED by user 2026-10-12: 04-02 file = 03-31 session, 04-03 file = 04-01 session; 07-29 confirmed correct, 07-22 duplicate file DELETED (manifest/labels/queue cleaned, manifest regenerated 33/33).
+- Date flags: 04-02→03-31 and 04-03→04-01 relabelled from title weekday (pipeline warnings fired correctly), both CONFIRMED by user; 07-22/07-29 duplicate resolved (07-29 kept, 07-22 deleted); April + Sep-23 axes run 09:00-15:00 (possible ET feed — Phase 5 must verify, see §6)
+- PNG batch (08-01…09-23) has no readable time axis → event times null (15 of 29 new labels)
+- Watermark note: Aug/Sep PNGs carry a "Persian_expert_trader" redistribution watermark (third-party, personal research use; same legal basis as data/README)
 - Market data coverage: none (Phase 5)
 - Playbook version: none (Phase 8)
 

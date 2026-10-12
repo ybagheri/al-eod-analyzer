@@ -19,5 +19,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Phase 3 extraction: `VisionClient` port (file-exchange, fake, anthropic),
   versioned prompt builder, resumable/retried/quarantining batch service,
   `brooks extract` / `brooks extract-status`, 5-image pilot labels (first-pass).
+- Batch 2: 29 more ES/M5 charts labelled (34/34 total, 261 events, 0 quarantined);
+  date corrections (04-02→03-31, 04-03→04-01, user-confirmed), 07-22/07-29
+  duplicate resolved (07-29 kept, 07-22 file deleted → 33/33), ET-axis suspicion
+  recorded for Phase 5.
 
 ## [0.1.0] — TBD (Phase 0 release, pending gate + first commit)
