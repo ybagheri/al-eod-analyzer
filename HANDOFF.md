@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-11 by Muse Spark (opencode) — commit pre-commit_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — commit 4338faa (pushed origin/main)_
 
 ## 1. Project in one paragraph
 
@@ -11,8 +11,8 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 0 — Bootstrap & governance
-- Phase status: in progress
-- Last green quality gate: 2026-10-11 pre-commit (ruff ✓ / mypy --strict ✓ 7 files / pytest 5 passed / coverage 100%)
+- Phase status: done (committed 4338faa, pushed to origin/main)
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / mypy --strict ✓ 7 files / pytest 5 passed / coverage 100%)
 
 ## 3. What was done in this session
 
@@ -25,6 +25,10 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   group `--version` (needs `invoke_without_command=True`) and ruff E501 in `tasks.py`.
 - Gate GREEN 2026-10-11: ruff ✓, ruff format ✓ (18 files), mypy --strict ✓ (7 files),
   pytest 5 passed, coverage 100% (≥85 required).
+- 2026-10-12: user installed Git 2.49.0; repo-local identity set from SSH-authenticated
+  GitHub user (ybagheri / noreply email); remote switched to
+  `git@github.com:ybagheri/al-eod-analyzer.git`; committed 4338faa (31 files, +1036)
+  and pushed (new branch main → origin/main); images/venv confirmed excluded from index.
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -32,13 +36,13 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. USER: install Git for Windows, then in repo: `git init` (if needed) + connect `git@github.com:ybagheri/al-eod-analyzer.git`; verify `git --version`.
-2. USER: reply APPROVE to allow commit + push of Phase 0 (commit msg: `chore: bootstrap Phase 0 skeleton, CLI, and quality gate`).
-3. Next model/session: finish full `pip install -e ".[dev]"` (numpy/pandas/opencv-pending, slow net), re-run gate, then start Phase 1 only on user instruction.
+1. Phase 1 starts ONLY on explicit user instruction (protocol: one phase at a time).
+2. Phase 1 first step: implement `ImageRecord` + `ImageIngestionService` → `artifacts/manifest.json` + `brooks ingest` CLI.
+3. Later: finish full `pip install -e ".[dev]"` (numpy/pandas/opencv pending, slow net).
 
 ## 6. Open questions / blockers
 
-- Git not installed → cannot commit/push yet (user action: install Git for Windows).
+- None blocking. Push works via user's `~/.ssh/id_ed25519` (tested OK as ybagheri).
 - `make` absent on Windows → canonical gate is `python -m tasks check` (documented).
 - No API keys, no Tesseract → fine for Phase 0; file-exchange mode planned for Phase 3.
 
