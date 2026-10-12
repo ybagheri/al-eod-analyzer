@@ -1,0 +1,11 @@
+# Enforce LF line endings and UTF-8 handling across platforms.
+* text=auto eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.mq5 text eol=lf
+*.mqh text eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary

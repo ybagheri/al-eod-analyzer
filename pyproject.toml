@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brooks-lab"
+version = "0.1.0"
+description = "Al EOD Analyzer: extract Brooks-style labels from EOD charts, build a playbook, and run a streaming pattern engine (Python reference + MQL5 port)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "al-eod-analyzer contributors" }]
+dependencies = [
+  "pydantic>=2.0",
+  "typer>=0.9",
+  "rich>=13.0",
+  "pyyaml>=6.0",
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "pillow>=10.0",
+  "httpx>=0.25",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.1",
+  "mypy>=1.0",
+  "pytest>=7.0",
+  "pytest-cov>=4.0",
+  "hypothesis>=6.0",
+  "opencv-python>=4.8",
+  "pytesseract>=0.3",
+  "pre-commit>=3.0",
+]
+test = [
+  "pytest>=7.0",
+  "pytest-cov>=4.0",
+  "hypothesis>=6.0",
+]
+
+[project.scripts]
+brooks = "brooks_lab.interfaces.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+show_error_codes = true
+ignore_missing_imports = false
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true

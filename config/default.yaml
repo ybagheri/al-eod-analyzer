@@ -1,0 +1,22 @@
+# Engine thresholds, session times, and paths (Phase 0 skeleton values).
+# All numeric engine parameters MUST be named here (no magic constants in code).
+schema_version: 1
+project: al-eod-analyzer
+
+session:
+  # Brooks EOD charts use US Pacific time on the axis; regular session approx 06:30-13:00 PT.
+  timezone_axis: "America/Los_Angeles"
+  regular_start_pt: "06:30"
+  regular_end_pt: "13:00"
+  broker_time_note: "Configure broker UTC offset + DST rule before labelling/engine work (Phase 5)."
+
+engine:
+  ema_period: 20
+  swing_confirm_bars: 2
+  spike_min_bars: 3
+
+paths:
+  data: "data"
+  manifest: "artifacts/manifest.json"
+  labels: "artifacts/labels"
+  playbook: "artifacts/playbook/playbook.json"

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Secrets / local env
+.env
+!.env.example
+
+# User-provided chart images (third-party copyrighted, personal research use).
+# Keep data/README.md tracked; ignore the images themselves.
+data/*.jpg
+data/*.jpeg
+data/*.png
+data/*.bmp
+data/*.gif
+data/*.tif
+data/*.tiff
+data/*.webp
+!data/README.md
+!data/.gitkeep
+
+# Generated artifacts (large/intermediate outputs stay local)
+artifacts/crops/
+artifacts/review/
+artifacts/eval/backtests/
+*.log
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

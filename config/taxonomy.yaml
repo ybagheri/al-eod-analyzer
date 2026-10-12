@@ -1,0 +1,8 @@
+# Label vocabulary — DRAFT STUB (frozen in Phase 2 as taxonomy v1 via ADR).
+# Do not use for extraction yet; Phase 2 defines canonical ids + synonyms.
+schema_version: 1
+note: "Placeholder. Phase 2 freezes taxonomy v1 (day types, events, outcomes, directions)."
+day_types: []
+events: []
+outcomes: [success, fail, partial, unclear]
+directions: [bull, bear, neutral]
