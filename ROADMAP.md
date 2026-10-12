@@ -7,7 +7,7 @@ Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
 | 0 — Bootstrap & governance | Clean working skeleton, tooling, `brooks --version`, gate green | ✅ done | `4338faa` (pushed origin/main) |
 | 1 — Image inventory & ingestion | Manifest of all images, contact sheet | ✅ done | `917beb1` (pushed origin/main) |
 | 2 — Taxonomy, label schema, glossary | Controlled vocabulary + strict `DayLabel` schema v1, glossary draft | ✅ done | `04e4d97` (pushed origin/main) |
-| 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | 🟨 in progress (review pending) | — |
+| 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | ✅ done | `0c3ac41` (pushed origin/main) |
 | 4 — Human review & gold set | Trusted ground truth, ≥30-image gold set | ⬜ not started | — |
 | 5 — Market data layer | Real M5 bars, session calendar, label→bar attachment | ⬜ not started | — |
 | 6 — Python pattern engine | Deterministic streaming engine + `PATTERN_SPEC.md` | ⬜ not started | — |

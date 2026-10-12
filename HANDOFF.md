@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD f9b8901 + uncommitted Phase 3 (awaiting review)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 0c3ac41 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,7 +11,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 3 — Vision extraction pipeline
-- Phase status: in progress (pipeline + 5-image pilot done, awaiting user review before commit)
+- Phase status: done (committed 0c3ac41, pushed to origin/main)
 - Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 46 files / mypy --strict ✓ 19 files / pytest 84 passed / coverage 91.9%)
 
 ## 3. What was done in this session
