@@ -5,7 +5,7 @@ Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
 | Phase | Goal | Status | Commit |
 |---|---|---|---|
 | 0 — Bootstrap & governance | Clean working skeleton, tooling, `brooks --version`, gate green | ✅ done | `4338faa` (pushed origin/main) |
-| 1 — Image inventory & ingestion | Manifest of all images, contact sheet | 🟨 in progress (review pending) | — |
+| 1 — Image inventory & ingestion | Manifest of all images, contact sheet | ✅ done | `917beb1` (pushed origin/main) |
 | 2 — Taxonomy, label schema, glossary | Controlled vocabulary + strict `DayLabel` schema v1, glossary draft | ⬜ not started | — |
 | 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | ⬜ not started | — |
 | 4 — Human review & gold set | Trusted ground truth, ≥30-image gold set | ⬜ not started | — |

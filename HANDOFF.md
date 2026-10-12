@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD 8209af7 + uncommitted Phase 1 (awaiting review)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 917beb1 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,7 +11,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 1 — Image inventory & ingestion
-- Phase status: in progress (implemented + gate green, awaiting user review before commit)
+- Phase status: done (committed 917beb1, pushed to origin/main)
 - Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 31 files / mypy --strict ✓ 14 files / pytest 34 passed / coverage 94.6%)
 
 ## 3. What was done in this session
