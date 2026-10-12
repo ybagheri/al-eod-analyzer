@@ -1,0 +1,319 @@
+{
+  "day_label": {
+    "$defs": {
+      "ChartTime": {
+        "description": "A clock time as read from the chart axis (HH:MM plus timezone).",
+        "properties": {
+          "time": {
+            "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$",
+            "title": "Time",
+            "type": "string"
+          },
+          "tz": {
+            "default": "America/Los_Angeles",
+            "minLength": 1,
+            "title": "Tz",
+            "type": "string"
+          }
+        },
+        "required": [
+          "time"
+        ],
+        "title": "ChartTime",
+        "type": "object"
+      },
+      "DayType": {
+        "description": "Canonical day-type vocabulary (taxonomy v1).",
+        "enum": [
+          "bull_trend_from_open",
+          "bear_trend_from_open",
+          "spike_and_channel_bull",
+          "spike_and_channel_bear",
+          "small_pullback_bull_trend",
+          "small_pullback_bear_trend",
+          "trending_trading_range",
+          "trading_range",
+          "broad_bull_channel",
+          "broad_bear_channel",
+          "reversal_day",
+          "trend_reversal_to_bull",
+          "trend_reversal_to_bear",
+          "other"
+        ],
+        "title": "DayType",
+        "type": "string"
+      },
+      "Direction": {
+        "description": "Direction of the event.",
+        "enum": [
+          "bull",
+          "bear",
+          "neutral"
+        ],
+        "title": "Direction",
+        "type": "string"
+      },
+      "EventKind": {
+        "description": "Canonical event/pattern vocabulary (taxonomy v1).",
+        "enum": [
+          "spike",
+          "channel",
+          "buy_the_close",
+          "sell_the_close",
+          "breakout",
+          "failed_breakout",
+          "bull_flag",
+          "bear_flag",
+          "wedge",
+          "truncated_wedge",
+          "double_top",
+          "double_bottom",
+          "lower_high_double_top",
+          "higher_low_double_bottom",
+          "micro_double_top",
+          "micro_double_bottom",
+          "measured_move",
+          "pullback_50pct",
+          "h1",
+          "h2",
+          "l1",
+          "l2",
+          "major_bull_surprise",
+          "major_bear_surprise",
+          "trend_line_break",
+          "channel_line_overshoot",
+          "body_gap",
+          "gap",
+          "ema_gap_bar",
+          "climax",
+          "exhaustive_climax",
+          "final_flag",
+          "opening_reversal",
+          "trading_range_begin",
+          "trading_range_end",
+          "signal_bar",
+          "entry_bar",
+          "failed_signal"
+        ],
+        "title": "EventKind",
+        "type": "string"
+      },
+      "EventLabel": {
+        "description": "One annotated pattern/event on a chart.",
+        "properties": {
+          "bar_index_hint": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bar Index Hint"
+          },
+          "confidence": {
+            "default": 0.5,
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Confidence",
+            "type": "number"
+          },
+          "direction": {
+            "$ref": "#/$defs/Direction",
+            "default": "neutral"
+          },
+          "end_time": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ChartTime"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "evidence": {
+            "default": "",
+            "description": "What text/graphic on the image supports this event.",
+            "title": "Evidence",
+            "type": "string"
+          },
+          "label": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/EventKind"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Canonical label; None means unmapped (see raw_label + review queue)."
+          },
+          "outcome": {
+            "$ref": "#/$defs/Outcome",
+            "default": "unclear"
+          },
+          "outcome_reason": {
+            "default": "",
+            "title": "Outcome Reason",
+            "type": "string"
+          },
+          "price_hint": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Price Hint"
+          },
+          "raw_label": {
+            "default": "",
+            "description": "Verbatim annotator wording; never dropped.",
+            "title": "Raw Label",
+            "type": "string"
+          },
+          "source": {
+            "$ref": "#/$defs/LabelSource",
+            "default": "vision"
+          },
+          "start_time": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ChartTime"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "title": "EventLabel",
+        "type": "object"
+      },
+      "ExtractionMeta": {
+        "description": "Provenance of one extraction (which provider/model/prompt produced it).",
+        "properties": {
+          "extracted_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Extracted At"
+          },
+          "model_id": {
+            "minLength": 1,
+            "title": "Model Id",
+            "type": "string"
+          },
+          "prompt_version": {
+            "minLength": 1,
+            "title": "Prompt Version",
+            "type": "string"
+          },
+          "provider": {
+            "minLength": 1,
+            "title": "Provider",
+            "type": "string"
+          }
+        },
+        "required": [
+          "provider",
+          "model_id",
+          "prompt_version"
+        ],
+        "title": "ExtractionMeta",
+        "type": "object"
+      },
+      "LabelSource": {
+        "description": "Who produced the label.",
+        "enum": [
+          "vision",
+          "human",
+          "engine"
+        ],
+        "title": "LabelSource",
+        "type": "string"
+      },
+      "Outcome": {
+        "description": "What happened after the event (hindsight, from the annotation).",
+        "enum": [
+          "success",
+          "fail",
+          "partial",
+          "unclear"
+        ],
+        "title": "Outcome",
+        "type": "string"
+      }
+    },
+    "description": "Structured, validated reading of one full trading-day chart image.",
+    "properties": {
+      "date": {
+        "format": "date",
+        "title": "Date",
+        "type": "string"
+      },
+      "day_type": {
+        "$ref": "#/$defs/DayType",
+        "default": "other"
+      },
+      "day_type_confidence": {
+        "default": 0.5,
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "title": "Day Type Confidence",
+        "type": "number"
+      },
+      "events": {
+        "items": {
+          "$ref": "#/$defs/EventLabel"
+        },
+        "title": "Events",
+        "type": "array"
+      },
+      "extraction_meta": {
+        "$ref": "#/$defs/ExtractionMeta"
+      },
+      "image_id": {
+        "minLength": 1,
+        "title": "Image Id",
+        "type": "string"
+      },
+      "schema_version": {
+        "default": 1,
+        "minimum": 1,
+        "title": "Schema Version",
+        "type": "integer"
+      },
+      "session_summary": {
+        "default": "",
+        "title": "Session Summary",
+        "type": "string"
+      }
+    },
+    "required": [
+      "image_id",
+      "date",
+      "extraction_meta"
+    ],
+    "title": "DayLabel",
+    "type": "object"
+  },
+  "schema_version": 1
+}

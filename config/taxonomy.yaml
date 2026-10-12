@@ -1,8 +1,119 @@
-# Label vocabulary — DRAFT STUB (frozen in Phase 2 as taxonomy v1 via ADR).
-# Do not use for extraction yet; Phase 2 defines canonical ids + synonyms.
+# Label vocabulary — TAXONOMY v1 (FROZEN, see ADR-004).
+# Canonical ids use lower_snake_case. `synonyms` maps normalised annotator
+# wording (lowercase, spaces/hyphens -> single spaces) to canonical ids.
+# Anything unmapped must be kept in `raw_label` and routed to the review queue.
 schema_version: 1
-note: "Placeholder. Phase 2 freezes taxonomy v1 (day types, events, outcomes, directions)."
-day_types: []
-events: []
-outcomes: [success, fail, partial, unclear]
-directions: [bull, bear, neutral]
+day_types:
+  - bull_trend_from_open
+  - bear_trend_from_open
+  - spike_and_channel_bull
+  - spike_and_channel_bear
+  - small_pullback_bull_trend
+  - small_pullback_bear_trend
+  - trending_trading_range
+  - trading_range
+  - broad_bull_channel
+  - broad_bear_channel
+  - reversal_day
+  - trend_reversal_to_bull
+  - trend_reversal_to_bear
+  - other
+events:
+  - spike
+  - channel
+  - buy_the_close
+  - sell_the_close
+  - breakout
+  - failed_breakout
+  - bull_flag
+  - bear_flag
+  - wedge
+  - truncated_wedge
+  - double_top
+  - double_bottom
+  - lower_high_double_top
+  - higher_low_double_bottom
+  - micro_double_top
+  - micro_double_bottom
+  - measured_move
+  - pullback_50pct
+  - h1
+  - h2
+  - l1
+  - l2
+  - major_bull_surprise
+  - major_bear_surprise
+  - trend_line_break
+  - channel_line_overshoot
+  - body_gap
+  - gap
+  - ema_gap_bar
+  - climax
+  - exhaustive_climax
+  - final_flag
+  - opening_reversal
+  - trading_range_begin
+  - trading_range_end
+  - signal_bar
+  - entry_bar
+  - failed_signal
+outcomes:
+  - success
+  - fail
+  - partial
+  - unclear
+directions:
+  - bull
+  - bear
+  - neutral
+day_type_synonyms:
+  "spike and channel bull trend": spike_and_channel_bull
+  "spike and channel bear trend": spike_and_channel_bear
+  "bull trend from the open": bull_trend_from_open
+  "bear trend from the open": bear_trend_from_open
+  "bull trend from open": bull_trend_from_open
+  "bear trend from open": bear_trend_from_open
+  "small pullback bull trend": small_pullback_bull_trend
+  "small pullback bear trend": small_pullback_bear_trend
+  "trading range day": trading_range
+  "broad bull channel": broad_bull_channel
+  "broad bear channel": broad_bear_channel
+  "trend reversal to bull": trend_reversal_to_bull
+  "trend reversal to bear": trend_reversal_to_bear
+event_synonyms:
+  "buy the close": buy_the_close
+  "btc": buy_the_close
+  "sell the close": sell_the_close
+  "stc": sell_the_close
+  "failed breakout": failed_breakout
+  "bull flag": bull_flag
+  "bear flag": bear_flag
+  "truncated wedge": truncated_wedge
+  "double top": double_top
+  "dt": double_top
+  "double bottom": double_bottom
+  "db": double_bottom
+  "lh dt": lower_high_double_top
+  "lower high double top": lower_high_double_top
+  "hl db": higher_low_double_bottom
+  "higher low double bottom": higher_low_double_bottom
+  "micro double top": micro_double_top
+  "micro double bottom": micro_double_bottom
+  "measured move": measured_move
+  "mm": measured_move
+  "50% pullback": pullback_50pct
+  "50 percent pullback": pullback_50pct
+  "major bull surprise": major_bull_surprise
+  "major bear surprise": major_bear_surprise
+  "trend line break": trend_line_break
+  "channel line overshoot": channel_line_overshoot
+  "body gap": body_gap
+  "ema gap bar": ema_gap_bar
+  "exhaustive climax": exhaustive_climax
+  "final flag": final_flag
+  "opening reversal": opening_reversal
+  "trading range begin": trading_range_begin
+  "trading range end": trading_range_end
+  "signal bar": signal_bar
+  "entry bar": entry_bar
+  "failed signal": failed_signal

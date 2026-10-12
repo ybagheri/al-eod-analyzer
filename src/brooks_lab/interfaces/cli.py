@@ -1,16 +1,18 @@
 """Command-line interface for Brooks Lab.
 
-Phase 1 adds ``ingest`` and ``manifest-stats``; later phases add ``extract`` etc.
+Phase 2 adds ``schema-export``; later phases add ``extract`` etc.
 """
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import typer
 
 from brooks_lab import __version__
 from brooks_lab.application.ingestion import ImageIngestionService, compute_stats
+from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel
 from brooks_lab.infrastructure.settings import load_ingestion_settings
 from brooks_lab.interfaces.contact_sheet import render_contact_sheet
 
@@ -104,6 +106,24 @@ def manifest_stats(
     typer.echo(f"missing dates: {[d.isoformat() for d in stats.missing_dates]}")
     typer.echo(f"formats: {stats.formats} widths: {stats.width_buckets}")
     typer.echo(f"stats -> {output}")
+
+
+@app.command(name="schema-export")
+def schema_export(
+    output: Path = typer.Option(
+        Path("artifacts/label_schema.json"),
+        "--output",
+        help="JSON Schema file to write.",
+    ),
+) -> None:
+    """Export the DayLabel JSON Schema (label schema v1)."""
+    output.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema_version": LABEL_SCHEMA_VERSION,
+        "day_label": DayLabel.model_json_schema(),
+    }
+    output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    typer.echo(f"label schema v{LABEL_SCHEMA_VERSION} -> {output}")
 
 
 def main() -> None:

@@ -35,3 +35,17 @@
   no further follow-up. A one-behind header that names pushed commits is valid.
 - Consequences: max one docs-sync commit per phase; headers stay truthful without
   regress.
+
+## ADR-004 — Taxonomy v1 frozen; Pacific axis time; review-queue design (2026-10-12, accepted)
+
+- Context: extraction (Phase 3) needs a controlled vocabulary and strict schema
+  before any label is produced; Brooks chart axes show US Pacific time.
+- Decision: freeze `config/taxonomy.yaml` as v1 (14 day types incl. `other`,
+  38 event kinds, 4 outcomes, 3 directions, curated synonym maps). Times are stored
+  as `HH:MM` plus `tz`, default `America/Los_Angeles`. Unmapped wording is kept in
+  `raw_label` with `label=None` (validated: unmapped events require a raw label)
+  and surfaced via a counted review queue with difflib merge suggestions.
+- Alternatives: free-text labels (rejected: unmeasurable); forcing every wording
+  into a canonical id (rejected: silent information loss).
+- Consequences: taxonomy changes need a new schema version + ADR; `migrate_day_label`
+  handles the pre-v1 camelCase stub shape only.

@@ -13,5 +13,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Phase 1 ingestion: `ImageRecord`/`Manifest` schemas, `ImageIngestionService`
   (hash + perceptual-hash duplicates, corrupt/tiny flags, idempotent manifest),
   `brooks ingest` / `brooks manifest-stats` CLI, HTML contact sheet.
+- Phase 2 taxonomy: frozen vocabulary v1, `DayLabel`/`EventLabel` schemas,
+  synonym normaliser, unmapped-label review queue, `brooks schema-export`,
+  `LABEL_SCHEMA.md` + `GLOSSARY.md` draft.
 
 ## [0.1.0] — TBD (Phase 0 release, pending gate + first commit)
