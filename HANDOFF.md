@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD 7918099 + uncommitted Phase 2 (awaiting review)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 04e4d97 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,7 +11,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 2 — Taxonomy, label schema, glossary
-- Phase status: in progress (implemented + gate green, awaiting user review before commit)
+- Phase status: done (committed 04e4d97, pushed to origin/main)
 - Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 39 files / mypy --strict ✓ 17 files / pytest 66 passed / coverage 95.1%)
 
 ## 3. What was done in this session
