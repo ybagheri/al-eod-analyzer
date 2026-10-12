@@ -15,6 +15,11 @@ engine:
   swing_confirm_bars: 2
   spike_min_bars: 3
 
+ingestion:
+  # Images smaller than this are flagged `tiny` (real charts are 1280x720).
+  min_width: 400
+  min_height: 300
+
 paths:
   data: "data"
   manifest: "artifacts/manifest.json"

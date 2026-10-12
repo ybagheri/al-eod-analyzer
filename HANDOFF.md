@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 4338faa, docs-sync 45cc826 (both pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD 8209af7 + uncommitted Phase 1 (awaiting review)_
 
 ## 1. Project in one paragraph
 
@@ -10,9 +10,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 2. Current status
 
-- Current phase: 0 — Bootstrap & governance
-- Phase status: done (committed 4338faa, pushed to origin/main)
-- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / mypy --strict ✓ 7 files / pytest 5 passed / coverage 100%)
+- Current phase: 1 — Image inventory & ingestion
+- Phase status: in progress (implemented + gate green, awaiting user review before commit)
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 31 files / mypy --strict ✓ 14 files / pytest 34 passed / coverage 94.6%)
 
 ## 3. What was done in this session
 
@@ -29,6 +29,15 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   GitHub user (ybagheri / noreply email); remote switched to
   `git@github.com:ybagheri/al-eod-analyzer.git`; committed 4338faa (31 files, +1036)
   and pushed (new branch main → origin/main); images/venv confirmed excluded from index.
+- Phase 1 implemented: domain `imaging` (ImageRecord/Manifest/StrEnum/parser) + `Clock`;
+  infra `PillowProber` (sha256, sha1-id, PIL-only dHash), settings loader, axis hook;
+  app `ImageIngestionService` (idempotent atomic manifest write) + stats;
+  `brooks ingest` + `brooks manifest-stats` CLI; HTML contact sheet.
+- Real run: 5/5 ok, all 1280x720 JPEG, dates 2022-07-29…2022-08-09, 7 missing dates
+  (mostly weekends), 0 duplicates/corrupt/tiny; manifest + stats committed, sheet local.
+- Fixes during Phase 1: pydantic `date`-field shadowing bug; typer-0.27 `--version`;
+  ruff-0.17 rules (StrEnum, datetime.UTC, B008-ignore for typer idiom, RUF001);
+  Pillow-12 `Resampling.BILINEAR` + `tobytes()` (getdata deprecated); added types-PyYAML.
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -36,9 +45,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. Phase 1 starts ONLY on explicit user instruction (protocol: one phase at a time).
-2. Phase 1 first step: implement `ImageRecord` + `ImageIngestionService` → `artifacts/manifest.json` + `brooks ingest` CLI.
-3. Later: finish full `pip install -e ".[dev]"` (numpy/pandas/opencv pending, slow net).
+1. USER: review Phase 1 report below; reply APPROVE to commit + push.
+2. After approval: commit (`feat: Phase 1 image inventory, manifest, and CLI`) + push, record hash.
+3. Phase 2 starts ONLY on explicit user instruction.
 
 ## 6. Open questions / blockers
 
@@ -57,7 +66,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 8. Data & artifact state
 
-- Images in data/: 5 | Manifest entries: 0 (Phase 1)
+- Images in data/: 5 | Manifest entries: 5/5 (all ok)
 - Labels extracted: 0/5 | Reviewed: 0 | Gold set: 0
 - Market data coverage: none (Phase 5)
 - Playbook version: none (Phase 8)
@@ -70,6 +79,8 @@ python -m venv .venv
 pip install -e ".[dev]"
 brooks --version
 python -m tasks check
+brooks ingest
+brooks manifest-stats
 ```
 
 ## 10. Metrics snapshot (real numbers only; "NOT RUN" if unknown)

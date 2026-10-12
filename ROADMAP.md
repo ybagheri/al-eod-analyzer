@@ -5,7 +5,7 @@ Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
 | Phase | Goal | Status | Commit |
 |---|---|---|---|
 | 0 — Bootstrap & governance | Clean working skeleton, tooling, `brooks --version`, gate green | ✅ done | `4338faa` (pushed origin/main) |
-| 1 — Image inventory & ingestion | Manifest of all images, contact sheet | ⬜ not started | — |
+| 1 — Image inventory & ingestion | Manifest of all images, contact sheet | 🟨 in progress (review pending) | — |
 | 2 — Taxonomy, label schema, glossary | Controlled vocabulary + strict `DayLabel` schema v1, glossary draft | ⬜ not started | — |
 | 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | ⬜ not started | — |
 | 4 — Human review & gold set | Trusted ground truth, ≥30-image gold set | ⬜ not started | — |
@@ -27,10 +27,10 @@ Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
 - [x] `make check` / `python -m tasks check` passes on a fresh clone (verified 2026-10-11 in `.venv`; gate must run with venv on PATH)
 - [ ] First commit made (BLOCKED: `git` not installed on this machine)
 
-## Phase 1 — Definition of Done (preview)
+## Phase 1 — Definition of Done
 
-- [ ] Manifest covers 100% of images
-- [ ] Stats report (count, date range, missing dates, sizes, duplicates) printed and saved
+- [x] Manifest covers 100% of images (5/5, all ok)
+- [x] Stats report (count, date range, missing dates, sizes, duplicates) printed and saved
 
 ## Backlog / Ideas
 

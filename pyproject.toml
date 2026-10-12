@@ -25,6 +25,7 @@ dependencies = [
 dev = [
   "ruff>=0.1",
   "mypy>=1.0",
+  "types-PyYAML>=6.0",
   "pytest>=7.0",
   "pytest-cov>=4.0",
   "hypothesis>=6.0",
@@ -50,6 +51,9 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+# B008 is a false positive for Typer: typer.Option() in defaults is the
+# documented Typer idiom for declaring CLI options (ADR-001 stack choice).
+ignore = ["B008"]
 
 [tool.mypy]
 python_version = "3.11"

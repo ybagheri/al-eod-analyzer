@@ -1,0 +1,27 @@
+{
+  "corrupt": 0,
+  "date_max": "2022-08-09",
+  "date_min": "2022-07-29",
+  "duplicate_files": [],
+  "duplicates": 0,
+  "formats": {
+    "JPEG": 5
+  },
+  "missing_dates": [
+    "2022-07-30",
+    "2022-07-31",
+    "2022-08-01",
+    "2022-08-03",
+    "2022-08-05",
+    "2022-08-06",
+    "2022-08-07"
+  ],
+  "ok": 5,
+  "phash_collisions": [],
+  "schema_version": 1,
+  "tiny": 0,
+  "total": 5,
+  "width_buckets": {
+    "medium<1600": 5
+  }
+}
