@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 04e4d97 (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD f9b8901 + uncommitted Phase 3 (awaiting review)_
 
 ## 1. Project in one paragraph
 
@@ -10,9 +10,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 2. Current status
 
-- Current phase: 2 — Taxonomy, label schema, glossary
-- Phase status: done (committed 04e4d97, pushed to origin/main)
-- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 39 files / mypy --strict ✓ 17 files / pytest 66 passed / coverage 95.1%)
+- Current phase: 3 — Vision extraction pipeline
+- Phase status: in progress (pipeline + 5-image pilot done, awaiting user review before commit)
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 46 files / mypy --strict ✓ 19 files / pytest 84 passed / coverage 91.9%)
 
 ## 3. What was done in this session
 
@@ -46,28 +46,45 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   numeric definitions, classes); ADR-004 (taxonomy freeze + PT axis time).
 - Fixes during Phase 2: pydantic field/type name shadowing (same `date` lesson);
   normalise_wording moved to domain (layering); suggestions match normalised forms.
+- Phase 3 implemented: `VisionClient` port + file/fake/anthropic clients;
+  `ExtractionPromptBuilder` (config/prompts/extract_v1.md + taxonomy + schema);
+  `ExtractionService` (resumable, retried with backoff, strict validation, quarantine,
+  image_id check, date-mismatch warnings); `brooks extract` + `brooks extract-status`.
+- Pilot (agent as file-exchange reader, ADR-005): 5/5 labeled, valid_rate 1.00,
+  0 quarantined; day types {spike_and_channel_bull:1, trading_range:2,
+  trend_reversal_to_bear:2}; 35 events (10 wedge, 3 major_bear_surprise, 8 unmapped);
+  mean conf day 0.84 / events 0.64. Review queue: Triangle, HST, LL MTR,
+  Bar 41 Midday Trend Reversal, Expanding Triangles, HL-tight-channel, LL-minor.
+- ENV INCIDENT 2026-10-12 ~14:51: a non-editable `pip install file:///E:/al-eod-analyzer`
+  (actor unknown — NOT run by the agent) overwrote the editable install with a stale
+  site-packages copy; coverage silently measured 0% while tests passed. Diagnosed via
+  `brooks_lab.__file__` + dist-info `direct_url.json`; fixed by uninstall + reinstall
+  editable (`--no-build-isolation` after adding setuptools/wheel); regression guard
+  `test_package_resolves_to_repo_src` added. All 5 pilot labels re-validated under the
+  correct code (resume pass: skipped=5, identical report).
+  Labels are FIRST-PASS, not reviewed ground truth (Phase 4).
 
 ## 4. Decisions made (link to ADR numbers)
 
 - ADR-001: tech stack (PEP 621, typer/pydantic, ruff/mypy/pytest, tasks.py gate) — see `docs/DECISIONS.md`.
 - ADR-004: taxonomy v1 frozen; Pacific axis time; unmapped→review-queue design.
+- ADR-005: pilot extraction by the coding agent via file exchange (first-pass, not ground truth).
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. USER: review Phase 2 report below; reply APPROVE to commit + push.
-2. After approval: commit (`feat: Phase 2 taxonomy, label schema, and glossary`) + push, record hash.
-3. Phase 3 starts ONLY on explicit user instruction.
+1. USER: review Phase 3 report + the 5 pilot labels below; reply APPROVE to commit + push.
+2. After approval: commit (`feat: Phase 3 extraction pipeline and 5-image pilot`) + push, record hash.
+3. Phase 4 starts ONLY on explicit user instruction.
 
 ## 6. Open questions / blockers
 
 - None blocking. Push works via user's `~/.ssh/id_ed25519` (tested OK as ybagheri).
 - `make` absent on Windows → canonical gate is `python -m tasks check` (documented).
-- No API keys, no Tesseract → fine for Phase 0; file-exchange mode planned for Phase 3.
+- No API keys, no Tesseract → pilot extracted via file exchange (ADR-005); anthropic path implemented but untested live.
 
 ## 7. Known issues / tech debt
 
-- `config/taxonomy.yaml` is a draft stub (freezes in Phase 2) — low.
-- `mql5/` contains stubs only — expected for Phase 0.
+- `mql5/` contains stubs only — expected until Phase 9.
 - Full `.[dev]` install incomplete: numpy/pandas/opencv-python/pytesseract/pre-commit
   NOT installed (12–44 MB wheels timed out on slow net); gate-relevant set + ruff/mypy
   installed. Fresh-clone install still declares them in `pyproject.toml` — medium.
@@ -76,7 +93,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 8. Data & artifact state
 
 - Images in data/: 5 | Manifest entries: 5/5 (all ok)
-- Labels extracted: 0/5 | Reviewed: 0 | Gold set: 0
+- Labels extracted: 5/5 first-pass (valid_rate 1.00, 0 quarantined) | Reviewed: 0 | Gold set: 0
 - Market data coverage: none (Phase 5)
 - Playbook version: none (Phase 8)
 
@@ -90,6 +107,8 @@ brooks --version
 python -m tasks check
 brooks ingest
 brooks manifest-stats
+brooks extract --provider file --model-id muse-spark-opencode
+brooks extract-status
 ```
 
 ## 10. Metrics snapshot (real numbers only; "NOT RUN" if unknown)

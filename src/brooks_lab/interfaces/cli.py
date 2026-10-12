@@ -11,9 +11,17 @@ from pathlib import Path
 import typer
 
 from brooks_lab import __version__
+from brooks_lab.application.extraction import ExtractionPromptBuilder, ExtractionService
 from brooks_lab.application.ingestion import ImageIngestionService, compute_stats
 from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel
 from brooks_lab.infrastructure.settings import load_ingestion_settings
+from brooks_lab.infrastructure.taxonomy import load_taxonomy
+from brooks_lab.infrastructure.vision import (
+    AnthropicVisionClient,
+    FakeVisionClient,
+    FileExchangeVisionClient,
+    VisionClient,
+)
 from brooks_lab.interfaces.contact_sheet import render_contact_sheet
 
 app = typer.Typer(
@@ -124,6 +132,116 @@ def schema_export(
     }
     output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     typer.echo(f"label schema v{LABEL_SCHEMA_VERSION} -> {output}")
+
+
+@app.command()
+def extract(
+    provider: str = typer.Option(
+        "file", "--provider", help="Vision provider: file|fake|anthropic."
+    ),
+    limit: int | None = typer.Option(None, "--limit", help="Max images to process."),
+    resume: bool = typer.Option(True, "--resume/--no-resume", help="Skip valid existing labels."),
+    model_id: str = typer.Option("manual", "--model-id", help="Model id recorded in extractions."),
+    data_dir: Path = typer.Option(
+        Path("data"), "--data-dir", help="Folder with chart screenshots."
+    ),
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    labels_dir: Path = typer.Option(
+        Path("artifacts/labels"), "--labels-dir", help="Labels to write."
+    ),
+    queue_dir: Path = typer.Option(
+        Path("artifacts/extraction_queue"), "--queue-dir", help="File-exchange queue."
+    ),
+    failed_dir: Path = typer.Option(
+        Path("artifacts/labels_failed"), "--failed-dir", help="Quarantine dir."
+    ),
+    prompt_file: Path = typer.Option(
+        Path("config/prompts/extract_v1.md"), "--prompt-file", help="Prompt template."
+    ),
+    taxonomy_file: Path = typer.Option(
+        Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
+    ),
+) -> None:
+    """Extract DayLabels for manifest images (file-exchange needs two passes)."""
+    loaded = ImageIngestionService.read_manifest(manifest)
+    taxonomy = load_taxonomy(taxonomy_file)
+    builder = ExtractionPromptBuilder(prompt_file, taxonomy)
+    if provider == "file":
+        client: VisionClient = FileExchangeVisionClient(queue_dir=queue_dir, model_id=model_id)
+    elif provider == "fake":
+        client = FakeVisionClient(model_id=model_id)
+    elif provider == "anthropic":
+        client = AnthropicVisionClient(model_id=model_id)
+    else:
+        raise typer.BadParameter(f"unknown provider: {provider}")
+    service = ExtractionService(
+        manifest=loaded,
+        data_dir=data_dir,
+        labels_dir=labels_dir,
+        failed_dir=failed_dir,
+        client=client,
+        prompt_builder=builder,
+        provider=provider,
+    )
+    report = service.run(limit=limit, resume=resume)
+    report_path = Path("artifacts/review/extraction_report.json")
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(
+        json.dumps(report.model_dump(mode="json"), indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    typer.echo(
+        f"scanned={report.scanned} labeled={report.labeled} skipped={report.skipped} "
+        f"pending={report.pending} quarantined={report.quarantined} "
+        f"valid_rate={report.valid_rate:.2f}"
+    )
+    typer.echo(f"day types: {report.day_type_counts}")
+    typer.echo(f"events: {report.event_counts}")
+    if report.warnings:
+        typer.echo(f"warnings: {report.warnings}")
+    typer.echo(f"report -> {report_path}")
+
+
+@app.command(name="extract-status")
+def extract_status(
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    queue_dir: Path = typer.Option(
+        Path("artifacts/extraction_queue"), "--queue-dir", help="File-exchange queue."
+    ),
+    failed_dir: Path = typer.Option(
+        Path("artifacts/labels_failed"), "--failed-dir", help="Quarantine dir."
+    ),
+) -> None:
+    """Show extraction progress across manifest, labels, queue, and failures."""
+    loaded = ImageIngestionService.read_manifest(manifest)
+    manifest_ids = {r.image_id for r in loaded.records}
+    labels = {p.stem for p in labels_dir.glob("*.json")} if labels_dir.is_dir() else set()
+    requests = (
+        {p.name.replace(".request.json", "") for p in queue_dir.glob("*.request.json")}
+        if queue_dir.is_dir()
+        else set()
+    )
+    responses = (
+        {p.name.replace(".response.json", "") for p in queue_dir.glob("*.response.json")}
+        if queue_dir.is_dir()
+        else set()
+    )
+    failed = (
+        {p.name.replace(".error.json", "") for p in failed_dir.glob("*.error.json")}
+        if failed_dir.is_dir()
+        else set()
+    )
+    missing = sorted(manifest_ids - labels)
+    typer.echo(f"manifest={len(manifest_ids)} labeled={len(manifest_ids & labels)}")
+    typer.echo(f"missing={len(missing)} failed={len(failed)}")
+    typer.echo(f"queue: requests={len(requests)} responses={len(responses)}")
+    if missing:
+        typer.echo(f"missing ids: {missing}")
 
 
 def main() -> None:

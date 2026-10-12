@@ -49,3 +49,17 @@
   into a canonical id (rejected: silent information loss).
 - Consequences: taxonomy changes need a new schema version + ADR; `migrate_day_label`
   handles the pre-v1 camelCase stub shape only.
+
+## ADR-005 — Pilot extraction by the coding agent via file exchange (2026-10-12, accepted)
+
+- Context: no paid vision API is configured; the coding agent (Muse Spark via
+  opencode) can view images directly, so it acted as the file-exchange reader for
+  the 5-image pilot (model id `muse-spark-opencode`, prompt `extract_v1`).
+- Decision: pilot labels are first-pass extractions by the agent, recorded with
+  full provenance in `extraction_meta`; they are NOT yet human-reviewed ground
+  truth (review + gold set are Phase 4). Standalone "Bear Surprise" with large
+  bars was mapped to `major_bear_surprise` with moderated confidence (judgment
+  call, raw wording preserved); genuinely novel wording (Triangle, HST, MTR, …)
+  went to the review queue unmapped.
+- Consequences: Phase 4 must independently review all 5 pilot labels; future
+  extractions record their own provider/model ids for comparability.

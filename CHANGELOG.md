@@ -16,5 +16,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Phase 2 taxonomy: frozen vocabulary v1, `DayLabel`/`EventLabel` schemas,
   synonym normaliser, unmapped-label review queue, `brooks schema-export`,
   `LABEL_SCHEMA.md` + `GLOSSARY.md` draft.
+- Phase 3 extraction: `VisionClient` port (file-exchange, fake, anthropic),
+  versioned prompt builder, resumable/retried/quarantining batch service,
+  `brooks extract` / `brooks extract-status`, 5-image pilot labels (first-pass).
 
 ## [0.1.0] — TBD (Phase 0 release, pending gate + first commit)
