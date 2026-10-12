@@ -25,3 +25,13 @@
   initial plan; local vision only as a later benchmarked experiment.
 - Consequences: extraction works with zero keys; provider/model must be verified at
   use time, never assumed.
+
+## ADR-003 — HANDOFF self-reference convention (2026-10-12, accepted)
+
+- Context: the protocol demands a truthful, current `HANDOFF.md` in every commit,
+  but updating HANDOFF itself changes the repo, risking an endless commit loop.
+- Decision: `HANDOFF.md` names the phase commit hash and the docs-sync commit hash
+  (both already pushed); docs-sync commits are self-describing (`docs: ...`) and need
+  no further follow-up. A one-behind header that names pushed commits is valid.
+- Consequences: max one docs-sync commit per phase; headers stay truthful without
+  regress.
