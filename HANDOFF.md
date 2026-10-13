@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD c41875b + uncommitted Phase 4 tooling (awaiting review)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 4a7a54b (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,7 +11,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 4 — Human review & gold set
-- Phase status: in progress (tooling + review kit done, user review pending; gold 0/33)
+- Phase status: tooling + v1.1 committed (4a7a54b, pushed); user label review pending, gold 0/33
 - Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 51 files / mypy --strict ✓ 21 files / pytest 113 passed / coverage 93.4%)
 
 ## 3. What was done in this session
