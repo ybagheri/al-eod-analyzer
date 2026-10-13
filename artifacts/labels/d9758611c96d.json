@@ -23,12 +23,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Green note 'LL DB MTR' at the same low",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "major reversal up from the double bottom",
       "price_hint": null,
       "raw_label": "LL DB MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {
@@ -93,12 +93,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown note 'Minor OO' at the top right; meaning not determinable",
-      "label": null,
+      "label": "outside_outside",
       "outcome": "unclear",
       "outcome_reason": "unknown what OO denotes",
       "price_hint": null,
       "raw_label": "Minor OO",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     }
   ],

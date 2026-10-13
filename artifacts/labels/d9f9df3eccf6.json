@@ -23,12 +23,12 @@
       "direction": "bear",
       "end_time": null,
       "evidence": "Red note 'Lower High Major Trend Reversal' with arrow at ~4062",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "lower-high reversal sold to ~4030",
       "price_hint": null,
       "raw_label": "Lower High Major Trend Reversal",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {
@@ -37,12 +37,12 @@
       "direction": "bear",
       "end_time": null,
       "evidence": "Same red note: 'Head and Shoulders Top'",
-      "label": null,
+      "label": "head_and_shoulders_top",
       "outcome": "success",
       "outcome_reason": "H&S top resolved down",
       "price_hint": null,
       "raw_label": "Head and Shoulders Top",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {

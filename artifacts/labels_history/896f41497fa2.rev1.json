@@ -1,0 +1,136 @@
+{
+  "date": "2022-08-09",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.85,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Green note 'Big reversal to above Bear Surprise'; large early bear bars around 06:45-07:00 with red boxes",
+      "label": "major_bear_surprise",
+      "outcome": "fail",
+      "outcome_reason": "bears failed: price reversed strongly back above the surprise bars",
+      "price_hint": null,
+      "raw_label": "Bear Surprise",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta 'Wedge' label with dotted lines into the ~4115 low; green reversal boxes",
+      "label": "wedge",
+      "outcome": "success",
+      "outcome_reason": "wedge bottom launched the rally back to ~4135",
+      "price_hint": null,
+      "raw_label": "Wedge",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Green 'HL but tight channel' note near 09:30-10:00; higher low inside overlapping bars",
+      "label": null,
+      "outcome": "success",
+      "outcome_reason": "tight channel drifted upward after the higher low",
+      "price_hint": null,
+      "raw_label": "HL but tight channel",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue 'Expanding Triangle' note with dotted lines spanning 10:30-12:30",
+      "label": null,
+      "outcome": "unclear",
+      "outcome_reason": "pattern noted but no directional resolution annotated",
+      "price_hint": null,
+      "raw_label": "Expanding Triangle",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue 'Nested Expanding Triangle' note near 11:00-11:30",
+      "label": null,
+      "outcome": "unclear",
+      "outcome_reason": "nested pattern noted without annotated resolution",
+      "price_hint": null,
+      "raw_label": "Nested Expanding Triangle",
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Green 'LL MTR' note at the ~11:15 low followed by the strong rally to ~4125",
+      "label": null,
+      "outcome": "success",
+      "outcome_reason": "major trend reversal up played out",
+      "price_hint": null,
+      "raw_label": "LL MTR",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      }
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "896f41497fa2",
+  "schema_version": 1,
+  "session_summary": "Wedge bottom but trading range day: early bear surprise failed, wedge bottom reversed, tight-channel higher low and expanding triangles chopped sideways; bear trend day never developed."
+}

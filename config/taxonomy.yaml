@@ -1,8 +1,11 @@
-# Label vocabulary — TAXONOMY v1 (FROZEN, see ADR-004).
+# Label vocabulary — TAXONOMY v1.1 (see ADR-004, ADR-006).
 # Canonical ids use lower_snake_case. `synonyms` maps normalised annotator
-# wording (lowercase, spaces/hyphens -> single spaces) to canonical ids.
+# wording (lowercase, separators -> single spaces) to canonical ids.
 # Anything unmapped must be kept in `raw_label` and routed to the review queue.
+# schema_version tracks the file STRUCTURE (label schema v1, additive change);
+# taxonomy_version tracks the vocabulary content (user-approved merges).
 schema_version: 1
+taxonomy_version: "1.1"
 day_types:
   - bull_trend_from_open
   - bear_trend_from_open
@@ -57,6 +60,14 @@ events:
   - signal_bar
   - entry_bar
   - failed_signal
+  - outside_outside
+  - inside_inside
+  - triangle
+  - tight_trading_range
+  - head_and_shoulders_top
+  - major_trend_reversal
+  - lower_low_double_bottom
+  - midday_reversal
 outcomes:
   - success
   - fail
@@ -117,3 +128,49 @@ event_synonyms:
   "signal bar": signal_bar
   "entry bar": entry_bar
   "failed signal": failed_signal
+  # v1.1 additions (user-approved 2026-10-12, see ADR-006).
+  "oo": outside_outside
+  "outside outside": outside_outside
+  "minor oo": outside_outside
+  "ii": inside_inside
+  "inside inside": inside_inside
+  "triangle": triangle
+  "possible triangle": triangle
+  "expanding triangle": triangle
+  "nested expanding triangle": triangle
+  "exp triangle": triangle
+  "ext triangle": triangle
+  "triangle lines": triangle
+  "ttr": tight_trading_range
+  "tight trading range": tight_trading_range
+  "ttr on open": tight_trading_range
+  "ttr better to stop trading": tight_trading_range
+  "ttr best to wait for bo": tight_trading_range
+  "tight tr ahead of fomc minutes": tight_trading_range
+  "hst": head_and_shoulders_top
+  "head and shoulders top": head_and_shoulders_top
+  "mtr": major_trend_reversal
+  "major trend reversal": major_trend_reversal
+  "ll mtr": major_trend_reversal
+  "hl mtr": major_trend_reversal
+  "lh dt mtr": major_trend_reversal
+  "ll db mtr": major_trend_reversal
+  "2nd entry buy db ll mtr": major_trend_reversal
+  "ll mtr swing buy": major_trend_reversal
+  "lower high major trend reversal": major_trend_reversal
+  "ll db": lower_low_double_bottom
+  "lower low double bottom": lower_low_double_bottom
+  "ll db at ema": lower_low_double_bottom
+  "ll db breakout test": lower_low_double_bottom
+  "midday reversal": midday_reversal
+  "bar 40 midday reversal": midday_reversal
+  "bar 41 midday trend reversal": midday_reversal
+  "reversal up on bar 41 midday reversal": midday_reversal
+  # Trap/bull-bear direction is set by the labeller (see ADR-006), not the id.
+  "bear trap": failed_breakout
+  "bull trap": failed_breakout
+  "2nd leg bull trap": failed_breakout
+  "trend resumption up": breakout
+  # HH DT = higher-high double top (user-confirmed); parent id until v1.2.
+  "hh dt": double_top
+  "hhdt": double_top

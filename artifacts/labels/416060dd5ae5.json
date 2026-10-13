@@ -107,12 +107,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Blue 'ii' mark beside MM; meaning not determinable",
-      "label": null,
+      "label": "inside_inside",
       "outcome": "unclear",
       "outcome_reason": "unknown what ii denotes",
       "price_hint": null,
       "raw_label": "ii",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     }
   ],

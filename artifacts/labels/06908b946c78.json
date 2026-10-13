@@ -97,15 +97,15 @@
     {
       "bar_index_hint": null,
       "confidence": 0.7,
-      "direction": "bear",
+      "direction": "bull",
       "end_time": null,
       "evidence": "Green note 'Bull Trap' at the same 12:30 top",
-      "label": null,
+      "label": "failed_breakout",
       "outcome": "success",
       "outcome_reason": "trapped bulls; price collapsed into the close",
       "price_hint": null,
       "raw_label": "Bull Trap",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "12:30",
         "tz": "America/Los_Angeles"
@@ -157,12 +157,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Two brown 'ii' marks near 10:30 and 11:00; meaning not determinable",
-      "label": null,
+      "label": "inside_inside",
       "outcome": "unclear",
       "outcome_reason": "unknown what ii denotes",
       "price_hint": null,
       "raw_label": "ii",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:30",
         "tz": "America/Los_Angeles"

@@ -72,12 +72,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Blue 'Expanding Triangle' note with dotted lines spanning 10:30-12:30",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "pattern noted but no directional resolution annotated",
       "price_hint": null,
       "raw_label": "Expanding Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:30",
         "tz": "America/Los_Angeles"
@@ -92,12 +92,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Blue 'Nested Expanding Triangle' note near 11:00-11:30",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "nested pattern noted without annotated resolution",
       "price_hint": null,
       "raw_label": "Nested Expanding Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "11:00",
         "tz": "America/Los_Angeles"
@@ -112,12 +112,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Green 'LL MTR' note at the ~11:15 low followed by the strong rally to ~4125",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "major trend reversal up played out",
       "price_hint": null,
       "raw_label": "LL MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "11:15",
         "tz": "America/Los_Angeles"

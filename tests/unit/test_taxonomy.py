@@ -26,8 +26,9 @@ def test_repo_taxonomy_loads_v1() -> None:
     taxonomy = load_taxonomy(_repo_taxonomy())
     assert taxonomy.schema_version == 1
     assert len(taxonomy.day_types) == 14
-    assert len(taxonomy.events) == 38
+    assert len(taxonomy.events) == 46
     assert "other" in taxonomy.day_types
+    assert "midday_reversal" in taxonomy.events
 
 
 def test_taxonomy_rejects_version_mismatch(tmp_path: Path) -> None:
@@ -60,6 +61,20 @@ def test_day_type_mapping(raw: str, expected: DayType) -> None:
         ("LH DT", EventKind.LOWER_HIGH_DOUBLE_TOP),
         ("HL DB", EventKind.HIGHER_LOW_DOUBLE_BOTTOM),
         ("50% Pullback", EventKind.PULLBACK_50PCT),
+        ("OO", EventKind.OUTSIDE_OUTSIDE),
+        ("ii", EventKind.INSIDE_INSIDE),
+        ("Minor OO", EventKind.OUTSIDE_OUTSIDE),
+        ("Ext. Triangle", EventKind.TRIANGLE),
+        ("TTR on open", EventKind.TIGHT_TRADING_RANGE),
+        ("HST", EventKind.HEAD_AND_SHOULDERS_TOP),
+        ("LL MTR", EventKind.MAJOR_TREND_REVERSAL),
+        ("LL DB at EMA", EventKind.LOWER_LOW_DOUBLE_BOTTOM),
+        ("Bar 41 Midday Trend Reversal", EventKind.MIDDAY_REVERSAL),
+        ("Bear Trap", EventKind.FAILED_BREAKOUT),
+        ("2nd Leg Bull Trap", EventKind.FAILED_BREAKOUT),
+        ("Trend Resumption up", EventKind.BREAKOUT),
+        ("HH DT", EventKind.DOUBLE_TOP),
+        ("TBTL", None),
         ("Second Entry", None),
         ("", None),
     ],
@@ -102,3 +117,18 @@ def test_review_queue_counts_and_suggests() -> None:
 def test_review_queue_empty_and_no_suggestion() -> None:
     assert build_review_queue([]).items == []
     assert suggest_canonical("zzz-no-match", ["h1", "h2"]) is None
+
+
+@pytest.mark.parametrize(
+    ("raw", "expected"),
+    [
+        ("Ext. Triangle", "ext triangle"),
+        ("reversal up on bar 41 (Midday Reversal)", "reversal up on bar 41 midday reversal"),
+        ("Buy-The_Close", "buy the close"),
+        ("  spaced   out  ", "spaced out"),
+    ],
+)
+def test_normalise_wording_separators(raw: str, expected: str) -> None:
+    from brooks_lab.domain.labels import normalise_wording
+
+    assert normalise_wording(raw) == expected

@@ -19,7 +19,8 @@ LABEL_SCHEMA_VERSION = 1
 #: Timezone of the chart axis on Brooks EOD charts (US Pacific; see ADR-004).
 AXIS_TIMEZONE = "America/Los_Angeles"
 
-_WHITESPACE_RE = re.compile(r"[\s\-_]+")
+# Separators collapsed by normalise_wording (v1.1 also strips dots/parens).
+_WHITESPACE_RE = re.compile(r"[\s\-_.,()]+")
 
 
 def normalise_wording(raw: str) -> str:
@@ -87,6 +88,15 @@ class EventKind(StrEnum):
     SIGNAL_BAR = "signal_bar"
     ENTRY_BAR = "entry_bar"
     FAILED_SIGNAL = "failed_signal"
+    # Taxonomy v1.1 additions (user-approved Brooks patterns, see ADR-006).
+    OUTSIDE_OUTSIDE = "outside_outside"
+    INSIDE_INSIDE = "inside_inside"
+    TRIANGLE = "triangle"
+    TIGHT_TRADING_RANGE = "tight_trading_range"
+    HEAD_AND_SHOULDERS_TOP = "head_and_shoulders_top"
+    MAJOR_TREND_REVERSAL = "major_trend_reversal"
+    LOWER_LOW_DOUBLE_BOTTOM = "lower_low_double_bottom"
+    MIDDAY_REVERSAL = "midday_reversal"
 
 
 class Outcome(StrEnum):

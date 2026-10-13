@@ -49,12 +49,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Blue note 'LL MTR / Prob Minor ok swing buy' near 09:30; green note 'Bulls tried to bottom around 9:45, and test back to the open but failed.'",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "fail",
       "outcome_reason": "bottom attempt failed; test of the open never completed",
       "price_hint": null,
       "raw_label": "LL MTR swing buy",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:30",
         "tz": "America/Los_Angeles"

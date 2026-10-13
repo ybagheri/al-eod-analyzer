@@ -29,12 +29,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Green note '2nd entry buy DB LL MTR' with arrow near 10:00",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "bounce followed into the midday range",
       "price_hint": null,
       "raw_label": "2nd entry buy DB LL MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
@@ -123,12 +123,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Magenta 'LL MTR' with arrow at the same 12:30 low",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "major trend reversal up carried into the close",
       "price_hint": null,
       "raw_label": "LL MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "12:30",
         "tz": "America/Los_Angeles"
@@ -140,12 +140,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Magenta note 'Trading Range Days often get a reversal up on bar 41. (Creates a Midday Reversal).'",
-      "label": null,
+      "label": "midday_reversal",
       "outcome": "success",
       "outcome_reason": "midday reversal up played out into the strong close",
       "price_hint": null,
       "raw_label": "reversal up on bar 41 (Midday Reversal)",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "12:30",
         "tz": "America/Los_Angeles"

@@ -23,5 +23,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   date corrections (04-02→03-31, 04-03→04-01, user-confirmed), 07-22/07-29
   duplicate resolved (07-29 kept, 07-22 file deleted → 33/33), ET-axis suspicion
   recorded for Phase 5.
+- Phase 4 review workflow: `ReviewService` (corrections + history + gold registry),
+  HTML review pages, `brooks review-queue` / `brooks review-apply`, label stats.
+  Gold set pending user review (0/33).
 
 ## [0.1.0] — TBD (Phase 0 release, pending gate + first commit)

@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 24239dc (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — HEAD c41875b + uncommitted Phase 4 tooling (awaiting review)_
 
 ## 1. Project in one paragraph
 
@@ -10,9 +10,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 2. Current status
 
-- Current phase: 3 — Vision extraction pipeline
-- Phase status: done (committed 0c3ac41, pushed to origin/main)
-- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 46 files / mypy --strict ✓ 19 files / pytest 84 passed / coverage 91.9%)
+- Current phase: 4 — Human review & gold set
+- Phase status: in progress (tooling + review kit done, user review pending; gold 0/33)
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 51 files / mypy --strict ✓ 21 files / pytest 113 passed / coverage 93.4%)
 
 ## 3. What was done in this session
 
@@ -56,13 +56,22 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   mean conf day 0.84 / events 0.64. Review queue: Triangle, HST, LL MTR,
   Bar 41 Midday Trend Reversal, Expanding Triangles, HL-tight-channel, LL-minor.
 - ENV INCIDENT 2026-10-12 ~14:51: a non-editable `pip install file:///E:/al-eod-analyzer`
-  (actor unknown — NOT run by the agent) overwrote the editable install with a stale
-  site-packages copy; coverage silently measured 0% while tests passed. Diagnosed via
-  `brooks_lab.__file__` + dist-info `direct_url.json`; fixed by uninstall + reinstall
+  (user confirmed: accidental run in repo path) overwrote the editable install with a
+  stale site-packages copy; coverage silently measured 0% while tests passed. Diagnosed
+  via `brooks_lab.__file__` + dist-info `direct_url.json`; fixed by uninstall + reinstall
   editable (`--no-build-isolation` after adding setuptools/wheel); regression guard
-  `test_package_resolves_to_repo_src` added. All 5 pilot labels re-validated under the
-  correct code (resume pass: skipped=5, identical report).
-  Labels are FIRST-PASS, not reviewed ground truth (Phase 4).
+  `test_package_resolves_to_repo_src` added. No data was harmed (labels re-validated).
+- Phase 4 tooling implemented: `ReviewService` (apply corrections with history archive +
+  human-source marking, gold registry `artifacts/gold_set.json`, label stats,
+  deterministic stratified sampling); review HTML pages (image left, label right,
+  low-confidence first) + index; `brooks review-queue` (pages + gap report + stats)
+  and `brooks review-apply` CLI. Fixed pydantic serializer warnings in apply path.
+- Taxonomy v1.1 implemented (user-approved 2026-10-12): 8 new EventKinds, normaliser
+  strips dots/parens, 40+ new synonyms, ADR-006; remapped 24/33 labels via new
+  ReviewService.remap_events (history archived, touched events source=human,
+  re-run idempotent) + one-off scripts/remap_taxonomy_v11.py; review queue
+  45→19 items (all per keep-list/deferred); "Measuring Gaps" plural also demoted
+  (agent judgment, reversible, flagged); HHDT resolved as Higher-High→double_top.
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -72,9 +81,10 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. USER: review Phase 3 report + the 5 pilot labels below; reply APPROVE to commit + push.
-2. After approval: commit (`feat: Phase 3 extraction pipeline and 5-image pilot`) + push, record hash.
-3. Phase 4 starts ONLY on explicit user instruction.
+1. USER: review the 33 labels via artifacts/review/pages/index.html (lowest confidence first); reply with corrections and/or bulk APPROVE.
+2. Agent: author corrections files + `brooks review-apply` (history archived, gold marked).
+3. After approval of tooling: commit (`feat: Phase 4 review workflow and kit`) + push.
+4. Phase 5 starts ONLY on explicit user instruction.
 
 ## 6. Open questions / blockers
 
@@ -82,6 +92,8 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - `make` absent on Windows → canonical gate is `python -m tasks check` (documented).
 - No API keys, no Tesseract → file-exchange extraction (ADR-005); anthropic path untested live.
 - April-pair + Sep-23 axes show 09:00–15:00 (vs PT-style 06:30–13:00): ET feed or cropped axis? DEFAULT: recorded as-shown with PT tz + note; Phase 5 must resolve against real bars before any label→bar attachment.
+- User supplied glossary notes 2026-10-12 (OO, ii, TBTL, MTR, LLDB, traps, Triangle, TTR, HST, H1-H3/L1-L2) — folded into GLOSSARY.md; taxonomy v1.1 proposal pending approval (see chat).
+- HH DT resolved by user as Higher-High → interim parent double_top (dedicated id deferred to v1.2).
 
 ## 7. Known issues / tech debt
 
@@ -94,7 +106,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 8. Data & artifact state
 
 - Images in data/: 33 (15 JPEG + 18 PNG) | Manifest entries: 33/33 (all ok)
-- Labels extracted: 33/33 first-pass (valid_rate 1.00, 0 quarantined, 254 events, 58 unmapped/45 distinct) | Reviewed: 0 | Gold set: 0
+- Labels extracted: 33/33 first-pass (valid_rate 1.00, 0 quarantined, 254 events, 19 unmapped — v1.1 remap done, all remaining per keep-list/deferred) | Reviewed: 0 | Gold set: 0
 - Dates CONFIRMED by user 2026-10-12: 04-02 file = 03-31 session, 04-03 file = 04-01 session; 07-29 confirmed correct, 07-22 duplicate file DELETED (manifest/labels/queue cleaned, manifest regenerated 33/33).
 - Date flags: 04-02→03-31 and 04-03→04-01 relabelled from title weekday (pipeline warnings fired correctly), both CONFIRMED by user; 07-22/07-29 duplicate resolved (07-29 kept, 07-22 deleted); April + Sep-23 axes run 09:00-15:00 (possible ET feed — Phase 5 must verify, see §6)
 - PNG batch (08-01…09-23) has no readable time axis → event times null (15 of 29 new labels)

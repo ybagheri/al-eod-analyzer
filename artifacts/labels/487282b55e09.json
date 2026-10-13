@@ -37,12 +37,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown 'OO' mark near the top; meaning not determinable",
-      "label": null,
+      "label": "outside_outside",
       "outcome": "unclear",
       "outcome_reason": "unknown what OO denotes",
       "price_hint": null,
       "raw_label": "OO",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {
@@ -93,12 +93,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Blue notes 'Exp. Triangle' in two areas",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "triangles noted without annotated resolution",
       "price_hint": null,
       "raw_label": "Exp. Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {

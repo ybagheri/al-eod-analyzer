@@ -77,12 +77,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown/blue notes 'High 4 / Ext. Triangle' near 08:00",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "pattern noted without annotated resolution",
       "price_hint": null,
       "raw_label": "Ext. Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "08:00",
         "tz": "America/Los_Angeles"
@@ -128,12 +128,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown 'OO' mark near 10:00; meaning not determinable",
-      "label": null,
+      "label": "outside_outside",
       "outcome": "unclear",
       "outcome_reason": "unknown what OO denotes",
       "price_hint": null,
       "raw_label": "OO",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"

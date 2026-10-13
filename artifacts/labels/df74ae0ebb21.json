@@ -93,12 +93,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Blue note 'Bar 40 Midday Reversal'",
-      "label": null,
+      "label": "midday_reversal",
       "outcome": "success",
       "outcome_reason": "midday reversal up played out",
       "price_hint": null,
       "raw_label": "Bar 40 Midday Reversal",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {
@@ -107,12 +107,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Green note 'Trend Resumption up'",
-      "label": null,
+      "label": "breakout",
       "outcome": "success",
       "outcome_reason": "resumption carried to the highs",
       "price_hint": null,
       "raw_label": "Trend Resumption up",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {

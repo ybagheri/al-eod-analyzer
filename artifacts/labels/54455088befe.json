@@ -29,12 +29,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Blue dotted triangle lines over the morning plus magenta wedge lines at the left; no text annotation",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "graphics only, no annotated resolution",
       "price_hint": null,
       "raw_label": "triangle lines",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:00",
         "tz": "America/Los_Angeles"

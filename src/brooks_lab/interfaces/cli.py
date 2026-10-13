@@ -244,6 +244,118 @@ def extract_status(
         typer.echo(f"missing ids: {missing}")
 
 
+@app.command(name="review-queue")
+def review_queue(
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    data_dir: Path = typer.Option(
+        Path("data"), "--data-dir", help="Folder with chart screenshots."
+    ),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    taxonomy_file: Path = typer.Option(
+        Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
+    ),
+    gold_file: Path = typer.Option(
+        Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
+    ),
+    review_dir: Path = typer.Option(
+        Path("artifacts/review"), "--review-dir", help="Review pages output."
+    ),
+    output: Path = typer.Option(
+        Path("artifacts/review/review_summary.json"),
+        "--output",
+        help="Summary JSON to write.",
+    ),
+) -> None:
+    """Build review pages, taxonomy gap report, and label statistics."""
+    from brooks_lab.application.review import (
+        ReviewService,
+        compute_label_stats,
+        load_labels_for_manifest,
+    )
+    from brooks_lab.application.review_queue import build_review_queue
+    from brooks_lab.domain.imaging import ImageRecord
+    from brooks_lab.interfaces.review_pages import (
+        image_rel_for_page,
+        render_review_index,
+        render_review_page,
+    )
+
+    loaded = ImageIngestionService.read_manifest(manifest)
+    by_id: dict[str, ImageRecord] = {r.image_id: r for r in loaded.records}
+    labels = load_labels_for_manifest(loaded, labels_dir)
+    service = ReviewService(
+        labels_dir=labels_dir,
+        history_dir=labels_dir.parent / "labels_history",
+        gold_path=gold_file,
+    )
+    gold = service.load_gold()
+    gold_ids = set(gold.image_ids)
+    taxonomy = load_taxonomy(taxonomy_file)
+    canonical = sorted(taxonomy.day_types | taxonomy.events)
+    queue = build_review_queue(labels, canonical)
+    stats = compute_label_stats(labels, gold_ids)
+    pages_dir = review_dir / "pages"
+    for label in labels:
+        record = by_id.get(label.image_id)
+        filename = record.filename if record else f"{label.image_id}.png"
+        page_path = pages_dir / f"{label.image_id}.html"
+        render_review_page(
+            label,
+            image_rel_for_page(page_path, data_dir, filename),
+            page_path,
+            label.image_id in gold_ids,
+            service.history_revisions(label.image_id),
+        )
+    render_review_index(labels, gold_ids, pages_dir / "index.html")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(
+        json.dumps(
+            {
+                "review_queue": queue.model_dump(mode="json"),
+                "stats": stats.model_dump(mode="json"),
+                "gold_ids": sorted(gold_ids),
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    typer.echo(f"labels={len(labels)} gold={len(gold_ids)} unmapped={len(queue.items)}")
+    typer.echo(f"day types: {stats.day_type_counts}")
+    for item in queue.items:
+        typer.echo(f"gap: {item.raw_label!r} x{item.count} suggest={item.suggestion}")
+    typer.echo(f"pages -> {pages_dir / 'index.html'}")
+    typer.echo(f"summary -> {output}")
+
+
+@app.command(name="review-apply")
+def review_apply(
+    corrections_file: Path = typer.Argument(..., help="Corrections JSON file."),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    history_dir: Path = typer.Option(
+        Path("artifacts/labels_history"), "--history-dir", help="History dir."
+    ),
+    gold_file: Path = typer.Option(
+        Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
+    ),
+) -> None:
+    """Apply a corrections file (archives history, marks human source)."""
+    from brooks_lab.application.review import CorrectionsFile, ReviewService
+
+    service = ReviewService(labels_dir=labels_dir, history_dir=history_dir, gold_path=gold_file)
+    corrections = CorrectionsFile.model_validate_json(corrections_file.read_text(encoding="utf-8"))
+    result = service.apply_corrections(corrections)
+    typer.echo(
+        f"{result.image_id}: applied={result.applied} rev={result.revision} "
+        f"gold={result.gold} ({result.message})"
+    )
+    if not result.applied:
+        raise typer.Exit(code=1)
+
+
 def main() -> None:
     """Console-script entry point."""
     app()

@@ -62,15 +62,15 @@
     {
       "bar_index_hint": null,
       "confidence": 0.7,
-      "direction": "bear",
+      "direction": "bull",
       "end_time": null,
       "evidence": "Red note 'Bull Trap' at the same top",
-      "label": null,
+      "label": "failed_breakout",
       "outcome": "success",
       "outcome_reason": "trapped bulls; price faded",
       "price_hint": null,
       "raw_label": "Bull Trap",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {
@@ -79,12 +79,12 @@
       "direction": "bear",
       "end_time": null,
       "evidence": "Red note 'LH DT MTR' near 4210",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "lower-high reversal played out",
       "price_hint": null,
       "raw_label": "LH DT MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {

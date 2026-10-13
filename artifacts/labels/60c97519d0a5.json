@@ -9,12 +9,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown note 'TTR on open / Increase odds of a trading range day' at the left edge",
-      "label": null,
+      "label": "tight_trading_range",
       "outcome": "success",
       "outcome_reason": "day stayed a trading range into the late breakout",
       "price_hint": null,
       "raw_label": "TTR on open",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:00",
         "tz": "America/Los_Angeles"
@@ -49,12 +49,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Blue 'Triangle' note with dotted lines near 10:00-10:30",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "triangle noted without annotated resolution",
       "price_hint": null,
       "raw_label": "Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
@@ -106,12 +106,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Green note 'LL MTR / Credible swing buy, but weak signal bar. / Always In Bears exit' near 14:00",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "fail",
       "outcome_reason": "swing buy failed; bears stayed in control into the close",
       "price_hint": null,
       "raw_label": "LL MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "14:00",
         "tz": "America/Los_Angeles"

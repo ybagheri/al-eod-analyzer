@@ -29,12 +29,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Blue note 'Tight TR ahead of FOMC minutes'; overlapping sideways trade",
-      "label": "trading_range_begin",
+      "label": "tight_trading_range",
       "outcome": "success",
       "outcome_reason": "tight range held until the FOMC minutes",
       "price_hint": null,
       "raw_label": "Tight TR ahead of FOMC minutes",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "06:45",
         "tz": "America/Los_Angeles"

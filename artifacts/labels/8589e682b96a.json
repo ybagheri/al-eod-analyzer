@@ -32,12 +32,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Blue 'Triangle' note over the 07:30-08:00 congestion; no canonical triangle event exists",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "congestion broke down but the triangle itself has no measured outcome",
       "price_hint": null,
       "raw_label": "Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
@@ -106,15 +106,15 @@
     {
       "bar_index_hint": null,
       "confidence": 0.5,
-      "direction": "neutral",
+      "direction": "bear",
       "end_time": null,
       "evidence": "Red 'HST' note beside LH DT; abbreviation meaning not determinable from the image",
-      "label": null,
+      "label": "head_and_shoulders_top",
       "outcome": "unclear",
       "outcome_reason": "unknown what HST denotes",
       "price_hint": null,
       "raw_label": "HST",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:15",
         "tz": "America/Los_Angeles"

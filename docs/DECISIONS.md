@@ -63,3 +63,21 @@
   went to the review queue unmapped.
 - Consequences: Phase 4 must independently review all 5 pilot labels; future
   extractions record their own provider/model ids for comparability.
+
+## ADR-006 — Taxonomy v1.1: user-approved patterns (2026-10-12, accepted)
+
+- Context: the 45-item review queue held real Brooks vocabulary (OO, ii, Triangle,
+  TTR, HST, MTR, LLDB, traps). The user supplied definitions and approved merges.
+- Decision: add 8 canonical ids (`outside_outside`, `inside_inside`, `triangle`,
+  `tight_trading_range`, `head_and_shoulders_top`, `major_trend_reversal`,
+  `lower_low_double_bottom`, `midday_reversal`) + synonyms; map traps to
+  `failed_breakout` and trend-resumption to `breakout` (direction set by labeller:
+  bear/bull from the wording); keep TBTL, Minor reversal, Midpoint of day,
+  Measuring Gap, Minor LL/HL, H4/L4, Failed High 2, Late-test-of-Open unmapped.
+  `HH DT` confirmed as Higher-High DT → interim parent `double_top`
+  (dedicated id deferred to v1.2). Label schema stays v1 (additive, compatible);
+  vocabulary tracked as `taxonomy_version: "1.1"`. Existing labels remapped via
+  `review-apply` with reviewer "ybagheri (taxonomy v1.1)" — source=human is
+  accurate because the canonical assignments are human decisions.
+- Consequences: normaliser now also strips dots/parens (`Ext. Triangle` matches);
+  engine Phase 6 must cover the new ids (esp. ii/oo/triangle/MTR detection).

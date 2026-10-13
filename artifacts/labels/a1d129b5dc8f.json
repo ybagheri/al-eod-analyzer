@@ -80,12 +80,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown note 'TTR better to stop trading' near 13:45 in the tight late range",
-      "label": null,
+      "label": "tight_trading_range",
       "outcome": "unclear",
       "outcome_reason": "advice note, no directional outcome",
       "price_hint": null,
       "raw_label": "TTR better to stop trading",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "13:45",
         "tz": "America/Los_Angeles"

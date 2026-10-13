@@ -100,15 +100,15 @@
     {
       "bar_index_hint": null,
       "confidence": 0.6,
-      "direction": "bull",
+      "direction": "bear",
       "end_time": null,
       "evidence": "Brown note 'Bear Trap' near 11:30 before the recovery resumed",
-      "label": null,
+      "label": "failed_breakout",
       "outcome": "success",
       "outcome_reason": "trapped bears; price recovered",
       "price_hint": null,
       "raw_label": "Bear Trap",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "11:30",
         "tz": "America/Los_Angeles"
@@ -140,12 +140,12 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "Blue note 'Possible Triangle' with dotted lines spanning into the close",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "triangle noted without annotated resolution",
       "price_hint": null,
       "raw_label": "Possible Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:30",
         "tz": "America/Los_Angeles"
@@ -157,12 +157,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Blue 'ii' mark near 07:30; meaning not determinable",
-      "label": null,
+      "label": "inside_inside",
       "outcome": "unclear",
       "outcome_reason": "unknown what ii denotes",
       "price_hint": null,
       "raw_label": "ii",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"

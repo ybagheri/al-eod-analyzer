@@ -37,12 +37,12 @@
       "direction": "bear",
       "end_time": null,
       "evidence": "Blue note 'Measuring Gaps, Increased risk of small pullback bear trend'",
-      "label": "gap",
+      "label": null,
       "outcome": "success",
       "outcome_reason": "measuring gaps projected the slide",
       "price_hint": null,
       "raw_label": "Measuring Gaps",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {

@@ -106,12 +106,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Brown 'HL MTR' note at the same higher-low area",
-      "label": null,
+      "label": "major_trend_reversal",
       "outcome": "success",
       "outcome_reason": "major trend reversal up played out through the close",
       "price_hint": null,
       "raw_label": "HL MTR",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:30",
         "tz": "America/Los_Angeles"

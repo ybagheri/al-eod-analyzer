@@ -29,12 +29,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown 'ii' mark near 07:30; meaning not determinable",
-      "label": null,
+      "label": "inside_inside",
       "outcome": "unclear",
       "outcome_reason": "unknown what ii denotes",
       "price_hint": null,
       "raw_label": "ii",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
@@ -120,12 +120,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Brown 'OO' mark near 11:00; meaning not determinable",
-      "label": null,
+      "label": "outside_outside",
       "outcome": "unclear",
       "outcome_reason": "unknown what OO denotes",
       "price_hint": null,
       "raw_label": "OO",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "11:00",
         "tz": "America/Los_Angeles"
@@ -154,12 +154,12 @@
       "direction": "neutral",
       "end_time": null,
       "evidence": "Blue note 'Triangle' with the second Minor HL DB",
-      "label": null,
+      "label": "triangle",
       "outcome": "unclear",
       "outcome_reason": "triangle noted without annotated resolution",
       "price_hint": null,
       "raw_label": "Triangle",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "11:45",
         "tz": "America/Los_Angeles"

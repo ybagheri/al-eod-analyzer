@@ -65,12 +65,12 @@
       "direction": "bull",
       "end_time": null,
       "evidence": "Brown note 'Became Measuring Gap' at the late breakout",
-      "label": "gap",
+      "label": null,
       "outcome": "success",
       "outcome_reason": "measuring gap projected the final leg",
       "price_hint": null,
       "raw_label": "Measuring Gap",
-      "source": "vision",
+      "source": "human",
       "start_time": null
     },
     {

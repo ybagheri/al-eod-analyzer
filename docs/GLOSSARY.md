@@ -49,5 +49,29 @@ thresholds) · `contextual` (depends on day structure).
 | Signal/Entry Bar (`signal_bar`/`entry_bar`) | Setup bar / trigger bar | Signal: pattern completion bar; entry: first bar trading through signal extreme | rule-based |
 | Failed Signal (`failed_signal`) | Entry triggers then immediately fails | Entry bar close back beyond signal extreme within `fail_window_bars` | rule-based |
 
+## User-supplied definitions (2026-10-12, from chart-review notes)
+
+Verbatim Brooks-style meanings supplied by the user during Phase 4 review.
+Canonical-id assignments are PROPOSED (taxonomy v1.1, pending approval).
+
+| Term | User definition | Proposed canonical id | Class |
+|---|---|---|---|
+| OO (Outside-Outside) | Two consecutive outside bars (each a higher high + lower low vs prior bar); breakout mode — buy above the high / sell below the low | NEW `outside_outside` | rule-based |
+| ii (inside-inside) | Two consecutive inside bars (each a lower high + higher low vs prior bar); compression → breakout mode | NEW `inside_inside` | rule-based |
+| Triangle (incl. Expanding/Nested/Possible) | Trading range with ≥3 pushes in one direction between two lines; breakout imminent, direction ~50/50 | NEW `triangle` | semi-subjective |
+| TTR (Tight Trading Range) | Tight range at/soon after the open: 10+ small-body bars, many reversals, little net movement | NEW `tight_trading_range` | rule-based |
+| HST / Head and Shoulders Top | Selloff breaking the bull trend line, failed resumption without a new high, reversal down from the lower-high right shoulder | NEW `head_and_shoulders_top` | semi-subjective |
+| MTR (Major Trend Reversal) | High-probability reversal: strong trend-line break + test back + reversal signal | NEW `major_trend_reversal` (compounds like "LL MTR", "HL MTR", "LH DT MTR" map here, nuance kept in `raw_label`) | semi-subjective |
+| LL DB (Lower Low Double Bottom) | Double bottom whose second bottom slightly undercuts the first; sellers failed to push lower | NEW `lower_low_double_bottom` (mirrors `higher_low_double_bottom`) | rule-based |
+| Bear Trap | Failed downside breakout that reverses up fast, trapping shorts | Map → `failed_breakout` (bear) | rule-based |
+| Bull Trap (incl. 2nd Leg) | Failed upside breakout that reverses down fast, trapping longs | Map → `failed_breakout` (bull) | rule-based |
+| Midday Reversal (Bar 40/41) | On 78 bars/session, bar ~40-41 marks midday; reversal up/down off it | NEW `midday_reversal` | contextual |
+| Trend Resumption (up) | After a pullback/range in a bull trend, upside breakout continuing the trend; buy BO or first pullback | Map → `breakout` (bull) | semi-subjective |
+| TBTL (Ten Bars, Two Legs) | Minimum expected pullback: ~10 bars in ≥2 legs after a reversal; resumption cue, not a pattern | Keep unmapped (informational; stays in `raw_label`) | contextual |
+| Minor reversal | Few-bar reversal leading only to pullback/range, often a flag with the larger trend | Keep unmapped (informational) | contextual |
+| H1 / H2 / H3 | 1st/2nd/3rd pullback buy attempts in a bull trend (H3 ≈ wedge bull flag) | Existing `h1`/`h2` (+ engine note: H3 ≡ wedge variant, Phase 6) | rule-based |
+| L1 / L2 | 1st/2nd pullback sell attempts in a bear trend | Existing `l1`/`l2` | rule-based |
+| HH DT (Higher-High Double Top, user-confirmed 2026-10-12) | Double top whose second top is slightly higher than the first | Two highs within `dt_tolerance_ticks`, second higher by < `hhdt_max_ticks` — interim parent id `double_top` (dedicated id deferred to v1.2) | rule-based |
+
 > All thresholds are proposals. Phase 6 turns this draft into `docs/PATTERN_SPEC.md`
 > with exact algorithms; parameters move into `config/default.yaml`.
