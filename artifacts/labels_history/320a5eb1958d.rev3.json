@@ -1,0 +1,204 @@
+{
+  "date": "2022-04-01",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Triangle Possible Final Flag' with arrow at the opening congestion",
+      "label": "final_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "possible flag noted without annotated resolution",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Triangle Possible Final Flag",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green note '2nd entry buy DB LL MTR' with arrow near 10:00",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bounce followed into the midday range",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "2nd entry buy DB LL MTR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta 'Consecutive Wedge Bottoms' with dotted lines and arrow",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "wedge bottoms held and the decline stalled",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Consecutive Wedge Bottoms",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.4,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Same magenta note ends 'expect TBTL'; abbreviation not determinable",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "unknown what TBTL denotes",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "TBTL",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Red note 'DT Late in Trend, Final Flag Likely' with arrow at the 4515 area",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "late double top capped the bounce before the failed breakout",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "DT Late in Trend",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Green note 'Failed Breakout below a Wedge' with arrow at the 12:30 low",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "failed breakdown reversed up strongly (midday reversal)",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Failed Breakout below a Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta 'LL MTR' with arrow at the same 12:30 low",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "major trend reversal up carried into the close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "LL MTR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta note 'Trading Range Days often get a reversal up on bar 41. (Creates a Midday Reversal).'",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "midday reversal up played out into the strong close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "reversal up on bar 41 (Midday Reversal)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "320a5eb1958d",
+  "schema_version": 1,
+  "session_summary": "Friday bear trend from open, reversal into trading range and strong close: wedge bottoms stalled the decline, late DT capped a bounce, failed breakdown plus LL MTR and bar-41 midday reversal launched the afternoon rally. NOTE: filename says 2022-04-03 (Sunday) but title says Friday and axis ends '4/4' \u2014 labelled as Friday 2022-04-01. Axis runs 09:00-15:00 (possible ET feed \u2014 verify in Phase 5)."
+}

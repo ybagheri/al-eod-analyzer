@@ -8,98 +8,162 @@
       "confidence": 0.45,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Brown note 'Buy The Close' at the left edge; same ambiguous placement as other charts",
+      "evidence": "Orange text Buy The Close + beige vertical box on early bars x40-90",
       "label": "buy_the_close",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "unclear",
-      "outcome_reason": "cannot tell which close this refers to",
+      "outcome_reason": "explicit text; placement only approximate",
+      "placement": 0.45,
       "price_hint": null,
       "raw_label": "Buy The Close",
-      "source": "vision",
-      "start_time": null
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        40,
+        90
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.85,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Blue note 'High 2' near the lows (no time axis, omitted)",
+      "evidence": "Blue text High 2 near the open lows x30-80",
       "label": "h2",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "second high led the rally",
+      "outcome_reason": "",
+      "placement": 0.85,
       "price_hint": null,
       "raw_label": "High 2",
-      "source": "vision",
-      "start_time": null
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        30,
+        80
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
+      "confidence": 0.8,
+      "direction": "bear",
       "end_time": null,
-      "evidence": "Magenta note 'Minor Wedge' near 4082",
+      "evidence": "Magenta text Minor Wedge + magenta dotted lines x180-280",
       "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "minor"
+      ],
       "outcome": "success",
-      "outcome_reason": "minor wedge resolved up",
+      "outcome_reason": "wedge top formation",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Minor Wedge",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        180,
+        280
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.75,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Green note 'DB HL' near 4065",
-      "label": "double_bottom",
-      "outcome": "success",
-      "outcome_reason": "double bottom held into the rally",
-      "price_hint": null,
-      "raw_label": "DB HL",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Magenta note 'Wedge' at the same 4065 area",
+      "evidence": "Magenta/green text DB HL Wedge + green dotted horizontal + magenta lines x220-320",
       "label": "wedge",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "bottom",
+        "HL"
+      ],
       "outcome": "success",
-      "outcome_reason": "wedge bottom supported the rally",
+      "outcome_reason": "merged DB-HL and Wedge rows (same structure)",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "Wedge",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "DB HL Wedge (merged)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        220,
+        320
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.8,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Green note 'DB Bull Flag'",
+      "evidence": "Green text DB Bull Flag x280-360",
       "label": "bull_flag",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HL"
+      ],
       "outcome": "success",
-      "outcome_reason": "flag broke up with continuation",
+      "outcome_reason": "",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "DB Bull Flag",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        280,
+        360
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.5,
+      "confidence": 0.7,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Blue note 'Low 4'; L4 is not canonical",
-      "label": null,
+      "evidence": "Blue text Low 4 above mid-chart pullback x520-600",
+      "label": "low_4",
+      "label_explicit": 0.9,
+      "modifiers": [],
       "outcome": "partial",
-      "outcome_reason": "fourth low with limited follow-through",
+      "outcome_reason": "canonicalized per reviewer (standard Brooks entry; bull-flag context allows a buy setup)",
+      "placement": 0.7,
       "price_hint": null,
       "raw_label": "Low 4",
-      "source": "vision",
-      "start_time": null
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        520,
+        600
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta dotted parallel lines in the right half x450-750",
+      "label": "channel",
+      "label_explicit": 0.6,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "reviewer-missed content added back",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Right-half channel (missed)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        450,
+        750
+      ]
     }
   ],
   "extraction_meta": {
@@ -110,5 +174,5 @@
   },
   "image_id": "e1acdc514d5d",
   "schema_version": 1,
-  "session_summary": "Bull trend from the open, then resumption up: H2 off the lows, minor wedge, DB-HL wedge bottom, bull flag continuation, L4 into the highs near 4095. No time axis visible so all times are null."
+  "session_summary": "Bull trend from the open, then resumption up (reviewer tables): H2 off the lows, minor wedge top, merged DB-HL wedge bottom, bull flag, Low-4 entry in a bull-flag context (partial), then channel into the highs. Ambiguous standalone Wedge row dropped (overlaps Minor Wedge/DB HL). Missed: right-half channel, green support ~4063-4064, signal boxes (color pass), late bull/small-pullback structure."
 }

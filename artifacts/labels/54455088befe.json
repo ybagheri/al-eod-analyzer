@@ -5,131 +5,219 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Overlapping sideways bars from the open inside dotted triangle lines",
-      "label": "trading_range_begin",
-      "outcome": "success",
-      "outcome_reason": "range contained price all day",
-      "price_hint": null,
-      "raw_label": "trading range begins",
-      "source": "vision",
-      "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
+      "confidence": 0.7,
+      "direction": "bull",
       "end_time": {
-        "time": "10:00",
+        "time": "10:25",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue dotted triangle lines over the morning plus magenta wedge lines at the left; no text annotation",
+      "evidence": "two converging blue dotted lines (~4485 to ~4466 top, ~4455 to ~4459.5 bottom); upside breakout 10:25-10:35 to the open",
       "label": "triangle",
-      "outcome": "unclear",
-      "outcome_reason": "graphics only, no annotated resolution",
+      "label_explicit": 0.0,
+      "modifiers": [
+        "contracting"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
       "price_hint": null,
-      "raw_label": "triangle lines",
+      "raw_label": "contracting triangle",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Red signal boxes near 07:00 before the morning slide",
-      "label": "signal_bar",
-      "outcome": "success",
-      "outcome_reason": "morning slide followed",
-      "price_hint": null,
-      "raw_label": "red signal boxes",
-      "source": "vision",
-      "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Green signal boxes near 10:30 before the rally to the open of day",
-      "label": "signal_bar",
-      "outcome": "success",
-      "outcome_reason": "rally to open-of-day followed",
-      "price_hint": null,
-      "raw_label": "green signal boxes",
-      "source": "vision",
-      "start_time": {
-        "time": "10:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": {
-        "time": "11:30",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Large down bars 11:00-11:30 with red boxes, immediately reversed up (V bottom)",
-      "label": "spike",
-      "outcome": "fail",
-      "outcome_reason": "spike down got no continuation; sharp reversal instead",
-      "price_hint": null,
-      "raw_label": "spike down and reverse",
-      "source": "vision",
-      "start_time": {
-        "time": "11:00",
-        "tz": "America/Los_Angeles"
-      }
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.55,
+      "confidence": 0.6,
       "direction": "bull",
       "end_time": {
-        "time": "12:00",
+        "time": "08:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Sharp up bars 11:30-12:00 to ~4498, then sideways fade",
-      "label": "spike",
-      "outcome": "partial",
-      "outcome_reason": "spike up reached new highs then faded sideways",
+      "evidence": "magenta descending lines to the triangle lower line",
+      "label": "wedge",
+      "label_explicit": 0.3,
+      "modifiers": [
+        "bottom",
+        "unverified"
+      ],
+      "outcome": "success",
+      "outcome_reason": "no pattern name on chart",
+      "placement": 0.6,
       "price_hint": null,
-      "raw_label": "spike up and fade",
-      "source": "vision",
+      "raw_label": "wedge bottom (unverified)",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "11:30",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red box graphic",
+      "label": "signal_bar",
+      "label_explicit": 0.3,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "red signal box 4467",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "06:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red box graphic",
+      "label": "signal_bar",
+      "label_explicit": 0.3,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "red signal box 4464",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.5,
-      "direction": "neutral",
+      "direction": "bear",
       "end_time": null,
-      "evidence": "Price still overlapping sideways at the 13:00 axis end",
-      "label": "trading_range_end",
-      "outcome": "success",
-      "outcome_reason": "day closed inside the range",
+      "evidence": "red box graphic; only ~3pts above the low",
+      "label": "signal_bar",
+      "label_explicit": 0.3,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "marginal: too close to the low",
+      "placement": 0.7,
       "price_hint": null,
-      "raw_label": "trading range ends",
-      "source": "vision",
-      "start_time": {
-        "time": "13:00",
+      "raw_label": "red signal box 4458",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:45",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "evidence": "green boxes ~4462/4469/4473 before the rise to the open",
+      "label": "signal_bar",
+      "label_explicit": 0.3,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "grouped; per-box color detection is future work",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "buy boxes 10:15-10:45",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "V bottom at ~4444.5 after the slide",
+      "label": "climax",
+      "label_explicit": 0.3,
+      "modifiers": [
+        "reversal"
+      ],
+      "outcome": "success",
+      "outcome_reason": "retraced ~130% of the down leg",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "climax reversal (low)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "top at ~4499.5 then fade toward the open",
+      "label": "climax",
+      "label_explicit": 0.3,
+      "modifiers": [
+        "reversal"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "retraced ~64% of the up leg",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "climax reversal (high)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "long upper shadow to ~4495 with immediate return",
+      "label": "failed_breakout",
+      "label_explicit": 0.2,
+      "modifiers": [
+        "unverified",
+        "above_open"
+      ],
+      "outcome": "success",
+      "outcome_reason": "probable; unverified",
+      "placement": 0.5,
+      "price_hint": null,
+      "raw_label": "probable failed breakout above open",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     }
   ],
   "extraction_meta": {
@@ -140,5 +228,5 @@
   },
   "image_id": "54455088befe",
   "schema_version": 1,
-  "session_summary": "Trading range day with lots of reversals: almost no text annotations; triangle/wedge lines in the morning, red and green signal boxes both sides, a failed down spike at 11:00 and a fading up spike at noon. Graphics-only reading, modest confidence."
+  "session_summary": "Trading range day with lots of reversals (tags: lots_of_reversals): contracting triangle 06:35-10:25 breaking up to the open-of-day line (~4477.5), unverified wedge bottom, clustered signal boxes, V-shaped climax reversals at ~4444.5 and ~4499.5, probable failed breakout above the open. Times +-5-10min; date 2022-04-06 from 4/6-4/7 markers (year inferred)."
 }

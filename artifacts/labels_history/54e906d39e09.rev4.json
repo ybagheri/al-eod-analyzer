@@ -1,0 +1,232 @@
+{
+  "date": null,
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.9,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "brown note + arrow on the first bars (x 58-88, 4044 to 4029)",
+      "label": "sell_the_close",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "~77pt slide to the low",
+      "placement": 0.9,
+      "price_hint": null,
+      "raw_label": "Sell The Close",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        58,
+        88
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "red note at the ~3969 low (x 215-360), rally to ~4001",
+      "label": "climax",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "reversal",
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged with minor reversal: bounce success (EMA reached), deeper reversal failed",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        215,
+        360
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red dotted line ~4001 with red box below ~3990 (x 350-460)",
+      "label": "ema_gap_bar",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "unverified"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "first pullback to the EMA; next bar exceeded 4004 so the stop likely hit; 20-bar-no-touch definition unverified",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "20-Gap Bar Sell",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        350,
+        460
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "magenta rising lines x 395-460, 3984 to 4004",
+      "label": "wedge",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "top",
+        "at_ema"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "wedge top at EMA",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        395,
+        460
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "bull attempt 4004 then slide to 3966 (x 395-480)",
+      "label": "failed_breakout",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "at_ema"
+      ],
+      "outcome": "success",
+      "outcome_reason": "claim-based: the breakout failed and price fell ~38pts; breakout_dir was bull",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Failed breakout above Wedge at EMA",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        395,
+        480
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "wedge bottom with LL major reversal at ~3966 (x 385-690), rally ~32pts to ~3998",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom",
+        "LL",
+        "mtr"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged Wedge + LL MTR rows (same low)",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "wedge bottom + LL MTR",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        385,
+        690
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "higher low ~3973 (x 720-870); through ~3985 to ~3998 then back",
+      "label": "major_trend_reversal",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HL"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "HL MTR",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        720,
+        870
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "second-leg trap at ~3998 (x 830-905), ~20pt return",
+      "label": "failed_breakout",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "2nd_leg"
+      ],
+      "outcome": "success",
+      "outcome_reason": "claim-based: trap worked; breakout_dir was bull",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "2nd Leg Bull Trap",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        830,
+        905
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "overlapping bars 3966-3998 into the close",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "afternoon trading range",
+      "role": "day_part",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        700,
+        1050
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "54e906d39e09",
+  "schema_version": 1,
+  "session_summary": "Bear trend from the open, then trading range (reviewer: bear_trend_from_open_then_trading_range): gap-bar sell into a sell climax near 3970, failed bull breakout, wedge/LL-MTR bottom bounce, then a 3966-3998 range with HL MTR and a second-leg bull trap. No time/date axis: times and date are null; positions are x_px. Price calibration ~5.7px/pt, +-2pts."
+}

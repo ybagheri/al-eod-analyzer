@@ -11,8 +11,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 4 — Human review & gold set
-- Phase status: tooling + v1.1 committed (4a7a54b, pushed); user label review pending, gold 0/33
-- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 51 files / mypy --strict ✓ 21 files / pytest 113 passed / coverage 93.4%)
+- Phase status: done (all DoD met, awaiting final commit/push approval)
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 52 files / mypy --strict ✓ 21 files / pytest 118 passed / coverage 93.4%)
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 52 files / mypy --strict ✓ 21 files / pytest 118 passed / coverage 93.4%)
 
 ## 3. What was done in this session
 
@@ -61,6 +62,12 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   via `brooks_lab.__file__` + dist-info `direct_url.json`; fixed by uninstall + reinstall
   editable (`--no-build-isolation` after adding setuptools/wheel); regression guard
   `test_package_resolves_to_repo_src` added. No data was harmed (labels re-validated).
+- DATA INCIDENT 2026-10-12 (agent fault): ran `brooks extract` after the CLI default
+  prompt moved v1→v2, so resume did not skip and 33 labels were overwritten from stale
+  queue responses (review work at risk). Recovered by re-applying corrections (history
+  kept the junk intermediate revs — truthful chain). Guard added: extract skips labels
+  with history unless `--clobber-reviewed` (+ test). Hypothesis (unverified): E: drive
+  may be cloud-synced (also explains a transient stale read); user to confirm.
 - Phase 4 tooling implemented: `ReviewService` (apply corrections with history archive +
   human-source marking, gold registry `artifacts/gold_set.json`, label stats,
   deterministic stratified sampling); review HTML pages (image left, label right,
@@ -72,19 +79,30 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   re-run idempotent) + one-off scripts/remap_taxonomy_v11.py; review queue
   45→19 items (all per keep-list/deferred); "Measuring Gaps" plural also demoted
   (agent judgment, reversible, flagged); HHDT resolved as Higher-High→double_top.
+- Review rounds 2-3 applied (user specs 2026-10-12): 7 reworks round 2 (08-18 wedge identity,
+  09-12 x_px table, 08-08 bare surprise + merged DT/HST, 08-09 HL split, 04-04 phases,
+  08-16 10-row + date null, 08-26 advice split + veto + date null) + 10401c70 day-split
+  note + 08-03 bare-surprise fix + 7 gold marks; 8 reworks round 3 (07-07 context split,
+  08-15 regime change, 08-29 end-fix, 08-05 13-row split, 08-25 day change, 08-22 16-row,
+  09-09 Low-4 canonical, 08-12 veto accepted). New ids: bear_surprise, trend_line,
+  low_4, measuring_gap, bull_trend_resumption (taxonomy v1.2, ADR-008/009).
+- Bulk gold 2026-10-12: all 25 HIGH-reviewed labels marked gold (7 LOW already gold);
+  gold set 32/33 (only 10401c705b30 reviewed-not-approved). Phase 4 DoD met.
 
 ## 4. Decisions made (link to ADR numbers)
 
 - ADR-001: tech stack (PEP 621, typer/pydantic, ruff/mypy/pytest, tasks.py gate) — see `docs/DECISIONS.md`.
 - ADR-004: taxonomy v1 frozen; Pacific axis time; unmapped→review-queue design.
 - ADR-005: pilot extraction by the coding agent via file exchange (first-pass, not ground truth).
+- ADR-006: taxonomy v1.1 (8 new ids, trap mappings, HHDT resolution).
+- ADR-007: reviewer-driven schema extension (modifiers/role/explicit/placement/x_px, optional date) + claim-based outcome + result-direction + prompt v2 + feed-timezone theory.
+- ADR-008: round-2 review (roles CONTEXT/ADVICE/BAR_PATTERN, bare bear_surprise/trend_line ids, 13 prompt rules, gold-aware extract guard).
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. USER: review the 33 labels via artifacts/review/pages/index.html (lowest confidence first); reply with corrections and/or bulk APPROVE.
-2. Agent: author corrections files + `brooks review-apply` (history archived, gold marked).
-3. After approval of tooling: commit (`feat: Phase 4 review workflow and kit`) + push.
-4. Phase 5 starts ONLY on explicit user instruction.
+1. USER: approve round-2+3 commit (schema roles/ids, prompt v2 rules, 18 corrected labels, 7 gold, guards).
+2. USER: gold-mark the 18 reviewed-but-unmarked labels (all 25 HIGH now reviewed) + confirm 10401c70 gold; or send corrections.
+3. Phase 5 starts ONLY on explicit user instruction.
 
 ## 6. Open questions / blockers
 
@@ -106,7 +124,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 8. Data & artifact state
 
 - Images in data/: 33 (15 JPEG + 18 PNG) | Manifest entries: 33/33 (all ok)
-- Labels extracted: 33/33 first-pass (valid_rate 1.00, 0 quarantined, 254 events, 19 unmapped — v1.1 remap done, all remaining per keep-list/deferred) | Reviewed: 0 | Gold set: 0
+- Labels extracted: 33/33 (valid_rate 1.00, 0 quarantined, 285 events, 48 unmapped/46 distinct — incl. reviewer-spec'd structure/day-part rows, 11 day types live) | Reviewed: 33/33 (25 HIGH + 8 LOW) | Gold set: 32/33 (10401c705b30 pending approval)
 - Dates CONFIRMED by user 2026-10-12: 04-02 file = 03-31 session, 04-03 file = 04-01 session; 07-29 confirmed correct, 07-22 duplicate file DELETED (manifest/labels/queue cleaned, manifest regenerated 33/33).
 - Date flags: 04-02→03-31 and 04-03→04-01 relabelled from title weekday (pipeline warnings fired correctly), both CONFIRMED by user; 07-22/07-29 duplicate resolved (07-29 kept, 07-22 deleted); April + Sep-23 axes run 09:00-15:00 (possible ET feed — Phase 5 must verify, see §6)
 - PNG batch (08-01…09-23) has no readable time axis → event times null (15 of 29 new labels)

@@ -5,165 +5,281 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
+      "confidence": 0.8,
+      "direction": "bear",
       "end_time": {
-        "time": "07:30",
+        "time": "07:32",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta note 'Minor Parabolic Wedge' over the opening rally to ~4137",
+      "evidence": "magenta note, top ~4138 x98-235",
       "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "parabolic",
+        "minor"
+      ],
       "outcome": "success",
-      "outcome_reason": "parabolic top reversed into the washout",
+      "outcome_reason": "wedge TOP (title says Top); ~18pt slide to ~4119.5; minor: ended in range",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Minor Parabolic Wedge",
-      "source": "vision",
-      "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.4,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Brown 'ii' mark near 07:30; meaning not determinable",
-      "label": "inside_inside",
-      "outcome": "unclear",
-      "outcome_reason": "unknown what ii denotes",
-      "price_hint": null,
-      "raw_label": "ii",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "07:30",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        98,
+        235
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": {
+        "time": "07:18",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two inside bars x178-202, 4126-4130, inside the first up pullback",
+      "label": "inside_inside",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "resolution_bull",
+        "unverified"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "breakout-mode compression; resolution bull after continuation to 4138 (unverified)",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "ii",
+      "role": "bar_pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:08",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        178,
+        202
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
       "direction": "bear",
       "end_time": {
         "time": "08:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Red note 'Minor LH DT' near 4135",
+      "evidence": "red note, two tops ~4134.3",
       "label": "lower_high_double_top",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "minor"
+      ],
       "outcome": "success",
-      "outcome_reason": "test failed into the decline",
+      "outcome_reason": "~28pt slide to the 09:15 low",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Minor LH DT",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "08:00",
+        "time": "07:55",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        288,
+        383
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "direction": "bull",
-      "end_time": null,
-      "evidence": "Green/blue notes '50% PB EMA' near 4117",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "stacked green 50% PB + blue EMA notes, structure ~4119.5 x312-335",
       "label": "pullback_50pct",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "at_ema"
+      ],
       "outcome": "success",
-      "outcome_reason": "pullback to the EMA held and bounced",
+      "outcome_reason": "~54% of the 4104-4138 rise retraced; ~14pt bounce after",
+      "placement": 0.75,
       "price_hint": null,
       "raw_label": "50% PB EMA",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        312,
+        335
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "low ~4105.3; reference (open low ~4104) unverified",
+      "label": "double_bottom",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HL",
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "independent structure; see linked second",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Minor HL DB (first)",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
         "time": "09:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        440,
+        480
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue note 'Minor HL DB' near 4108",
-      "label": "micro_double_bottom",
-      "outcome": "success",
-      "outcome_reason": "minor bottom held into the recovery",
-      "price_hint": null,
-      "raw_label": "Minor HL DB",
-      "source": "vision",
-      "start_time": {
-        "time": "09:15",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "direction": "bear",
       "end_time": {
-        "time": "10:45",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Red note 'Minor LH DT in TR' near 4132",
-      "label": "lower_high_double_top",
-      "outcome": "success",
-      "outcome_reason": "test failed inside the range",
-      "price_hint": null,
-      "raw_label": "Minor LH DT in TR",
-      "source": "vision",
-      "start_time": {
-        "time": "10:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.4,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Brown 'OO' mark near 11:00; meaning not determinable",
-      "label": "outside_outside",
-      "outcome": "unclear",
-      "outcome_reason": "unknown what OO denotes",
-      "price_hint": null,
-      "raw_label": "OO",
-      "source": "human",
-      "start_time": {
         "time": "11:00",
         "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Green note 'Minor HL DB' near 4117 (second)",
-      "label": "micro_double_bottom",
+      },
+      "evidence": "red note, tops ~4132-4133 x672-718",
+      "label": "lower_high_double_top",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "minor",
+        "in_tr"
+      ],
       "outcome": "success",
-      "outcome_reason": "held into the afternoon range",
+      "outcome_reason": "~16pt slide to 11:30",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "Minor HL DB",
-      "source": "vision",
-      "start_time": {
-        "time": "11:45",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Blue note 'Triangle' with the second Minor HL DB",
-      "label": "triangle",
-      "outcome": "unclear",
-      "outcome_reason": "triangle noted without annotated resolution",
-      "price_hint": null,
-      "raw_label": "Triangle",
+      "raw_label": "Minor LH DT in TR",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "11:45",
+        "time": "10:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        672,
+        718
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "neutral",
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two outside bars x745-785, 4120-4132",
+      "label": "outside_outside",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "resolution_bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "resolution bear: ~15pt slide to the 11:30 low",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "OO",
+      "role": "bar_pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        745,
+        785
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two near-level lows ~4116 / ~4115.5 (green dotted) x598-810",
+      "label": "double_bottom",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HL",
+        "minor",
+        "linked_db1"
+      ],
+      "outcome": "success",
+      "outcome_reason": "HL = higher than the 09:15 low; linked to first; model timed it 11:45, structure starts 10:05",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Minor HL DB (second)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        598,
+        810
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "upper 4138 to ~4129.2 (12:15), lower ~4104 to ~4118.5 (12:40); 09:15 low undercut the lower line ~5pts (lower_line_undercut); upside breakout 12:58-13:14 (x1010-1050) to ~4134.5",
+      "label": "triangle",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "contracting",
+        "resolution_bull"
+      ],
+      "outcome": "success",
+      "outcome_reason": "not a moment at 11:45: full-range structure",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "all-day contracting triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "06:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        110,
+        955
+      ]
     }
   ],
   "extraction_meta": {
@@ -174,5 +290,5 @@
   },
   "image_id": "7660fadf081f",
   "schema_version": 1,
-  "session_summary": "Parabolic wedge top, then triangle: minor parabolic top washed to 4108, 50% pullback at the EMA, minor HL double bottoms, LH double tops failing in the range, triangle into the close."
+  "session_summary": "Parabolic wedge top, then triangle (reviewer: parabolic_wedge_top_then_triangle): minor parabolic top 06:35-07:32, LH double tops failing, 50% pullback at the EMA, minor HL double bottoms (two independent, linked), full-range contracting triangle with 09:15 undercut, upside breakout ~12:58. Date 09-12 from axis markers (year unverified); axis ~06:35-13:15."
 }

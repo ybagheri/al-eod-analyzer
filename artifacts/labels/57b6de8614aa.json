@@ -5,60 +5,135 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.8,
+      "confidence": 0.85,
       "direction": "bear",
       "end_time": {
-        "time": "07:00",
+        "time": "09:00",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Brown note 'Bear Trend From The Open but big bars so probably will not last all day' over big opening bear bars",
+      "evidence": "three big opening bear bars 4165 to 4150, slide to 4120.5",
       "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "call was right: the bear trend did not last and reversed up",
+      "outcome_reason": "day phase, confirmed",
+      "placement": 0.85,
       "price_hint": null,
-      "raw_label": "Bear Trend From The Open but big bars so probably will not last all day",
-      "source": "vision",
+      "raw_label": "bear trend from open (day phase)",
+      "role": "day_phase",
+      "source": "human",
       "start_time": {
-        "time": "06:30",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "06:48",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown note over the first bars (4165-4150)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "big_bars"
+      ],
+      "outcome": "success",
+      "outcome_reason": "expectation (probably/likely language); trend ended ~2.5h later, price back to ~4162",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "bear trend will not last",
+      "role": "expectation",
+      "source": "human",
+      "start_time": {
+        "time": "06:36",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two lows ~4135.5 (07:05, 07:20), bounce to ~4150 at 07:30",
+      "label": "double_bottom",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "pullback",
+        "unverified"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "bounce success (+14.5pts); reversal fail (support broken 08:05, low 4120.5 at 09:00); pullback reading unverified",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "DB PB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
       "direction": "bear",
       "end_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Wedge' with dotted lines at the morning top; red 'Low 2'",
+      "evidence": "magenta lines, top ~4143-4150",
       "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top"
+      ],
       "outcome": "success",
-      "outcome_reason": "downtrend continued toward the 4120 area",
+      "outcome_reason": "~30pt slide after",
+      "placement": 0.8,
       "price_hint": null,
-      "raw_label": "Wedge",
-      "source": "vision",
+      "raw_label": "wedge top",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "07:00",
+        "time": "07:10",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Green 'DB PB' note near 07:45 above the pullback",
-      "label": null,
-      "outcome": "fail",
-      "outcome_reason": "price made a lower low to 4120 after the double-bottom pullback",
-      "price_hint": null,
-      "raw_label": "DB PB",
-      "source": "vision",
-      "start_time": {
-        "time": "07:45",
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "evidence": "red Low 2 text (previously only in wedge evidence)",
+      "label": "l2",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second sell entry after the two-legged pullback",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Low 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -68,91 +143,133 @@
         "time": "09:00",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Wedge' with dotted lines into the 4120 low near 08:45-09:00",
+      "evidence": "magenta lines from the first low; three pushes ~4135.5 / ~4124 / 4120.5",
       "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom"
+      ],
       "outcome": "success",
-      "outcome_reason": "wedge bottom launched the day-long reversal",
+      "outcome_reason": "",
+      "placement": 0.8,
       "price_hint": null,
-      "raw_label": "Wedge",
-      "source": "vision",
-      "start_time": {
-        "time": "08:15",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bull",
-      "end_time": {
-        "time": "10:00",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Green 'Micro DB' note near 09:30-10:00",
-      "label": "micro_double_bottom",
-      "outcome": "success",
-      "outcome_reason": "bounce continued into the bull channel",
-      "price_hint": null,
-      "raw_label": "Micro DB",
-      "source": "vision",
-      "start_time": {
-        "time": "09:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Brown 'HL MTR' note at the same higher-low area",
-      "label": "major_trend_reversal",
-      "outcome": "success",
-      "outcome_reason": "major trend reversal up played out through the close",
-      "price_hint": null,
-      "raw_label": "HL MTR",
+      "raw_label": "wedge bottom",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "09:30",
+        "time": "07:05",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two lows ~4130 (09:50, 10:05), short magenta descending line to ~4129.5",
+      "label": "major_trend_reversal",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HL",
+        "micro_db"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged HL MTR + Micro DB rows (same zone)",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "HL MTR + Micro DB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.8,
       "direction": "bull",
       "end_time": {
-        "time": "13:00",
+        "time": "12:00",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Brown note 'Wedges but tight bull channel so minor reversals'; overlapping grind with green boxes",
+      "evidence": "blue/magenta/green lines to ~4148; 12:00-12:30 is pullback, then closing spike",
       "label": "channel",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "tight",
+        "with_wedges",
+        "minor_reversals"
+      ],
       "outcome": "success",
-      "outcome_reason": "channel carried into the closing spike",
+      "outcome_reason": "",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "tight bull channel",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "10:00",
+        "time": "09:15",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.7,
+      "confidence": 0.75,
       "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue 'High 1' note near 12:30 before the closing spike",
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "bar above the blue pullback line (~4140 to 4147)",
       "label": "h1",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "first high led to the strong close",
+      "outcome_reason": "spike to ~4162 after",
+      "placement": 0.75,
       "price_hint": null,
       "raw_label": "High 1",
-      "source": "vision",
+      "role": "entry_signal",
+      "source": "human",
       "start_time": {
         "time": "12:30",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "4144 to 4162, no annotation",
+      "label": "spike",
+      "label_explicit": 0.3,
+      "modifiers": [
+        "unlabeled"
+      ],
+      "outcome": "success",
+      "outcome_reason": "inferred; no text support",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "closing spike (unlabeled)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     }
   ],
   "extraction_meta": {
@@ -163,5 +280,5 @@
   },
   "image_id": "57b6de8614aa",
   "schema_version": 1,
-  "session_summary": "Bear trend then wedge bottom and bull trend reversal: heavy bear open failed to last, wedge bottom near 4120 at 09:00, then a tight bull channel with minor reversals into a strong close."
+  "session_summary": "Bear trend then wedge bottom and bull reversal (reviewer: bear_trend_then_bull_reversal): bear phase 06:35-09:00 (4165 to 4120.5), DB pullback with bounce-ok/reversal-fail, wedge top, Low-2 entry, 3-push wedge bottom to 4120.5 at 09:00, merged HL-MTR/micro-DB 09:50-10:10, tight bull channel 09:15-12:00, H1 12:30-12:40, closing spike to ~4162. Image shows 5/4-5/5 only: year 2021 from filename is UNVERIFIED. Supports 4135.5 and ~4138.5; signal boxes by color detection (future work)."
 }

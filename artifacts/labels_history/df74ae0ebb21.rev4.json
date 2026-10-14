@@ -1,0 +1,345 @@
+{
+  "date": "2022-08-25",
+  "day_type": "bull_trend_from_open",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Brown note near opening bars x100-180",
+      "label": "buy_the_close",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "explicit text; target bar uncertain",
+      "placement": 0.5,
+      "price_hint": null,
+      "raw_label": "Buy The Close",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        100,
+        180
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Blue label and magenta dotted lines x190-285",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "top",
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "minor top formation",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Nested Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        190,
+        285
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue note near later pullback x850-900",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "not a standalone base pattern: context note",
+      "placement": 0.6,
+      "price_hint": null,
+      "raw_label": "Breakout Test",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        850,
+        900
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Magenta label and opening rally structure x190-310",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "top",
+        "parabolic"
+      ],
+      "outcome": "success",
+      "outcome_reason": "parabolic top reversed into the deep pullback",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        190,
+        310
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note and pullback around EMA x400-470",
+      "label": "double_top",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "HH",
+        "at_ema"
+      ],
+      "outcome": "success",
+      "outcome_reason": "local pullback top",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "HH DT at EMA",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        400,
+        470
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue annotation near the recovery low x490-600",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [
+        "mtr"
+      ],
+      "outcome": "success",
+      "outcome_reason": "midday reversal context observed",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Bar 40 Midday Reversal",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        490,
+        600
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green note under the recovery structure x490-650",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "resumption context (not a standalone breakout)",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Trend Resumption up",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        490,
+        650
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta label and dotted lines near the midday low x460-590",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Wedge (midday low)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        460,
+        590
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green LL DB annotation near the low x460-590",
+      "label": "lower_low_double_bottom",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "LL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "kept separate from the wedge row (SPLIT per reviewer)",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "LL DB (midday low)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        460,
+        590
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue Breakout Test note near the right-side wedge x840-900",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "context only",
+      "placement": 0.6,
+      "price_hint": null,
+      "raw_label": "Breakout Test (right)",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        840,
+        900
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Magenta dotted upper structure before pullback x670-890",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Wedge (upper)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        670,
+        890
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green LL DB note near the right-side low x840-900",
+      "label": "lower_low_double_bottom",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "LL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "LL DB (right low)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        840,
+        900
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Brown note 9 bull bars x630-770",
+      "label": "spike",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "consecutive"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "bar count needs independent verification",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "9 bull bars",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        630,
+        770
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green expectation note x625-770",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "expectation of continuation, not confirmation at note time",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Expect 2nd leg up",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        625,
+        770
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "df74ae0ebb21",
+  "schema_version": 1,
+  "session_summary": "Bull trend from open with deep pullback and trend resumption (reviewer 0.80, qualitative): opening rally with parabolic wedge, deep pullback to ~4157-4160, HH-DT pullback at the EMA, wedge/LLDB bottom with bar-40 midday reversal, resumption with 9 bull bars to ~4202. Deep pullback + trend resumption noted; reversals are local pullbacks inside the trend. No full time axis: times null."
+}

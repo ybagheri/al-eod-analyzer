@@ -70,7 +70,8 @@ def render_review_index(
     """Render the index page linking every review page (lowest day-confidence first)."""
     items = "".join(
         f"<li><a href='{html.escape(label.image_id)}.html'>{html.escape(label.image_id)}</a> "
-        f"{html.escape(label.date.isoformat())} {html.escape(label.day_type.value)} "
+        f"{html.escape(label.date.isoformat() if label.date else 'date unknown')} "
+        f"{html.escape(label.day_type.value)} "
         f"{label.day_type_confidence:.2f}"
         f"{' GOLD' if label.image_id in gold_ids else ''}</li>"
         for label in sorted(labels, key=lambda item: item.day_type_confidence)

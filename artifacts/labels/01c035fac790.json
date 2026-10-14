@@ -5,117 +5,186 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.8,
       "direction": "neutral",
-      "end_time": null,
-      "evidence": "Left edge of the sideways overlapping price action after the opening drive",
-      "label": "trading_range_begin",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "title + overlapping bars all day",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "range contained price the rest of the day",
+      "outcome_reason": "starts at the open, not after an opening drive",
+      "placement": null,
       "price_hint": null,
-      "raw_label": "Trading range day begins",
-      "source": "vision",
+      "raw_label": "trading range 06:30-13:00",
+      "role": "day_part",
+      "source": "human",
+      "start_time": {
+        "time": "06:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted rising lines",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "followed by sell-off to the 07:45 low",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "wedge top",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
         "time": "06:45",
         "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Price still overlapping sideways into the 13:00 axis end",
-      "label": "trading_range_end",
-      "outcome": "success",
-      "outcome_reason": "day closed inside the range",
-      "price_hint": null,
-      "raw_label": "Trading range day ends",
-      "source": "vision",
-      "start_time": {
-        "time": "13:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue instructional note 'Look for wedge tops and bottoms'; dotted magenta wedge lines on the morning top",
-      "label": "wedge",
-      "outcome": "partial",
-      "outcome_reason": "top reversed but range gave back part of the move",
-      "price_hint": null,
-      "raw_label": "wedge top",
-      "source": "vision",
-      "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      }
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.65,
       "direction": "bull",
       "end_time": {
         "time": "08:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Dotted magenta wedge lines into the morning low near 4135-4140 with red then green boxes",
-      "label": "wedge",
+      "evidence": "two near-equal lows (4136, 4139), rally after the second",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "partial",
-      "outcome_reason": "bottom reversed but range gave back part of the move",
+      "outcome_reason": "may also be a wedge bottom; kept as one entry",
+      "placement": null,
       "price_hint": null,
-      "raw_label": "wedge bottom",
-      "source": "vision",
+      "raw_label": "double bottom",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": {
-        "time": "12:30",
+        "time": "07:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Instructional note 'and double tops and bottoms'; M-shaped top near 4160 with red boxes around 12:15-12:30",
-      "label": "double_top",
-      "outcome": "partial",
-      "outcome_reason": "dip followed but stayed inside the range",
-      "price_hint": null,
-      "raw_label": "double top",
-      "source": "vision",
-      "start_time": {
-        "time": "12:15",
-        "tz": "America/Los_Angeles"
-      }
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.55,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta rising lines from 10:00 low into the red dotted line",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "wedge top",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted horizontal line at 4158",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "double top",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
       "direction": "bull",
       "end_time": {
         "time": "12:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Dip to ~4148 with red boxes then green reversal boxes near 12:45",
-      "label": "double_bottom",
-      "outcome": "partial",
-      "outcome_reason": "bounce followed but stayed inside the range",
+      "evidence": "green dotted horizontal line; touches ~10:45-11:15, 11:45, 12:45",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [
+        "support"
+      ],
+      "outcome": "success",
+      "outcome_reason": "the 12:45 low is the last test of this support, not a separate double bottom",
+      "placement": null,
       "price_hint": null,
-      "raw_label": "double bottom",
-      "source": "vision",
+      "raw_label": "range support 4148",
+      "role": "structure",
+      "source": "human",
       "start_time": {
-        "time": "12:30",
+        "time": "10:15",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta rising lines, then sell-off to ~4148 by 12:45",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "wedge top",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     }
   ],
   "extraction_meta": {
@@ -126,5 +195,5 @@
   },
   "image_id": "01c035fac790",
   "schema_version": 1,
-  "session_summary": "Trading range day roughly 4135-4165: wedge tops and bottoms plus double tops and bottoms; buy reversals up, sell reversals down, quick profits."
+  "session_summary": "Trading range day 06:30-13:00 (reviewer-measured high ~4165, low 4136): range from the open with a morning wedge top, double bottom 07:45-08:45 (also readable as wedge bottom), midday wedge top and double top under the red dotted line, range support 4148 tested into 12:45, late wedge top fading to support. Signal boxes not individually labeled."
 }

@@ -5,154 +5,248 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.85,
       "direction": "neutral",
-      "end_time": null,
-      "evidence": "Brown note 'TTR on open / Increase odds of a trading range day' at the left edge",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "tight overlapping bars 4580-4593",
       "label": "tight_trading_range",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "on_open"
+      ],
       "outcome": "success",
-      "outcome_reason": "day stayed a trading range into the late breakout",
+      "outcome_reason": "day stayed a range into 14:10",
+      "placement": 0.85,
       "price_hint": null,
       "raw_label": "TTR on open",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "09:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": {
-        "time": "10:00",
+        "time": "08:35",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Wedge top, but TCH so minor reversal likely' with dotted lines near 4596",
-      "label": "wedge",
-      "outcome": "partial",
-      "outcome_reason": "only a minor reversal followed in the tight channel",
-      "price_hint": null,
-      "raw_label": "Wedge top, but TCH so minor reversal likely",
-      "source": "vision",
-      "start_time": {
-        "time": "09:30",
-        "tz": "America/Los_Angeles"
-      }
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.55,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta lines to the ~4597 top; TCH reads as tight (bull) channel",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "tight_bull_channel",
+        "expects_minor_reversal"
+      ],
+      "outcome": "success",
+      "outcome_reason": "expects minor reversal: ~14pt slide, as expected",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "wedge top in tight channel",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
       "direction": "neutral",
       "end_time": {
-        "time": "10:30",
+        "time": "11:05",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue 'Triangle' note with dotted lines near 10:00-10:30",
+      "evidence": "blue lines 4583-4592 breaking down",
       "label": "triangle",
-      "outcome": "unclear",
-      "outcome_reason": "triangle noted without annotated resolution",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "contracting",
+        "resolution_bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "resolution bear",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "Triangle",
+      "raw_label": "contracting triangle",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "10:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": {
-        "time": "12:00",
+        "time": "10:20",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Wedge Bottom / Tight Bear CH so minor reversal up likely' with dotted lines",
-      "label": "wedge",
-      "outcome": "partial",
-      "outcome_reason": "minor bounce only inside the tight bear channel",
-      "price_hint": null,
-      "raw_label": "Wedge Bottom",
-      "source": "vision",
-      "start_time": {
-        "time": "11:30",
-        "tz": "America/Los_Angeles"
-      }
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta lines to the ~4572.5 low",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom",
+        "tight_bear_channel",
+        "expects_minor_reversal_up"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged Wedge Bottom + Tight Bear CH notes; expects minor reversal up: ~12pt bounce to ~4584.5",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "wedge bottom in tight bear channel",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
       "direction": "bear",
       "end_time": {
-        "time": "12:30",
+        "time": "14:10",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Same magenta note: 'Tight Bear CH'",
-      "label": "channel",
+      "evidence": "two red dotted lines; the LL-MTR bounce was rejected here",
+      "label": null,
+      "label_explicit": 0.3,
+      "modifiers": [
+        "range_resistance"
+      ],
       "outcome": "success",
-      "outcome_reason": "bear channel carried into the surprise breakout",
+      "outcome_reason": "graphic-only structure (no text)",
+      "placement": 0.8,
       "price_hint": null,
-      "raw_label": "Tight Bear CH",
-      "source": "vision",
+      "raw_label": "range resistance 4583/4584.7",
+      "role": "structure",
+      "source": "human",
       "start_time": {
-        "time": "11:30",
+        "time": "11:50",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "direction": "bull",
-      "end_time": null,
-      "evidence": "Green note 'LL MTR / Credible swing buy, but weak signal bar. / Always In Bears exit' near 14:00",
+      "end_time": {
+        "time": "14:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green arrow at the ~4568.5 low (below the ~4572.5 wedge low); bounce to ~4584 then rejection",
       "label": "major_trend_reversal",
-      "outcome": "fail",
-      "outcome_reason": "swing buy failed; bears stayed in control into the close",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "LL",
+        "credible_swing_buy",
+        "weak_signal_bar"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "credible swing buy but weak signal: bounce success (+~15pts), reversal fail (rejected at range top, surprise breakdown after); Always-In-Bears-exit reading unverified",
+      "placement": 0.75,
       "price_hint": null,
       "raw_label": "LL MTR",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "14:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.8,
-      "direction": "bear",
-      "end_time": {
-        "time": "14:30",
+        "time": "13:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Brown note 'Surprise bear BO / Always in short / Couple of legs down likely and STC' with yellow box",
-      "label": "breakout",
-      "outcome": "success",
-      "outcome_reason": "breakout produced multiple legs down into the close",
-      "price_hint": null,
-      "raw_label": "Surprise bear BO",
-      "source": "vision",
-      "start_time": {
-        "time": "14:15",
-        "tz": "America/Los_Angeles"
-      }
+      "x_px": null
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.8,
+      "confidence": 0.85,
       "direction": "bear",
-      "end_time": null,
-      "evidence": "Same brown note ending 'likely and STC'; green 'Always In Bear Trail' exit note at the lows",
-      "label": "sell_the_close",
-      "outcome": "success",
-      "outcome_reason": "close was extremely weak near 4528",
-      "price_hint": null,
-      "raw_label": "STC",
-      "source": "vision",
-      "start_time": {
-        "time": "14:30",
+      "end_time": {
+        "time": "14:25",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "evidence": "yellow box bars 4581 to 4565, then legs to ~4552 and ~4526",
+      "label": "breakout",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "surprise",
+        "always_in_short",
+        "expects_2_legs"
+      ],
+      "outcome": "success",
+      "outcome_reason": "always-in-short; couple of legs down confirmed",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "Surprise bear BO",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "14:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "14:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "STC is the last word of the surprise-BO note, same yellow-box bars",
+      "label": "sell_the_close",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "split from the breakout row",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "STC (in the BO note)",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "14:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "green note with arrow at the ~4536-4544 up bar (x 1395-1455)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "chart ends here: cover result unresolved",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Always In Bear Trail exit",
+      "role": "exit_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        1395,
+        1455
+      ]
     }
   ],
   "extraction_meta": {
@@ -163,5 +257,5 @@
   },
   "image_id": "60c97519d0a5",
   "schema_version": 1,
-  "session_summary": "Thursday trading range with late bear breakout: TTR open, wedge top/bottom with minor reversals, failed LL MTR swing buy, then surprise bear breakout with legs down into a very weak close. NOTE: filename says 2022-04-02 (Saturday) but title says Thursday and axis ends 'Apr' \u2014 labelled as Thursday 2022-03-31. Axis runs 09:00-15:00 (differs from PT-style 06:30-13:00 axes; possible ET feed \u2014 verify in Phase 5)."
+  "session_summary": "Thursday trading range with late bear breakout (reviewer: trading_range_then_late_bear_breakout; filename 2022-04-02 is the posting date, session is Thursday 2022-03-31 from the title + April edge + price continuity ~4540 into Friday's ~4543 open; year inferred): TTR open, wedge top in a tight bull channel, contracting triangle breaking down, wedge bottom in a tight bear channel, range resistance 4583/4584.7, LL-MTR bounce rejected at the top, surprise bear breakout with two legs to ~4526, bear-trail exit at the lows. Axis 09:00-15:00 with PT default kept; reviewer notes the span matches Central hours (08:30-15:15 CT) and cross-image clocks are NOT comparable \u2014 Phase 5 must resolve per feed."
 }

@@ -5,87 +5,145 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.85,
+      "confidence": 0.9,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Green title note 'Exceptionally strong Small Pullback Bull Trend From The Open / Only buy'; overlapping grind with green boxes (no time axis, omitted)",
-      "label": "channel",
+      "evidence": "Title + green header text Exceptionally strong Small Pullback Bull Trend From The Open / Only buy (x50-850)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "small_pullback"
+      ],
       "outcome": "success",
-      "outcome_reason": "trend carried all day with only minor reversals",
+      "outcome_reason": "regime context, not a tradable pattern row",
+      "placement": 0.9,
+      "price_hint": null,
+      "raw_label": "small pullback bull trend (title regime)",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        50,
+        850
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta dotted rising lines + blue text Tight bull channel so only minor reversals (x200-820)",
+      "label": "channel",
+      "label_explicit": 0.85,
+      "modifiers": [
+        "tight",
+        "wedge"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge lines merged in as a modifier",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Tight bull channel",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue note 'Many gaps so bears could not make money even with limit orders'",
-      "label": "gap",
-      "outcome": "success",
-      "outcome_reason": "gaps held all day",
-      "price_hint": null,
-      "raw_label": "Many gaps",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Magenta note 'Strong trends always form wedges' with dotted wedge lines along the channel",
-      "label": "wedge",
-      "outcome": "success",
-      "outcome_reason": "only minor reversals within the wedges",
-      "price_hint": null,
-      "raw_label": "Strong trends always form wedges",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        200,
+        820
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Blue note 'Big breakout late in bull trend' with arrow",
-      "label": "breakout",
+      "evidence": "Blue text Many gaps so bears could not make money even with limit orders (x150-700) + visible body gaps",
+      "label": "gap",
+      "label_explicit": 0.8,
+      "modifiers": [
+        "consecutive",
+        "many"
+      ],
       "outcome": "success",
-      "outcome_reason": "late breakout extended to the highs",
+      "outcome_reason": "consecutive gaps observed",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Many gaps",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        150,
+        700
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue text + blue arrow (x620-720)",
+      "label": "breakout",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "late_in_trend"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.85,
       "price_hint": null,
       "raw_label": "Big breakout late in bull trend",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Brown note 'Became Measuring Gap' at the late breakout",
-      "label": null,
-      "outcome": "success",
-      "outcome_reason": "measuring gap projected the final leg",
-      "price_hint": null,
-      "raw_label": "Measuring Gap",
+      "role": "pattern",
       "source": "human",
-      "start_time": null
+      "start_time": null,
+      "x_px": [
+        620,
+        720
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.7,
+      "confidence": 0.85,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Brown 'MM' marker at the top near 4282",
-      "label": "measured_move",
+      "evidence": "Brown text Became Measuring Gap + MM marker at top (x680-780)",
+      "label": "measuring_gap",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "measured-move target reached at the highs",
+      "outcome_reason": "veto accepted: demotion was wrong, measuring gaps are canonical; MM is the same measurement, merged",
+      "placement": 0.85,
       "price_hint": null,
-      "raw_label": "MM",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "Became Measuring Gap (+MM merged)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        680,
+        780
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.9,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Red text 99.5% of days have at least one bar with close below EMA / Today did not (x50-850)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "regime context from the title block",
+      "placement": 0.9,
+      "price_hint": null,
+      "raw_label": "no close below EMA (title note)",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        50,
+        850
+      ]
     }
   ],
   "extraction_meta": {
@@ -96,5 +154,5 @@
   },
   "image_id": "ff48e6ca6229",
   "schema_version": 1,
-  "session_summary": "Exceptionally strong small pullback bull trend from the open: gaps all day, tight channel with only minor reversals, late breakout through a measuring gap to the measured-move target. No time axis visible so all times are null."
+  "session_summary": "Exceptionally strong small pullback bull trend from the open (reviewer tables): title regime with tight channel, consecutive gaps, late breakout through a canonical measuring gap (MM merges into it), no bar closed below the EMA all day. Body gaps and green boxes by color pass."
 }

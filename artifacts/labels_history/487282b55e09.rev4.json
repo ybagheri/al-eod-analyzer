@@ -1,0 +1,232 @@
+{
+  "date": "2022-08-23",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Magenta note 'Parabolic Wedge' over the opening rally to ~4160 (no time axis, omitted)",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge TOP (title: Wedge Top, Then Trading Range); reversal down",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Blue note 'Low 2' at the same top",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second sell entry after the two-legged pullback; slide to ~4128",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Low 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Brown 'OO' mark near the top; meaning not determinable",
+      "label": "outside_outside",
+      "label_explicit": null,
+      "modifiers": [
+        "after_top"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "two long bars after the top; breakout-mode indecision",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "OO",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'DT PB at EMA'",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [
+        "pullback",
+        "at_ema"
+      ],
+      "outcome": "success",
+      "outcome_reason": "double-top pullback at the EMA; red boxes sold to the wedge low",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "DT PB at EMA",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta note 'Wedge' with dotted lines into the ~4127 low",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "wedge bottom launched the recovery",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'HH DT' near 4143",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [
+        "range_resistance"
+      ],
+      "outcome": "success",
+      "outcome_reason": "top capped the recovery leg Part of the shared ~4143 resistance line.",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "HH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue notes 'Exp. Triangle' in two areas",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [
+        "expanding",
+        "resolution_bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "first expanding triangle into the HH DT selloff",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Exp. Triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        585,
+        750
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue notes 'Exp. Triangle' in two areas",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [
+        "expanding",
+        "resolution_bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "second expanding triangle into the LH DT selloff",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Exp. Triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        825,
+        955
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green note 'Minor HL'",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [
+        "higher_low",
+        "minor"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "minor higher low (~4128) above the wedge low (~4125)",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Minor HL",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'LH DT' with a second blue 'Exp. Triangle'",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [
+        "range_resistance"
+      ],
+      "outcome": "success",
+      "outcome_reason": "test failed into the close Part of the shared ~4143 resistance line.",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "487282b55e09",
+  "schema_version": 1,
+  "session_summary": "Wedge top, then trading range: parabolic top washed to a wedge bottom near 4127, recovery capped by HHDT, expanding triangles and a minor higher low, LHDT into the close. No time axis visible so all times are null. Reviewer: no time axis (cropped screenshot); triangle split into two expanding instances with x_px; HH/LH share the ~4143 resistance line."
+}

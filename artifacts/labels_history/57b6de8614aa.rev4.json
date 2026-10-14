@@ -1,0 +1,284 @@
+{
+  "date": "2021-05-04",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.85,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "three big opening bear bars 4165 to 4150, slide to 4120.5",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "day phase, confirmed",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "bear trend from open (day phase)",
+      "role": "day_phase",
+      "source": "human",
+      "start_time": {
+        "time": "06:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "06:48",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown note over the first bars (4165-4150)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "big_bars"
+      ],
+      "outcome": "success",
+      "outcome_reason": "expectation (probably/likely language); trend ended ~2.5h later, price back to ~4162",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "bear trend will not last",
+      "role": "expectation",
+      "source": "human",
+      "start_time": {
+        "time": "06:36",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two lows ~4135.5 (07:05, 07:20), bounce to ~4150 at 07:30",
+      "label": "double_bottom",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "pullback",
+        "unverified"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "bounce success (+14.5pts); reversal fail (support broken 08:05, low 4120.5 at 09:00); pullback reading unverified",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "DB PB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta lines, top ~4143-4150",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "~30pt slide after",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "wedge top",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Low 2 text (previously only in wedge evidence)",
+      "label": "l2",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second sell entry after the two-legged pullback",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Low 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta lines from the first low; three pushes ~4135.5 / ~4124 / 4120.5",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "wedge bottom",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two lows ~4130 (09:50, 10:05), short magenta descending line to ~4129.5",
+      "label": "major_trend_reversal",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HL",
+        "micro_db"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged HL MTR + Micro DB rows (same zone)",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "HL MTR + Micro DB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue/magenta/green lines to ~4148; 12:00-12:30 is pullback, then closing spike",
+      "label": "channel",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "tight",
+        "with_wedges",
+        "minor_reversals"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "tight bull channel",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "bar above the blue pullback line (~4140 to 4147)",
+      "label": "h1",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "spike to ~4162 after",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "High 1",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "4144 to 4162, no annotation",
+      "label": "spike",
+      "label_explicit": 0.3,
+      "modifiers": [
+        "unlabeled"
+      ],
+      "outcome": "success",
+      "outcome_reason": "inferred; no text support",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "closing spike (unlabeled)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "57b6de8614aa",
+  "schema_version": 1,
+  "session_summary": "Bear trend then wedge bottom and bull reversal (reviewer: bear_trend_then_bull_reversal): bear phase 06:35-09:00 (4165 to 4120.5), DB pullback with bounce-ok/reversal-fail, wedge top, Low-2 entry, 3-push wedge bottom to 4120.5 at 09:00, merged HL-MTR/micro-DB 09:50-10:10, tight bull channel 09:15-12:00, H1 12:30-12:40, closing spike to ~4162. Image shows 5/4-5/5 only: year 2021 from filename is UNVERIFIED. Supports 4135.5 and ~4138.5; signal boxes by color detection (future work)."
+}

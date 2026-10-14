@@ -5,91 +5,358 @@
   "events": [
     {
       "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "opening drive ~4533 to ~4557 (x360-510)",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [
+        "bull_trend_from_open"
+      ],
+      "outcome": "success",
+      "outcome_reason": "day-phase row",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "phase 1: bull trend from open",
+      "role": "day_phase",
+      "source": "human",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        360,
+        510
+      ]
+    },
+    {
+      "bar_index_hint": null,
       "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "12:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "~4544.4-4567.4 (x570-1260)",
+      "label": null,
+      "label_explicit": 0.8,
+      "modifiers": [
+        "pullback_phase",
+        "trend_quality_weaker"
+      ],
+      "outcome": "success",
+      "outcome_reason": "trend_quality weaker here; EMA tested 09:20 and 11:40-12:10",
+      "placement": 0.6,
+      "price_hint": null,
+      "raw_label": "phase 2: pullbacks and wedges",
+      "role": "day_phase",
+      "source": "human",
+      "start_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        570,
+        1260
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "~4557 to ~4580 (x1260-2050); missed in first pass",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [
+        "trend_resumption"
+      ],
+      "outcome": "success",
+      "outcome_reason": "day-phase row",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "phase 3: trend resumption",
+      "role": "day_phase",
+      "source": "human",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        1260,
+        2050
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta line ~4544.4 (x422-563), top of the 08:45 bar; long shadow ~09:20 reached it",
+      "label": "gap",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "filled",
+        "intraday",
+        "unverified"
+      ],
+      "outcome": "success",
+      "outcome_reason": "intraday gap (no overnight-gap evidence; unverified); fill implies weaker bull trend",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "intraday gap filled",
+      "role": "structure",
+      "source": "human",
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        422,
+        575
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
       "direction": "bull",
       "end_time": null,
-      "evidence": "Magenta note 'Bears closed gap so limit order bears making money. Sign of a weaker bull trend.'",
-      "label": "gap",
-      "outcome": "partial",
-      "outcome_reason": "gap was closed by bears; bull trend continued but weaker",
+      "evidence": "first green arrow ~4558 (x527)",
+      "label": "signal_bar",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "swing_buy",
+        "weak"
+      ],
+      "outcome": "success",
+      "outcome_reason": "~13pt temporary drawdown to 4544.4; EMA tested",
+      "placement": 0.7,
       "price_hint": null,
-      "raw_label": "gap closed by bears",
-      "source": "vision",
+      "raw_label": "swing buy 1 (~4558)",
+      "role": "entry_signal",
+      "source": "human",
       "start_time": {
-        "time": "09:00",
+        "time": "09:10",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        527,
+        560
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "second green arrow ~4559 (x~705)",
+      "label": "signal_bar",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "swing_buy",
+        "weak"
+      ],
+      "outcome": "success",
+      "outcome_reason": "shared expectation: test the moving average (met 09:20, 11:40-12:10)",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "swing buy 2 (~4559)",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "09:37",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        700,
+        710
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "'more likely will test the moving average'",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "test_ema"
+      ],
+      "outcome": "success",
+      "outcome_reason": "pullback expectation met twice",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "expectation: test the moving average",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:06",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "converging blue lines x570-760 (upper ~4559.4 to 4556, lower ~4544.8 to 4552.9)",
+      "label": "triangle",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "contracting",
+        "resolution_bull"
+      ],
+      "outcome": "success",
+      "outcome_reason": "upside break ~10:05",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "contracting triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        570,
+        760
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
       "end_time": {
-        "time": "10:30",
+        "time": "10:06",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Purple note 'Consecutive Wedge Tops / Many bulls will exit and wait for a test of moving average'",
-      "label": "wedge",
-      "outcome": "partial",
-      "outcome_reason": "pullback tested the moving average, then trend resumed",
-      "price_hint": null,
-      "raw_label": "Consecutive Wedge Tops",
-      "source": "vision",
-      "start_time": {
-        "time": "10:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue note 'Triangle, possible Final flag' near 10:00",
+      "evidence": "same triangle zone",
       "label": "final_flag",
-      "outcome": "unclear",
-      "outcome_reason": "possible flag noted without annotated resolution",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "possible"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "~10pt pullback to the EMA, no trend reversal; the note itself said possible",
+      "placement": 0.65,
       "price_hint": null,
-      "raw_label": "Triangle, possible Final flag",
-      "source": "vision",
-      "start_time": {
-        "time": "10:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue note '20 Gap bar buy / Probably an okay buy' with arrow near 12:15",
-      "label": "ema_gap_bar",
-      "outcome": "success",
-      "outcome_reason": "buy worked as the trend resumed upward",
-      "price_hint": null,
-      "raw_label": "20 Gap bar buy",
-      "source": "vision",
-      "start_time": {
-        "time": "12:15",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Brown note 'TTR better to stop trading' near 13:45 in the tight late range",
-      "label": "tight_trading_range",
-      "outcome": "unclear",
-      "outcome_reason": "advice note, no directional outcome",
-      "price_hint": null,
-      "raw_label": "TTR better to stop trading",
+      "raw_label": "possible final flag",
+      "role": "expectation",
       "source": "human",
       "start_time": {
-        "time": "13:45",
+        "time": "09:20",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        570,
+        760
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "tops ~4557/~4562/~4567.4, red line (x485-1125)",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "consecutive",
+        "unverified_count"
+      ],
+      "outcome": "success",
+      "outcome_reason": "push count unverified; ~10pt pullback tested the EMA 11:40-12:10",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "consecutive wedge tops",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        485,
+        1125
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue arrow ~4557.2, green boxes (x1215-1315); ~20pts to 4580 after",
+      "label": "ema_gap_bar",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "buy",
+        "unverified"
+      ],
+      "outcome": "success",
+      "outcome_reason": "~26 bars above the EMA 09:25-11:35 fits the definition (+-2 bars, unverified)",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "20 gap bar buy",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        1215,
+        1315
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "yellow box x1690-1928 (4569-4573.6)",
+      "label": "tight_trading_range",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "advice_noted",
+        "resolution_bull_breakout"
+      ],
+      "outcome": "success",
+      "outcome_reason": "structure confirmed with bull breakout ~14:50 to 4580; the 'better to stop trading' advice carries no outcome",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "late TTR + advice",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "13:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        1690,
+        1928
+      ]
     }
   ],
   "extraction_meta": {
@@ -100,5 +367,5 @@
   },
   "image_id": "a1d129b5dc8f",
   "schema_version": 1,
-  "session_summary": "Monday bull trend from open with trend resumption: okay swing buys early, consecutive wedge tops tested the moving average, 20-gap-bar buy midday, then tight trading range where stopping was better. Weaker bull trend since bears closed the opening gap. Axis 09:00-15:00 (possible ET feed \u2014 verify in Phase 5)."
+  "session_summary": "Bull trend from the open with trend resumption (reviewer phases: bull_trend_from_open 08:30-09:05, pullback phase 09:20-12:10, trend_resumption 12:15-15:15; trend_quality weaker in phase 2, confirmed by two EMA tests with resumption). Date 04-04 from markers + Monday title (year unverified; 2022 fits the calendar). Pre-marker bars are prior session, ignored. Axis reads Central-style; cross-image clocks not comparable (Phase 5 resolves per feed). Supports/resistances, unlabeled magenta lines and boxes in evidence/notes."
 }

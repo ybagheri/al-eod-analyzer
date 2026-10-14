@@ -72,6 +72,11 @@ Canonical-id assignments are PROPOSED (taxonomy v1.1, pending approval).
 | H1 / H2 / H3 | 1st/2nd/3rd pullback buy attempts in a bull trend (H3 ≈ wedge bull flag) | Existing `h1`/`h2` (+ engine note: H3 ≡ wedge variant, Phase 6) | rule-based |
 | L1 / L2 | 1st/2nd pullback sell attempts in a bear trend | Existing `l1`/`l2` | rule-based |
 | HH DT (Higher-High Double Top, user-confirmed 2026-10-12) | Double top whose second top is slightly higher than the first | Two highs within `dt_tolerance_ticks`, second higher by < `hhdt_max_ticks` — interim parent id `double_top` (dedicated id deferred to v1.2) | rule-based |
+| Bear Surprise (bare, user-confirmed round 2) | Big surprise down bar WITHOUT the word "major" on chart | Same detection as major variant; separate id so "major" is never hallucinated | rule-based |
+| Trend Line (bare) | Unlabeled dotted trend/channel boundary line | Line through ≥ `trend_line_min_touches` (2) swing points | rule-based |
+| Bull Trend Resumption (user-confirmed round 3) | TR open, bull breakout, then trend resumption (not a mere reversal) | Range-containment + breakout + continuation phases | contextual |
+| Low 4 (user-confirmed round 3) | Fourth-entry sell signal (High/Low 1-4 are standard Brooks entries) | Second+ pullback entry logic like H2/L2 | rule-based |
+| Measuring Gap (user-confirmed round 3) | Breakout gap projecting the next leg, usually with an MM marker | Gap + follow-through ≥ `mm_gap_follow_bars` | rule-based |
 
 > All thresholds are proposals. Phase 6 turns this draft into `docs/PATTERN_SPEC.md`
 > with exact algorithms; parameters move into `config/default.yaml`.

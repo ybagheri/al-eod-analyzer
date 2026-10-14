@@ -1,133 +1,175 @@
 {
-  "date": "2022-08-19",
+  "date": null,
   "day_type": "bear_trend_from_open",
   "day_type_confidence": 0.75,
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.5,
+      "confidence": 0.9,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Brown note 'Sell The Close' at the top left; same template placement as other charts in the series",
+      "evidence": "brown note + arrow on the first bars (x 108-142, 4262 to 4247)",
       "label": "sell_the_close",
-      "outcome": "unclear",
-      "outcome_reason": "placement ambiguous; close itself was soft",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "~41pt slide to ~4220.5",
+      "placement": 0.9,
       "price_hint": null,
       "raw_label": "Sell The Close",
-      "source": "vision",
-      "start_time": null
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        108,
+        142
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
+      "confidence": 0.8,
+      "direction": "bull",
       "end_time": null,
-      "evidence": "Blue note 'Final Flag' in the morning decline (no time axis, omitted)",
+      "evidence": "flag x 180-300 (4235-4244.5, green dotted base ~4235); breakdown to climax then up",
       "label": "final_flag",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bear_flag",
+        "reversal_expected"
+      ],
       "outcome": "success",
-      "outcome_reason": "final flag led to the sell climax low",
+      "outcome_reason": "bull direction = reversal expected; the flag itself pointed bear",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Final Flag",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        180,
+        300
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
+      "confidence": 0.85,
+      "direction": "bull",
       "end_time": null,
-      "evidence": "Magenta note 'Wedge' near 4240",
-      "label": "wedge",
+      "evidence": "red note at the ~4225.7 low (x 295-365), ~20pt rally to ~4246",
+      "label": "climax",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "reversal"
+      ],
       "outcome": "success",
-      "outcome_reason": "wedge continuation slid toward the climax",
+      "outcome_reason": "renamed climax_reversal: direction follows the result",
+      "placement": 0.85,
       "price_hint": null,
-      "raw_label": "Wedge",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        295,
+        365
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.8,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Red note 'DT' at the same area",
+      "evidence": "second top ~4246 (x 590) above the flag top ~4244.5; rising blue/magenta lines x 500-590; ~56% retrace of the 4262 to 4225.7 slide; decline resumed",
       "label": "double_top",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HH",
+        "wedge_top",
+        "pullback_50"
+      ],
       "outcome": "success",
-      "outcome_reason": "top held into the decline",
+      "outcome_reason": "merged stacked note Wedge/DT/50% pullback into one structure",
+      "placement": 0.8,
       "price_hint": null,
-      "raw_label": "DT",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "wedge + HH DT + 50% pullback (merged)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        500,
+        620
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Blue note '50% pullback' at the same area",
+      "evidence": "red note with arrow to the green box (x 672-755); slide 4246 to 4228.5, bounce ~11 of ~17pts to ~4240; decline resumed",
       "label": "pullback_50pct",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "pullback failed and the trend resumed down",
+      "outcome_reason": "kept separate from the merged top",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "50% pullback",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "second 50% pullback",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        672,
+        755
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "brown note with orange arrow at the big down bar (x 835-880) breaking below ~4228.5 support; magenta lines to the ~4220.5 low; next bar 4219-ish to ~4232.8 (+~12pts) closing back above",
+      "label": "failed_breakout",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "minor",
+        "LL",
+        "unverified",
+        "follow_through_limited"
+      ],
+      "outcome": "success",
+      "outcome_reason": "claim-based: the breakdown failed and reversed; follow-through limited (range 4228-4237, red ~4234); which wedge Brooks meant is unverified",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Failed wedge + Minor LL",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        835,
+        910
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.7,
-      "direction": "bear",
+      "direction": "neutral",
       "end_time": null,
-      "evidence": "Red note 'Sell Climax' at the ~4225 low",
-      "label": "climax",
-      "outcome": "success",
-      "outcome_reason": "climax marked the low before the range",
-      "price_hint": null,
-      "raw_label": "Sell Climax",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Second red note '50% pullback' near 4238",
-      "label": "pullback_50pct",
-      "outcome": "partial",
-      "outcome_reason": "shallow pullback inside the afternoon range",
-      "price_hint": null,
-      "raw_label": "50% pullback",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Brown note 'Failed wedge' at the ~4225 low",
-      "label": "wedge",
-      "outcome": "fail",
-      "outcome_reason": "bearish wedge failed; bounce followed",
-      "price_hint": null,
-      "raw_label": "Failed wedge",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Green note 'Minor LL' at the low",
+      "evidence": "overlapping bars 4228-4237 (x 910-1050), diverging blue lines",
       "label": null,
-      "outcome": "partial",
-      "outcome_reason": "minor lower low inside the range",
+      "label_explicit": 0.9,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "possibly expanding triangle, unverified",
+      "placement": 0.7,
       "price_hint": null,
-      "raw_label": "Minor LL",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "late trading range",
+      "role": "day_part",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        910,
+        1050
+      ]
     }
   ],
   "extraction_meta": {
@@ -138,5 +180,5 @@
   },
   "image_id": "5f578e1b453d",
   "schema_version": 1,
-  "session_summary": "Bear trend from the open, then trading range: morning decline with final flag, wedge/DT/50%-pullback continuation into a sell climax near 4225, failed wedge bounce, then an afternoon range with a minor lower low. No time axis visible so all times are null."
+  "session_summary": "Bear trend from the open, then trading range (reviewer: bear_trend_from_open_then_trading_range): STC entry 4262 down ~41pts, final flag into the sell climax ~4225.7, merged wedge/HH-DT/50%-pullback top ~4246, second 50% pullback, failed-wedge minor-LL bounce, late 4228-4237 range (possibly expanding triangle, unverified). No time/date axis: times and date are null; positions are x_px. Price calibration ~10px/pt, +-2pts."
 }

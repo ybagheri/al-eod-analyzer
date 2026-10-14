@@ -1,0 +1,210 @@
+{
+  "date": "2021-08-18",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta 'Parabolic wedge' note over the morning rally to ~4450",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "parabolic top faded back into the range",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Parabolic wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue note 'Tight TR ahead of FOMC minutes'; overlapping sideways trade",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "tight range held until the FOMC minutes",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Tight TR ahead of FOMC minutes",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Title 'Late Bear Breakout'; shaded breakout zone and large bear bars from ~4445",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout became a strong sell-the-close bear trend to ~4390",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Late Bear Breakout",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue 'Bull Trap on FOMC minutes' with red 'LH DT' at the 11:00 top",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "trap top failed and selling began",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Second red 'LH DT' near 11:30-11:45",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second lower-high test failed into the slide",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Possible bear channel after spike down'",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "spike down started the afternoon selloff",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "spike down",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Possible bear channel after spike down'; overlapping lower highs and lows",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bear channel carried into the close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Possible bear channel after spike down",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Brown note 'Consecutive big bear bars closing on lows so Sell The Close Bear Trend'",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "close was very weak near the lows",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Sell The Close Bear Trend",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "10401c705b30",
+  "schema_version": 1,
+  "session_summary": "Trading range with a late bear breakout: tight pre-FOMC-minutes range, bull trap with LH double top at 11:00, then spike down and bear channel into a sell-the-close bear trend. Reviewer: roughly 66% of the session is trading range, ~33% at the end is bear breakout (compound: trading_range_late_bear_breakout)."
+}

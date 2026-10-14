@@ -5,210 +5,463 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.45,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Red note 'Sell The Close Bear Trend' at the top left; same template placement as other charts",
-      "label": "sell_the_close",
-      "outcome": "unclear",
-      "outcome_reason": "placement ambiguous; close itself was mid-range",
-      "price_hint": null,
-      "raw_label": "Sell The Close Bear Trend",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
+      "confidence": 0.6,
+      "direction": "neutral",
       "end_time": {
-        "time": "07:30",
+        "time": "10:15",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue note 'High 2' near 07:15; brown note 'Failed High 2' follows",
-      "label": "h2",
-      "outcome": "fail",
-      "outcome_reason": "second high failed and price slid",
-      "price_hint": null,
-      "raw_label": "High 2",
-      "source": "vision",
-      "start_time": {
-        "time": "07:15",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Brown note 'Failed High 2' near 07:30",
-      "label": null,
-      "outcome": "success",
-      "outcome_reason": "failed high led the morning slide",
-      "price_hint": null,
-      "raw_label": "Failed High 2",
-      "source": "vision",
-      "start_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue note 'High 4' near 08:00; H4 is not canonical",
-      "label": null,
-      "outcome": "partial",
-      "outcome_reason": "brief bounce inside the range",
-      "price_hint": null,
-      "raw_label": "High 4",
-      "source": "vision",
-      "start_time": {
-        "time": "08:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Brown/blue notes 'High 4 / Ext. Triangle' near 08:00",
-      "label": "triangle",
-      "outcome": "unclear",
-      "outcome_reason": "pattern noted without annotated resolution",
-      "price_hint": null,
-      "raw_label": "Ext. Triangle",
-      "source": "human",
-      "start_time": {
-        "time": "08:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Blue/green notes 'Low 4 at EMA / 50% Pullback' near 09:00",
-      "label": "pullback_50pct",
-      "outcome": "success",
-      "outcome_reason": "pullback held at the EMA and bounced",
-      "price_hint": null,
-      "raw_label": "50% Pullback",
-      "source": "vision",
-      "start_time": {
-        "time": "09:00",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Blue note 'DT PB' near 09:45",
-      "label": null,
-      "outcome": "partial",
-      "outcome_reason": "double-top pullback with limited follow-through",
-      "price_hint": null,
-      "raw_label": "DT PB",
-      "source": "vision",
-      "start_time": {
-        "time": "09:45",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.4,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Brown 'OO' mark near 10:00; meaning not determinable",
+      "evidence": "Brown OO annotation x595-625",
       "label": "outside_outside",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "minor"
+      ],
       "outcome": "unclear",
-      "outcome_reason": "unknown what OO denotes",
+      "outcome_reason": "two exact bars need verification",
+      "placement": 0.6,
       "price_hint": null,
       "raw_label": "OO",
+      "role": "pattern",
       "source": "human",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        595,
+        625
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_time": null,
+      "evidence": "Red Sell The Close note and highlighted opening bars x85-130",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "entry signal split from the Bear Trend context",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Sell The Close",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "06:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        85,
+        130
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red Bear Trend note x85-145",
+      "label": "channel",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "drift context observed",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Bear Trend",
+      "role": "context",
+      "source": "human",
+      "start_time": {
+        "time": "06:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        85,
+        145
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue High 4 note near the fourth attempt up x280-325",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "bull entry signal; kept unmapped (no H4 id)",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "High 4",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        280,
+        325
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown Ext. Triangle note and dotted boundaries x230-360",
+      "label": "triangle",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "expanding"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "expanding_triangle reading (not plain triangle)",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Ext. Triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        230,
+        360
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue DT PB annotation near the EMA x535-585",
+      "label": "double_top",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "pullback",
+        "at_ema"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "pullback of a double top; original name kept",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "DT PB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        535,
+        585
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown note and arrow at failed High 2 x170-230",
+      "label": "h2",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "failed_breakout"
+      ],
+      "outcome": "success",
+      "outcome_reason": "failed H2 entry resolves down; linked to the H2 row",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Failed High 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        170,
+        230
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta label and dotted lines around lower-right structure x690-890",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "bottom",
+        "minor"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "wedge_bottom reading (not a top): formed after the slide",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Minor Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        690,
+        890
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue High 2 note x95-155",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "bull entry that failed (Failed High 2 proves it)",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "High 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        95,
+        155
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "neutral",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Green 50% Pullback note x330-465",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "measurement context observed",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "50% Pullback",
+      "role": "context",
+      "source": "human",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        330,
+        465
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue Low 4 at EMA note and arrow x330-465",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [
+        "at_ema"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "entry-signal candidate; bar inspection needed",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Low 4 at EMA",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        330,
+        465
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Green Minor LL DB note and arrow x750-815",
+      "label": "double_bottom",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "LL",
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "lower-low double bottom observed",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Minor LL DB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        750,
+        815
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Red LH DT note at lower high x915-965",
+      "label": "double_top",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "LH"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        915,
+        965
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
       "end_time": {
         "time": "10:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Brown note 'Breakout below DB' with arrow",
-      "label": "breakout",
+      "evidence": "Brown note and arrow marking the bearish breakout x620-680",
+      "label": "spike",
+      "label_explicit": 1.0,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "breakout led the slide to the lows",
+      "outcome_reason": "breakout context observed",
+      "placement": 0.85,
       "price_hint": null,
       "raw_label": "Breakout below DB",
-      "source": "vision",
+      "role": "context",
+      "source": "human",
       "start_time": {
         "time": "10:15",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        620,
+        680
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Green note 'Minor LL DB' near 11:15",
-      "label": "micro_double_bottom",
-      "outcome": "success",
-      "outcome_reason": "bounce to 4145 followed",
-      "price_hint": null,
-      "raw_label": "Minor LL DB",
-      "source": "vision",
-      "start_time": {
-        "time": "11:15",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Magenta note 'Minor Wedge' with dotted lines near 11:45",
-      "label": "wedge",
-      "outcome": "success",
-      "outcome_reason": "wedge bottom supported the bounce",
-      "price_hint": null,
-      "raw_label": "Minor Wedge",
-      "source": "vision",
-      "start_time": {
-        "time": "11:45",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.85,
       "direction": "bear",
-      "end_time": null,
-      "evidence": "Red note 'LH DT' near 12:30",
-      "label": "lower_high_double_top",
-      "outcome": "success",
-      "outcome_reason": "test failed and price faded",
-      "price_hint": null,
-      "raw_label": "LH DT",
-      "source": "vision",
-      "start_time": {
-        "time": "12:30",
+      "end_time": {
+        "time": "11:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "evidence": "Consecutive bearish bars below the middle trading range x645-715",
+      "label": "spike",
+      "label_explicit": 0.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "no explicit label (explicit 0.0); graphic inference",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "Bear breakout (inferred, no text)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        645,
+        715
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "neutral",
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Repeated overlapping bars within a horizontal range x225-645",
+      "label": null,
+      "label_explicit": 0.0,
+      "modifiers": [
+        "mid_range"
+      ],
+      "outcome": "success",
+      "outcome_reason": "mid-session range context",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Trading Range (middle)",
+      "role": "day_part",
+      "source": "human",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        225,
+        645
+      ]
     }
   ],
   "extraction_meta": {
@@ -219,5 +472,5 @@
   },
   "image_id": "e092e64606eb",
   "schema_version": 1,
-  "session_summary": "Bear trending trading range day: failed H2, expanding triangle chop, 50% pullback at the EMA, breakout below the double bottom, then minor LLDB and wedge bounce into an LHDT fade."
+  "session_summary": "Bear trending trading range day (reviewer keeps the type with relatively high confidence): choppy first half with bear drift, bear breakout below the middle range, slide toward ~4132. Open of Day has no standalone note here: do not import it from other charts."
 }

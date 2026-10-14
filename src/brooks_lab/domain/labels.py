@@ -45,6 +45,8 @@ class DayType(StrEnum):
     TREND_REVERSAL_TO_BULL = "trend_reversal_to_bull"
     TREND_REVERSAL_TO_BEAR = "trend_reversal_to_bear"
     OTHER = "other"
+    # Round-3 review addition (ADR-009): TR open -> breakout -> resumption regime.
+    BULL_TREND_RESUMPTION = "bull_trend_resumption"
 
 
 class EventKind(StrEnum):
@@ -97,6 +99,14 @@ class EventKind(StrEnum):
     MAJOR_TREND_REVERSAL = "major_trend_reversal"
     LOWER_LOW_DOUBLE_BOTTOM = "lower_low_double_bottom"
     MIDDAY_REVERSAL = "midday_reversal"
+    # Round-2 review additions (ADR-008): bare surprise (no "major" on chart)
+    # and bare trend lines are their own canonical ids.
+    BEAR_SURPRISE = "bear_surprise"
+    TREND_LINE = "trend_line"
+    # Round-3 review additions (ADR-009): fourth-entry signal and the
+    # measuring gap (breakout gap projecting the next leg).
+    LOW_4 = "low_4"
+    MEASURING_GAP = "measuring_gap"
 
 
 class Outcome(StrEnum):
@@ -122,6 +132,21 @@ class LabelSource(StrEnum):
     VISION = "vision"
     HUMAN = "human"
     ENGINE = "engine"
+
+
+class EventRole(StrEnum):
+    """What the event row IS (reviewer `kind` axis, see ADR-007/ADR-008)."""
+
+    PATTERN = "pattern"
+    ENTRY_SIGNAL = "entry_signal"
+    EXPECTATION = "expectation"
+    DAY_PART = "day_part"
+    STRUCTURE = "structure"
+    EXIT_SIGNAL = "exit_signal"
+    DAY_PHASE = "day_phase"
+    CONTEXT = "context"
+    ADVICE = "advice"
+    BAR_PATTERN = "bar_pattern"
 
 
 class ChartTime(BaseModel):
@@ -162,8 +187,31 @@ class EventLabel(BaseModel):
     outcome: Outcome = Outcome.UNCLEAR
     outcome_reason: str = ""
     confidence: float = Field(default=0.5, ge=0.0, le=1.0)
+    label_explicit: float | None = Field(
+        default=None,
+        ge=0.0,
+        le=1.0,
+        description="Reviewer axis 1: is the pattern named by on-chart text? Null = not scored.",
+    )
+    placement: float | None = Field(
+        default=None,
+        ge=0.0,
+        le=1.0,
+        description="Reviewer axis 2: how certain is the position (lines/boxes/bars)?",
+    )
+    modifiers: list[str] = Field(
+        default_factory=list,
+        description="Reviewer modifier system: HH/LH/HL/LL, minor, at_ema, 2nd_leg, ...",
+    )
+    role: EventRole = Field(
+        default=EventRole.PATTERN, description="Reviewer `kind` axis (default pattern)."
+    )
+    x_px: list[int] | None = Field(
+        default=None,
+        description="Pixel span [start, end] for axis-less images; null when unused.",
+    )
     evidence: str = Field(
-        default="", description="What text/graphic on the image supports this event."
+        default="", description="What text/graphic on THIS image supports this event."
     )
     source: LabelSource = LabelSource.VISION
 
@@ -181,7 +229,10 @@ class DayLabel(BaseModel):
 
     schema_version: int = Field(default=LABEL_SCHEMA_VERSION, ge=1)
     image_id: str = Field(min_length=1)
-    date: datetime.date
+    date: datetime.date | None = Field(
+        default=None,
+        description="Trading date; null when the image shows no verifiable date.",
+    )
     day_type: DayType = DayType.OTHER
     day_type_confidence: float = Field(default=0.5, ge=0.0, le=1.0)
     session_summary: str = ""

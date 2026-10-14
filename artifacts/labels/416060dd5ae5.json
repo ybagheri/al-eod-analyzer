@@ -9,13 +9,18 @@
       "direction": "bear",
       "end_time": null,
       "evidence": "Brown note 'Bear Surprise after Micro Wedge' at the left near 4120 (no axis times, omitted)",
-      "label": "major_bear_surprise",
+      "label": "bear_surprise",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "sharp down move into the LL double bottom",
+      "outcome_reason": "bare text (no major on chart); sharp down move held",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Bear Surprise",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -24,12 +29,17 @@
       "end_time": null,
       "evidence": "Magenta 'Micro Wedge' in the same note; dotted wedge lines at the low",
       "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "micro wedge bottomed and the rally began",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Micro Wedge",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -38,12 +48,17 @@
       "end_time": null,
       "evidence": "Green note 'LL DB at EMA' at the ~4115 low with dotted line",
       "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "double bottom launched the small-pullback trend",
+      "placement": null,
       "price_hint": null,
       "raw_label": "LL DB at EMA",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -52,12 +67,17 @@
       "end_time": null,
       "evidence": "Brown note 'HL DB Breakout Test' near 4140 with arrow",
       "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "breakout test held and the trend continued",
+      "placement": null,
       "price_hint": null,
       "raw_label": "HL DB Breakout Test",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -66,12 +86,17 @@
       "end_time": null,
       "evidence": "Blue note 'Small Pullback Bull Trend / Better to only buy'",
       "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "trend carried to ~4170 with shallow pullbacks",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Small Pullback Bull Trend",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -80,12 +105,17 @@
       "end_time": null,
       "evidence": "Blue note '20-Gap Bar Buy / 75% chance of new high'",
       "label": "ema_gap_bar",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "new high followed",
+      "placement": null,
       "price_hint": null,
       "raw_label": "20-Gap Bar Buy",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -94,12 +124,17 @@
       "end_time": null,
       "evidence": "Brown 'MM' marker at the ~4170 top before the right-edge selloff",
       "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "partial",
       "outcome_reason": "target reached but price sold off into the close",
+      "placement": null,
       "price_hint": null,
       "raw_label": "MM",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -108,12 +143,17 @@
       "end_time": null,
       "evidence": "Blue 'ii' mark beside MM; meaning not determinable",
       "label": "inside_inside",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "unclear",
       "outcome_reason": "unknown what ii denotes",
+      "placement": null,
       "price_hint": null,
       "raw_label": "ii",
+      "role": "pattern",
       "source": "human",
-      "start_time": null
+      "start_time": null,
+      "x_px": null
     }
   ],
   "extraction_meta": {

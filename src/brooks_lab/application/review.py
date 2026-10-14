@@ -47,11 +47,16 @@ class GoldSet(BaseModel):
 
 
 class CorrectionsFile(BaseModel):
-    """User corrections for one label. Omitted fields stay untouched."""
+    """User corrections for one label. Omitted fields stay untouched.
+
+    ``date`` uses explicit-null semantics: present-with-null clears the date,
+    absent leaves it alone (checked via ``model_fields_set``).
+    """
 
     model_config = ConfigDict(frozen=True)
 
     image_id: str = PydField(min_length=1)
+    date: datetime.date | None = None
     day_type: str | None = None
     day_type_confidence: float | None = PydField(default=None, ge=0.0, le=1.0)
     session_summary: str | None = None
@@ -194,6 +199,8 @@ class ReviewService:
             )
         current = DayLabel.model_validate_json(path.read_text(encoding="utf-8"))
         update: dict[str, Any] = {}
+        if "date" in corrections.model_fields_set:
+            update["date"] = corrections.date
         if corrections.day_type is not None:
             update["day_type"] = corrections.day_type
         if corrections.day_type_confidence is not None:

@@ -1,0 +1,206 @@
+{
+  "date": "2022-08-09",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.85,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted lines to the ~4114.4 low (x111-325)",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "last push probably the surprise bar (unverified); ~20pt rally after",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "wedge bottom (last push = surprise bar)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "06:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        111,
+        325
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown note; big down bar 4127 to 4114.5 (x293-315) breaking the 4118.5 low",
+      "label": "bear_surprise",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "reversed",
+        "breakout_bear",
+        "result_failed"
+      ],
+      "outcome": "success",
+      "outcome_reason": "bare text (no major); breakdown failed, price back to ~4134.5; breakout_dir bear, result failed",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Bear Surprise (reversed)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        293,
+        315
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta descending line 4134 to 4117 (x365-500)",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [
+        "channel",
+        "tight_bear",
+        "context",
+        "unverified"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "context row for the HL (CONTEXT pattern); channel_dir bear unverified: alternative is the post-09:30 up channel",
+      "placement": 0.6,
+      "price_hint": null,
+      "raw_label": "tight bear channel (context)",
+      "role": "context",
+      "source": "human",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        365,
+        500
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green HL note, low ~4114.8 on the green dotted line (x485-530)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "higher_low",
+        "after_tight_channel",
+        "expects_minor_reversal_up"
+      ],
+      "outcome": "success",
+      "outcome_reason": "HL per Brooks's own label (pixel tie with the wedge low); expects minor reversal up: +~11pts to ~4126 (10:45), then a lower low broke: minor claim holds, low_later_broken",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "higher low after tight channel",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        485,
+        530
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "upper 4124 to 4128.5 (from 10:20), lower 4118 to 4113 (from 07:15)",
+      "label": "triangle",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "expanding"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "expanding (not plain triangle); chart ends near the upper line: unresolved",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "expanding triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        190,
+        868
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue notes, low ~4113.2 at 11:30, top 4128.5 at 12:30 (~15pts)",
+      "label": "triangle",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "expanding",
+        "nested",
+        "mtr",
+        "LL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged nested-triangle + LL-MTR rows (same low); LL ~1-2pts (pixel noise), Brooks label rules; nesting unverified",
+      "placement": 0.55,
+      "price_hint": null,
+      "raw_label": "nested expanding triangle + LL MTR",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        735,
+        870
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "896f41497fa2",
+  "schema_version": 1,
+  "session_summary": "Wedge bottom but trading range day (reviewer: wedge_bottom_but_trading_range_day): wedge bottom into a bare bear surprise that failed up, tight bear channel, HL higher-low with minor-reversal expectation, expanding triangle unresolved, nested expanding triangle with LL-MTR bounce. Date from 8/9-8/10 markers (year unverified; continues 08-08 logically). Top-left 13:00 belongs to the prior session, ignored. Support 4118.8, red 4138.8; unlabeled magenta trend lines; boxes by color only."
+}

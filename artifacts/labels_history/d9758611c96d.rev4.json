@@ -1,0 +1,182 @@
+{
+  "date": "2022-08-15",
+  "day_type": "bull_trend_resumption",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Brown Minor OO note x975-1005 (~4296-4305)",
+      "label": "outside_outside",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "minor"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "two exact outside bars not independently confirmed",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Minor OO",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        975,
+        1005
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Magenta label and dotted lines outlining the upper structure x565-875",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "top",
+        "minor"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "partial top formation",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Minor Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        565,
+        875
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta label and dotted lines near the morning lows x90-215",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "bottom",
+        "parabolic"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "bottom formation",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        90,
+        215
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green LL DB MTR annotation and dotted green levels x215-340",
+      "label": "major_trend_reversal",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "LL"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "LL DB MTR",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        215,
+        340
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue note 20-Gap Bar Buy x690-780",
+      "label": "gap",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "exact term mapping unverified: kept as gap + entry signal",
+      "placement": 0.55,
+      "price_hint": null,
+      "raw_label": "20-Gap Bar Buy",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        690,
+        780
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Brown note and arrow on the bull-bar sequence x400-555",
+      "label": "spike",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "consecutive"
+      ],
+      "outcome": "success",
+      "outcome_reason": "consecutive-bar context observed on chart (not trade success)",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "8 consecutive bull bars",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        400,
+        555
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Orange annotation and arrow at the upward breakout x340-465",
+      "label": "spike",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout context observed on chart",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "Breakout and follow-through",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        340,
+        465
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "d9758611c96d",
+  "schema_version": 1,
+  "session_summary": "Trading range open, bull breakout, bull trend resumption (reviewer, 0.80; qualitative, not statistical): early range with low double bottom, LL-DB major reversal, breakout with follow-through (8 bull bars), small pullbacks into the ~4301 top. Reversal present as local pullbacks inside the trend. No time axis: times null."
+}

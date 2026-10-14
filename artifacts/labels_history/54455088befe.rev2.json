@@ -1,0 +1,144 @@
+{
+  "date": "2022-04-06",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Overlapping sideways bars from the open inside dotted triangle lines",
+      "label": "trading_range_begin",
+      "outcome": "success",
+      "outcome_reason": "range contained price all day",
+      "price_hint": null,
+      "raw_label": "trading range begins",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue dotted triangle lines over the morning plus magenta wedge lines at the left; no text annotation",
+      "label": "triangle",
+      "outcome": "unclear",
+      "outcome_reason": "graphics only, no annotated resolution",
+      "price_hint": null,
+      "raw_label": "triangle lines",
+      "source": "human",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red signal boxes near 07:00 before the morning slide",
+      "label": "signal_bar",
+      "outcome": "success",
+      "outcome_reason": "morning slide followed",
+      "price_hint": null,
+      "raw_label": "red signal boxes",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green signal boxes near 10:30 before the rally to the open of day",
+      "label": "signal_bar",
+      "outcome": "success",
+      "outcome_reason": "rally to open-of-day followed",
+      "price_hint": null,
+      "raw_label": "green signal boxes",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Large down bars 11:00-11:30 with red boxes, immediately reversed up (V bottom)",
+      "label": "spike",
+      "outcome": "fail",
+      "outcome_reason": "spike down got no continuation; sharp reversal instead",
+      "price_hint": null,
+      "raw_label": "spike down and reverse",
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Sharp up bars 11:30-12:00 to ~4498, then sideways fade",
+      "label": "spike",
+      "outcome": "partial",
+      "outcome_reason": "spike up reached new highs then faded sideways",
+      "price_hint": null,
+      "raw_label": "spike up and fade",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      }
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Price still overlapping sideways at the 13:00 axis end",
+      "label": "trading_range_end",
+      "outcome": "success",
+      "outcome_reason": "day closed inside the range",
+      "price_hint": null,
+      "raw_label": "trading range ends",
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      }
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "54455088befe",
+  "schema_version": 1,
+  "session_summary": "Trading range day with lots of reversals: almost no text annotations; triangle/wedge lines in the morning, red and green signal boxes both sides, a failed down spike at 11:00 and a fading up spike at noon. Graphics-only reading, modest confidence."
+}

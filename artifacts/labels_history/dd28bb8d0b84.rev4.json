@@ -1,0 +1,316 @@
+{
+  "date": "2022-08-05",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue ii annotation near the early pullback x260-300",
+      "label": "inside_inside",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "breakout-mode compression",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "ii",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        260,
+        300
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.45,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green label and dotted level near the left edge x25-170",
+      "label": "buy_the_close",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "explicit text but target bar uncertain without prior-day context",
+      "placement": 0.45,
+      "price_hint": null,
+      "raw_label": "Buy The Close",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        25,
+        170
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue note and converging dotted blue boundaries x205-920",
+      "label": "triangle",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Possible Triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        205,
+        920
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green HL DB note near the first recovery base x365-435",
+      "label": "double_bottom",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "HL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "separate structure (do not merge the three)",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "HL DB (~08:45)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        365,
+        435
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue label over the rising sequence x490-805",
+      "label": "channel",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "small pullbacks observed",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Small Pullback Bull Trend",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        490,
+        805
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Brown Bear Trap note near the failed downside move x810-845",
+      "label": "failed_breakout",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "trap resolves UP (was bear): failed downside breakout reversed",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Bear Trap",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        810,
+        845
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green HL DB portion of the Sell Climax, HL DB annotation x480-545",
+      "label": "double_bottom",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "HL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "separate structure",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "HL DB (~09:15)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        480,
+        545
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta label and dotted lines around the opening rally x95-225",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "bottom",
+        "parabolic"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge bottom formation",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        95,
+        225
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green HL DB note near the later higher low x840-910",
+      "label": "double_bottom",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "HL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "separate structure",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "HL DB (~11:45)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        840,
+        910
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red Sell Climax label at the sharp selloff low x365-420",
+      "label": "spike",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "climax as spike (down thrust); bounce after",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        365,
+        420
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Green Low 2 note x600-675",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "entry-signal candidate; exact signal bar needs bar inspection",
+      "placement": 0.55,
+      "price_hint": null,
+      "raw_label": "Low 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        600,
+        675
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Brown explanatory note x610-850",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "expects continued chop / trading range, not a standalone pattern",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Big legs up and down",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        610,
+        850
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Magenta dotted swing structure x630-880",
+      "label": "wedge",
+      "label_explicit": 0.0,
+      "modifiers": [
+        "top",
+        "consecutive"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "no separate explicit label for this exact name",
+      "placement": 0.55,
+      "price_hint": null,
+      "raw_label": "Consecutive wedge tops",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        630,
+        880
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "dd28bb8d0b84",
+  "schema_version": 1,
+  "session_summary": "Parabolic wedge buy climax then triangle (reviewer: no time axis on the table rows here \u2014 clock times kept null, x_px recorded): sell climax as spike, three separate HL double bottoms (08:45/09:15/11:45, not merged), bear trap resolving up, Low-2 entry, big-legs expectation, consecutive wedge tops. BTC kept with low placement (target bar uncertain)."
+}

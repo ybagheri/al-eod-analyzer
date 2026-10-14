@@ -1,0 +1,276 @@
+{
+  "date": "2022-09-23",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown note 'Consecutive Bear Bars, one close on low' at the open",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "opening drive down set the bear tone",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Consecutive Bear Bars",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.45,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'Sell the Close' at the top left; close actually rallied strongly",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "late reversal up invalidated any short into the close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Sell the Close",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta note 'Wedge' with dotted lines near 3705",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "small bounce before the range formed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Brown note 'Trading Range lasting 20+ bars'",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "long range held before the surprise breakout",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Trading Range lasting 20+ bars",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Same brown note: 'possible final flag'",
+      "label": "final_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "final flag led to the surprise breakout down",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "possible final flag",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown note 'Surprise Breakout / Expect Measured Move below Trading Range'",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout drove to the low of year",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Surprise Breakout",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Same brown note; decline reached the blue 'Low of Year' line near 3660",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "measured move completed at the low of year",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Expect Measured Move below Trading Range",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Test of Low of Year' at the nested wedge bottom",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "low-of-year test held and reversed up",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Test of Low of Year",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta note 'Nested Wedge' at the same low",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "nested wedge launched the late reversal",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Nested Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Surprise Bull Breakout' with arrow",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout reversed the day up into the close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Surprise Bull Breakout",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Same blue note: 'Expect a Measured move up'; rally reached ~3710",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "measured move up completed into the close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Expect a Measured move up",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "7d3958bdded9",
+  "schema_version": 1,
+  "session_summary": "Trend from the open with a late reversal up: opening bear drive, 20-bar range with final flag, surprise breakout to a measured move at the low of year, then nested-wedge test and surprise bull breakout with a measured move up into the close. Axis 09:00-15:00 (possible ET feed \u2014 verify in Phase 5)."
+}

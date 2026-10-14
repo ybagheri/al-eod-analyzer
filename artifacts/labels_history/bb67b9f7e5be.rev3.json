@@ -1,0 +1,182 @@
+{
+  "date": "2022-08-02",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta 'Wedge' label at the morning low with dotted wedge lines; red signal boxes",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "wedge bottom launched the morning rally toward 4140",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta 'Minor Parabolic Wedge' note with red arrow near 07:45-08:00",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "rally continued to the midday top",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Minor Parabolic Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta 'Nested Wedge top' note with arrow at the ~4140 top",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "top held and price sold off all afternoon",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Nested Wedge top",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Blue 'Bar 41 Midday Trend Reversal' note at the top; no canonical reversal event exists",
+      "label": "midday_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "midday top reversed into the afternoon decline",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Bar 41 Midday Trend Reversal",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown 'Major Bear Surprise' note beside the large 10:30-10:45 bear bars with red boxes",
+      "label": "major_bear_surprise",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "sharp selloff continued to new lows",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Major Bear Surprise",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green 'Minor Micro DB' note near 11:00 above the low",
+      "label": "micro_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "brief bounce toward the EMA followed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Minor Micro DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Magenta 'Wedge at EMA' note near 11:30; subsequent drift stayed weak",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "only a small bounce before more sliding",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge at EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "bb67b9f7e5be",
+  "schema_version": 1,
+  "session_summary": "Wedge top midday trend reversal: morning rally into a nested wedge top around 10:00, then a major bear surprise and afternoon decline with a minor micro double bottom bounce."
+}

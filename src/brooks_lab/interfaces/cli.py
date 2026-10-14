@@ -157,8 +157,19 @@ def extract(
     failed_dir: Path = typer.Option(
         Path("artifacts/labels_failed"), "--failed-dir", help="Quarantine dir."
     ),
+    history_dir: Path = typer.Option(
+        Path("artifacts/labels_history"), "--history-dir", help="Review history dir."
+    ),
+    gold_file: Path = typer.Option(
+        Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
+    ),
+    clobber_reviewed: bool = typer.Option(
+        False,
+        "--clobber-reviewed",
+        help="Allow re-extraction over labels that have review history.",
+    ),
     prompt_file: Path = typer.Option(
-        Path("config/prompts/extract_v1.md"), "--prompt-file", help="Prompt template."
+        Path("config/prompts/extract_v2.md"), "--prompt-file", help="Prompt template."
     ),
     taxonomy_file: Path = typer.Option(
         Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
@@ -184,6 +195,9 @@ def extract(
         client=client,
         prompt_builder=builder,
         provider=provider,
+        history_dir=history_dir,
+        gold_path=gold_file,
+        clobber_reviewed=clobber_reviewed,
     )
     report = service.run(limit=limit, resume=resume)
     report_path = Path("artifacts/review/extraction_report.json")

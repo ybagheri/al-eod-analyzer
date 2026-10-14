@@ -26,5 +26,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Phase 4 review workflow: `ReviewService` (corrections + history + gold registry),
   HTML review pages, `brooks review-queue` / `brooks review-apply`, label stats.
   Gold set pending user review (0/33).
+- Review round 1: 10/33 labels corrected per reviewer specs (ADR-007 schema extension:
+  modifiers/role/explicit/placement/x_px, optional date; prompt extract_v2 with 5
+  reviewer rules; claim-based outcome + result-direction conventions); extract guard
+  against clobbering reviewed labels (`--clobber-reviewed`).
+- Taxonomy v1.1: 8 reviewer-approved pattern ids + 40 synonyms (ADR-006); 24/33
+  labels remapped with history.
+- Review round 2: 7 full reworks + 10401c70/08-03 fixes + 7 gold marks per reviewer
+  specs; new roles (context/advice/bar_pattern), bare bear_surprise + trend_line ids
+  (ADR-008); prompt v2 extended with 13 more reviewer rules + pattern glossary;
+  extract also skips gold labels without --clobber-reviewed.
+- Review round 3: 8 full reworks (07-07, 08-15 regime change, 08-29, 08-05, 08-25 day
+  change, 08-22, 09-09 Low-4 canonical, 08-12 veto accepted); new ids low_4,
+  measuring_gap + bull_trend_resumption day type (taxonomy v1.2, ADR-009).
 
 ## [0.1.0] — TBD (Phase 0 release, pending gate + first commit)

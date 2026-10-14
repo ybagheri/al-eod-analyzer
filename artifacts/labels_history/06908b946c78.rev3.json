@@ -1,0 +1,226 @@
+{
+  "date": "2022-04-22",
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.85,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Red title note 'Small Pullback Bear Trend'; red boxes on every pullback all day",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "small-pullback bear channel carried to a very weak close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Small Pullback Bear Trend",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Brown 'Sell The Close' note at top left; close near the lows around 4255",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "close was extremely weak",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Sell The Close",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note '20-Gap Bar Sell' near 09:30",
+      "label": "ema_gap_bar",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "selloff continued after the gap bar",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "20-Gap Bar Sell",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'EMA Gap Bar S' near 12:00",
+      "label": "ema_gap_bar",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "late slide continued",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "EMA Gap Bar S",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta note 'Wedge rally to DT' with dotted lines into the 12:30 high; green boxes",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "rally to the double top was a bull trap and collapsed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge rally to DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green note 'Bull Trap' at the same 12:30 top",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "trapped bulls; price collapsed into the close",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Bull Trap",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "The 12:30 top tested the dotted double-top line before collapsing",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "double top held and the selloff resumed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown 'MM' marker under the 11:30-12:00 decline",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "measured move down completed into the low",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "MM",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.4,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Two brown 'ii' marks near 10:30 and 11:00; meaning not determinable",
+      "label": "inside_inside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "unknown what ii denotes",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "ii",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "06908b946c78",
+  "schema_version": 1,
+  "session_summary": "Bear trend from the open with a late bull trap: small-pullback bear channel all day, 20/EMA gap-bar sells, measured move down, then a wedge rally to a double top that trapped bulls before a sell-the-close collapse."
+}

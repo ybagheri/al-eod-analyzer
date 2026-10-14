@@ -176,3 +176,93 @@ def test_file_exchange_pending_then_collect(tmp_path: Path) -> None:
     second = service.run()
     assert (second.labeled, second.pending) == (1, 0)
     assert (tmp_path / "labels" / "id-1.json").is_file()
+
+
+def test_reviewed_labels_protected_unless_clobbered(tmp_path: Path) -> None:
+    manifest = _manifest(("id-1", "a_2022_07_29.jpg", "2022-07-29"))
+    builder = _builder(tmp_path)
+    service = _service(
+        tmp_path, manifest, FakeVisionClient(default_response=_label_dict("id-1")), builder
+    )
+    assert service.run().labeled == 1
+    # Simulate a review: history exists + label edited under a NEWER prompt version.
+    history = tmp_path / "history"
+    history.mkdir()
+    (history / "id-1.rev1.json").write_text("{}", encoding="utf-8")
+    other = _label_dict("id-1")
+    other["extraction_meta"] = {
+        "provider": "fake",
+        "model_id": "fake",
+        "prompt_version": "other_version",
+    }
+    other["day_type"] = "trading_range"
+    (tmp_path / "labels" / "id-1.json").write_text(json.dumps(other), encoding="utf-8")
+    guarded = ExtractionService(
+        manifest=manifest,
+        data_dir=tmp_path / "data",
+        labels_dir=tmp_path / "labels",
+        failed_dir=tmp_path / "failed",
+        client=FakeVisionClient(default_response=_label_dict("id-1")),
+        prompt_builder=builder,
+        provider="fake",
+        backoff_base_s=0.0,
+        history_dir=history,
+    )
+    report = guarded.run()
+    assert (report.labeled, report.skipped) == (0, 1)
+    assert any("reviewed label kept" in w for w in report.warnings)
+    kept = json.loads((tmp_path / "labels" / "id-1.json").read_text(encoding="utf-8"))
+    assert kept["day_type"] == "trading_range"
+    clobbering = ExtractionService(
+        manifest=manifest,
+        data_dir=tmp_path / "data",
+        labels_dir=tmp_path / "labels",
+        failed_dir=tmp_path / "failed",
+        client=FakeVisionClient(default_response=_label_dict("id-1")),
+        prompt_builder=builder,
+        provider="fake",
+        backoff_base_s=0.0,
+        history_dir=history,
+        clobber_reviewed=True,
+    )
+    assert clobbering.run().labeled == 1
+
+
+def test_gold_labels_protected_unless_clobbered(tmp_path: Path) -> None:
+    import json as _json
+
+    manifest = _manifest(("id-1", "a_2022_07_29.jpg", "2022-07-29"))
+    builder = _builder(tmp_path)
+    service = _service(
+        tmp_path, manifest, FakeVisionClient(default_response=_label_dict("id-1")), builder
+    )
+    assert service.run().labeled == 1
+    (tmp_path / "gold.json").write_text(
+        _json.dumps({"schema_version": 1, "image_ids": ["id-1"]}), encoding="utf-8"
+    )
+    other = _label_dict("id-1")
+    other["extraction_meta"] = {
+        "provider": "fake",
+        "model_id": "fake",
+        "prompt_version": "other_version",
+    }
+    (tmp_path / "labels" / "id-1.json").write_text(_json.dumps(other), encoding="utf-8")
+
+    def _guarded(clobber: bool) -> ExtractionService:
+        return ExtractionService(
+            manifest=manifest,
+            data_dir=tmp_path / "data",
+            labels_dir=tmp_path / "labels",
+            failed_dir=tmp_path / "failed",
+            client=FakeVisionClient(default_response=_label_dict("id-1")),
+            prompt_builder=builder,
+            provider="fake",
+            backoff_base_s=0.0,
+            gold_path=tmp_path / "gold.json",
+            clobber_reviewed=clobber,
+        )
+
+    report = _guarded(False).run()
+    assert (report.labeled, report.skipped) == (0, 1)
+    assert any("gold label kept" in w for w in report.warnings)
+    assert _guarded(True).run().labeled == 1

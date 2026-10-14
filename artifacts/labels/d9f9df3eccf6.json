@@ -5,87 +5,164 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.55,
+      "confidence": 0.85,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Magenta note 'Consecutive wedge tops' with dotted lines (no time axis, omitted)",
-      "label": "wedge",
-      "outcome": "partial",
-      "outcome_reason": "tops capped rallies inside the range",
+      "evidence": "Red note; green Open of Day reference line; subsequent decline ends below the level (x1105-1295)",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "context note (not a standalone pattern); direction follows the observed next move",
+      "placement": 0.85,
       "price_hint": null,
-      "raw_label": "Consecutive wedge tops",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "Late test of Open of Day",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        1105,
+        1295
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.7,
+      "confidence": 0.75,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Early overlapping price action x75-345",
+      "label": "trading_range_begin",
+      "label_explicit": 0.5,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Trading range begins",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        75,
+        345
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Range-like overlap x800-980 before the later bearish move",
+      "label": "trading_range_end",
+      "label_explicit": 0.5,
+      "modifiers": [
+        "failed_breakout"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "range does not continue to the chart edge; exact boundary uncertain",
+      "placement": 0.6,
+      "price_hint": null,
+      "raw_label": "Trading range ends",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        800,
+        980
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Red note 'Lower High Major Trend Reversal' with arrow at ~4062",
-      "label": "major_trend_reversal",
+      "evidence": "Magenta label and dotted trend lines x105-725",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "top",
+        "consecutive"
+      ],
       "outcome": "success",
-      "outcome_reason": "lower-high reversal sold to ~4030",
+      "outcome_reason": "topping structures observed",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "Lower High Major Trend Reversal",
+      "raw_label": "Consecutive wedge tops",
+      "role": "pattern",
       "source": "human",
-      "start_time": null
+      "start_time": null,
+      "x_px": [
+        105,
+        725
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Same red note: 'Head and Shoulders Top'",
-      "label": "head_and_shoulders_top",
-      "outcome": "success",
-      "outcome_reason": "H&S top resolved down",
+      "evidence": "Red annotation explicitly names Head and Shoulders Top x900-975; arrow marks the area",
+      "label": "double_top",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "double_top is a structural approximation only; precise H&S boundaries uncertain \u2014 keep the original name in raw_label",
+      "placement": 0.65,
       "price_hint": null,
       "raw_label": "Head and Shoulders Top",
+      "role": "pattern",
       "source": "human",
-      "start_time": null
+      "start_time": null,
+      "x_px": [
+        900,
+        975
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
+      "confidence": 0.8,
+      "direction": "bear",
       "end_time": null,
-      "evidence": "Red note 'Late test of Open of Day' at the right; green open-of-day line",
-      "label": null,
-      "outcome": "partial",
-      "outcome_reason": "open was tested late but held",
-      "price_hint": null,
-      "raw_label": "Late test of Open of Day",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
-      "end_time": null,
-      "evidence": "Overlapping sideways trade from the open",
-      "label": "trading_range_begin",
+      "evidence": "Red label and arrow at the lower-high reversal area x920-975",
+      "label": "major_trend_reversal",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "lower_high"
+      ],
       "outcome": "success",
-      "outcome_reason": "range contained the whole day",
+      "outcome_reason": "",
+      "placement": 0.8,
       "price_hint": null,
-      "raw_label": "trading range begins",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "Lower High Major Trend Reversal",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        920,
+        975
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "neutral",
+      "confidence": 0.9,
+      "direction": "bear",
       "end_time": null,
-      "evidence": "Price still overlapping at the right edge",
-      "label": "trading_range_end",
+      "evidence": "Strong consecutive bearish bars breaking below the late range x1025-1105",
+      "label": "spike",
+      "label_explicit": 0.0,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "day closed inside the range",
+      "outcome_reason": "late bearish move observed",
+      "placement": 0.9,
       "price_hint": null,
-      "raw_label": "trading range ends",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "Bearish breakout",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        1025,
+        1105
+      ]
     }
   ],
   "extraction_meta": {
@@ -96,5 +173,5 @@
   },
   "image_id": "d9f9df3eccf6",
   "schema_version": 1,
-  "session_summary": "Monday trading range day: consecutive wedge tops, lower-high major trend reversal with head and shoulders top down to ~4030, late test of the open of day. No time axis visible so all times are null."
+  "session_summary": "Monday trading range day with a bearish tail (reviewer: title fits most of the day, but the late slide has clear bear direction): late test of the open-of-day level, early range, consecutive wedge tops, HST (parent-mapped double_top, raw name preserved), LH major reversal, late bearish breakout. Reference levels: open of day ~4028 (green), Friday's low ~4055 (blue). Boxes by color only."
 }

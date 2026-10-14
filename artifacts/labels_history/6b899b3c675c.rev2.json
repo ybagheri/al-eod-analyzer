@@ -1,0 +1,191 @@
+{
+  "date": "2022-08-18",
+  "day_type": "broad_bull_channel",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "magenta dotted lines x108-195, low ~4265.5",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rally ~17pts; independent structure (w1)",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Wedge (bottom-left)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        108,
+        195
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red HH DT note + magenta wedge lines x190-300, top ~4282.5",
+      "label": "double_top",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "HH",
+        "wedge_top",
+        "push_1",
+        "unverified"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "push 1 (unverified); only ~12pt pullback to ~4270.5, then above the top (4291)",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "HH DT + Wedge (merged)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        190,
+        300
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "blue note x395-445, top ~4291",
+      "label": "wedge",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "push 2 (unverified); ~24pt slide to ~4267",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Wedge (blue, ~4290)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        395,
+        445
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "magenta note, top ~4295.5 x890-985, one big down bar (~13pts)",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "nested"
+      ],
+      "outcome": "success",
+      "outcome_reason": "push 3 / envelope (unverified); chart cut off, continuation unknown",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Nested Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        890,
+        985
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "magenta parabolic lines + green HL DB note, low ~4267.4 x445-580",
+      "label": "double_bottom",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom",
+        "parabolic",
+        "HL"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rally ~28pts to 4295.5; HL relative to the left wedge (linked_to w1)",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Parabolic Wedge + HL DB (merged)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        445,
+        580
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "green note at ~4272 (text sits below the structure); phase x690-975, 4276-4295.5",
+      "label": "channel",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "small_pullbacks"
+      ],
+      "outcome": "success",
+      "outcome_reason": "sub-phase of the broad channel (exact start unverified)",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "Small Pullback Bull",
+      "role": "day_part",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        690,
+        975
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "long magenta line x108-975, 4280 to 4295.5",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [
+        "trend_line",
+        "channel_upper_bound"
+      ],
+      "outcome": "success",
+      "outcome_reason": "graphic-only structure",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "channel upper bound (long magenta line)",
+      "role": "structure",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        108,
+        975
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "6b899b3c675c",
+  "schema_version": 1,
+  "session_summary": "Broad bull channel but mostly trading range (reviewer: secondary trading_range): highs ~4282.5/4291/4295.5, lows ~4265.5/4267.4/4276.5-4278 with heavy overlap; long magenta line (x108-975) is the channel upper bound. Five wedge structures (w1 bottom, w2/w3/w4 tops incl. nested) plus a small-pullback channel phase. No time axis: event positions are x_px. Signal boxes by color detection only (future work)."
+}

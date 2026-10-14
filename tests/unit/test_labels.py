@@ -114,3 +114,39 @@ def test_migrate_passthrough_and_legacy() -> None:
 def test_migrate_rejects_future_version() -> None:
     with pytest.raises(ValueError):
         migrate_day_label({"schema_version": 99})
+
+
+def test_event_reviewer_axes_defaults_and_bounds() -> None:
+    from brooks_lab.domain.labels import EventRole
+
+    event = EventLabel(label=EventKind.WEDGE, raw_label="Wedge")
+    assert event.modifiers == []
+    assert event.role is EventRole.PATTERN
+    assert event.label_explicit is None
+    assert event.placement is None
+    assert event.x_px is None
+    scored = EventLabel(
+        label=EventKind.WEDGE,
+        raw_label="Wedge",
+        confidence=0.8,
+        label_explicit=0.95,
+        placement=0.8,
+        modifiers=["top", "at_ema"],
+        role=EventRole.ENTRY_SIGNAL,
+        x_px=[100, 200],
+    )
+    assert scored.modifiers == ["top", "at_ema"]
+    assert scored.role is EventRole.ENTRY_SIGNAL
+    with pytest.raises(ValidationError):
+        EventLabel(label=EventKind.WEDGE, label_explicit=1.5)
+    with pytest.raises(ValidationError):
+        EventLabel(label=EventKind.WEDGE, placement=-0.1)
+    with pytest.raises(ValidationError):
+        EventLabel(label=EventKind.WEDGE, role="not_a_role")  # type: ignore[arg-type]
+
+
+def test_day_date_optional() -> None:
+    label = DayLabel(image_id="x", extraction_meta=_meta())
+    assert label.date is None
+    restored = DayLabel.model_validate_json(label.model_dump_json())
+    assert restored == label

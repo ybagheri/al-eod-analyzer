@@ -1,0 +1,260 @@
+{
+  "date": null,
+  "day_type": "reversal_day",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "converging blue lines x150-235, ~4286-4296",
+      "label": "triangle",
+      "label_explicit": 0.7,
+      "modifiers": [
+        "contracting"
+      ],
+      "outcome": "success",
+      "outcome_reason": "background structure for the reversal",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "contracting triangle (context)",
+      "role": "structure",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        150,
+        235
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "magenta dotted lines to the ~4279 low (x100-250)",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom",
+        "failed_breakout",
+        "breakout_bear",
+        "result_failed"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged Wedge + Failed-breakout rows (same low); breakout_dir bear, result failed; ~48pt rally after",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "wedge bottom + failed breakdown",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        100,
+        250
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "orange arrow leftwards to the beige box on the big up bars x340-362 (~4287-4302) after the wedge low",
+      "label": "buy_the_close",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bull_trend"
+      ],
+      "outcome": "success",
+      "outcome_reason": "text sits at x467-730/~4295 (arrow carrier only): TIME/POSITION RULE case",
+      "placement": 0.85,
+      "price_hint": null,
+      "raw_label": "Buy The Close Bull Trend",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        340,
+        362
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "blue arrow at the first up-leg top (x480-600, top ~4315, low ~4307)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "reversal",
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "minor (not full) reversal: ~8pt pullback (~22% of the 36pt leg) to the EMA, then the second leg to ~4327",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "minor reversal",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        480,
+        600
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "text under the structure (x585-750); first pullback to the EMA (x575-640, ~4307-4312)",
+      "label": "ema_gap_bar",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "buy",
+        "unverified"
+      ],
+      "outcome": "success",
+      "outcome_reason": "~20 bars above the EMA since the wedge low (+-2, unverified); ~20pts to 4327",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "20-gap bar buy",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        575,
+        640
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "magenta note, top ~4327 (x610-800)",
+      "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "nested"
+      ],
+      "outcome": "success",
+      "outcome_reason": "nesting order unverified; long magenta line is the structure bound; ~35pt slide",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Nested Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        610,
+        800
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "orange arrow to the beige box on the big down bars (x820-850)",
+      "label": "major_bear_surprise",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "~35pt slide to ~4291.5; ~64% retraced after (to ~4314)",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "Major Bear Surprise",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        820,
+        850
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "x883-900, ~4295-4301, under the High 2 note",
+      "label": "inside_inside",
+      "label_explicit": 0.9,
+      "modifiers": [
+        "resolution_bull"
+      ],
+      "outcome": "success",
+      "outcome_reason": "breakout-mode compression; resolution bull",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "ii",
+      "role": "bar_pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        883,
+        900
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "beige boxes x895-930, recovery ~18pts to ~4314",
+      "label": "h2",
+      "label_explicit": 0.95,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "High 2",
+      "role": "entry_signal",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        895,
+        930
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.9,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "blue dotted line x1068-1100; recomputed (4327+4279)/2 = 4303: calibration OK",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "midpoint_of_day",
+        "level",
+        "calibration_ok"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "reference level; last bar sits on it: chart ends here, unresolved",
+      "placement": 0.9,
+      "price_hint": null,
+      "raw_label": "midpoint of day 4303",
+      "role": "structure",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        1068,
+        1100
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "a9d707ed92f6",
+  "schema_version": 1,
+  "session_summary": "Reversal up from below the triangle, then wedge top (reviewer phases: range/triangle, failed breakdown + reversal to ~4327, wedge top slide, bounce to midpoint; no date/day-marker/axis on image: date null). Magenta trend lines and signal boxes by color only (future work)."
+}

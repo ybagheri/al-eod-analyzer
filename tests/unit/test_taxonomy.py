@@ -25,10 +25,15 @@ def _repo_taxonomy() -> Path:
 def test_repo_taxonomy_loads_v1() -> None:
     taxonomy = load_taxonomy(_repo_taxonomy())
     assert taxonomy.schema_version == 1
-    assert len(taxonomy.day_types) == 14
-    assert len(taxonomy.events) == 46
+    assert len(taxonomy.day_types) == 15
+    assert len(taxonomy.events) == 50
     assert "other" in taxonomy.day_types
     assert "midday_reversal" in taxonomy.events
+    assert "bear_surprise" in taxonomy.events
+    assert "trend_line" in taxonomy.events
+    assert "low_4" in taxonomy.events
+    assert "measuring_gap" in taxonomy.events
+    assert "bull_trend_resumption" in taxonomy.day_types
 
 
 def test_taxonomy_rejects_version_mismatch(tmp_path: Path) -> None:
@@ -45,6 +50,7 @@ def test_taxonomy_rejects_version_mismatch(tmp_path: Path) -> None:
         ("Spike and Channel Bull Trend", DayType.SPIKE_AND_CHANNEL_BULL),
         ("  BULL TREND FROM THE OPEN ", DayType.BULL_TREND_FROM_OPEN),
         ("trading-range-day", DayType.TRADING_RANGE),
+        ("Trend Resumption", DayType.BULL_TREND_RESUMPTION),
     ],
 )
 def test_day_type_mapping(raw: str, expected: DayType) -> None:
@@ -73,6 +79,10 @@ def test_day_type_mapping(raw: str, expected: DayType) -> None:
         ("Bear Trap", EventKind.FAILED_BREAKOUT),
         ("2nd Leg Bull Trap", EventKind.FAILED_BREAKOUT),
         ("Trend Resumption up", EventKind.BREAKOUT),
+        ("Bear Surprise", EventKind.BEAR_SURPRISE),
+        ("Trendline", EventKind.TREND_LINE),
+        ("Low 4", EventKind.LOW_4),
+        ("Became Measuring Gap", EventKind.MEASURING_GAP),
         ("HH DT", EventKind.DOUBLE_TOP),
         ("TBTL", None),
         ("Second Entry", None),

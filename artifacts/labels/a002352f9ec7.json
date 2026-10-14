@@ -13,15 +13,20 @@
       },
       "evidence": "Brown note 'Major Surprise Bar / Expect bear trend or TR Day' with arrow at the large down bar; yellow highlight",
       "label": "major_bear_surprise",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "surprise bar set the bear tone for the whole day",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Major Surprise Bar",
+      "role": "pattern",
       "source": "vision",
       "start_time": {
         "time": "07:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -33,15 +38,20 @@
       },
       "evidence": "Magenta note 'Wedge Bottom / Minor Reversal likely' with dotted lines",
       "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "partial",
       "outcome_reason": "only a minor reversal before bears resumed",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Wedge Bottom",
+      "role": "pattern",
       "source": "vision",
       "start_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -50,15 +60,20 @@
       "end_time": null,
       "evidence": "Blue note 'LL MTR / Prob Minor ok swing buy' near 09:30; green note 'Bulls tried to bottom around 9:45, and test back to the open but failed.'",
       "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "fail",
       "outcome_reason": "bottom attempt failed; test of the open never completed",
+      "placement": null,
       "price_hint": null,
       "raw_label": "LL MTR swing buy",
+      "role": "pattern",
       "source": "human",
       "start_time": {
         "time": "09:30",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -70,15 +85,20 @@
       },
       "evidence": "Blue note 'Measured move from high to open projecting down'; red note 'Bears got trend resumption'",
       "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "measured move projected the full-day decline",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Measured move from high to open projecting down",
+      "role": "pattern",
       "source": "vision",
       "start_time": {
         "time": "07:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -90,15 +110,20 @@
       },
       "evidence": "Green note 'Bull BO of bull Flag' near 10:15; breakout failed back down",
       "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "fail",
       "outcome_reason": "bull breakout failed and bears resumed into the TTR breakdown",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Bull BO of bull Flag",
+      "role": "pattern",
       "source": "vision",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -110,15 +135,20 @@
       },
       "evidence": "Brown note 'TTR best to wait for BO'; breakdown out of the yellow tight range near 12:00",
       "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
       "outcome_reason": "breakout led to the late selloff toward 4510",
+      "placement": null,
       "price_hint": null,
       "raw_label": "breakout of TTR",
+      "role": "pattern",
       "source": "vision",
       "start_time": {
         "time": "12:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     }
   ],
   "extraction_meta": {

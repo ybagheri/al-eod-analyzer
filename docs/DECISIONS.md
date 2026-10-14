@@ -81,3 +81,56 @@
   accurate because the canonical assignments are human decisions.
 - Consequences: normaliser now also strips dots/parens (`Ext. Triangle` matches);
   engine Phase 6 must cover the new ids (esp. ii/oo/triangle/MTR detection).
+
+## ADR-007 — Reviewer-driven schema extension + conventions (2026-10-12, accepted)
+
+- Context: deep human review of 10 labels exposed systematic needs: text-vs-position
+  certainty split, base+modifier composition (instead of id explosion), claim-based
+  outcomes, result-direction, per-image clock incomparability, dateless images.
+- Decision: (1) additive optional fields only — `modifiers`, `role` (EventRole:
+  pattern/entry_signal/expectation/day_part/structure/exit_signal/day_phase),
+  `label_explicit`, `placement`, `x_px`; `date` becomes optional (null = unverified
+  on-chart). Label schema stays v1 (backward compatible both directions).
+  (2) Conventions: outcome = did the label's claim happen; direction = result
+  direction; evidence from current image only; stacked notes = one row;
+  position from structure never text; qualified notes scored per claim.
+  (3) Feed-timezone theory (PT vs Central feeds) recorded but NOT applied:
+  times stay as-printed with PT default + note; Phase 5 resolves per feed.
+  (4) Prompt `extract_v2.md` carries the five reviewer rules; CLI default moved
+  to v2 (v1 labels keep their provenance; resume distinguishes by version).
+- Consequences: engine/eval phases must use the split confidences and modifiers;
+  price-anchors beyond `price_hint` deferred to Phase 5; support/resistance ids
+  deferred to v1.2.
+
+## ADR-008 — Review round 2: roles, bare surprise, prompt rules (2026-10-12, accepted)
+
+- Context: round-2 review fixed directions/outcomes across 7 labels, demanded the
+  reviewer `kind` axis (pattern/entry/advice/context/...) and exposed model-added
+  words ("major", template-placement evidence).
+- Decision: add EventRoles CONTEXT/ADVICE/BAR_PATTERN and EventKinds
+  `bear_surprise` (bare text only; "Major" stays major) + `trend_line`; remap the
+  bare cases (08-03, 08-09). Day types stay canonical (broad_bull_channel and
+  reversal_day already exist — no free strings needed). Prompt v2 gains 13 rules
+  (compound-note replaces context-clause; + identity/UI/marker/abbreviation/target/
+  outcome/day-quality/advice/scale/reuse/level-check/numbers) plus the approved
+  pattern glossary; v2 unused by any extraction yet, so no version bump.
+  `outcome: null` for advice rows REJECTED (breaks rate math): use unclear +
+  "no testable claim" reason. session_bar_no/label_tz_group/linked_to deferred.
+- Consequences: extract now also skips gold labels without --clobber-reviewed;
+  engine must treat direction as result-direction and outcome as claim-based.
+
+## ADR-009 — Review round 3: resumption regime, new ids, observed mapping (2026-10-12, accepted)
+
+- Context: round-3 review reworked 8 labels, fixed numbers throughout, and vetoed
+  the Measuring-Gap demotion (drawn levels must stay as structures).
+- Decision: add DayType `bull_trend_resumption` (TR open -> breakout -> resumption)
+  and EventKinds `low_4` (fourth-entry signal) + `measuring_gap` (breakout gap
+  with MM marker); taxonomy v1.2 (still schema v1, additive). Reviewer outcome
+  words map as: observed/confirmed -> success (structure seen, NOT profitability),
+  unverified -> unclear + reason, failed -> fail, partial -> partial. Bare
+  "Bear Surprise" demotions stand except where drawn target lines exist (aa65
+  veto: keep as structures). HST stays parent-mapped (double_top + alt note).
+  Support/resistance/open-of-day/session_bar_no/linked_to/breakout_dir/H3 ids
+  deferred again.
+- Consequences: success rates measure annotation-claim fulfilment, never edge;
+  Phase 7 must state this; engine needs the new regime/id coverage.

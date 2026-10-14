@@ -11,54 +11,124 @@
         "time": "07:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue annotation 'Breakout on the open is the Spike' with arrow; shaded spike area and first strong bull leg",
+      "evidence": "blue note + arrow + shaded box; rising magenta dotted trend line inside",
       "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "spike led directly into the all-day bull channel",
+      "outcome_reason": "",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Breakout on the open is the Spike",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "07:00",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
-      "end_time": null,
-      "evidence": "Orange 'Buy The Close' note with arrow pointing at the early spike pullback",
+      "end_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange note + arrow pointing at the beige box over the first bull bars",
       "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "buyers held; trend continued all day",
+      "outcome_reason": "refers to the open, not 07:15",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Buy The Close",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "07:15",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "short red dotted horizontal line at the spike top, red sell boxes after",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "no text label; minor top starting the pullback",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "minor double top",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bull",
       "end_time": {
-        "time": "08:45",
+        "time": "08:35",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Wedge Bull Flag' note with up arrow at the morning pullback low; dotted wedge lines",
+      "evidence": "magenta note + descending magenta dotted lines 07:30 high to 08:35 low",
       "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bull_flag"
+      ],
       "outcome": "success",
-      "outcome_reason": "pullback ended and the bull channel resumed",
+      "outcome_reason": "",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Wedge Bull Flag",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "08:30",
+        "time": "07:30",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue note beside the same pullback",
+      "label": "pullback_50pct",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pixel measure is ~60-70% of the spike from 4081; 50% is Brooks's label",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "50% Pullback",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -68,65 +138,52 @@
         "time": "08:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue '50% Pullback' note at the same morning pullback",
-      "label": "pullback_50pct",
+      "evidence": "orange note + up arrow + beige box at the pullback low",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "pullback held near 50% and reversed up",
+      "outcome_reason": "",
+      "placement": null,
       "price_hint": null,
-      "raw_label": "50% Pullback",
-      "source": "vision",
+      "raw_label": "Buy The Close Bull Trend",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "08:30",
+        "time": "08:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.85,
       "direction": "bull",
       "end_time": {
-        "time": "12:30",
+        "time": "12:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Green note 'Small Pullback Bull Trend is the bull channel'; overlapping grind with dotted channel lines",
+      "evidence": "green note; steady grind above the MA with rising magenta dotted wedge lines",
       "label": "channel",
+      "label_explicit": null,
+      "modifiers": [
+        "small_pullback",
+        "many_gaps",
+        "body_gaps",
+        "many_wedges_but_only_buy"
+      ],
       "outcome": "success",
-      "outcome_reason": "channel carried price higher into the close",
+      "outcome_reason": "gaps/body gaps from the right-side note only; supports 4112 (08:55-10:30), 4120 (10:00-10:35)",
+      "placement": null,
       "price_hint": null,
       "raw_label": "Small Pullback Bull Trend is the bull channel",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "09:00",
+        "time": "08:45",
         "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Right-side note 'Many gaps and body gaps so strong'",
-      "label": "gap",
-      "outcome": "success",
-      "outcome_reason": "gaps held, signalling trend strength",
-      "price_hint": null,
-      "raw_label": "Many gaps",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": null,
-      "evidence": "Right-side note 'Many gaps and body gaps so strong'",
-      "label": "body_gap",
-      "outcome": "success",
-      "outcome_reason": "body gaps held, signalling trend strength",
-      "price_hint": null,
-      "raw_label": "body gaps",
-      "source": "vision",
-      "start_time": null
+      },
+      "x_px": null
     },
     {
       "bar_index_hint": null,
@@ -135,15 +192,20 @@
       "end_time": null,
       "evidence": "Small red boxes on the last bars near 13:00; no confirming annotation",
       "label": "signal_bar",
+      "label_explicit": null,
+      "modifiers": [],
       "outcome": "unclear",
       "outcome_reason": "cannot tell from the image whether sellers followed through",
+      "placement": null,
       "price_hint": null,
       "raw_label": "late red boxes",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
         "time": "13:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": null
     }
   ],
   "extraction_meta": {
@@ -154,5 +216,5 @@
   },
   "image_id": "2e92a62eecc3",
   "schema_version": 1,
-  "session_summary": "Spike and channel bull trend: opening spike, wedge bull flag with 50% pullback in the morning, then a small-pullback bull channel with gaps into the close."
+  "session_summary": "Spike and channel bull trend (day ~4081-4145 per reviewer pixels): opening spike 06:35-07:30, BTC on the open, minor double top into the pullback, wedge bull flag with 50% pullback (retrace ~60-70% per pixel measure) to 08:35, BTC bull trend at the low, then small-pullback channel 08:45-12:45 with supports 4112 and 4120. Left axis reads 22/7/27 but the day marker reads 7/29; bars left of the marker belong to the prior session."
 }

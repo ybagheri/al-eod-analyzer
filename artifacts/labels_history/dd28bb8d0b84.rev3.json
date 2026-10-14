@@ -1,0 +1,248 @@
+{
+  "date": "2022-08-05",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Magenta note 'Parabolic Wedge' over the opening rally to ~4152",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "parabolic top reversed into the sell climax",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Red note 'Sell Climax, HL DB' at the ~4110 low",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "climax marked the low; bounce followed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green note 'HL DB' at the same 08:45 low",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "higher-low bottom held into the recovery",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "HL DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Second green 'HL DB' near 09:30",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second higher low supported the recovery",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "HL DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Small Pullback Bull Trend' over the 09:30-11:00 recovery",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "recovery stalled into the triangle",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Small Pullback Bull Trend",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Brown note 'Bear Trap' near 11:30 before the recovery resumed",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "trapped bears; price recovered",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Bear Trap",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Third green 'HL DB' near 11:45",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "held into the afternoon range",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "HL DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'Possible Triangle' with dotted lines spanning into the close",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "triangle noted without annotated resolution",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Possible Triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.4,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue 'ii' mark near 07:30; meaning not determinable",
+      "label": "inside_inside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "unknown what ii denotes",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "ii",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.45,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green 'Buy The Close' at the bottom left; placement ambiguous (possibly prior day)",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "cannot tell which close this refers to",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Buy The Close",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "dd28bb8d0b84",
+  "schema_version": 1,
+  "session_summary": "Parabolic wedge buy climax then triangle: opening spike to 4152, sell climax with HL double bottoms near 4110, small-pullback recovery with a bear trap, then triangle confusion into the close."
+}

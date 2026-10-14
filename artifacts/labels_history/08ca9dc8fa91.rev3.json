@@ -1,0 +1,242 @@
+{
+  "date": "2022-08-01",
+  "day_type": "bull_trend_from_open",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "title + consecutive bull bars with higher lows (green dotted supports ~4120, ~4113)",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "bull trend from open",
+      "role": "day_phase",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        95,
+        300
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "brown note + beige box over the first bull bars at the open",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "refers to the first bars of the session",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Buy The Close",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        95,
+        125
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "brown note + large beige box over the big bull bars",
+      "label": "major_bull_surprise",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Major Bull Surprise",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        249,
+        298
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red note LH DT + red dotted horizontal line at ~4147",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second high (~4146) only marginally lower",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        293,
+        437
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "magenta note + magenta dotted rising line ~4141-4146",
+      "label": "truncated_wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Truncated Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        182,
+        437
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "short red dotted line at ~4136",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [
+        "lower_high"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "lower high",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        520,
+        570
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "magenta note Wedge + magenta dotted lines falling to the ~4104 low",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        607,
+        717
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "green note HL DB + green dotted line at ~4111",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "same area as the wedge bottom; both valid and overlap",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "HL DB",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        717,
+        875
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red dotted horizontal line at ~4130, no text label",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [
+        "inferred"
+      ],
+      "outcome": "success",
+      "outcome_reason": "inferred from the dotted line only",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "double top (inferred)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        645,
+        935
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "title + overlapping small bars after the ~4130 top",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "afternoon trading range",
+      "role": "day_part",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        935,
+        1075
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "08ca9dc8fa91",
+  "schema_version": 1,
+  "session_summary": "Bull trend from the open, then trading range (day 4098-4147 per reviewer pixels): opening trend with BTC on the first bars, major bull surprise to 4147, LH double top with truncated wedge down to a wedge/HLDB bottom near 4104, recovery with an inferred double top at 4130, then an afternoon range 4117-4128. No time axis: positions are x_px, prices approx +-2pts."
+}

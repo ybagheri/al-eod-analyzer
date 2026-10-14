@@ -217,3 +217,21 @@ def test_remap_no_match_and_missing(tmp_path: Path) -> None:
     assert not service.remap_events("id-1", []).applied
     assert "no matches" in service.remap_events("id-1", []).message
     assert not service.remap_events("absent", []).applied
+
+
+def test_apply_date_explicit_null_vs_absent(tmp_path: Path) -> None:
+    service = _service(tmp_path, _label("id-1"))
+    assert service.load_label("id-1").date == datetime.date(2022, 8, 4)
+    cleared = service.apply_corrections(
+        CorrectionsFile.model_validate({"image_id": "id-1", "date": None})
+    )
+    assert cleared.applied
+    assert service.load_label("id-1").date is None
+    kept = service.apply_corrections(CorrectionsFile(image_id="id-1"))
+    assert kept.applied
+    assert service.load_label("id-1").date is None
+    reset = service.apply_corrections(
+        CorrectionsFile(image_id="id-1", date=datetime.date(2022, 8, 4))
+    )
+    assert reset.applied
+    assert service.load_label("id-1").date == datetime.date(2022, 8, 4)

@@ -1,0 +1,283 @@
+{
+  "date": "2022-08-22",
+  "day_type": "trending_trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.45,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'Sell The Close Bear Trend' at the top left; same template placement as other charts",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "placement ambiguous; close itself was mid-range",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Sell The Close Bear Trend",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": null,
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue note 'High 2' near 07:15; brown note 'Failed High 2' follows",
+      "label": "h2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "second high failed and price slid",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "High 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Brown note 'Failed High 2' near 07:30",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "failed high led the morning slide",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Failed High 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue note 'High 4' near 08:00; H4 is not canonical",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "brief bounce inside the range",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "High 4",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Brown/blue notes 'High 4 / Ext. Triangle' near 08:00",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "pattern noted without annotated resolution",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Ext. Triangle",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Blue/green notes 'Low 4 at EMA / 50% Pullback' near 09:00",
+      "label": "pullback_50pct",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pullback held at the EMA and bounced",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "50% Pullback",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Blue note 'DT PB' near 09:45",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "double-top pullback with limited follow-through",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "DT PB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.4,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Brown 'OO' mark near 10:00; meaning not determinable",
+      "label": "outside_outside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "unknown what OO denotes",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "OO",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Brown note 'Breakout below DB' with arrow",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout led the slide to the lows",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Breakout below DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Green note 'Minor LL DB' near 11:15",
+      "label": "micro_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bounce to 4145 followed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Minor LL DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": null,
+      "evidence": "Magenta note 'Minor Wedge' with dotted lines near 11:45",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "wedge bottom supported the bounce",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Minor Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note 'LH DT' near 12:30",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "test failed and price faded",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v1",
+    "provider": "file"
+  },
+  "image_id": "e092e64606eb",
+  "schema_version": 1,
+  "session_summary": "Bear trending trading range day: failed H2, expanding triangle chop, 50% pullback at the EMA, breakout below the double bottom, then minor LLDB and wedge bounce into an LHDT fade."
+}

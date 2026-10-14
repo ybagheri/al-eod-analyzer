@@ -5,97 +5,121 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.7,
+      "confidence": 0.9,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Blue note 'Low 2 top but bull bars so probably not bear trend day' at the morning top",
-      "label": null,
-      "outcome": "success",
-      "outcome_reason": "no bear trend day developed, as predicted",
+      "evidence": "Red DT text and red dotted horizontal line x245-325 (~4340-4345)",
+      "label": "double_top",
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "",
+      "placement": 0.9,
       "price_hint": null,
-      "raw_label": "Low 2 top but bull bars so probably not bear trend day",
-      "source": "vision",
-      "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      }
+      "raw_label": "DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        245,
+        325
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
+      "confidence": 0.75,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Red 'DT' note with dotted line at the 07:15 top",
-      "label": "double_top",
-      "outcome": "success",
-      "outcome_reason": "top gave way to the washout toward 4320",
+      "evidence": "Magenta Wedge text, magenta descending segment and red dotted resistance x995-1100 (~4343-4353)",
+      "label": "wedge",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "exact start/end need closer line-and-bar inspection",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "DT",
-      "source": "vision",
-      "start_time": {
-        "time": "07:15",
-        "tz": "America/Los_Angeles"
-      }
+      "raw_label": "11:00 wedge top",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        995,
+        1100
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "Red note HH DT but tight channel so minor reversal x530-660 (~4346-4350)",
+      "label": "double_top",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "HH",
+        "minor"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "minor reversal as claimed",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "HH DT",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        530,
+        660
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "Blue explanatory note near morning high x180-330 (~4340-4348)",
+      "label": null,
+      "label_explicit": 1.0,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "context note (not a standalone Low 2: base unverified); bull-bars reason alone does not refute a bear day",
+      "placement": 0.65,
+      "price_hint": null,
+      "raw_label": "Low 2 top but bull bars so probably not bear trend day",
+      "role": "context",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        180,
+        330
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.8,
       "direction": "bull",
-      "end_time": {
-        "time": "07:45",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Magenta note 'Parabolic wedge at 60-min EMA' with dotted lines into the 4320 low; blue 60-min EMA dots",
+      "end_time": null,
+      "evidence": "Magenta label and dotted lines leading to morning low x255-450 (~4321-4336); blue dotted 60-min EMA reference",
       "label": "wedge",
-      "outcome": "success",
-      "outcome_reason": "parabolic wedge bottom at the EMA launched the day-long rally",
+      "label_explicit": 1.0,
+      "modifiers": [
+        "bottom",
+        "parabolic"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "bottom formation; 60-min EMA value not recomputable from image",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Parabolic wedge at 60-min EMA",
-      "source": "vision",
-      "start_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bear",
-      "end_time": {
-        "time": "09:00",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Red note 'HH DT but tight channel so minor reversal' at the 4350 area",
-      "label": "double_top",
-      "outcome": "partial",
-      "outcome_reason": "only a minor reversal in the tight channel",
-      "price_hint": null,
-      "raw_label": "HH DT",
-      "source": "vision",
-      "start_time": {
-        "time": "08:45",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": {
-        "time": "11:30",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Magenta 'Wedge' with dotted lines over the 11:00-11:30 top near 4352",
-      "label": "wedge",
-      "outcome": "success",
-      "outcome_reason": "wedge top faded into the close",
-      "price_hint": null,
-      "raw_label": "Wedge",
-      "source": "vision",
-      "start_time": {
-        "time": "11:00",
-        "tz": "America/Los_Angeles"
-      }
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        255,
+        450
+      ]
     }
   ],
   "extraction_meta": {
@@ -106,5 +130,5 @@
   },
   "image_id": "cb7609ad04b9",
   "schema_version": 1,
-  "session_summary": "Parabolic wedge bottom at the 60-minute EMA and bull trend reversal: morning DT washed out to 4320, wedge bottom launched the rally, HH double top gave only a minor reversal in the tight channel, late wedge top faded."
+  "session_summary": "Parabolic wedge and bull trend reversal (reviewer: title is context, not proof): gap up ~11.6pts, DT 07:00-07:20, parabolic wedge bottom at the 60-min EMA to 4320.4 at 07:50, HH-DT minor reversal, late wedge top with partial pullback, range resistance ~4352.9. Year 2021 from filename is UNVERIFIED (image shows 7/7 only). Prior-session bars left of the day marker ignored. Open-of-day ~4342.1, red resistance, magenta channel bound, gray day marker, boxes by color only (future work)."
 }

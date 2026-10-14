@@ -1,91 +1,251 @@
 {
-  "date": "2022-08-26",
+  "date": null,
   "day_type": "bear_trend_from_open",
   "day_type_confidence": 0.85,
   "events": [
     {
       "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "beige box x196-228: big down bar (~4198 to 4160) then big up bar to ~4203",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [
+        "big_bear_then_big_bull",
+        "resolution_bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "breakout-mode structure; resolution bear (surprise selloff started ~4192); trapped shorts note kept in reason, not outcome",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "beige-box two-bar structure",
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        196,
+        228
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "neutral",
+      "end_time": null,
+      "evidence": "brown note, no arrow/box/bars of its own (x196-228)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "advice",
+        "wait_for_pullback",
+        "linked_bp1"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "advice: no testable claim (reviewer: outcome null N/A; schema keeps unclear); linked to the beige-box structure",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "wait for pullback (advice)",
+      "role": "advice",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        196,
+        228
+      ]
+    },
+    {
+      "bar_index_hint": null,
       "confidence": 0.85,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Red note 'Major Bear Surprise / Likely to have influence over the market for rest of day' beside the large down bars (no time axis, omitted)",
+      "evidence": "pink box x249-297, ~4192 to ~4126 (~66pts)",
       "label": "major_bear_surprise",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "surprise set the bear tone for the whole day",
+      "outcome_reason": "kept major: text says Major",
+      "placement": 0.85,
       "price_hint": null,
       "raw_label": "Major Bear Surprise",
-      "source": "vision",
-      "start_time": null
+      "role": "pattern",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        249,
+        297
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "'Likely to have influence over the market for rest of day'",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "influence_rest_of_day",
+        "linked_bs1"
+      ],
+      "outcome": "success",
+      "outcome_reason": "expectation linked to the surprise: price never returned to the EMA, slid to ~4056",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "influence rest of day",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Same red note: 'Possible Measured Move Down'; decline reached ~4105",
+      "evidence": "red block text; surprise leg ~66pts (4192 to 4126); target ~4060 (method unverified); actual low ~4056 (x1170)",
       "label": "measured_move",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "down",
+        "target_4060",
+        "method_unverified",
+        "overshoot_4"
+      ],
       "outcome": "success",
-      "outcome_reason": "measured move down completed",
+      "outcome_reason": "numbers fixed per NUMBERS RULE (was ~4105): hit with ~4 overshoot; chart cut off at the low, continuation unknown",
+      "placement": 0.7,
       "price_hint": null,
-      "raw_label": "Possible Measured Move Down",
-      "source": "vision",
-      "start_time": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Blue note 'Measuring Gaps, Increased risk of small pullback bear trend'",
-      "label": null,
-      "outcome": "success",
-      "outcome_reason": "measuring gaps projected the slide",
-      "price_hint": null,
-      "raw_label": "Measuring Gaps",
+      "raw_label": "possible measured move down",
+      "role": "expectation",
       "source": "human",
-      "start_time": null
+      "start_time": null,
+      "x_px": [
+        249,
+        1170
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.75,
+      "confidence": 0.7,
       "direction": "bear",
       "end_time": null,
-      "evidence": "Same blue note: 'small pullback bear trend'; red boxes on pullbacks all day",
-      "label": "channel",
+      "evidence": "blue horizontal line ~4126.5 (x290-485), low of the surprise leg",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "measuring_gap",
+        "unverified"
+      ],
       "outcome": "success",
-      "outcome_reason": "small-pullback bear channel carried to the close",
+      "outcome_reason": "veto accepted: demotion was wrong; price level kept as structure; measuring-gap meaning unverified",
+      "placement": 0.7,
       "price_hint": null,
-      "raw_label": "small pullback bear trend",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "measuring gap level 1",
+      "role": "structure",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        290,
+        485
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
-      "direction": "bull",
+      "confidence": 0.7,
+      "direction": "bear",
       "end_time": null,
-      "evidence": "Red note 'Strong Bear Trend / Bulls failed to get strong Trendline break above the moving average'",
-      "label": "failed_breakout",
-      "outcome": "fail",
-      "outcome_reason": "bull trendline-break attempt failed; bears stayed in control",
+      "evidence": "blue horizontal line ~4100.5 (x607-800), small-range low",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "measuring_gap",
+        "unverified"
+      ],
+      "outcome": "success",
+      "outcome_reason": "same as level 1",
+      "placement": 0.7,
       "price_hint": null,
-      "raw_label": "failed Trendline break above the moving average",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "measuring gap level 2",
+      "role": "structure",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        607,
+        800
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "red boxes on pullbacks all day; after 4141 pullbacks stayed small, price under the EMA (one ~4112 touch ~x690, unverified)",
+      "label": "channel",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "small_pullbacks",
+        "bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "merged channel row; expectation linked to gap level 1",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "small pullback bear channel",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        297,
+        1170
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": null,
+      "evidence": "'Strong Bear Trend / Bulls failed to get strong Trendline break above the moving average' (x288-490, text-only, no arrow/box)",
+      "label": null,
+      "label_explicit": 0.95,
+      "modifiers": [
+        "strong_bear_trend",
+        "claim_bulls_fail_EMA_break"
+      ],
+      "outcome": "success",
+      "outcome_reason": "claim held (no strong break came); magenta line link unverified; 'Strong Bear Trend' names the post-surprise phase",
+      "placement": 0.5,
+      "price_hint": null,
+      "raw_label": "strong bear trend context",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": null
     },
     {
       "bar_index_hint": null,
       "confidence": 0.5,
       "direction": "neutral",
       "end_time": null,
-      "evidence": "Brown note 'Big Bear and bull bar / Better to wait for Pullback' at the top",
+      "evidence": "x60-195, ~4185-4204, no label",
       "label": null,
+      "label_explicit": 0.3,
+      "modifiers": [
+        "tight_range",
+        "unverified"
+      ],
       "outcome": "unclear",
-      "outcome_reason": "advice note, no directional outcome",
+      "outcome_reason": "reviewer-missed content; graphic-only",
+      "placement": 0.6,
       "price_hint": null,
-      "raw_label": "Better to wait for Pullback",
-      "source": "vision",
-      "start_time": null
+      "raw_label": "tight pre-breakout range (missed)",
+      "role": "structure",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        60,
+        195
+      ]
     }
   ],
   "extraction_meta": {
@@ -96,5 +256,5 @@
   },
   "image_id": "aa65bbe62442",
   "schema_version": 1,
-  "session_summary": "Major surprise breakout into a bear trend day: morning surprise with measuring gaps and a projected measured move down, small-pullback bear channel all day, failed bull trendline break, weak close near 4105. No time axis visible so all times are null."
+  "session_summary": "Major surprise breakout into a bear trend day (reviewer: major_surprise_breakout_bear_trend_day): beige-box two-bar structure, major bear surprise ~66pts to ~4126 with rest-of-day influence, expected measured move to ~4060 (hit +~4 overshoot, cut off), two measuring-gap levels, small-pullback expectation met, strong-bear context. No time/date axis: null. Watermark and bottom-right blurbs ignored. Boxes by color only."
 }

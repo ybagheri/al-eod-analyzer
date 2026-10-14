@@ -100,9 +100,32 @@ class ExtractionService:
     max_retries: int = 2
     backoff_base_s: float = 1.0
     quarantine_reasons: dict[str, str] = field(default_factory=dict)
+    history_dir: Path | None = None
+    gold_path: Path | None = None
+    clobber_reviewed: bool = False
 
     def _label_path(self, image_id: str) -> Path:
         return self.labels_dir / f"{image_id}.json"
+
+    def _has_history(self, image_id: str) -> bool:
+        """True when a reviewed revision exists (never clobber by default)."""
+        if self.history_dir is None:
+            return False
+        return any(self.history_dir.glob(f"{image_id}.rev*.json"))
+
+    def _gold_ids(self) -> set[str]:
+        """Load gold ids (empty when the registry is missing/invalid)."""
+        if self.gold_path is None or not self.gold_path.is_file():
+            return set()
+        try:
+            from brooks_lab.application.review import GoldSet
+
+            return set(
+                GoldSet.model_validate_json(self.gold_path.read_text(encoding="utf-8")).image_ids
+            )
+        except ValueError:
+            logger.warning("Ignoring unreadable gold registry %s.", self.gold_path)
+            return set()
 
     def _existing_label(self, image_id: str) -> DayLabel | None:
         path = self._label_path(image_id)
@@ -168,6 +191,7 @@ class ExtractionService:
             records = records[:limit]
         labeled = skipped = pending = 0
         warnings: list[str] = []
+        gold_ids = self._gold_ids()
         day_confs: list[float] = []
         event_confs: list[float] = []
         day_counts: Counter[str] = Counter()
@@ -179,6 +203,25 @@ class ExtractionService:
                 and existing.extraction_meta.model_id == self.client.model_id
             ):
                 skipped += 1
+                self._accumulate(existing, day_confs, event_confs, day_counts, event_counts)
+                continue
+            if (
+                existing is not None
+                and not self.clobber_reviewed
+                and self._has_history(record.image_id)
+            ):
+                skipped += 1
+                warnings.append(
+                    f"{record.image_id}: reviewed label kept "
+                    "(history exists; pass clobber_reviewed to re-extract)"
+                )
+                self._accumulate(existing, day_confs, event_confs, day_counts, event_counts)
+                continue
+            if existing is not None and not self.clobber_reviewed and record.image_id in gold_ids:
+                skipped += 1
+                warnings.append(
+                    f"{record.image_id}: gold label kept (pass clobber_reviewed to re-extract)"
+                )
                 self._accumulate(existing, day_confs, event_confs, day_counts, event_counts)
                 continue
             date_iso = record.date.isoformat() if record.date else "unknown"

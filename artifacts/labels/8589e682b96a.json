@@ -5,157 +5,242 @@
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bull",
+      "confidence": 0.8,
+      "direction": "bear",
       "end_time": {
-        "time": "07:30",
+        "time": "07:05",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Parabolic Wedge' note over the opening rally to ~4190 with green boxes",
+      "evidence": "magenta note, top ~4189 x97-165",
       "label": "wedge",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "top",
+        "parabolic"
+      ],
       "outcome": "success",
-      "outcome_reason": "parabolic wedge completed and marked the top before the reversal",
+      "outcome_reason": "wedge TOP (title says Top); ~59pt slide after",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Parabolic Wedge",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "06:45",
+        "time": "06:35",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        97,
+        165
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "neutral",
+      "confidence": 0.75,
+      "direction": "bear",
       "end_time": {
-        "time": "08:00",
+        "time": "08:14",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Blue 'Triangle' note over the 07:30-08:00 congestion; no canonical triangle event exists",
+      "evidence": "upper ~4188 to ~4183, base ~4174.5 x150-322",
       "label": "triangle",
-      "outcome": "unclear",
-      "outcome_reason": "congestion broke down but the triangle itself has no measured outcome",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "contracting",
+        "unverified",
+        "resolution_bear"
+      ],
+      "outcome": "success",
+      "outcome_reason": "contracting subtype unverified; downside break",
+      "placement": 0.75,
       "price_hint": null,
-      "raw_label": "Triangle",
+      "raw_label": "contracting triangle",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "07:30",
+        "time": "07:00",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        150,
+        322
+      ]
     },
     {
       "bar_index_hint": null,
       "confidence": 0.8,
       "direction": "bear",
       "end_time": {
-        "time": "08:45",
+        "time": "08:46",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Brown 'Bear Surprise' note with arrow at the large 08:30-08:45 down bars with red boxes",
-      "label": "major_bear_surprise",
+      "evidence": "brown note x375-400, 4170 to 4147",
+      "label": "bear_surprise",
+      "label_explicit": 0.95,
+      "modifiers": [],
       "outcome": "success",
-      "outcome_reason": "selloff continued toward the measured-move target",
+      "outcome_reason": "bare text: model-added major removed",
+      "placement": 0.8,
       "price_hint": null,
       "raw_label": "Bear Surprise",
-      "source": "vision",
-      "start_time": {
-        "time": "08:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bear",
-      "end_time": {
-        "time": "12:00",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Red 'Probable MM down' note and brown 'MM' target marker near 12:00; magenta 'Nested Wedge at MM target'",
-      "label": "measured_move",
-      "outcome": "success",
-      "outcome_reason": "price reached the MM target area where the nested wedge formed",
-      "price_hint": null,
-      "raw_label": "Probable MM down",
-      "source": "vision",
-      "start_time": {
-        "time": "08:30",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bear",
-      "end_time": {
-        "time": "10:45",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "Red 'LH DT' note with dotted line at the 10:15-10:45 lower-high test",
-      "label": "lower_high_double_top",
-      "outcome": "success",
-      "outcome_reason": "test failed and lower prices followed",
-      "price_hint": null,
-      "raw_label": "LH DT",
-      "source": "vision",
-      "start_time": {
-        "time": "10:15",
-        "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Red 'HST' note beside LH DT; abbreviation meaning not determinable from the image",
-      "label": "head_and_shoulders_top",
-      "outcome": "unclear",
-      "outcome_reason": "unknown what HST denotes",
-      "price_hint": null,
-      "raw_label": "HST",
+      "role": "pattern",
       "source": "human",
       "start_time": {
-        "time": "10:15",
+        "time": "08:36",
         "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        375,
+        400
+      ]
     },
     {
       "bar_index_hint": null,
-      "confidence": 0.55,
+      "confidence": 0.75,
       "direction": "bear",
+      "end_time": null,
+      "evidence": "red note ~08:40; target line ~4133",
+      "label": "measured_move",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "down",
+        "expectation"
+      ],
+      "outcome": "success",
+      "outcome_reason": "expectation (not yet measured at note time); leg ~28pts, target ~55pts below top; method unverified",
+      "placement": 0.75,
+      "price_hint": null,
+      "raw_label": "Probable MM down",
+      "role": "expectation",
+      "source": "human",
+      "start_time": null,
+      "x_px": [
+        468,
+        680
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:47",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted target line x657-950",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [
+        "measured_move_target"
+      ],
+      "outcome": "success",
+      "outcome_reason": "price level, not an event; hit with ~3.5 overshoot to 4129.5",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "MM target 4133",
+      "role": "structure",
+      "source": "human",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        657,
+        950
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:16",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "purple shaded range x457-1013, 4129-4153.5",
+      "label": null,
+      "label_explicit": 0.9,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "",
+      "placement": 0.8,
+      "price_hint": null,
+      "raw_label": "afternoon trading range",
+      "role": "day_part",
+      "source": "human",
+      "start_time": {
+        "time": "09:13",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        457,
+        1013
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red LH DT + HST notes; 4154/4151.5 tops, neckline ~4142 (green x577-655); break ~11:08",
+      "label": "double_top",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "LH",
+        "alt_HST_unverified"
+      ],
+      "outcome": "success",
+      "outcome_reason": "one structure (stacked notes); HST reading unverified: left shoulder ~4150 (weak), head 4154, right 4151.5; ~22pt resolution matches head-to-neck projection; intrarange top below the 4189 day high",
+      "placement": 0.7,
+      "price_hint": null,
+      "raw_label": "LH DT + HST (merged)",
+      "role": "pattern",
+      "source": "human",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": [
+        560,
+        720
+      ]
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
       "end_time": {
         "time": "12:00",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "Magenta 'Nested Wedge at MM target' with dotted lines into the lows",
+      "evidence": "magenta descending lines converging at the 4129.5 low x650-850",
       "label": "wedge",
-      "outcome": "unclear",
-      "outcome_reason": "day ended near the wedge; no clear follow-through shown",
+      "label_explicit": 0.95,
+      "modifiers": [
+        "bottom",
+        "nested",
+        "LL",
+        "minor",
+        "at_mm_target"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge BOTTOM (was bear); nesting order unverified; +~15pts, continuation unknown",
+      "placement": 0.7,
       "price_hint": null,
       "raw_label": "Nested Wedge at MM target",
-      "source": "vision",
+      "role": "pattern",
+      "source": "human",
       "start_time": {
-        "time": "11:30",
+        "time": "10:40",
         "tz": "America/Los_Angeles"
-      }
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "bear",
-      "end_time": null,
-      "evidence": "Green 'LL but minor' note under the nested wedge area",
-      "label": null,
-      "outcome": "unclear",
-      "outcome_reason": "lower low noted as minor; no measured follow-through",
-      "price_hint": null,
-      "raw_label": "LL but minor",
-      "source": "vision",
-      "start_time": {
-        "time": "11:45",
-        "tz": "America/Los_Angeles"
-      }
+      },
+      "x_px": [
+        650,
+        850
+      ]
     }
   ],
   "extraction_meta": {
@@ -166,5 +251,5 @@
   },
   "image_id": "8589e682b96a",
   "schema_version": 1,
-  "session_summary": "Parabolic wedge top then bear trend: opening rally to ~4190 failed, bear surprise with probable measured move down, LH double top midday, nested wedge into the MM target \u2014 a trending trading range day down."
+  "session_summary": "Parabolic wedge top then bear trend (reviewer: parabolic_wedge_top_then_bear_trend; secondary trending_trading_range): 06:35 spike to ~4189, contracting triangle, bare bear surprise 08:36, expected measured move to the 4133 target (hit +3.5 overshoot), afternoon range 4129-4153.5, LH-DT/HST top 10:00-11:10 resolving down ~22pts, nested wedge bottom reversing up ~15pts. Date 08-08 confirmed (axis 8/8 + left 22/8/8 year marker): day marker = session day, left label = year source only. Bars left of the marker (x50-90) are prior session, ignored."
 }

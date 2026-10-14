@@ -39,3 +39,17 @@ def test_prompt_contains_taxonomy_schema_and_context(tmp_path: Path) -> None:
         "model_id: manual",
     ):
         assert marker in prompt
+
+
+def test_repo_prompt_v2_has_reviewer_rules() -> None:
+    template = Path(__file__).resolve().parents[2] / "config" / "prompts" / "extract_v2.md"
+    text = template.read_text(encoding="utf-8")
+    for rule in (
+        "TIME/POSITION RULE",
+        "EVIDENCE RULE",
+        "STACKED-NOTES RULE",
+        "CROSS-IMAGE TIME RULE",
+        "QUALIFIED LABELS RULE",
+        '"prompt_version": "extract_v2"',
+    ):
+        assert rule in text
