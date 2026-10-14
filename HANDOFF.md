@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 4a7a54b (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit c57967c (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,8 +11,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 4 — Human review & gold set
-- Phase status: done (all DoD met, awaiting final commit/push approval)
-- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 52 files / mypy --strict ✓ 21 files / pytest 118 passed / coverage 93.4%)
+- Phase status: done (committed c57967c, pushed to origin/main)
 - Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 52 files / mypy --strict ✓ 21 files / pytest 118 passed / coverage 93.4%)
 
 ## 3. What was done in this session

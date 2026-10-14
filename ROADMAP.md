@@ -8,7 +8,7 @@ Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
 | 1 — Image inventory & ingestion | Manifest of all images, contact sheet | ✅ done | `917beb1` (pushed origin/main) |
 | 2 — Taxonomy, label schema, glossary | Controlled vocabulary + strict `DayLabel` schema v1, glossary draft | ✅ done | `04e4d97` (pushed origin/main) |
 | 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | ✅ done | `0c3ac41` (pushed origin/main) |
-| 4 — Human review & gold set | Trusted ground truth (gold 32/33, taxonomy v1.2) | ✅ done | `PHASE-COMMIT` (pushed origin/main) |
+| 4 — Human review & gold set | Trusted ground truth (gold 32/33, taxonomy v1.2) | ✅ done | `c57967c` (pushed origin/main) |
 | 5 — Market data layer | Real M5 bars, session calendar, label→bar attachment | ⬜ not started | — |
 | 6 — Python pattern engine | Deterministic streaming engine + `PATTERN_SPEC.md` | ⬜ not started | — |
 | 7 — Evaluation framework | Honest engine-vs-labels metrics, date-split, tuning harness | ⬜ not started | — |
