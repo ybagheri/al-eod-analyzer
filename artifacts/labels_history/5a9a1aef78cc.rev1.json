@@ -1,0 +1,349 @@
+{
+  "date": "2023-05-12",
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "21:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Double Top' text with red dotted line at the opening peak",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bear trend from the open unfolded immediately after",
+      "placement": null,
+      "price_hint": 4156.0,
+      "raw_label": "Double Top",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "21:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrow note 'Always In Short / Do not buy' over the 22:00 pullback",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "regime advice beside the first bear leg",
+      "placement": null,
+      "price_hint": 4144.0,
+      "raw_label": "Always In Short Do not buy",
+      "role": "advice",
+      "source": "vision",
+      "start_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue title bar 'Outside Down Day'",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "seen: prior-day bar range outside down day (per title bar)",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Outside Down Day",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "21:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Bull traps' note with arrow at the 23:20 minor rally",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "another bull push trapped bulls and the bear trend resumed",
+      "placement": null,
+      "price_hint": 4134.0,
+      "raw_label": "Bull traps",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue note with down arrow above the 01:05 bar zone",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "advice note during the mid-session pullback",
+      "placement": null,
+      "price_hint": 4128.0,
+      "raw_label": "Do not buy Still in bear channel",
+      "role": "advice",
+      "source": "vision",
+      "start_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted falling wedge lines under 'Consecutive Wedges & Minor Reversals'",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "consecutive"
+      ],
+      "outcome": "success",
+      "outcome_reason": "each wedge top extended the bear trend; minor reversals failed",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Consecutive Wedges & Minor Reversals",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted steep wedge line into the 4116 flush with pink note text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "parabolic"
+      ],
+      "outcome": "success",
+      "outcome_reason": "flush low of the leg followed",
+      "placement": null,
+      "price_hint": 4116.0,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Sell Climax' text under the parabolic flush bars",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "two-leg up move followed, but the bear trend resumed below 4128 into the day low",
+      "placement": null,
+      "price_hint": 4116.0,
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:12",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Low 2' note with up arrow at the 01:30 signal low in the red box",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "third leg down to the 4110 day low followed",
+      "placement": null,
+      "price_hint": 4122.0,
+      "raw_label": "Low 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:28",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Tight Bear Channel into Major Trend Reversal' text with the orange dotted channel down to 4110",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [
+        "tight"
+      ],
+      "outcome": "success",
+      "outcome_reason": "channel ran into the double/triple bottom low and reversed",
+      "placement": null,
+      "price_hint": 4110.0,
+      "raw_label": "Tight Bear Channel into Major Trend Reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Double & Triple Bottom' text under the shaded low box with green dotted lows",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [
+        "triple"
+      ],
+      "outcome": "success",
+      "outcome_reason": "triple-bottom bull breakout carried into the afternoon trend",
+      "placement": null,
+      "price_hint": 4110.0,
+      "raw_label": "Double & Triple Bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green note at top right plus rising leg with green signal boxes",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "small pullback bull trend to 4140 into the close followed",
+      "placement": null,
+      "price_hint": 4111.0,
+      "raw_label": "Major Trend Reversal from Double/Triple Bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Midpoint of day' text with orange dotted horizontal line at 4135",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "rally reached and exceeded the dotted day-midpoint level",
+      "placement": null,
+      "price_hint": 4134.0,
+      "raw_label": "Midpoint of day",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "5a9a1aef78cc",
+  "schema_version": 1,
+  "session_summary": "Blue title bar stack: 'Strong Bear Trend From The Open / Outside Down Day / Major Trend Reversal from Double/Triple Bottom'. Reading: double top at the 4155 open, always-in-short sell-off (do-not-buy advice rows, bull traps on each minor pullback rally), consecutive falling wedges, parabolic wedge sell climax at 4116 (below yesterday's 4119 low) though the trend still ground to a 4110 low at 02:15 behind a low-2 signal and a tight bear channel, then a double & triple bottom at 4110 flipped the regime: major trend reversal up, small pullback bull trend through the day midpoint (dotted 4134) to 4140 into the close. Axis offset-style: prints 22:00-04:00 with a 13 May edge marker (ET+12); yesterday's high/low drawn as dotted side markers."
+}

@@ -21,9 +21,9 @@
       "price_hint": 4072.0,
       "raw_label": "STC",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
-        "time": "07:00",
+        "time": "06:45",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -46,7 +46,7 @@
       "price_hint": 4062.0,
       "raw_label": "High 2",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:25",
         "tz": "America/Los_Angeles"
@@ -71,7 +71,7 @@
       "price_hint": 4063.0,
       "raw_label": "BTC",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
@@ -99,7 +99,7 @@
       "price_hint": 4087.0,
       "raw_label": "Nested Wedge",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:20",
         "tz": "America/Los_Angeles"
@@ -124,7 +124,7 @@
       "price_hint": 4087.0,
       "raw_label": "Micro DT",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:35",
         "tz": "America/Los_Angeles"
@@ -149,7 +149,7 @@
       "price_hint": 4080.0,
       "raw_label": "Low 2",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "07:55",
         "tz": "America/Los_Angeles"
@@ -176,7 +176,7 @@
       "price_hint": 4057.0,
       "raw_label": "Wedge (bottom)",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "08:25",
         "tz": "America/Los_Angeles"
@@ -201,7 +201,7 @@
       "price_hint": 4057.5,
       "raw_label": "LL DB",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "08:25",
         "tz": "America/Los_Angeles"
@@ -226,7 +226,7 @@
       "price_hint": 4074.5,
       "raw_label": "Low 2",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:35",
         "tz": "America/Los_Angeles"
@@ -251,7 +251,7 @@
       "price_hint": 4058.0,
       "raw_label": "Bar 41 Reversal",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
@@ -278,7 +278,7 @@
       "price_hint": 4058.0,
       "raw_label": "Wedge (midday bottom)",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"

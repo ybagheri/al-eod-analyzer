@@ -1,0 +1,170 @@
+{
+  "date": "2020-11-27",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'DT' text above red dotted line spanning the twin 3642 peaks",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakdown to 3626 followed into the flush",
+      "placement": null,
+      "price_hint": 3642.0,
+      "raw_label": "DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' text with magenta dotted rising line into the 07:40 top",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "small dip after the top but the DT breakdown carried the reversal",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "short blue dotted drawn line from the 07:40 top across the 08:05-08:15 red-box bars",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "confirmed the DT breakdown toward the wedges and flush",
+      "placement": null,
+      "price_hint": 3639.0,
+      "raw_label": "break of drawn blue line",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Consecutive wedges' text over two magenta dotted falling wedge lines",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "consecutive"
+      ],
+      "outcome": "success",
+      "outcome_reason": "second wedge flushed into the 3626 sell climax low",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Consecutive wedges",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "climactic flush bars to 3626 with green recovery signal boxes; blue title bar reads 'Sell Climax'",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "two-leg V-reversal followed (bull recovery to 3637)",
+      "placement": null,
+      "price_hint": 3626.0,
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue title bar 'Sell Climax and Bull Reversal in TR Day' plus the final recovery leg",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "short-session close; next-day follow-through not visible",
+      "placement": null,
+      "price_hint": 3637.0,
+      "raw_label": "Bull Reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "08bc255b6b87",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Sell Climax and Bull Reversal in TR Day'. BLACK FRIDAY SHORT SESSION: the axis runs 06:30-10:00 (plain PT mapping of the 09:30-13:00 ET holiday close), and this is the only calibration image so far with a straight-PT axis - useful offset reference. Reading: morning trading range 3637-3642 with a DT (red dotted 3642 line) and a rising wedge into the 07:40 top, breakdown under the short blue dotted line after 08:10, consecutive bear wedges (two magenta dotted falling lines) flushing to a sell climax of 3626 at 09:40 (green signal-box recovery), then a V bull reversal into the close about 3637 (day ends near its open). Chart title says TR day while the filename says climactic reversal day - treat the day-type framing carefully in review."
+}

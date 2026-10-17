@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Calibration round-4 review (all 43 review pages read through): 6 labels
+  corrected via `brooks review-apply` (reviewer ybagheri, history archived):
+  4 day_type retypes (e8ce92071fd7/5a9a1aef78cc/ac0332f48144 -> trend_reversal_
+  to_bull, e0d28242bd89 -> trend_reversal_to_bear), 08bc255b6b87 Bull Reversal
+  -> major_trend_reversal + blue-line break relabelled wedge, 97f1ff2438fc STC
+  start 06:45 (red boxes precede 07:00).
+
 ### Fixed
 
 - Hash-duplicate charts no longer appear twice in the review index:

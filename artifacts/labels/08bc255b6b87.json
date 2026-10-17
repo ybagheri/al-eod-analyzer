@@ -21,7 +21,7 @@
       "price_hint": 3642.0,
       "raw_label": "DT",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "06:55",
         "tz": "America/Los_Angeles"
@@ -48,7 +48,7 @@
       "price_hint": null,
       "raw_label": "Wedge",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "06:50",
         "tz": "America/Los_Angeles"
@@ -64,7 +64,7 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "short blue dotted drawn line from the 07:40 top across the 08:05-08:15 red-box bars",
-      "label": "trend_line_break",
+      "label": "wedge",
       "label_explicit": null,
       "modifiers": [],
       "outcome": "success",
@@ -73,7 +73,7 @@
       "price_hint": 3639.0,
       "raw_label": "break of drawn blue line",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "08:05",
         "tz": "America/Los_Angeles"
@@ -100,7 +100,7 @@
       "price_hint": null,
       "raw_label": "Consecutive wedges",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "08:30",
         "tz": "America/Los_Angeles"
@@ -125,7 +125,7 @@
       "price_hint": 3626.0,
       "raw_label": "Sell Climax",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:35",
         "tz": "America/Los_Angeles"
@@ -141,7 +141,7 @@
         "tz": "America/Los_Angeles"
       },
       "evidence": "blue title bar 'Sell Climax and Bull Reversal in TR Day' plus the final recovery leg",
-      "label": null,
+      "label": "major_trend_reversal",
       "label_explicit": null,
       "modifiers": [],
       "outcome": "unclear",
@@ -150,7 +150,7 @@
       "price_hint": 3637.0,
       "raw_label": "Bull Reversal",
       "role": "pattern",
-      "source": "vision",
+      "source": "human",
       "start_time": {
         "time": "09:45",
         "tz": "America/Los_Angeles"

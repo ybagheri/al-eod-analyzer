@@ -1,0 +1,289 @@
+{
+  "image_id": "97f1ff2438fc",
+  "reviewer": "ybagheri",
+  "note": "round4 review: STC red boxes start before 07:00",
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'STC' text with arrow to the shaded 07:00-07:25 bars",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "sell-the-close bears worked the shaded opening boxes down to the High 2 low",
+      "placement": null,
+      "price_hint": 4072.0,
+      "raw_label": "STC",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'High 2' text under the shaded 07:25-07:40 lows",
+      "label": "h2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "high 2 buy at the EMA led to the 4087 nested wedge micro DT",
+      "placement": null,
+      "price_hint": 4062.0,
+      "raw_label": "High 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'BTC' text with arrow at the 07:35 shaded low box",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "buy-the-close note over the double-bottom low ahead of the wedge rally",
+      "placement": null,
+      "price_hint": 4063.0,
+      "raw_label": "BTC",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Nested Wedge' text with dotted wedge lines into the 07:40 peak",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "nested",
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "nested wedge top under the red dotted micro DT failed into the morning decline",
+      "placement": null,
+      "price_hint": 4087.0,
+      "raw_label": "Nested Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Micro DT' text over the red dotted 4087 line",
+      "label": "micro_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "micro double top at the morning high preceded the sell-off",
+      "placement": null,
+      "price_hint": 4087.0,
+      "raw_label": "Micro DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Low 2' text of the 08:00 retest with red dotted line to 09:45",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "first low 2 sell drove the leg down to the 4057 wedge DB",
+      "placement": null,
+      "price_hint": 4080.0,
+      "raw_label": "Low 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' pink dotted lines around the 4057 lows",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "falling wedge pencil-down bottom produced the two-leg rally",
+      "placement": null,
+      "price_hint": 4057.0,
+      "raw_label": "Wedge (bottom)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'LL DB' text under the 08:25-08:50 lows",
+      "label": "lower_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "lower-low double bottom kicked off the first afternoon legs up",
+      "placement": null,
+      "price_hint": 4057.5,
+      "raw_label": "LL DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red low 2 note at 09:40 over the red dotted line running 09:35-11:05",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second low 2 sell extended the decline into the Bar 41 wedge low at 4058",
+      "placement": null,
+      "price_hint": 4074.5,
+      "raw_label": "Low 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 41,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Bar 41 Reversal' text at the 10:10 lows",
+      "label": "midday_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bar-41 midday reversal at 4058 flipped the day and the Small PB Bull Trend followed",
+      "placement": null,
+      "price_hint": 4058.0,
+      "raw_label": "Bar 41 Reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' text under the Bar 41 reversal lows",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "midday wedge bottom formed the base of the afternoon bull trend",
+      "placement": null,
+      "price_hint": 4058.0,
+      "raw_label": "Wedge (midday bottom)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ]
+}

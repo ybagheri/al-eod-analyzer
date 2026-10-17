@@ -1,0 +1,170 @@
+{
+  "date": "2020-03-18",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "solid magenta rising trendline under the 07:15-07:30 spike bars",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rising-wedge spike top at 2455 failed and the bear channel began",
+      "placement": null,
+      "price_hint": 2455.0,
+      "raw_label": "wedge top (magenta trendline)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue/red 'Bear channel / S around EMA' note with red entry boxes 08:00-11:30",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "broad bear channel stepped from the wedge top into the 2266 low with repeated sell-offred-box entries around the EMA",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Bear channel \u2014 S around EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'MM from H to Open / Expect test of open' text with orange dotted open line",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "afternoon MM bottomed and tested the open-of-day dotted line at 2354 (rally to 2350.5) before the wedge retest",
+      "placement": null,
+      "price_hint": 2354.0,
+      "raw_label": "MM from H to Open \u2014 Expect test of open",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "solid magenta rising line 11:55-12:25 beside the green boxes",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rising wedge bottom trendline rallied to the open test at 2350",
+      "placement": null,
+      "price_hint": 2305.0,
+      "raw_label": "wedge bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'HL MTR, HSB / after wedge bottom' text under the 12:55-13:20 rally with green boxes",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "higher-low major trend reversal after the wedge bottom led the final rally above 2400",
+      "placement": null,
+      "price_hint": 2295.0,
+      "raw_label": "HL MTR, HSB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange solid higher-low parallel lines at 11:55/12:40",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "higher-low double bottom with the 12:05 wedge low formed the base for the MTR",
+      "placement": null,
+      "price_hint": 2295.0,
+      "raw_label": "HL (higher low) base",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "ac0332f48144",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Late Bull Reversal in TR Day' \u2014 filename said 'wedge-top-and-then-wedge-bottom-in-TR-Day' (= trading_range in the title map, agreement). Plain-PT axis 3/18 to 3/19 edge marker. Reading: sell-off spike to 2455 at 07:25 (magenta wedge top trendline) flipped the day into a bear channel with sell-offred-box entries around the EMA all morning; the orange dotted open-of-day line (2354) and bottom target (2266) framed the TR; the afternoon measured move from the high to the open expected a test of the open, which the magenta wedge-bottom rally at 12:05-12:25 delivered (failed punt at 2350), and the HL MTR/HSB after the wedge bottom (12:40) drove the late bull reversal to 2410."
+}
