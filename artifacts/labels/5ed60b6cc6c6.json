@@ -1,0 +1,278 @@
+{
+  "date": "2022-03-24",
+  "day_type": "bull_trend_resumption",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'LH DB' text with dotted green line under the 07:30-08:00 lows",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pre-breakout HL DB base supported the weak breakout attempt",
+      "placement": null,
+      "price_hint": 4466.0,
+      "raw_label": "LH DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange note with arrow to the 07:45 breakout bar",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "buy"
+      ],
+      "outcome": "success",
+      "outcome_reason": "weak breakout succeeded via the parabolic wedge phase",
+      "placement": null,
+      "price_hint": 4478.0,
+      "raw_label": "Weak breakout above Trading Range Open",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'High 1' text at the green dotted 08:30 low",
+      "label": "h1",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "high 1 pullback buy extended the move",
+      "placement": null,
+      "price_hint": 4479.0,
+      "raw_label": "High 1",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Parabolic Wedge' text with dotted curve into the 08:50 top",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "parabolic"
+      ],
+      "outcome": "success",
+      "outcome_reason": "parabolic rising wedge formed the first top at 4498",
+      "placement": null,
+      "price_hint": 4498.0,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue '50% pullback' line of the stacked note at the second dotted red level",
+      "label": "pullback_50pct",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "throw-down to the 50% pullback of the opening leg",
+      "placement": null,
+      "price_hint": 4477.5,
+      "raw_label": "50% pullback",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "dotted pink wedge lines on the 09:00-09:50 decline",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "parabolic",
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "falling parabolic wedge at the 09:50 low based the retest",
+      "placement": null,
+      "price_hint": 4477.5,
+      "raw_label": "Parabolic Wedge (50% pullback low)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'LH DT' text over the 11:15-11:45 retest bars",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "LH DT retest of the red dotted 4498 top failed and dipped",
+      "placement": null,
+      "price_hint": 4498.0,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green '2nd Leg Bull Trap' text over the trap bars",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "2nd leg bull trap of stale sellers fueled the resumption rally",
+      "placement": null,
+      "price_hint": 4494.0,
+      "raw_label": "2nd Leg Bull Trap",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Parabolic Wedge' text with falling dotted lines 11:20-12:00",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "parabolic",
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "third parabolic falling wedge into the 12:10 low set up the resumption",
+      "placement": null,
+      "price_hint": 4485.0,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Bull Trend Resumption' text with magenta arrow at the 12:40 rally",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "buy"
+      ],
+      "outcome": "success",
+      "outcome_reason": "bull trend resumption breakout drove the afternoon rally to 4514",
+      "placement": null,
+      "price_hint": 4495.0,
+      "raw_label": "Bull Trend Resumption",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "5ed60b6cc6c6",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bull Trend Resumption'. Reading: weak breakout above the trading range open (07:40) off an LH DB/High 1 base ran into a parabolic wedge at 4498; the throw-down to the 50% pullback (4477) bounced, the retest formed an LH DT whose 2nd leg was a bull trap at 4494, a third parabolic falling wedge into the 12:10 low (4485) completed the setup and the bull trend resumption arrow-confirmed rally closed at 4514. bull_trend_resumption (title map agrees)."
+}

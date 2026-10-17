@@ -1,0 +1,120 @@
+{
+  "date": "2019-04-28",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": 2,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green '1'/'2' tags with pink line and green 'High 2 bottom' text",
+      "label": "h2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "high 2 bottom at the day low launched the small pullback bull trend",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "High 2 bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' text under the pink 1-2 line",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge bottom (1 to 2) completed the reversal",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Wedge (bottom, 1-2 line)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two rising pink trendline segments with green entry boxes",
+      "label": "trend_line",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "climbing trendlines held the small pullback bull trend until the late breakout",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "pink bull trendlines",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "tall bull bars at the right edge above the shaded green boxes",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "buy"
+      ],
+      "outcome": "success",
+      "outcome_reason": "final bars broke above the range into new-day highs",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "late breakout rally",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "2adc4cca712d",
+  "schema_version": 1,
+  "session_summary": "Title: 'High 2 Bottom: Small PB Bull Trend' (course-slide style chart, footer 'Slide 1'; manifest date 2019-04-28 is weekend-dated \u2014 a course-video/date-of-post, not a verifiable session; the chart prints no time axis, so all event times are placeholders '00:00'). Reading: opening bear leg down to a high-2 wedge bottom (green 1/2, pink trendline), then a small pullback bull trend organized by climbing pink bull trendlines with green buy-entry boxes and pullback red boxes, breaking out again in the final bars."
+}

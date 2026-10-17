@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "image_id": "a639fee641d6",
+  "date": "2021-08-16",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bull Trend Reversal, Then Strong Small PB Bull Trend' (filename said 'wedge sell climax and then small pullback bull trend'; agreement on SPBT). Reading: opening DT bear flag at 4446.5 sold to a truncated wedge / HL DB / micro DB low at 4432, flipping the day to bull — then a very strong Small PB Bull Trend all session ('so only buy'), with an ii push-and-pull profile and an OO against the trend flagged as a probable bear trap, closing at 4474 on new highs.",
+  "events": [
+    {
+      "label": "bear_flag",
+      "raw_label": "bear flag",
+      "direction": "bear",
+      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4446.5,
+      "outcome": "success",
+      "outcome_reason": "opening bear flag drove the early decline to the 4432 low",
+      "confidence": 0.7,
+      "evidence": "red 'DT / bear / flag' note with red dotted line at 4446.5"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "DT",
+      "direction": "bear",
+      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4446.5,
+      "outcome": "success",
+      "outcome_reason": "opening double top marked the early sell",
+      "confidence": 0.65,
+      "evidence": "red 'DT' line of the 3-line opening note"
+    },
+    {
+      "label": "micro_double_bottom",
+      "raw_label": "Micro DB",
+      "direction": "bull",
+      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4435.0,
+      "outcome": "partial",
+      "outcome_reason": "micro DB bounce held only briefly before the deeper truncated-wedge dip",
+      "confidence": 0.6,
+      "evidence": "green 'Micro DB' text under the 07:25-07:35 lows"
+    },
+    {
+      "label": "truncated_wedge",
+      "raw_label": "Truncated wedge",
+      "direction": "bull",
+      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4432.0,
+      "outcome": "success",
+      "outcome_reason": "truncated wedge bottom at 4432 reversed the day into the strong bull trend",
+      "confidence": 0.75,
+      "evidence": "pink 'Truncated wedge' text with magenta dotted falling wedge lines into the 07:55-08:00 lows"
+    },
+    {
+      "label": "higher_low_double_bottom",
+      "raw_label": "HL DB",
+      "direction": "bull",
+      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4432.0,
+      "outcome": "success",
+      "outcome_reason": "higher-low double bottom confirmed the round bottom before the trend",
+      "confidence": 0.7,
+      "evidence": "green 'HL DB' text with the arrow to the 08:00 low"
+    },
+    {
+      "label": "inside_inside",
+      "raw_label": "ii but Small PB Bull Trend so only buy",
+      "direction": "bull",
+      "start_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4460.0,
+      "outcome": "success",
+      "outcome_reason": "inside-inside compression in the trend resolved up, per the 'only buy' directive",
+      "confidence": 0.7,
+      "evidence": "orange note with arrow to the 10:50-11:00 compressed bars"
+    },
+    {
+      "label": "channel",
+      "raw_label": "pink dotted bull channel lines",
+      "direction": "bull",
+      "start_time": {"time": "11:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "success",
+      "outcome_reason": "rising pink dotted channel lines guided the trend push from 4462 to 4470",
+      "confidence": 0.6,
+      "evidence": "pair of rising dotted pink trendlines over the 11:00-12:30 bars"
+    },
+    {
+      "label": "outside_outside",
+      "raw_label": "OO but Small PB Bull Trend so probable Bear Trap",
+      "direction": "bull",
+      "start_time": {"time": "12:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4467.0,
+      "outcome": "success",
+      "outcome_reason": "outside bars in the strong trend were a probable bear trap and bulls won (rally to 4474)",
+      "confidence": 0.65,
+      "evidence": "orange note with arrow to the beige-boxed 12:40-12:50 OO bars"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

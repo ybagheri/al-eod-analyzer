@@ -1,0 +1,394 @@
+{
+  "date": "2026-06-08",
+  "day_type": "reversal_day",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue right-side note line 1",
+      "label": "gap",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "large gap up carried the day's opening impulse",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Large gap up at the open",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue note line 2 over the opening spike area",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "climax pullback followed, but the EMA test became a bear trap",
+      "placement": null,
+      "price_hint": 7470.0,
+      "raw_label": "Brief Sell Climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue note line 3 with green buy arrows at the EMA test",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "trapped bears fueled the rally to 7478 (green buy arrows marked the trap)",
+      "placement": null,
+      "price_hint": 7450.0,
+      "raw_label": "Then Bear Trap at the EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Double Bottom' text with green dotted line under the opening lows",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "opening double bottom preceded the bull rally",
+      "placement": null,
+      "price_hint": 7435.0,
+      "raw_label": "Double Bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted resistance line at the top of the intraday chart plus inset Daily ETH Chart",
+      "label": "pullback_50pct",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bears sold limit orders at the 50% pullback of yesterday's bear trend (daily ETH inset annotation 'limit order bears sell 50% pullback'); the failed H3 at that level reversed the day",
+      "placement": null,
+      "price_hint": 7462.0,
+      "raw_label": "50% Pullback Yesterday's Bear Trend",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Failed H3' text with down arrow at the bar-24 top",
+      "label": "failed_signal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "failed H3 sell-off preceded and coincided with the bear spike that broke the bull trend line",
+      "placement": null,
+      "price_hint": 7480.0,
+      "raw_label": "Failed H3",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Bear Spike / Breaks Bull Trend line / and closes below EMA' note",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bear spike broke the intraday bull trend line and closed below the EMA",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Breaks Bull Trend line",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink shaded selling leg with consecutive trend bars under the orange note",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "trend spike opened the bear phase of the day",
+      "placement": null,
+      "price_hint": 7445.0,
+      "raw_label": "Bear Spike",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Double Top Lower High' over the red dotted 11:45-12:15 retest line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "first DT LH led to the leg down toward 7420",
+      "placement": null,
+      "price_hint": 7458.0,
+      "raw_label": "Double Top Lower High",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Micro Double Bottom' text with green dotted line at the bar-48 low",
+      "label": "micro_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "bounce only reached the 7448 DT LH before failing",
+      "placement": null,
+      "price_hint": 7420.0,
+      "raw_label": "Micro Double Bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "14:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "second red lower_high_double_top over the red dotted 13:45-14:45 retest line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second DT LH confirmed the MTR down and the afternoon bear leg to ~7405 followed",
+      "placement": null,
+      "price_hint": 7448.0,
+      "raw_label": "Double Top Lower High",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "14:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red/pink triangle wedge shading beside the EMA with the 'Triangle Wedge Bear flag to EMA' note",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "modifiers": [
+        "triangle",
+        "wedge"
+      ],
+      "outcome": "success",
+      "outcome_reason": "bear flag to the EMA resolved down into the breakout test and the second bear leg",
+      "placement": null,
+      "price_hint": 7448.0,
+      "raw_label": "Triangle Wedge Bear flag to EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "black 'Breakout test' text with arrow to the red sell arrow at the 7435 retest",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout test of the bear trend break held and the final leg down followed",
+      "placement": null,
+      "price_hint": 7435.0,
+      "raw_label": "Breakout test",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown 'MM Bear Spike' text with dotted target line at the bar-72 low",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "measured move objective of the bear spike reached at ~7400 (purple megaphone line to the low)",
+      "placement": null,
+      "price_hint": 7400.0,
+      "raw_label": "MM Bear Spike",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "16:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "right-edge small-bar box at the close",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "session closed inside a tight range (blue shaded after-hours extension with ETH close tags 7430.49 / 7413.72)",
+      "placement": null,
+      "price_hint": 7413.72,
+      "raw_label": "EOD tight range",
+      "role": "day_part",
+      "source": "vision",
+      "start_time": {
+        "time": "15:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "61527045af90",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trap Bull Reversal then Lower High Major Trend Reversal' (Mon 2026-06-08). Reading: large gap up at the open, brief sell climax, then a bear trap at the EMA and an opening double bottom turned the morning bullish (rally to ~7478); bears had sold limit orders at the 50% pullback of yesterday's bear trend (daily ETH inset 5/15-6/5), so the failed H3 and a bear spike broke the bull trend line and closed below the EMA, starting the MTR down. Two 'Double Top Lower High' retests, a triangle wedge bear flag to the EMA, a breakout test and an MM bear spike drove the day to ~7405, with an EOD tight range into the close. Title includes both a bull reversal and a bear MTR; reversal_day chosen (0.7). Axis: plain-PT style Mon 09:45-16:00 with Tue edge marker."
+}

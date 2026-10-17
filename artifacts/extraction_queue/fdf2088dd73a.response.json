@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "image_id": "fdf2088dd73a",
+  "date": "2023-04-06",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.8,
+  "session_summary": "Blue title bar: 'Bear Trap, Small Pullback Bull Trend From The Open'; regime note 'Then Trading Range'. Reading: open dip to 4099 became a bear trap followed by a major bull surprise and HL-MTR off the 4103 lows, drawn magenta wedge bottom broke out just before 08:30 with a measured-move-up claim; buy climax leg with a late ii carried to 4131-4134 and the afternoon held a shaded small-pullback-bull / trading range into the close. Axis prints 4/6 06:45-13:00 with 4/7 edge marker (plain-PT style).",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Became Bear Trap",
+      "direction": "bull",
+      "start_time": {
+        "time": "06:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4099.0,
+      "outcome": "success",
+      "outcome_reason": "bear breakdown failed and the trend turned up from the open",
+      "confidence": 0.8,
+      "evidence": "red 'Became Bear Trap' text with red down arrow at the opening low cluster"
+    },
+    {
+      "label": "major_bull_surprise",
+      "raw_label": "Major Bull Surprise after Bear Trap",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4111.0,
+      "outcome": "success",
+      "outcome_reason": "strong bull bars lifted price off 4101 into 4113",
+      "confidence": 0.8,
+      "evidence": "orange bottom note with up arrow to the beige-boxed bull bar cluster"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "HL MTR",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4103.0,
+      "outcome": "success",
+      "outcome_reason": "higher-low reversal launched the all-day bull trend",
+      "confidence": 0.7,
+      "evidence": "green 'HL MTR' text at the 4103 low with blue dotted support line"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "magenta drawn wedge lines",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4104.0,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge bottom fed the 08:25 breakout",
+      "confidence": 0.55,
+      "evidence": "magenta dotted falling wedge lines converging at 07:45-07:55"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Breakout above Wedge",
+      "direction": "bull",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:50",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4111.0,
+      "outcome": "success",
+      "outcome_reason": "blue-boxed breakout bars preceded the buy climax leg higher",
+      "confidence": 0.75,
+      "evidence": "orange 'Breakout above Wedge' note with arrows to the blue breakout boxes"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured Move",
+      "direction": "bull",
+      "start_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4134.0,
+      "outcome": "success",
+      "outcome_reason": "MM-up projection reached the 4131-4134 top of the day",
+      "confidence": 0.7,
+      "evidence": "orange 'Measured Move' text and orange dotted MM lines rising with price"
+    },
+    {
+      "label": "climax",
+      "raw_label": "late Buy Climax",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4128.0,
+      "outcome": "partial",
+      "outcome_reason": "climax leg extended to 4134 but the day's best follow-through came earlier",
+      "confidence": 0.55,
+      "evidence": "orange note 'ii late in Buy Climax' over the beige-boxed 09:15-09:25 bars"
+    },
+    {
+      "label": "inside_inside",
+      "raw_label": "ii late in Buy Climax",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4124.0,
+      "outcome": "unclear",
+      "outcome_reason": "late-cy ii inside the climax leg; worked only marginally",
+      "confidence": 0.6,
+      "evidence": "orange note with arrow to the 09:35-09:45 inside bars"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "shaded afternoon range",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4130.0,
+      "outcome": "unclear",
+      "outcome_reason": "shaded 4125-4134 range held to the close",
+      "confidence": 0.6,
+      "evidence": "large blue shaded box over the afternoon bars; note 'Then Trading Range'"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "shaded afternoon range",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4130.0,
+      "outcome": "unclear",
+      "outcome_reason": "shaded 4125-4134 range held to the close",
+      "confidence": 0.6,
+      "evidence": "large blue shaded box over the afternoon bars; note 'Then Trading Range'"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

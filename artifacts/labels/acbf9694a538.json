@@ -1,0 +1,145 @@
+{
+  "date": null,
+  "day_type": "trading_range",
+  "day_type_confidence": 0.5,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green header line 1 over the inner red 1.2249 line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "single-bar 3-pip poke above the Feb 25 high; double top avoided only with consecutive closes",
+      "placement": null,
+      "price_hint": 1.2249,
+      "raw_label": "Broke above Feb 25 high by 3 pips today, but need consecutive closes above to avoid double top",
+      "role": "advice",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink header line with magenta wedge trendline 4/29-5/19 and blue last-leg line",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top",
+        "nested",
+        "micro"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "nested wedge top over the 4/29-5/19 micro wedge 3rd leg; blue accelerated final leg into the level",
+      "placement": null,
+      "price_hint": 1.2249,
+      "raw_label": "Nested wedge top since 3rd leg up is micro wedge (from May 13)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red header line 3",
+      "label": "signal_bar",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "hypothetical sell signal bar conditional on a bear bar today",
+      "placement": null,
+      "price_hint": 1.2249,
+      "raw_label": "If bear bar today, then sell signal bar for reversal down from wedge rally to double top",
+      "role": "advice",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 21,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue header line 4 with red horizontal 1.2349 and inner 1.2249 lines, pink 11/4 low line of 1.1603",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "5-month range bounded on top by 1.2249 (from the 1/6/21 area) since the January top; range began within the larger 10-month range (1.2349 top vs 11/4/2020 low 1.1603)",
+      "placement": null,
+      "price_hint": 1.2349,
+      "raw_label": "Top of 5-month trading range, which is within 10-month trading range",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green header line 1 and blue 'so traders continue look for reversals'",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "range still in force at the top-of-range retest; reversal expected per note",
+      "placement": null,
+      "price_hint": 1.2249,
+      "raw_label": "Top of 5-month trading range retest today",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "acbf9694a538",
+  "schema_version": 1,
+  "session_summary": "SCOPE ANOMALY: this is a 'EURUSD Daily: Nested Wedge and Double Top in Trading Range' chart, not an E-mini M5 EOD chart; manifest filename carries no date. Chart evidence (1/6/21 open at 1.2349, month labels Feb-May, red date tags 1/22, 2/5, 2/17, 2/25, 3/3, 3/9, 3/11, 3/31, 4/8, 4/15, 4/19, 4/22, 4/29, 5/3, 5/5, 5/11, 5/13, 5/19, and 'today' being the bar just after 5/19) suggests ~May 2021, but per the protocol no verifiable date is asserted; date=null. Reading: forex key reversal market \u2014 today broke the Feb 25 high (1.2249 inner red line) by 3 pips but needs consecutive closes above to avoid a double top; pink nested wedge top is present because the 3rd leg up from the May 13 low (green 1.2001 line, wedging to today with a blue accelerated final leg); the 5-month top sits within the 10-month range (1.2349 outer red line vs the 11/4/2020 low of 1.1603), so they continue to look for reversals. All event times are daily-chart bars (time '00:00')."
+}

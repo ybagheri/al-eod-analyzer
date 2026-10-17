@@ -1,0 +1,347 @@
+{
+  "date": "2022-03-23",
+  "day_type": "trending_trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Buy The Close' text with arrow to the 07:15 bars",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "buy-the-close gap up supported the morning rally into the first range",
+      "placement": null,
+      "price_hint": 4483.0,
+      "raw_label": "Buy The Close",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'High 2 Bottom' text with green dotted line under the 07:25-07:40 lows",
+      "label": "h2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "high 2 bottom buy at the 4466 lows launched the rally into the first range",
+      "placement": null,
+      "price_hint": 4466.0,
+      "raw_label": "High 2 Bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Truncated wedge' text beside the same bottom",
+      "label": "truncated_wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "truncated wedge low completed the reversal",
+      "placement": null,
+      "price_hint": 4466.0,
+      "raw_label": "Truncated wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "purple shaded box with 'Wedge at EMA' trendline",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "light purple shaded range 07:30-09:30 (4470-4493",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "first shaded trading range",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "right edge of the first purple shaded box",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "range ended at the 09:20 LH 4493 before the wedge breakout",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "first shaded trading range end",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge at EMA' text over the magenta dotted falling trendline with red dotted 4486 LH",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "descending pink dotted wedge pinned the range rallies; the 09:20 LH failed and the breakout below followed",
+      "placement": null,
+      "price_hint": 4493.0,
+      "raw_label": "Wedge at EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Breakout below wedge' text with arrow to the 10:15-10:30 legs",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "breakout below the wedge ended the first range and drove the transition leg",
+      "placement": null,
+      "price_hint": 4470.0,
+      "raw_label": "Breakout below wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "second purple shaded box with exp-triangle and wedge notes",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "light purple shaded range 10:40-13:00 (4454-4473",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "second shaded trading range",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "right edge of the second purple shaded box at the 13:00 breakdown",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "range ended with the breakout below the exp-triangle bottom at 4454",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "second shaded trading range end",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted rising trendlines and magenta dotted wedge lines inside the second shaded range",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [
+        "expanding"
+      ],
+      "outcome": "unclear",
+      "outcome_reason": "expanding triangle in the second range (blue dotted rising and magenta dotted wedge lines) drilled the 13:00 breakout",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "exp-triangle dotted lines",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "second pink 'Wedge at EMA' text over the dotted wedge lines into the 12:15 top",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "second wedge top at the EMA produced only the LH chop before the LH DT failed",
+      "placement": null,
+      "price_hint": 4472.0,
+      "raw_label": "Wedge at EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'LH DT' text over the red dotted 12:45-13:05 line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "LH DT under the red dotted line set up the final breakdown",
+      "placement": null,
+      "price_hint": 4467.0,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange arrow at the 13:05 breakdown plus the right-side orange/blue note pair",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "final breakout below the second range dropped to 4445 into the close",
+      "placement": null,
+      "price_hint": 4450.0,
+      "raw_label": "Breakout below Eup. Triangle (finish below); also Finish above Evp. Triangle line",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "c2ac5b23a509",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trending Trading Range Day' with note 'which is also usually Bear Channel day' (filename mapped broad_bear_channel; on-chart title outranks per wave-0 rule -> trending_trading_range). Spans 3/22 13:00 through the 3/24 edge marker. Reading: buy-the-close gap up, High 2 bottom / truncated wedge at 4466 lifted price into the first shaded TR (07:30-09:30) with a descending Wedge-at-EMA and LH at 4493, the breakout below the wedge (10:15) transitioned into the second shaded TR (10:40-13:00) with exp-triangle dotted lines and a second Wedge at EMA top at 4472, the LH DT at 4467 failed and the breakout below the expilogue triangle (13:00) closed the day at 4447."
+}

@@ -17,6 +17,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   sample) + 12 vision-extracted labels; vision day_type agrees with the filename
   title map on 8/12, with all misses traced to filename-vs-on-chart-title gaps
   (`artifacts/calibration_report.json`).
+- Calibration wave 1: append-mode sample builder + 28 more vision-extracted
+  labels (40 sampled total, 0 quarantines outstanding); day_type agreement vs
+  title map 32/39 comparable (0.821); semantics recorded (traps ->
+  `failed_breakout`, `mm` -> `measured_move`, ii/ioi/oo aliases, day-part
+  ranges as begin/end pairs); special rows: EURUSD-daily scope anomaly,
+  axis-less course slide, ET+12 hrs axis chart.
 
 - Phase 0 skeleton: installable `brooks-lab` package, `brooks --version` CLI,
   `tasks.py`/`Makefile` quality gate, configs, living docs, `mql5/` stubs.

@@ -1,0 +1,270 @@
+{
+  "date": "2021-07-13",
+  "day_type": "reversal_day",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'H2' text beside the green shaded 08:00-08:10 bars",
+      "label": "h2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "high 2 buy in the weak bull trend drove the push to the 4387 top",
+      "placement": null,
+      "price_hint": 4378.5,
+      "raw_label": "H2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pairs of pink dotted trendlines with blue 1/2 tags from 07:20 to 09:00",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rising wedge trendlines (successive 1-2 tops) framed the reversal zone",
+      "placement": null,
+      "price_hint": 4387.0,
+      "raw_label": "magenta wedge trendlines (1-2 tags)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue note line 2 above the 09:00 topping zone",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "consecutive complex tops at the day high built the reversal",
+      "placement": null,
+      "price_hint": 4387.5,
+      "raw_label": "Consecutive complex tops",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 4,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Low 4, Midday Reversal' note with blue '4' tag at the 4th low",
+      "label": "low_4",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "low 4 sell signal initiated the midday reversal leg",
+      "placement": null,
+      "price_hint": 4384.0,
+      "raw_label": "Low 4",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red/blue/red note block over the rounded 09:30-10:05 top with second red dotted LH line",
+      "label": "midday_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "midday reversal at the 10:05 top flipped the weak bull trend into the afternoon bear trend",
+      "placement": null,
+      "price_hint": 4386.0,
+      "raw_label": "Midday Reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "note line 3 over the topping bars",
+      "label": "signal_bar",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "strong sell signal bar preceded the big breakout",
+      "placement": null,
+      "price_hint": 4385.0,
+      "raw_label": "Strong sell signal bar",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange arrow to the shaded 10:05-10:15 big trend bar",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "big bear breakout bar with follow-through drove the leg to 4362",
+      "placement": null,
+      "price_hint": 4375.0,
+      "raw_label": "Big BO and follow-through",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'iii Final Flag' text at the shaded 10:20-10:35 segment",
+      "label": "inside_inside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "iii compression acted as the final flag before the last big sell leg",
+      "placement": null,
+      "price_hint": 4372.0,
+      "raw_label": "iii",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Final Flag' with the beige-boxed pullback and red dotted LH",
+      "label": "final_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "final flag resolved down into the afternoon bear channel",
+      "placement": null,
+      "price_hint": 4372.0,
+      "raw_label": "Final Flag",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Bear channel at EMA' text with magenta dotted trendlines and the second 'ii Final Flag' arrow",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bear channel at the EMA trended to the close after the failed ii final flag at 12:30",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Bear channel at EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "e0d28242bd89",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend Reversal'. Reading: weak bull trend from the open (H1/H2 pushes, magenta dotted 1-2 wedge trendlines climbing to the complex-top zone at 4385-4387: successive 1-2 tops and an initial 4/2 tag), a low 4 midday reversal with consecutive complex tops and a strong sell signal bar at 4386, then a big breakout and follow-through (10:05) through an iii final flag segment to the 4362 low, with a bear channel at the EMA running into the close (~4362) after one failed ii final flag at 12:30. Weak bull trend from open, midday reversal down = reversal_day (filename title map agrees)."
+}

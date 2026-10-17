@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "image_id": "cf677e42a1bd",
+  "date": "2025-07-07",
+  "day_type": "trending_trading_range",
+  "day_type_confidence": 0.8,
+  "session_summary": "Blue title bar: 'Bear Trend Trending Trading Range'. Reading: open near 6301 with a small double bottom/wedge, then a bear trend under the EMA: parabolic wedge minor reversal at the 6284 low gives one weak breakout attempt (possible bull trap before Leg 1 to 6260), a surprise bear breakout expects a 2nd leg down, a tight micro channel down and a triangle final flag sets up Leg 2 to 6250, and the late-in-channel breakout is flagged as possible exhaustion. EOD turns into chop with a LH after the reversal attempt and a double bottom bull flag into the close near 6270. Plain-PT axis (7/7 08:45-15:00, 7/8 edge marker). 'Bear Trend Trending Trading Range' = trending_trading_range; filename agrees.",
+  "events": [
+    {
+      "label": "wedge",
+      "raw_label": "bear flag / wedge at open",
+      "direction": "bear",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 12,
+      "price_hint": 6295.0,
+      "modifiers": [
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "bear trend from the first hours followed under the EMA",
+      "confidence": 0.6,
+      "evidence": "blue dotted converging descending lines over the opening bars with sell arrows near 6297"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Parabolic Wedge Minor reversal",
+      "direction": "bull",
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 24,
+      "price_hint": 6284.0,
+      "modifiers": [
+        "parabolic",
+        "minor"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "bounce led to the 6293 breakout attempt, which trapped bulls before Leg 1",
+      "confidence": 0.7,
+      "evidence": "pink 'Parabolic Wedge Minor reversal' text with magenta dotted rising line into the bar-24 low"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull breakout but tight bear channel Possible Bull Trap",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6293.0,
+      "outcome": "success",
+      "outcome_reason": "the two-bar breakout above the red dotted line failed and Leg 1 followed",
+      "confidence": 0.75,
+      "evidence": "orange note over the beige-boxed breakout bars with red sell arrows at the 6293 line"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Leg 1",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6260.0,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "large trend bar from 6290 to 6260 after the trap",
+      "confidence": 0.8,
+      "evidence": "pink shaded box labeled 'Leg 1' around the big bear leg"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Surprise bear breakout 2nd leg down likely",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6281.0,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "2nd leg down followed as flagged (Leg 2 later in the session)",
+      "confidence": 0.7,
+      "evidence": "red note with red dotted resistance line and sell arrow below the pullback high"
+    },
+    {
+      "label": "channel",
+      "raw_label": "tight bear micro channel",
+      "direction": "bear",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 48,
+      "price_hint": null,
+      "modifiers": [
+        "tight"
+      ],
+      "outcome": "success",
+      "outcome_reason": "tight pullback channel into the triangle final flag",
+      "confidence": 0.65,
+      "evidence": "blue dotted descending and rising lines bracketing the 12:00-13:00 bars"
+    },
+    {
+      "label": "final_flag",
+      "raw_label": "Triangle Final Flag",
+      "direction": "bear",
+      "start_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 60,
+      "price_hint": 6272.0,
+      "outcome": "success",
+      "outcome_reason": "Leg 2 followed with a bear breakout late in the bear channel",
+      "confidence": 0.75,
+      "evidence": "blue 'Triangle Final Flag' text beside the red dotted 6272 line"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Leg 2 (bear breakout late in bear channel, possible exhaustion)",
+      "direction": "bear",
+      "start_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:35",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6250.0,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "second bear leg into 6250 followed; exhaustion suspicion later justified by the EOD rally",
+      "confidence": 0.75,
+      "evidence": "pink shaded 'Leg 2' box with red note 'Bear breakout late in bear channel, possible exhaustion' and red arrow"
+    },
+    {
+      "label": "lower_high_double_top",
+      "raw_label": "red dotted LH line",
+      "direction": "bear",
+      "start_time": {
+        "time": "13:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "14:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 72,
+      "price_hint": 6272.0,
+      "outcome": "partial",
+      "outcome_reason": "only a shallow pullback followed; price then rotated in a range",
+      "confidence": 0.6,
+      "evidence": "red dotted line over the post-Leg2 rally top with a sell arrow"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "green dotted bull flag low",
+      "direction": "bull",
+      "start_time": {
+        "time": "14:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6265.0,
+      "outcome": "partial",
+      "outcome_reason": "buy arrows and a small rally into the close, but no clear follow-through before the day ended",
+      "confidence": 0.6,
+      "evidence": "green dotted line under the 14:15-15:00 lows with green buy arrows"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

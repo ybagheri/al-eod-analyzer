@@ -1,0 +1,193 @@
+{
+  "date": "2025-08-13",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Buy climax' text over the 07:25-07:35 6500 spike",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "the day's top formed under the pink dotted line and the bull trap followed",
+      "placement": null,
+      "price_hint": 6502.0,
+      "raw_label": "Buy climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "beige boxed bars at 6490-6483 with consecutive sell arrows beneath the 'Bull Trap' title device",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout above the blue dotted 6490 level failed in the beige box and the morning sell-off began",
+      "placement": null,
+      "price_hint": 6490.0,
+      "raw_label": "Bull Trap",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' text at 08:20 with magenta dotted wedge line into the 08:30 low",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "pink dotted falling wedge into the 6472 lows produced the 6477-6480 bounce but the decline then extended to 6466",
+      "placement": null,
+      "price_hint": 6472.0,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "short red dotted line at 6483 from 08:05 to 09:00 with sell arrows",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "the LH retest at 6483 (beige box) failed and the trend resumed down",
+      "placement": null,
+      "price_hint": 6483.0,
+      "raw_label": "red dotted LH line",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 41,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Bar 41 midday reversal' text with blue arrow to the 10:35 low",
+      "label": "midday_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "the low at 10:35 reversed the morning bear trend and the afternoon bull trend followed",
+      "placement": null,
+      "price_hint": 6466.0,
+      "raw_label": "Bar 41 midday reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Higher low double bottom' text with green dotted line under the 10:35-10:45 lows",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "HL DB at the day's low launched the afternoon small pullback bull trend",
+      "placement": null,
+      "price_hint": 6466.0,
+      "raw_label": "Higher low double bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "long red dotted 6483 line with red sell arrows at 11:50 and 12:35 tops",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "first test of the long red dotted 6483 resistance failed as a sell; after the pullback the bull trend resumed past the line",
+      "placement": null,
+      "price_hint": 6483.0,
+      "raw_label": "red dotted resistance line sell signal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "a27ed20b9669",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bull Trap, Then Midday Reversal Up'. Reading: buy climax at 6502.5 early on (07:30), the attempt above the blue 6490 dotted level trapped bulls and sold off in a bear wedge pencil-down to 6472 at 08:30, with an LH retest at 6483 extending the decline to a 6466 low; bar 41 midday reversal plus a higher-low double bottom at 10:35 flipped the day, and the afternoon built a small pullback bull trend under the red dotted 6483 resistance toward the 6490 blue line, closing ~6488. Morning-down/midday-reversal-up = trend_reversal_to_bull (title map agrees). Note axis: '8/13' left edge then 07:00-13:00 hours with 8/14 edge marker."
+}

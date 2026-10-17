@@ -1,0 +1,197 @@
+{
+  "date": "2024-06-28",
+  "day_type": "small_pullback_bear_trend",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange note line 1 'Exhaustive buy climax at top of 9-bar bull breakout' with the shaded breakout box",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "buy"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "breakout ran nine bars to the climax top and then failed as a bull breakout",
+      "placement": null,
+      "price_hint": 5580.0,
+      "raw_label": "9-bar bull breakout",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange arrow to the 07:15-07:30 shaded climax bars",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "exhaustive buy climax at the top of the breakout reversed the day down to 5560 within minutes",
+      "placement": null,
+      "price_hint": 5588.0,
+      "raw_label": "Exhaustive buy climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Failed bull breakout' text with arrow to the red dotted LH line",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "the 07:35-08:08 retest under the red dotted line held as a lower high and the sell-off followed",
+      "placement": null,
+      "price_hint": 5585.0,
+      "raw_label": "Failed bull breakout",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Bear breakout / Reversal down from buy climax' note at the shaded 08:05-08:20 red bars",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "reversal down from the buy climax opened the all-day bear trend",
+      "placement": null,
+      "price_hint": 5560.0,
+      "raw_label": "Bear breakout \u2014 Reversal down from buy climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Failed wedge bottom' note over the red boxed 10:35-10:45 bars",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "fail",
+      "outcome_reason": "wedge bottom at the 09:55/10:10 lows (green arrows) failed at the 10:35 orange-arrow retest and the bear trend continued",
+      "placement": null,
+      "price_hint": 5538.0,
+      "raw_label": "Failed wedge bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Exhaustive sell climax / Sell vacuum down to measured move' text with arrow at the 12:30 sell bars",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "sell vacuum reached the exact measured-move target at 5509.5",
+      "placement": null,
+      "price_hint": 5510.0,
+      "raw_label": "Exhaustive sell climax \u2014 Sell vacuum down to measured move",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange measured-move note with dotted target line under the 12:35-13:00 lows",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted target line at 5509.5 was touched by the climax low",
+      "placement": null,
+      "price_hint": 5509.5,
+      "raw_label": "Exact measured move down based on height of buy climax on the open",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "efbb24194a35",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Buy Climax, Then Small Pullback Bear Trend' (6/28, 'Jul' edge marker). Reading: a 9-bar bull breakout into the open topped with an exhaustive buy climax at 5588 that failed (red dotted 5583.5 LH), the bear breakout from the climax sold to 5565 and then trended down all day with shallow pullbacks ('Small pullback bear trend' printed mid-chart); a wedge bottom at the 10:00 lows failed at the 10:35 retest, and the late leg produced an exhaustive sell climax / sell vacuum down to the exact measured move target (orange dotted 5509.5) derived from the height of the opening buy climax, followed by tight chop into the close ~5530."
+}

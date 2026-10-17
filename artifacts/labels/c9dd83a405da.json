@@ -1,0 +1,327 @@
+{
+  "date": "2021-08-17",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red note with arrow to the red dotted 4452.5 line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "HH double top after the opening DB read as TR-open breakout mode",
+      "placement": null,
+      "price_hint": 4452.5,
+      "raw_label": "HH DT after DB so TR Open",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge HH DT' text with pink dotted wedge lines 07:10-08:15",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rising wedge into the HH DT failed and the morning sell-off followed",
+      "placement": null,
+      "price_hint": 4452.5,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'DT PB at EMA' text at the 08:20 retest",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "double top pullback to the EMA chopped before the bigger break",
+      "placement": null,
+      "price_hint": 4448.0,
+      "raw_label": "DT PB at EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green note over the green dotted 09:15 low with dotted support line",
+      "label": "lower_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "only a minor reversal up to 4440 (TR likely), as the note itself warned",
+      "placement": null,
+      "price_hint": 4430.0,
+      "raw_label": "LL DB but 4 bear bars so minor reversal and TR likely",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'BO below wedge' text with arrow to the wedge line break",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "breakout below the wedge trendline opened the sell climax",
+      "placement": null,
+      "price_hint": 4437.0,
+      "raw_label": "BO below wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Big BO below High 2' text over the shaded breakout bars",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "big sell climax breakout below the High 2 low drove the leg toward the wedge bottom",
+      "placement": null,
+      "price_hint": 4430.0,
+      "raw_label": "Big BO below High 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Parabolic wedge' text with dotted falling trendlines at the 10:00 low",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "parabolic",
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "parabolic falling wedge bottom at 4410 formed the base of the HL MTR bulls",
+      "placement": null,
+      "price_hint": 4410.0,
+      "raw_label": "Parabolic wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'HL MTR' text at the 10:30 rally",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "first HL MTR (bull) off the parabolic wedge bottom",
+      "placement": null,
+      "price_hint": 4420.0,
+      "raw_label": "HL MTR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'HL MTR' text at the 11:35 rally with blue dotted bull trend line",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second HL MTR pushed the recovery into the 4438 range top",
+      "placement": null,
+      "price_hint": 4424.0,
+      "raw_label": "HL MTR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Low 2' text beside the red dotted 12:20-12:45 LH line",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "low 2 sell at the range top failed into the tight TR",
+      "placement": null,
+      "price_hint": 4438.0,
+      "raw_label": "Low 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' text with dotted wedge trendlines under the 12:40 lows",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "success",
+      "outcome_reason": "micro wedge bottom at 4432 set the final push above 4440",
+      "placement": null,
+      "price_hint": 4432.0,
+      "raw_label": "Wedge (micro bottom)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'But tight TR' text over the 12:45-13:10 small-bar chop",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "tight trading range under the LH before the final breakout into the close",
+      "placement": null,
+      "price_hint": 4436.0,
+      "raw_label": "But tight TR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "c9dd83a405da",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Wedge Top, Then Sell Climax and Bull Trend Reversal'. CALIBRATION NOTE: batch-1 title map assigned bull_trend_from_open, but the on-chart action is a two-way reversal day \u2014 TR open (HH DT after DB), wedge HH DT top at 4452, sell-off climax breakout below the wedge/High 2 into a parabolic wedge bottom at 4410, then two HL MTR bull recoveries to a tight-TR LH (Low 2 wedge at 4438 failed into a tight TR) with a close at ~4444 under the long red dotted 4447 line. On-chart title outranks the filename hint per the wave-0 rule; trend_reversal_to_bull chosen."
+}

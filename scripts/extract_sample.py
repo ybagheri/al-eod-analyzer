@@ -46,8 +46,23 @@ def _pick_even(items: list, count: int) -> list:
     return [items[round(i * step)] for i in range(count)]
 
 
-def build_sample(size: int, out_path: Path) -> dict[str, object]:
-    """Select ``size`` image ids stratified by title day_type (ADR-010)."""
+def _meta_entry(key: str, record: dict, title_by_id: dict) -> dict[str, object]:
+    entry = title_by_id[record["image_id"]]
+    return {
+        "image_id": record["image_id"],
+        "stratum": key,
+        "filename": record["filename"],
+        "date": entry["date"],
+        "title_day_type": entry["day_type"],
+    }
+
+
+def build_sample(size: int, out_path: Path) -> list[str]:
+    """Append ``size`` more image ids, round-robin across strata (deterministic).
+
+    IDs already listed in ``out_path`` are never re-picked; each round adds one
+    further representative per stratum (spread across vintages via _pick_even).
+    """
     payload = json.loads(BATCH_MANIFEST.read_text(encoding="utf-8"))
     title_payload = json.loads(TITLE_MAP.read_text(encoding="utf-8"))
     title_by_id = {r["image_id"]: r for r in title_payload["records"]}
@@ -78,40 +93,60 @@ def build_sample(size: int, out_path: Path) -> dict[str, object]:
         key=lambda k: (-len(strata[k]), k),
     )
     special_keys = sorted(k for k in strata if k.startswith("_"))
-    selected: list[str] = []
-    selection_meta: list[dict[str, object]] = []
-    for key in day_keys + special_keys:
-        if len(selected) >= size:
+    previous = (
+        {
+            line.strip()
+            for line in out_path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.startswith("#")
+        }
+        if out_path.is_file()
+        else set()
+    )
+    picked_ids: set[str] = set(previous)
+    all_meta: list[dict[str, object]] = []
+    if previous and out_path.with_suffix(".json").is_file():
+        all_meta = json.loads(out_path.with_suffix(".json").read_text(encoding="utf-8"))[
+            "selection"
+        ]
+    fresh: list[str] = []
+    while len(fresh) < size:
+        progressed = False
+        for key in day_keys + special_keys:
+            if len(fresh) >= size:
+                break
+            pool = sorted(strata[key], key=lambda r: r["filename"])
+            free = [r for r in pool if r["image_id"] not in picked_ids]
+            if not free:
+                continue
+            taken = len(pool) - len(free)
+            candidates = [r for r in _pick_even(pool, taken + 1) if r in free]
+            pick = candidates[0] if candidates else free[0]
+            picked_ids.add(pick["image_id"])
+            fresh.append(pick["image_id"])
+            all_meta.append(_meta_entry(key, pick, title_by_id))
+            progressed = True
+        if not progressed:
             break
-        bucket = sorted(strata[key], key=lambda r: r["filename"])
-        picked = _pick_even(bucket, 1)
-        for record in picked:
-            entry = title_by_id[record["image_id"]]
-            selected.append(record["image_id"])
-            selection_meta.append(
-                {
-                    "image_id": record["image_id"],
-                    "stratum": key,
-                    "filename": record["filename"],
-                    "date": entry["date"],
-                    "title_day_type": entry["day_type"],
-                }
-            )
-        if len(selected) >= size:
-            break
-    meta = {
-        "purpose": "calibration wave (ADR-010)",
-        "size": len(selected),
-        "selection": selection_meta,
-    }
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text("\n".join(selected) + "\n", encoding="utf-8")
+    out_path.write_text("\n".join(sorted(picked_ids)) + "\n", encoding="utf-8")
     sample_json = out_path.with_suffix(".json")
-    sample_json.write_text(json.dumps(meta, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    counts = Counter(m["stratum"] for m in selection_meta)
-    print(f"sample built: {len(selected)} ids -> {out_path}")
-    print("strata:", dict(counts))
-    return meta
+    sample_json.write_text(
+        json.dumps(
+            {
+                "purpose": "calibration wave (ADR-010, appends)",
+                "size": len(picked_ids),
+                "appendix": len(fresh),
+                "selection": all_meta,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    counts = Counter(m["stratum"] for m in all_meta if m["image_id"] in fresh)
+    print(f"sample appended: {len(fresh)} new ids (total {len(picked_ids)}) -> {out_path}")
+    print("new per stratum:", dict(counts))
+    return fresh
 
 
 def run_sample(sample_file: Path, report_out: Path | None = CAL_REPORT) -> None:
@@ -195,8 +230,11 @@ def main() -> None:
     parser.add_argument("--build-sample", type=int, default=None)
     parser.add_argument("--report", type=Path, default=None)
     args = parser.parse_args()
-    if args.build_sample and not args.sample_file.is_file():
-        build_sample(args.build_sample, args.sample_file)
+    if args.build_sample:
+        fresh = build_sample(args.build_sample, args.sample_file)
+        if not fresh:
+            print("no new sample ids (pool exhausted)")
+            return
     run_sample(args.sample_file, args.report)
 
 

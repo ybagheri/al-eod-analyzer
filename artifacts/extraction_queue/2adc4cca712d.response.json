@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "image_id": "2adc4cca712d",
+  "date": "2019-04-28",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.8,
+  "session_summary": "Title: 'High 2 Bottom: Small PB Bull Trend' (course-slide style chart, footer 'Slide 1'; manifest date 2019-04-28 is weekend-dated — a course-video/date-of-post, not a verifiable session; the chart prints no time axis, so all event times are placeholders '00:00'). Reading: opening bear leg down to a high-2 wedge bottom (green 1/2, pink trendline), then a small pullback bull trend organized by climbing pink bull trendlines with green buy-entry boxes and pullback red boxes, breaking out again in the final bars.",
+  "events": [
+    {
+      "label": "h2",
+      "raw_label": "High 2 bottom",
+      "direction": "bull",
+      "start_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 2,
+      "price_hint": null,
+      "outcome": "success",
+      "outcome_reason": "high 2 bottom at the day low launched the small pullback bull trend",
+      "confidence": 0.75,
+      "evidence": "green '1'/'2' tags with pink line and green 'High 2 bottom' text"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge (bottom, 1-2 line)",
+      "direction": "bull",
+      "start_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "modifiers": ["bottom"],
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "success",
+      "outcome_reason": "wedge bottom (1 to 2) completed the reversal",
+      "confidence": 0.65,
+      "evidence": "pink 'Wedge' text under the pink 1-2 line"
+    },
+    {
+      "label": "trend_line",
+      "raw_label": "pink bull trendlines",
+      "direction": "bull",
+      "start_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "success",
+      "outcome_reason": "climbing trendlines held the small pullback bull trend until the late breakout",
+      "confidence": 0.65,
+      "evidence": "two rising pink trendline segments with green entry boxes"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "late breakout rally",
+      "direction": "bull",
+      "start_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "modifiers": ["buy"],
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "success",
+      "outcome_reason": "final bars broke above the range into new-day highs",
+      "confidence": 0.6,
+      "evidence": "tall bull bars at the right edge above the shaded green boxes"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

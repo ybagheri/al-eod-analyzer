@@ -1,0 +1,116 @@
+{
+  "date": "2019-06-19",
+  "day_type": "spike_and_channel_bull",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red horizontal line 06:50-07:20",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "day-top retest line at 2927 faded the early highs; chop followed into the 2921 support",
+      "placement": null,
+      "price_hint": 2927.0,
+      "raw_label": "red DT/LH line at 2927",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green horizontal line 07:30-08:10 with early green entry boxes",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "double-bottom support only rallied to the 09:00 LH at 2925 before the drift down",
+      "placement": null,
+      "price_hint": 2921.0,
+      "raw_label": "green DB line at 2921",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "huge vertical-range bar at 11:00 with a 2915 low wick and tall body",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "FOMC spike at 11:00 PT exploded to 2931.5 and the bull channel followed into the close",
+      "placement": null,
+      "price_hint": 2931.0,
+      "raw_label": "post-FOMC weak spike bar",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "solid pink rising line from 11:15 to 13:00 top",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pink channel line of the post-FOMC bull trend held through shallow pullbacks to 2936",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "magenta bull channel line 11:15-13:00",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "1e2ca0c2608f",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Emini after FOMC: Weak Spike and Channel Bull Trend' (no text annotations; mapped from lines and boxes). Reading: pre-FOMC chop 2921-2927 with an early red DT/LH line at 2927, green 2921 double-bottom support and a magenta bull micro-trend line into the 09:00 LH at 2925, mid-morning drift 09:15-11:00 along the flat magenta line at 2920-2921, then the post-FOMC release at 11:00 PT produced a huge weak spike bar (2915 wick to 2931.5) and the pink channel line ran from 11:15 up to 2936, closing buys with shallow green-box pullbacks. Weak spike and channel bull = spike_and_channel_bull (filename agrees)."
+}

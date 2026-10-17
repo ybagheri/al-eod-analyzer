@@ -1,0 +1,297 @@
+{
+  "date": "2026-05-08",
+  "day_type": "broad_bull_channel",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Bull spike' text over the tall bull bars with green buy arrow at the 22:10 low",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "opening bull spike through yesterday's high opened the broad bull channel",
+      "placement": null,
+      "price_hint": 7409.5,
+      "raw_label": "Bull spike",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink dotted rising wedge lines 22:00-22:25",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "minor"
+      ],
+      "outcome": "success",
+      "outcome_reason": "rising wedge trendlines bracketed the bull spike",
+      "placement": null,
+      "price_hint": 7416.0,
+      "raw_label": "Bull spike Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'High 1 buy in strong bull trend' text with green arrow at the 23:05 dip",
+      "label": "h1",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "strong bull trend = buy the pullbacks; H1 at the EMA worked",
+      "placement": null,
+      "price_hint": 7409.5,
+      "raw_label": "High 1 buy in strong bull trend",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with dotted green low line ending bar 24",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "double bottom at yesterday's-high level supported the channel",
+      "placement": null,
+      "price_hint": 7409.5,
+      "raw_label": "Double bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Double tops' note over the red dotted 7425.5 line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "double tops capped the first push; sell arrows followed but the channel eventually broke higher",
+      "placement": null,
+      "price_hint": 7425.5,
+      "raw_label": "Double tops",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "second red 'Double tops' note over the 00:20-00:40 LH bars",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "second double-top test with LH sell arrows again failed to break the channel down",
+      "placement": null,
+      "price_hint": 7425.5,
+      "raw_label": "Double tops",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Double tops Wedge' note with purple dotted wedge lines",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "pullback"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "purple dotted wedge into the LH top provided only a pullback",
+      "placement": null,
+      "price_hint": 7425.5,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Double bottom' text at the 00:45 low",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second double bottom held the channel at the EMA",
+      "placement": null,
+      "price_hint": 7412.5,
+      "raw_label": "Double bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "purple 'New all-time high (7,427.75)' note with dotted purple line",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "buy"
+      ],
+      "outcome": "success",
+      "outcome_reason": "new all-time high at 7427.75 confirmed the channel's projective continuation",
+      "placement": null,
+      "price_hint": 7427.75,
+      "raw_label": "New all-time high (7,427.75)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green '2nd leg up / Wait to buy' note with green arrow above the 03:00-03:30 dip",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "consolidation pullback held the double bottom and the 2nd leg up followed",
+      "placement": null,
+      "price_hint": 7413.0,
+      "raw_label": "2nd leg up \u2014 Wait to buy",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Double bottom' text with dotted low line at the 03:20-03:35 lows",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "third double bottom at 7413 set up the late 2nd leg rally",
+      "placement": null,
+      "price_hint": 7413.0,
+      "raw_label": "Double bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "4e96fb6e09ac",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Opening Spike Then Broad Bull Channel up to New All-time High'. AXIS CAUTION: feed shows 'ET+12 hrs' (22:00 to 04:00, May 9 edge marker) \u2014 times copied as printed. Reading: open near 7397 with 'Yesterday's high' at 7409.5 (red dotted) as the breakout bar, a bull spike wedge bought the break and ran to 7424, then a broad bull channel all session \u2014 many doji/range bars (limit-order trading per note), retests of the 7425 double-top line, double bottoms at 7409.5/7412.5/7413 and a new all-time high at 7427.75 before an afternoon '2nd leg up / Wait to buy' consolidation and final push. Inset weekly chart: 'Gap Up, Broad Bull Channel, Consecutive All-time Highs'."
+}
