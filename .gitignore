@@ -31,6 +31,8 @@ data/*.tiff
 data/*.webp
 !data/README.md
 !data/.gitkeep
+data/raw_batch*/
+data/raw_batch1/**
 
 # Generated artifacts (large/intermediate outputs stay local)
 artifacts/crops/

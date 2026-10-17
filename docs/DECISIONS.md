@@ -134,3 +134,24 @@
   deferred again.
 - Consequences: success rates measure annotation-claim fulfilment, never edge;
   Phase 7 must state this; engine needs the new regime/id coverage.
+
+## ADR-010 — Batch-1 intake: filenames carry free labels (2026-10-12, accepted)
+
+- Context: user supplied a 2044-file batch (`data/raw_batch1/`, same ES/M5 source,
+  2018-11-18..2026-10-14) whose filenames embed the source author's day reading as
+  a title plus a date (`SP500-Emini-M5-<Title>_YYYY_MM_DD.jpg`). Two files were
+  unusable (corrupt jpg 2023-07-10; tiny png 2026-10-14) and were deleted on user
+  instruction; re-ingest totals 2042 (ok=1678, hash-duplicates=364).
+- Decision: treat titles as PROVISIONAL human hints, never gold. New domain module
+  `title_taxonomy.py` plus `brooks title-map` CLI produce
+  `artifacts/title_map_batch1.json` from deterministic regex rule tables (no
+  taxonomy change, no schema change). Imperfect coverage is accepted — 1820/2042
+  records get a canonical day_type, 184 unique unmapped titles remain for review
+  context; events map independently. Batch manifest/stats/title-map are separate
+  artifacts; the gold-33 manifest stays untouched. Images remain untracked
+  (`data/raw_batch*/` in .gitignore).
+- Consequences: extraction calibration compares vision day_type against the title
+  day_type to score the free labels before wave scaling; title rule extensions are
+  additive and logged in HANDOFF; Phase 5b calendar pass must normalise the
+  weekend-dated (29) and undated (1) filenames; market-data attach and gold logic
+  must not consume title ids directly.

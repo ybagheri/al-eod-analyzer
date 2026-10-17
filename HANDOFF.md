@@ -10,9 +10,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 2. Current status
 
-- Current phase: 4 — Human review & gold set
-- Phase status: done (committed c57967c, pushed to origin/main)
-- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 52 files / mypy --strict ✓ 21 files / pytest 118 passed / coverage 93.4%)
+- Current phase: 5a — Batch-1 dataset expansion (2042 new ES/M5 charts, title-as-label)
+- Phase status: intake + title mapping done (2026-10-12); calibration extraction pending
+- Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 53 files / mypy --strict ✓ 22 files / pytest 159 passed / coverage 92.33%)
 
 ## 3. What was done in this session
 
@@ -87,6 +87,27 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   low_4, measuring_gap, bull_trend_resumption (taxonomy v1.2, ADR-008/009).
 - Bulk gold 2026-10-12: all 25 HIGH-reviewed labels marked gold (7 LOW already gold);
   gold set 32/33 (only 10401c705b30 reviewed-not-approved). Phase 4 DoD met.
+- Phase 5a start (user-directed 2026-10-12, dataset expansion): user moved a NEW batch of
+  2044 files into `data/raw_batch1/` (same ES/M5 source, dates 2018-11-18..2026-10-14).
+  Filename layout `SP500-Emini-M5-<Title>_YYYY_MM_DD.{jpg,png}` embeds the source
+  author's hand-written day reading in `<Title>` (provisional free labels, ADR-010);
+  one file has no date (`...nested-wedge-and-double-top-in-trading-range.png`).
+  Original 33 gold images are NO LONGER in `data/` (moved away with the batch);
+  gold JSON labels/history remain intact; batch1 includes the same source days
+  (detach/reattach via date planned for Phase 5b market data). `data/raw_batch*/`
+  added to .gitignore so images never enter the repo.
+- Batch-1 ingest: 2 files deleted on user instruction (corrupt jpg 2023-07-10
+  HL-DB..., tiny png 2026-10-14 Min-Climactic...); re-ingested 2042 images
+  -> ok=1678, sha/phash-duplicates=364 (kept as alias rows in manifest).
+  Artifacts: `artifacts/manifest_batch1.json`, `artifacts/ingestion_stats_batch1.json`.
+- Title mapping (ADR-010): `src/brooks_lab/domain/title_taxonomy.py` (regex rule
+  tables, deterministic) + `brooks title-map` CLI -> `artifacts/title_map_batch1.json`.
+  Coverage 1820/2042 day-type (89%), 184 unique unmapped titles (mostly event-only,
+  e.g. Bull-Trap-Then-Wedge-Bottom); head distribution: trading_range-family 596,
+  bull_trend_from_open 315, bear_trend_from_open 213, small_pullback_bull 199,
+  channels 341, trending_TR 102, reversal-family 139, spike_and_channel 60, resumption 37.
+- Tests +35 (test_title_taxonomy.py) -> pytest 159 passed; gate GREEN
+  (ruff / format 53 files / mypy --strict 22 files / coverage 92.33%).
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -96,12 +117,17 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - ADR-006: taxonomy v1.1 (8 new ids, trap mappings, HHDT resolution).
 - ADR-007: reviewer-driven schema extension (modifiers/role/explicit/placement/x_px, optional date) + claim-based outcome + result-direction + prompt v2 + feed-timezone theory.
 - ADR-008: round-2 review (roles CONTEXT/ADVICE/BAR_PATTERN, bare bear_surprise/trend_line ids, 13 prompt rules, gold-aware extract guard).
+- ADR-009: round-3 review (`bull_trend_resumption` day type, `low_4`/`measuring_gap` ids, outcome-word mapping observed→success etc.).
+- ADR-010: batch-1 filename titles = provisional human day_type/event hints via `title_taxonomy.py` + `brooks title-map` (no taxonomy change; never gold; artifacts `manifest_batch1`/`title_map_batch1` separate).
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. USER: approve round-2+3 commit (schema roles/ids, prompt v2 rules, 18 corrected labels, 7 gold, guards).
-2. USER: gold-mark the 18 reviewed-but-unmarked labels (all 25 HIGH now reviewed) + confirm 10401c70 gold; or send corrections.
-3. Phase 5 starts ONLY on explicit user instruction.
+1. AGENT: calibration extraction over ~50 stratified batch-1 images; score vision
+   day_type/event output against `title_map_batch1.json` (free human labels).
+2. USER: review the calibration diff; approve prompt v2 → v3 rule changes if needed.
+3. AGENT+USER: scale extraction in waves (≤100/session) over the 1678 usable images.
+4. Phase 5b (market data + session calendar) after calibration is clean — includes
+   resolving the PT-vs-ET axis question with real bars before any label→bar attach.
 
 ## 6. Open questions / blockers
 
@@ -110,7 +136,10 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - No API keys, no Tesseract → file-exchange extraction (ADR-005); anthropic path untested live.
 - April-pair + Sep-23 axes show 09:00–15:00 (vs PT-style 06:30–13:00): ET feed or cropped axis? DEFAULT: recorded as-shown with PT tz + note; Phase 5 must resolve against real bars before any label→bar attachment.
 - User supplied glossary notes 2026-10-12 (OO, ii, TBTL, MTR, LLDB, traps, Triangle, TTR, HST, H1-H3/L1-L2) — folded into GLOSSARY.md; taxonomy v1.1 proposal pending approval (see chat).
-- HH DT resolved by user as Higher-High → interim parent double_top (dedicated id deferred to v1.2).
+- HH DT resolved by user as Higher-High → interim parent double_top (dedicated id deferred; HST stays parent-mapped per ADR-009).
+- Feed-axis suspicion (some titles show 09:00–15:00 axes vs PT 06:30–13:00) still unresolved — Phase 5b must verify against real bars.
+- Batch-1 filename anomalies for the Phase 5b calendar pass: 29 weekend-dated files (e.g. `2025_01_26`, `2026_03_22/29` Sundays) + 1 undated file (`nested-wedge-and-double-top-in-trading-range.png`) need date normalisation; 355 dates carry duplicate files (hash dedup handles).
+- Original 33 gold images no longer on disk; gold labels/history intact (see §3 Phase 5a note).
 
 ## 7. Known issues / tech debt
 
@@ -128,7 +157,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - Date flags: 04-02→03-31 and 04-03→04-01 relabelled from title weekday (pipeline warnings fired correctly), both CONFIRMED by user; 07-22/07-29 duplicate resolved (07-29 kept, 07-22 deleted); April + Sep-23 axes run 09:00-15:00 (possible ET feed — Phase 5 must verify, see §6)
 - PNG batch (08-01…09-23) has no readable time axis → event times null (15 of 29 new labels)
 - Watermark note: Aug/Sep PNGs carry a "Persian_expert_trader" redistribution watermark (third-party, personal research use; same legal basis as data/README)
-- Market data coverage: none (Phase 5)
+- Market data coverage: none (Phase 5b)
+- Batch-1 dataset (data/raw_batch1/, git-ignored images): 2044 received -> 2042 usable (corrupt 2023-07-10 jpg + tiny 2026-10-14 png deleted) | ok=1678, hash-duplicates=364 | dates 2018-11-18..2026-10-14 | title day_type coverage 1820/2042 (89%)
+- Batch-1 artifacts (git-tracked): artifacts/manifest_batch1.json (~1MB), artifacts/ingestion_stats_batch1.json, artifacts/title_map_batch1.json
 - Playbook version: none (Phase 8)
 
 ## 9. How to run / verify (copy-paste commands)
@@ -143,6 +174,7 @@ brooks ingest
 brooks manifest-stats
 brooks extract --provider file --model-id muse-spark-opencode
 brooks extract-status
+brooks title-map --manifest artifacts/manifest_batch1.json --output artifacts/title_map_batch1.json
 ```
 
 ## 10. Metrics snapshot (real numbers only; "NOT RUN" if unknown)

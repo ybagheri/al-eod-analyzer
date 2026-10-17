@@ -14,6 +14,7 @@ from brooks_lab import __version__
 from brooks_lab.application.extraction import ExtractionPromptBuilder, ExtractionService
 from brooks_lab.application.ingestion import ImageIngestionService, compute_stats
 from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel
+from brooks_lab.domain.title_taxonomy import map_title, parse_filename
 from brooks_lab.infrastructure.settings import load_ingestion_settings
 from brooks_lab.infrastructure.taxonomy import load_taxonomy
 from brooks_lab.infrastructure.vision import (
@@ -132,6 +133,55 @@ def schema_export(
     }
     output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     typer.echo(f"label schema v{LABEL_SCHEMA_VERSION} -> {output}")
+
+
+@app.command(name="title-map")
+def title_map(
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest_batch1.json"),
+        "--manifest",
+        help="Ingestion manifest with batch-1 records.",
+    ),
+    output: Path = typer.Option(
+        Path("artifacts/title_map_batch1.json"),
+        "--output",
+        help="Provisional title-to-taxonomy map to write.",
+    ),
+) -> None:
+    """Map batch-1 filename titles to provisional taxonomy ids (ADR-010)."""
+    payload = json.loads(manifest.read_text(encoding="utf-8"))
+    mapped: list[dict[str, object]] = []
+    unmapped_titles: list[str] = []
+    for record in payload.get("records", []):
+        filename = str(record["filename"])
+        title, date = parse_filename(filename)
+        match = map_title(title)
+        if match.day_type is None:
+            unmapped_titles.append(title)
+        mapped.append(
+            {
+                "image_id": record["image_id"],
+                "filename": filename,
+                "date": date,
+                "title": title,
+                "day_type": match.day_type.value if match.day_type else None,
+                "events": [kind.value for kind in match.events],
+            }
+        )
+    covered = sum(1 for entry in mapped if entry["day_type"] is not None)
+    summary = {
+        "total": len(mapped),
+        "day_type_covered": covered,
+        "unmapped_titles": sorted(set(unmapped_titles)),
+    }
+    output.write_text(
+        json.dumps({"summary": summary, "records": mapped}, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    typer.echo(
+        f"title-mapped {len(mapped)} "
+        f"(day_type covered {covered}, unmapped titles {len(unmapped_titles)}) -> {output}"
+    )
 
 
 @app.command()

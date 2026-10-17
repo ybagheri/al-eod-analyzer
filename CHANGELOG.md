@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Phase 5a dataset expansion: batch of 2042 usable ES/M5 charts ingested from
+  `data/raw_batch1/` (2018-11-18..2026-10-14; ok=1678, duplicates=364; corrupt +
+  low-res files deleted). Filename titles mapped to provisional taxonomy ids by
+  `title_taxonomy.py` + new `brooks title-map` command (`title_map_batch1.json`,
+  89% day-type coverage, ADR-010); images stay git-ignored via `data/raw_batch*/`.
+
 - Phase 0 skeleton: installable `brooks-lab` package, `brooks --version` CLI,
   `tasks.py`/`Makefile` quality gate, configs, living docs, `mql5/` stubs.
 - Phase 1 ingestion: `ImageRecord`/`Manifest` schemas, `ImageIngestionService`
