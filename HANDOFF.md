@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit eb89351 (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit e08a8e8 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -152,6 +152,16 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   image_id (first row wins); new unit test; review CLI output verified
   45 unique entries (40 calibration + 5 pilot ids whose exact image recurs in
   batch1); `artifacts/review*/` is git-ignored. Gate GREEN (pytest 160).
+
+- Round-4 full review applied (2026-10-17, user read ALL 43 review pages; ok =
+  whole page approved, inline note = that item only): 6 corrections via
+  review-apply (rev1 each, reviewer ybagheri): e8ce92071fd7 + 5a9a1aef78cc +
+  ac0332f48144 -> day_type trend_reversal_to_bull; e0d28242bd89 ->
+  trend_reversal_to_bear (reversal-day maps to direction-specific reversal);
+  08bc255b6b87 "Bull Reversal" -> major_trend_reversal + broken blue line
+  re-labelled wedge trendline; 97f1ff2438fc STC start_time 06:45 (red-box
+  markers precede 07:00, verified on chart). All other 37 pages approved
+  unchanged. Corrections files kept in artifacts/corrections_round4/.
 
 ## 4. Decisions made (link to ADR numbers)
 
