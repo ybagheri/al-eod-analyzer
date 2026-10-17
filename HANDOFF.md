@@ -138,6 +138,13 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   2adc4cca712d = axis-less course slide (times `00:00`); 4e96fb6e09ac prints
   ET+12 hrs axis (09:00-15:00 style) but recorded on the PT model like wave 0.
   All 40 wave-0+1 labels are plain vision (not gold).
+- User calibration decisions (2026-10-17): approved vision picks on the 7
+  title-conflict charts (fe14a3fe7fe0 trading_range, c2ac5b23a509 trending_TR,
+  c9dd83a405da reversal_to_bull; + a4bbf4c605c5, 29bdc49c41ad, 08bc255b6b87,
+  dfc0ce0cc967 listed for review) — on-chart-title precedence rule upheld.
+  acbf9694a538 (EURUSD daily) and 2adc4cca712d (axis-less course slide) REMOVED
+  from the sample (labels + queue pairs + sample entries deleted, commit b570174;
+  report regenerated: 38 sampled, agreement 30/37 = 0.811).
 - Review-pages dedup fix (2026-10-17, user-reported): view pages built from
   `manifest_batch1` listed the same chart twice when a hash-duplicate alias row
   shared its image_id (9 charts; e.g. fe14a3fe7fe0 shown for 2023-02-10 AND
