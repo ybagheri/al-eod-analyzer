@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit c57967c (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 71237bf (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
