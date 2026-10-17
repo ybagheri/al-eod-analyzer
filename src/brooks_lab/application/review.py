@@ -323,10 +323,18 @@ class ReviewService:
 
 
 def load_labels_for_manifest(manifest: Manifest, labels_dir: Path) -> list[DayLabel]:
-    """Load validated labels for every manifest record that has one."""
+    """Load validated labels for every manifest record that has one.
+
+    Hash-duplicate charts appear as several manifest rows sharing one image_id;
+    each image is loaded at most once (first row wins).
+    """
     labels: list[DayLabel] = []
+    seen: set[str] = set()
     for record in sorted(manifest.records, key=lambda r: r.filename):
+        if record.image_id in seen:
+            continue
         path = labels_dir / f"{record.image_id}.json"
         if path.is_file():
+            seen.add(record.image_id)
             labels.append(DayLabel.model_validate_json(path.read_text(encoding="utf-8")))
     return labels

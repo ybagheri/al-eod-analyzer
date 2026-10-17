@@ -146,6 +146,22 @@ def test_manifest_helper_loads_only_existing(tmp_path: Path) -> None:
     assert [label.image_id for label in loaded] == ["id-1"]
 
 
+def test_manifest_helper_dedups_hash_alias_rows(tmp_path: Path) -> None:
+    from brooks_lab.application.review import load_labels_for_manifest
+
+    service = _service(tmp_path, _label("id-1"))
+    manifest = Manifest(
+        records=[
+            ImageRecord(image_id="id-1", filename="a.jpg", sha256="0" * 64),
+            ImageRecord(
+                image_id="id-1", filename="a-alias.jpg", sha256="0" * 64, duplicate_of="id-1"
+            ),
+        ]
+    )
+    loaded = load_labels_for_manifest(manifest, service.labels_dir)
+    assert [label.image_id for label in loaded] == ["id-1"]
+
+
 def _remap_label() -> DayLabel:
     meta = ExtractionMeta(provider="file", model_id="m", prompt_version="extract_v1")
     return DayLabel(

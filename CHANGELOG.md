@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- Hash-duplicate charts no longer appear twice in the review index:
+  `load_labels_for_manifest` now loads one label per unique `image_id`
+  (alias `duplicate_of` rows in `manifest_batch1` no longer duplicate entries);
+  `artifacts/review*/` all local-only via .gitignore.
+
 ### Added
 
 - Phase 5a dataset expansion: batch of 2042 usable ES/M5 charts ingested from
