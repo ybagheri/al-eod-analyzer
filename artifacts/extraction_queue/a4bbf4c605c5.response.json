@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "image_id": "a4bbf4c605c5",
+  "date": "2025-09-23",
+  "day_type": "small_pullback_bear_trend",
+  "day_type_confidence": 0.85,
+  "session_summary": "CALIBRATION MISMATCH FLAG: the filename says 'Small-PB-Bull-Trend-from-the-Open' but the blue title bar and the chart read 'Small Pullback Bear Trend From The Open' - the filename title is wrong for this image; day_type follows the on-chart title and the trend shape (one-directional bear from 6750 to 6700 with shallow legs). Annotated reading: higher-high double top at the 6758 open (dotted twin-peak boxes), expanding triangle under descending magenta line, minor lower-low double bottom at 09:40, possible measured move down, then a dominant bear spike (beautiful box at bar 48) into an exhaustive sell climax at 6700; measured-move target zone (blue shaded 6705 area) reached late morning and price ranged 6700-6715 until a bull close about 6715. Axis day rolls 9/23 -> 9/24 with hours 07:00-13:00 (offset-style axis again).",
+  "events": [
+    {
+      "label": "double_top",
+      "raw_label": "Higher high double top",
+      "direction": "bear",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 12,
+      "price_hint": 6758.0,
+      "modifiers": [
+        "HH"
+      ],
+      "outcome": "success",
+      "outcome_reason": "bear trend down to 6700 for the first three hours followed",
+      "confidence": 0.8,
+      "evidence": "red 'Higher high double top' text; red dotted line at 6758 and blue dotted twin-peak boxes at 07:00"
+    },
+    {
+      "label": "triangle",
+      "raw_label": "Expanding triangle",
+      "direction": "bear",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 24,
+      "price_hint": null,
+      "modifiers": [
+        "expanding"
+      ],
+      "outcome": "success",
+      "outcome_reason": "bear break of the expanding triangle descending edge accelerated the trend",
+      "confidence": 0.65,
+      "evidence": "blue 'Expanding triangle' note with arrow to the magenta dotted descending line under the lows"
+    },
+    {
+      "label": "lower_low_double_bottom",
+      "raw_label": "Minor lower low double bottom",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 36,
+      "price_hint": 6733.0,
+      "modifiers": [
+        "minor"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "only a small bounce to 6740; the bear trend resumed immediately",
+      "confidence": 0.6,
+      "evidence": "green 'Minor lower low double bottom' text with green arrows at the 09:40 low"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Possible measured move down",
+      "direction": "bear",
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 40,
+      "price_hint": 6731.0,
+      "outcome": "success",
+      "outcome_reason": "projected downside target zone broke and price continued to 6700",
+      "confidence": 0.7,
+      "evidence": "orange 'Possible measured move down' text with arrow to the small bear range under the 6740 red dotted line"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 48,
+      "price_hint": 6705.0,
+      "outcome": "success",
+      "outcome_reason": "the 6705 projection was reached at the sell climax and the blue target zone held as the midday range",
+      "confidence": 0.75,
+      "evidence": "orange 'Measured move' text with orange dotted line at 6705 and blue shaded target box"
+    },
+    {
+      "label": "exhaustive_climax",
+      "raw_label": "Exhaustive sell climax",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 52,
+      "price_hint": 6700.0,
+      "outcome": "success",
+      "outcome_reason": "exhaustive flush into 6700 was followed by chop and a late recovery",
+      "confidence": 0.85,
+      "evidence": "orange 'Exhaustive sell climax' text with arrow to the tall dark bear bars in the beige box"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "blue shaded range box",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 60,
+      "price_hint": 6705.0,
+      "outcome": "unclear",
+      "outcome_reason": "range between 6700 and 6715 until the close, resolving up at the end",
+      "confidence": 0.5,
+      "evidence": "blue shaded box across the late-session bars 60-76"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "blue shaded range box",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 60,
+      "price_hint": 6705.0,
+      "outcome": "unclear",
+      "outcome_reason": "range between 6700 and 6715 until the close, resolving up at the end",
+      "confidence": 0.5,
+      "evidence": "blue shaded box across the late-session bars 60-76"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

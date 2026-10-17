@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "image_id": "88e44d6e86da",
+  "date": "2025-07-29",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.6,
+  "session_summary": "Axis is ET+12 hrs (22:00-04:00 = 09:30-16:00 session; exploit pivot: red verticals every 2 hrs). Session reads as three shaded trading ranges (early bar-1-10 box, mid zone under the red dotted trap line, late box 01:15-02:20) with mostly limit-order trading per the note. After the 02:20 wedge-top breakout stalled, a bull trap triggered a strong bear breakout to a 03:40 sell climax near 6368, followed by a major trend reversal up into the close (6425).day_type called trading_range on the first two-thirds per the title's regime claim; the final third was a strong trend, so confidence is moderate. Filename says 2025_07_29 while the axis spans Jul 30 21:30 to Jul 31 04:00 (ET+12), suggesting the chart covers the US session of Wed Jul 30, 2025 - date discrepancy flagged. Inset daily panel: 'Six day trading range price action' Jul 24-31.",
+  "events": [
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Trading ranges",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "21:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "unclear",
+      "outcome_reason": "range with breakout/limit-order trades per note; resolved later in session",
+      "confidence": 0.85,
+      "evidence": "first blue shaded range box (bars 1-10) plus 'Trading ranges' note and gray arrows"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Trading ranges",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "21:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "unclear",
+      "outcome_reason": "range with breakout/limit-order trades per note; resolved later in session",
+      "confidence": 0.85,
+      "evidence": "first blue shaded range box (bars 1-10) plus 'Trading ranges' note and gray arrows"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Trading ranges",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6420.0,
+      "outcome": "unclear",
+      "outcome_reason": "middle chop zone bounded by the red dotted resistance line and EMA",
+      "confidence": 0.6,
+      "evidence": "blue shaded zone under the red dotted line; bull trap and wedge/double-top notes inside"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Trading ranges",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6420.0,
+      "outcome": "unclear",
+      "outcome_reason": "middle chop zone bounded by the red dotted resistance line and EMA",
+      "confidence": 0.6,
+      "evidence": "blue shaded zone under the red dotted line; bull trap and wedge/double-top notes inside"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Trading ranges",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "01:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 48,
+      "price_hint": 6415.0,
+      "outcome": "fail",
+      "outcome_reason": "third range broke down sharply after 02:30 (bear breakout)",
+      "confidence": 0.65,
+      "evidence": "late blue shaded box around the 6415 area before the bear trend"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Trading ranges",
+      "role": "day_part",
+      "direction": "neutral",
+      "start_time": {
+        "time": "01:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 48,
+      "price_hint": 6415.0,
+      "outcome": "fail",
+      "outcome_reason": "third range broke down sharply after 02:30 (bear breakout)",
+      "confidence": 0.65,
+      "evidence": "late blue shaded box around the 6415 area before the bear trend"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap",
+      "direction": "bear",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 12,
+      "price_hint": 6420.0,
+      "outcome": "success",
+      "outcome_reason": "followed by sell-off to 6400 by 23:10",
+      "confidence": 0.8,
+      "evidence": "green 'Bull trap' text above red dotted horizontal line at 6420; green arrows at bars 12/18"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Wedge, double top",
+      "direction": "neutral",
+      "start_time": {
+        "time": "22:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 36,
+      "price_hint": 6420.0,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "second push broke above the line and rallied to 6428 (later bull trap)",
+      "confidence": 0.6,
+      "evidence": "red dotted line connecting the 22:10 and 00:25 peaks; 'Wedge, double top' pink note"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge, double top",
+      "direction": "bear",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 36,
+      "price_hint": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "small dip after the top, then price pushed above into the 02:10 breakout",
+      "confidence": 0.55,
+      "evidence": "two magenta dotted rising lines converging into the 00:25 top"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge top then breakout & bull trap",
+      "direction": "bear",
+      "start_time": {
+        "time": "01:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 60,
+      "price_hint": 6428.0,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "immediate sell-off below the EMA followed",
+      "confidence": 0.7,
+      "evidence": "magenta dotted rising wedge lines into the 6428 spike top; side note names wedge top"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "breakout & bull trap",
+      "direction": "bear",
+      "start_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:35",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 62,
+      "price_hint": 6428.0,
+      "outcome": "success",
+      "outcome_reason": "sharp bear move from 6428 to 6380 over the next hour",
+      "confidence": 0.85,
+      "evidence": "'Wedge top then breakout & bull trap' note over the 6428 spike; red down arrows at 02:35"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Strong bear breakout",
+      "direction": "bear",
+      "start_time": {
+        "time": "02:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": null,
+      "outcome": "success",
+      "outcome_reason": "consecutive red bars below the shaded range to 6370",
+      "confidence": 0.9,
+      "evidence": "red 'Strong bear breakout' text beside the large black bear bars"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Sell Climax",
+      "direction": "bear",
+      "start_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 72,
+      "price_hint": 6368.0,
+      "outcome": "success",
+      "outcome_reason": "V-shaped reversal up followed immediately",
+      "confidence": 0.8,
+      "evidence": "red 'Sell Climax' text at the 6368 lows with tall climactic bars"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "then major trend reversal",
+      "direction": "bull",
+      "start_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 76,
+      "price_hint": 6368.0,
+      "outcome": "success",
+      "outcome_reason": "rally to 6425 by the close on green breakout bars",
+      "confidence": 0.75,
+      "evidence": "'then major trend reversal' text plus green up arrows and strong bull bars into 04:00"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

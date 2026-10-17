@@ -108,6 +108,19 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   channels 341, trending_TR 102, reversal-family 139, spike_and_channel 60, resumption 37.
 - Tests +35 (test_title_taxonomy.py) -> pytest 159 passed; gate GREEN
   (ruff / format 53 files / mypy --strict 22 files / coverage 92.33%).
+- Calibration wave 0 (2026-10-12, commit pending): `scripts/extract_sample.py` builds a
+  deterministic stratified sample (largest 12 title day-type strata, 1 each, spread
+  across vintages -> `artifacts/calibration_sample.{txt,json}`) and runs the file-exchange
+  extraction restricted to it (12 request+response pairs in `artifacts/extraction_queue`,
+  labels -> `artifacts/labels/`, report -> `artifacts/calibration_report.json`).
+  Result: 12/12 labeled; **vision-vs-title-map day_type agreement 8/12 (0.667)**.
+  All 4 disagreements are filename-title vs on-chart blue title bar conflicts
+  (a4bbf4c605c5 filename says BULL, chart title says BEAR; 29bdc49c41ad / dfc0ce0cc967 /
+  08bc255b6b87 filename phrasing coarse) - in every case the vision pick follows the
+  on-chart title and is the more precise reading; on-chart title outranks filename.
+  Schema rule learned: event id `trading_range` does NOT exist - day-part ranges must be
+  `trading_range_begin` + `trading_range_end` pairs (5 responses fixed post-quarantine).
+  All 12 calibration images are plain-vision labels (source=vision), NOT gold.
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -124,10 +137,16 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 1. AGENT: calibration extraction over ~50 stratified batch-1 images; score vision
    day_type/event output against `title_map_batch1.json` (free human labels).
-2. USER: review the calibration diff; approve prompt v2 → v3 rule changes if needed.
-3. AGENT+USER: scale extraction in waves (≤100/session) over the 1678 usable images.
-4. Phase 5b (market data + session calendar) after calibration is clean — includes
-   resolving the PT-vs-ET axis question with real bars before any label→bar attach.
+   [wave 0 done: 12 images, agreement 8/12, all misses = filename-vs-chart-title gaps; wave 1 next]
+2. AGENT: calibration wave 1: extend `artifacts/calibration_sample.txt` to ~40 more
+   images (add remaining day strata + unmapped/undated/weekend strata), vision-label
+   them same way; update `artifacts/calibration_report.json` before scaling.
+3. USER: review calibration diff; approve title-rule adjustments (e.g. map on-chart
+   title precedence) if any; then scale extraction in waves (<=100/session) to 1678.
+4. Phase 5b (market data + session calendar) after calibration is clean - includes
+   resolving the PT-vs-ET axis question (wave 0 showed BOTH styles: some charts
+   print offset ET+12/ET+13 with day-roll markers, image c1259560ac95 is plain PT,
+   08bc255b6b87 plain PT half-day session) before any label->bar attach.
 
 ## 6. Open questions / blockers
 
@@ -159,6 +178,8 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - Watermark note: Aug/Sep PNGs carry a "Persian_expert_trader" redistribution watermark (third-party, personal research use; same legal basis as data/README)
 - Market data coverage: none (Phase 5b)
 - Batch-1 dataset (data/raw_batch1/, git-ignored images): 2044 received -> 2042 usable (corrupt 2023-07-10 jpg + tiny 2026-10-14 png deleted) | ok=1678, hash-duplicates=364 | dates 2018-11-18..2026-10-14 | title day_type coverage 1820/2042 (89%)
+- Calibration wave 0: 12/12 vision labels vs title map agree 8/12 (misses = filename vs on-chart title); correlation only, no label truth yet
+- Calibration artifacts (git-tracked): artifacts/calibration_sample.{txt,json}, artifacts/calibration_report.json, scripts/extract_sample.py, 12 new queue pairs
 - Batch-1 artifacts (git-tracked): artifacts/manifest_batch1.json (~1MB), artifacts/ingestion_stats_batch1.json, artifacts/title_map_batch1.json
 - Playbook version: none (Phase 8)
 
@@ -175,6 +196,8 @@ brooks manifest-stats
 brooks extract --provider file --model-id muse-spark-opencode
 brooks extract-status
 brooks title-map --manifest artifacts/manifest_batch1.json --output artifacts/title_map_batch1.json
+python scripts/extract_sample.py --build-sample 12 --sample-file artifacts/calibration_sample.txt
+python scripts/extract_sample.py --sample-file artifacts/calibration_sample.txt
 ```
 
 ## 10. Metrics snapshot (real numbers only; "NOT RUN" if unknown)

@@ -1,0 +1,90 @@
+{
+  "purpose": "calibration wave (ADR-010)",
+  "selection": [
+    {
+      "date": "2025_07_30",
+      "filename": "SP500-Emini-M5-TR-Day-Then-Bear-Breakout-and-EOD-Reversal_2025_07_29.jpg",
+      "image_id": "88e44d6e86da",
+      "stratum": "day:trading_range",
+      "title_day_type": "trading_range"
+    },
+    {
+      "date": "2022_10_19",
+      "filename": "SP500-Emini-M5-bull-and-bear-traps-on-the-open-with-higher-high-double-top-buy-climax-and-parabolic-wedge-sell-climax-and-midday-bull-trend-reversal_2022_10_19.png",
+      "image_id": "29bdc49c41ad",
+      "stratum": "day:bull_trend_from_open",
+      "title_day_type": "bull_trend_from_open"
+    },
+    {
+      "date": "2024_07_18",
+      "filename": "SP500-Emini-M5-Chart-Low-2-Top-and-Then-Strong-Bear-Trend_2024_07_18.jpg",
+      "image_id": "065d586e5842",
+      "stratum": "day:bear_trend_from_open",
+      "title_day_type": "bear_trend_from_open"
+    },
+    {
+      "date": "2025_09_23",
+      "filename": "SP500-Emini-M5-Small-PB-Bull-Trend-from-the-Open_2025_09_23.jpg",
+      "image_id": "a4bbf4c605c5",
+      "stratum": "day:small_pullback_bull_trend",
+      "title_day_type": "small_pullback_bull_trend"
+    },
+    {
+      "date": "2026_01_20",
+      "filename": "SP500-Emini-M5-Gap-Down-Double-Bottom-Double-Top-Then-Bear-Channel_2026_01_20.jpg",
+      "image_id": "440954bf73b8",
+      "stratum": "day:broad_bear_channel",
+      "title_day_type": "broad_bear_channel"
+    },
+    {
+      "date": "2019_04_11",
+      "filename": "SP500-Emini-M5-bear-trending-trading-range-day-and-sell-cimax_2019_04_11.png",
+      "image_id": "b0e7dcb266e3",
+      "stratum": "day:trending_trading_range",
+      "title_day_type": "trending_trading_range"
+    },
+    {
+      "date": "2025_11_03",
+      "filename": "SP500-Emini-M5-Sell-Climax-Reversal-into-Bull-Channel-Then-Tight-Trading-Range_2025_11_03.jpg",
+      "image_id": "78de051b958a",
+      "stratum": "day:broad_bull_channel",
+      "title_day_type": "broad_bull_channel"
+    },
+    {
+      "date": "2020_07_07",
+      "filename": "SP500-Emini-M5-consective-parabolic-wedge-tops-and-bear-trend-reversal_2020_07_07.png",
+      "image_id": "dfc0ce0cc967",
+      "stratum": "day:reversal_day",
+      "title_day_type": "reversal_day"
+    },
+    {
+      "date": "2020_11_30",
+      "filename": "SP500-Emini-M5-consecutive-wedge-bottoms-and-climactic-reversal-up_2020_11_27.png",
+      "image_id": "08bc255b6b87",
+      "stratum": "day:trend_reversal_to_bull",
+      "title_day_type": "trend_reversal_to_bull"
+    },
+    {
+      "date": "2022_05_02",
+      "filename": "SP500-Emini-M5-buy-climax-and-2nd-leg-bull-trap-then-small-pullback-bear-trend-and-late-bull-trend-reversal-after-Final-Bear-Flag_2022_05_02.png",
+      "image_id": "e8ce92071fd7",
+      "stratum": "day:small_pullback_bear_trend",
+      "title_day_type": "small_pullback_bear_trend"
+    },
+    {
+      "date": "2019_12_11",
+      "filename": "SP500-Emini-M5-bull-trend-resumption-after-FOMC-3_2019_12_11.png",
+      "image_id": "613ec9252d2f",
+      "stratum": "day:bull_trend_resumption",
+      "title_day_type": "bull_trend_resumption"
+    },
+    {
+      "date": "2023_06_05",
+      "filename": "SP500-Emini-M5-Wedge-Bottom-Then-Midday-Reversal-Down_2023_06_05.png",
+      "image_id": "c1259560ac95",
+      "stratum": "day:trend_reversal_to_bear",
+      "title_day_type": "trend_reversal_to_bear"
+    }
+  ],
+  "size": 12
+}

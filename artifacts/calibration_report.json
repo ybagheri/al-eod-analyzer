@@ -1,0 +1,90 @@
+{
+  "comparison": [
+    {
+      "day_match": true,
+      "extracted_day_type": "bear_trend_from_open",
+      "extracted_event_count": 8,
+      "image_id": "065d586e5842",
+      "title_day_type": "bear_trend_from_open"
+    },
+    {
+      "day_match": false,
+      "extracted_day_type": "trading_range",
+      "extracted_event_count": 6,
+      "image_id": "08bc255b6b87",
+      "title_day_type": "trend_reversal_to_bull"
+    },
+    {
+      "day_match": false,
+      "extracted_day_type": "trending_trading_range",
+      "extracted_event_count": 10,
+      "image_id": "29bdc49c41ad",
+      "title_day_type": "bull_trend_from_open"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "broad_bear_channel",
+      "extracted_event_count": 11,
+      "image_id": "440954bf73b8",
+      "title_day_type": "broad_bear_channel"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "bull_trend_resumption",
+      "extracted_event_count": 7,
+      "image_id": "613ec9252d2f",
+      "title_day_type": "bull_trend_resumption"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "broad_bull_channel",
+      "extracted_event_count": 7,
+      "image_id": "78de051b958a",
+      "title_day_type": "broad_bull_channel"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "trading_range",
+      "extracted_event_count": 14,
+      "image_id": "88e44d6e86da",
+      "title_day_type": "trading_range"
+    },
+    {
+      "day_match": false,
+      "extracted_day_type": "small_pullback_bear_trend",
+      "extracted_event_count": 8,
+      "image_id": "a4bbf4c605c5",
+      "title_day_type": "small_pullback_bull_trend"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "trending_trading_range",
+      "extracted_event_count": 4,
+      "image_id": "b0e7dcb266e3",
+      "title_day_type": "trending_trading_range"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "trend_reversal_to_bear",
+      "extracted_event_count": 8,
+      "image_id": "c1259560ac95",
+      "title_day_type": "trend_reversal_to_bear"
+    },
+    {
+      "day_match": false,
+      "extracted_day_type": "trend_reversal_to_bear",
+      "extracted_event_count": 5,
+      "image_id": "dfc0ce0cc967",
+      "title_day_type": "reversal_day"
+    },
+    {
+      "day_match": true,
+      "extracted_day_type": "small_pullback_bear_trend",
+      "extracted_event_count": 9,
+      "image_id": "e8ce92071fd7",
+      "title_day_type": "small_pullback_bear_trend"
+    }
+  ],
+  "day_type_agreement": 0.667,
+  "n": 12
+}

@@ -1,0 +1,195 @@
+{
+  "date": "2025-11-03",
+  "day_type": "broad_bull_channel",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red note 'Opening reversal after big gap up in 3-day trading range' plus tall opening red bars",
+      "label": "gap",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "gap-up open faded immediately into the opening reversal",
+      "placement": null,
+      "price_hint": 6907.0,
+      "raw_label": "big gap up",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.8,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red note and red down-arrow boxes on the opening bear bars",
+      "label": "opening_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "sell-off from 6907 to the 6854 climax followed",
+      "placement": null,
+      "price_hint": 6907.0,
+      "raw_label": "Opening reversal after big gap up in 3-day trading range",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted steep falling wedge lines into the 23:20 low",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "consecutive"
+      ],
+      "outcome": "success",
+      "outcome_reason": "second pushed down to the exhaustive sell climax low",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Consecutive wedges",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.85,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Exhaustive sell climax' text under the beige-boxed flush to 6854",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "two-legged reversal up followed (bull channel)",
+      "placement": null,
+      "price_hint": 6854.0,
+      "raw_label": "Exhaustive sell climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 14,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Strong reversal but still in bear channel' text with arrow to the reversal bars",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "tight bull channel followed all day",
+      "placement": null,
+      "price_hint": 6854.0,
+      "raw_label": "Strong reversal but still in bear channel",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.8,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Tight bull channel' text over the rising leg 23:30-03:10",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [
+        "tight"
+      ],
+      "outcome": "success",
+      "outcome_reason": "steady bull channel from 6854 to 6895 with EMA support",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "Tight bull channel",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue note with red dotted 6892 line and blue shaded close range box",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "range held into the close; close near midday",
+      "placement": null,
+      "price_hint": 6892.0,
+      "raw_label": "Tight trading range into close",
+      "role": "day_part",
+      "source": "vision",
+      "start_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "78de051b958a",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Sell Climax, Reversal into Bull Channel Then Tight Trading Range'. Big gap-up open at 6907 immediately reversed down (opening reversal in a 3-day trading range), consecutive falling wedges to an exhaustive sell climax of 6854 at 23:25 (bar 12), then 'strong reversal but still in bear channel' turning into a tight bull channel grinding to 6895 by 03:10, finishing in a tight trading range into the close (shaded box, red dotted 6892 resistance). Axis ET+13 hrs (22:00-05:00, Nov 4 marker) - offset suspicion recorded; times as printed. Inset daily panel: 'Trading Range' with Thurs/Fri/Mon labels."
+}

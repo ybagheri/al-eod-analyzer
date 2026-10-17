@@ -13,6 +13,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   low-res files deleted). Filename titles mapped to provisional taxonomy ids by
   `title_taxonomy.py` + new `brooks title-map` command (`title_map_batch1.json`,
   89% day-type coverage, ADR-010); images stay git-ignored via `data/raw_batch*/`.
+- Calibration wave 0: `scripts/extract_sample.py` (deterministic stratified
+  sample) + 12 vision-extracted labels; vision day_type agrees with the filename
+  title map on 8/12, with all misses traced to filename-vs-on-chart-title gaps
+  (`artifacts/calibration_report.json`).
 
 - Phase 0 skeleton: installable `brooks-lab` package, `brooks --version` CLI,
   `tasks.py`/`Makefile` quality gate, configs, living docs, `mql5/` stubs.
