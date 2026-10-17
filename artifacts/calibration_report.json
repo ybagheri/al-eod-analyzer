@@ -51,13 +51,6 @@
     },
     {
       "day_match": true,
-      "extracted_day_type": "small_pullback_bull_trend",
-      "extracted_event_count": 4,
-      "image_id": "2adc4cca712d",
-      "title_day_type": "small_pullback_bull_trend"
-    },
-    {
-      "day_match": true,
       "extracted_day_type": "broad_bear_channel",
       "extracted_event_count": 11,
       "image_id": "440954bf73b8",
@@ -170,13 +163,6 @@
     },
     {
       "day_match": true,
-      "extracted_day_type": "trading_range",
-      "extracted_event_count": 5,
-      "image_id": "acbf9694a538",
-      "title_day_type": "trading_range"
-    },
-    {
-      "day_match": true,
       "extracted_day_type": "trending_trading_range",
       "extracted_event_count": 4,
       "image_id": "b0e7dcb266e3",
@@ -281,6 +267,6 @@
       "title_day_type": "broad_bull_channel"
     }
   ],
-  "day_type_agreement": 0.821,
-  "n": 39
+  "day_type_agreement": 0.811,
+  "n": 37
 }

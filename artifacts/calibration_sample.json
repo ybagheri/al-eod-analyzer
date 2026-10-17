@@ -1,6 +1,10 @@
 {
   "appendix": 28,
   "purpose": "calibration wave (ADR-010, appends)",
+  "removed_ids": [
+    "acbf9694a538",
+    "2adc4cca712d"
+  ],
   "selection": [
     {
       "date": "2025_07_30",
@@ -185,25 +189,11 @@
       "title_day_type": "spike_and_channel_bull"
     },
     {
-      "date": null,
-      "filename": "SP500-Emini-M5-nested-wedge-and-double-top-in-trading-range.png",
-      "image_id": "acbf9694a538",
-      "stratum": "_undated",
-      "title_day_type": "trading_range"
-    },
-    {
       "date": "2023_02_21",
       "filename": "SP500-Emini-M5-Wedge-Top-at-EMA-Then-Midday-Wedge-Bottom_2023_02_17.png",
       "image_id": "97f1ff2438fc",
       "stratum": "_unmapped",
       "title_day_type": null
-    },
-    {
-      "date": "2019_04_28",
-      "filename": "SP500-Emini-M5-High-2-bottom-and-Small-Pullback-Bull-Trend_2019_04_28.png",
-      "image_id": "2adc4cca712d",
-      "stratum": "_weekend_dated",
-      "title_day_type": "small_pullback_bull_trend"
     },
     {
       "date": "2020_03_18",
@@ -283,5 +273,5 @@
       "title_day_type": "bull_trend_resumption"
     }
   ],
-  "size": 40
+  "size": 38
 }
