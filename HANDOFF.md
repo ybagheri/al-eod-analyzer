@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit 429c339 (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit eb89351 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -138,6 +138,13 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   2adc4cca712d = axis-less course slide (times `00:00`); 4e96fb6e09ac prints
   ET+12 hrs axis (09:00-15:00 style) but recorded on the PT model like wave 0.
   All 40 wave-0+1 labels are plain vision (not gold).
+- Review-pages dedup fix (2026-10-17, user-reported): view pages built from
+  `manifest_batch1` listed the same chart twice when a hash-duplicate alias row
+  shared its image_id (9 charts; e.g. fe14a3fe7fe0 shown for 2023-02-10 AND
+  2023-02-13). `load_labels_for_manifest` now loads one label per unique
+  image_id (first row wins); new unit test; review CLI output verified
+  45 unique entries (40 calibration + 5 pilot ids whose exact image recurs in
+  batch1); `artifacts/review*/` is git-ignored. Gate GREEN (pytest 160).
 
 ## 4. Decisions made (link to ADR numbers)
 
