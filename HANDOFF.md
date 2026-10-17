@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 71237bf (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-12 by Muse Spark (opencode) — phase commit 1f19db2 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,7 +11,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 5a — Batch-1 dataset expansion (2042 new ES/M5 charts, title-as-label)
-- Phase status: intake + title mapping done (2026-10-12); calibration extraction pending
+- Phase status: intake + title mapping + calibration wave 0 done (2026-10-12); calibration wave 1 and wave scaling pending
 - Last green quality gate: 2026-10-12 pre-commit (ruff ✓ / format ✓ 53 files / mypy --strict ✓ 22 files / pytest 159 passed / coverage 92.33%)
 
 ## 3. What was done in this session
