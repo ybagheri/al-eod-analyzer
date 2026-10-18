@@ -1,1 +1,81 @@
-{"date": "2022-08-01", "day_type": "bull_trend_from_open", "day_type_confidence": 0.65, "events": [{"confidence": 0.75, "direction": "bull", "end_time": null, "evidence": "Brown note 'Major Bull Surprise' over the large morning up bars (axis times cut off, time omitted)", "label": "major_bull_surprise", "outcome": "success", "outcome_reason": "surprise drove to the 4145 top", "raw_label": "Major Bull Surprise", "source": "vision", "start_time": null}, {"confidence": 0.7, "direction": "bear", "end_time": null, "evidence": "Red note 'LH DT' at the ~4145 top with dotted line", "label": "lower_high_double_top", "outcome": "success", "outcome_reason": "top failed into the midday decline", "raw_label": "LH DT", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bear", "end_time": null, "evidence": "Magenta note 'Truncated Wedge' at the same top", "label": "truncated_wedge", "outcome": "success", "outcome_reason": "truncated top led the decline", "raw_label": "Truncated Wedge", "source": "vision", "start_time": null}, {"confidence": 0.7, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Wedge' with dotted lines into the ~4110 low", "label": "wedge", "outcome": "success", "outcome_reason": "wedge bottom launched the bounce", "raw_label": "Wedge", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Green note 'HL DB' at the same low", "label": "higher_low_double_bottom", "outcome": "success", "outcome_reason": "higher-low bottom held into the recovery", "raw_label": "HL DB", "source": "vision", "start_time": null}, {"confidence": 0.5, "direction": "bull", "end_time": null, "evidence": "Brown note 'Buy The Close' at the left edge near 4105; placement ambiguous", "label": "buy_the_close", "outcome": "unclear", "outcome_reason": "cannot tell from the image which close this refers to", "raw_label": "Buy The Close", "source": "vision", "start_time": null}], "extraction_meta": {"model_id": "muse-spark-opencode", "prompt_version": "extract_v1", "provider": "file"}, "image_id": "08ca9dc8fa91", "schema_version": 1, "session_summary": "Bull trend from the open, then trading range: major bull surprise to ~4145, LH double top with truncated wedge down to a wedge/HLDB bottom near 4110, then recovery. Axis times are cut off so all event times are null."}
+{
+    "date":  "2022-08-01",
+    "day_type":  "bull_trend_from_open",
+    "day_type_confidence":  0.65,
+    "events":  [
+                   {
+                       "confidence":  0.75,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Brown note \u0027Major Bull Surprise\u0027 over the large morning up bars (axis times cut off, time omitted)",
+                       "label":  "major_bull_surprise",
+                       "outcome":  "success",
+                       "outcome_reason":  "surprise drove to the 4145 top",
+                       "raw_label":  "Major Bull Surprise",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Red note \u0027LH DT\u0027 at the ~4145 top with dotted line",
+                       "label":  "lower_high_double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "top failed into the midday decline",
+                       "raw_label":  "LH DT",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Truncated Wedge\u0027 at the same top",
+                       "label":  "truncated_wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "truncated top led the decline",
+                       "raw_label":  "Truncated Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Wedge\u0027 with dotted lines into the ~4110 low",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge bottom launched the bounce",
+                       "raw_label":  "Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Green note \u0027HL DB\u0027 at the same low",
+                       "label":  "higher_low_double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "higher-low bottom held into the recovery",
+                       "raw_label":  "HL DB",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.5,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Brown note \u0027Buy The Close\u0027 at the left edge near 4105; placement ambiguous",
+                       "label":  "buy_the_close",
+                       "outcome":  "unclear",
+                       "outcome_reason":  "cannot tell from the image which close this refers to",
+                       "raw_label":  "Buy The Close",
+                       "start_time":  null
+                   }
+               ],
+    "extraction_meta":  {
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v1",
+                            "provider":  "file"
+                        },
+    "image_id":  "08ca9dc8fa91",
+    "schema_version":  1,
+    "session_summary":  "Bull trend from the open, then trading range: major bull surprise to ~4145, LH double top with truncated wedge down to a wedge/HLDB bottom near 4110, then recovery. Axis times are cut off so all event times are null."
+}

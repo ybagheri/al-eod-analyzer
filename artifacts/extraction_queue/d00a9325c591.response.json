@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "d00a9325c591",
+  "date": "2020-03-20",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.8,
+  "session_summary": "Blue title bar: 'Broad Bear Channel'. A wedge rally to a higher high double top at 2440 rolls the market into a broad bear channel; wedge rallies that are tight bear channels and triangle flags mark the grind down to 2288 into the close.",
+  "events": [
+    {
+      "label": "wedge",
+      "raw_label": "Wedge rally to HH DT",
+      "direction": "bear",
+      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 2440.0,
+      "outcome": "success",
+      "outcome_reason": "wedge rally to a higher high double top reversed the market down",
+      "confidence": 0.75,
+      "evidence": "'Wedge rally to HH DT' magenta text with magenta wedge lines and red solid tops at 2440"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Broad bear channel",
+      "direction": "bear",
+      "start_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 2288.0,
+      "outcome": "success",
+      "outcome_reason": "broad bear channel with red solid lower-high tops ground down all day",
+      "confidence": 0.8,
+      "evidence": "descending red solid top lines and magenta dotted channels down to 2288"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge, but tight bear channel (10:05 low -> top)",
+      "direction": "bear",
+      "start_time": {"time": "09:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 2390.0,
+      "outcome": "success",
+      "outcome_reason": "wedge rally was actually a tight bear channel; failed at 2390",
+      "confidence": 0.65,
+      "evidence": "'Wedge, but tight bear channel' magenta text with wedge and purple trend line"
+    },
+    {
+      "label": "bear_flag",
+      "raw_label": "Blue triangle bear flag (10:30)",
+      "direction": "bear",
+      "start_time": {"time": "10:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 2380.0,
+      "outcome": "success",
+      "outcome_reason": "blue triangle bear flag broke down",
+      "confidence": 0.65,
+      "evidence": "blue lines over the 10:25-10:35 triangle with red shaded bear bars"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Magenta wedge in the late bear leg",
+      "direction": "bear",
+      "start_time": {"time": "11:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 2295.0,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge lines marked the falling legs into the close",
+      "confidence": 0.6,
+      "evidence": "magenta lines under the 11:55-13:00 lows"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

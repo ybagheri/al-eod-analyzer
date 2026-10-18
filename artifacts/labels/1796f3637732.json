@@ -1,0 +1,293 @@
+{
+  "date": "2026-04-21",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue top-center note",
+      "label": "outside_outside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "outside down day closed below the open of the session",
+      "placement": null,
+      "price_hint": 7088.0,
+      "raw_label": "Outside down day after broad bear channel",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 7160 with the up arrow at the left edge",
+      "label": "trend_line",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "faded attempt at yesterday's high 7160 led the decline",
+      "placement": null,
+      "price_hint": 7160.0,
+      "raw_label": "Yesterday's high",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted rising lines into the bar-12 top",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "dotted wedge top at 7170 rolled into the opening-range leg",
+      "placement": null,
+      "price_hint": 7170.0,
+      "raw_label": "magenta dotted wedge top",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red note 'Breakout below opening range' with arrow and shaded 23:15-23:40 box",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout below the opening range hit the Low-1 shelf",
+      "placement": null,
+      "price_hint": 7140.0,
+      "raw_label": "Breakout below opening range",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Double bottom at yesterday's low' text and green dotted line",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "double bottom at the 7120 green line produced the weak channel-top rally",
+      "placement": null,
+      "price_hint": 7120.0,
+      "raw_label": "Double bottom at yesterday's low",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green arrows inside the gray 'Limit order market' shaded box",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [
+        "tight"
+      ],
+      "outcome": "success",
+      "outcome_reason": "weak buys inside the tight bear channel stalled at 7140 and broke down",
+      "placement": null,
+      "price_hint": 7140.0,
+      "raw_label": "Weak buy inside tight bear channel (limit order market)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange note with arrow at the 01:00 low and green dotted 7120 line",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "breakout below the 7118 green line ran two legs to 7100",
+      "placement": null,
+      "price_hint": 7100.0,
+      "raw_label": "Breakout below yesterday's low (only one reasonable stop entry)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Two legs down Minor reversal' note at the channel low (magenta dotted V into bar 48)",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "minor reversal after the two legs rallied to 7135",
+      "placement": null,
+      "price_hint": 7098.0,
+      "raw_label": "Two legs down Minor reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Major trend reversal failed' text with shaded beige box and red arrows",
+      "label": "failed_signal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "attempted MTR bar-72 failed and slid into the final flush",
+      "placement": null,
+      "price_hint": 7090.0,
+      "raw_label": "Major trend reversal failed",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": {
+        "time": "03:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Trading range at end of day Possible end of bear channel' text and shaded box",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded end-of-day range flagged a possible channel end (begin of pair)",
+      "placement": null,
+      "price_hint": 7088.0,
+      "raw_label": "Trading range at end of day",
+      "role": "day_part",
+      "source": "vision",
+      "start_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": {
+        "time": "04:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "same shaded blue box around the final bars",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded end-of-day range flagged a possible channel end (end of pair)",
+      "placement": null,
+      "price_hint": 7094.0,
+      "raw_label": "Trading range at end of day",
+      "role": "day_part",
+      "source": "vision",
+      "start_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "1796f3637732",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel Working Down from All-time High' (+ daily inset). Reading: after fading yesterday's 7160 high line, the day breaks the opening range, double-bottoms at yesterday's 7120 low, only weakly rallies inside a tight bear channel (gray 'limit order market' box), then breaks below yesterday's low into two legs down; the failed higher-low/MTR attempt at 7135 (bar 72) slides into an end-of-day blue shaded range (possible end of bear channel). bear day closing as an outside down day after a broad bear channel. Axis prints ET+12 hrs (22:00-04:00); date maintained at 2026-04-21 as in the wave-0 offset-chart convention (caution noted for Phase 5b)."
+}

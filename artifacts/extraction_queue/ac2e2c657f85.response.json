@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "ac2e2c657f85",
+  "date": "2023-09-25",
+  "day_type": "broad_bull_channel",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Broad Bull Channel From The Open'. Major bull surprise drove an opening broad bull channel (green giant wedge 4340-4375); wedge bull flag higher low major trend reversal at 08:20 low 4348, nested wedge bear flag stall at 09:15 high 4377, then the usual couple hours of trading range inside the channel before a 12:30 breakout test bear trap wedge bull flag trend resumption up into the close near 4380.",
+  "events": [
+    {
+      "label": "broad_bull_channel",
+      "raw_label": "Broad bull channel from the open after Major Bull Surprise (06:45-08:20)",
+      "direction": "bull",
+      "start_time": {"time": "06:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4375.0,
+      "outcome": "success",
+      "outcome_reason": "green giant wedge channel from 4340 lows to 4375 highs with orange Major Bull Surprise text and arrow",
+      "confidence": 0.7,
+      "evidence": "green shaded channel boundary containing brown shaded 08:10-08:20 surprise bar with dotted purple channel"
+    },
+    {
+      "label": "wedge_bull_flag",
+      "raw_label": "Wedge bull flag, higher low major trend reversal (08:05-08:30 low 4348)",
+      "direction": "bull",
+      "start_time": {"time": "07:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4348.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge bull flag / higher low major trend reversal text at the shaded bottom gap cluster",
+      "confidence": 0.65,
+      "evidence": "magenta 'Wedge Bull Flag' and green 'Higher Low Major Trend Reversal' texts under the brown shaded bars 08:10-08:40"
+    },
+    {
+      "label": "wedge_bear_flag",
+      "raw_label": "Nested wedge bear flag at channel top (08:55-09:20 high 4377)",
+      "direction": "bear",
+      "start_time": {"time": "08:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4377.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted Nested Wedge at the 4377 top with red arrows 09:15-09:30 and the red dotted first test line",
+      "confidence": 0.6,
+      "evidence": "magenta 'Nested Wedge' text at the peak with nested purple dotted triangles and red bars 09:20-09:30"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Broad bull channel trading range couple of hours (09:30-12:30)",
+      "direction": "bull",
+      "start_time": {"time": "09:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4372.0,
+      "outcome": "success",
+      "outcome_reason": "green text 'Broad Bull Channel usually has at least a couple hours of Trading Range' over the red dotted 4375 resistance and green dotted 4358 support box",
+      "confidence": 0.7,
+      "evidence": "red dotted ceiling to 11:45 and green dotted 4358 floor with alternating green/red shaded bars inside the purple channel"
+    },
+    {
+      "label": "bear_trap",
+      "raw_label": "Breakout test bear trap at trading range low (12:25-12:50 low 4358)",
+      "direction": "bull",
+      "start_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4358.0,
+      "outcome": "success",
+      "outcome_reason": "green Breakout Test, red Bear Trap, magenta Wedge Bull Flag, green Trend Resumption Up text stack at the 12:30 lows",
+      "confidence": 0.7,
+      "evidence": "magenta dotted breakout test wedge at the 12:30-12:45 low cluster with red shaded failed sale bars 12:30-12:45"
+    },
+    {
+      "label": "trend_resumption",
+      "raw_label": "Trend resumption up into the close near 4380 (12:50-13:15)",
+      "direction": "bull",
+      "start_time": {"time": "12:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4380.0,
+      "outcome": "success",
+      "outcome_reason": "green shaded tight channel bars 12:50-13:15 to 4380 highs on the right edge",
+      "confidence": 0.65,
+      "evidence": "green shaded 12:55-13:15 stacked bull bars with magenta dotted wedge bull flag below and green Trend Resumption Up text"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

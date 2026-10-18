@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "f9e2279299b4",
+  "date": "2023-08-28",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Double Top, Wedge Bottom, Then Trading Range Day'. A double top at 4447 sells down to a nested wedge H&S bottom at 4424, the higher low major trend reversal lifts to a failed breakout above the high at 4449, a second leg bear trap at 4424 holds the low, and the day closes as an afternoon trading range around the open at 4438.",
+  "events": [
+    {
+      "label": "double_top",
+      "raw_label": "Double Top (07:50)",
+      "direction": "bear",
+      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4447.0,
+      "outcome": "success",
+      "outcome_reason": "double top at 4447 sold the morning down to 4425",
+      "confidence": 0.7,
+      "evidence": "red dotted line at 4447 red text and red boxed sell bars 07:50-08:10"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Nested Wedge (08:55 low)",
+      "direction": "bull",
+      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4423.5,
+      "outcome": "success",
+      "outcome_reason": "nested wedge bottom at 4424 tightened the selloff and formed the H&S bottom",
+      "confidence": 0.6,
+      "evidence": "magenta dotted nested wedge lines into the 08:55 low"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher Low Major Trend Reversal / Head and Shoulders Bottom (09:40)",
+      "direction": "bull",
+      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4424.0,
+      "outcome": "success",
+      "outcome_reason": "higher low head and shoulders bottom at 4424 lifted the market to the 10:30 failed breakout",
+      "confidence": 0.65,
+      "evidence": "green dotted 4424 H&S neckline with green boxed bull bars 10:05-10:25"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Failed breakout above high (10:30)",
+      "direction": "bear",
+      "start_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4449.0,
+      "outcome": "success",
+      "outcome_reason": "breakout above the double top high at 4449 failed and the market sold back to 4425",
+      "confidence": 0.7,
+      "evidence": "blue text at the 10:30 high with tall reversal bars and brownboxed 10:45-11:00 sell-off"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Failed breakout below low 2nd Leg Bear Trap (11:05)",
+      "direction": "bull",
+      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4424.0,
+      "outcome": "success",
+      "outcome_reason": "second leg breakout below 4424 became a bear trap and lifted the afternoon back above the open",
+      "confidence": 0.65,
+      "evidence": "green arrow at the 11:05 low with orange and green text and boxed reversal bars"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Trading range day around the open at 4438",
+      "direction": null,
+      "start_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4438.0,
+      "outcome": "success",
+      "outcome_reason": "afternoon chopped around the open 4438 with late spike to 4449 and close at 4440",
+      "confidence": 0.6,
+      "evidence": "blue dotted Open line at 4438 across the chart with boxed afternoon swings"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

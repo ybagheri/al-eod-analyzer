@@ -1,1 +1,114 @@
-{"date": "2022-08-23", "day_type": "trading_range", "day_type_confidence": 0.8, "events": [{"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Parabolic Wedge' over the opening rally to ~4160 (no time axis, omitted)", "label": "wedge", "outcome": "success", "outcome_reason": "parabolic top reversed into the washout", "raw_label": "Parabolic Wedge", "source": "vision", "start_time": null}, {"confidence": 0.5, "direction": "bear", "end_time": null, "evidence": "Blue note 'Low 2' at the same top", "label": "l2", "outcome": "partial", "outcome_reason": "second low with limited follow-through", "raw_label": "Low 2", "source": "vision", "start_time": null}, {"confidence": 0.4, "direction": "neutral", "end_time": null, "evidence": "Brown 'OO' mark near the top; meaning not determinable", "label": null, "outcome": "unclear", "outcome_reason": "unknown what OO denotes", "raw_label": "OO", "source": "vision", "start_time": null}, {"confidence": 0.55, "direction": "bear", "end_time": null, "evidence": "Red note 'DT PB at EMA'", "label": null, "outcome": "partial", "outcome_reason": "double-top pullback with limited follow-through", "raw_label": "DT PB at EMA", "source": "vision", "start_time": null}, {"confidence": 0.7, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Wedge' with dotted lines into the ~4127 low", "label": "wedge", "outcome": "success", "outcome_reason": "wedge bottom launched the recovery", "raw_label": "Wedge", "source": "vision", "start_time": null}, {"confidence": 0.6, "direction": "bear", "end_time": null, "evidence": "Red note 'HH DT' near 4143", "label": "double_top", "outcome": "success", "outcome_reason": "top capped the recovery leg", "raw_label": "HH DT", "source": "vision", "start_time": null}, {"confidence": 0.5, "direction": "neutral", "end_time": null, "evidence": "Blue notes 'Exp. Triangle' in two areas", "label": null, "outcome": "unclear", "outcome_reason": "triangles noted without annotated resolution", "raw_label": "Exp. Triangle", "source": "vision", "start_time": null}, {"confidence": 0.5, "direction": "bull", "end_time": null, "evidence": "Green note 'Minor HL'", "label": null, "outcome": "partial", "outcome_reason": "minor higher low inside the range", "raw_label": "Minor HL", "source": "vision", "start_time": null}, {"confidence": 0.6, "direction": "bear", "end_time": null, "evidence": "Red note 'LH DT' with a second blue 'Exp. Triangle'", "label": "lower_high_double_top", "outcome": "success", "outcome_reason": "test failed into the close", "raw_label": "LH DT", "source": "vision", "start_time": null}], "extraction_meta": {"model_id": "muse-spark-opencode", "prompt_version": "extract_v1", "provider": "file"}, "image_id": "487282b55e09", "schema_version": 1, "session_summary": "Wedge top, then trading range: parabolic top washed to a wedge bottom near 4127, recovery capped by HHDT, expanding triangles and a minor higher low, LHDT into the close. No time axis visible so all times are null."}
+{
+    "date":  "2022-08-23",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.8,
+    "events":  [
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Parabolic Wedge\u0027 over the opening rally to ~4160 (no time axis, omitted)",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "parabolic top reversed into the washout",
+                       "raw_label":  "Parabolic Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.5,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Blue note \u0027Low 2\u0027 at the same top",
+                       "label":  "l2",
+                       "outcome":  "partial",
+                       "outcome_reason":  "second low with limited follow-through",
+                       "raw_label":  "Low 2",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.4,
+                       "direction":  "neutral",
+                       "end_time":  null,
+                       "evidence":  "Brown \u0027OO\u0027 mark near the top; meaning not determinable",
+                       "label":  null,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "unknown what OO denotes",
+                       "raw_label":  "OO",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Red note \u0027DT PB at EMA\u0027",
+                       "label":  null,
+                       "outcome":  "partial",
+                       "outcome_reason":  "double-top pullback with limited follow-through",
+                       "raw_label":  "DT PB at EMA",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Wedge\u0027 with dotted lines into the ~4127 low",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge bottom launched the recovery",
+                       "raw_label":  "Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Red note \u0027HH DT\u0027 near 4143",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "top capped the recovery leg",
+                       "raw_label":  "HH DT",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.5,
+                       "direction":  "neutral",
+                       "end_time":  null,
+                       "evidence":  "Blue notes \u0027Exp. Triangle\u0027 in two areas",
+                       "label":  null,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "triangles noted without annotated resolution",
+                       "raw_label":  "Exp. Triangle",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.5,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Green note \u0027Minor HL\u0027",
+                       "label":  null,
+                       "outcome":  "partial",
+                       "outcome_reason":  "minor higher low inside the range",
+                       "raw_label":  "Minor HL",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Red note \u0027LH DT\u0027 with a second blue \u0027Exp. Triangle\u0027",
+                       "label":  "lower_high_double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "test failed into the close",
+                       "raw_label":  "LH DT",
+                       "start_time":  null
+                   }
+               ],
+    "extraction_meta":  {
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v1",
+                            "provider":  "file"
+                        },
+    "image_id":  "487282b55e09",
+    "schema_version":  1,
+    "session_summary":  "Wedge top, then trading range: parabolic top washed to a wedge bottom near 4127, recovery capped by HHDT, expanding triangles and a minor higher low, LHDT into the close. No time axis visible so all times are null."
+}

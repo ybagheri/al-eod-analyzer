@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "3bf8d1294aea",
+  "date": "2026-05-04",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Big Gap Up Then Bull Trending Trading Range Day'. Overnight session x-axis is ET+12 hours (22:00-04:00 vs the original 10:00-16:00 ET labels). Big gap up above yesterday's high 7270, opening double bottom, bull spike, blue shaded trading range with failed 2nd entry sell setups, breakout into a tight bull channel, all-time high tested before end-of-day profit taking and a new all-time high in the after-close extension.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bear trap at yesterday's high 7270 (22:00)",
+      "direction": "bull",
+      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7270.0,
+      "outcome": "success",
+      "outcome_reason": "gap above yesterday's high shook out shorts and reversed up with a double bottom",
+      "confidence": 0.7,
+      "evidence": "red Yesterday's high arrow to the red dotted line with green double bottom underline below"
+    },
+    {
+      "label": "spike_and_channel_bull",
+      "raw_label": "Bull spike (22:30 bar 12 to bar 18)",
+      "direction": "bull",
+      "start_time": {"time": "22:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7278.0,
+      "outcome": "success",
+      "outcome_reason": "strong bull legs lifted the market from 7272 to 7282",
+      "confidence": 0.7,
+      "evidence": "bars 12 and 18 labels under the green arrow spike bars below the shaded box"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Blue shaded trading range (23:35-01:20)",
+      "direction": "bull",
+      "start_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7284.0,
+      "outcome": "success",
+      "outcome_reason": "range with double tops and double bottoms; low risk 2nd entry sell setups failed",
+      "confidence": 0.7,
+      "evidence": "blue shaded box with red dotted top, green dotted bottom, red Double tops arrows and red 2nd entry sell setups text"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Trading range breakout then tight bull channel (01:25)",
+      "direction": "bull",
+      "start_time": {"time": "01:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7288.0,
+      "outcome": "success",
+      "outcome_reason": "upside breakout at bar 48 turned into a tight bull channel through bar 60",
+      "confidence": 0.75,
+      "evidence": "green Trading range breakout Then tight bull channel text over the 01:20-02:00 green arrows (48, 60)"
+    },
+    {
+      "label": "bull_trend",
+      "raw_label": "All-time high RTH test (03:10 high 7300)",
+      "direction": "bull",
+      "start_time": {"time": "03:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7300.0,
+      "outcome": "success",
+      "outcome_reason": "purple dotted all-time high tested in regular trading hours",
+      "confidence": 0.7,
+      "evidence": "purple All-time high (RTH) label with dotted line at the 03:05-03:15 highs"
+    },
+    {
+      "label": "climax",
+      "raw_label": "End of day profit taking, aggressive swing sell setup (03:35 bar 72)",
+      "direction": "bear",
+      "start_time": {"time": "03:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7295.0,
+      "outcome": "success",
+      "outcome_reason": "bar 72 sell setup drove end of day profit taking into the evening halt",
+      "confidence": 0.65,
+      "evidence": "red down arrow at bar 72 beside blue End of day profit taking text and the tall black sell bar into 04:00"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

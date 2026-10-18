@@ -1,108 +1,148 @@
 {
-  "schema_version": 1,
-  "image_id": "27c87dd0342d",
-  "date": "2021-01-12",
-  "day_type": "trading_range",
-  "day_type_confidence": 0.75,
-  "session_summary": "Blue title bar: 'Wedge Top, Then Bull Trend Reversal in TR Day' (filename calls it a 2nd-leg-trap doji TR day 2). Reading: open-range outside bar (OO note), morning wedge rally in two ranges to a 3803 wedge top whose 3rd leg ran over three strong bull bars (buy climax) with an outside-down reversal bar, bear breakout flush to 3768 flagged 'possible 2nd leg bear trap and S climax', then two-sided ranges: big bull breakout to 3794 (possible 2nd leg bull trap / buy climax), double-top ii zone at 3799, drawn mini-wedges, and a close below the open ('small bear doji day'). Axis prints 13:00 sideband + 1/12 marker then 07:00-13:00 (offset-style; 2021-vintage Covid-era low).",
-  "events": [
-    {
-      "label": "outside_outside",
-      "raw_label": "OO",
-      "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "06:55", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3798.0,
-      "outcome": "unclear",
-      "outcome_reason": "probes both sides in the opening range; setup for the wedge reversal later that afternoon",
-      "confidence": 0.6,
-      "evidence": "orange 'OO' text over the beige-boxed first bars"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge",
-      "direction": "bear",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3803.0,
-      "modifiers": ["top"],
-      "outcome": "success",
-      "outcome_reason": "outside-down reversal closed below the prior bar low and the market sold off",
-      "confidence": 0.75,
-      "evidence": "pink arrow and magenta dotted rising line into the 3803 wedge top"
-    },
-    {
-      "label": "climax",
-      "raw_label": "3rd leg up was 3 strong bull bars so B climax",
-      "direction": "bull",
-      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3803.0,
-      "outcome": "success",
-      "outcome_reason": "outside-down bar immediately reversed the climax leg",
-      "confidence": 0.8,
-      "evidence": "green note text at the 3803 top with beige tilt? and code-3 bar cluster"
-    },
-    {
-      "label": "breakout",
-      "raw_label": "Big bear BO, but possible 2nd Leg Bear Trap and S Climax",
-      "direction": "bear",
-      "start_time": {"time": "08:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:10", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3768.0,
-      "outcome": "success",
-      "outcome_reason": "flush to 3768 was followed by a two-leg recovery to 3794 (sell-climax claim held)",
-      "confidence": 0.6,
-      "evidence": "orange qualified note with arrow to the beige-boxed climactic flush"
-    },
-    {
-      "label": "breakout",
-      "raw_label": "Big bull BO, but possible 2nd Leg Bull Trap and B Climax",
-      "direction": "bull",
-      "start_time": {"time": "10:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3794.0,
-      "outcome": "unclear",
-      "outcome_reason": "breakout into the upper range; trade-vs-trap unresolved inside the day",
-      "confidence": 0.5,
-      "evidence": "orange qualified note with arrow to the beige-boxed tall bull bar"
-    },
-    {
-      "label": "inside_inside",
-      "raw_label": "ii",
-      "direction": "neutral",
-      "start_time": {"time": "11:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:15", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3799.0,
-      "outcome": "unclear",
-      "outcome_reason": "ii inside the top of the afternoon range",
-      "confidence": 0.6,
-      "evidence": "orange 'ii' text over the beige-boxed bars at the 3799 retest"
-    },
-    {
-      "label": null,
-      "raw_label": "Close below open",
-      "role": "context",
-      "direction": "bear",
-      "start_time": {"time": "12:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3793.0,
-      "outcome": "success",
-      "outcome_reason": "final bars settle under the open (small bear doji day)",
-      "confidence": 0.7,
-      "evidence": "blue + red end note 'Close below open - Small bear doji day' with down arrow"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "27c87dd0342d",
+    "date":  "2021-01-12",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Wedge Top, Then Bull Trend Reversal in TR Day\u0027 (filename calls it a 2nd-leg-trap doji TR day 2). Reading: open-range outside bar (OO note), morning wedge rally in two ranges to a 3803 wedge top whose 3rd leg ran over three strong bull bars (buy climax) with an outside-down reversal bar, bear breakout flush to 3768 flagged \u0027possible 2nd leg bear trap and S climax\u0027, then two-sided ranges: big bull breakout to 3794 (possible 2nd leg bull trap / buy climax), double-top ii zone at 3799, drawn mini-wedges, and a close below the open (\u0027small bear doji day\u0027). Axis prints 13:00 sideband + 1/12 marker then 07:00-13:00 (offset-style; 2021-vintage Covid-era low).",
+    "events":  [
+                   {
+                       "label":  "outside_outside",
+                       "raw_label":  "OO",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "06:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "06:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3798.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "probes both sides in the opening range; setup for the wedge reversal later that afternoon",
+                       "confidence":  0.6,
+                       "evidence":  "orange \u0027OO\u0027 text over the beige-boxed first bars"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3803.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "outside-down reversal closed below the prior bar low and the market sold off",
+                       "confidence":  0.75,
+                       "evidence":  "pink arrow and magenta dotted rising line into the 3803 wedge top"
+                   },
+                   {
+                       "label":  "climax",
+                       "raw_label":  "3rd leg up was 3 strong bull bars so B climax",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "08:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3803.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "outside-down bar immediately reversed the climax leg",
+                       "confidence":  0.8,
+                       "evidence":  "green note text at the 3803 top with beige tilt? and code-3 bar cluster"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "Big bear BO, but possible 2nd Leg Bear Trap and S Climax",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3768.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "flush to 3768 was followed by a two-leg recovery to 3794 (sell-climax claim held)",
+                       "confidence":  0.6,
+                       "evidence":  "orange qualified note with arrow to the beige-boxed climactic flush"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "Big bull BO, but possible 2nd Leg Bull Trap and B Climax",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3794.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "breakout into the upper range; trade-vs-trap unresolved inside the day",
+                       "confidence":  0.5,
+                       "evidence":  "orange qualified note with arrow to the beige-boxed tall bull bar"
+                   },
+                   {
+                       "label":  "inside_inside",
+                       "raw_label":  "ii",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "11:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3799.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "ii inside the top of the afternoon range",
+                       "confidence":  0.6,
+                       "evidence":  "orange \u0027ii\u0027 text over the beige-boxed bars at the 3799 retest"
+                   },
+                   {
+                       "label":  null,
+                       "raw_label":  "Close below open",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "12:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3793.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "final bars settle under the open (small bear doji day)",
+                       "confidence":  0.7,
+                       "evidence":  "blue + red end note \u0027Close below open - Small bear doji day\u0027 with down arrow"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

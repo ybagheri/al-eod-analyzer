@@ -1,0 +1,129 @@
+{
+    "schema_version":  1,
+    "image_id":  "a1893734d8b2",
+    "date":  "2023-11-21",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Sell Climax, Then Trading Range\u0027. Sell climax 07:15-07:30 (4538) with failed breakout below triangle 21-tick bear trap; higher low major trend reversal low 4538 (08:30), 2-legged bull into blue shaded trading range upper portion. Parabolic wedge double top as measured move at 12:25 and late chop into close 4546.",
+    "events":  [
+                   {
+                       "label":  "climax",
+                       "raw_label":  "Sell climax, high 2 bottom (07:45 low 4538)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4538.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "sell climax topped out of range between open high and blue dotted triangle top; 21-tick bear trap lowered into highs at 07:30",
+                       "confidence":  0.75,
+                       "evidence":  "orange Sell Climax High 2 bottom text under the beige box 07:30-07:50 lows with red arrows 07:40-07:45 and blue dotted triangle lines at 07:20 highs"
+                   },
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Higher low major trend reversal (08:35 low 4538)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "08:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4538.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green Higher Low Major Trend Reversal text under the green shaded lows at 08:25",
+                       "confidence":  0.65,
+                       "evidence":  "blue Higher Low Major Trend Reversal text with green arrows at 08:15 lows and green shaded bull bull bar 08:20 lows"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Failed breakout below triangle (07:15-07:30)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4549.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "orange arrow at the 07:30 tall bear bar below the blue dotted triangle bottom and green dotted 4545",
+                       "confidence":  0.6,
+                       "evidence":  "blue Failed breakout below Triangle 21-tick bear trap text with arrow into the 07:30 tall bear bar"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Blue shaded trading range (10:05-13:00)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4550.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded box chop between lows green dotted 4544.75 and highs at red boxes 10:20, 10:45, 12:15",
+                       "confidence":  0.65,
+                       "evidence":  "blue shaded 10:05-13:00 top box with red and green arrows at 10:25-12:55 mislaid minor wedge orange dotted lines"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge lower low double bottom (10:30-10:55 lows 4545)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4545.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "pink dotted wedge lines into the 10:45 lows at green underlines",
+                       "confidence":  0.55,
+                       "evidence":  "magenta Wedge Lower Low Double Bottom text with pink dotted lines and green shaded bull bars 10:50-11:00"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "Parabolic wedge failed breakout above high (12:25 high 4554.5)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "11:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4554.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "red Parabolic Wedge Failed breakout above high text with red arrow at the 12:25 bars",
+                       "confidence":  0.6,
+                       "evidence":  "red Parabolic Wedge Failed breakout above high text and red arrow to 12:25 bear bars and bull spike 12:15 highs"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

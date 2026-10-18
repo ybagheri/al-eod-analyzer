@@ -1,0 +1,141 @@
+{
+    "schema_version":  1,
+    "image_id":  "b630dd1fa81f",
+    "date":  "2025-04-24",
+    "day_type":  "small_pullback_bull_trend_from_open",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Small Pullback Bull Trend From The Open\u0027. Trend bars up from the 5405 open drove a small pullback bull trend from the open all day (brown shaded opening spike); series of minor wedge tops and 50% retrace bear flags (red arrows 08:30, 11:20, 12:45) with 20-gap bar buy 09:35 and EMA gap bar buy 12:20, closing on a bull spike 5519 after the 5538 high.",
+    "events":  [
+                   {
+                       "label":  "trend_bars",
+                       "raw_label":  "Bull trend bars from the open (06:55-07:45 low 5398)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "06:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5405.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "brown shaded open spike of consecutive trend bars up with green arrows to 5480 area",
+                       "confidence":  0.75,
+                       "evidence":  "brown shaded 07:00-07:45 boxes and green arrows through 5405-5480 open stair-step"
+                   },
+                   {
+                       "label":  "wedge_bear_flag",
+                       "raw_label":  "First Minor wedge top red flag (07:35-08:45 high 5480)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5480.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted wedge top around 08:00-08:25 with red arrows 08:30-08:45 and bar 18, 24 dips",
+                       "confidence":  0.65,
+                       "evidence":  "magenta dotted wedge with 20-gap bar buy text nearby and red arrows at the 08:30 and 08:45 downs"
+                   },
+                   {
+                       "label":  "gap_bar",
+                       "raw_label":  "20-gap bar buy (09:20-09:50 low 5468)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  28,
+                                              "high":  38
+                                          },
+                       "price_hint":  5468.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue \u002720-gap bar buy\u0027 text under bar 28-36 pullback green arrows",
+                       "confidence":  0.6,
+                       "evidence":  "blue \u002720-gap bar buy\u0027 text with green arrows under the 09:25-09:45 shaded box"
+                   },
+                   {
+                       "label":  "bull_channel",
+                       "raw_label":  "Minor wedge tops in small pullback bull trend; bull channel (09:30-12:45)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  30,
+                                              "high":  64
+                                          },
+                       "price_hint":  5511.0,
+                       "outcome":  "unknown",
+                       "outcome_reason":  "magenta dotted rising wedge tops above bars 30-64 with red arrows at 10:45 pullback and 12:45 EMA tests",
+                       "confidence":  0.65,
+                       "evidence":  "magenta \u0027Minor wedge tops in small pullback bull trend\u0027 text with dotted wedges and bar 36, 48, 60 labels"
+                   },
+                   {
+                       "label":  "gap_bar",
+                       "raw_label":  "EMA gap bar buy (12:10-12:45 low 5495)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  58,
+                                              "high":  66
+                                          },
+                       "price_hint":  5495.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue \u0027EMA gap bar buy\u0027 text at the 12:20 bar 60-62 pullback to the EMA followed by rally to 5515 highs",
+                       "confidence":  0.65,
+                       "evidence":  "blue \u0027EMA gap bar buy\u0027 text with green arrows 12:25-12:50 and red arrows 12:45"
+                   },
+                   {
+                       "label":  "spike_and_channel",
+                       "raw_label":  "Bull spike to 5538 high at the close (12:50-13:15 close 5519)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  66,
+                                              "high":  74
+                                          },
+                       "price_hint":  5538.0,
+                       "outcome":  "unknown",
+                       "outcome_reason":  "final bars 12:55-13:10 reaching 5538 high with pullback-on-open bars into the close chip",
+                       "confidence":  0.55,
+                       "evidence":  "tall final bull bar 13:10 high 5538 with green arrows 12:55-13:10 close cluster"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

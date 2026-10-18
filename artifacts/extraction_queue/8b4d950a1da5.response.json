@@ -1,0 +1,129 @@
+{
+    "schema_version":  1,
+    "image_id":  "8b4d950a1da5",
+    "date":  "2023-11-06",
+    "day_type":  "trend_reversal_to_bull",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Triangle Open, Bear Breakout, Reversal Up\u0027. Triangle opening range sold off with selling pressure to bear breakout (10:30), lower lows into the 11:05 minor bar 47 midday reversal low 4363; higher low double bottom major trend reversal (11:15) with bear doji day close at 4383.",
+    "events":  [
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Triangle open range break down (07:00-08:05)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4375.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "triangle open with red setups and blue dotted trend lines pulled down to the brown flash selloff at 08:05",
+                       "confidence":  0.6,
+                       "evidence":  "blue dotted triangle lines from the open with red arrows 07:35, 08:15 and green shaded bullish 07:25-07:35 setup box"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Trading range under 4381 with more than bear bars (08:10-09:10)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4379.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "orange Trading Range is less than half of average days range so range should double with selling pressure so bear breakout likely",
+                       "confidence":  0.6,
+                       "evidence":  "brown shaded 08:35-09:25 boxes with red arrows down from 08:50 highs and green arrowè؟‡èٹ‚ 08:40 lows"
+                   },
+                   {
+                       "label":  "bear_trend",
+                       "raw_label":  "Another lower high after lower low so bear trend (09:30-10:45)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4365.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "red text with pink channel selling pressure dropped to 10:30 lows of 4365",
+                       "confidence":  0.65,
+                       "evidence":  "red Another Lower High after Lower Low so bear trend text, red arrows at 09:35-10:25, magenta dotted channel todo lows 10:25"
+                   },
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Minor bar 47 midday reversal low 4363 (10:30)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4363.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue Minor Bar 47 midday reversal text with green arrows and a green shaded box at the 10:25 lows",
+                       "confidence":  0.6,
+                       "evidence":  "blue text with arrow to green bull bull arrow at 10:25 lows and dark chop before 10:30"
+                   },
+                   {
+                       "label":  "double_bottom",
+                       "raw_label":  "Higher low double bottom major trend reversal (11:10-11:20)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4365.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green Higher Low Double Bottom Major Trend Reversal text with green arrows after 11:00 lows",
+                       "confidence":  0.65,
+                       "evidence":  "green text under the 11:00-11:20 lows with green underlines and the reversal up leg"
+                   },
+                   {
+                       "label":  "bull_trend_resumption",
+                       "raw_label":  "Rally and bear doji day high 4385 (11:45-13:05)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "11:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4383.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bull rally to 12:45 high 4385 before spiked doji close failed at 4381 blue dotted line",
+                       "confidence":  0.6,
+                       "evidence":  "magenta dotted wedge channel into 12:45 top with green shaded bull bars and tall buying bar 12:45, blue Bear doji day text at the 13:00 doji close and blue dotted line"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

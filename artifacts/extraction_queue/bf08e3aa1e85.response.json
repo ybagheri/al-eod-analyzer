@@ -1,0 +1,170 @@
+{
+    "schema_version":  1,
+    "image_id":  "bf08e3aa1e85",
+    "date":  "2026-02-18",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.7,
+    "session_summary":  "Blue title bar: \u0027Bull Spike and Channel, Trading Range Then Midday Reversal\u0027 (overnight ET+13 hrs, Feb 18/19, chips 6895.25/6891.04). Double bottom above the 6863 yesterday\u0027s close then a bull spike and breakout above yesterday\u0027s high and trading range 2nd entry buy, extended trading range (6915-6925, failed breakouts, 40 bars), midday reversal down after minor reversal likely after strong bull spike and channel wait to sell; bear trend to consecutive and nested wedges (6863 low 04:40), then bear channel breakout overcame buying pressure into the 6888 close 05:00.",
+    "events":  [
+                   {
+                       "label":  "double_bottom",
+                       "raw_label":  "Double bottom above yesterday\u0027s close (23:00-23:20 low 6862)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  1,
+                                              "high":  8
+                                          },
+                       "price_hint":  6862.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green text Double bottom at dotted green baseline above the tall black opening bear bar with green arrow 23:15",
+                       "confidence":  0.65,
+                       "evidence":  "green Double bottom text under the green dotted 6862.5 line and green arrows on bars 23:10-23:20"
+                   },
+                   {
+                       "label":  "bull_spike",
+                       "raw_label":  "Bull spike and breakout above yesterday\u0027s high and trading range 2nd entry buy (23:20-23:40 high 6905)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  8,
+                                              "high":  16
+                                          },
+                       "price_hint":  6905.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "tall green shaded spike bars from 6868 to 6905 with green arrows and green text Bull spike and breakout above yesterday\u0027s high and trading range 2nd entry buy",
+                       "confidence":  0.7,
+                       "evidence":  "green text with arrow on the bull spike as bars 6-12 lower highs 6890-6900 and burning black 6875 open bars"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Extended trading range 6915-6925 with failed breakouts (23:45-02:10)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "02:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  14,
+                                              "high":  48
+                                          },
+                       "price_hint":  6920.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded range box with red dotted tops (6915, 6921, 6923) and magenta dotted rising wedge to 6927 at 02:05 with red arrows each breakout failure and fails green arrows 00:35, 01:05, 01:55",
+                       "confidence":  0.7,
+                       "evidence":  "blue Extended trading range then Midday Reversal text and red Failed breakout text with bars 18, 24, 36, 48 labels"
+                   },
+                   {
+                       "label":  "wedge_bear_flag",
+                       "raw_label":  "Minor reversal likely after strong bull spike and channel, wait to sell (00:30-01:45)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "00:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "01:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  24,
+                                              "high":  42
+                                          },
+                       "price_hint":  6920.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "full wedge rising magenta dotted channel across 00:30-01:45 boxed with red arrows at 00:50, 01:10 each bar-24-38 top stall",
+                       "confidence":  0.6,
+                       "evidence":  "green Minor reversal likely after strong bull spike and channel text and red Wait to sell under bar 24-40 range"
+                   },
+                   {
+                       "label":  "bear_leg",
+                       "raw_label":  "Trading range breakout overcame buying pressure bear trend down (02:15-03:20)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "02:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "03:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  50,
+                                              "high":  62
+                                          },
+                       "price_hint":  6885.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "red \u0027Trading range breakout overcame buying pressure\u0027 arrow start, fast red bars and red arrows to bar 60 lows",
+                       "confidence":  0.7,
+                       "evidence":  "red Trading range breakout text with arrows and strong red cascade to 6885 then 6875 after bar 52"
+                   },
+                   {
+                       "label":  "wedge_bear_flag",
+                       "raw_label":  "Consecutive and nested wedges down to 04:40 low 6863 (03:20-04:45)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "03:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "04:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  58,
+                                              "high":  74
+                                          },
+                       "price_hint":  6863.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted Wedge stepped flags each 03:45-04:35 bear flag with tall bars down cluster",
+                       "confidence":  0.6,
+                       "evidence":  "magenta dotted Wedge lines and \u0027Consecutive and nested wedges\u0027 text under green text Double bottom but in bear channel with white/black bars at depth"
+                   },
+                   {
+                       "label":  "bear_channel_breakout",
+                       "raw_label":  "Bear channel breakout close rally to 6893 chip (04:45-05:05)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "04:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "05:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  68,
+                                              "high":  78
+                                          },
+                       "price_hint":  6893.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green Bear channel breakout arrow into green shaded 04:50-05:00 boxes above the green dotted 6863 baseline",
+                       "confidence":  0.6,
+                       "evidence":  "green Bear channel breakout text with gray arrow and green shaded close bars at right with close chip 6893 and 6895 maybe"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "image_note":  "overnight chart axis ET+13 hrs"
+                        }
+}

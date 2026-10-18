@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "f7e64373be98",
+  "date": "2026-05-20",
+  "day_type": "spike_and_channel_bull",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Gap Up then Spike and Channel Bull Trend Day'. Overnight ET+12: expanding triangle bottom near 7379 starts a spike and channel bull trend to 7448, a buy climax double top with Monday high at 7460 only buys a tight bear channel pullback to 7427, and the limit-order bull trending tight trading range grinds to 7460 into the close. Chart closes at 04:00 PT+12 print.",
+  "events": [
+    {
+      "label": "expanding_triangle",
+      "raw_label": "Expanding triangle (22:00 lows)",
+      "direction": "bull",
+      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7379.0,
+      "outcome": "success",
+      "outcome_reason": "expanding triangle bottom around 7379 lifted into the spike and channel",
+      "confidence": 0.6,
+      "evidence": "orange dotted expanding triangle lines under the 22:00 bars with blue shaded range"
+    },
+    {
+      "label": "spike_and_channel_bull",
+      "raw_label": "Spike and bull channel",
+      "direction": "bull",
+      "start_time": {"time": "22:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7448.0,
+      "outcome": "success",
+      "outcome_reason": "spike and channel bull trend rallied from 7385 to 7448",
+      "confidence": 0.7,
+      "evidence": "green Spike and bull channel text with blue shaded small pullbacks and bull trend line"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top with Monday high, buy climax, then minor reversal",
+      "direction": "bear",
+      "start_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7460.0,
+      "outcome": "success",
+      "outcome_reason": "buy climax spike into a double top with Monday high made a minor reversal pullback",
+      "confidence": 0.65,
+      "evidence": "red dotted line at 7460 red text and red arrows 23:35-00:10"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Tight bear channel and micro channel (00:30 lows)",
+      "direction": "bear",
+      "start_time": {"time": "00:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7427.0,
+      "outcome": "success",
+      "outcome_reason": "tight bear channel pulled back to 7427 then failed to reverse the bull trend",
+      "confidence": 0.65,
+      "evidence": "red arrow and green text over descending pullback bars to bar 40"
+    },
+    {
+      "label": "bull_channel",
+      "raw_label": "Bull trending tight trading range buy low sell high and scalp limit order market",
+      "direction": "bull",
+      "start_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7452.0,
+      "outcome": "success",
+      "outcome_reason": "bull trending tight trading range continued the grind up to 7455",
+      "confidence": 0.7,
+      "evidence": "orange dotted bull channel with blue shaded 02:15-03:10 range and bull trend to 7455"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Tight bull channel (03:30)",
+      "direction": "bull",
+      "start_time": {"time": "03:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7460.0,
+      "outcome": "success",
+      "outcome_reason": "tight bull channel lifted the final range to 7460 into the close",
+      "confidence": 0.6,
+      "evidence": "green Tight bull channel text with green arrow into bar 72 area and close high 7460"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

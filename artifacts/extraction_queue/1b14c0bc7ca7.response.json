@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "1b14c0bc7ca7",
+  "date": "2024-06-20",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bull Trap, Then Bear Trending Trading Range Day'. Early bull trap under 5575 with a breakout test slides into a wedge; breakout below the wedge at 5558 drops to a 5530 parabolic wedge low, then the market closes as a bear trending trading range chopping 5530-5555 into 6/21.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap (07:45 top 5575)",
+      "direction": "bear",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5575.0,
+      "outcome": "success",
+      "outcome_reason": "bull trap at 5575 rolled the opening into the red dotted breakout test trend to 5555",
+      "confidence": 0.7,
+      "evidence": "brown shaded 07:15-07:35 trap bars with orange Bull trap text and red arrows"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Breakout test (08:20-09:30 under 5570)",
+      "direction": "bear",
+      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5558.0,
+      "outcome": "success",
+      "outcome_reason": "breakout test under 5570 completed the early range drop",
+      "confidence": 0.6,
+      "evidence": "red dotted 5570 line with red Breakout test text over the blue shaded early range"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Breakout below wedge (09:35)",
+      "direction": "bear",
+      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5558.0,
+      "outcome": "success",
+      "outcome_reason": "breakout below the wedge sold the morning range down to 5530",
+      "confidence": 0.65,
+      "evidence": "orange Breakout below wedge text with big brown 09:35-09:50 bear bars under the magenta wedge"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedged lows 5530 (10:55 parabolic wedge)",
+      "direction": "bull",
+      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5530.0,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge low at 5530 lifted the afternoon back to 5557",
+      "confidence": 0.6,
+      "evidence": "magenta Wedge text with dotted lines into the 10:55 low and boxed reversal bar"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Bear trending trading range day (11:00-13:05 range 5530-5555)",
+      "direction": "bear",
+      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5545.0,
+      "outcome": "success",
+      "outcome_reason": "afternoon chopped as a bear trending trading range between 5530 and 5555",
+      "confidence": 0.7,
+      "evidence": "large blue shaded afternoon box 10:50-13:10 and blue Bear trending trading range day text"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Breakout test 5530 (13:00)",
+      "direction": "bull",
+      "start_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5530.0,
+      "outcome": "success",
+      "outcome_reason": "late breakout test of 5530 held and lifted into the close",
+      "confidence": 0.6,
+      "evidence": "green Breakout test text with green arrows under the 12:45-13:00 lows"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

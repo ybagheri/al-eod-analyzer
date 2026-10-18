@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "0d7fc201750d",
+  "date": "2024-05-31",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Reversal Up'. A monthly-end bull trap at 5270 sells into a bear trend with a magenta dotted trend line to the day low near 5210, a parabolic wedge downtrend becomes a V-bottom, and a strong breakout at end of month lifts above the 5271 breakout line to the 5303 close.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap (07:00-07:15)",
+      "direction": "bear",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5265.0,
+      "outcome": "success",
+      "outcome_reason": "early bull trap broke the 5265 down and launched the bear trend",
+      "confidence": 0.65,
+      "evidence": "green and brown boxed 07:00-07:20 bars with Bull trap orange text and red arrows"
+    },
+    {
+      "label": "bear_trend",
+      "raw_label": "Bear trend from the open (magenta dotted to day low)",
+      "direction": "bear",
+      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "14:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5210.0,
+      "outcome": "success",
+      "outcome_reason": "bear trend ground down from 5265 to the midday low 5210",
+      "confidence": 0.75,
+      "evidence": "magenta dotted descending wedge trend line and red arrows into the 13:55 lows"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Parabolic Wedge became V-bottom (14:05)",
+      "direction": "bull",
+      "start_time": {"time": "13:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "14:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5208.0,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge became V-bottom reversal at 5208",
+      "confidence": 0.7,
+      "evidence": "magenta and green Parabolic Wedge Became V-bottom text with green arrow reversal bar"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Magenta dotted bull wedge recovery (14:00-16:00)",
+      "direction": "bull",
+      "start_time": {"time": "14:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "16:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5252.0,
+      "outcome": "success",
+      "outcome_reason": "higher low wedge recovery lifted the trend from the V-bottom to 5252",
+      "confidence": 0.6,
+      "evidence": "magenta dotted rising trend lines with green arrows up the afternoon"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Strong breakout at end of month above 5252-5271",
+      "direction": "bull",
+      "start_time": {"time": "15:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "16:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5303.0,
+      "outcome": "success",
+      "outcome_reason": "strong breakout at end of month closed the day at 5303",
+      "confidence": 0.7,
+      "evidence": "brown shaded breakout from 15:40 close bars with orange dotted 5271 resistance line"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

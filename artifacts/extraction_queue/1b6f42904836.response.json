@@ -1,107 +1,148 @@
 {
-  "schema_version": 1,
-  "image_id": "1b6f42904836",
-  "date": "2020-09-03",
-  "day_type": "spike_and_channel_bear",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'Spike and Channel Bear Trend'. Reading: open near 3560 sold off all morning — the early wedge bottom failed, the spike and channel bear trend extended with an extremely climactic huge bear bar at 08:20 into 3455 ('Expect 2 legs sideways to up'), an ii compression was flagged as a possible final flag but resolved down, and the channel (pink dotted falling wedge lines) stepped down with wedge/DT retests (3495, 3470, plus a 20 gap-bar sell at the 12:40 LH) to the 3425 low; the day then delivered its two legs sideways-to-up with a rally into the 3465 close (green entry boxes at 13:00). Plain-PT style 9/3 to 9/4 edge marker." ,
-  "events": [
-    {
-      "label": "wedge",
-      "raw_label": "Failed wedge bottom",
-      "direction": "bull",
-      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3555.0,
-      "modifiers": ["bottom"],
-      "outcome": "fail",
-      "outcome_reason": "the wedge bottom failed immediately under the red dotted 3560 top and the spike began",
-      "confidence": 0.65,
-      "evidence": "pink 'Failed wedge bottom' text over the 07:10-07:20 lows"
-    },
-    {
-      "label": "spike",
-      "raw_label": "Huge bear bar",
-      "direction": "bear",
-      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3455.0,
-      "outcome": "success",
-      "outcome_reason": "trend spike from 3540 into the climactic huge bear bar opened the bear trend",
-      "confidence": 0.7,
-      "evidence": "orange arrow to the consecutive trend bars ending in the huge 08:17 bear bar"
-    },
-    {
-      "label": "exhaustive_climax",
-      "raw_label": "Extreme S climax",
-      "direction": "bear",
-      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3455.0,
-      "outcome": "success",
-      "outcome_reason": "extreme sell climax delivered the expected two legs sideways-to-up only after the channel continued down",
-      "confidence": 0.7,
-      "evidence": "orange 'Huge bear bar so extreme S climax' with green 'Expect 2 legs sideways to up' notes"
-    },
-    {
-      "label": "inside_inside",
-      "raw_label": "ii so possible Final Flag",
-      "direction": "neutral",
-      "start_time": {"time": "08:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3485.0,
-      "outcome": "unclear",
-      "outcome_reason": "inside-inside compression flagged as possible final flag; resolution was a downside breakout, so it did not become a bull final flag",
-      "confidence": 0.6,
-      "evidence": "orange 'ii so possible Final Flag' text with arrow to the compressed 08:35-09:00 bars"
-    },
-    {
-      "label": "channel",
-      "raw_label": "wedge bear channel (pink dotted lines)",
-      "direction": "bear",
-      "start_time": {"time": "08:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": null,
-      "outcome": "success",
-      "outcome_reason": "broad bear wedge channel stepped down with LH retests to the 3425 low",
-      "confidence": 0.65,
-      "evidence": "converging pink dotted falling channel lines 07:20-12:45"
-    },
-    {
-      "label": "lower_high_double_top",
-      "raw_label": "Wedge, DT,",
-      "direction": "bear",
-      "start_time": {"time": "11:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3470.0,
-      "outcome": "success",
-      "outcome_reason": "LH double top retest under the red dotted 3470 line led to the leg down toward 3425",
-      "confidence": 0.7,
-      "evidence": "pink 'Wedge, DT,' text beside the red dotted 10:55-12:00 resistance line"
-    },
-    {
-      "label": "body_gap",
-      "raw_label": "20 Gap Bar S",
-      "direction": "bear",
-      "start_time": {"time": "12:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3440.0,
-      "outcome": "unclear",
-      "outcome_reason": "gap-bar sell signal at the channel low; nearest canonical kind for raw label (mapping noted)",
-      "confidence": 0.55,
-      "evidence": "blue '20 Gap Bar S' text above the red dotted 12:55-13:05 LH line area"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "1b6f42904836",
+    "date":  "2020-09-03",
+    "day_type":  "spike_and_channel_bear",
+    "day_type_confidence":  0.8,
+    "session_summary":  "Blue title bar: \u0027Spike and Channel Bear Trend\u0027. Reading: open near 3560 sold off all morning â€” the early wedge bottom failed, the spike and channel bear trend extended with an extremely climactic huge bear bar at 08:20 into 3455 (\u0027Expect 2 legs sideways to up\u0027), an ii compression was flagged as a possible final flag but resolved down, and the channel (pink dotted falling wedge lines) stepped down with wedge/DT retests (3495, 3470, plus a 20 gap-bar sell at the 12:40 LH) to the 3425 low; the day then delivered its two legs sideways-to-up with a rally into the 3465 close (green entry boxes at 13:00). Plain-PT style 9/3 to 9/4 edge marker.",
+    "events":  [
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Failed wedge bottom",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3555.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "the wedge bottom failed immediately under the red dotted 3560 top and the spike began",
+                       "confidence":  0.65,
+                       "evidence":  "pink \u0027Failed wedge bottom\u0027 text over the 07:10-07:20 lows"
+                   },
+                   {
+                       "label":  "spike",
+                       "raw_label":  "Huge bear bar",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3455.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "trend spike from 3540 into the climactic huge bear bar opened the bear trend",
+                       "confidence":  0.7,
+                       "evidence":  "orange arrow to the consecutive trend bars ending in the huge 08:17 bear bar"
+                   },
+                   {
+                       "label":  "exhaustive_climax",
+                       "raw_label":  "Extreme S climax",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3455.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "extreme sell climax delivered the expected two legs sideways-to-up only after the channel continued down",
+                       "confidence":  0.7,
+                       "evidence":  "orange \u0027Huge bear bar so extreme S climax\u0027 with green \u0027Expect 2 legs sideways to up\u0027 notes"
+                   },
+                   {
+                       "label":  "inside_inside",
+                       "raw_label":  "ii so possible Final Flag",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "08:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3485.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "inside-inside compression flagged as possible final flag; resolution was a downside breakout, so it did not become a bull final flag",
+                       "confidence":  0.6,
+                       "evidence":  "orange \u0027ii so possible Final Flag\u0027 text with arrow to the compressed 08:35-09:00 bars"
+                   },
+                   {
+                       "label":  "channel",
+                       "raw_label":  "wedge bear channel (pink dotted lines)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  null,
+                       "outcome":  "success",
+                       "outcome_reason":  "broad bear wedge channel stepped down with LH retests to the 3425 low",
+                       "confidence":  0.65,
+                       "evidence":  "converging pink dotted falling channel lines 07:20-12:45"
+                   },
+                   {
+                       "label":  "lower_high_double_top",
+                       "raw_label":  "Wedge, DT,",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "11:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3470.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "LH double top retest under the red dotted 3470 line led to the leg down toward 3425",
+                       "confidence":  0.7,
+                       "evidence":  "pink \u0027Wedge, DT,\u0027 text beside the red dotted 10:55-12:00 resistance line"
+                   },
+                   {
+                       "label":  "body_gap",
+                       "raw_label":  "20 Gap Bar S",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "12:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3440.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "gap-bar sell signal at the channel low; nearest canonical kind for raw label (mapping noted)",
+                       "confidence":  0.55,
+                       "evidence":  "blue \u002720 Gap Bar S\u0027 text above the red dotted 12:55-13:05 LH line area"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

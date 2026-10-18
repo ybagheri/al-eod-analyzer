@@ -1,0 +1,172 @@
+{
+  "date": "2024-05-31",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": 3,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Bull trap' text with green/shaded open boxes and the maroon failure candle",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bull trap at the open fed the bear trend from the open",
+      "placement": null,
+      "price_hint": 5270.0,
+      "raw_label": "Bull trap",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red down arrows down the 07:15-08:20 bars",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "opening bear trend sold to the 5230 shelf",
+      "placement": null,
+      "price_hint": 5230.0,
+      "raw_label": "Bear trend from the open",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines 07:30-09:50 and magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "parabolic"
+      ],
+      "outcome": "success",
+      "outcome_reason": "parabolic rising-then-falling dotted wedge bottomed the decline at 5207",
+      "placement": null,
+      "price_hint": 5207.0,
+      "raw_label": "Parabolic Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta/green text under the 09:55-10:15 lows with orange dotted bottom line",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "V-bottom at the parabolic wedge low reversed the session",
+      "placement": null,
+      "price_hint": 5205.0,
+      "raw_label": "Parabolic Wedge Became V-bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green up arrows along the rising magenta dotted trend line",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [
+        "small_pullback"
+      ],
+      "outcome": "success",
+      "outcome_reason": "higher-low bull channel walked up under the dotted line all afternoon",
+      "placement": null,
+      "price_hint": 5245.0,
+      "raw_label": "higher-low bull channel off the V bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text with arrow to the shaded breakout box and red dotted 5270 line",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "buy"
+      ],
+      "outcome": "success",
+      "outcome_reason": "strong breakout broke the 5270 high-of-day line into the close",
+      "placement": null,
+      "price_hint": 5305.0,
+      "raw_label": "Strong breakout at end of month",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "0d7fc201750d",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Reversal Up'. Reading: an opening bull trap at 5270 fails and a bear trend from the open grinds under the parabolic magenta dotted lines to the 5207 low; the wedge bottom became a V-bottom reversal, a higher-low bull channel walks under the dotted trend line for the whole afternoon, and a strong end-of-month breakout blows through the 5270 high-of-day line into a 5305 shaded-box close. trend_reversal_to_bull (open bear trend reversed at the low; strong close). Axis plain 5/31 06:45-13:15 with Jun edge marker."
+}

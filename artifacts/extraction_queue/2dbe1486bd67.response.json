@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "2dbe1486bd67",
+  "date": "2023-08-04",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Reversal up from Sell Climax, Then Outside Down Day'. A bull trap micro double top and sell climax bottom at 4520 causes higher low micro double bottom lift; bar 40 midday reversal and low 2 high at 4562 turn to a bear breakout likely measured move down below yesterdays low and outside down day closes to 4502.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap micro double top (07:00)",
+      "direction": "bear",
+      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4550.0,
+      "outcome": "success",
+      "outcome_reason": "bull trap micro double top sold into the sell climax low",
+      "confidence": 0.65,
+      "evidence": "red Bull Trap green Micro Double Top text with boxed opening bars and yesterdays high dotted line"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Sell climax (07:30 low 4520)",
+      "direction": "bear",
+      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4520.0,
+      "outcome": "success",
+      "outcome_reason": "sell climax at 4520 reversed the market up",
+      "confidence": 0.7,
+      "evidence": "orange Sell Climax text under the brown shaded 07:10-07:35 climax bars"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low micro double bottom (07:35)",
+      "direction": "bull",
+      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4524.0,
+      "outcome": "success",
+      "outcome_reason": "higher low micro double bottom lifted the market into the midday trend",
+      "confidence": 0.65,
+      "evidence": "green Higher Low Micro Double Bottom text with blue arrow up out of the low"
+    },
+    {
+      "label": "bull_trend",
+      "raw_label": "Rally to bar 40 midday reversal (10:45 high 4563)",
+      "direction": "bull",
+      "start_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4563.0,
+      "outcome": "success",
+      "outcome_reason": "bull trend from the V bottom ground up to bar 40 midday reversal high 4563",
+      "confidence": 0.7,
+      "evidence": "blue Bar 40 Midday Reversal text with green boxed rising bars and green dotted wedges"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Low 2 (10:55)",
+      "direction": "bear",
+      "start_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4562.0,
+      "outcome": "success",
+      "outcome_reason": "low 2 at 4562 turned the trend down into the bear breakout",
+      "confidence": 0.65,
+      "evidence": "red Low 2 text red pink arrows and magenta dotted descending line"
+    },
+    {
+      "label": "bear_trend",
+      "raw_label": "Bear breakout likely measured move down (11:15-13:00)",
+      "direction": "bear",
+      "start_time": {"time": "10:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4502.0,
+      "outcome": "success",
+      "outcome_reason": "bear breakout sold the afternoon to yesterdays low and closed 4502 on outside down day",
+      "confidence": 0.75,
+      "evidence": "orange Bear breakout likely Measured Move down text with red boxes and outside down day note"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

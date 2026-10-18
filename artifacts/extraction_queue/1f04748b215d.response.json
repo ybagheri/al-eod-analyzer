@@ -1,1 +1,97 @@
-{"date": "2022-04-08", "day_type": "trading_range", "day_type_confidence": 0.85, "events": [{"confidence": 0.7, "direction": "bear", "end_time": {"time": "07:00", "tz": "America/Los_Angeles"}, "evidence": "Title 'Gap Down Opening Reversal'; opening gap down from prior close to ~4470", "label": "gap", "outcome": "fail", "outcome_reason": "gap was reversed back up instead of continuing down", "raw_label": "Gap Down", "source": "vision", "start_time": {"time": "06:30", "tz": "America/Los_Angeles"}}, {"confidence": 0.8, "direction": "bull", "end_time": {"time": "08:00", "tz": "America/Los_Angeles"}, "evidence": "Title 'Gap Down Opening Reversal'; rally from the 4470 low to above 4500", "label": "opening_reversal", "outcome": "success", "outcome_reason": "reversal carried to the top of the range", "raw_label": "Gap Down Opening Reversal", "source": "vision", "start_time": {"time": "07:00", "tz": "America/Los_Angeles"}}, {"confidence": 0.7, "direction": "bull", "end_time": {"time": "08:00", "tz": "America/Los_Angeles"}, "evidence": "Magenta note 'Bull BO above Wedge Top / Expect two legs up' at the big green bar", "label": "wedge", "outcome": "success", "outcome_reason": "wedge top breakout led the morning rally", "raw_label": "Wedge Top", "source": "vision", "start_time": {"time": "07:30", "tz": "America/Los_Angeles"}}, {"confidence": 0.75, "direction": "bull", "end_time": {"time": "08:30", "tz": "America/Los_Angeles"}, "evidence": "Green note 'Bull BO above a Bear Flag / Strong enough BO to expect 2nd leg up.'; second leg up arrived", "label": "breakout", "outcome": "success", "outcome_reason": "second leg up followed into the sideways top", "raw_label": "Bull BO above a Bear Flag", "source": "vision", "start_time": {"time": "08:00", "tz": "America/Los_Angeles"}}, {"confidence": 0.6, "direction": "neutral", "end_time": null, "evidence": "Blue note 'Sideways for 20+ Bars, Prob 50% of BO Up or Down' over the shaded midday range", "label": "trading_range_begin", "outcome": "success", "outcome_reason": "sideways range held for 20+ bars", "raw_label": "Sideways for 20+ Bars", "source": "vision", "start_time": {"time": "08:30", "tz": "America/Los_Angeles"}}], "extraction_meta": {"model_id": "muse-spark-opencode", "prompt_version": "extract_v1", "provider": "file"}, "image_id": "1f04748b215d", "schema_version": 1, "session_summary": "Friday gap-down opening reversal into a trading range day: gap filled by a wedge-top bull breakout with two legs up, then 20+ bars sideways; late test of the open of day with the close expected around it."}
+{
+    "date":  "2022-04-08",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.85,
+    "events":  [
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "07:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Title \u0027Gap Down Opening Reversal\u0027; opening gap down from prior close to ~4470",
+                       "label":  "gap",
+                       "outcome":  "fail",
+                       "outcome_reason":  "gap was reversed back up instead of continuing down",
+                       "raw_label":  "Gap Down",
+                       "start_time":  {
+                                          "time":  "06:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.8,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "08:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Title \u0027Gap Down Opening Reversal\u0027; rally from the 4470 low to above 4500",
+                       "label":  "opening_reversal",
+                       "outcome":  "success",
+                       "outcome_reason":  "reversal carried to the top of the range",
+                       "raw_label":  "Gap Down Opening Reversal",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "08:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Magenta note \u0027Bull BO above Wedge Top / Expect two legs up\u0027 at the big green bar",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge top breakout led the morning rally",
+                       "raw_label":  "Wedge Top",
+                       "start_time":  {
+                                          "time":  "07:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.75,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "08:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Green note \u0027Bull BO above a Bear Flag / Strong enough BO to expect 2nd leg up.\u0027; second leg up arrived",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "second leg up followed into the sideways top",
+                       "raw_label":  "Bull BO above a Bear Flag",
+                       "start_time":  {
+                                          "time":  "08:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  null,
+                       "evidence":  "Blue note \u0027Sideways for 20+ Bars, Prob 50% of BO Up or Down\u0027 over the shaded midday range",
+                       "label":  "trading_range_begin",
+                       "outcome":  "success",
+                       "outcome_reason":  "sideways range held for 20+ bars",
+                       "raw_label":  "Sideways for 20+ Bars",
+                       "start_time":  {
+                                          "time":  "08:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v1",
+                            "provider":  "file"
+                        },
+    "image_id":  "1f04748b215d",
+    "schema_version":  1,
+    "session_summary":  "Friday gap-down opening reversal into a trading range day: gap filled by a wedge-top bull breakout with two legs up, then 20+ bars sideways; late test of the open of day with the close expected around it."
+}

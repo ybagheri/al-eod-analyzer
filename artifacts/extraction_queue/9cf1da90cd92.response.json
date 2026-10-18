@@ -1,0 +1,110 @@
+{
+    "schema_version":  1,
+    "image_id":  "9cf1da90cd92",
+    "date":  "2025-11-05",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Double Bottom, 2 Legs Up to Trading Range Then Bear Breakout into Close\u0027 (overnight ET+13 hrs, Nov 5 23:00-05:00). Double bottom 6797; buying pressure leg 1; breakout bull trend resumed leg 2 to truncated wedge buy climax at 01:30 (6856); tight trading ranges limit order scalping bar 48-72; breakout down into the Wed close 6822 with red arrows 04:35-04:55.",
+    "events":  [
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Double bottom (23:30 low 6797)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  6797.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "double bottom lift from 23:30 lows with green arrows 23:15-23:30 and breakout up",
+                       "confidence":  0.65,
+                       "evidence":  "green Double bottom text under the green dotted lows at 23:30 and green shaded bull bars 23:05 and black/dark setup bars 23:00-23:10"
+                   },
+                   {
+                       "label":  "bull_trend_resumption",
+                       "raw_label":  "Leg 1 buying pressure (23:05-00:55)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "01:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  6832.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "but climbing bull bars in blue shaded box 23:00-01:00 lifted up between legs",
+                       "confidence":  0.55,
+                       "evidence":  "green Breakout Leg 1 text with dashed up-slope leg, blue shaded 23:05-01:00 box, green arrows 23:20-23:55 and red arrow 23:45"
+                   },
+                   {
+                       "label":  "bull_trend_resumption",
+                       "raw_label":  "Leg 2 bull trend resumption with breakout (00:55-01:35)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "00:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "01:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  6856.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green Breakout, Bull trend resumed text bar 24-36 rally into truncated wedge buy climax at 01:30 highs",
+                       "confidence":  0.65,
+                       "evidence":  "magenta dotted Leg 2 wedge trend lines with Leg 2 text, truncated wedge dotted channel and buy climax arrow 01:30 top"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Tight trading ranges limit order scalping (02:20-03:35 bars 48-60)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "02:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "03:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  6850.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded boxes near bar 48 and 60 with the tight chop between 6848-6856",
+                       "confidence":  0.6,
+                       "evidence":  "blue Tight trading ranges Limit order scalping text with arrows to blue shaded ranges bars 48 and 60 with green arrows 02:20 and 04:05"
+                   },
+                   {
+                       "label":  "trading_range_breakout",
+                       "raw_label":  "Breakout down into close (04:35-05:10 close 6822)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "04:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "05:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  6822.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "red Breakout down into close arrows from shaded box highs with sequential red bars after bar 72",
+                       "confidence":  0.65,
+                       "evidence":  "blue shaded 03:40-04:15 breakout mode box, red arrows 04:40 bar 72 and 04:55 with tall black sell bars and close chip 6822.25"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

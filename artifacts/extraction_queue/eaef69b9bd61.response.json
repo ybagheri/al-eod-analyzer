@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "eaef69b9bd61",
+  "date": "2024-08-06",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.8,
+  "session_summary": "Blue title bar: 'Lower High Double Top MTR, Small Pullback Bear Trend'. A big gap up runs to 5355 but a low 2 lower high double top forms a major trend reversal; a higher low double bottom at the EMA only buys a small swing, then the small pullback bear trend grinds to 5225 and even a bull trap at the EMA around 5255 fails into the close.",
+  "events": [
+    {
+      "label": "bull_trend",
+      "raw_label": "Big gap up rally from the open to 5355",
+      "direction": "bull",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5355.0,
+      "outcome": "success",
+      "outcome_reason": "big gap up produced a bull open that ran to 5355",
+      "confidence": 0.65,
+      "evidence": "boxed bull bars 06:45-07:25 up to 5355"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Low 2 / Lower high major trend reversal after big gap up",
+      "direction": "bear",
+      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5355.0,
+      "outcome": "success",
+      "outcome_reason": "low 2 lower high double top major trend reversal after the big gap up rolled the market over",
+      "confidence": 0.75,
+      "evidence": "red dotted double top line at 5355 with red arrows at 07:30 and 08:15"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low double bottom at EMA",
+      "direction": "bull",
+      "start_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5325.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at the EMA gave a small bull swing back under 5355",
+      "confidence": 0.6,
+      "evidence": "green boxed bars 07:45-08:00 and green text under the pullback low 5325"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge bear flag at the 09:30-09:45 lows",
+      "direction": "bear",
+      "start_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5305.0,
+      "outcome": "success",
+      "outcome_reason": "wedge bear flag around 5305 kept bears in control and the trend resumed down",
+      "confidence": 0.65,
+      "evidence": "magenta dotted wedge lines under the 09:15-09:45 swing"
+    },
+    {
+      "label": "bear_trend",
+      "raw_label": "Small pullback bear trend",
+      "direction": "bear",
+      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5225.0,
+      "outcome": "success",
+      "outcome_reason": "small pullback bear trend with red arrows ground the market down to 5225 by the close",
+      "confidence": 0.8,
+      "evidence": "successive red arrows over pullbacks from 5355 down to 5228"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap at EMA",
+      "direction": "bull",
+      "start_time": {"time": "12:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5255.0,
+      "outcome": "success",
+      "outcome_reason": "bull trap at the EMA after the 5255 breakout to the upside sold the close down to 5228",
+      "confidence": 0.65,
+      "evidence": "brown boxed 12:30 breakout bars with magenta wedge into 5258 and close sell-off bars"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

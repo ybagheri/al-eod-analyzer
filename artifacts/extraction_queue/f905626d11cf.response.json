@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "f905626d11cf",
+  "date": "2021-08-05",
+  "day_type": "bull_trend_from_open",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trend Resumption Up'. An 8-bar bull micro channel opens the trend, higher low double bottoms at 4407 hold, and the truncated wedge double top ledge at 4415 fails twice; a tight channel pullback and triangle breakout then resume the bull trend into the 4423 close.",
+  "events": [
+    {
+      "label": "bull_trend",
+      "raw_label": "8-bar bull micro channel from the open",
+      "direction": "bull",
+      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4412.5,
+      "outcome": "success",
+      "outcome_reason": "8-bar bull micro channel opened the bulls with the first hour trend to 4413",
+      "confidence": 0.7,
+      "evidence": "orange arrows and text over green boxed bull bars 07:05-07:15"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "HL DB (07:45)",
+      "direction": "bull",
+      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4407.5,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at 4407 lifted into the 08:15 spike",
+      "confidence": 0.6,
+      "evidence": "green dotted 4408 line with green HL DB text under the 07:45 low"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Truncated wedge DT, ledge (08:20 test of red/blue dotted breakout level)",
+      "direction": "bear",
+      "start_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4415.0,
+      "outcome": "success",
+      "outcome_reason": "truncated wedge double top ledge at 4415 failed and sold off to 4407",
+      "confidence": 0.6,
+      "evidence": "magenta dotted wedge into the red and blue dotted 4415 ledge with sell bars at 08:25"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "HL DB High 2 (10:05)",
+      "direction": "bull",
+      "start_time": {"time": "09:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4407.5,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom and high 2 around 4407 lifted the midday range",
+      "confidence": 0.65,
+      "evidence": "green HL DB High 2 text under the 10:00 low with boxed bars 10:05-10:35"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "DT but tight channel (11:20)",
+      "direction": "bear",
+      "start_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4415.0,
+      "outcome": "failure",
+      "outcome_reason": "double top at the 4415 ledge made a tight channel pullback only, keeping the bull trend intact",
+      "confidence": 0.6,
+      "evidence": "red text at the 11:15 test of 4415 with magenta dotted lines and ii bar boxed brown"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Triangle, bull trend resumption (12:45 breakout)",
+      "direction": "bull",
+      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4423.0,
+      "outcome": "success",
+      "outcome_reason": "triangle breakout renewed the bull trend up to the close at 4423",
+      "confidence": 0.7,
+      "evidence": "blue dotted triangle lines and boxed bull bars up to the 13:00 spike 4423"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

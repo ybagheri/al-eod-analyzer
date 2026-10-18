@@ -1,0 +1,129 @@
+{
+    "schema_version":  1,
+    "image_id":  "47ac3f7c4cbb",
+    "date":  "2020-05-13",
+    "day_type":  "trend_reversal_to_bear",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Wedge Top, Then Bear Trend\u0027. Open sell into 2835 double bottom and green pullback, wedge bull rally to 2863 (07:30) forms a wedge top; a bear trend follows all day with double bottoms failing and a final wedge lower low major trend reversal below 2794 that breaks out for a rally close 2815.",
+    "events":  [
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Wedge top 2865 (07:30)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2865.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge bull rally at 07:30 into orange dotted 2866 line formed wedge top before trend reversal",
+                       "confidence":  0.7,
+                       "evidence":  "magenta dotted wedge lines with green shaded bull bars to the top and orange Open=high dot line breaking the wedge"
+                   },
+                   {
+                       "label":  "bull_trend",
+                       "raw_label":  "Wedge bull rally (07:20-07:30)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2863.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green shaded wedge bull channel bars rallied to 2863",
+                       "confidence":  0.55,
+                       "evidence":  "green boxes 07:25-07:30 under magenta wedge dotted lines between orange dotted gap lines"
+                   },
+                   {
+                       "label":  "bear_trend",
+                       "raw_label":  "Bear trend from the open after wedge pullback (08:40-09:30)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2795.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "pink channel selloff stepped through 2830, 2812 and orange 2790 line toward 2796 low",
+                       "confidence":  0.7,
+                       "evidence":  "magenta channel line bear bars with red sell boxes at 08:55-09:10 into 09:35 double bottom"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Range 2795-2815 (10:00-11:55)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2800.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "tight bear channel range 2795-2815 with wedge MTR bear flags",
+                       "confidence":  0.6,
+                       "evidence":  "green shaded bull bars 10:00-10:15, pink channel with red boxes at 10:45, 11:15, 11:55 and green bottom line to 09:40"
+                   },
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Wedge, LL MTR, failed BO below wedge (12:05 low 2794)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2794.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge lower low major trend reversal and failed breakout below wedge at 12:05 lifted off lows",
+                       "confidence":  0.65,
+                       "evidence":  "magenta Wedge LL MTR failed BO below wedge text over the 12:00 lows and blue channel dotted line"
+                   },
+                   {
+                       "label":  "bull_trend",
+                       "raw_label":  "Rally to close 2815 (12:10-13:05)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2815.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "rally after reversal closed 2815",
+                       "confidence":  0.6,
+                       "evidence":  "green shaded bull 12:30 bars with red shaded 13:50, 13:55 near the blue dotted 2790 channel low"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

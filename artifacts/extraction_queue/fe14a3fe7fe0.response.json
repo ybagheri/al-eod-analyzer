@@ -1,159 +1,224 @@
 {
-  "schema_version": 1,
-  "image_id": "fe14a3fe7fe0",
-  "date": "2023-02-10",
-  "day_type": "trading_range",
-  "day_type_confidence": 0.6,
-  "session_summary": "Blue header: 'Broad Bull Channel, Trading Range Day' — day descriptor is 'Trading Range Day' with broad bull channel context; filename maps broad_bull_channel but per the wave-0 rule the on-chart title outranks it, chosen trading_range with channel noted. Chart spans yesterday 15:00 through today 15:40 (edge marker '13'). Reading: yesterday's sell climax into the Open of Month (orange dotted 4077.75) with 'expect 2 hours of sideways to up', today opened ~4088, LH DT at 4100 gave the morning drop, a big bull surprise bar at 4070 expected a 2nd leg, the EMA pullback Low 2 Sell was flagged a bad signal, dip to 4072 formed an HL DB (possible MTR) that did follow through above the morning high, ioi compression at the ledge, breakout above a parabolic wedgeTo 4102 but 'trading range day so quick profits', trendline HL support held, and an EOD 2nd-entry buy at 4093 with 'big bar, can wait'. Price closed near the day high ~4100.",
-  "events": [
-    {
-      "label": "climax",
-      "raw_label": "Yesterday was Sell Climax Day — Expect 2 hours of Sideways to up",
-      "direction": "bear",
-      "start_time": {"time": "15:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:40", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4077.75,
-      "outcome": "unclear",
-      "outcome_reason": "previous-day sell climax into the Open of Month carried the bullish expectation of two hours sideways-to-up for the new session",
-      "confidence": 0.7,
-      "evidence": "left-edge capitulation bars plus right-side blue/yellow annotation 'Yesterday was Sell Climax Day / Expect 2 hours of Sideways to up'"
-    },
-    {
-      "label": "lower_high_double_top",
-      "raw_label": "LH DT",
-      "direction": "bear",
-      "start_time": {"time": "09:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4100.0,
-      "outcome": "success",
-      "outcome_reason": "the morning drop to 4070 followed",
-      "confidence": 0.7,
-      "evidence": "red 'LH DT' text over the 10:00 lower high below the 09:40 spike to 4102.5"
-    },
-    {
-      "label": "major_bull_surprise",
-      "raw_label": "Bull Surprise — Expect 2nd leg",
-      "direction": "bull",
-      "start_time": {"time": "10:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4070.0,
-      "outcome": "success",
-      "outcome_reason": "second leg up followed to the 4095 area; note: taxonomy v1.2 has bear_surprise but no bare bull_surprise, mapped to nearest canonical kind",
-      "confidence": 0.65,
-      "evidence": "green 'Bull Surprise / Expect 2nd leg' text with arrow at the big surprise bar's low"
-    },
-    {
-      "label": "l2",
-      "raw_label": "Low 2 Sell — But bad sell signal, Wait for 2nd signal",
-      "direction": "bear",
-      "start_time": {"time": "11:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4094.0,
-      "outcome": "fail",
-      "outcome_reason": "explicitly flagged a bad sell signal; price stayed above the EMA and chopped higher",
-      "confidence": 0.7,
-      "evidence": "red 'Low 2 Sell / But bad sell signal / Wait for 2nd signal' text with red arrow to the boxed pullback bars"
-    },
-    {
-      "label": "higher_low_double_bottom",
-      "raw_label": "HL DB — Possible MTR",
-      "direction": "bull",
-      "start_time": {"time": "12:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4072.0,
-      "outcome": "success",
-      "outcome_reason": "higher-low double bottom led to the rally that broke above the 4102.50 morning high, playing out the possible MTR",
-      "confidence": 0.65,
-      "evidence": "green 'HL DB / Possible MTR' text beside the 4072 lows"
-    },
-    {
-      "label": "major_trend_reversal",
-      "raw_label": "MTR up (HL DB follow-through)",
-      "direction": "bull",
-      "start_time": {"time": "13:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4102.5,
-      "outcome": "success",
-      "outcome_reason": "breakout above the day's opening high confirmed the HL DB's possible MTR",
-      "confidence": 0.6,
-      "evidence": "noon rally topping at 4102.5 above the earlier 09:40 high"
-    },
-    {
-      "label": "inside_inside",
-      "raw_label": "ioi",
-      "direction": "neutral",
-      "start_time": {"time": "12:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4082.0,
-      "outcome": "unclear",
-      "outcome_reason": "inside-outside-inside compression at the ledge before the breakout attempt; mapped from ioi to nearest canonical kind with raw preserved",
-      "confidence": 0.5,
-      "evidence": "pink 'ioi' tag over the beige-boxed 13:00 bars"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Parabolic Wedge",
-      "direction": "bull",
-      "start_time": {"time": "12:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4080.0,
-      "modifiers": ["parabolic"],
-      "outcome": "success",
-      "outcome_reason": "rising parabolic channel to the 13:40 top set up the context for the breakout note",
-      "confidence": 0.6,
-      "evidence": "pink dotted rising line 12:35-13:20 referenced by the orange note"
-    },
-    {
-      "label": "breakout",
-      "raw_label": "BO above Parabolic Wedge — But Trading Range Day",
-      "direction": "bull",
-      "start_time": {"time": "13:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4102.5,
-      "outcome": "partial",
-      "outcome_reason": "breakout above the parabolic wedge succeeded but the trading-range-day caveat warned for quick profits",
-      "confidence": 0.7,
-      "evidence": "orange 'BO above Parabolic Wedge / But Trading Range Day' text at the 13:40 top"
-    },
-    {
-      "label": "trend_line",
-      "raw_label": "HL trend line",
-      "direction": "bull",
-      "start_time": {"time": "12:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "14:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": null,
-      "outcome": "success",
-      "outcome_reason": "green dotted rising trend line of higher lows held; 'HL' tag marks it",
-      "confidence": 0.65,
-      "evidence": "green 'HL' text with green dotted rising support line to the 14:25 pullback"
-    },
-    {
-      "label": "h2",
-      "raw_label": "2nd Entry Buy — But big bar so traders can wait",
-      "direction": "bull",
-      "start_time": {"time": "15:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4093.0,
-      "outcome": "partial",
-      "outcome_reason": "second entry buy flagged with the big-bar caveat; only a mild move into the close followed before the chart ends at the 2/13 edge",
-      "confidence": 0.65,
-      "evidence": "green/yellow '2nd Entry Buy / But big bar so traders can wait' note beside the boxed 15:05-15:20 bars"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "fe14a3fe7fe0",
+    "date":  "2023-02-10",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.6,
+    "session_summary":  "Blue header: \u0027Broad Bull Channel, Trading Range Day\u0027 â€” day descriptor is \u0027Trading Range Day\u0027 with broad bull channel context; filename maps broad_bull_channel but per the wave-0 rule the on-chart title outranks it, chosen trading_range with channel noted. Chart spans yesterday 15:00 through today 15:40 (edge marker \u002713\u0027). Reading: yesterday\u0027s sell climax into the Open of Month (orange dotted 4077.75) with \u0027expect 2 hours of sideways to up\u0027, today opened ~4088, LH DT at 4100 gave the morning drop, a big bull surprise bar at 4070 expected a 2nd leg, the EMA pullback Low 2 Sell was flagged a bad signal, dip to 4072 formed an HL DB (possible MTR) that did follow through above the morning high, ioi compression at the ledge, breakout above a parabolic wedgeTo 4102 but \u0027trading range day so quick profits\u0027, trendline HL support held, and an EOD 2nd-entry buy at 4093 with \u0027big bar, can wait\u0027. Price closed near the day high ~4100.",
+    "events":  [
+                   {
+                       "label":  "climax",
+                       "raw_label":  "Yesterday was Sell Climax Day â€” Expect 2 hours of Sideways to up",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "15:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "15:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4077.75,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "previous-day sell climax into the Open of Month carried the bullish expectation of two hours sideways-to-up for the new session",
+                       "confidence":  0.7,
+                       "evidence":  "left-edge capitulation bars plus right-side blue/yellow annotation \u0027Yesterday was Sell Climax Day / Expect 2 hours of Sideways to up\u0027"
+                   },
+                   {
+                       "label":  "lower_high_double_top",
+                       "raw_label":  "LH DT",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4100.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "the morning drop to 4070 followed",
+                       "confidence":  0.7,
+                       "evidence":  "red \u0027LH DT\u0027 text over the 10:00 lower high below the 09:40 spike to 4102.5"
+                   },
+                   {
+                       "label":  "major_bull_surprise",
+                       "raw_label":  "Bull Surprise â€” Expect 2nd leg",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4070.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "second leg up followed to the 4095 area; note: taxonomy v1.2 has bear_surprise but no bare bull_surprise, mapped to nearest canonical kind",
+                       "confidence":  0.65,
+                       "evidence":  "green \u0027Bull Surprise / Expect 2nd leg\u0027 text with arrow at the big surprise bar\u0027s low"
+                   },
+                   {
+                       "label":  "l2",
+                       "raw_label":  "Low 2 Sell â€” But bad sell signal, Wait for 2nd signal",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "11:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4094.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "explicitly flagged a bad sell signal; price stayed above the EMA and chopped higher",
+                       "confidence":  0.7,
+                       "evidence":  "red \u0027Low 2 Sell / But bad sell signal / Wait for 2nd signal\u0027 text with red arrow to the boxed pullback bars"
+                   },
+                   {
+                       "label":  "higher_low_double_bottom",
+                       "raw_label":  "HL DB â€” Possible MTR",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4072.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "higher-low double bottom led to the rally that broke above the 4102.50 morning high, playing out the possible MTR",
+                       "confidence":  0.65,
+                       "evidence":  "green \u0027HL DB / Possible MTR\u0027 text beside the 4072 lows"
+                   },
+                   {
+                       "label":  "major_trend_reversal",
+                       "raw_label":  "MTR up (HL DB follow-through)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "13:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4102.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "breakout above the day\u0027s opening high confirmed the HL DB\u0027s possible MTR",
+                       "confidence":  0.6,
+                       "evidence":  "noon rally topping at 4102.5 above the earlier 09:40 high"
+                   },
+                   {
+                       "label":  "inside_inside",
+                       "raw_label":  "ioi",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "12:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4082.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "inside-outside-inside compression at the ledge before the breakout attempt; mapped from ioi to nearest canonical kind with raw preserved",
+                       "confidence":  0.5,
+                       "evidence":  "pink \u0027ioi\u0027 tag over the beige-boxed 13:00 bars"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Parabolic Wedge",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4080.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "rising parabolic channel to the 13:40 top set up the context for the breakout note",
+                       "confidence":  0.6,
+                       "evidence":  "pink dotted rising line 12:35-13:20 referenced by the orange note"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "BO above Parabolic Wedge â€” But Trading Range Day",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "13:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4102.5,
+                       "outcome":  "partial",
+                       "outcome_reason":  "breakout above the parabolic wedge succeeded but the trading-range-day caveat warned for quick profits",
+                       "confidence":  0.7,
+                       "evidence":  "orange \u0027BO above Parabolic Wedge / But Trading Range Day\u0027 text at the 13:40 top"
+                   },
+                   {
+                       "label":  "trend_line",
+                       "raw_label":  "HL trend line",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "14:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  null,
+                       "outcome":  "success",
+                       "outcome_reason":  "green dotted rising trend line of higher lows held; \u0027HL\u0027 tag marks it",
+                       "confidence":  0.65,
+                       "evidence":  "green \u0027HL\u0027 text with green dotted rising support line to the 14:25 pullback"
+                   },
+                   {
+                       "label":  "h2",
+                       "raw_label":  "2nd Entry Buy â€” But big bar so traders can wait",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "15:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "15:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4093.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "second entry buy flagged with the big-bar caveat; only a mild move into the close followed before the chart ends at the 2/13 edge",
+                       "confidence":  0.65,
+                       "evidence":  "green/yellow \u00272nd Entry Buy / But big bar so traders can wait\u0027 note beside the boxed 15:05-15:20 bars"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

@@ -1,161 +1,224 @@
 {
-  "schema_version": 1,
-  "image_id": "97f1ff2438fc",
-  "date": "2023-02-17",
-  "day_type": "trend_reversal_to_bull",
-  "day_type_confidence": 0.6,
-  "session_summary": "Blue title bar: 'Wedge Top at EMA, Then Midday Wedge Bottom' (record is _unmapped in the batch-1 title map, so no filename day_type hint exists). Spans 2/17 to the 2/20 edge marker, plain-PT. Reading: big gap down open — STC bears at the shaded opening box, a High 2 buy and BTC near the 4062 low lifted price into a nested wedge micro DT top at 4087 (red dotted), the first Low 2 sold to the Wedge LL DB low at 4057, the 09:35 LH drew the second Low 2 sell into the Bar 41 Reversal wedge bottom at 4058, and the afternoon ran a Small PB Bull Trend with green entries to close ~4086. Morning bear trend then midday-reversal-up = trend_reversal_to_bull.",
-  "events": [
-    {
-      "label": "sell_the_close",
-      "raw_label": "STC",
-      "direction": "bear",
-      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4072.0,
-      "outcome": "success",
-      "outcome_reason": "sell-the-close bears worked the shaded opening boxes down to the High 2 low",
-      "confidence": 0.7,
-      "evidence": "orange 'STC' text with arrow to the shaded 07:00-07:25 bars"
-    },
-    {
-      "label": "h2",
-      "raw_label": "High 2",
-      "direction": "bull",
-      "start_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4062.0,
-      "outcome": "success",
-      "outcome_reason": "high 2 buy at the EMA led to the 4087 nested wedge micro DT",
-      "confidence": 0.7,
-      "evidence": "green 'High 2' text under the shaded 07:25-07:40 lows"
-    },
-    {
-      "label": "buy_the_close",
-      "raw_label": "BTC",
-      "direction": "bull",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4063.0,
-      "outcome": "success",
-      "outcome_reason": "buy-the-close note over the double-bottom low ahead of the wedge rally",
-      "confidence": 0.65,
-      "evidence": "orange 'BTC' text with arrow at the 07:35 shaded low box"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Nested Wedge",
-      "direction": "bear",
-      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "modifiers": ["nested", "top"],
-      "bar_index_hint": null,
-      "price_hint": 4087.0,
-      "outcome": "success",
-      "outcome_reason": "nested wedge top under the red dotted micro DT failed into the morning decline",
-      "confidence": 0.65,
-      "evidence": "pink 'Nested Wedge' text with dotted wedge lines into the 07:40 peak"
-    },
-    {
-      "label": "micro_double_top",
-      "raw_label": "Micro DT",
-      "direction": "bear",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4087.0,
-      "outcome": "success",
-      "outcome_reason": "micro double top at the morning high preceded the sell-off",
-      "confidence": 0.7,
-      "evidence": "red 'Micro DT' text over the red dotted 4087 line"
-    },
-    {
-      "label": "l2",
-      "raw_label": "Low 2",
-      "direction": "bear",
-      "start_time": {"time": "07:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4080.0,
-      "outcome": "success",
-      "outcome_reason": "first low 2 sell drove the leg down to the 4057 wedge DB",
-      "confidence": 0.7,
-      "evidence": "red 'Low 2' text of the 08:00 retest with red dotted line to 09:45"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge (bottom)",
-      "direction": "bull",
-      "start_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:45", "tz": "America/Los_Angeles"},
-      "modifiers": ["bottom"],
-      "bar_index_hint": null,
-      "price_hint": 4057.0,
-      "outcome": "success",
-      "outcome_reason": "falling wedge pencil-down bottom produced the two-leg rally",
-      "confidence": 0.65,
-      "evidence": "pink 'Wedge' pink dotted lines around the 4057 lows"
-    },
-    {
-      "label": "lower_low_double_bottom",
-      "raw_label": "LL DB",
-      "direction": "bull",
-      "start_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4057.5,
-      "outcome": "success",
-      "outcome_reason": "lower-low double bottom kicked off the first afternoon legs up",
-      "confidence": 0.7,
-      "evidence": "green 'LL DB' text under the 08:25-08:50 lows"
-    },
-    {
-      "label": "l2",
-      "raw_label": "Low 2",
-      "direction": "bear",
-      "start_time": {"time": "09:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4074.5,
-      "outcome": "success",
-      "outcome_reason": "second low 2 sell extended the decline into the Bar 41 wedge low at 4058",
-      "confidence": 0.65,
-      "evidence": "red low 2 note at 09:40 over the red dotted line running 09:35-11:05"
-    },
-    {
-      "label": "midday_reversal",
-      "raw_label": "Bar 41 Reversal",
-      "direction": "bull",
-      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 41,
-      "price_hint": 4058.0,
-      "outcome": "success",
-      "outcome_reason": "bar-41 midday reversal at 4058 flipped the day and the Small PB Bull Trend followed",
-      "confidence": 0.75,
-      "evidence": "blue 'Bar 41 Reversal' text at the 10:10 lows"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge (midday bottom)",
-      "direction": "bull",
-      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
-      "modifiers": ["bottom"],
-      "bar_index_hint": null,
-      "price_hint": 4058.0,
-      "outcome": "success",
-      "outcome_reason": "midday wedge bottom formed the base of the afternoon bull trend",
-      "confidence": 0.6,
-      "evidence": "pink 'Wedge' text under the Bar 41 reversal lows"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "97f1ff2438fc",
+    "date":  "2023-02-17",
+    "day_type":  "trend_reversal_to_bull",
+    "day_type_confidence":  0.6,
+    "session_summary":  "Blue title bar: \u0027Wedge Top at EMA, Then Midday Wedge Bottom\u0027 (record is _unmapped in the batch-1 title map, so no filename day_type hint exists). Spans 2/17 to the 2/20 edge marker, plain-PT. Reading: big gap down open â€” STC bears at the shaded opening box, a High 2 buy and BTC near the 4062 low lifted price into a nested wedge micro DT top at 4087 (red dotted), the first Low 2 sold to the Wedge LL DB low at 4057, the 09:35 LH drew the second Low 2 sell into the Bar 41 Reversal wedge bottom at 4058, and the afternoon ran a Small PB Bull Trend with green entries to close ~4086. Morning bear trend then midday-reversal-up = trend_reversal_to_bull.",
+    "events":  [
+                   {
+                       "label":  "sell_the_close",
+                       "raw_label":  "STC",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4072.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "sell-the-close bears worked the shaded opening boxes down to the High 2 low",
+                       "confidence":  0.7,
+                       "evidence":  "orange \u0027STC\u0027 text with arrow to the shaded 07:00-07:25 bars"
+                   },
+                   {
+                       "label":  "h2",
+                       "raw_label":  "High 2",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4062.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "high 2 buy at the EMA led to the 4087 nested wedge micro DT",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027High 2\u0027 text under the shaded 07:25-07:40 lows"
+                   },
+                   {
+                       "label":  "buy_the_close",
+                       "raw_label":  "BTC",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4063.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "buy-the-close note over the double-bottom low ahead of the wedge rally",
+                       "confidence":  0.65,
+                       "evidence":  "orange \u0027BTC\u0027 text with arrow at the 07:35 shaded low box"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Nested Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4087.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "nested wedge top under the red dotted micro DT failed into the morning decline",
+                       "confidence":  0.65,
+                       "evidence":  "pink \u0027Nested Wedge\u0027 text with dotted wedge lines into the 07:40 peak"
+                   },
+                   {
+                       "label":  "micro_double_top",
+                       "raw_label":  "Micro DT",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4087.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "micro double top at the morning high preceded the sell-off",
+                       "confidence":  0.7,
+                       "evidence":  "red \u0027Micro DT\u0027 text over the red dotted 4087 line"
+                   },
+                   {
+                       "label":  "l2",
+                       "raw_label":  "Low 2",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4080.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "first low 2 sell drove the leg down to the 4057 wedge DB",
+                       "confidence":  0.7,
+                       "evidence":  "red \u0027Low 2\u0027 text of the 08:00 retest with red dotted line to 09:45"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge (bottom)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "08:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4057.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "falling wedge pencil-down bottom produced the two-leg rally",
+                       "confidence":  0.65,
+                       "evidence":  "pink \u0027Wedge\u0027 pink dotted lines around the 4057 lows"
+                   },
+                   {
+                       "label":  "lower_low_double_bottom",
+                       "raw_label":  "LL DB",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "08:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4057.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "lower-low double bottom kicked off the first afternoon legs up",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027LL DB\u0027 text under the 08:25-08:50 lows"
+                   },
+                   {
+                       "label":  "l2",
+                       "raw_label":  "Low 2",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4074.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "second low 2 sell extended the decline into the Bar 41 wedge low at 4058",
+                       "confidence":  0.65,
+                       "evidence":  "red low 2 note at 09:40 over the red dotted line running 09:35-11:05"
+                   },
+                   {
+                       "label":  "midday_reversal",
+                       "raw_label":  "Bar 41 Reversal",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  41,
+                       "price_hint":  4058.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bar-41 midday reversal at 4058 flipped the day and the Small PB Bull Trend followed",
+                       "confidence":  0.75,
+                       "evidence":  "blue \u0027Bar 41 Reversal\u0027 text at the 10:10 lows"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge (midday bottom)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4058.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "midday wedge bottom formed the base of the afternoon bull trend",
+                       "confidence":  0.6,
+                       "evidence":  "pink \u0027Wedge\u0027 text under the Bar 41 reversal lows"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "d1e02c7086db",
+  "date": "2023-07-14",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.8,
+  "session_summary": "Blue title bar: 'Broad Bear Channel'. An expanding triangle top and lower high major trend reversal start a grinding broad bear channel where stop order bulls keep getting stopped out; a minor wedge at the 10:15 low 4539 and a lower high double top at 4549 fail to reverse far, and the market closes near 4536.",
+  "events": [
+    {
+      "label": "expanding_triangle",
+      "raw_label": "Expanding Triangle",
+      "direction": "bear",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4560.0,
+      "outcome": "success",
+      "outcome_reason": "expanding triangle at the high reversed into a bear leg",
+      "confidence": 0.6,
+      "evidence": "magenta dotted expanding triangle lines over the 07:00-07:30 highs at 4560"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Lower High Major Trend Reversal",
+      "direction": "bear",
+      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4555.0,
+      "outcome": "success",
+      "outcome_reason": "lower high major trend reversal at 4555 rolled the market down to 4539",
+      "confidence": 0.7,
+      "evidence": "dotted red line above the 09:00 spike high at 4555 with sell bars below"
+    },
+    {
+      "label": "trading_range_breakout",
+      "raw_label": "Green dotted line breakout test at 4539",
+      "direction": "bull",
+      "start_time": {"time": "10:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4539.0,
+      "outcome": "success",
+      "outcome_reason": "bulls tested above the green dotted 4539 breakout level before it failed",
+      "confidence": 0.55,
+      "evidence": "green dotted line at 4539 from 10:20 to 11:45 with green buy bars"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Lower High Double Top",
+      "direction": "bear",
+      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4549.0,
+      "outcome": "success",
+      "outcome_reason": "lower high double top at 4549 failed and sold off to 4537",
+      "confidence": 0.7,
+      "evidence": "red dotted line at 4549 with Lower High Double Top red text"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Minor Wedge / Nested Wedge failed Broad Bear Channel",
+      "direction": "bear",
+      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4539.0,
+      "outcome": "success",
+      "outcome_reason": "minor wedge into the 10:15 low 4539 failed to reverse far, keeping bears in control in the broad bear channel",
+      "confidence": 0.6,
+      "evidence": "magenta dotted Minor Wedge lines with arrow at the 10:15 low 4539"
+    },
+    {
+      "label": "bear_trend",
+      "raw_label": "Broad bear channel with stop order bulls making money",
+      "direction": "bear",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4536.0,
+      "outcome": "success",
+      "outcome_reason": "broad bear channel ground down from 4560 to 4536 into the close",
+      "confidence": 0.8,
+      "evidence": "red text 'Broad Bear Channel' with descending swing highs to the close lows at 4536"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

@@ -1,1 +1,92 @@
-{"date": "2022-09-09", "day_type": "bull_trend_from_open", "day_type_confidence": 0.8, "events": [{"confidence": 0.45, "direction": "bull", "end_time": null, "evidence": "Brown note 'Buy The Close' at the left edge; same ambiguous placement as other charts", "label": "buy_the_close", "outcome": "unclear", "outcome_reason": "cannot tell which close this refers to", "raw_label": "Buy The Close", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Blue note 'High 2' near the lows (no time axis, omitted)", "label": "h2", "outcome": "success", "outcome_reason": "second high led the rally", "raw_label": "High 2", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Minor Wedge' near 4082", "label": "wedge", "outcome": "success", "outcome_reason": "minor wedge resolved up", "raw_label": "Minor Wedge", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Green note 'DB HL' near 4065", "label": "double_bottom", "outcome": "success", "outcome_reason": "double bottom held into the rally", "raw_label": "DB HL", "source": "vision", "start_time": null}, {"confidence": 0.6, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Wedge' at the same 4065 area", "label": "wedge", "outcome": "success", "outcome_reason": "wedge bottom supported the rally", "raw_label": "Wedge", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Green note 'DB Bull Flag'", "label": "bull_flag", "outcome": "success", "outcome_reason": "flag broke up with continuation", "raw_label": "DB Bull Flag", "source": "vision", "start_time": null}, {"confidence": 0.5, "direction": "bull", "end_time": null, "evidence": "Blue note 'Low 4'; L4 is not canonical", "label": null, "outcome": "partial", "outcome_reason": "fourth low with limited follow-through", "raw_label": "Low 4", "source": "vision", "start_time": null}], "extraction_meta": {"model_id": "muse-spark-opencode", "prompt_version": "extract_v1", "provider": "file"}, "image_id": "e1acdc514d5d", "schema_version": 1, "session_summary": "Bull trend from the open, then resumption up: H2 off the lows, minor wedge, DB-HL wedge bottom, bull flag continuation, L4 into the highs near 4095. No time axis visible so all times are null."}
+{
+    "date":  "2022-09-09",
+    "day_type":  "bull_trend_from_open",
+    "day_type_confidence":  0.8,
+    "events":  [
+                   {
+                       "confidence":  0.45,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Brown note \u0027Buy The Close\u0027 at the left edge; same ambiguous placement as other charts",
+                       "label":  "buy_the_close",
+                       "outcome":  "unclear",
+                       "outcome_reason":  "cannot tell which close this refers to",
+                       "raw_label":  "Buy The Close",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Blue note \u0027High 2\u0027 near the lows (no time axis, omitted)",
+                       "label":  "h2",
+                       "outcome":  "success",
+                       "outcome_reason":  "second high led the rally",
+                       "raw_label":  "High 2",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Minor Wedge\u0027 near 4082",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "minor wedge resolved up",
+                       "raw_label":  "Minor Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Green note \u0027DB HL\u0027 near 4065",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "double bottom held into the rally",
+                       "raw_label":  "DB HL",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Wedge\u0027 at the same 4065 area",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge bottom supported the rally",
+                       "raw_label":  "Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Green note \u0027DB Bull Flag\u0027",
+                       "label":  "bull_flag",
+                       "outcome":  "success",
+                       "outcome_reason":  "flag broke up with continuation",
+                       "raw_label":  "DB Bull Flag",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.5,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Blue note \u0027Low 4\u0027; L4 is not canonical",
+                       "label":  null,
+                       "outcome":  "partial",
+                       "outcome_reason":  "fourth low with limited follow-through",
+                       "raw_label":  "Low 4",
+                       "start_time":  null
+                   }
+               ],
+    "extraction_meta":  {
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v1",
+                            "provider":  "file"
+                        },
+    "image_id":  "e1acdc514d5d",
+    "schema_version":  1,
+    "session_summary":  "Bull trend from the open, then resumption up: H2 off the lows, minor wedge, DB-HL wedge bottom, bull flag continuation, L4 into the highs near 4095. No time axis visible so all times are null."
+}

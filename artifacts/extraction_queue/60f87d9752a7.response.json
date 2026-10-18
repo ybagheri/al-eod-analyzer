@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "60f87d9752a7",
+  "date": "2023-10-09",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Lower Low Double Bottom, Then Small Pullback Bull Trend'. Lower low double bottom at 08:05 (4318) capped by Higher Low Double Bottom (4330); small pullback bull trend to Major Bull Surprise (11:15 spike 4370) gives measured move minor wedge top and late chop between 4365 and 4372.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Lower low double bottom, bear trap (08:05 low 4318)",
+      "direction": "bull",
+      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4318.0,
+      "outcome": "success",
+      "outcome_reason": "lower low double bottom with bear trap sold to 4318 and bulls bought the retest with Early Entry low 2 lows 08:15",
+      "confidence": 0.75,
+      "evidence": "green Lower Low Double Bottom Bear Trap text under the 07:50-08:15 lows and green dotted 4320 line with magenta approaching wedge lines and red boxes 07:45-08:00"
+    },
+    {
+      "label": "trend_reversal_to_bull",
+      "raw_label": "Higher low double bottom, breakout at 4345 (09:15)",
+      "direction": "bull",
+      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4345.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom with green shaded bull bars and breakout above 4345 orange dotted line lifted the bull trend",
+      "confidence": 0.7,
+      "evidence": "magenta Minor Wedge since Small Pullback Bull Trend text with green Higher Low Double Bottom text and beige box 09:05-09:35"
+    },
+    {
+      "label": "spike_and_channel_bull",
+      "raw_label": "Major bull surprise spike and channel bull (10:35-11:30)",
+      "direction": "bull",
+      "start_time": {"time": "10:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4370.0,
+      "outcome": "success",
+      "outcome_reason": "unknown surprise bull lifted 4350 to 4370 with wedge pattern in shape of major bull surprise",
+      "confidence": 0.7,
+      "evidence": "orange Major Bull Surprise text with beige box 10:30-11:15 and magenta Minor Wedge top 11:35 (orange dotted Measured Move)"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move, minor wedge top (11:30 high 4370)",
+      "direction": "bear",
+      "start_time": {"time": "11:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4370.0,
+      "outcome": "success",
+      "outcome_reason": "orange Measured Move minor wedge target at 11:35 top",
+      "confidence": 0.6,
+      "evidence": "orange dotted Measured Move and magenta Minor Wedge labels at 11:30 high with pink dotted lines and red shaded box 12:05"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Late chop 4364-4372 (11:45-13:05)",
+      "direction": "bear",
+      "start_time": {"time": "11:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4368.0,
+      "outcome": "success",
+      "outcome_reason": "post wedge top chop between trend top and EMA with red boxes 12:05 and bull gauge late green shaded bar 12:55",
+      "confidence": 0.55,
+      "evidence": "green shaded bars 11:55-12:10, red box 12:05, green box 12:55 and 13:10 with pink dotted wedge channel under the pullback"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

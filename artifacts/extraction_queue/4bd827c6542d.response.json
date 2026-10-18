@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "4bd827c6542d",
+  "date": "2024-11-18",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Double Bottom, Rally, Then Trading Range'. Higher low double bottom (5891), breakout above the neckline (5900) with follow-through to a parabolic wedge buy climax (7290s high); trading range with lower high double top and higher low double bottom from 09:30 into the close.",
+  "events": [
+    {
+      "label": "trend_reversal",
+      "raw_label": "Higher low double bottom (5891) and breakout above neckline (07:25)",
+      "direction": "bull",
+      "start_time": {"time": "06:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5891.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom with strong breakout and follow-through over the yellow neckline",
+      "confidence": 0.7,
+      "evidence": "green Higher low double bottom text under the green dotted low with orange boxes and orange breakout neckline arrow"
+    },
+    {
+      "label": "spike_and_channel_bull",
+      "raw_label": "Strong breakout and follow-through to parabolic wedge buy climax (08:55 high 5930)",
+      "direction": "bull",
+      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5930.0,
+      "outcome": "success",
+      "outcome_reason": "rally with parabolic wedge buy climax at 5930",
+      "confidence": 0.65,
+      "evidence": "bars 12, 18, 24 labels and Strong breakout and follow-through orange text with magenta dotted wedge on the climb"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Parabolic wedge buy climax (08:55)",
+      "direction": "bull",
+      "start_time": {"time": "08:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5930.0,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge buy climax ended the spike with beige shaded climax bar and red arrow",
+      "confidence": 0.7,
+      "evidence": "magenta Parabolic wedge buy climax text over the beige box at 08:55-09:10 and red sell arrow into bar 30"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Trading range after parabolic wedge buy climax (09:30-13:20 blue box)",
+      "direction": "bull",
+      "start_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5917.0,
+      "outcome": "success",
+      "outcome_reason": "choppy range with bars 36, 48, 60, 72 and bull/bear setups trading between 5908 and 5925",
+      "confidence": 0.7,
+      "evidence": "blue shaded box with magenta wedge channel at 10:20, red sell arrows at 10:10-11:15 and green arrows at 11:20, 12:15"
+    },
+    {
+      "label": "trend_reversal",
+      "raw_label": "Lower high double top (10:00 high 5925, 13:00 retest)",
+      "direction": "bear",
+      "start_time": {"time": "09:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5925.0,
+      "outcome": "success",
+      "outcome_reason": "lower high double top range top failed retest with red arrows at 10:15, 10:20, 10:25, 12:55",
+      "confidence": 0.6,
+      "evidence": "red dotted line at 5925.5 inside blue shaded box, lower high double top text and red boxes 72 near 13:00"
+    },
+    {
+      "label": "trend_reversal",
+      "raw_label": "Higher low double bottom (11:40 low 5908)",
+      "direction": "bull",
+      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5908.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at green dotted low 5908 bought to retest the range high 5925",
+      "confidence": 0.6,
+      "evidence": "green Higher low double bottom text under the bar 60 lows, green shaded bar 60 and green 12:15 arrow"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

@@ -1,1 +1,111 @@
-{"date": "2022-08-04", "day_type": "trading_range", "day_type_confidence": 0.9, "events": [{"confidence": 0.6, "direction": "neutral", "end_time": null, "evidence": "Left edge of the sideways overlapping price action after the opening drive", "label": "trading_range_begin", "outcome": "success", "outcome_reason": "range contained price the rest of the day", "raw_label": "Trading range day begins", "source": "vision", "start_time": {"time": "06:45", "tz": "America/Los_Angeles"}}, {"confidence": 0.6, "direction": "neutral", "end_time": null, "evidence": "Price still overlapping sideways into the 13:00 axis end", "label": "trading_range_end", "outcome": "success", "outcome_reason": "day closed inside the range", "raw_label": "Trading range day ends", "source": "vision", "start_time": {"time": "13:00", "tz": "America/Los_Angeles"}}, {"confidence": 0.6, "direction": "bear", "end_time": {"time": "07:30", "tz": "America/Los_Angeles"}, "evidence": "Blue instructional note 'Look for wedge tops and bottoms'; dotted magenta wedge lines on the morning top", "label": "wedge", "outcome": "partial", "outcome_reason": "top reversed but range gave back part of the move", "raw_label": "wedge top", "source": "vision", "start_time": {"time": "07:00", "tz": "America/Los_Angeles"}}, {"confidence": 0.6, "direction": "bull", "end_time": {"time": "08:45", "tz": "America/Los_Angeles"}, "evidence": "Dotted magenta wedge lines into the morning low near 4135-4140 with red then green boxes", "label": "wedge", "outcome": "partial", "outcome_reason": "bottom reversed but range gave back part of the move", "raw_label": "wedge bottom", "source": "vision", "start_time": {"time": "07:30", "tz": "America/Los_Angeles"}}, {"confidence": 0.55, "direction": "bear", "end_time": {"time": "12:30", "tz": "America/Los_Angeles"}, "evidence": "Instructional note 'and double tops and bottoms'; M-shaped top near 4160 with red boxes around 12:15-12:30", "label": "double_top", "outcome": "partial", "outcome_reason": "dip followed but stayed inside the range", "raw_label": "double top", "source": "vision", "start_time": {"time": "12:15", "tz": "America/Los_Angeles"}}, {"confidence": 0.55, "direction": "bull", "end_time": {"time": "12:45", "tz": "America/Los_Angeles"}, "evidence": "Dip to ~4148 with red boxes then green reversal boxes near 12:45", "label": "double_bottom", "outcome": "partial", "outcome_reason": "bounce followed but stayed inside the range", "raw_label": "double bottom", "source": "vision", "start_time": {"time": "12:30", "tz": "America/Los_Angeles"}}], "extraction_meta": {"model_id": "muse-spark-opencode", "prompt_version": "extract_v1", "provider": "file"}, "image_id": "01c035fac790", "schema_version": 1, "session_summary": "Trading range day roughly 4135-4165: wedge tops and bottoms plus double tops and bottoms; buy reversals up, sell reversals down, quick profits."}
+{
+    "date":  "2022-08-04",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.9,
+    "events":  [
+                   {
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  null,
+                       "evidence":  "Left edge of the sideways overlapping price action after the opening drive",
+                       "label":  "trading_range_begin",
+                       "outcome":  "success",
+                       "outcome_reason":  "range contained price the rest of the day",
+                       "raw_label":  "Trading range day begins",
+                       "start_time":  {
+                                          "time":  "06:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  null,
+                       "evidence":  "Price still overlapping sideways into the 13:00 axis end",
+                       "label":  "trading_range_end",
+                       "outcome":  "success",
+                       "outcome_reason":  "day closed inside the range",
+                       "raw_label":  "Trading range day ends",
+                       "start_time":  {
+                                          "time":  "13:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Blue instructional note \u0027Look for wedge tops and bottoms\u0027; dotted magenta wedge lines on the morning top",
+                       "label":  "wedge",
+                       "outcome":  "partial",
+                       "outcome_reason":  "top reversed but range gave back part of the move",
+                       "raw_label":  "wedge top",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "08:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Dotted magenta wedge lines into the morning low near 4135-4140 with red then green boxes",
+                       "label":  "wedge",
+                       "outcome":  "partial",
+                       "outcome_reason":  "bottom reversed but range gave back part of the move",
+                       "raw_label":  "wedge bottom",
+                       "start_time":  {
+                                          "time":  "07:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "12:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Instructional note \u0027and double tops and bottoms\u0027; M-shaped top near 4160 with red boxes around 12:15-12:30",
+                       "label":  "double_top",
+                       "outcome":  "partial",
+                       "outcome_reason":  "dip followed but stayed inside the range",
+                       "raw_label":  "double top",
+                       "start_time":  {
+                                          "time":  "12:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "12:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Dip to ~4148 with red boxes then green reversal boxes near 12:45",
+                       "label":  "double_bottom",
+                       "outcome":  "partial",
+                       "outcome_reason":  "bounce followed but stayed inside the range",
+                       "raw_label":  "double bottom",
+                       "start_time":  {
+                                          "time":  "12:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v1",
+                            "provider":  "file"
+                        },
+    "image_id":  "01c035fac790",
+    "schema_version":  1,
+    "session_summary":  "Trading range day roughly 4135-4165: wedge tops and bottoms plus double tops and bottoms; buy reversals up, sell reversals down, quick profits."
+}

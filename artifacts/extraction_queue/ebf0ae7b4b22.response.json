@@ -1,120 +1,167 @@
 {
-  "schema_version": 1,
-  "image_id": "ebf0ae7b4b22",
-  "date": "2023-04-13",
-  "day_type": "trend_reversal_to_bear",
-  "day_type_confidence": 0.65,
-  "session_summary": "Blue title bar: 'Buy Climax, Trend Reversal Down'. NOTE: chart axis shows the session running 4/14 to the 4/17 edge marker while the manifest/filename date is 2023-04-13 — likely a chart-publish-date mismatch; manifest date copied as required. Reading: buy-the-close bull trend from the prior close ran into an exhaustive buy climax at 4190, the major bear surprise opened a spike in a spike-and-channel bear trend (blue shaded channel to the 4401 low), a minor reversal at 4140 bounced into the 11:00 push, and the lower-low major trend reversal up at 4140 plus the higher-low major trend reversal at 4148 organized the afternoon recovery into a doji close at ~4170 ('Doji Day') against the blue dotted line. Title emphasizes the bear reversal; afternoon reversal up and doji close noted.",
-  "events": [
-    {
-      "label": "buy_the_close",
-      "raw_label": "Buy The Close Bull Trend",
-      "direction": "bull",
-      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:10", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4165.0,
-      "outcome": "success",
-      "outcome_reason": "bull trend from the prior close followed into the 4190 buy climax",
-      "confidence": 0.7,
-      "evidence": "orange 'Buy The Close Bull Trend' text with orange arrow to the 07:05 entry box"
-    },
-    {
-      "label": "climax",
-      "raw_label": "Buy Climax",
-      "direction": "bull",
-      "start_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4190.0,
-      "outcome": "success",
-      "outcome_reason": "the day's top formed beneath the red dotted line and the major bear surprise followed",
-      "confidence": 0.75,
-      "evidence": "green 'Buy Climax' text over the 07:30 spike with red dotted top line"
-    },
-    {
-      "label": "major_bear_surprise",
-      "raw_label": "Major Bear Surprise",
-      "direction": "bear",
-      "start_time": {"time": "07:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:55", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4163.0,
-      "outcome": "success",
-      "outcome_reason": "major bear surprise spike in the spike-and-channel bear trend opened the morning decline",
-      "confidence": 0.75,
-      "evidence": "orange 'Major Bear Surprise' with blue line 2 'Spike in Spike and Channel Bear Trend' pointing at the big bear bar"
-    },
-    {
-      "label": "channel",
-      "raw_label": "Spike and Channel Bear Trend",
-      "direction": "bear",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": null,
-      "outcome": "success",
-      "outcome_reason": "blue shaded bear channel from the spike trended to the 4140 low with LH retests",
-      "confidence": 0.7,
-      "evidence": "shaded channel area 07:55-09:40 with magenta dotted bear trend line and red dotted LH lines"
-    },
-    {
-      "label": "midday_reversal",
-      "raw_label": "Minor Reversal",
-      "direction": "bull",
-      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:20", "tz": "America/Los_Angeles"},
-      "modifiers": ["minor"],
-      "bar_index_hint": null,
-      "price_hint": 4140.0,
-      "outcome": "partial",
-      "outcome_reason": "minor reversal up at the low; only a bounce followed before the lower low, but it set up the MTR sequence (raw 'Minor Reversal'; taxonomy v1.2 has no bare minor_reversal kind)",
-      "confidence": 0.6,
-      "evidence": "green 'Minor Reversal' text with arrow to the 10:05 low"
-    },
-    {
-      "label": "lower_low_double_bottom",
-      "raw_label": "Lower Low Major Trend Reversal",
-      "direction": "bull",
-      "start_time": {"time": "11:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4140.0,
-      "outcome": "success",
-      "outcome_reason": "lower-low major trend reversal launched the 11:35-12:10 rally",
-      "confidence": 0.7,
-      "evidence": "green 'Lower Low / Major Trend Reversal' text beside the 10:55-11:10 lows"
-    },
-    {
-      "label": "major_trend_reversal",
-      "raw_label": "MTR up (LL retest)",
-      "direction": "bull",
-      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4142.0,
-      "outcome": "success",
-      "outcome_reason": "second-entry confirmation above the bear channel completed the bull reversal",
-      "confidence": 0.6,
-      "evidence": "magenta dotted rising line 11:30-12:00 with consecutive bull bars"
-    },
-    {
-      "label": "higher_low_double_bottom",
-      "raw_label": "Higher Low Major Trend Reversal",
-      "direction": "bull",
-      "start_time": {"time": "12:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4148.0,
-      "outcome": "success",
-      "outcome_reason": "higher-low major trend reversal led the late rally to the 4170 doji close",
-      "confidence": 0.7,
-      "evidence": "green 'Higher Low / Major Trend Reversal' text over the 12:25-12:35 lows"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "ebf0ae7b4b22",
+    "date":  "2023-04-13",
+    "day_type":  "trend_reversal_to_bear",
+    "day_type_confidence":  0.65,
+    "session_summary":  "Blue title bar: \u0027Buy Climax, Trend Reversal Down\u0027. NOTE: chart axis shows the session running 4/14 to the 4/17 edge marker while the manifest/filename date is 2023-04-13 â€” likely a chart-publish-date mismatch; manifest date copied as required. Reading: buy-the-close bull trend from the prior close ran into an exhaustive buy climax at 4190, the major bear surprise opened a spike in a spike-and-channel bear trend (blue shaded channel to the 4401 low), a minor reversal at 4140 bounced into the 11:00 push, and the lower-low major trend reversal up at 4140 plus the higher-low major trend reversal at 4148 organized the afternoon recovery into a doji close at ~4170 (\u0027Doji Day\u0027) against the blue dotted line. Title emphasizes the bear reversal; afternoon reversal up and doji close noted.",
+    "events":  [
+                   {
+                       "label":  "buy_the_close",
+                       "raw_label":  "Buy The Close Bull Trend",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4165.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bull trend from the prior close followed into the 4190 buy climax",
+                       "confidence":  0.7,
+                       "evidence":  "orange \u0027Buy The Close Bull Trend\u0027 text with orange arrow to the 07:05 entry box"
+                   },
+                   {
+                       "label":  "climax",
+                       "raw_label":  "Buy Climax",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4190.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "the day\u0027s top formed beneath the red dotted line and the major bear surprise followed",
+                       "confidence":  0.75,
+                       "evidence":  "green \u0027Buy Climax\u0027 text over the 07:30 spike with red dotted top line"
+                   },
+                   {
+                       "label":  "major_bear_surprise",
+                       "raw_label":  "Major Bear Surprise",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4163.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "major bear surprise spike in the spike-and-channel bear trend opened the morning decline",
+                       "confidence":  0.75,
+                       "evidence":  "orange \u0027Major Bear Surprise\u0027 with blue line 2 \u0027Spike in Spike and Channel Bear Trend\u0027 pointing at the big bear bar"
+                   },
+                   {
+                       "label":  "channel",
+                       "raw_label":  "Spike and Channel Bear Trend",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  null,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded bear channel from the spike trended to the 4140 low with LH retests",
+                       "confidence":  0.7,
+                       "evidence":  "shaded channel area 07:55-09:40 with magenta dotted bear trend line and red dotted LH lines"
+                   },
+                   {
+                       "label":  "midday_reversal",
+                       "raw_label":  "Minor Reversal",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4140.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "minor reversal up at the low; only a bounce followed before the lower low, but it set up the MTR sequence (raw \u0027Minor Reversal\u0027; taxonomy v1.2 has no bare minor_reversal kind)",
+                       "confidence":  0.6,
+                       "evidence":  "green \u0027Minor Reversal\u0027 text with arrow to the 10:05 low"
+                   },
+                   {
+                       "label":  "lower_low_double_bottom",
+                       "raw_label":  "Lower Low Major Trend Reversal",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4140.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "lower-low major trend reversal launched the 11:35-12:10 rally",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027Lower Low / Major Trend Reversal\u0027 text beside the 10:55-11:10 lows"
+                   },
+                   {
+                       "label":  "major_trend_reversal",
+                       "raw_label":  "MTR up (LL retest)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4142.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "second-entry confirmation above the bear channel completed the bull reversal",
+                       "confidence":  0.6,
+                       "evidence":  "magenta dotted rising line 11:30-12:00 with consecutive bull bars"
+                   },
+                   {
+                       "label":  "higher_low_double_bottom",
+                       "raw_label":  "Higher Low Major Trend Reversal",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4148.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "higher-low major trend reversal led the late rally to the 4170 doji close",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027Higher Low / Major Trend Reversal\u0027 text over the 12:25-12:35 lows"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

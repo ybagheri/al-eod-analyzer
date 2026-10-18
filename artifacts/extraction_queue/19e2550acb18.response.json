@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "19e2550acb18",
+  "date": "2023-09-11",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'High 2 Bottom and Weak Rally'. A sell climax with EMA magnet and ii low forms the opening bottom; strong minor reversals with high 2 bottoms at 4520 and a head and shoulders bottom major trend reversal at 4524 gradually lift the market in a weak bull rally to 4541.",
+  "events": [
+    {
+      "label": "climax",
+      "raw_label": "ii in Sell Climax But EMA is magnet (07:15 low 4520)",
+      "direction": "bull",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4520.0,
+      "outcome": "success",
+      "outcome_reason": "sell climax with EMA magnet formed the opening bottom at 4520",
+      "confidence": 0.65,
+      "evidence": "brown/red shaded opening bars with ii In Sell Climax and EMA is magnet texts at the 4520 low"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "High 2 bottom (08:15 low since 4 bear bars)",
+      "direction": "bull",
+      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4520.0,
+      "outcome": "success",
+      "outcome_reason": "minor nested high 2 bottom at 4520 launched the reversal up",
+      "confidence": 0.6,
+      "evidence": "blue Minor Nested High 2 since 4 bear bars text under the 08:10 low with blue arrow"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Higher Low Major Trend Reversal Head and Shoulders Bottom (09:20)",
+      "direction": "bull",
+      "start_time": {"time": "08:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4524.0,
+      "outcome": "success",
+      "outcome_reason": "head and shoulders bottom major trend reversal at 4524 started the rally",
+      "confidence": 0.7,
+      "evidence": "green arrow to the 09:15-09:30 bottom with green Higher Low Major Trend Reversal text"
+    },
+    {
+      "label": "bull_trend",
+      "raw_label": "Weak rally (09:40-13:00)",
+      "direction": "bull",
+      "start_time": {"time": "09:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4541.0,
+      "outcome": "success",
+      "outcome_reason": "weak bull rally with green boxed pullbacks ground up to 4541",
+      "confidence": 0.65,
+      "evidence": "green boxed bars rising 10:15-12:05 to the 12:10 top 4541 with magenta dotted trend line"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Late range near 4540",
+      "direction": null,
+      "start_time": {"time": "11:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4538.0,
+      "outcome": "success",
+      "outcome_reason": "market flattened near 4538-4541 into the close",
+      "confidence": 0.55,
+      "evidence": "sideways bars 12:05-13:05 near the magenta dotted top line"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

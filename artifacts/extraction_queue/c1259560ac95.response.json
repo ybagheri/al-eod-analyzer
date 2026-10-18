@@ -1,123 +1,167 @@
 {
-  "schema_version": 1,
-  "image_id": "c1259560ac95",
-  "date": "2023-06-05",
-  "day_type": "trend_reversal_to_bear",
-  "day_type_confidence": 0.6,
-  "session_summary": "Blue title bar: 'Wedge Bottom, Then Midday Reversal Down'; internal note 'Weak Small Pullback Bull Trend'. Plain-PT axis (prints 6/5 06:45-13:00, 6/6 edge marker) - clean PT reference image. Reading: early wedge bottom at 4285 with a bad buy signal bar (partial claim), weak small-pullback bull trend with an ii at 08:15 grinding to an expanding-triangle top 4304.5, bar 43 midday reversal with an OO outside bar, then bear surprise with follow-through down to a sell climax 4273/4275 by 11:30 (ii there, 'might test open'), finishing in chop 4275-4287 well below the 4296 open.",
-  "events": [
-    {
-      "label": "wedge",
-      "raw_label": "Wedge, but bad buy signal bar",
-      "direction": "bull",
-      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4285.0,
-      "modifiers": ["bottom"],
-      "outcome": "partial",
-      "outcome_reason": "wedge-bottom bounce worked but the buy signal bar was poor (both claims in the note)",
-      "confidence": 0.7,
-      "evidence": "magenta note with vertical pink arrow to the violet-boxed 07:25 low and magenta dotted wedge lines"
-    },
-    {
-      "label": "inside_inside",
-      "raw_label": "ii",
-      "direction": "bull",
-      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4296.0,
-      "outcome": "unclear",
-      "outcome_reason": "mid-trend ii with the trend leg continuing slowly",
-      "confidence": 0.55,
-      "evidence": "blue arrow 'ii' under the 08:15 blue-boxed inside bars"
-    },
-    {
-      "label": "triangle",
-      "raw_label": "Expanding Triangle",
-      "direction": "bear",
-      "start_time": {"time": "09:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4304.5,
-      "modifiers": ["expanding"],
-      "outcome": "success",
-      "outcome_reason": "doue dotted lines expanded to the top and the break reversed down at once",
-      "confidence": 0.7,
-      "evidence": "blue dotted rising line plus pink dotted expanding lines ahead of the 4304.5 top"
-    },
-    {
-      "label": "midday_reversal",
-      "raw_label": "Bar 43 Midday Reversal",
-      "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 43,
-      "price_hint": 4304.5,
-      "outcome": "success",
-      "outcome_reason": "bear trend from 4304 to 4273 followed",
-      "confidence": 0.85,
-      "evidence": "red 'Bar 43 Midday Reversal' text above the double-bar top and red signal boxes"
-    },
-    {
-      "label": "outside_outside",
-      "raw_label": "OO",
-      "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 43,
-      "price_hint": 4297.0,
-      "outcome": "success",
-      "outcome_reason": "followed by the sustained bear leg",
-      "confidence": 0.65,
-      "evidence": "orange 'OO' text and arrow at the tan-boxed outside bar under the top"
-    },
-    {
-      "label": "bear_surprise",
-      "raw_label": "Bear Surprise and follow-through",
-      "direction": "bear",
-      "start_time": {"time": "10:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4297.0,
-      "outcome": "success",
-      "outcome_reason": "consecutive bear bars followed through below the EMA",
-      "confidence": 0.75,
-      "evidence": "orange 'Bear Surprise and follow-through' text with arrow to the big bear bar under the top"
-    },
-    {
-      "label": "climax",
-      "raw_label": "Sell Climax",
-      "direction": "bear",
-      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:40", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4275.0,
-      "modifiers": [],
-      "outcome": "partial",
-      "outcome_reason": "recovery legs followed but stalled at 4287 (open test never happened)",
-      "confidence": 0.7,
-      "evidence": "blue 'ii, Sell Climax, might test open' note over the 11:25 flush into the violet box"
-    },
-    {
-      "label": null,
-      "raw_label": "might test open",
-      "role": "context",
-      "direction": "neutral",
-      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:10", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4296.0,
-      "outcome": "fail",
-      "outcome_reason": "rallies after the climax topped out at 4287, far below the 4296 open",
-      "confidence": 0.65,
-      "evidence": "tail of the blue bottom-right note; open implied by the session start bars"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "c1259560ac95",
+    "date":  "2023-06-05",
+    "day_type":  "trend_reversal_to_bear",
+    "day_type_confidence":  0.6,
+    "session_summary":  "Blue title bar: \u0027Wedge Bottom, Then Midday Reversal Down\u0027; internal note \u0027Weak Small Pullback Bull Trend\u0027. Plain-PT axis (prints 6/5 06:45-13:00, 6/6 edge marker) - clean PT reference image. Reading: early wedge bottom at 4285 with a bad buy signal bar (partial claim), weak small-pullback bull trend with an ii at 08:15 grinding to an expanding-triangle top 4304.5, bar 43 midday reversal with an OO outside bar, then bear surprise with follow-through down to a sell climax 4273/4275 by 11:30 (ii there, \u0027might test open\u0027), finishing in chop 4275-4287 well below the 4296 open.",
+    "events":  [
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge, but bad buy signal bar",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4285.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "wedge-bottom bounce worked but the buy signal bar was poor (both claims in the note)",
+                       "confidence":  0.7,
+                       "evidence":  "magenta note with vertical pink arrow to the violet-boxed 07:25 low and magenta dotted wedge lines"
+                   },
+                   {
+                       "label":  "inside_inside",
+                       "raw_label":  "ii",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "08:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4296.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "mid-trend ii with the trend leg continuing slowly",
+                       "confidence":  0.55,
+                       "evidence":  "blue arrow \u0027ii\u0027 under the 08:15 blue-boxed inside bars"
+                   },
+                   {
+                       "label":  "triangle",
+                       "raw_label":  "Expanding Triangle",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4304.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "doue dotted lines expanded to the top and the break reversed down at once",
+                       "confidence":  0.7,
+                       "evidence":  "blue dotted rising line plus pink dotted expanding lines ahead of the 4304.5 top"
+                   },
+                   {
+                       "label":  "midday_reversal",
+                       "raw_label":  "Bar 43 Midday Reversal",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  43,
+                       "price_hint":  4304.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "bear trend from 4304 to 4273 followed",
+                       "confidence":  0.85,
+                       "evidence":  "red \u0027Bar 43 Midday Reversal\u0027 text above the double-bar top and red signal boxes"
+                   },
+                   {
+                       "label":  "outside_outside",
+                       "raw_label":  "OO",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  43,
+                       "price_hint":  4297.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "followed by the sustained bear leg",
+                       "confidence":  0.65,
+                       "evidence":  "orange \u0027OO\u0027 text and arrow at the tan-boxed outside bar under the top"
+                   },
+                   {
+                       "label":  "bear_surprise",
+                       "raw_label":  "Bear Surprise and follow-through",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4297.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "consecutive bear bars followed through below the EMA",
+                       "confidence":  0.75,
+                       "evidence":  "orange \u0027Bear Surprise and follow-through\u0027 text with arrow to the big bear bar under the top"
+                   },
+                   {
+                       "label":  "climax",
+                       "raw_label":  "Sell Climax",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "11:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4275.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "recovery legs followed but stalled at 4287 (open test never happened)",
+                       "confidence":  0.7,
+                       "evidence":  "blue \u0027ii, Sell Climax, might test open\u0027 note over the 11:25 flush into the violet box"
+                   },
+                   {
+                       "label":  null,
+                       "raw_label":  "might test open",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "11:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4296.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "rallies after the climax topped out at 4287, far below the 4296 open",
+                       "confidence":  0.65,
+                       "evidence":  "tail of the blue bottom-right note; open implied by the session start bars"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

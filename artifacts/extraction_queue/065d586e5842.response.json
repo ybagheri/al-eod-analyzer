@@ -1,122 +1,167 @@
 {
-  "schema_version": 1,
-  "image_id": "065d586e5842",
-  "date": "2024-07-18",
-  "day_type": "bear_trend_from_open",
-  "day_type_confidence": 0.7,
-  "session_summary": "Blue title bar: 'Low 2 Top, Then Strong Bear Trend'. Opening range 5650-5665 with a minor bull push to 5665 by 07:10, then a Low 2 top triggered a bear trend from near the open: consecutive red legs through 5640-5600, a failed wedge-bottom retest bounce at 09:15 to 5615, a midday bear range with a wedge / higher-high double top at 5615, lower-low double bottom tests of 5590 support, a third test at 12:15-12:35 (exhaustion gap) with a late recovery into the close. Axis offset suspicion: day rolls print 7/18 -> 7/19 while hours read 07:00-13:00 (not a plain PT 06:30-13:00 session); times below are as printed. No bar numbers printed on this image.",
-  "events": [
-    {
-      "label": "l2",
-      "raw_label": "Low 2",
-      "direction": "bear",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5660.0,
-      "outcome": "success",
-      "outcome_reason": "bear trend from 5660 to 5600 followed within the hour",
-      "confidence": 0.75,
-      "evidence": "blue 'Low 2' text over beige signal-bar box at the 07:20 top"
-    },
-    {
-      "label": "failed_breakout",
-      "raw_label": "Breakout test 1 tick above breakout",
-      "direction": "bear",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5647.0,
-      "outcome": "success",
-      "outcome_reason": "trapped bulls and sell-off to 5600 followed",
-      "confidence": 0.75,
-      "evidence": "red 'Breakout test 1 tick above breakout' note with red arrow at 08:05"
-    },
-    {
-      "label": "breakout",
-      "raw_label": "Major breakout",
-      "direction": "bear",
-      "start_time": {"time": "08:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5630.0,
-      "outcome": "success",
-      "outcome_reason": "accelerating red bear bars broke to 5595",
-      "confidence": 0.85,
-      "evidence": "orange 'Major breakout' text with arrow to the beige box on the tall bear bars"
-    },
-    {
-      "label": "failed_breakout",
-      "raw_label": "Failed breakout below small wedge",
-      "direction": "bull",
-      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5590.0,
-      "outcome": "success",
-      "outcome_reason": "bounce of about 25 points to 5615 followed",
-      "confidence": 0.75,
-      "evidence": "pink 'Failed breakout below small wedge' text with magenta dotted wedge at 09:15-09:30 lows"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge Higher high double top",
-      "direction": "bear",
-      "start_time": {"time": "10:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5615.0,
-      "modifiers": ["top"],
-      "outcome": "success",
-      "outcome_reason": "sell-off from 5615 to 5590 into 12:15 followed",
-      "confidence": 0.7,
-      "evidence": "magenta dotted rising wedge lines into the 10:40 top with pink 'Wedge' note"
-    },
-    {
-      "label": "double_top",
-      "raw_label": "Wedge Higher high double top",
-      "direction": "bear",
-      "start_time": {"time": "10:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5615.0,
-      "modifiers": ["HH"],
-      "outcome": "success",
-      "outcome_reason": "lower highs and red trend bars followed the twin peaks",
-      "confidence": 0.65,
-      "evidence": "red dotted line at 5615 across the double-top peaks; 'Higher high double top' note"
-    },
-    {
-      "label": "lower_low_double_bottom",
-      "raw_label": "Lower low double bottom",
-      "direction": "bull",
-      "start_time": {"time": "09:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:15", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5590.0,
-      "outcome": "partial",
-      "outcome_reason": "double-bottom bounce stalled; the 12:15 third test (exhaustion gap) printed before show-through",
-      "confidence": 0.7,
-      "evidence": "green 'Lower low double bottom' text with green dotted support line at 5590 from 09:45"
-    },
-    {
-      "label": "gap",
-      "raw_label": "Exhaustion gap",
-      "direction": "bear",
-      "start_time": {"time": "12:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5585.0,
-      "modifiers": ["exhaustion"],
-      "outcome": "success",
-      "outcome_reason": "exhaustion gap retraced by the late recovery into the close",
-      "confidence": 0.65,
-      "evidence": "orange 'Exhaustion gap' text under the tall dark-red candle at 12:25-12:30"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "065d586e5842",
+    "date":  "2024-07-18",
+    "day_type":  "bear_trend_from_open",
+    "day_type_confidence":  0.7,
+    "session_summary":  "Blue title bar: \u0027Low 2 Top, Then Strong Bear Trend\u0027. Opening range 5650-5665 with a minor bull push to 5665 by 07:10, then a Low 2 top triggered a bear trend from near the open: consecutive red legs through 5640-5600, a failed wedge-bottom retest bounce at 09:15 to 5615, a midday bear range with a wedge / higher-high double top at 5615, lower-low double bottom tests of 5590 support, a third test at 12:15-12:35 (exhaustion gap) with a late recovery into the close. Axis offset suspicion: day rolls print 7/18 -\u003e 7/19 while hours read 07:00-13:00 (not a plain PT 06:30-13:00 session); times below are as printed. No bar numbers printed on this image.",
+    "events":  [
+                   {
+                       "label":  "l2",
+                       "raw_label":  "Low 2",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5660.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bear trend from 5660 to 5600 followed within the hour",
+                       "confidence":  0.75,
+                       "evidence":  "blue \u0027Low 2\u0027 text over beige signal-bar box at the 07:20 top"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Breakout test 1 tick above breakout",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5647.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "trapped bulls and sell-off to 5600 followed",
+                       "confidence":  0.75,
+                       "evidence":  "red \u0027Breakout test 1 tick above breakout\u0027 note with red arrow at 08:05"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "Major breakout",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5630.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "accelerating red bear bars broke to 5595",
+                       "confidence":  0.85,
+                       "evidence":  "orange \u0027Major breakout\u0027 text with arrow to the beige box on the tall bear bars"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Failed breakout below small wedge",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5590.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bounce of about 25 points to 5615 followed",
+                       "confidence":  0.75,
+                       "evidence":  "pink \u0027Failed breakout below small wedge\u0027 text with magenta dotted wedge at 09:15-09:30 lows"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge Higher high double top",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5615.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "sell-off from 5615 to 5590 into 12:15 followed",
+                       "confidence":  0.7,
+                       "evidence":  "magenta dotted rising wedge lines into the 10:40 top with pink \u0027Wedge\u0027 note"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "Wedge Higher high double top",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5615.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "lower highs and red trend bars followed the twin peaks",
+                       "confidence":  0.65,
+                       "evidence":  "red dotted line at 5615 across the double-top peaks; \u0027Higher high double top\u0027 note"
+                   },
+                   {
+                       "label":  "lower_low_double_bottom",
+                       "raw_label":  "Lower low double bottom",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5590.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "double-bottom bounce stalled; the 12:15 third test (exhaustion gap) printed before show-through",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027Lower low double bottom\u0027 text with green dotted support line at 5590 from 09:45"
+                   },
+                   {
+                       "label":  "gap",
+                       "raw_label":  "Exhaustion gap",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "12:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5585.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "exhaustion gap retraced by the late recovery into the close",
+                       "confidence":  0.65,
+                       "evidence":  "orange \u0027Exhaustion gap\u0027 text under the tall dark-red candle at 12:25-12:30"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

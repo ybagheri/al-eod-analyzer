@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "1bdccea34fd6",
+  "date": "2024-08-26",
+  "day_type": "bull_trend_from_open",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trading Range'. Bull trend from the open rallies through a parabolic wedge to 5650, the double top breakout fails; higher low double bottoms at 5628 and 5631 hold the midday, then the market concludes in a trading range closing at 5646.",
+  "events": [
+    {
+      "label": "bull_trend",
+      "raw_label": "Bull trend from the open (06:45-08:30 parabolic wedge)",
+      "direction": "bull",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5650.0,
+      "outcome": "success",
+      "outcome_reason": "bull trend from the open rallied through a parabolic wedge to 5650",
+      "confidence": 0.75,
+      "evidence": "magenta dotted parabolic wedge and brown boxed opening trend bars up to 08:25"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top / failed breakout at 5650 (08:30)",
+      "direction": "bear",
+      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5650.0,
+      "outcome": "success",
+      "outcome_reason": "double top at 5650 sold the trend down to the higher low bottoms",
+      "confidence": 0.65,
+      "evidence": "red arrow above the 08:25 tall bear bar and red dotted 5650 blue line"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low double bottom (09:00 low 5628)",
+      "direction": "bull",
+      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5628.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at 5628 lifted the market back up",
+      "confidence": 0.6,
+      "evidence": "green Higher low double bottom text under the green dotted 5628 line"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low double bottom (10:00 pullback low 5631)",
+      "direction": "bull",
+      "start_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5631.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at 5631 resumed the up trend into the blue shaded range",
+      "confidence": 0.6,
+      "evidence": "green boxed upswing bars 10:15-10:30 with green arrows"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Blue shaded trading range (10:30-13:15)",
+      "direction": null,
+      "start_time": {"time": "10:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5643.0,
+      "outcome": "success",
+      "outcome_reason": "afternoon lower high double top at 5648 sold within the range and it closed at 5646",
+      "confidence": 0.65,
+      "evidence": "big blue shaded box 07:45-13:15 and red arrows over 11:30 and 12:15 highs"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

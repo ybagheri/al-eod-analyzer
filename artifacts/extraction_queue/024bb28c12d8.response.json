@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "024bb28c12d8",
+  "date": "2026-07-07",
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bear Trend from the Open to Trading Range'. A overnight chart: a gap down with bear continuation drives the 3-bar bear micro-channel trend down to a double bottom; a 50% retrace bull trend lifts into a MM bull breakout, makes double tops at 7568, then bear breakout and MM bear breakout into a tight bear channel vacuum selloff into support closing 7552.",
+  "events": [
+    {
+      "label": "bear_trend",
+      "raw_label": "Gap down and bear continuation; 3 bar Bear Micro-channel becomes Bear Trend from the open",
+      "direction": "bear",
+      "start_time": {"time": "09:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7540.0,
+      "outcome": "success",
+      "outcome_reason": "3-bar bear micro channel after the gap down dropped the market to 7540",
+      "confidence": 0.75,
+      "evidence": "brown/red boxed 09:55-10:30 bear bars with red arrows and dotted 2R opening range lines"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Double Bottom (11:00) at 7535",
+      "direction": "bull",
+      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7533.0,
+      "outcome": "success",
+      "outcome_reason": "double bottom at 7533 lifted the market into the tight limit order trading range",
+      "confidence": 0.65,
+      "evidence": "green Double Bottom text and green arrows under the 10:50-11:30 boxed range"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Tight Trading Range Limit Order Trading with 50% Retracement Bull Trend",
+      "direction": null,
+      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "14:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7560.0,
+      "outcome": "success",
+      "outcome_reason": "50% retrace bull trend and tight limit order range ground the market up to 7568",
+      "confidence": 0.6,
+      "evidence": "blue shaded boxes 11:20-14:10 with orange dotted tops at 7545 and 7568"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "MM Bull Breakout",
+      "direction": "bull",
+      "start_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7568.0,
+      "outcome": "success",
+      "outcome_reason": "measured move bull breakout reached 7568",
+      "confidence": 0.6,
+      "evidence": "black dotted MM Bull Breakout line at 7568 rising through 13:00"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double Tops (14:10-14:20)",
+      "direction": "bear",
+      "start_time": {"time": "13:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "14:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7568.0,
+      "outcome": "success",
+      "outcome_reason": "double tops at 7568 rolled into the bear breakout",
+      "confidence": 0.65,
+      "evidence": "red Double Tops text with red dotted line at 7568 and red arrows after bar 60"
+    },
+    {
+      "label": "channel",
+      "raw_label": "3 bar Bear Micro-channel x 2 and Bear Breakout",
+      "direction": "bear",
+      "start_time": {"time": "14:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "15:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7538.0,
+      "outcome": "success",
+      "outcome_reason": "bear breakout through 7545 doubled down the micro channel to 7538",
+      "confidence": 0.7,
+      "evidence": "red arrows descending from bar 60 to bar 72 below the 7545 black dotted line"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Tight Bear Channel Vacuum Selloff into support",
+      "direction": "bear",
+      "start_time": {"time": "15:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "15:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 7530.0,
+      "outcome": "success",
+      "outcome_reason": "MM bear breakout vacuum selloff bottomed at support 7530 and closed 7552",
+      "confidence": 0.7,
+      "evidence": "red/white boxed 15:00-15:45 bars with red bear channel note and close bounce bar 78"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

@@ -1,1 +1,103 @@
-{"date": "2022-08-18", "day_type": "broad_bull_channel", "day_type_confidence": 0.7, "events": [{"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Wedge' with dotted lines at the ~4265 low (no time axis, omitted)", "label": "wedge", "outcome": "success", "outcome_reason": "wedge bottom launched the recovery", "raw_label": "Wedge", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bear", "end_time": null, "evidence": "Red note 'HH DT' at ~4285", "label": "double_top", "outcome": "success", "outcome_reason": "top sold off toward the parabolic wedge low", "raw_label": "HH DT", "source": "vision", "start_time": null}, {"confidence": 0.6, "direction": "bear", "end_time": null, "evidence": "Magenta note 'Wedge' at the ~4285 top area", "label": "wedge", "outcome": "success", "outcome_reason": "top wedge faded into the washout", "raw_label": "Wedge", "source": "vision", "start_time": null}, {"confidence": 0.55, "direction": "bull", "end_time": null, "evidence": "Blue note 'Wedge' near ~4290 in the recovery", "label": "wedge", "outcome": "partial", "outcome_reason": "continuation wedge with limited follow-through", "raw_label": "Wedge", "source": "vision", "start_time": null}, {"confidence": 0.7, "direction": "bull", "end_time": null, "evidence": "Magenta note 'Parabolic Wedge' with dotted lines into the ~4267 low", "label": "wedge", "outcome": "success", "outcome_reason": "parabolic washout launched the recovery leg", "raw_label": "Parabolic Wedge", "source": "vision", "start_time": null}, {"confidence": 0.65, "direction": "bull", "end_time": null, "evidence": "Green note 'HL DB' at the same low", "label": "higher_low_double_bottom", "outcome": "success", "outcome_reason": "higher-low bottom held into the recovery", "raw_label": "HL DB", "source": "vision", "start_time": null}, {"confidence": 0.6, "direction": "bear", "end_time": null, "evidence": "Magenta note 'Nested Wedge' at the ~4295 top; last bars faded", "label": "wedge", "outcome": "success", "outcome_reason": "nested top wedge faded into the close", "raw_label": "Nested Wedge", "source": "vision", "start_time": null}, {"confidence": 0.7, "direction": "bull", "end_time": null, "evidence": "Green note 'Small Pullback Bull' near 4280", "label": "channel", "outcome": "success", "outcome_reason": "small-pullback buying carried the recovery", "raw_label": "Small Pullback Bull", "source": "vision", "start_time": null}], "extraction_meta": {"model_id": "muse-spark-opencode", "prompt_version": "extract_v1", "provider": "file"}, "image_id": "6b899b3c675c", "schema_version": 1, "session_summary": "Broad bull channel but mostly trading range: morning wedge bottom, HHDT top into a parabolic washout with HLDB, then small-pullback buying to a nested wedge top that faded. No time axis visible so all times are null."}
+{
+    "date":  "2022-08-18",
+    "day_type":  "broad_bull_channel",
+    "day_type_confidence":  0.7,
+    "events":  [
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Wedge\u0027 with dotted lines at the ~4265 low (no time axis, omitted)",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge bottom launched the recovery",
+                       "raw_label":  "Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Red note \u0027HH DT\u0027 at ~4285",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "top sold off toward the parabolic wedge low",
+                       "raw_label":  "HH DT",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Wedge\u0027 at the ~4285 top area",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "top wedge faded into the washout",
+                       "raw_label":  "Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Blue note \u0027Wedge\u0027 near ~4290 in the recovery",
+                       "label":  "wedge",
+                       "outcome":  "partial",
+                       "outcome_reason":  "continuation wedge with limited follow-through",
+                       "raw_label":  "Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Parabolic Wedge\u0027 with dotted lines into the ~4267 low",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "parabolic washout launched the recovery leg",
+                       "raw_label":  "Parabolic Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Green note \u0027HL DB\u0027 at the same low",
+                       "label":  "higher_low_double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "higher-low bottom held into the recovery",
+                       "raw_label":  "HL DB",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  null,
+                       "evidence":  "Magenta note \u0027Nested Wedge\u0027 at the ~4295 top; last bars faded",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "nested top wedge faded into the close",
+                       "raw_label":  "Nested Wedge",
+                       "start_time":  null
+                   },
+                   {
+                       "confidence":  0.7,
+                       "direction":  "bull",
+                       "end_time":  null,
+                       "evidence":  "Green note \u0027Small Pullback Bull\u0027 near 4280",
+                       "label":  "channel",
+                       "outcome":  "success",
+                       "outcome_reason":  "small-pullback buying carried the recovery",
+                       "raw_label":  "Small Pullback Bull",
+                       "start_time":  null
+                   }
+               ],
+    "extraction_meta":  {
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v1",
+                            "provider":  "file"
+                        },
+    "image_id":  "6b899b3c675c",
+    "schema_version":  1,
+    "session_summary":  "Broad bull channel but mostly trading range: morning wedge bottom, HHDT top into a parabolic washout with HLDB, then small-pullback buying to a nested wedge top that faded. No time axis visible so all times are null."
+}

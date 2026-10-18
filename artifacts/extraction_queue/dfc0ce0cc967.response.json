@@ -1,82 +1,110 @@
 {
-  "schema_version": 1,
-  "image_id": "dfc0ce0cc967",
-  "date": "2020-07-07",
-  "day_type": "trend_reversal_to_bear",
-  "day_type_confidence": 0.7,
-  "session_summary": "Blue title bar: 'Bear Trend Reversal' (filename phrases it 'consective parabolic wedge tops and bear trend reversal'; title-map had called this reversal_day - the on-chart title is more precise: reversal INTO a bear trend, so trend_reversal_to_bear). Reading: opening recovery from 3145 lows, consecutive parabolic bull wedges (magenta dotted lines) lifting to 3171 by 08:15, breakdown from 08:35, midday retest range 3157-3166 with magenta drawn wedge, 'Wedge DT' at 3165.5 (10:10-10:45) that broke down, sell climax + DB at the 3157 green dotted support (10:35) whose bounce failed as a second leg, then bear trend to 3142 by 12:40 and a final chop 3137-3140. Axis prints 07:00-13:00 with day markers 7/7 -> 7/8 (offset-style, not plain PT); 2020-vintage Covid-era low, signal boxes only, no bar numbers.",
-  "events": [
-    {
-      "label": "wedge",
-      "raw_label": "Consecutive parabolic wedges",
-      "direction": "bear",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3171.0,
-      "modifiers": ["parabolic", "consecutive"],
-      "outcome": "success",
-      "outcome_reason": "after the second parabolic wedge top, price broke down from 08:35",
-      "confidence": 0.8,
-      "evidence": "pink 'Consecutive parabolic wedges' text over magenta dotted rising lines at the two tops"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge",
-      "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3165.5,
-      "modifiers": ["top"],
-      "outcome": "success",
-      "outcome_reason": "wedge top broke down into the 11:30 bear leg",
-      "confidence": 0.7,
-      "evidence": "pink 'Wedge' text with magenta dotted lines at the 10:10-10:45 retest"
-    },
-    {
-      "label": "double_top",
-      "raw_label": "DT",
-      "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3166.5,
-      "outcome": "success",
-      "outcome_reason": "twin retest peaks under the red dotted line failed and sold off",
-      "confidence": 0.7,
-      "evidence": "red 'DT' text and red dotted line across the 10:10-10:40 peaks"
-    },
-    {
-      "label": "climax",
-      "raw_label": "S climax",
-      "direction": "bear",
-      "start_time": {"time": "10:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3157.0,
-      "outcome": "partial",
-      "outcome_reason": "one bounce leg to 3165 followed, but the second leg failed at the wedge DT",
-      "confidence": 0.75,
-      "evidence": "pink 'S climax' text over the 3157 flush at the green dotted support line"
-    },
-    {
-      "label": "double_bottom",
-      "raw_label": "DB",
-      "direction": "bull",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3157.0,
-      "outcome": "fail",
-      "outcome_reason": "third push broke below 3157 after 11:20; the double bottom reversed nothing",
-      "confidence": 0.7,
-      "evidence": "green 'DB' text at the 3157 low with green signal boxes"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "dfc0ce0cc967",
+    "date":  "2020-07-07",
+    "day_type":  "trend_reversal_to_bear",
+    "day_type_confidence":  0.7,
+    "session_summary":  "Blue title bar: \u0027Bear Trend Reversal\u0027 (filename phrases it \u0027consective parabolic wedge tops and bear trend reversal\u0027; title-map had called this reversal_day - the on-chart title is more precise: reversal INTO a bear trend, so trend_reversal_to_bear). Reading: opening recovery from 3145 lows, consecutive parabolic bull wedges (magenta dotted lines) lifting to 3171 by 08:15, breakdown from 08:35, midday retest range 3157-3166 with magenta drawn wedge, \u0027Wedge DT\u0027 at 3165.5 (10:10-10:45) that broke down, sell climax + DB at the 3157 green dotted support (10:35) whose bounce failed as a second leg, then bear trend to 3142 by 12:40 and a final chop 3137-3140. Axis prints 07:00-13:00 with day markers 7/7 -\u003e 7/8 (offset-style, not plain PT); 2020-vintage Covid-era low, signal boxes only, no bar numbers.",
+    "events":  [
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Consecutive parabolic wedges",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3171.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "after the second parabolic wedge top, price broke down from 08:35",
+                       "confidence":  0.8,
+                       "evidence":  "pink \u0027Consecutive parabolic wedges\u0027 text over magenta dotted rising lines at the two tops"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3165.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge top broke down into the 11:30 bear leg",
+                       "confidence":  0.7,
+                       "evidence":  "pink \u0027Wedge\u0027 text with magenta dotted lines at the 10:10-10:45 retest"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "DT",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3166.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "twin retest peaks under the red dotted line failed and sold off",
+                       "confidence":  0.7,
+                       "evidence":  "red \u0027DT\u0027 text and red dotted line across the 10:10-10:40 peaks"
+                   },
+                   {
+                       "label":  "climax",
+                       "raw_label":  "S climax",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3157.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "one bounce leg to 3165 followed, but the second leg failed at the wedge DT",
+                       "confidence":  0.75,
+                       "evidence":  "pink \u0027S climax\u0027 text over the 3157 flush at the green dotted support line"
+                   },
+                   {
+                       "label":  "double_bottom",
+                       "raw_label":  "DB",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3157.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "third push broke below 3157 after 11:20; the double bottom reversed nothing",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027DB\u0027 text at the 3157 low with green signal boxes"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

@@ -1,109 +1,148 @@
 {
-  "schema_version": 1,
-  "image_id": "efbb24194a35",
-  "date": "2024-06-28",
-  "day_type": "small_pullback_bear_trend",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'Buy Climax, Then Small Pullback Bear Trend' (6/28, 'Jul' edge marker). Reading: a 9-bar bull breakout into the open topped with an exhaustive buy climax at 5588 that failed (red dotted 5583.5 LH), the bear breakout from the climax sold to 5565 and then trended down all day with shallow pullbacks ('Small pullback bear trend' printed mid-chart); a wedge bottom at the 10:00 lows failed at the 10:35 retest, and the late leg produced an exhaustive sell climax / sell vacuum down to the exact measured move target (orange dotted 5509.5) derived from the height of the opening buy climax, followed by tight chop into the close ~5530.",
-  "events": [
-    {
-      "label": "breakout",
-      "raw_label": "9-bar bull breakout",
-      "direction": "bull",
-      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5580.0,
-      "modifiers": ["buy"],
-      "outcome": "partial",
-      "outcome_reason": "breakout ran nine bars to the climax top and then failed as a bull breakout",
-      "confidence": 0.7,
-      "evidence": "orange note line 1 'Exhaustive buy climax at top of 9-bar bull breakout' with the shaded breakout box"
-    },
-    {
-      "label": "exhaustive_climax",
-      "raw_label": "Exhaustive buy climax",
-      "direction": "bull",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5588.0,
-      "outcome": "success",
-      "outcome_reason": "exhaustive buy climax at the top of the breakout reversed the day down to 5560 within minutes",
-      "confidence": 0.75,
-      "evidence": "orange arrow to the 07:15-07:30 shaded climax bars"
-    },
-    {
-      "label": "failed_breakout",
-      "raw_label": "Failed bull breakout",
-      "direction": "bear",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5585.0,
-      "outcome": "success",
-      "outcome_reason": "the 07:35-08:08 retest under the red dotted line held as a lower high and the sell-off followed",
-      "confidence": 0.75,
-      "evidence": "red 'Failed bull breakout' text with arrow to the red dotted LH line"
-    },
-    {
-      "label": "breakout",
-      "raw_label": "Bear breakout — Reversal down from buy climax",
-      "direction": "bear",
-      "start_time": {"time": "08:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:35", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5560.0,
-      "modifiers": ["sell"],
-      "outcome": "success",
-      "outcome_reason": "reversal down from the buy climax opened the all-day bear trend",
-      "confidence": 0.75,
-      "evidence": "orange 'Bear breakout / Reversal down from buy climax' note at the shaded 08:05-08:20 red bars"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Failed wedge bottom",
-      "direction": "bull",
-      "start_time": {"time": "09:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5538.0,
-      "modifiers": ["bottom"],
-      "outcome": "fail",
-      "outcome_reason": "wedge bottom at the 09:55/10:10 lows (green arrows) failed at the 10:35 orange-arrow retest and the bear trend continued",
-      "confidence": 0.7,
-      "evidence": "orange 'Failed wedge bottom' note over the red boxed 10:35-10:45 bars"
-    },
-    {
-      "label": "exhaustive_climax",
-      "raw_label": "Exhaustive sell climax — Sell vacuum down to measured move",
-      "direction": "bear",
-      "start_time": {"time": "12:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5510.0,
-      "outcome": "success",
-      "outcome_reason": "sell vacuum reached the exact measured-move target at 5509.5",
-      "confidence": 0.75,
-      "evidence": "red 'Exhaustive sell climax / Sell vacuum down to measured move' text with arrow at the 12:30 sell bars"
-    },
-    {
-      "label": "measured_move",
-      "raw_label": "Exact measured move down based on height of buy climax on the open",
-      "direction": "bear",
-      "start_time": {"time": "12:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 5509.5,
-      "outcome": "success",
-      "outcome_reason": "orange dotted target line at 5509.5 was touched by the climax low",
-      "confidence": 0.7,
-      "evidence": "orange measured-move note with dotted target line under the 12:35-13:00 lows"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "efbb24194a35",
+    "date":  "2024-06-28",
+    "day_type":  "small_pullback_bear_trend",
+    "day_type_confidence":  0.8,
+    "session_summary":  "Blue title bar: \u0027Buy Climax, Then Small Pullback Bear Trend\u0027 (6/28, \u0027Jul\u0027 edge marker). Reading: a 9-bar bull breakout into the open topped with an exhaustive buy climax at 5588 that failed (red dotted 5583.5 LH), the bear breakout from the climax sold to 5565 and then trended down all day with shallow pullbacks (\u0027Small pullback bear trend\u0027 printed mid-chart); a wedge bottom at the 10:00 lows failed at the 10:35 retest, and the late leg produced an exhaustive sell climax / sell vacuum down to the exact measured move target (orange dotted 5509.5) derived from the height of the opening buy climax, followed by tight chop into the close ~5530.",
+    "events":  [
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "9-bar bull breakout",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5580.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "breakout ran nine bars to the climax top and then failed as a bull breakout",
+                       "confidence":  0.7,
+                       "evidence":  "orange note line 1 \u0027Exhaustive buy climax at top of 9-bar bull breakout\u0027 with the shaded breakout box"
+                   },
+                   {
+                       "label":  "exhaustive_climax",
+                       "raw_label":  "Exhaustive buy climax",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5588.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "exhaustive buy climax at the top of the breakout reversed the day down to 5560 within minutes",
+                       "confidence":  0.75,
+                       "evidence":  "orange arrow to the 07:15-07:30 shaded climax bars"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Failed bull breakout",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5585.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "the 07:35-08:08 retest under the red dotted line held as a lower high and the sell-off followed",
+                       "confidence":  0.75,
+                       "evidence":  "red \u0027Failed bull breakout\u0027 text with arrow to the red dotted LH line"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "Bear breakout â€” Reversal down from buy climax",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5560.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "reversal down from the buy climax opened the all-day bear trend",
+                       "confidence":  0.75,
+                       "evidence":  "orange \u0027Bear breakout / Reversal down from buy climax\u0027 note at the shaded 08:05-08:20 red bars"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Failed wedge bottom",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5538.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "wedge bottom at the 09:55/10:10 lows (green arrows) failed at the 10:35 orange-arrow retest and the bear trend continued",
+                       "confidence":  0.7,
+                       "evidence":  "orange \u0027Failed wedge bottom\u0027 note over the red boxed 10:35-10:45 bars"
+                   },
+                   {
+                       "label":  "exhaustive_climax",
+                       "raw_label":  "Exhaustive sell climax â€” Sell vacuum down to measured move",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "12:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5510.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "sell vacuum reached the exact measured-move target at 5509.5",
+                       "confidence":  0.75,
+                       "evidence":  "red \u0027Exhaustive sell climax / Sell vacuum down to measured move\u0027 text with arrow at the 12:30 sell bars"
+                   },
+                   {
+                       "label":  "measured_move",
+                       "raw_label":  "Exact measured move down based on height of buy climax on the open",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "12:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5509.5,
+                       "outcome":  "success",
+                       "outcome_reason":  "orange dotted target line at 5509.5 was touched by the climax low",
+                       "confidence":  0.7,
+                       "evidence":  "orange measured-move note with dotted target line under the 12:35-13:00 lows"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

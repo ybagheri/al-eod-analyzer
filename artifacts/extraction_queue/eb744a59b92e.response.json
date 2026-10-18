@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "eb744a59b92e",
+  "date": "2024-11-10",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Gap Up to Low 2 Then Upper and Lower Trading Ranges'. Overnight gap up to a low 2 high at 6040 forms double tops; a failed double bottom and triangle breakout sell down through consecutive sell climaxes to the opening-range measured move low at 6013, then a tight limit-order trading range reverses the close back up to 6033. Chart is on a 13 hr offset (ET+13) so printed times map to PT by subtracting 13 hours.",
+  "events": [
+    {
+      "label": "double_top",
+      "raw_label": "Micro Double Top then Double Top (23:30)",
+      "direction": "bear",
+      "start_time": {"time": "23:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6040.0,
+      "outcome": "success",
+      "outcome_reason": "micro double top then double top at 6040 sold the market into overnight highs to lows rotation",
+      "confidence": 0.6,
+      "evidence": "red dotted double top lines at 6040 right corner with red arrows below"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double Top (12 Nov 00:30)",
+      "direction": "bear",
+      "start_time": {"time": "00:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6042.0,
+      "outcome": "success",
+      "outcome_reason": "double top at 6042 with blue dotted trendline end completed the upper range reversal",
+      "confidence": 0.65,
+      "evidence": "red dotted line at 6042 red text and arrows down through 01:15"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "High 2 / Double Bottom but failed (00:00)",
+      "direction": "bull",
+      "start_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6030.0,
+      "outcome": "failure",
+      "outcome_reason": "double bottom attempt at 6030 failed and only bought a small bounce back to 6035",
+      "confidence": 0.55,
+      "evidence": "green dotted bottom line at 6030 under bar 16 with green arrows"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Triangle breakout (01:30)",
+      "direction": "bear",
+      "start_time": {"time": "01:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6035.0,
+      "outcome": "success",
+      "outcome_reason": "breakout from the triangle went down and extended the selloff to the 6013 low",
+      "confidence": 0.6,
+      "evidence": "blue arrow down into the 01:35 tall bear bar inside the shaded tightening triangle"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Consecutive sell climaxes with measured move from opening range",
+      "direction": "bear",
+      "start_time": {"time": "02:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6013.0,
+      "outcome": "success",
+      "outcome_reason": "consecutive sell climaxes reached the measured move target at 6013",
+      "confidence": 0.6,
+      "evidence": "orange dotted MM line down to bar 48 at 6013 with big climax sell bars"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Tight trading range reversal trades with limit orders no stop orders / Low 2",
+      "direction": "bull",
+      "start_time": {"time": "03:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "05:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6033.0,
+      "outcome": "success",
+      "outcome_reason": "tight trading range with limit order fills reversed the market up to 6033 into the close",
+      "confidence": 0.6,
+      "evidence": "blue shaded tight range 03:05-04:55 with blue text and final green dot bull bars to 6033"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

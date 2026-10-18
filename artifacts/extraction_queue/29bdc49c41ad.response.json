@@ -1,147 +1,205 @@
 {
-  "schema_version": 1,
-  "image_id": "29bdc49c41ad",
-  "date": "2022-10-19",
-  "day_type": "trending_trading_range",
-  "day_type_confidence": 0.75,
-  "session_summary": "Blue title bar reads 'HH DT, Then Trending Trading Range Day' (overrides the filename phrasing, which names the opening traps instead). Reading: opening bear trap at 3700 area rallies to a 3740 buy climax / higher-high double top (~07:25), then lower-high double top 3730 (~08:30), bear wedge descended under magenta dotted lines and broke down at 10:00 to 3675 (bar 44 midday reversal), followed by a bull trend of higher lows to a 3720 test of the open into the close. Two long opposite-direction swings plus interlocking ranges = trending trading range rather than a one-direction trend. Axis is offset-style with day rolls 10/19 -> 10/20 while hours print 07:00-13:00, so clock labels are shifted relative to pure PT 06:30-13:00; times below are read as printed. On-chart canonical labels: HH DT, LH DT, ii, MM based on open, Bar 44 Midday Reversal, Test of open, Breakout below Wedge, Bear Trap, Buy Climax.",
-  "events": [
-    {
-      "label": "failed_breakout",
-      "raw_label": "Bear Trap",
-      "direction": "bull",
-      "start_time": {"time": "06:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "06:55", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3700.0,
-      "outcome": "success",
-      "outcome_reason": "trapped bears followed by a rally from 3700 to 3740",
-      "confidence": 0.8,
-      "evidence": "orange 'Bear Trap' text under peach box on the opening bars"
-    },
-    {
-      "label": "climax",
-      "raw_label": "Buy Climax",
-      "direction": "bull",
-      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3740.0,
-      "outcome": "success",
-      "outcome_reason": "broad correction from 3740 to 3675 followed over the next 2.5 hours",
-      "confidence": 0.75,
-      "evidence": "green 'Buy Climax' text above the 3740 spike top"
-    },
-    {
-      "label": "double_top",
-      "raw_label": "HH DT",
-      "direction": "bear",
-      "start_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3740.0,
-      "modifiers": ["HH"],
-      "outcome": "success",
-      "outcome_reason": "lower highs then a break below the EMA led the bear swing",
-      "confidence": 0.8,
-      "evidence": "red 'HH DT' text with red dotted line at the 3740 peaks"
-    },
-    {
-      "label": "lower_high_double_top",
-      "raw_label": "LH DT",
-      "direction": "bear",
-      "start_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:40", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3730.0,
-      "outcome": "success",
-      "outcome_reason": "sell-off to 3685 by 09:30 followed",
-      "confidence": 0.8,
-      "evidence": "red 'LH DT' text with red dotted line at the 3730 twin peaks"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Breakout below Wedge",
-      "direction": "bear",
-      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "breakout below the wedge accelerated the down move",
-      "confidence": 0.7,
-      "evidence": "magenta dotted descending wedge lines from the 07:30 top to the 09:45 low"
-    },
-    {
-      "label": "trend_line_break",
-      "raw_label": "Breakout below Wedge",
-      "direction": "bear",
-      "start_time": {"time": "09:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3690.0,
-      "outcome": "success",
-      "outcome_reason": "extension down to 3675 by 10:15",
-      "confidence": 0.8,
-      "evidence": "orange 'Breakout below Wedge' note with arrow at the 09:45-10:00 break"
-    },
-    {
-      "label": "measured_move",
-      "raw_label": "MM based on open",
-      "direction": "bear",
-      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3680.0,
-      "outcome": "success",
-      "outcome_reason": "swing low reached the 3680 projection area (slight overshoot to 3675)",
-      "confidence": 0.7,
-      "evidence": "blue 'MM based on open' text with blue dotted line at 3680"
-    },
-    {
-      "label": "inside_inside",
-      "raw_label": "ii",
-      "direction": "neutral",
-      "start_time": {"time": "09:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3700.0,
-      "outcome": "unclear",
-      "outcome_reason": "ii setup printed hours before the actual bar-44 reversal leg; role ambiguous",
-      "confidence": 0.6,
-      "evidence": "blue 'ii' text with orange arrow pointing at the 10:00 inside bars"
-    },
-    {
-      "label": "midday_reversal",
-      "raw_label": "Bar 44 Midday Reversal",
-      "direction": "bull",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 44,
-      "price_hint": 3675.0,
-      "outcome": "success",
-      "outcome_reason": "bull trend of higher lows to the test of open followed",
-      "confidence": 0.85,
-      "evidence": "green 'Bar 44 Midday Reversal' text under the 3675 swing low and green boxes"
-    },
-    {
-      "label": null,
-      "raw_label": "Test of open",
-      "direction": "bull",
-      "start_time": {"time": "12:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 3711.0,
-      "outcome": "unclear",
-      "outcome_reason": "test happened at the close; result beyond the day is not visible",
-      "confidence": 0.65,
-      "evidence": "blue 'Test of open' text over the late rally into the horizontal dotted open line"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "29bdc49c41ad",
+    "date":  "2022-10-19",
+    "day_type":  "trending_trading_range",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar reads \u0027HH DT, Then Trending Trading Range Day\u0027 (overrides the filename phrasing, which names the opening traps instead). Reading: opening bear trap at 3700 area rallies to a 3740 buy climax / higher-high double top (~07:25), then lower-high double top 3730 (~08:30), bear wedge descended under magenta dotted lines and broke down at 10:00 to 3675 (bar 44 midday reversal), followed by a bull trend of higher lows to a 3720 test of the open into the close. Two long opposite-direction swings plus interlocking ranges = trending trading range rather than a one-direction trend. Axis is offset-style with day rolls 10/19 -\u003e 10/20 while hours print 07:00-13:00, so clock labels are shifted relative to pure PT 06:30-13:00; times below are read as printed. On-chart canonical labels: HH DT, LH DT, ii, MM based on open, Bar 44 Midday Reversal, Test of open, Breakout below Wedge, Bear Trap, Buy Climax.",
+    "events":  [
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Bear Trap",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "06:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "06:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3700.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "trapped bears followed by a rally from 3700 to 3740",
+                       "confidence":  0.8,
+                       "evidence":  "orange \u0027Bear Trap\u0027 text under peach box on the opening bars"
+                   },
+                   {
+                       "label":  "climax",
+                       "raw_label":  "Buy Climax",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3740.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "broad correction from 3740 to 3675 followed over the next 2.5 hours",
+                       "confidence":  0.75,
+                       "evidence":  "green \u0027Buy Climax\u0027 text above the 3740 spike top"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "HH DT",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3740.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "lower highs then a break below the EMA led the bear swing",
+                       "confidence":  0.8,
+                       "evidence":  "red \u0027HH DT\u0027 text with red dotted line at the 3740 peaks"
+                   },
+                   {
+                       "label":  "lower_high_double_top",
+                       "raw_label":  "LH DT",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3730.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "sell-off to 3685 by 09:30 followed",
+                       "confidence":  0.8,
+                       "evidence":  "red \u0027LH DT\u0027 text with red dotted line at the 3730 twin peaks"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Breakout below Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  null,
+                       "outcome":  "success",
+                       "outcome_reason":  "breakout below the wedge accelerated the down move",
+                       "confidence":  0.7,
+                       "evidence":  "magenta dotted descending wedge lines from the 07:30 top to the 09:45 low"
+                   },
+                   {
+                       "label":  "trend_line_break",
+                       "raw_label":  "Breakout below Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3690.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "extension down to 3675 by 10:15",
+                       "confidence":  0.8,
+                       "evidence":  "orange \u0027Breakout below Wedge\u0027 note with arrow at the 09:45-10:00 break"
+                   },
+                   {
+                       "label":  "measured_move",
+                       "raw_label":  "MM based on open",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3680.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "swing low reached the 3680 projection area (slight overshoot to 3675)",
+                       "confidence":  0.7,
+                       "evidence":  "blue \u0027MM based on open\u0027 text with blue dotted line at 3680"
+                   },
+                   {
+                       "label":  "inside_inside",
+                       "raw_label":  "ii",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "09:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3700.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "ii setup printed hours before the actual bar-44 reversal leg; role ambiguous",
+                       "confidence":  0.6,
+                       "evidence":  "blue \u0027ii\u0027 text with orange arrow pointing at the 10:00 inside bars"
+                   },
+                   {
+                       "label":  "midday_reversal",
+                       "raw_label":  "Bar 44 Midday Reversal",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  44,
+                       "price_hint":  3675.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bull trend of higher lows to the test of open followed",
+                       "confidence":  0.85,
+                       "evidence":  "green \u0027Bar 44 Midday Reversal\u0027 text under the 3675 swing low and green boxes"
+                   },
+                   {
+                       "label":  null,
+                       "raw_label":  "Test of open",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  3711.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "test happened at the close; result beyond the day is not visible",
+                       "confidence":  0.65,
+                       "evidence":  "blue \u0027Test of open\u0027 text over the late rally into the horizontal dotted open line"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

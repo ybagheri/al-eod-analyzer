@@ -1,108 +1,148 @@
 {
-  "schema_version": 1,
-  "image_id": "9129b6777564",
-  "date": "2020-04-02",
-  "day_type": "bull_trend_resumption",
-  "day_type_confidence": 0.75,
-  "session_summary": "Blue title bar: 'Bull Trend Resumption' (filename: 2nd-leg bull trap and then bull trend resumption; agreement). Spans 4/1 13:00 through 4/2 13:40 (plain-PT style with day-roll edge markers). Reading: DB/HL MTR at the 4/1 2436 low turned the tape up, the 2nd leg down at 4/2 07:00 to 2440 was a bear trap, a bull major surprise breakout swept the open to 2531, an Exp Tri formed in the 07:40-08:00 push, a pullback to 1 (2485) preceded the LH MTR down at 2515 (red line), and the bear trend into the 2 wedge low (2460) grew a Big High 2 pullback in bull trend that resumed the bull trend into the 4/2 close at ~2525.",
-  "events": [
-    {
-      "label": "higher_low_double_bottom",
-      "raw_label": "DB HL MTR",
-      "direction": "bull",
-      "start_time": {"time": "13:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 2436.0,
-      "outcome": "success",
-      "outcome_reason": "double-bottom/higher-low major trend reversal at the 4/1 close initiated the bull phase",
-      "confidence": 0.7,
-      "evidence": "blue 'DB HL MTR' text with blue dotted low markers on the left-edge 4/1 bars"
-    },
-    {
-      "label": "failed_breakout",
-      "raw_label": "2nd Leg Bear trap",
-      "direction": "bull",
-      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 2440.0,
-      "outcome": "success",
-      "outcome_reason": "the 2nd leg down was a bear trap that launched the bull run",
-      "confidence": 0.7,
-      "evidence": "red '2nd Leg Bear trap' text over the 07:00-07:15 lows"
-    },
-    {
-      "label": "major_bull_surprise",
-      "raw_label": "Bull Major Surprise BO",
-      "direction": "bull",
-      "start_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 2490.0,
-      "outcome": "success",
-      "outcome_reason": "major surprise breakout above the open drove the spike toward 2531",
-      "confidence": 0.75,
-      "evidence": "orange 'Bull Major Surprise BO' text over the 07:25-07:45 breakout bars"
-    },
-    {
-      "label": "triangle",
-      "raw_label": "Exp Tri",
-      "direction": "neutral",
-      "start_time": {"time": "07:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 2490.0,
-      "modifiers": ["expanding"],
-      "outcome": "unclear",
-      "outcome_reason": "expanding triangle in the early push foreshadowed the 1-leg pullback",
-      "confidence": 0.6,
-      "evidence": "blue 'Exp Tri' text beside the green shaded 07:40-08:05 box"
-    },
-    {
-      "label": "major_trend_reversal",
-      "raw_label": "LH MTR",
-      "direction": "bear",
-      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 2516.0,
-      "outcome": "success",
-      "outcome_reason": "lower-high major trend reversal under the red line began the mid-day bear leg to 2460",
-      "confidence": 0.7,
-      "evidence": "orange 'LH MTR' text with red horizontal line at the 09:30 lower high"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge",
-      "direction": "bull",
-      "start_time": {"time": "11:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 2,
-      "price_hint": 2460.0,
-      "modifiers": ["bottom"],
-      "outcome": "success",
-      "outcome_reason": "wedge low (2) ended the bear leg and started the bull trend resumption",
-      "confidence": 0.75,
-      "evidence": "pink 'Wedge' text below the 11:35 low marked 2"
-    },
-    {
-      "label": "h2",
-      "raw_label": "Big High 2 PB in bull trend",
-      "direction": "bull",
-      "start_time": {"time": "11:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 2465.0,
-      "outcome": "success",
-      "outcome_reason": "big high 2 pullback in the bull trend led to the afternoon resumption rally to 2525",
-      "confidence": 0.7,
-      "evidence": "blue 'Big High 2 PB in bull trend' text under the 11:45-12:00 bars"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "9129b6777564",
+    "date":  "2020-04-02",
+    "day_type":  "bull_trend_resumption",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Bull Trend Resumption\u0027 (filename: 2nd-leg bull trap and then bull trend resumption; agreement). Spans 4/1 13:00 through 4/2 13:40 (plain-PT style with day-roll edge markers). Reading: DB/HL MTR at the 4/1 2436 low turned the tape up, the 2nd leg down at 4/2 07:00 to 2440 was a bear trap, a bull major surprise breakout swept the open to 2531, an Exp Tri formed in the 07:40-08:00 push, a pullback to 1 (2485) preceded the LH MTR down at 2515 (red line), and the bear trend into the 2 wedge low (2460) grew a Big High 2 pullback in bull trend that resumed the bull trend into the 4/2 close at ~2525.",
+    "events":  [
+                   {
+                       "label":  "higher_low_double_bottom",
+                       "raw_label":  "DB HL MTR",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "13:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2436.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "double-bottom/higher-low major trend reversal at the 4/1 close initiated the bull phase",
+                       "confidence":  0.7,
+                       "evidence":  "blue \u0027DB HL MTR\u0027 text with blue dotted low markers on the left-edge 4/1 bars"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "2nd Leg Bear trap",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2440.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "the 2nd leg down was a bear trap that launched the bull run",
+                       "confidence":  0.7,
+                       "evidence":  "red \u00272nd Leg Bear trap\u0027 text over the 07:00-07:15 lows"
+                   },
+                   {
+                       "label":  "major_bull_surprise",
+                       "raw_label":  "Bull Major Surprise BO",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2490.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "major surprise breakout above the open drove the spike toward 2531",
+                       "confidence":  0.75,
+                       "evidence":  "orange \u0027Bull Major Surprise BO\u0027 text over the 07:25-07:45 breakout bars"
+                   },
+                   {
+                       "label":  "triangle",
+                       "raw_label":  "Exp Tri",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "07:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2490.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "expanding triangle in the early push foreshadowed the 1-leg pullback",
+                       "confidence":  0.6,
+                       "evidence":  "blue \u0027Exp Tri\u0027 text beside the green shaded 07:40-08:05 box"
+                   },
+                   {
+                       "label":  "major_trend_reversal",
+                       "raw_label":  "LH MTR",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2516.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "lower-high major trend reversal under the red line began the mid-day bear leg to 2460",
+                       "confidence":  0.7,
+                       "evidence":  "orange \u0027LH MTR\u0027 text with red horizontal line at the 09:30 lower high"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  2,
+                       "price_hint":  2460.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge low (2) ended the bear leg and started the bull trend resumption",
+                       "confidence":  0.75,
+                       "evidence":  "pink \u0027Wedge\u0027 text below the 11:35 low marked 2"
+                   },
+                   {
+                       "label":  "h2",
+                       "raw_label":  "Big High 2 PB in bull trend",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  2465.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "big high 2 pullback in the bull trend led to the afternoon resumption rally to 2525",
+                       "confidence":  0.7,
+                       "evidence":  "blue \u0027Big High 2 PB in bull trend\u0027 text under the 11:45-12:00 bars"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

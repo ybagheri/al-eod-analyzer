@@ -1,134 +1,186 @@
 {
-  "schema_version": 1,
-  "image_id": "e8ce92071fd7",
-  "date": "2022-05-02",
-  "day_type": "small_pullback_bear_trend",
-  "day_type_confidence": 0.6,
-  "session_summary": "Blue title bar: 'Small Pullback Bear Trend, Then Bull Trend Reversal'; filename extends it with the '2nd leg bull trap', 'small pullback bear trend' and 'late bull trend reversal after Final Bear Flag' phrasing. Reading: open 4135, early LL DB / HL DB support at 4099-4102 (blue/green notes, green dotted lines) lifting a parabolic bull wedge spike to 4160 that turned into a 2nd-leg bull trap; sell-off into an HH-DT-at-EMA / wedge retest at 4132 (red dotted line spans the morning), stacked LL DB / HL MTR signals at 4100 (both failed), then a small-pullback bear trend of shallow bear flags down to 4060 with drawn magenta wedges, an early-afternoon 'Final Bear Flag' range at 4062-4072 with a 'Wedge' bottom, and a strong late bull trend reversal to 4155 into the close. Axis prints 13:00 sideband then May 06:45 -> 13:00 with a 5/3 edge marker (offset-style again).",
-  "events": [
-    {
-      "label": "wedge",
-      "raw_label": "Parabolic Wedge",
-      "direction": "bear",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:55", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4160.0,
-      "modifiers": ["parabolic"],
-      "outcome": "success",
-      "outcome_reason": "spike topped out and the 2nd-leg bull trap followed",
-      "confidence": 0.8,
-      "evidence": "pink 'Parabolic Wedge' text with pink dotted rising lines into the 4160 spike"
-    },
-    {
-      "label": "failed_breakout",
-      "raw_label": "2nd Leg Bull Trap",
-      "direction": "bear",
-      "start_time": {"time": "07:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4160.0,
-      "outcome": "success",
-      "outcome_reason": "crash from 4160 toward 4092 followed",
-      "confidence": 0.75,
-      "evidence": "green '2nd Leg Bull Trap' text over the beige-boxed spike top"
-    },
-    {
-      "label": "higher_low_double_bottom",
-      "raw_label": "HL DB",
-      "direction": "bull",
-      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4102.0,
-      "outcome": "success",
-      "outcome_reason": "double bottom launched the parabolic rally to 4160",
-      "confidence": 0.65,
-      "evidence": "green 'HL DB' text with green dotted lines under the 4102 lows"
-    },
-    {
-      "label": "lower_low_double_bottom",
-      "raw_label": "LL DB",
-      "direction": "bull",
-      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4099.0,
-      "outcome": "unclear",
-      "outcome_reason": "opening-support reading; formationaturity superseded by the midday stack",
-      "confidence": 0.5,
-      "evidence": "blue 'LL DB' text beside the early 4099 low"
-    },
-    {
-      "label": "double_top",
-      "raw_label": "HH DT at EMA",
-      "direction": "bear",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4132.0,
-      "modifiers": ["HH", "at_ema"],
-      "outcome": "success",
-      "outcome_reason": "double top at the falling EMA led the 09:30 bear trend start",
-      "confidence": 0.6,
-      "evidence": "red 'HH DT at EMA' text with red dotted line at 4132 on the late-morning retest"
-    },
-    {
-      "label": "lower_low_double_bottom",
-      "raw_label": "LL DB",
-      "direction": "bull",
-      "start_time": {"time": "08:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:10", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4100.0,
-      "outcome": "fail",
-      "outcome_reason": "pushes broke below and the bear leg resumed to 4060",
-      "confidence": 0.55,
-      "evidence": "green 'LL DB' note over the stacked green/red boxes at 4100"
-    },
-    {
-      "label": "major_trend_reversal",
-      "raw_label": "HL MTR",
-      "direction": "bull",
-      "start_time": {"time": "09:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:20", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4102.0,
-      "outcome": "fail",
-      "outcome_reason": "reversal attempt failed; small-pullback bear trend continued to 4060",
-      "confidence": 0.55,
-      "evidence": "green 'HL MTR' note at the 09:10 higher-low signal"
-    },
-    {
-      "label": "final_flag",
-      "raw_label": "Final Bear Flag",
-      "direction": "bull",
-      "start_time": {"time": "12:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:25", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4062.0,
-      "outcome": "success",
-      "outcome_reason": "flag broke up and the late bull trend carried to 4155",
-      "confidence": 0.8,
-      "evidence": "orange 'Final Bear Flag' text under the beige-boxed 12:00-12:15 range"
-    },
-    {
-      "label": "major_trend_reversal",
-      "raw_label": "bull trend reversal (title bar)",
-      "direction": "bull",
-      "start_time": {"time": "12:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:50", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": 4072.0,
-      "outcome": "success",
-      "outcome_reason": "bull trend to 4155 into the close followed",
-      "confidence": 0.65,
-      "evidence": "blue title bar 'Then Bull Trend Reversal' plus the strong bull leg after the flag break"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "e8ce92071fd7",
+    "date":  "2022-05-02",
+    "day_type":  "small_pullback_bear_trend",
+    "day_type_confidence":  0.6,
+    "session_summary":  "Blue title bar: \u0027Small Pullback Bear Trend, Then Bull Trend Reversal\u0027; filename extends it with the \u00272nd leg bull trap\u0027, \u0027small pullback bear trend\u0027 and \u0027late bull trend reversal after Final Bear Flag\u0027 phrasing. Reading: open 4135, early LL DB / HL DB support at 4099-4102 (blue/green notes, green dotted lines) lifting a parabolic bull wedge spike to 4160 that turned into a 2nd-leg bull trap; sell-off into an HH-DT-at-EMA / wedge retest at 4132 (red dotted line spans the morning), stacked LL DB / HL MTR signals at 4100 (both failed), then a small-pullback bear trend of shallow bear flags down to 4060 with drawn magenta wedges, an early-afternoon \u0027Final Bear Flag\u0027 range at 4062-4072 with a \u0027Wedge\u0027 bottom, and a strong late bull trend reversal to 4155 into the close. Axis prints 13:00 sideband then May 06:45 -\u003e 13:00 with a 5/3 edge marker (offset-style again).",
+    "events":  [
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Parabolic Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4160.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "spike topped out and the 2nd-leg bull trap followed",
+                       "confidence":  0.8,
+                       "evidence":  "pink \u0027Parabolic Wedge\u0027 text with pink dotted rising lines into the 4160 spike"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "2nd Leg Bull Trap",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4160.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "crash from 4160 toward 4092 followed",
+                       "confidence":  0.75,
+                       "evidence":  "green \u00272nd Leg Bull Trap\u0027 text over the beige-boxed spike top"
+                   },
+                   {
+                       "label":  "higher_low_double_bottom",
+                       "raw_label":  "HL DB",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4102.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "double bottom launched the parabolic rally to 4160",
+                       "confidence":  0.65,
+                       "evidence":  "green \u0027HL DB\u0027 text with green dotted lines under the 4102 lows"
+                   },
+                   {
+                       "label":  "lower_low_double_bottom",
+                       "raw_label":  "LL DB",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4099.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "opening-support reading; formationaturity superseded by the midday stack",
+                       "confidence":  0.5,
+                       "evidence":  "blue \u0027LL DB\u0027 text beside the early 4099 low"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "HH DT at EMA",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4132.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "double top at the falling EMA led the 09:30 bear trend start",
+                       "confidence":  0.6,
+                       "evidence":  "red \u0027HH DT at EMA\u0027 text with red dotted line at 4132 on the late-morning retest"
+                   },
+                   {
+                       "label":  "lower_low_double_bottom",
+                       "raw_label":  "LL DB",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "08:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4100.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "pushes broke below and the bear leg resumed to 4060",
+                       "confidence":  0.55,
+                       "evidence":  "green \u0027LL DB\u0027 note over the stacked green/red boxes at 4100"
+                   },
+                   {
+                       "label":  "major_trend_reversal",
+                       "raw_label":  "HL MTR",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4102.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "reversal attempt failed; small-pullback bear trend continued to 4060",
+                       "confidence":  0.55,
+                       "evidence":  "green \u0027HL MTR\u0027 note at the 09:10 higher-low signal"
+                   },
+                   {
+                       "label":  "final_flag",
+                       "raw_label":  "Final Bear Flag",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4062.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "flag broke up and the late bull trend carried to 4155",
+                       "confidence":  0.8,
+                       "evidence":  "orange \u0027Final Bear Flag\u0027 text under the beige-boxed 12:00-12:15 range"
+                   },
+                   {
+                       "label":  "major_trend_reversal",
+                       "raw_label":  "bull trend reversal (title bar)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "12:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  4072.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bull trend to 4155 into the close followed",
+                       "confidence":  0.65,
+                       "evidence":  "blue title bar \u0027Then Bull Trend Reversal\u0027 plus the strong bull leg after the flag break"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

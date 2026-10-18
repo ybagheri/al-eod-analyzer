@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "1a623b2555bc",
+  "date": "2025-06-13",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bear Trending Trading Range Day'. Overnight ET+12: two legs down to a high 2, a tight bull micro channel leg into the 00:30 top, then a lower high major trend reversal resumes the bear trend; wedge measured move down to 5976 ends with a too-late double bottom close near 5985.",
+  "events": [
+    {
+      "label": "bear_trend",
+      "raw_label": "Two legs down to High 2 (22:30)",
+      "direction": "bear",
+      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5978.0,
+      "outcome": "success",
+      "outcome_reason": "two red arrows sold the market down to 5978 and a high 2 lifted it",
+      "confidence": 0.65,
+      "evidence": "red arrows descending from 22:00 to the 22:45 low with green High 2 lift bar 12"
+    },
+    {
+      "label": "bull_trend",
+      "raw_label": "Strong pullback but tight bull micro channel leg into 00:30 top 6030",
+      "direction": "bull",
+      "start_time": {"time": "23:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6030.0,
+      "outcome": "success",
+      "outcome_reason": "tight bull micro channel rallied to 6030 overnight",
+      "confidence": 0.7,
+      "evidence": "green boxed tight bull bars rising 23:15-00:30 with orange dotted top at 6030"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Lower high major trend reversal bear trend resumes, do not buy (00:40)",
+      "direction": "bear",
+      "start_time": {"time": "00:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6030.0,
+      "outcome": "success",
+      "outcome_reason": "lower high major trend reversal resumed the bear trend from the 6030 top",
+      "confidence": 0.7,
+      "evidence": "red arrows at the 00:35 bars with red Lower high major trend reversal text"
+    },
+    {
+      "label": "trading_range",
+      "raw_label": "Blue shaded bear-trending range 00:50-01:45 near EMA",
+      "direction": "bear",
+      "start_time": {"time": "00:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6010.0,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range grinded sideways-down below the EMA",
+      "confidence": 0.6,
+      "evidence": "blue shaded box near the EMA with red dotted 6015 top and orange dotted 6000 bottom"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge measured move down (02:30 low 5976)",
+      "direction": "bear",
+      "start_time": {"time": "01:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5976.0,
+      "outcome": "success",
+      "outcome_reason": "wedge measured move reached 5976 at the day low",
+      "confidence": 0.65,
+      "evidence": "magenta dotted descending wedge with Wedge Measured move orange text at bar 60"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Double bottom too late to trade (03:45)",
+      "direction": "bull",
+      "start_time": {"time": "03:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5976.0,
+      "outcome": "success",
+      "outcome_reason": "late double bottom lifted the close back to 5985",
+      "confidence": 0.55,
+      "evidence": "blue shaded late range with green Double bottom Too late to trade text and close bar 80"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

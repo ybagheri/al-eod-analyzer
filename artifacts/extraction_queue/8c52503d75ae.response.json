@@ -1,0 +1,110 @@
+{
+    "schema_version":  1,
+    "image_id":  "8c52503d75ae",
+    "date":  "2025-04-29",
+    "day_type":  "bull_trending_trading_range",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Bull Trending Trading Range Day\u0027. Lower low double bottom at 07:45 (5537), double bottoms and lower lows in the blue shaded range, wedge top 09:30 (5576), breakout above wedge top and trading range at 11:00 (5590) into the upper blue range to the close 5586.",
+    "events":  [
+                   {
+                       "label":  "trend_reversal",
+                       "raw_label":  "Lower low double bottom (07:45 low 5537)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5537.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green Lower low double bottom text with green dotted low under bar 12",
+                       "confidence":  0.7,
+                       "evidence":  "green Lower low double bottom text under the 07:40 lows with green shaded bar 12 and red arrows at 07:45-07:55 red shaded boxes"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Bull trending trading range blue box (07:40-10:25)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5560.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded range with minor wedge earlier episodes and lower low double bottom at 5552",
+                       "confidence":  0.7,
+                       "evidence":  "blue shaded 07:40-10:25 box with bars 18, 24, 36 labels, magenta Wedge text and pink dotted line to the green dotted 5552 lows"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge top 5576 (09:30)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5576.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted wedge channel culminated into the 09:30 top with red arrow at 09:35",
+                       "confidence":  0.6,
+                       "evidence":  "magenta Wedge text with pink dotted lines and red arrows 09:30-09:35 under the 5576 highs"
+                   },
+                   {
+                       "label":  "trading_range_breakout",
+                       "raw_label":  "Breakout above wedge top and trading range (10:55-11:10)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5590.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "beige box bull spike bars 48 lifted above the orange text Breakout above wedge top and range",
+                       "confidence":  0.7,
+                       "evidence":  "beige 10:45-11:05 box, orange text breakout above wedge top and range, green arrow at bar 48 highs"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "After breakout range (11:15-13:15 close 5586)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:10",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5586.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded convention box after bar 60 lows 5587 with a red breakout bars 60/72 retest high 5592",
+                       "confidence":  0.6,
+                       "evidence":  "blue shaded 11:15-13:10 box with bars 60 and 72 labels and red arrows 11:35 and 12:30"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

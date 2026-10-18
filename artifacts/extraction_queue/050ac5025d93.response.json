@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "050ac5025d93",
+  "date": "2025-06-05",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Double Bottom, Then Bear Channel'. Higher low double bottoms at 5958 launch a wedge rally to the double top breakout level 5998, a lower high double top at 5990 with failed later attempts extends the evening, and the bear channel obligation sells down through the green dotted 5958 line to 5932.",
+  "events": [
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low double bottom (07:15 lows 5958)",
+      "direction": "bull",
+      "start_time": {"time": "06:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5958.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at 5958 lifted the market into the wedge rally to 6005",
+      "confidence": 0.7,
+      "evidence": "green dotted lows at 5958 with green Higher low double bottom text and magenta wedge"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge (08:40 top 6005)",
+      "direction": "bear",
+      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6005.0,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge into the 08:40 top 6005 marked the swing high",
+      "confidence": 0.65,
+      "evidence": "magenta Wedge text with dotted lines rising to the 08:40 spike"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double Top / Lower high double top at 5990 (09:55)",
+      "direction": "bear",
+      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5990.0,
+      "outcome": "success",
+      "outcome_reason": "double top at 5990 after the wedge started the bear channel",
+      "confidence": 0.7,
+      "evidence": "red dotted lines at 5998 and 5990 with red arrows and sell bars 10:00-10:20"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low double bottom (10:20 low)",
+      "direction": "bull",
+      "start_time": {"time": "09:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5960.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom at 5960 only bought a small rally back to 5985",
+      "confidence": 0.6,
+      "evidence": "green Higher low double bottom text near 10:15 with green arrows to 10:50"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Bear channel (magenta dotted descending line, 10:05-12:35)",
+      "direction": "bear",
+      "start_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5932.0,
+      "outcome": "success",
+      "outcome_reason": "bear channel ground down from 5985 through the 5958 support to 5932",
+      "confidence": 0.75,
+      "evidence": "magenta dotted descending line from 10:05 to the 12:20 low and Bear channel red text"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Failed breakout up (11:00 LH DT 5985)",
+      "direction": "bear",
+      "start_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5985.0,
+      "outcome": "success",
+      "outcome_reason": "failed breakout to 5985 completed the LH DT and the bear channel resumed",
+      "confidence": 0.65,
+      "evidence": "red dotted line at 5985 over bar 54 with red arrows across the boxed bar 50-64 series"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

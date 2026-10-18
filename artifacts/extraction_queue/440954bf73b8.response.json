@@ -1,233 +1,224 @@
 {
-  "schema_version": 1,
-  "image_id": "440954bf73b8",
-  "date": "2026-01-20",
-  "day_type": "broad_bear_channel",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'Gap Down, Double Bottom, Double Top Then Bear Channel'. Session = MLK-holiday Tuesday Jan 20, 2026 (note: 'Moving average calculation includes US holiday Monday trading early close', so the EMA carries Monday's early-close bars). Gap-down open about 6873, lower-low double bottom / bear trap (weak bears) around 6862 rallies to 6901, micro then consecutive double tops all through the morning (red dotted peaks), a Wedge off the 23:45-01:10 recovery, then a broad bear channel of lower highs and lower lows; breakout into a tight bear channel after 02:25 down to 6820, limit-order trading into the close with a 'Sell The Close, Do not buy' note. Axis reads ET+13 hrs (22:30-05:00 = PT 06:30-13:00 shifted); day-change marker prints Jan 21 mid-axis; keep tz suspicion flagged. Inset daily panel: 'Trading Range Breakout'.",
-  "events": [
-    {
-      "label": "gap",
-      "raw_label": "Gap Down",
-      "direction": "bear",
-      "start_time": {
-        "time": "22:30",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "22:45",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 6873.0,
-      "outcome": "unclear",
-      "outcome_reason": "prior-session bars are not visible on this chart; only the title names the gap",
-      "confidence": 0.5,
-      "evidence": "blue title bar 'Gap Down' plus the thin descending drawn line from the open"
-    },
-    {
-      "label": "lower_low_double_bottom",
-      "raw_label": "Lower low double bottom",
-      "direction": "bull",
-      "start_time": {
-        "time": "22:40",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "23:25",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 12,
-      "price_hint": 6862.0,
-      "outcome": "success",
-      "outcome_reason": "rally from 6862 to 6901 followed",
-      "confidence": 0.75,
-      "evidence": "green 'Lower low double bottom' text with green dotted line at 6851 and green arrows at the lows"
-    },
-    {
-      "label": "failed_breakout",
-      "raw_label": "Bear trap (weak bears)",
-      "direction": "bull",
-      "start_time": {
-        "time": "23:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "23:25",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 12,
-      "price_hint": 6862.0,
-      "outcome": "success",
-      "outcome_reason": "failed bear breakdown trapped bears and price rallied to 6901",
-      "confidence": 0.7,
-      "evidence": "green 'Bear trap (weak bears)' text beside the double-bottom lows"
-    },
-    {
-      "label": "micro_double_top",
-      "raw_label": "Micro then consecutive double tops",
-      "direction": "bear",
-      "start_time": {
-        "time": "23:35",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "23:50",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 18,
-      "price_hint": 6901.0,
-      "outcome": "success",
-      "outcome_reason": "micro dip followed; bear channel resumed",
-      "confidence": 0.6,
-      "evidence": "red 'Micro then consecutive double tops' text with red arrow at the 23:40 top"
-    },
-    {
-      "label": "double_top",
-      "raw_label": "Micro then consecutive double tops",
-      "direction": "bear",
-      "start_time": {
-        "time": "23:40",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "01:05",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 36,
-      "price_hint": 6901.0,
-      "modifiers": [
-        "consecutive"
-      ],
-      "outcome": "success",
-      "outcome_reason": "series of double tops under the shaded box preceded the breakdown into the bear channel",
-      "confidence": 0.65,
-      "evidence": "red dotted line segments across successive peaks at 6901-6899 with red down arrows"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Wedge",
-      "direction": "bear",
-      "start_time": {
-        "time": "00:25",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "01:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 36,
-      "price_hint": 6868.0,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "wedge low broke down after 01:15 as the bear channel took over",
-      "confidence": 0.7,
-      "evidence": "magenta and green dotted converging lines with pink 'Wedge' text at 00:40"
-    },
-    {
-      "label": "breakout",
-      "raw_label": "Breakout then tight bear channel",
-      "direction": "bear",
-      "start_time": {
-        "time": "02:25",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "02:45",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 48,
-      "price_hint": 6863.0,
-      "outcome": "success",
-      "outcome_reason": "bear breakout extended to 6820 by 04:00",
-      "confidence": 0.75,
-      "evidence": "red 'Breakout then tight bear channel' text with arrow to the bar-48 breakout leg"
-    },
-    {
-      "label": "channel",
-      "raw_label": "Breakout then tight bear channel",
-      "direction": "bear",
-      "start_time": {
-        "time": "02:45",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "04:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 52,
-      "price_hint": null,
-      "modifiers": [
-        "tight"
-      ],
-      "outcome": "success",
-      "outcome_reason": "tight bear channel of lower highs and lows to about 6820",
-      "confidence": 0.55,
-      "evidence": "red note 'Breakout then tight bear channel'; shallow stepped decline with red arrows"
-    },
-    {
-      "label": "trading_range_begin",
-      "raw_label": "Limit order trading into close",
-      "role": "day_part",
-      "direction": "neutral",
-      "start_time": {
-        "time": "04:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "05:00",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 72,
-      "price_hint": 6825.0,
-      "outcome": "unclear",
-      "outcome_reason": "close-time range with limit-order chop; resolution beyond the day unknown",
-      "confidence": 0.6,
-      "evidence": "black 'Limit order trading into close' text over the last shaded range box"
-    },
-    {
-      "label": "trading_range_end",
-      "raw_label": "Limit order trading into close",
-      "role": "day_part",
-      "direction": "neutral",
-      "start_time": {
-        "time": "04:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "05:00",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 72,
-      "price_hint": 6825.0,
-      "outcome": "unclear",
-      "outcome_reason": "close-time range with limit-order chop; resolution beyond the day unknown",
-      "confidence": 0.6,
-      "evidence": "black 'Limit order trading into close' text over the last shaded range box"
-    },
-    {
-      "label": "sell_the_close",
-      "raw_label": "Sell The Close, Do not buy",
-      "direction": "bear",
-      "start_time": {
-        "time": "04:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "05:05",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": 76,
-      "price_hint": 6826.0,
-      "outcome": "unclear",
-      "outcome_reason": "close approaching; final print 6833 in the last bars",
-      "confidence": 0.7,
-      "evidence": "large red 'Sell The Close, Do not buy' note at the bottom centre of this image"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "440954bf73b8",
+    "date":  "2026-01-20",
+    "day_type":  "broad_bear_channel",
+    "day_type_confidence":  0.8,
+    "session_summary":  "Blue title bar: \u0027Gap Down, Double Bottom, Double Top Then Bear Channel\u0027. Session = MLK-holiday Tuesday Jan 20, 2026 (note: \u0027Moving average calculation includes US holiday Monday trading early close\u0027, so the EMA carries Monday\u0027s early-close bars). Gap-down open about 6873, lower-low double bottom / bear trap (weak bears) around 6862 rallies to 6901, micro then consecutive double tops all through the morning (red dotted peaks), a Wedge off the 23:45-01:10 recovery, then a broad bear channel of lower highs and lower lows; breakout into a tight bear channel after 02:25 down to 6820, limit-order trading into the close with a \u0027Sell The Close, Do not buy\u0027 note. Axis reads ET+13 hrs (22:30-05:00 = PT 06:30-13:00 shifted); day-change marker prints Jan 21 mid-axis; keep tz suspicion flagged. Inset daily panel: \u0027Trading Range Breakout\u0027.",
+    "events":  [
+                   {
+                       "label":  "gap",
+                       "raw_label":  "Gap Down",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "22:30",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "22:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  6873.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "prior-session bars are not visible on this chart; only the title names the gap",
+                       "confidence":  0.5,
+                       "evidence":  "blue title bar \u0027Gap Down\u0027 plus the thin descending drawn line from the open"
+                   },
+                   {
+                       "label":  "lower_low_double_bottom",
+                       "raw_label":  "Lower low double bottom",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "22:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  12,
+                       "price_hint":  6862.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "rally from 6862 to 6901 followed",
+                       "confidence":  0.75,
+                       "evidence":  "green \u0027Lower low double bottom\u0027 text with green dotted line at 6851 and green arrows at the lows"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Bear trap (weak bears)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  12,
+                       "price_hint":  6862.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "failed bear breakdown trapped bears and price rallied to 6901",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027Bear trap (weak bears)\u0027 text beside the double-bottom lows"
+                   },
+                   {
+                       "label":  "micro_double_top",
+                       "raw_label":  "Micro then consecutive double tops",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "23:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  18,
+                       "price_hint":  6901.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "micro dip followed; bear channel resumed",
+                       "confidence":  0.6,
+                       "evidence":  "red \u0027Micro then consecutive double tops\u0027 text with red arrow at the 23:40 top"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "Micro then consecutive double tops",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "23:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "01:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  36,
+                       "price_hint":  6901.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "series of double tops under the shaded box preceded the breakdown into the bear channel",
+                       "confidence":  0.65,
+                       "evidence":  "red dotted line segments across successive peaks at 6901-6899 with red down arrows"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "00:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "01:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  36,
+                       "price_hint":  6868.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "wedge low broke down after 01:15 as the bear channel took over",
+                       "confidence":  0.7,
+                       "evidence":  "magenta and green dotted converging lines with pink \u0027Wedge\u0027 text at 00:40"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "Breakout then tight bear channel",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "02:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "02:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  48,
+                       "price_hint":  6863.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "bear breakout extended to 6820 by 04:00",
+                       "confidence":  0.75,
+                       "evidence":  "red \u0027Breakout then tight bear channel\u0027 text with arrow to the bar-48 breakout leg"
+                   },
+                   {
+                       "label":  "channel",
+                       "raw_label":  "Breakout then tight bear channel",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "02:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "04:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  52,
+                       "price_hint":  null,
+                       "outcome":  "success",
+                       "outcome_reason":  "tight bear channel of lower highs and lows to about 6820",
+                       "confidence":  0.55,
+                       "evidence":  "red note \u0027Breakout then tight bear channel\u0027; shallow stepped decline with red arrows"
+                   },
+                   {
+                       "label":  "trading_range_begin",
+                       "raw_label":  "Limit order trading into close",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "04:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "05:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  72,
+                       "price_hint":  6825.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "close-time range with limit-order chop; resolution beyond the day unknown",
+                       "confidence":  0.6,
+                       "evidence":  "black \u0027Limit order trading into close\u0027 text over the last shaded range box"
+                   },
+                   {
+                       "label":  "trading_range_end",
+                       "raw_label":  "Limit order trading into close",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "04:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "05:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  72,
+                       "price_hint":  6825.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "close-time range with limit-order chop; resolution beyond the day unknown",
+                       "confidence":  0.6,
+                       "evidence":  "black \u0027Limit order trading into close\u0027 text over the last shaded range box"
+                   },
+                   {
+                       "label":  "sell_the_close",
+                       "raw_label":  "Sell The Close, Do not buy",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "04:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "05:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  76,
+                       "price_hint":  6826.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "close approaching; final print 6833 in the last bars",
+                       "confidence":  0.7,
+                       "evidence":  "large red \u0027Sell The Close, Do not buy\u0027 note at the bottom centre of this image"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "23c4b499382c",
+  "date": "2024-06-24",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Buy Climax, Then Bear Channel'. A parabolic wedge buy climax at 5557 fails on lower high double tops, the market chops into a black dotted bear channel; higher high double top at 5533 fails and measured moves sell to 5512 into the close.",
+  "events": [
+    {
+      "label": "climax",
+      "raw_label": "Parabolic wedge buy climax (07:15 top 5557)",
+      "direction": "bull",
+      "start_time": {"time": "06:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5557.0,
+      "outcome": "success",
+      "outcome_reason": "buy climax spike at 5557 ended the opening rally",
+      "confidence": 0.7,
+      "evidence": "brown shaded opening wedge with Parabolic Wedge buy climax text and red arrows down from the top"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Lower high double top(s) 08:20-09:20",
+      "direction": "bear",
+      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5555.0,
+      "outcome": "success",
+      "outcome_reason": "lower high double tops under the climax capped all rallies",
+      "confidence": 0.65,
+      "evidence": "red Lower high double top(s) text with red arrows across the 08:15-09:20 boxed bars"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Black dotted bear channel from 08:00",
+      "direction": "bear",
+      "start_time": {"time": "07:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5527.0,
+      "outcome": "success",
+      "outcome_reason": "black dotted bear channel ground down with capped waves to 5527",
+      "confidence": 0.7,
+      "evidence": "black dotted channel lines down the chart to the 11:55 lows and close"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Higher high double top (11:55 test of 5533)",
+      "direction": "bear",
+      "start_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5533.0,
+      "outcome": "success",
+      "outcome_reason": "HH double top at 5533 failed above the channel and sold to the measured move",
+      "confidence": 0.65,
+      "evidence": "red Higher high double top text with green arrows before 12:50 and red arrows after"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move (13:05 to 5512)",
+      "direction": "bear",
+      "start_time": {"time": "12:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5512.0,
+      "outcome": "success",
+      "outcome_reason": "measured move target 5512 reached at the close lows",
+      "confidence": 0.6,
+      "evidence": "orange dotted Measured move line at 5511 and green dotted 5512 with brown shaded close bars"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

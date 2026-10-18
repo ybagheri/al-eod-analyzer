@@ -1,0 +1,148 @@
+{
+    "schema_version":  1,
+    "image_id":  "ae49bd8a0143",
+    "date":  "2026-01-06",
+    "day_type":  "bull_trend_resumption",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Bull Trend from Open, Deep Pullback Then Trend Resumption\u0027 (overnight ET+13 abacus chart, close chip 6987). Bull trend from open to a micro double top (~6978), deep two-leg pullback to a higher low double bottom (00:30 low ~6957), then consecutive tight range breakouts and bull trend resumption with consecutive wedges two legs up into a tight trading range into the close near the all-time high. Axis ticks \u0027ET+13 hrs\u0027, Feb 6/7 evening.",
+    "events":  [
+                   {
+                       "label":  "bull_trend_from_open",
+                       "raw_label":  "Bull trend from open (23:00-23:20 low 6947)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  1,
+                                              "high":  8
+                                          },
+                       "price_hint":  6947.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "open wedge box lows with green up arrows 23:05-23:20 driving to 6965 then 6975 highs",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027Bull trend from open\u0027 text with green arrow to the opening box near 6987.00 chip and bars 1-8 green shaded up bars"
+                   },
+                   {
+                       "label":  "double_top_bear_flag",
+                       "raw_label":  "Micro double top then 2-leg pullback (23:20-00:40 high 6978)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "23:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "00:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  10,
+                                              "high":  26
+                                          },
+                       "price_hint":  6978.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted horizontal top 6978 with red arrows bars 12-18 and shaded gray pullback boxes one",
+                       "confidence":  0.7,
+                       "evidence":  "red \u0027Micro double top then 2-leg pullback\u0027 text with the red arrow into the red dotted 6978 line and bars 12, 18, 24 labels"
+                   },
+                   {
+                       "label":  "double_bottom",
+                       "raw_label":  "Higher low double bottom (00:20-00:50 low ~6957)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "00:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "00:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  22,
+                                              "high":  30
+                                          },
+                       "price_hint":  6957.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "gray box pullback lows into green dotted 6957 wedge with green arrows 00:30-00:45",
+                       "confidence":  0.65,
+                       "evidence":  "green \u0027Higher low double bottom\u0027 text under the green dotted 6957-6955 wedge with gray shaded 00:10-00:50 box and bars 24 labels"
+                   },
+                   {
+                       "label":  "trend_resumption",
+                       "raw_label":  "Tight range breakout, bull trend resumption (01:10-01:45)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "01:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "01:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  32,
+                                              "high":  40
+                                          },
+                       "price_hint":  6968.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green arrow from gray box to green shaded breakout step bars 32-38",
+                       "confidence":  0.65,
+                       "evidence":  "green \u0027Tight range breakout Bull trend resumption\u0027 text with green arrow and green shaded 01:15-01:40 stack step"
+                   },
+                   {
+                       "label":  "wedge_bull_flag",
+                       "raw_label":  "Consecutive wedges, 2 legs up (01:45-03:20 high 6992)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "01:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "03:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  40,
+                                              "high":  64
+                                          },
+                       "price_hint":  6992.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted wedge with 2 legs up text plus gray boxes 40-60 and green shaded 03:00-03:20",
+                       "confidence":  0.7,
+                       "evidence":  "magenta dotted Consecutive wedges wedge around blue shaded 01:45-03:20 box with green arrows bars 36, 48, 60 wedges"
+                   },
+                   {
+                       "label":  "trading_range",
+                       "raw_label":  "Tight trading range into close chip 6987.00 (03:25-04:50)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "03:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "04:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  {
+                                              "low":  66,
+                                              "high":  76
+                                          },
+                       "price_hint":  6987.0,
+                       "outcome":  "unknown",
+                       "outcome_reason":  "blue text \u0027Tight trading range into close\u0027 over the blue shaded bar 60-72 close box at 6987 highs",
+                       "confidence":  0.6,
+                       "evidence":  "blue \u0027Tight trading range into close\u0027 text with bar 60, 72 labels and inset \u0027Rally Up to Near All-time High\u0027"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "image_note":  "overnight chart axis ET+13 hrs"
+                        }
+}

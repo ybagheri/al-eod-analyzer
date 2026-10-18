@@ -1,0 +1,110 @@
+{
+    "schema_version":  1,
+    "image_id":  "a34cd2db6136",
+    "date":  "2024-02-27",
+    "day_type":  "spike_and_channel_bear",
+    "day_type_confidence":  0.75,
+    "session_summary":  "Blue title bar: \u0027Spike and Channel Bear Trend, Then Wedge Bottom\u0027. Sell the close spike in spike and channel bear trend from the open (06:45); pink channel bear trend to nested wedge low 5070 (10:10); breakout above wedge and double top at 11:10 (5079); measured move bull spike to 5094 close.",
+    "events":  [
+                   {
+                       "label":  "spike_and_channel_bear",
+                       "raw_label":  "Sell the close spike in spike and channel bear trend (06:45-07:15)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "06:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5080.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "brown box 06:45-07:05 sold into the beige channel",
+                       "confidence":  0.7,
+                       "evidence":  "orange Sell the close text with red Sell the close Spike in spike and channel bear trend text under the beige box lows and red dotted 5085 line"
+                   },
+                   {
+                       "label":  "broad_bear_channel",
+                       "raw_label":  "Pink channel bear trend wedge bear flags (07:20-10:10 lows 5070)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5070.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "pink shaded bear channel with blue dotted triangle top to the nested wedge lows 10:05-10:15",
+                       "confidence":  0.7,
+                       "evidence":  "pink shaded box 07:15-10:20 with magenta Nested wedge text and red arrows 07:35-09:30 and green arrows 10:15-10:40"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Nested wedge bottom (09:55 low 5070)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "09:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5070.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "orange dotted lower lows at 10:10 lows formed wedge bottom",
+                       "confidence":  0.6,
+                       "evidence":  "magenta Nested wedge text with dotted line orange bottom around 10:05-10:20 lows and green arrows"
+                   },
+                   {
+                       "label":  "failed_breakout",
+                       "raw_label":  "Breakout above wedge and double top (11:05 high 5086)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "10:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5086.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "orange Breakout above wedge and double top text with arrow into the beige box at 11:05",
+                       "confidence":  0.65,
+                       "evidence":  "orange text with arrow to beige box 11:05-11:15 and orange dotted line at 5078 lows and 11:10 highs"
+                   },
+                   {
+                       "label":  "bull_trend_resumption",
+                       "raw_label":  "Measured move rally to close 5094 (11:15-13:20)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "11:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  5094.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "rally through orange dotted measured move target near close highs 5094",
+                       "confidence":  0.65,
+                       "evidence":  "orange dotted Measured move line at the close highs with orange dotted rising line and chop bars with tall dark bar 10:50 lows and green arrows 12:25-12:45"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
+}

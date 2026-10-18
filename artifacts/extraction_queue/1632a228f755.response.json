@@ -1,110 +1,148 @@
 {
-  "schema_version": 1,
-  "image_id": "1632a228f755",
-  "date": "2025-10-23",
-  "day_type": "bull_trend_from_open",
-  "day_type_confidence": 0.7,
-  "session_summary": "Blue title bar: 'Always in Long, Bull Trend Continued up to Resistance'; day-type note 'Bull trend continuation from yesterday up to top of 4-day broad trading range'. Reading: parabolic opening wedge to 6765 with a shallow pullback, double bottom 6735/6740 (shaded morning range 6766-6740 with red-dotted double top), High 1 pullback after a failed breakout, then a bull trend of higher lows through 6775 resistance to 6780, finishing in a tight trading range into the close at 4-day-trading-range resistance (close 6772 below the 6785 range top). Axis ET+12 hrs (22:00-04:00 printed; Oct 24 edge marker) - offset suspicion. Inset daily panel: 'Market Still in Broad Trading Range'. Bar numbers 12-72 printed.",
-  "events": [
-    {
-      "label": "wedge",
-      "raw_label": "Parabolic wedge",
-      "direction": "bear",
-      "start_time": {"time": "21:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "22:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 12,
-      "price_hint": 6765.0,
-      "modifiers": ["parabolic"],
-      "outcome": "partial",
-      "outcome_reason": "pullback to the double bottom followed but the bull trend resumed and exceeded the top",
-      "confidence": 0.6,
-      "evidence": "pink 'Parabolic wedge' text with magenta dotted steep rising line at the open"
-    },
-    {
-      "label": "double_bottom",
-      "raw_label": "Double bottom",
-      "direction": "bull",
-      "start_time": {"time": "22:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "22:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 18,
-      "price_hint": 6735.0,
-      "outcome": "success",
-      "outcome_reason": "rally to the 6766 range top followed",
-      "confidence": 0.7,
-      "evidence": "green 'Double bottom' text over the 6735/6740 lows with green dotted lines"
-    },
-    {
-      "label": "trading_range_begin",
-      "raw_label": "shaded morning range",
-      "role": "day_part",
-      "direction": "neutral",
-      "start_time": {"time": "22:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 24,
-      "price_hint": 6760.0,
-      "outcome": "unclear",
-      "outcome_reason": "range resolved upward on the trend leg to 6780 (begin of day-part pair)",
-      "confidence": 0.5,
-      "evidence": "blue shaded range box 23:00-23:45 around the double top/bottom bars"
-    },
-    {
-      "label": "trading_range_end",
-      "raw_label": "shaded morning range",
-      "role": "day_part",
-      "direction": "neutral",
-      "start_time": {"time": "23:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:45", "tz": "America/Los_Angeles"},
-      "bar_index_hint": null,
-      "price_hint": null,
-      "outcome": "unclear",
-      "outcome_reason": "range resolved upward on the trend leg to 6780 (end of day-part pair)",
-      "confidence": 0.5,
-      "evidence": "blue shaded range box 23:00-23:45 around the double top/bottom bars"
-    },
-    {
-      "label": "double_top",
-      "raw_label": "Double top",
-      "direction": "bear",
-      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:30", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 36,
-      "price_hint": 6766.0,
-      "outcome": "success",
-      "outcome_reason": "second push stalled and sold to 6755 before the breakout leg",
-      "confidence": 0.65,
-      "evidence": "red 'Double top' text and red dotted line along the morning highs"
-    },
-    {
-      "label": "h1",
-      "raw_label": "High 1 pullback after failed breakout from opening range",
-      "direction": "bull",
-      "start_time": {"time": "23:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "00:05", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 36,
-      "price_hint": 6755.0,
-      "outcome": "success",
-      "outcome_reason": "trend leg of higher lows to 6780 followed",
-      "confidence": 0.75,
-      "evidence": "green note with arrow to the 00:00 higher low above the green dotted support"
-    },
-    {
-      "label": "tight_trading_range",
-      "raw_label": "Tight trading range into close",
-      "role": "day_part",
-      "direction": "neutral",
-      "start_time": {"time": "02:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "04:00", "tz": "America/Los_Angeles"},
-      "bar_index_hint": 60,
-      "price_hint": 6780.0,
-      "outcome": "unclear",
-      "outcome_reason": "tight range at 4-day-trading-range resistance; closed near the low of the box",
-      "confidence": 0.75,
-      "evidence": "blue note, blue shaded close range box and red dotted 6785 resistance line"
-    }
-  ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+    "schema_version":  1,
+    "image_id":  "1632a228f755",
+    "date":  "2025-10-23",
+    "day_type":  "bull_trend_from_open",
+    "day_type_confidence":  0.7,
+    "session_summary":  "Blue title bar: \u0027Always in Long, Bull Trend Continued up to Resistance\u0027; day-type note \u0027Bull trend continuation from yesterday up to top of 4-day broad trading range\u0027. Reading: parabolic opening wedge to 6765 with a shallow pullback, double bottom 6735/6740 (shaded morning range 6766-6740 with red-dotted double top), High 1 pullback after a failed breakout, then a bull trend of higher lows through 6775 resistance to 6780, finishing in a tight trading range into the close at 4-day-trading-range resistance (close 6772 below the 6785 range top). Axis ET+12 hrs (22:00-04:00 printed; Oct 24 edge marker) - offset suspicion. Inset daily panel: \u0027Market Still in Broad Trading Range\u0027. Bar numbers 12-72 printed.",
+    "events":  [
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Parabolic wedge",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "21:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "22:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  12,
+                       "price_hint":  6765.0,
+                       "outcome":  "partial",
+                       "outcome_reason":  "pullback to the double bottom followed but the bull trend resumed and exceeded the top",
+                       "confidence":  0.6,
+                       "evidence":  "pink \u0027Parabolic wedge\u0027 text with magenta dotted steep rising line at the open"
+                   },
+                   {
+                       "label":  "double_bottom",
+                       "raw_label":  "Double bottom",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "22:05",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "22:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  18,
+                       "price_hint":  6735.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "rally to the 6766 range top followed",
+                       "confidence":  0.7,
+                       "evidence":  "green \u0027Double bottom\u0027 text over the 6735/6740 lows with green dotted lines"
+                   },
+                   {
+                       "label":  "trading_range_begin",
+                       "raw_label":  "shaded morning range",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "22:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  24,
+                       "price_hint":  6760.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "range resolved upward on the trend leg to 6780 (begin of day-part pair)",
+                       "confidence":  0.5,
+                       "evidence":  "blue shaded range box 23:00-23:45 around the double top/bottom bars"
+                   },
+                   {
+                       "label":  "trading_range_end",
+                       "raw_label":  "shaded morning range",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "23:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  null,
+                       "price_hint":  null,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "range resolved upward on the trend leg to 6780 (end of day-part pair)",
+                       "confidence":  0.5,
+                       "evidence":  "blue shaded range box 23:00-23:45 around the double top/bottom bars"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "Double top",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "21:55",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "23:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  36,
+                       "price_hint":  6766.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "second push stalled and sold to 6755 before the breakout leg",
+                       "confidence":  0.65,
+                       "evidence":  "red \u0027Double top\u0027 text and red dotted line along the morning highs"
+                   },
+                   {
+                       "label":  "h1",
+                       "raw_label":  "High 1 pullback after failed breakout from opening range",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "23:50",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "00:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  36,
+                       "price_hint":  6755.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "trend leg of higher lows to 6780 followed",
+                       "confidence":  0.75,
+                       "evidence":  "green note with arrow to the 00:00 higher low above the green dotted support"
+                   },
+                   {
+                       "label":  "tight_trading_range",
+                       "raw_label":  "Tight trading range into close",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "02:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "04:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  60,
+                       "price_hint":  6780.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "tight range at 4-day-trading-range resistance; closed near the low of the box",
+                       "confidence":  0.75,
+                       "evidence":  "blue note, blue shaded close range box and red dotted 6785 resistance line"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2"
+                        }
 }

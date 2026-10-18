@@ -1,0 +1,191 @@
+{
+  "date": "2025-06-05",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrows on the descending open bars",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "opening bear leg sold into the 5955 floor",
+      "placement": null,
+      "price_hint": 5960.0,
+      "raw_label": "bear leg from the open",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 5992-5995 over 06:45-08:15",
+      "label": "trend_line",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "dotted level capping the opening bars; broken by the bull leg",
+      "placement": null,
+      "price_hint": 5995.0,
+      "raw_label": "red dotted line above the open highs",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text 'Higher low double bottom' and green dotted support line from 07:30",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "first double bottom on the green support line began the bull leg",
+      "placement": null,
+      "price_hint": 5955.0,
+      "raw_label": "Higher low double bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta 'Wedge' text with dotted wedge lines into the 09:25 top",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "majenta rising wedge to the 6005 top failed into the afternoon decline",
+      "placement": null,
+      "price_hint": 6005.0,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 5990 over the 09:45-11:00 highs",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "retest stalled under 5990 and the market broke down",
+      "placement": null,
+      "price_hint": 5990.0,
+      "raw_label": "red dotted lower-high line",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "second green 'Higher low double bottom' text at 10:45 (bar 48)",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second double bottom bounced to the 5990 retest",
+      "placement": null,
+      "price_hint": 5965.0,
+      "raw_label": "Higher low double bottom",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Bear channel' text over the 11:30-13:15 decline",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bear channel under the EMA sold to the 5930 low",
+      "placement": null,
+      "price_hint": 5930.0,
+      "raw_label": "Bear channel",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "050ac5025d93",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Double Bottom, Then Bear Channel'. Reading: bear leg from the open (06:45-07:10) set a 5955 floor that formed the first higher-low double bottom; a bull leg lifted to a 6005 wedge top; after the wedge top failed lower highs under the 5990 red line, a second higher-low double bottom at 5965 gave only a weak 5990 retest and the afternoon became a bear channel sliding under the EMA to the 5930 low before a weak bounce. trend_reversal_to_bear (morning bull leg reversed into the bear channel afternoon; the title's 'Then Bear Channel' phrasing describes the same shift). Axis plain 06:45-13:15, day 2025-06-05."
+}
