@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit e08a8e8 (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit a5a4e66 (pushed origin/main; see ADR-003)_
 
 ## 1. Project in one paragraph
 
@@ -11,8 +11,8 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 2. Current status
 
 - Current phase: 5a — Batch-1 dataset expansion (2042 new ES/M5 charts, title-as-label)
-- Phase status: intake + title mapping + calibration waves 0 & 1 done (2026-10-12 wave 0 / 2026-10-17 wave 1); user sign-off + wave scaling pending
-- Last green quality gate: 2026-10-17 pre-commit (ruff ✓ / format ✓ 55 files / mypy --strict ✓ 22 files / pytest 159 passed / coverage 92.33%)
+- Phase status: intake + title mapping + calibration waves 0&1 + FULL user review DONE (2026-10-17); taxonomy v1.3 live; bulk extraction pending user green light
+- Last green quality gate: 2026-10-17 post-v1.3 (ruff ✓ / format ✓ 55 files / mypy --strict ✓ 22 files / pytest 160 passed / coverage 92.38%)
 
 ## 3. What was done in this session
 
@@ -152,7 +152,6 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   image_id (first row wins); new unit test; review CLI output verified
   45 unique entries (40 calibration + 5 pilot ids whose exact image recurs in
   batch1); `artifacts/review*/` is git-ignored. Gate GREEN (pytest 160).
-
 - Round-4 full review applied (2026-10-17, user read ALL 43 review pages; ok =
   whole page approved, inline note = that item only): 6 corrections via
   review-apply (rev1 each, reviewer ybagheri): e8ce92071fd7 + 5a9a1aef78cc +
@@ -162,8 +161,25 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   re-labelled wedge trendline; 97f1ff2438fc STC start_time 06:45 (red-box
   markers precede 07:00, verified on chart). All other 37 pages approved
   unchanged. Corrections files kept in artifacts/corrections_round4/.
+- Round-5 taxonomy v1.3 applied (2026-10-17, user approved tables A/B/C +
+  extra): enum/config/title-rules/prompt-v2 updated; 10 labels remapped via
+  review-apply corrections_v13 (6 TTR->bear incl. 7cc6cf98f425/29bdc/b0e7/
+  c2ac/cf677/e092; 61527045af90->trend_reversal_to_bear;
+  a9d707ed92f6->trend_reversal_to_bull; 10401c705b30 + 60c97519d0a5 ->
+  trading_range_bear_breakout); mechanical legacy-id pre-patch needed because
+  old stored ids became invalid post-enum-change (8 files); title map
+  regenerated (1768/2042); calibration report regenerated (agreement 0.706,
+  34 comparable — not comparable pre/post change); review pages rebuilt
+  (labels=43, unmapped=10); ADR-011 in docs/DECISIONS.md; tests updated
+  (v1.3 coverage, bare-reversal rule, title taxonomy params). Gate GREEN
+  (160 tests, 92.38%).
 
 ## 4. Decisions made (link to ADR numbers)
+
+- ADR-011: taxonomy v1.3 (2026-10-17, user-approved round-5): +bull/bear_trending_
+  trading_range, +trading_range_{bull,bear}_breakout; -reversal_day,
+  -trending_trading_range; 10 labels remapped (all 6 TTR bear-trending);
+  title coverage 1820 -> 1768/2042 (90 generic titles -> vision at scale).
 
 - ADR-001: tech stack (PEP 621, typer/pydantic, ruff/mypy/pytest, tasks.py gate) — see `docs/DECISIONS.md`.
 - ADR-004: taxonomy v1 frozen; Pacific axis time; unmapped→review-queue design.
@@ -176,18 +192,17 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. AGENT: calibration extraction over ~50 stratified batch-1 images; score vision
-   day_type/event output against `title_map_batch1.json` (free human labels).
-   [waves 0+1 done: 40 images, agreement 32/39 (0.821); remaining misses are
-   filename-vs-on-chart-title conflicts, vision followed the on-chart title]
-2. USER: review calibration diff (40 labels in `artifacts/labels/`, queue pairs under
-   `artifacts/extraction_queue/`; HTML review pages can be regenerated with
-   `brooks review-queue`); approve title-rule adjustments (title precedence) if any.
-3. AGENT: after sign-off, scale extraction in waves (<=100/session) toward the 1678
-   unique batch-1 charts, using the calibrated rules; fix new quarantines per wave.
-4. Phase 5b (market data + session calendar) after calibration is clean - includes
-   resolving the PT-vs-ET axis question (BOTH styles exist: some charts print
-   offset ET+12/ET+13 with day-roll markers, c1259560ac95 is plain PT, wave-1
+1. AGENT: bulk wave 2 — start routine extraction toward the 1678 unique batch-1
+   charts (<=100/session), wave 0+1 calibration DONE and USER-APPROVED after
+   round-5 review; all 38 calibration gold-candidate corrections applied
+   (incl. taxonomy v1.3 remaps); fix new quarantines per wave; record
+   agreement per wave in calibration_report.json.
+2. USER: on gold registry — only open human-review item left is
+   `10401c705b30` (mark gold yes/no); everything else approved through
+   round-5 (2026-10-17).
+3. Phase 5b (market data + session calendar) after bulk extraction is
+   underway - includes resolving the PT-vs-ET axis question (BOTH styles
+   exist: authored ET+12/ET+13 offset charts vs plain PT; wave-1
    4e96fb6e09ac prints ET+12 hrs) before any label->bar attach.
 
 ## 6. Open questions / blockers
@@ -219,9 +234,9 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - PNG batch (08-01…09-23) has no readable time axis → event times null (15 of 29 new labels)
 - Watermark note: Aug/Sep PNGs carry a "Persian_expert_trader" redistribution watermark (third-party, personal research use; same legal basis as data/README)
 - Market data coverage: none (Phase 5b)
-- Batch-1 dataset (data/raw_batch1/, git-ignored images): 2044 received -> 2042 usable (corrupt 2023-07-10 jpg + tiny 2026-10-14 png deleted) | ok=1678, hash-duplicates=364 | dates 2018-11-18..2026-10-14 | title day_type coverage 1820/2042 (89%)
-- Calibration wave 0: 12/12 vision labels vs title map agree 8/12 (misses = filename vs on-chart title); correlation only, no label truth yet
-- Calibration wave 1: +28 vision labels (40 sampled total); agreement 32/39 comparable (0.821); 0 quarantines outstanding; labels NOT gold
+- Batch-1 dataset (data/raw_batch1/, git-ignored images): 2044 received -> 2042 usable (corrupt 2023-07-10 jpg + tiny 2026-10-14 png deleted) | ok=1678, hash-duplicates=364 | dates 2018-11-18..2026-10-14 | title day_type coverage 1768/2042 (89% -> 87% after v1.3; extra 90 titles resolve via vision)
+- Calibration waves 0+1: 38 sampled (2 removed: EURUSD-daily anomaly + axis-less slide) | agreement 0.706 vs new-directional titles (0.811 pre-v1.3; not comparable) | 0 quarantines outstanding | labels NOT gold, all corrections human-applied (rev1-varies, 131 history revs)
+- Color: vocabulary v1.3 — day_types 17, events 50 | round-5 review approved every page (ok=all, inline notes fixed)
 - Calibration artifacts (git-tracked): artifacts/calibration_sample.{txt,json} (40 ids + strata meta), artifacts/calibration_report.json, scripts/extract_sample.py, 40+28 queue pairs (extraction_queue), 40 wave labels in artifacts/labels/
 - Batch-1 artifacts (git-tracked): artifacts/manifest_batch1.json (~1MB), artifacts/ingestion_stats_batch1.json, artifacts/title_map_batch1.json
 - Playbook version: none (Phase 8)
