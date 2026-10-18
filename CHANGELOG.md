@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Taxonomy v1.3 (ADR-011, user-approved): `bull/bear_trending_trading_range`
+  + `trading_range_{bull,bear}_breakout` added; generic `trending_trading_range`
+  and `reversal_day` removed from the vocabulary; title rules and prompt v2
+  updated; 10 labels remapped (6 TTR -> bear_trending_trading_range,
+  61527045af90 -> trend_reversal_to_bear, a9d707ed92f6 -> trend_reversal_to_bull,
+  10401c705b30 + 60c97519d0a5 -> trading_range_bear_breakout). Title-map
+  coverage 1768/2042 (generic titles resolve via vision at wave scale).
 - Calibration round-4 review (all 43 review pages read through): 6 labels
   corrected via `brooks review-apply` (reviewer ybagheri, history archived):
   4 day_type retypes (e8ce92071fd7/5a9a1aef78cc/ac0332f48144 -> trend_reversal_

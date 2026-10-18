@@ -450,7 +450,7 @@
     },
     {
       "date": "2026_06_08",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -1211,7 +1211,7 @@
     },
     {
       "date": "2025_07_16",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trend-Mid-day-Reversal_2025_07_16.jpg",
       "image_id": "19ae778ff791",
@@ -1413,7 +1413,7 @@
     },
     {
       "date": "2019_04_29",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bear-trend-reversal_2019_04_29.jpg",
       "image_id": "8026efcd98de",
@@ -1421,7 +1421,7 @@
     },
     {
       "date": "2019_10_07",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bear-trend-reversal_2019_10_07.png",
       "image_id": "4f3b05007235",
@@ -1429,7 +1429,7 @@
     },
     {
       "date": "2020_05_07",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bear-trend-reversal_2020_05_07.png",
       "image_id": "ecdeba09bc7b",
@@ -1437,7 +1437,7 @@
     },
     {
       "date": "2020_09_30",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bear-trend-reversal_2020_09_30.png",
       "image_id": "c122f23053f0",
@@ -1445,7 +1445,7 @@
     },
     {
       "date": "2021_02_22",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bear-trend-reversal_2021_02_22.png",
       "image_id": "52160a99cad5",
@@ -1453,7 +1453,7 @@
     },
     {
       "date": "2021_03_11",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bear-trend-reversal_2021_03_11.png",
       "image_id": "85ea93fecf02",
@@ -1489,7 +1489,7 @@
     },
     {
       "date": "2025_07_07",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trend-Trending-Trading-Range_2025_07_07.jpg",
       "image_id": "cf677e42a1bd",
@@ -1513,7 +1513,7 @@
     },
     {
       "date": "2019_04_11",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bear-trending-trading-range-day-and-sell-cimax_2019_04_11.png",
       "image_id": "b0e7dcb266e3",
@@ -1521,7 +1521,7 @@
     },
     {
       "date": "2021_11_15",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-trending-trading-range-day-at-60-minue-EMA_2021_11_15.png",
       "image_id": "42c4c9a36418",
@@ -1529,7 +1529,7 @@
     },
     {
       "date": "2021_02_08",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "breakout"
       ],
@@ -1539,7 +1539,7 @@
     },
     {
       "date": "2019_06_24",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bear-trending-trading-range-day_2019_06_24.png",
       "image_id": "fa71a168b943",
@@ -1547,7 +1547,7 @@
     },
     {
       "date": "2019_09_20",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bear-trending-trading-range-day_2019_09_20.png",
       "image_id": "3decf4eb885d",
@@ -1555,7 +1555,7 @@
     },
     {
       "date": "2020_08_13",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bear-trending-trading-range-day_2020_08_13.png",
       "image_id": "133acb8ec4ad",
@@ -1563,7 +1563,7 @@
     },
     {
       "date": "2020_11_12",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bear-trending-trading-range-day_2020_11_12.png",
       "image_id": "163e0d4d06fe",
@@ -1571,7 +1571,7 @@
     },
     {
       "date": "2021_09_02",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bear-trending-trading-range-day_2021_09_02.png",
       "image_id": "95b1a4638602",
@@ -1579,7 +1579,7 @@
     },
     {
       "date": "2023_07_12",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trending-Trading-Range-Day_2023_07_12.jpg",
       "image_id": "b949fb25e270",
@@ -1587,7 +1587,7 @@
     },
     {
       "date": "2025_07_18",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trending-Trading-Range-Day_2025_07_18.jpg",
       "image_id": "c33ca6979f4b",
@@ -1595,7 +1595,7 @@
     },
     {
       "date": "2025_07_21",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trending-Trading-Range-Day_2025_07_21.jpg",
       "image_id": "c33ca6979f4b",
@@ -1603,7 +1603,7 @@
     },
     {
       "date": "2025_09_24",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trending-Trading-Range-Day_2025_09_24.jpg",
       "image_id": "00de25dd4e5f",
@@ -1611,7 +1611,7 @@
     },
     {
       "date": "2025_12_16",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bear-Trending-Trading-Range-with-Late-Minor-Reversal_2025_12_16.jpg",
       "image_id": "1e45d0c9fa4f",
@@ -1619,7 +1619,7 @@
     },
     {
       "date": "2026_07_10",
-      "day_type": "trading_range",
+      "day_type": "trading_range_bull_breakout",
       "events": [
         "breakout"
       ],
@@ -1629,7 +1629,7 @@
     },
     {
       "date": "2026_07_13",
-      "day_type": "trading_range",
+      "day_type": "trading_range_bull_breakout",
       "events": [
         "breakout"
       ],
@@ -1683,7 +1683,7 @@
     },
     {
       "date": "2026_03_03",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "gap",
@@ -1862,7 +1862,7 @@
     },
     {
       "date": "2026_05_04",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "gap"
       ],
@@ -1872,7 +1872,7 @@
     },
     {
       "date": "2026_05_05",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "gap"
       ],
@@ -1952,7 +1952,7 @@
     },
     {
       "date": "2019_09_09",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "climax",
         "breakout"
@@ -2111,7 +2111,7 @@
     },
     {
       "date": "2026_02_17",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Broad-Trending-Trading-Range-Day_2026_02_17.jpg",
       "image_id": "aa8a4a021624",
@@ -2249,7 +2249,7 @@
     },
     {
       "date": "2020_01_02",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-bull-ltrend-reversal_2020_01_02.png",
       "image_id": "2e797469ee88",
@@ -2341,7 +2341,7 @@
     },
     {
       "date": "2022_11_29",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "climax",
         "failed_breakout",
@@ -3993,7 +3993,7 @@
     },
     {
       "date": "2026_03_02",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bull-Trending-Trading-Range-and-Big-Outside-Up-Day_2026_03_02.jpg",
       "image_id": "3dafdbf61e4f",
@@ -4001,7 +4001,7 @@
     },
     {
       "date": "2021_01_19",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day-1_2021_01_19.png",
       "image_id": "afe3a3739789",
@@ -4009,7 +4009,7 @@
     },
     {
       "date": "2021_07_26",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day-1_2021_07_26.png",
       "image_id": "4ff09330d134",
@@ -4017,7 +4017,7 @@
     },
     {
       "date": "2021_03_29",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day-2_2021_03_29.png",
       "image_id": "c5faa2774e2c",
@@ -4033,7 +4033,7 @@
     },
     {
       "date": "2019_07_23",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2019_07_23.png",
       "image_id": "a331cee46b69",
@@ -4041,7 +4041,7 @@
     },
     {
       "date": "2020_09_28",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2020_09_28.png",
       "image_id": "102bad7d5f99",
@@ -4049,7 +4049,7 @@
     },
     {
       "date": "2020_10_07",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2020_10_07.png",
       "image_id": "9124f57700d7",
@@ -4057,7 +4057,7 @@
     },
     {
       "date": "2021_01_05",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2021_01_05.png",
       "image_id": "d8918b5ea939",
@@ -4065,7 +4065,7 @@
     },
     {
       "date": "2021_05_19",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2021_05_19.png",
       "image_id": "c722ada82f34",
@@ -4073,7 +4073,7 @@
     },
     {
       "date": "2021_06_03",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2021_06_03.png",
       "image_id": "4e40d6e35a9a",
@@ -4081,7 +4081,7 @@
     },
     {
       "date": "2021_07_08",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bull-Trending-Trading-Range-Day_2021_07_08.png",
       "image_id": "4c4066ade939",
@@ -4089,7 +4089,7 @@
     },
     {
       "date": "2021_09_03",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2021_09_03.png",
       "image_id": "816f21792cf7",
@@ -4097,7 +4097,7 @@
     },
     {
       "date": "2021_09_07",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-bull-trending-trading-range-day_2021_09_07.png",
       "image_id": "816f21792cf7",
@@ -4105,7 +4105,7 @@
     },
     {
       "date": "2026_01_09",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bull-Trending-Trading-Range-up-to-New-All-time-High_2026_01_09.jpg",
       "image_id": "46e5a50e35fd",
@@ -4113,7 +4113,7 @@
     },
     {
       "date": "2026_01_12",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Bull-Trending-Trading-Range-up-to-New-All-time-High_2026_01_12.jpg",
       "image_id": "46e5a50e35fd",
@@ -4121,7 +4121,7 @@
     },
     {
       "date": "2026_07_01",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -4194,7 +4194,7 @@
     },
     {
       "date": "2020_03_25",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "major_trend_reversal"
@@ -4277,7 +4277,7 @@
     },
     {
       "date": "2019_08_01",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax"
       ],
@@ -4390,7 +4390,7 @@
     },
     {
       "date": "2020_10_14",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "climax"
       ],
@@ -4643,7 +4643,7 @@
     },
     {
       "date": "2024_02_15",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bear-Trap-Then-Bull-Trending-Trading-Range-Day_2024_02_15.jpg",
       "image_id": "cfed26308aee",
@@ -5268,7 +5268,7 @@
     },
     {
       "date": "2025_06_13",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bear-Trending-Trading-Range-Day-1_2025_06_13.jpg",
       "image_id": "1a623b2555bc",
@@ -5276,7 +5276,7 @@
     },
     {
       "date": "2025_06_15",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bear-Trending-Trading-Range-Day-1_2025_06_15.jpg",
       "image_id": "1a623b2555bc",
@@ -5284,7 +5284,7 @@
     },
     {
       "date": "2025_06_11",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bear-Trending-Trading-Range-Day_2025_06_11.jpg",
       "image_id": "ca52525912aa",
@@ -5538,7 +5538,7 @@
     },
     {
       "date": "2024_06_20",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trap-Then-Bear-Trending-Trading-Range-Day_2024_06_20.jpg",
       "image_id": "1b14c0bc7ca7",
@@ -5644,7 +5644,7 @@
     },
     {
       "date": "2024_09_16",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trap-Then-Trending-Trading-Range-Day_2024_09_16.jpg",
       "image_id": "4401b2de83e1",
@@ -6110,7 +6110,7 @@
     },
     {
       "date": "2023_11_17",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Day_2023_11_17.jpg",
       "image_id": "9b1415c30523",
@@ -6118,7 +6118,7 @@
     },
     {
       "date": "2023_11_20",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Day_2023_11_20.jpg",
       "image_id": "9b1415c30523",
@@ -6126,7 +6126,7 @@
     },
     {
       "date": "2024_08_08",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Day_2024_08_08.jpg",
       "image_id": "7029d28ff770",
@@ -6134,7 +6134,7 @@
     },
     {
       "date": "2024_08_12",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Day_2024_08_12.jpg",
       "image_id": "7029d28ff770",
@@ -6142,7 +6142,7 @@
     },
     {
       "date": "2025_04_29",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Day_2025_04_29.jpg",
       "image_id": "8c52503d75ae",
@@ -6150,7 +6150,7 @@
     },
     {
       "date": "2025_05_23",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Then-Profit-Taking_2025_05_23.jpg",
       "image_id": "4b5b73a91ecb",
@@ -6158,7 +6158,7 @@
     },
     {
       "date": "2025_05_27",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Chart-Bull-Trending-Trading-Range-Then-Profit-Taking_2025_05_27.jpg",
       "image_id": "4b5b73a91ecb",
@@ -6262,7 +6262,7 @@
     },
     {
       "date": "2024_10_25",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "inside_inside"
@@ -6273,7 +6273,7 @@
     },
     {
       "date": "2024_10_28",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "inside_inside"
@@ -6306,7 +6306,7 @@
     },
     {
       "date": "2024_05_16",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "climax"
       ],
@@ -6661,7 +6661,7 @@
     },
     {
       "date": "2025_04_14",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "double_top",
         "measured_move"
@@ -6936,7 +6936,7 @@
     },
     {
       "date": "2023_10_27",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "double_top"
       ],
@@ -6946,7 +6946,7 @@
     },
     {
       "date": "2023_10_29",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "double_top"
       ],
@@ -7203,7 +7203,7 @@
     },
     {
       "date": "2024_08_16",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_bottom"
       ],
@@ -7213,7 +7213,7 @@
     },
     {
       "date": "2024_08_19",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_bottom"
       ],
@@ -7442,7 +7442,7 @@
     },
     {
       "date": "2024_06_13",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "l2",
         "midday_reversal"
@@ -7615,7 +7615,7 @@
     },
     {
       "date": "2024_01_10",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_bottom"
       ],
@@ -8199,7 +8199,7 @@
     },
     {
       "date": "2025_02_24",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "major_trend_reversal"
@@ -8210,7 +8210,7 @@
     },
     {
       "date": "2025_02_25",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "major_trend_reversal"
@@ -9415,7 +9415,7 @@
     },
     {
       "date": "2023_08_16",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "triangle"
       ],
@@ -9425,7 +9425,7 @@
     },
     {
       "date": "2024_10_18",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "triangle"
       ],
@@ -9435,7 +9435,7 @@
     },
     {
       "date": "2024_10_21",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "triangle"
       ],
@@ -9445,7 +9445,7 @@
     },
     {
       "date": "2025_06_09",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "triangle"
       ],
@@ -9695,7 +9695,7 @@
     },
     {
       "date": "2025_02_19",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -9705,7 +9705,7 @@
     },
     {
       "date": "2025_04_24",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -9715,7 +9715,7 @@
     },
     {
       "date": "2025_04_28",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -10116,7 +10116,7 @@
     },
     {
       "date": "2024_09_12",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "wedge"
       ],
@@ -10137,7 +10137,7 @@
     },
     {
       "date": "2024_09_17",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -10147,7 +10147,7 @@
     },
     {
       "date": "2024_09_26",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -10157,7 +10157,7 @@
     },
     {
       "date": "2024_09_30",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -10285,7 +10285,7 @@
     },
     {
       "date": "2020_07_07",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge"
       ],
@@ -10397,7 +10397,7 @@
     },
     {
       "date": "2025_11_05",
-      "day_type": "trading_range",
+      "day_type": "trading_range_bear_breakout",
       "events": [
         "breakout",
         "double_bottom"
@@ -10558,7 +10558,7 @@
     },
     {
       "date": "2019_04_08",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "double_bottom",
         "major_trend_reversal"
@@ -10569,7 +10569,7 @@
     },
     {
       "date": "2019_10_23",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "double_bottom",
         "major_trend_reversal"
@@ -10631,7 +10631,7 @@
     },
     {
       "date": "2020_02_13",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_bottom"
       ],
@@ -10772,7 +10772,7 @@
     },
     {
       "date": "2025_10_15",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "double_top"
       ],
@@ -10920,7 +10920,7 @@
     },
     {
       "date": "2025_06_25",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "double_top"
       ],
@@ -11146,7 +11146,7 @@
     },
     {
       "date": "2026_01_07",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge",
         "triangle"
@@ -11219,7 +11219,7 @@
     },
     {
       "date": "2021_10_26",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "breakout",
         "failed_breakout",
@@ -11231,7 +11231,7 @@
     },
     {
       "date": "2021_02_19",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "breakout",
         "failed_breakout",
@@ -11243,7 +11243,7 @@
     },
     {
       "date": "2021_02_22",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "breakout",
         "failed_breakout",
@@ -11419,7 +11419,7 @@
     },
     {
       "date": "2026_05_12",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "gap",
         "major_trend_reversal"
@@ -11712,7 +11712,7 @@
     },
     {
       "date": "2026_03_12",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "gap"
       ],
@@ -11984,7 +11984,7 @@
     },
     {
       "date": "2026_01_14",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "gap",
         "midday_reversal"
@@ -11995,7 +11995,7 @@
     },
     {
       "date": "2026_01_15",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "gap",
         "midday_reversal"
@@ -12190,7 +12190,7 @@
     },
     {
       "date": "2021_01_28",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -12220,7 +12220,7 @@
     },
     {
       "date": "2022_11_17",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge",
         "measured_move",
@@ -12427,7 +12427,7 @@
     },
     {
       "date": "2021_03_08",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -12460,7 +12460,7 @@
     },
     {
       "date": "2021_07_22",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "higher_low_double_bottom",
         "double_bottom",
@@ -12557,7 +12557,7 @@
     },
     {
       "date": "2020_03_27",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-late-bear-trend-reversal_2020_03_27.png",
       "image_id": "51498a419b79",
@@ -12565,7 +12565,7 @@
     },
     {
       "date": "2020_03_30",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-late-bear-trend-reversal_2020_03_30.png",
       "image_id": "51498a419b79",
@@ -12611,7 +12611,7 @@
     },
     {
       "date": "2023_06_16",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_top",
         "lower_high_double_top"
@@ -12622,7 +12622,7 @@
     },
     {
       "date": "2023_06_20",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_top",
         "lower_high_double_top"
@@ -12821,7 +12821,7 @@
     },
     {
       "date": "2020_04_17",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -12831,7 +12831,7 @@
     },
     {
       "date": "2020_04_20",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -12841,7 +12841,7 @@
     },
     {
       "date": "2020_05_22",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -12851,7 +12851,7 @@
     },
     {
       "date": "2020_05_26",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "major_trend_reversal"
       ],
@@ -12883,7 +12883,7 @@
     },
     {
       "date": "2020_10_20",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "lower_low_double_bottom",
         "double_bottom"
@@ -13090,7 +13090,7 @@
     },
     {
       "date": "2026_02_10",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-mini-Bear-Trending-Trading-Range-Day_2026_02_10.jpg",
       "image_id": "4841962414b3",
@@ -13118,7 +13118,7 @@
     },
     {
       "date": "2021_04_14",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "head_and_shoulders_top"
       ],
@@ -13260,7 +13260,7 @@
     },
     {
       "date": "2026_02_03",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax"
       ],
@@ -13556,7 +13556,7 @@
     },
     {
       "date": "2020_12_29",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-outside-down-and-bear-trending-trading-range-day_2020_12_29.png",
       "image_id": "8f55b1143f8d",
@@ -13954,7 +13954,7 @@
     },
     {
       "date": "2020_04_23",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge"
       ],
@@ -13964,7 +13964,7 @@
     },
     {
       "date": "2020_12_01",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge",
         "major_trend_reversal"
@@ -14094,7 +14094,7 @@
     },
     {
       "date": "2021_10_07",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "wedge"
@@ -14105,7 +14105,7 @@
     },
     {
       "date": "2020_09_14",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "climax",
         "wedge"
@@ -14608,7 +14608,7 @@
     },
     {
       "date": "2021_03_04",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "climax"
       ],
@@ -14720,7 +14720,7 @@
     },
     {
       "date": "2020_06_25",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "climax",
         "major_trend_reversal"
@@ -17516,7 +17516,7 @@
     },
     {
       "date": "2020_07_01",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day-ahead-of-June-unemployment-report_2020_07_01.png",
       "image_id": "bdb0d6359b10",
@@ -17524,7 +17524,7 @@
     },
     {
       "date": "2020_04_15",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day-and-doji-day_2020_04_15.png",
       "image_id": "529c34f868e6",
@@ -17532,7 +17532,7 @@
     },
     {
       "date": "2023_05_15",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Trending-Trading-Range-Day-and-Inside-Day-1_2023_05_15.png",
       "image_id": "2143644185cc",
@@ -17540,7 +17540,7 @@
     },
     {
       "date": "2023_05_11",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Trending-Trading-Range-Day-and-Inside-Day_2023_05_11.png",
       "image_id": "458b60cb35ca",
@@ -17548,7 +17548,7 @@
     },
     {
       "date": "2026_06_24",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Trending-Trading-Range-Day-June-24-2026_2026_06_24.jpg",
       "image_id": "d353443e6252",
@@ -17556,7 +17556,7 @@
     },
     {
       "date": "2026_06_16",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Trending-Trading-Range-Day-Lower-High-MTR-Continued_2026_06_16.jpg",
       "image_id": "970c36614898",
@@ -17564,7 +17564,7 @@
     },
     {
       "date": "2021_08_02",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "breakout"
       ],
@@ -17574,7 +17574,7 @@
     },
     {
       "date": "2019_12_19",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "low_4"
       ],
@@ -17584,7 +17584,7 @@
     },
     {
       "date": "2019_12_23",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "low_4"
       ],
@@ -17594,7 +17594,7 @@
     },
     {
       "date": "2026_04_09",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Trending-Trading-Range-Day-with-Upper-and-Lower-Ranges_2026_04_09.jpg",
       "image_id": "a1665785d3aa",
@@ -17602,7 +17602,7 @@
     },
     {
       "date": "2019_07_16",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day_2019_07_16.png",
       "image_id": "741aac5fd045",
@@ -17610,7 +17610,7 @@
     },
     {
       "date": "2020_05_21",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day_2020_05_21.png",
       "image_id": "7859c533ebb0",
@@ -17618,7 +17618,7 @@
     },
     {
       "date": "2020_08_17",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day_2020_08_17.png",
       "image_id": "70256a485352",
@@ -17626,7 +17626,7 @@
     },
     {
       "date": "2020_10_09",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day_2020_10_09.png",
       "image_id": "f4bb82476abb",
@@ -17634,7 +17634,7 @@
     },
     {
       "date": "2020_10_12",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day_2020_10_12.png",
       "image_id": "f4bb82476abb",
@@ -17642,7 +17642,7 @@
     },
     {
       "date": "2020_12_07",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-trending-trading-range-day_2020_12_07.png",
       "image_id": "92b7521f3969",
@@ -17650,7 +17650,7 @@
     },
     {
       "date": "2025_12_10",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "breakout"
       ],
@@ -17660,7 +17660,7 @@
     },
     {
       "date": "2023_05_09",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-Trending-Trading-Range-with-Close-near-Open_2023_05_09.png",
       "image_id": "855bab9a54ab",
@@ -17689,7 +17689,7 @@
     },
     {
       "date": "2021_10_06",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "triangle"
       ],
@@ -17731,7 +17731,7 @@
     },
     {
       "date": "2021_09_01",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "triangle"
       ],
@@ -17794,7 +17794,7 @@
     },
     {
       "date": "2020_01_21",
-      "day_type": "trending_trading_range",
+      "day_type": "bull_trending_trading_range",
       "events": [
         "triangle"
       ],
@@ -17826,7 +17826,7 @@
     },
     {
       "date": "2022_06_08",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "failed_breakout",
         "wedge",
@@ -18130,7 +18130,7 @@
     },
     {
       "date": "2020_12_23",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [],
       "filename": "SP500-Emini-M5-weak-rally-then-late-bear-trend-reversal_2020_12_23.png",
       "image_id": "080d98bab95b",
@@ -18210,7 +18210,7 @@
     },
     {
       "date": "2021_02_18",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge",
         "gap",
@@ -18595,7 +18595,7 @@
     },
     {
       "date": "2020_10_06",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "bull_flag"
       ],
@@ -18648,7 +18648,7 @@
     },
     {
       "date": "2021_02_17",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "double_bottom",
         "major_trend_reversal"
@@ -18815,7 +18815,7 @@
     },
     {
       "date": "2021_11_30",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [],
       "filename": "SP500-Emini-M5-wedge-rally-to-EMA-then-trending-trading-range-day_2021_11_30.png",
       "image_id": "50e50d525eb1",
@@ -18823,7 +18823,7 @@
     },
     {
       "date": "2020_04_30",
-      "day_type": "trending_trading_range",
+      "day_type": "trading_range",
       "events": [
         "double_top"
       ],
@@ -18866,7 +18866,7 @@
     },
     {
       "date": "2020_04_20",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge"
       ],
@@ -18940,7 +18940,7 @@
     },
     {
       "date": "2022_01_26",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "failed_breakout",
         "wedge",
@@ -18985,7 +18985,7 @@
     },
     {
       "date": "2020_06_23",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge",
         "major_trend_reversal"
@@ -19007,7 +19007,7 @@
     },
     {
       "date": "2021_07_13",
-      "day_type": "reversal_day",
+      "day_type": null,
       "events": [
         "wedge"
       ],
@@ -19192,7 +19192,7 @@
     },
     {
       "date": "2022_01_27",
-      "day_type": "trending_trading_range",
+      "day_type": "bear_trending_trading_range",
       "events": [
         "wedge"
       ],
@@ -19293,11 +19293,15 @@
     }
   ],
   "summary": {
-    "day_type_covered": 1820,
+    "day_type_covered": 1768,
     "total": 2042,
     "unmapped_titles": [
       "Bear-Spike-to-Complex-Bear-Flag-becomes-Endless-Pullback",
+      "Bear-Trap-Bull-Reversal-then-Lower-High-Major-Trend-Reversal",
+      "Bear-Trend-Mid-day-Reversal",
+      "Big-Gap-Down-Sell-Climax-Then-Major-Trend-Reversal",
       "Bull-Trap-and-Then-Wedge-Bottom",
+      "Bull-V-Reversal-then-Lower-High-Major-Trend-Reversal",
       "Buy-Climax-and-Reversal-Ahead-of-FOMC",
       "Chart-Bear-Trap-Bull-Breakout-and-Channel",
       "Chart-Bear-Trap-Then-Buy-Climax-and-Wedge-Top",
@@ -19309,10 +19313,12 @@
       "Chart-Bull-Trap-and-Then-Wedge-Bottom",
       "Chart-Buy-Climax-50pc-Pullback-Then-Wedge-Bottom",
       "Chart-Buy-Climax-Then-Lower-High-MTR",
+      "Chart-Buy-Climax-ii-Top-Bear-Trend-Reversal",
       "Chart-DB-Double-Bottom-2nd-Attempt",
       "Chart-DT-Then-Sell-Climax-and-Wedge-Bottom",
       "Chart-Double-Bottom-Then-Measured-Moves-Up",
       "Chart-Double-Bottom-Then-Spike-and-Channel-Up",
+      "Chart-Double-Top-Measured-Move-Down-Then-Reversal",
       "Chart-Double-Top-Then-Wedge-Bottom",
       "Chart-Expanding-Triangle-Bull-Breakout-Then-TR",
       "Chart-Expanding-Triangle-Open-Then-Sell-Climax",
@@ -19324,6 +19330,7 @@
       "Chart-High-2-Bottom-and-Weak-Rally",
       "Chart-Higher-High-Double-Top-Wedge-Bottom-at-EMA",
       "Chart-LL-DB-Then-Wedge-Top",
+      "Chart-Low-2-Top-Then-Bear-Trend-and-Midday-Reversal",
       "Chart-Low-2-Top-Wedge-Bull-Flag-Then-Sideways",
       "Chart-Low-2-Top-and-Then-Wedge-Bottom",
       "Chart-Lower-High-Double-Top-Then-Sell-Climax",
@@ -19339,6 +19346,8 @@
       "Chart-Sell-Climax-Then-Buy-Climax-and-Double-Top",
       "Chart-Sell-Climax-Then-Rally-to-Wedge-Top",
       "Chart-Sell-Climax-Then-Wedge-Top",
+      "Chart-Sell-Climax-and-Then-HL-Major-Trend-Reversal",
+      "Chart-Sell-Climax-and-Then-LL-Major-Trend-Reversal",
       "Chart-Sell-Climax-and-Then-Lower-Low-Double-Bottom",
       "Chart-Sell-Climax-ii-Bottom",
       "Chart-Small-Wedge-Top-Then-Nested-Wedge-Bottom",
@@ -19359,13 +19368,17 @@
       "Chart-Wedge-Top-and-Then-Strong-Bear-Breakout",
       "Double-Bottom-Two-Legs-Up-Then-Sideways",
       "Double-Top-100-Point-Selloff-Then-Sideways",
+      "Double-Top-2-Legs-Down-Then-Bull-Reversal",
       "EOD-Review-March-18-2026",
       "EOD-Review-PriceActionRose",
       "End-of-Day-Setups-Chart",
+      "Expanding-Triangle-Parabolic-Wedge-Midday-Bear-Trend-Reversal",
       "Expanding-Triangle-then-FOMC-Bear-Breakout-Trend-to-Close-1",
       "Final-Trading-Day-of-2022-Strong-Rally-Late-in-Day",
       "Gap-Down-Opening-and-Midday-Reversals-with-End-of-Day-Rally",
+      "Gap-Down-and-Selloff-to-Major-Trend-Reversal",
       "Gap-Up-Double-Top-Then-Upper-and-Lower-Trading-Ranges",
+      "Gap-Up-OPening-Range-Breakout-Then-Midday-Reversal",
       "High-2-Opening-Reversal-than-bull-micro-channel",
       "High-2-bottom-and-then-wedge-top-1",
       "High-2-bottom-and-weak-rally-but-late-selloff",
@@ -19377,6 +19390,7 @@
       "Low-2-top-and-double-top-lower-high-major-trend-reversal-and-then-parabolic-wedge-sell-climax",
       "Low-2-top-then-parabolic-wedge-sell-climax",
       "Lower-and-Upper-Ranges-up-to-New-All-time-High",
+      "Opening-Range-Breakout-Bear-Trend-to-Sell-Climax-Then-Reversal",
       "Opening-Reversal-Bull-Spike-Then-Sideways-Up-Channel",
       "Parabolic-Wedge-Sell-Climax-Followed-by-Endless-Pullback",
       "Parabolic-Wedge-Top-Then-Sell-Climax-Bottom",
@@ -19389,6 +19403,7 @@
       "Yesterday-Buy-Climax-Expect-2hr-Sideways-Down",
       "bear-major-surprise-breakout",
       "bear-sell-signal-bar-near-3100-big-round-number",
+      "bear-trend-reversal",
       "bear-trend-reversal-1",
       "bear-trend-reversal-3",
       "bear-trend-reversal-after-parabolic-wedge",
@@ -19406,15 +19421,20 @@
       "bull-breakout-after-FOMC",
       "bull-breakout-after-FOMC-1",
       "bull-breakout-on-FOMC-announcement",
+      "bull-ltrend-reversal",
       "bull-major-surprise-then-bear-trend-reversal-day",
       "bull-trap-and-Broad-bear-trend-channel-from-the-open-with-failed-bar-40-midday-reveral",
+      "buy-climax-and-lower-high-major-trend-reversal",
+      "buy-climax-and-then-bear-trend-reversal",
       "buy-climax-and-then-nested-wedge-bottom",
       "buy-climax-and-wedge-top-and-bear-trend-reversal-with-gap-closure-on-monthly-chart",
       "buy-vacuum-test-of-resistance-and-then-reversal-day",
+      "consective-parabolic-wedge-tops-and-bear-trend-reversal",
       "consecutive-outside-days-so-oo-pattern",
       "crash-after-FOMC-Fed-rate-cut",
       "double-bottom-and-new-all-time-highest-close",
       "double-bottom-and-wedge-top",
+      "double-bottom-higher-low-major-trend-reversal",
       "double-top-and-double-bottom-and-bull-traps-and-bear-traps",
       "double-top-and-then-wedge-bottom-1",
       "end-of-quarter-window-dressing-rally",
@@ -19425,26 +19445,37 @@
       "gap-down-and-then-bull-major-surprise-bar",
       "gap-down-below-head-and-shoulders-top-neck-line",
       "gap-down-with-double-bottom-pullback-and-expanding-triangle-that-evolved-into-triangle-open-with-bull-breakout-that-failed",
+      "had-midday-Higher-high-major-trend-reversal",
+      "high-2-and-lower-low-major-trend-reversal-led-to-major-bull-surprise-and-measured-move-but-nested-wedge-top-was-midday-trend-reversal",
+      "higher-high-major-trend-reversal",
+      "higher-low-double-bottom-major-trend-reversal",
+      "late-bear-trend-reversal",
       "late-bull-breakout-above-triangle-after-parabolic-wedge-bottom",
       "late-bull-breakout-after-FOMC-rate-cut",
       "late-sell-the-close-bear-trend-after-FOMC-minutes",
       "limit-down-sell-climax-and-then-wedge-top",
       "limit-down-then-high-2-and-triangle-bottom-followed-by-wedge-top",
       "limit-down-to-circuit-breaker-and-trading-halted",
+      "lower-low-and-then-higher-low-major-trend-reversal",
+      "lower-low-double-bottom-and-then-bear-trend-reversal",
       "lower-low-double-bottom-expanding-triangles-bear-trap-and-double-bottom-after-FOMC-minutes",
       "lower-low-major-trend-reversal-after-failed-double-top",
       "major-bull-and-bear-surprises-at-50-day-EMA-and-4600-big-round-number",
       "midday-wedge-top-and-10-correction-1",
       "nested-expanding-triangles-at-all-time-high",
+      "parabolic-wedge-and-bear-trend-reversal",
       "parabolic-wedge-and-bear-trend-reversal-below-Globex-high-and-reached-measured-move-down",
+      "parabolic-wedge-and-higher-high-major-trend-reversal",
       "parabolic-wedge-bottom-at-end-of-quarter-and-short-covering-rally-with-exhaustive-buy-climax-and-blow-off-top",
       "parabolic-wedge-bottom-led-to-triangle-and-then-midday-bull-breakout-and-measured-move-up",
       "parabolic-wedge-buy-climax-above-ledge-top-at-neckline-of-double-top",
       "parabolic-wedge-buy-climax-and-then-V-bottom",
+      "parabolic-wedge-buy-climax-and-then-bear-trend-reversal",
       "parabolic-wedge-buy-climax-then-double-top-lower-high-major-trend-reversal-and-stock-market-crash",
       "parabolic-wedge-buy-climax-then-triangle-with-late-bull-breakout",
       "parabolic-wedge-sell-climax",
       "parabolic-wedge-sell-climax-and-then-triangle",
+      "sell-climax-and-higher-low-major-trend-reversal",
       "sell-climax-testing-February-high",
       "sell-climax-to-double-bottom",
       "sell-vacuum-test-of-breakout-point",
@@ -19456,13 +19487,16 @@
       "trading-open-and-late-bear-breakout",
       "triangle-and-then-bear-trend-after-FOMC-announcement",
       "triangle-on-open-then-2nd-leg-bull-trap",
+      "triangle-open-and-bull-breakout-then-bear-trend-reversal",
       "triangle-open-then-bear-breakout-and-wedge-bottom",
       "triangle-open-then-consecutive-wedge-bottoms-and-bull-and-bear-traps",
       "triangle-with-late-bear-breakout",
       "triangle-with-late-breakout-to-new-all-time-high",
       "triangle-with-late-bull-breakout",
       "trianlge-with-bear-breakout",
+      "weak-rally-then-late-bear-trend-reversal",
       "weak-rally-then-late-bear-trend-reversal-1",
+      "wedge-bottom-after-gap-down-then-higher-low-major-trend-reversal",
       "wedge-bottom-after-triangle-open",
       "wedge-bottom-and-consecutive-wedge-tops",
       "wedge-bottom-and-midday-trend-reversal-from-below-october-low-and-200-day-moving-average",
@@ -19471,13 +19505,19 @@
       "wedge-bottom-then-major-bull-surprise-and-leg-1-leg-2-meausured-move",
       "wedge-bottoms-and-tops",
       "wedge-bull-flag-and-2nd-leg-bull-trap",
+      "wedge-bull-flag-and-then-bear-trend-reversal",
+      "wedge-double-bottom-and-higher-low-major-trend-reversal",
       "wedge-double-top-and-failed-island-bottom",
       "wedge-double-top-lower-high-major-trend-reversal-at-20-correction-level",
       "wedge-opening-reversal-then-big-wedge-top",
       "wedge-top",
+      "wedge-top-and-bear-trend-reversal",
+      "wedge-top-and-bottom-then-FOMC-failed-bull-breakout-and-higher-high-major-trend-reversal",
       "wedge-top-and-bottom-then-double-top-with-sell-the-close-bear-trend-into-the-close",
       "wedge-top-and-late-bear-breakout",
+      "wedge-top-and-lower-high-major-trend-reversal",
       "wedge-top-and-major-bear-surprise-led-to-spike-and-channel-down-1",
+      "wedge-top-and-midday-bear-trend-reversal",
       "wedge-top-and-then-nested-wedge-bottom",
       "wedge-top-at-EMA-then-OO-bottom-and-higher-low-major-trend-reversal-and-measured-move-up-after-failed-bull-trap"
     ]

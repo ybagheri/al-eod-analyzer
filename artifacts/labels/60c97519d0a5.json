@@ -1,6 +1,6 @@
 {
   "date": "2022-03-31",
-  "day_type": "trading_range",
+  "day_type": "trading_range_bear_breakout",
   "day_type_confidence": 0.75,
   "events": [
     {

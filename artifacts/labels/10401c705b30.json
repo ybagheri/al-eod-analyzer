@@ -1,6 +1,6 @@
 {
   "date": "2021-08-18",
-  "day_type": "trading_range",
+  "day_type": "trading_range_bear_breakout",
   "day_type_confidence": 0.7,
   "events": [
     {

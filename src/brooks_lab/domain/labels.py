@@ -37,11 +37,16 @@ class DayType(StrEnum):
     SPIKE_AND_CHANNEL_BEAR = "spike_and_channel_bear"
     SMALL_PULLBACK_BULL_TREND = "small_pullback_bull_trend"
     SMALL_PULLBACK_BEAR_TREND = "small_pullback_bear_trend"
-    TRENDING_TRADING_RANGE = "trending_trading_range"
+    # v1.3 (ADR-011): trending TR split by direction (user review decision).
+    BULL_TRENDING_TRADING_RANGE = "bull_trending_trading_range"
+    BEAR_TRENDING_TRADING_RANGE = "bear_trending_trading_range"
     TRADING_RANGE = "trading_range"
+    # v1.3 (ADR-011): compound days - range that resolves via a breakout.
+    TRADING_RANGE_BULL_BREAKOUT = "trading_range_bull_breakout"
+    TRADING_RANGE_BEAR_BREAKOUT = "trading_range_bear_breakout"
     BROAD_BULL_CHANNEL = "broad_bull_channel"
     BROAD_BEAR_CHANNEL = "broad_bear_channel"
-    REVERSAL_DAY = "reversal_day"
+    # v1.3 (ADR-011): reversal_day REMOVED - use direction-specific ids below.
     TREND_REVERSAL_TO_BULL = "trend_reversal_to_bull"
     TREND_REVERSAL_TO_BEAR = "trend_reversal_to_bear"
     OTHER = "other"

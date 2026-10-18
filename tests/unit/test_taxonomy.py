@@ -22,10 +22,10 @@ def _repo_taxonomy() -> Path:
     return Path(__file__).resolve().parents[2] / "config" / "taxonomy.yaml"
 
 
-def test_repo_taxonomy_loads_v1() -> None:
+def test_repo_taxonomy_loads_v1_3() -> None:
     taxonomy = load_taxonomy(_repo_taxonomy())
     assert taxonomy.schema_version == 1
-    assert len(taxonomy.day_types) == 15
+    assert len(taxonomy.day_types) == 17
     assert len(taxonomy.events) == 50
     assert "other" in taxonomy.day_types
     assert "midday_reversal" in taxonomy.events
@@ -34,6 +34,17 @@ def test_repo_taxonomy_loads_v1() -> None:
     assert "low_4" in taxonomy.events
     assert "measuring_gap" in taxonomy.events
     assert "bull_trend_resumption" in taxonomy.day_types
+    # v1.3 (ADR-011): direction-specific TTR + compound breakout days in;
+    # generic trending_trading_range and reversal_day removed.
+    for added in (
+        "bull_trending_trading_range",
+        "bear_trending_trading_range",
+        "trading_range_bull_breakout",
+        "trading_range_bear_breakout",
+    ):
+        assert added in taxonomy.day_types
+    assert "trending_trading_range" not in taxonomy.day_types
+    assert "reversal_day" not in taxonomy.day_types
 
 
 def test_taxonomy_rejects_version_mismatch(tmp_path: Path) -> None:

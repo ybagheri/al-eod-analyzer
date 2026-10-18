@@ -13,6 +13,17 @@ A single JSON object matching the label schema (DayLabel v1). No prose, no fence
 
 1. Read ONLY what is annotated or visibly evident. Do not infer unseen bars.
 2. `day_type`: use one canonical id from the taxonomy below (or `other`).
+   v1.3 (ADR-011, binding):
+   - Trending trading range days are DIRECTION-specific: use
+     `bull_trending_trading_range` or `bear_trending_trading_range` (the
+     on-chart title usually names the direction; otherwise judge from the
+     dominant swing). Never output a generic trending trading range id.
+   - A day that is trading range for most of the session and then resolves
+     with a breakout into a new trend is the COMPOUND type
+     `trading_range_bull_breakout` / `trading_range_bear_breakout`.
+   - `reversal_day` no longer exists: a day whose regime turns intraday is
+     `trend_reversal_to_bull` / `trend_reversal_to_bear` by the direction it
+     turns INTO (the PM regime, not the morning phase).
 3. `events`: one entry per visible annotation. `label` must be a canonical event id;
    if the wording has no canonical match, set `label` to null and keep the exact
    wording in `raw_label` (never drop it, never force a wrong id).

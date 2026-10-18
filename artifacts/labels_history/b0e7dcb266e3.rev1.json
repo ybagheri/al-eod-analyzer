@@ -1,0 +1,116 @@
+{
+  "date": "2019-04-11",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue hand-drawn converging lines over the opening bars",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "range broke downward at 08:35 into the bear leg",
+      "placement": null,
+      "price_hint": 2898.0,
+      "raw_label": "opening range lines",
+      "role": "day_part",
+      "source": "vision",
+      "start_time": {
+        "time": "06:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "neutral",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue hand-drawn converging lines over the opening bars",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "range broke downward at 08:35 into the bear leg",
+      "placement": null,
+      "price_hint": 2898.0,
+      "raw_label": "opening range lines",
+      "role": "day_part",
+      "source": "vision",
+      "start_time": {
+        "time": "06:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "tall climactic bear bar and flush to 2887 after three stacked red signal-bar boxes; filename phrase 'sell cimax'",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "flush was followed by chop instead of continuation; the day turned into a grinding bear range",
+      "placement": null,
+      "price_hint": 2887.0,
+      "raw_label": "sell climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta drawn lines: falling support line broken at the 11:40 low, rising bull trend line to 13:00",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "bull V-reversal to 2893.5 followed into the close",
+      "placement": null,
+      "price_hint": 2886.0,
+      "raw_label": "magenta trend line break",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "b0e7dcb266e3",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trending TR Day' (filename adds 'bear trending trading range day and sell cimax'). Reading: opening trading range 2890-2898 inside blue hand-drawn converging lines (06:35-08:15), double top 2897-2896.5 at 08:20 with stacked red signal-bar boxes, climactic bear flush to 2887 at 08:45 (filename's sell climax), then a slow bear trending range of overlapping ranges from 2890 to the 2860 low at 11:40 drawn under a magenta trend line; trend-line break and a new magenta bull trend line lifted price from 2886 to about 2893.5 into the close. Axis is offset-style (prints 07:00-13:00 with prior-day 19/4/11 13:00 sliver and 4/11 day marker); not a plain PT session, flag kept. 2019-vintage image: few text annotations, signal-bar boxes only."
+}

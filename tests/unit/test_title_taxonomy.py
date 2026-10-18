@@ -31,7 +31,12 @@ def test_parse_filename_layouts(filename: str) -> None:
         ("Spike-Channel-Bear-Trend-Day", DayType.SPIKE_AND_CHANNEL_BEAR),
         ("Broad-Bear-Channel", DayType.BROAD_BEAR_CHANNEL),
         ("bear-channel-and-then-trading-range", DayType.BROAD_BEAR_CHANNEL),
-        ("Trending-Trading-Range-Day", DayType.TRENDING_TRADING_RANGE),
+        ("Trending-Trading-Range-Bear-Day", DayType.BEAR_TRENDING_TRADING_RANGE),
+        ("Bear-Trending-Trading-Range-Day", DayType.BEAR_TRENDING_TRADING_RANGE),
+        ("Bull-Trending-Trading-Range-Day", DayType.BULL_TRENDING_TRADING_RANGE),
+        ("Trending-Trading-Range-Bull", DayType.BULL_TRENDING_TRADING_RANGE),
+        ("Trading-Range-Bear-Breakout", DayType.TRADING_RANGE_BEAR_BREAKOUT),
+        ("TR-Bull-Breakout", DayType.TRADING_RANGE_BULL_BREAKOUT),
         ("Trading-Range-Day", DayType.TRADING_RANGE),
         ("doji-trading-range-day", DayType.TRADING_RANGE),
         ("Bull-Trend-Resumption-50PC-Pullback", DayType.BULL_TREND_RESUMPTION),
@@ -46,6 +51,10 @@ def test_parse_filename_layouts(filename: str) -> None:
 )
 def test_map_title_day_types(title: str, expected: DayType) -> None:
     assert map_title(title).day_type == expected
+
+
+def test_bare_reversal_title_maps_to_no_day_type() -> None:
+    assert map_title("Buy-Climax-and-Reversal").day_type is None
 
 
 @pytest.mark.parametrize(

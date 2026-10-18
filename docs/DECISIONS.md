@@ -155,3 +155,26 @@
   additive and logged in HANDOFF; Phase 5b calendar pass must normalise the
   weekend-dated (29) and undated (1) filenames; market-data attach and gold logic
   must not consume title ids directly.
+
+## ADR-011 ?? Taxonomy v1.3: direction-specific TTR, compound TR-breakout, no bare reversal day (2026-10-17, accepted)
+
+- Context: round-5 user review of all calibration pages found (a) every
+  trending trading range sample resolved one direction, (b) `"Reversal Day"`
+  adds nothing over the direction-specific `trend_reversal_to_bull/bear`
+  ids, and (c) end-of-day breakouts out of a mostly-range session need a
+  compound day type (`10401c705b30` ~66% TR + late bear breakout).
+- Decision: taxonomy v1.3 - ADD `bull_trending_trading_range`,
+  `bear_trending_trading_range`, `trading_range_bull_breakout`,
+  `trading_range_bear_breakout`; REMOVE `trending_trading_range` and
+  `reversal_day` from the vocabulary (legacy strings may appear only in
+  history archives/queue responses, never in new output). Title rules map
+  `Trending-TR-Bear/Bull` to the direction-specific ids; bare `Reversal`
+  titles fall to the unmapped bucket for vision resolution. Prompt v2
+  gains the direction/compound rules. 10 labels remapped via review-apply
+  (6 TTR all bear-trending; 61527045af90 -> trend_reversal_to_bear;
+  a9d707ed92f6 -> trend_reversal_to_bull; 10401c705b30 and
+  60c97519d0a5 -> trading_range_bear_breakout).
+- Consequences: filename-title coverage drops 1820/2042 -> 1768/2042 (90
+  previously-generic titles now resolve via vision during wave scaling);
+  v1.3 day strata are direction-aware for the playbook and engine; old
+  report/agreement numbers are not comparable across the vocab change.

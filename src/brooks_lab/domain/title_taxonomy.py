@@ -46,7 +46,24 @@ _DAY_RULES: Final[tuple[tuple[str, DayType], ...]] = (
     (r"broad-bear-channel", DayType.BROAD_BEAR_CHANNEL),
     (r"bull-channel", DayType.BROAD_BULL_CHANNEL),
     (r"bear-channel|bear-channnel|baer-channel", DayType.BROAD_BEAR_CHANNEL),
-    (r"trending-trading-range", DayType.TRENDING_TRADING_RANGE),
+    # v1.3 (ADR-011): direction-specific trending TR; direction checked first.
+    (
+        r"trending-trading-range-bull|bull-trending-trading-range",
+        DayType.BULL_TRENDING_TRADING_RANGE,
+    ),
+    (
+        r"trending-trading-range-bear|bear-trending-trading-range",
+        DayType.BEAR_TRENDING_TRADING_RANGE,
+    ),
+    # v1.3 (ADR-011): compound range-resolves-via-breakout day types.
+    (
+        r"trading-range-bull-breakout|tr-bull-breakout",
+        DayType.TRADING_RANGE_BULL_BREAKOUT,
+    ),
+    (
+        r"trading-range-bear-breakout|tr-bear-breakout",
+        DayType.TRADING_RANGE_BEAR_BREAKOUT,
+    ),
     (r"bull-trend(?:-day)?$", DayType.BULL_TREND_FROM_OPEN),
     (r"bull-trend(?:-day)?-|-and-bull-trend", DayType.BULL_TREND_FROM_OPEN),
     (
@@ -64,7 +81,9 @@ _DAY_RULES: Final[tuple[tuple[str, DayType], ...]] = (
     (r"outside-down", DayType.TREND_REVERSAL_TO_BEAR),
     (r"doji", DayType.TRADING_RANGE),
     (r"inside-day", DayType.TRADING_RANGE),
-    (r"reversal$", DayType.REVERSAL_DAY),
+    # v1.3 (ADR-011): reversal_day removed. Up/Down phrases are handled above;
+    # bare "reversal" titles now fall through to the unmapped-title bucket and
+    # vision labels resolve the direction.
 )
 
 _EVENT_RULES: Final[tuple[tuple[str, EventKind], ...]] = (

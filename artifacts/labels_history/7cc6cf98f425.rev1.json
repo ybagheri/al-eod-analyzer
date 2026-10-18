@@ -1,0 +1,449 @@
+{
+  "date": "2022-01-27",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' text at the opening top with dotted trendline",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "top"
+      ],
+      "outcome": "success",
+      "outcome_reason": "wedge top at the open faded the 4421 high",
+      "placement": null,
+      "price_hint": 4421.0,
+      "raw_label": "Wedge",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Sell The Close' text at the opening top",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "sell-the-close bears worked the opening top",
+      "placement": null,
+      "price_hint": 4420.0,
+      "raw_label": "Sell The Close",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "first shaded box",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "first purple shaded range 07:00-08:10 (4382-4421)",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "first shaded trading range",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "right edge of first shaded box",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "range ended before the LH DT-driven transition",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "first shaded trading range end",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink 'Wedge' + green 'LL DB' text at the 07:50 low with dotted lines",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [
+        "bottom"
+      ],
+      "outcome": "partial",
+      "outcome_reason": "wedge bottom produced only a bounce before the day's downtrend resumed",
+      "placement": null,
+      "price_hint": 4385.5,
+      "raw_label": "Wedge (bottom)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'LL DB' text under the 07:50 low",
+      "label": "lower_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "low-side bottom in the first range; bounce faded short of 4400",
+      "placement": null,
+      "price_hint": 4385.5,
+      "raw_label": "LL DB",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted converging lines running 07:00-09:15",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [
+        "expanding"
+      ],
+      "outcome": "success",
+      "outcome_reason": "triangle formed inside the first range and broke out below at 09:15",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "exp triangle (blue dotted lines)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'LH DT' text over the red dotted 08:10-08:20 line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "LH DT at 4408 led to the triangle-breakout transition down",
+      "placement": null,
+      "price_hint": 4408.0,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange/blue note with arrow to the shaded 09:15-09:35 breakout legs",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [
+        "sell"
+      ],
+      "outcome": "success",
+      "outcome_reason": "breakout below the triangle formed the lower range as projected, continuing the trending TR day",
+      "placement": null,
+      "price_hint": 4395.0,
+      "raw_label": "Breakout below Triangle",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "second shaded box",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second purple shaded range 10:00-13:15 (4394-4408)",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "second shaded trading range",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "right edge of second shaded box",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "range held through the close (filename notes an inside day)",
+      "placement": null,
+      "price_hint": null,
+      "raw_label": "second shaded trading range end",
+      "role": "context",
+      "source": "vision",
+      "start_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Sell Climax' text at the beige-boxed 10:25 low",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "sell climax low became the range bottom",
+      "placement": null,
+      "price_hint": 4394.0,
+      "raw_label": "Sell Climax",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'High 2' text under the 10:35-10:50 lows",
+      "label": "h2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "high 2 buy rallied only to the 4407.5 LH DT",
+      "placement": null,
+      "price_hint": 4398.0,
+      "raw_label": "High 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "first red LH DT note at 10:45 over the red dotted line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "retest LH DT sent price back to the 4398.5 LL",
+      "placement": null,
+      "price_hint": 4407.5,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'LL MTR' text at the 11:35 dip",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "lower-low MTR buy-reversal reaction within the range",
+      "placement": null,
+      "price_hint": 4398.5,
+      "raw_label": "LL MTR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'LL MTR' text at the 12:30 dip with the green shaded 12:30-12:40 box",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "second lower-low MTR reaction capped the dips at 4395 but the range trend stayed bear-tilted",
+      "placement": null,
+      "price_hint": 4395.0,
+      "raw_label": "LL MTR",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'LH DT' text at 12:45 with red dotted 4404.5 line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "third LH DT retest capped the range top; inside-day close followed",
+      "placement": null,
+      "price_hint": 4404.5,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "7cc6cf98f425",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trending Trading Range Day' (filename adds inside day at the close). Spans 1/26 13:00 through the 1/28 edge marker. Reading: opening shaded trading range (07:00-08:10) with a wedge Sell-The-Close top at 4421, a triangle (blue dotted) box and an LH DT at 4408 that broke out below the triangle (09:15) forming a lower trading range as the note projected; stepwise down through the second shaded range (10:00-13:15), a sell climax low (10:25), High 2 buy and LH DT rallies (4407.5/4404.5), two LL MTR up-reactions (11:30, 12:30) but no bull follow-through — closing inside the range ~4403."
+}
