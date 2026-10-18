@@ -173,6 +173,17 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   (labels=43, unmapped=10); ADR-011 in docs/DECISIONS.md; tests updated
   (v1.3 coverage, bare-reversal rule, title taxonomy params). Gate GREEN
   (160 tests, 92.38%).
+- Wave-2 regeneration recovery (2026-10-18): 98 uncommitted extraction_queue
+  response files lost to a tooling accident; 71 tracked files restored via
+  `git checkout -- artifacts`, 15 restored verbatim from retained copies, the
+  remaining 98 re-authored by chart re-inspection (2 images per session) under
+  taxonomy v1.3; all 169 queue pairs non-empty and JSON-valid; JSON-scrub
+  pass removed stray keys from 92 files; strict responses use BOM-less UTF-8
+  writes (PS 5.1 `Set-Content -Encoding UTF8` BOM bug avoided). Gate run:
+  labeled=0 skipped=38 pending=0 failed=0; day_type agreement 0.706 (34
+  comparable), report + sample regenerated. Wave-2 queue artifacts are
+  agent-visible but still uncommitted as a bulk commit. Gate GREEN
+  (pytest 166).
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -192,11 +203,11 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. AGENT: bulk wave 2 — start routine extraction toward the 1678 unique batch-1
-   charts (<=100/session), wave 0+1 calibration DONE and USER-APPROVED after
-   round-5 review; all 38 calibration gold-candidate corrections applied
-   (incl. taxonomy v1.3 remaps); fix new quarantines per wave; record
-   agreement per wave in calibration_report.json.
+1. AGENT: bulk wave 2 — continue routine extraction toward the 1678 unique
+   batch-1 charts (169/1678 queue pairs refilled and gate-validated
+   2026-10-18; queue artifacts uncommitted, commit the wave-2 bulk next), fix
+   new quarantines per wave; record agreement per wave in
+   calibration_report.json.
 2. USER: on gold registry — only open human-review item left is
    `10401c705b30` (mark gold yes/no); everything else approved through
    round-5 (2026-10-17).

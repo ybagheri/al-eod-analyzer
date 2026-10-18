@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Wave-2 regeneration recovery: all 169 batch-1 extraction_queue request+response
+  pairs restored/refilled and JSON-valid under taxonomy v1.3 (71 tracked restored
+  via git checkout, 15 restored verbatim, 98 re-authored by chart re-inspection at
+  2 images per session); JSON-scrub pass removed stray keys from 92 responses;
+  strict BOM-less UTF-8 write pattern documented to avoid the PS 5.1
+  `Set-Content -Encoding UTF8` BOM bug. Calibration gate: labeled=0 skipped=38
+  pending=0 failed=0, day_type agreement 0.706 (34 comparable); commit 2bd0c5e.
 - Taxonomy v1.3 (ADR-011, user-approved): `bull/bear_trending_trading_range`
   + `trading_range_{bull,bear}_breakout` added; generic `trending_trading_range`
   and `reversal_day` removed from the vocabulary; title rules and prompt v2
