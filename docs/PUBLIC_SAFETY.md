@@ -45,7 +45,9 @@ The gate (`python -m tasks check`) runs the working-tree scan; CI runs both.
 
 - Working tree: **clean**.
 - Full history: **1 finding** — an old version of `docs/MASTER_PROMPT.md`
-  contains two absolute local MT5 paths (terminal path and MT5 data-folder id).
-  The current version is redacted; whether to purge the historical blob is a
-  USER CHECKPOINT (`AGENTS.md`: no history rewrite without user approval).
-  Decision and outcome will be recorded in `docs/evidence/S0.md` and here.
+  (blob `07f0f9c4…`) contains two absolute local MT5 paths (terminal path and
+  MT5 data-folder id). The current version is redacted.
+- **User decision (2026-10-19, Persian): ACCEPTED.** The user reviewed the
+  finding (username + terminal-folder id, no key/secret) and chose to accept
+  the historical exposure instead of rewriting history. No filter-repo /
+  force-push. This decision is final for S0 and recorded in `docs/evidence/S0.md`.

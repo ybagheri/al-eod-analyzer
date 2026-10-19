@@ -8,7 +8,7 @@ history. Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ b
 
 <!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
 
-| S0 | Re-plan, doc sync, safety rails, privacy | 🟨 in_progress | `—` |
+| S0 | Re-plan, doc sync, safety rails, privacy | ✅ done | `—` |
 | S1 | Dependency and environment repair | ⬜ pending | `—` |
 | S2 | Extraction v3: compact schema, validator-gated writes, anchors | ⬜ pending | `—` |
 | S3 | Phase 5b: market data layer + session calendar + axis resolution | ⬜ pending | `—` |
@@ -47,10 +47,10 @@ history. Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ b
 - [x] Prompt saved (verbatim modulo personal-path redaction) as `docs/PLAN_V2.md`; SHA-256 in `docs/PLAN_V2.sha256`; ADR-012 written
 - [x] `docs/STATUS.yaml` single source of truth + `scripts/sync_status.py` + drift test
 - [x] Stale text fixed (README status/legal, ROADMAP Phase-0 checkbox, HANDOFF §1/§8)
-- [ ] `scripts/public_safety_scan.py` implemented; full-history scan run; `docs/PUBLIC_SAFETY.md`; `.gitignore` hardened
-- [ ] `scripts/backup.py` + `python -m tasks backup` works (last 10 zips, outside repo)
-- [ ] §8 enforcement: `.githooks/` (pre-commit/commit-msg/pre-push), CI `gate.yml`, plan-compliance in `python -m tasks check`, plan-hash guard, evidence file `docs/evidence/S0.md`
-- [ ] Gate GREEN demonstrated failing on a modified `docs/PLAN_V2.md`, then reverted
+- [x] `scripts/public_safety_scan.py` implemented; full-history scan run (1 finding — old MASTER_PROMPT.md blob with local MT5 paths; user chose to ACCEPT, no history rewrite); `docs/PUBLIC_SAFETY.md`; `.gitignore` hardened
+- [x] `scripts/backup.py` + `python -m tasks backup` works (last 10 zips, outside repo, verified with a real run)
+- [x] §8 enforcement: `.githooks/` (pre-commit/commit-msg/pre-push, `core.hooksPath .githooks`), CI `.github/workflows/gate.yml`, plan-compliance in `python -m tasks check`, plan-hash guard, evidence file `docs/evidence/S0.md`
+- [x] Gate demonstrated FAILING on a modified `docs/PLAN_V2.md` (plan-hash guard message), then reverted
 
 ## Predecessor phases (pre-re-plan; DoD evidence in HANDOFF/CHANGELOG)
 

@@ -1,0 +1,15 @@
+#!/bin/sh
+# pre-commit hook (plan v2.6 §8.3). Full gate runs on pre-push.
+# --no-verify is FORBIDDEN (AGENTS.md rule 5).
+set -e
+PY="$(git rev-parse --show-toplevel)/.venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=python
+
+echo "[pre-commit] ruff check"
+"$PY" -m ruff check .
+echo "[pre-commit] ruff format --check"
+"$PY" -m ruff format --check .
+echo "[pre-commit] public-safety scan (working tree)"
+"$PY" scripts/public_safety_scan.py
+
+echo "[pre-commit] OK"

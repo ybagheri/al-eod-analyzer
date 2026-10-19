@@ -1,0 +1,10 @@
+#!/bin/sh
+# commit-msg hook: enforce `S<k>: <summary>` (plan v2.6 §8.3).
+MSG="$(cat "$1")"
+case "$MSG" in
+  Merge\ *|Revert\ *) exit 0 ;;
+esac
+echo "$MSG" | grep -Eq '^S[0-9]+: .+' || {
+  echo "commit-msg: message must start with 'S<k>: <summary>' (AGENTS.md rule 5). Got: $MSG" >&2
+  exit 1
+}

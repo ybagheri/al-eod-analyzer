@@ -1,0 +1,9 @@
+#!/bin/sh
+# pre-push hook: full quality gate + plan-compliance (plan v2.6 §8.3).
+# --no-verify is FORBIDDEN (AGENTS.md rule 5).
+set -e
+PY="$(git rev-parse --show-toplevel)/.venv/Scripts/python.exe"
+[ -x "$PY" ] || PY=python
+
+"$PY" -m tasks check
+echo "[pre-push] gate OK"

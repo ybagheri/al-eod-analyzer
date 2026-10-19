@@ -40,6 +40,17 @@ artifacts/review*/
 artifacts/eval/backtests/
 *.log
 
+# Market data and MT5 exports are NEVER committed (plan v2.6 S0 / rule 11)
+data/market/
+*.csv
+!data/README.md
+config/local.yaml
+wheelhouse/
+_backups/
+
+# MT5 terminal output folders (project files under mql5/ are tracked, exports are not)
+MQL5/Files/
+
 # OS / editor
 Thumbs.db
 Desktop.ini

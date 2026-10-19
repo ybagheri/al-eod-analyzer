@@ -9,7 +9,7 @@ plan:
   method_version: "v2.6"
 current_step: S0
 steps:
-  S0: {name: "Re-plan, doc sync, safety rails, privacy", status: in_progress, commit: null}
+  S0: {name: "Re-plan, doc sync, safety rails, privacy", status: done, commit: null}  # step-final commit = branch tip (tag S0-done)
   S1: {name: "Dependency and environment repair", status: pending, commit: null}
   S2: {name: "Extraction v3: compact schema, validator-gated writes, anchors", status: pending, commit: null}
   S3: {name: "Phase 5b: market data layer + session calendar + axis resolution", status: pending, commit: null}
@@ -49,8 +49,8 @@ counts:
   calibration_sample: 38
   day_type_agreement: 0.706  # 34 comparable, taxonomy v1.3, prompt v2
 checks:
-  public_safety: worktree_clean  # full history: 1 finding (old MASTER_PROMPT.md blob) -> USER CHECKPOINT pending
-  plan_hash_guard: not_implemented
+  public_safety: worktree_clean_hist_accepted  # full history: 1 finding (old MASTER_PROMPT.md blob); user decision 2026-10-19: ACCEPTED (no rewrite)
+  plan_hash_guard: enforced_and_demonstrated
 coverage:
   market_data: none  # Phase 5b not started; no broker CSVs yet
   n_cov: null

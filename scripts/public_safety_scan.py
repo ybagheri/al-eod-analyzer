@@ -97,6 +97,10 @@ ALLOWED_BLOB_SIZE = {
 ALLOWED_DATA_DIR = {
     "data/README.md",
 }
+# The scanner's own unit tests legitimately contain fake keys/patterns.
+ALLOWED_CONTENT = {
+    "tests/test_public_safety_scan.py",
+}
 
 
 def _git(args: list[str]) -> str:
@@ -236,6 +240,8 @@ def _allowlist(path: str, findings: list[str]) -> list[str]:
         if f.startswith("under_data_dir") and path in ALLOWED_DATA_DIR:
             continue
         if f.startswith("blob_over_1mb") and path in ALLOWED_BLOB_SIZE:
+            continue
+        if path in ALLOWED_CONTENT and (f.startswith("secret_pattern") or f.startswith("long_")):
             continue
         kept.append(f)
     return kept

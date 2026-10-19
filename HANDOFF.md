@@ -21,9 +21,9 @@ deterministic streaming engine (Python reference + MQL5 port). Plan of record:
 
 ## 2. Current status
 
-- Current step: S0 (re-plan, doc sync, safety rails, privacy) — see `docs/STATUS.yaml`
+- Current step: S0 (`docs/evidence/S0.md`, S0 DoD complete; next S1) — see `docs/STATUS.yaml`
 - Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd717d4c…, method v2.6, ADR-012); `docs/MASTER_PROMPT.md` superseded for phase order/sizing/process
-- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 in progress (S0.2 done; S0.3 scanner built, worktree clean, history has 1 finding → user checkpoint pending)
+- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 done (status sync, public-safety scanner+history scan: 1 finding ACCEPTED by user, backups, gates/hhooks/CI plan-compliance)
 - Last green quality gate: 2026-10-19 (ruff ✓ / format ✓ / mypy --strict ✓ / pytest green, 180 collected / coverage 92.38% ≥85)
 
 ## 3. What was done in this session

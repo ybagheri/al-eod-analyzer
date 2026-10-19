@@ -1,0 +1,33 @@
+# CI quality gate (plan v2.6 §8.3 S0 item 6).
+# Hooks can be bypassed locally; CI cannot. Runs the same gate as
+# `python -m tasks check`, plus the full-history public-safety scan.
+
+name: gate
+
+on:
+  push:
+    branches: [main, "step/**"]
+  pull_request:
+
+jobs:
+  gate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for the public-safety history scan
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package (core + dev)
+        run: |
+          python -m pip install -e ".[dev]"
+
+      - name: Gate (ruff / format / mypy / pytest / plan-compliance)
+        run: python -m tasks check
+
+      - name: Public-safety history scan
+        run: python scripts/public_safety_scan.py --history
