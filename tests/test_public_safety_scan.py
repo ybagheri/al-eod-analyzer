@@ -84,3 +84,14 @@ def test_allowlist_strips_documented_exceptions() -> None:
     assert pss._allowlist("artifacts/manifest_batch1.json", findings) == ["under_data_dir"]
     # allowlist applies only to the exact allowlisted paths
     assert pss._allowlist("data/other.md", findings) == ["under_data_dir", "blob_over_1mb(1050151)"]
+
+
+def test_accepted_history_finding_skipped(monkeypatch: pytest.MonkeyPatch) -> None:
+    sha = next(iter(pss.ACCEPTED_HISTORY))[0]
+    name = next(iter(pss.ACCEPTED_HISTORY))[1]
+    assert pss._allowlist(name, ["personal_path"]) == ["personal_path"]  # tree mode still flags
+    # simulate the history loop's acceptance step
+    findings = ["personal_path"]
+    accepted = {f for f in findings if (sha, name, f) in pss.ACCEPTED_HISTORY}
+    assert accepted == {"personal_path"}
+    assert [f for f in findings if f not in accepted] == []

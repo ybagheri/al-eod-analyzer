@@ -44,10 +44,11 @@ The gate (`python -m tasks check`) runs the working-tree scan; CI runs both.
 ## Scan status (2026-10-19)
 
 - Working tree: **clean**.
-- Full history: **1 finding** — an old version of `docs/MASTER_PROMPT.md`
-  (blob `07f0f9c4…`) contains two absolute local MT5 paths (terminal path and
-  MT5 data-folder id). The current version is redacted.
-- **User decision (2026-10-19, Persian): ACCEPTED.** The user reviewed the
-  finding (username + terminal-folder id, no key/secret) and chose to accept
-  the historical exposure instead of rewriting history. No filter-repo /
-  force-push. This decision is final for S0 and recorded in `docs/evidence/S0.md`.
+- Full history: **1 finding — user decision (2026-10-19, Persian): ACCEPTED.**
+  An old version of `docs/MASTER_PROMPT.md` (blob `07f0f9c4…`) contains two
+  absolute local MT5 paths (terminal path and MT5 data-folder id). The current
+  version is redacted. The user chose to accept the historical exposure
+  instead of rewriting history; no filter-repo / force-push. The tuple
+  `(blob, path, finding)` is allowlisted in `ACCEPTED_HISTORY` inside
+  `scripts/public_safety_scan.py`, so the full-history scan (and CI) passes
+  while still flagging any NEW occurrence. Recorded in `docs/evidence/S0.md`.

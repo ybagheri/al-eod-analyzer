@@ -101,6 +101,12 @@ ALLOWED_DATA_DIR = {
 ALLOWED_CONTENT = {
     "tests/test_public_safety_scan.py",
 }
+# Findings the user explicitly ACCEPTED after review (docs/PUBLIC_SAFETY.md,
+# decision 2026-10-19: local MT5 paths in the pre-redaction MASTER_PROMPT.md
+# blob; no history rewrite). History scan skips exactly these tuples.
+ACCEPTED_HISTORY = {
+    ("07f0f9c4a0f939ecb67f1c8776be0931aec365ba", "docs/MASTER_PROMPT.md", "personal_path"),
+}
 
 
 def _git(args: list[str]) -> str:
@@ -288,6 +294,13 @@ def scan_history() -> list[dict[str, Any]]:
                 raw = _git(["cat-file", "blob", sha]).encode("utf-8", errors="replace")
                 findings += scan_blob(raw, name)
         findings = _allowlist(name, findings)
+        accepted = {f for f in findings if (sha, name, f) in ACCEPTED_HISTORY}
+        if accepted:
+            findings = [f for f in findings if f not in accepted]
+            print(
+                f"accepted (user-approved, see docs/PUBLIC_SAFETY.md): "
+                f"{sha[:12]} {name}: {','.join(sorted(accepted))}"
+            )
         if findings:
             violations.append({"blob": sha, "path": name, "findings": sorted(set(findings))})
     return violations
