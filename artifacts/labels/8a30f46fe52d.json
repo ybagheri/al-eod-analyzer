@@ -1,0 +1,191 @@
+{
+  "date": "2026-07-16",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrow at 09:50 on the open, low red arrows 10:00 with bear wedge orange text",
+      "label": "gap",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "gap down below yesterday's close with red double top and bear trend from open then rally on momentum to 10:00",
+      "placement": null,
+      "price_hint": 7607.0,
+      "raw_label": "Gap down and bear breakout point (09:45 top 7607)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "yellow shaded bull spike box 10:35-11:30 and green shaded 11:00-11:40 with bar 24 label, with red arrows 11:15-11:35",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta wedge channel reached multiple double top lower high major trend reversal under Yesterday's close dotted red 7615",
+      "placement": null,
+      "price_hint": 7612.0,
+      "raw_label": "Wedge bear flag rally/double top (10:30-11:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded 12:05-12:45 box, Low 3 arrow 12:30, bar 48 label 13:05 and green arrows 12:20, 12:50",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "shaded range with Double Bottom green text and Low 3 red arrow at 12:30 sold off",
+      "placement": null,
+      "price_hint": 7597.0,
+      "raw_label": "Double bottom and bear wedge bear flag pulled (11:30-12:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded 12:05-12:45 box, Low 3 arrow 12:30, bar 48 label 13:05 and green arrows 12:20, 12:50",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "shaded range with Double Bottom green text and Low 3 red arrow at 12:30 sold off",
+      "placement": null,
+      "price_hint": 7597.0,
+      "raw_label": "Double bottom and bear wedge bear flag pulled (11:30-12:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge Bear Flag to EMA text, 2 Legged PB to EMA text, bars 60 and 72 labels with red arrows 14:15 and 15:00",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "double bear wedge channel from magenta to pink toward RTH Daily EMA and RTH Daily EMA dotted blue line",
+      "placement": null,
+      "price_hint": 7582.0,
+      "raw_label": "Bear channel wedge bear flag to EMA (12:35-14:55)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange MM Bear Wedge text with orange dotted bottom near the 15:30 lows and July 9th Daily Bar Open green dotted bottom",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "dotted orange long measured move under the low that broke through bear wedge into 7550 low",
+      "placement": null,
+      "price_hint": 7555.0,
+      "raw_label": "MM Bear Wedge (15:30 low 7555)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "bull spike bars 15:40-15:50 to the small red box label near 7585 and chip 7567.25 close",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "black text End of day profit taking with green Bull Spike to 7585 and close 7567.25",
+      "placement": null,
+      "price_hint": 7583.0,
+      "raw_label": "End of day profit taking bull spike (15:40-15:50 close 7567)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "8a30f46fe52d",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel Lower High Major Trend Reversal Day'. Gap down then weak bear trend rally into multiple double top lower high at 11:15 (7612); bear wedge and wedge bear flag continued lower through Low 3 and MM bear wedge bear spike to 7550 with end of day bull spike profit taking, close 7567.25."
+}

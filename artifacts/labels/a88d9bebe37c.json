@@ -1,0 +1,216 @@
+{
+  "date": "2026-06-25",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red subtitle 'Small gap up at the open then Bear Trend from the Open' with red arrows on bars 2, 3, 9, 10 falling from 7480 highs to 7410 lows",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "opening bars 2-4 red spike arrows straight down from the gap into the purple wedge low",
+      "placement": null,
+      "price_hint": 7475.0,
+      "raw_label": "Small gap up at the open then Bear Trend from the Open (09:35-10:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text 'Failed Bear Breakout of Low of Yesterday / Leg 1 = Leg 2 Tight Bear Channel sell vacuum test of support' under the purple Wedge labels and green dotted support line",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "purple meandering wedge low into green dotted Daily 9th June Low line",
+      "placement": null,
+      "price_hint": 7390.0,
+      "raw_label": "Failed Bear Breakout of Low of Yesterday; Leg 1 = Leg 2 tight bear channel sell vacuum test of support (10:00 low 7390)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted Wedge channel around bars 12-20 with green arrows 10:30-11:00 and red dotted 7480 top line",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge dotted channel on the bar 12-18 pullback that stalled at the red dotted 6/23 High of Day line",
+      "placement": null,
+      "price_hint": 7480.0,
+      "raw_label": "Wedge bear flag pullback to 6/23 HOD 50% retrace (10:20-11:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink shaded MM Upper Range box around bar 36 under red Double Top text with red arrows at 12:15-12:20 and 24 brown shaded bars",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pink MM Upper Range shaded flag box with brown bars 24-36 selling the red-arrows bar 38-39 double top",
+      "placement": null,
+      "price_hint": 7460.0,
+      "raw_label": "MM Upper Range with first Double Top (11:30-12:25 high 7460)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 40,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "large purple shaded range box from bar 40 to close with brown dotted top and green dotted bottom and bars 48, 60, 72, 78 labels",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "purple shaded trading range bounded by brown dotted upper 7460 line and green dotted lower 7408 line with red selling arrows and blue up EMA drift",
+      "placement": null,
+      "price_hint": 7420.0,
+      "raw_label": "Bear trending trading range with Upper Range tests (12:25-15:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 40,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "large purple shaded range box from bar 40 to close with brown dotted top and green dotted bottom and bars 48, 60, 72, 78 labels",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "purple shaded trading range bounded by brown dotted upper 7460 line and green dotted lower 7408 line with red selling arrows and blue up EMA drift",
+      "placement": null,
+      "price_hint": 7420.0,
+      "raw_label": "Bear trending trading range with Upper Range tests (12:25-15:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 58,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Double Top text at the upper right with red dotted 7460 line and stacked red arrows over bar 60 shaded box",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red arrows 14:25-14:40 sold the bar 60-62 lower high test of the first double top",
+      "placement": null,
+      "price_hint": 7460.0,
+      "raw_label": "Second Double Top bear flag at upper range (14:20-14:55 high 7462)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 70,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Multiple Double Bottoms' text with green dotted 7408 line, small magenta dotted wedge on bars 72-78 and green arrow 15:30",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "green dotted Multiple Double Bottoms support held with bars 72 and 78 lows and green arrow 15:30 pops into the close",
+      "placement": null,
+      "price_hint": 7408.0,
+      "raw_label": "Multiple Double Bottoms bull flag at range low; close 7438.25 (15:00-15:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "a88d9bebe37c",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Spike to Complex Bear Flag becomes Endless Pullback'. Small gap up at the open then bear trend from the open: opening bear spike (09:45) down to a failed bear breakout of yesterday's low (10:00 low 7390, Leg 1 = Leg 2 tight bear channel sell vacuum test of support), then rebound into a bear trending trading range the rest of the day: wedge bear flag, MM upper range double top (12:20 high 7460), second upper range double top (14:30), multiple double bottoms (15:30 low 7408) and close 7438.25 near the 7427.88 EMA."
+}

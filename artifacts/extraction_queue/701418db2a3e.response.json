@@ -1,129 +1,129 @@
 {
-    "schema_version":  1,
-    "image_id":  "701418db2a3e",
-    "date":  "2025-01-15",
-    "day_type":  "trend_reversal_to_bear",
-    "day_type_confidence":  0.75,
-    "session_summary":  "Blue title bar: \u0027Parabolic Wedge Top, Then Double Bottom\u0027. Parabolic wedge rallied from the open to 5990 top (07:30) with bars 12 and 18, then sold off to a higher low double bottom at 08:45 (5960); minors wedge and small pullback bull trend rallied to a minor wedge 12:15 top (6000) with heavy red selling into the close 5986.",
-    "events":  [
-                   {
-                       "label":  "spike_and_channel_bull",
-                       "raw_label":  "Parabolic wedge spike to 5990 (07:10-07:40)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "07:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "07:45",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5990.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "parabolic wedge ramp with bar 12 shaded spike to 5990",
-                       "confidence":  0.7,
-                       "evidence":  "magenta Parabolic Wedge text under the pink dotted ramp and red dotted 5991 line, bar 12 brown bull bars 07:25-07:35"
-                   },
-                   {
-                       "label":  "wedge",
-                       "raw_label":  "Sell wedge down to red dotted 5981 with bars 14-20 (07:40-08:30)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "07:40",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "08:30",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5975.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "magenta channel sold to bar 24 plunge low (08:35) at parabolic wedge low 5960 with red arrows",
-                       "confidence":  0.6,
-                       "evidence":  "red arrows 08:45, bar 24 dark bear bar low with a brown box 08:35-08:45 and orange dotted 5955 bottom"
-                   },
-                   {
-                       "label":  "trend_reversal",
-                       "raw_label":  "Higher low double bottom (08:45 low 5960)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "08:30",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "09:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5960.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "HL DB with green arrow and red boxes marked the bottom of the wedge",
-                       "confidence":  0.7,
-                       "evidence":  "green Higher low double bottom text under the green dotted line 5952 lows and green arrow at 09:05"
-                   },
-                   {
-                       "label":  "small_pullback_bull_trend",
-                       "raw_label":  "Small pullback bull trend to 0986 (09:15-12:10)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "09:10",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "12:15",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5990.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green shaded bull bars 09:20-12:10 pushed through bars 36-72 with minor wedge pullbacks to 5990",
-                       "confidence":  0.7,
-                       "evidence":  "green Small pullback bull trend text with bars 36, 48, 60, 72 labels and beige boxes at 09:45 and 11:40"
-                   },
-                   {
-                       "label":  "wedge",
-                       "raw_label":  "Minor wedge at red dotted 5988 with bar 72 (11:40-12:15 high 6000)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "11:30",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "12:20",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6000.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "minor wedge measured move capped at 6000 with heavy red arrows 12:15-13:05",
-                       "confidence":  0.65,
-                       "evidence":  "magenta Minor wedge text and pink dotted channel on the last spike with red arrows and orange dotted 5995 line"
-                   },
-                   {
-                       "label":  "measured_move",
-                       "raw_label":  "Measured move sell off (12:20-13:15 close 5986)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "12:15",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "13:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5986.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "after minor wedge top the market sold off to close 5986",
-                       "confidence":  0.55,
-                       "evidence":  "red arrows and sell bars 12:20-13:00 with dotted lines above orange trend boxes"
-                   }
-               ],
-    "extraction_meta":  {
-                            "provider":  "file",
-                            "model_id":  "muse-spark-opencode",
-                            "prompt_version":  "extract_v2"
-                        }
+  "schema_version": 1,
+  "image_id": "701418db2a3e",
+  "date": "2025-01-15",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Parabolic Wedge Top, Then Double Bottom'. Parabolic wedge rallied from the open to 5990 top (07:30) with bars 12 and 18, then sold off to a higher low double bottom at 08:45 (5960); minors wedge and small pullback bull trend rallied to a minor wedge 12:15 top (6000) with heavy red selling into the close 5986.",
+  "events": [
+    {
+      "label": "spike",
+      "raw_label": "Parabolic wedge spike to 5990 (07:10-07:40)",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5990.0,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge ramp with bar 12 shaded spike to 5990",
+      "confidence": 0.7,
+      "evidence": "magenta Parabolic Wedge text under the pink dotted ramp and red dotted 5991 line, bar 12 brown bull bars 07:25-07:35"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Sell wedge down to red dotted 5981 with bars 14-20 (07:40-08:30)",
+      "direction": "bear",
+      "start_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5975.0,
+      "outcome": "success",
+      "outcome_reason": "magenta channel sold to bar 24 plunge low (08:35) at parabolic wedge low 5960 with red arrows",
+      "confidence": 0.6,
+      "evidence": "red arrows 08:45, bar 24 dark bear bar low with a brown box 08:35-08:45 and orange dotted 5955 bottom"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Higher low double bottom (08:45 low 5960)",
+      "direction": "bull",
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5960.0,
+      "outcome": "success",
+      "outcome_reason": "HL DB with green arrow and red boxes marked the bottom of the wedge",
+      "confidence": 0.7,
+      "evidence": "green Higher low double bottom text under the green dotted line 5952 lows and green arrow at 09:05"
+    },
+    {
+      "label": "small_pullback_bull_trend",
+      "raw_label": "Small pullback bull trend to 0986 (09:15-12:10)",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5990.0,
+      "outcome": "success",
+      "outcome_reason": "green shaded bull bars 09:20-12:10 pushed through bars 36-72 with minor wedge pullbacks to 5990",
+      "confidence": 0.7,
+      "evidence": "green Small pullback bull trend text with bars 36, 48, 60, 72 labels and beige boxes at 09:45 and 11:40"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Minor wedge at red dotted 5988 with bar 72 (11:40-12:15 high 6000)",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6000.0,
+      "outcome": "success",
+      "outcome_reason": "minor wedge measured move capped at 6000 with heavy red arrows 12:15-13:05",
+      "confidence": 0.65,
+      "evidence": "magenta Minor wedge text and pink dotted channel on the last spike with red arrows and orange dotted 5995 line"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move sell off (12:20-13:15 close 5986)",
+      "direction": "bear",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5986.0,
+      "outcome": "success",
+      "outcome_reason": "after minor wedge top the market sold off to close 5986",
+      "confidence": 0.55,
+      "evidence": "red arrows and sell bars 12:20-13:00 with dotted lines above orange trend boxes"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

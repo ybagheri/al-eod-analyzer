@@ -1,129 +1,148 @@
 {
-    "schema_version":  1,
-    "image_id":  "a1efef9ab7eb",
-    "date":  "2026-03-09",
-    "day_type":  "trading_range",
-    "day_type_confidence":  0.7,
-    "session_summary":  "Blue title bar: \u0027Gap Down, Double Bottom, Strong Rally, Outside Up Day\u0027 (overnight ET+12 hrs). Large 178-point range for outside up day; double bottom 6643 opened strong bull rally; wedge then midday minor reversal testing Friday\u0027s close at 6740; chop in tight bull channels bar 60; strong breakout above Friday\u0027s high with buy climax exit longs at 15:00 close 6791 on measured move.",
-    "events":  [
-                   {
-                       "label":  "trend_reversal",
-                       "raw_label":  "Double top failed and double bottom strong rally (22:20-23:00 low 6643)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "22:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "23:05",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6643.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "double bottom then strong bull rally lifted from the shaded low box bar 12",
-                       "confidence":  0.7,
-                       "evidence":  "green Double top failed and green Double bottom then strong bull rally text over the blue shaded box lows with green arrow bar 12 and red arrows 22:15-22:45"
-                   },
-                   {
-                       "label":  "bull_channel",
-                       "raw_label":  "Wedge then midday minor reversal testing Fridays close (23:10-01:40)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "23:05",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "01:45",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6740.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "pink dotted wedge into red dotted 6740 Friday\u0027s close railed and gave minor reversal with red arrows 01:00-01:30 (bar 48 lows 6708)",
-                       "confidence":  0.65,
-                       "evidence":  "green Wedge then midday minor reversal magenta channel to bar 36 highs; orange dotted line at 6740, red arrows 01:05, 01:25 and green arrow bar 36"
-                   },
-                   {
-                       "label":  "trading_range",
-                       "raw_label":  "Small pullback bull trends, tight bull channels (01:45-03:40)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "01:40",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "03:45",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6730.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green shaded Small pullback bull trends Tight bull channels text over bar 60 (02:40) lows and shaded blue box near 03:20",
-                       "confidence":  0.6,
-                       "evidence":  "green arrows bars 48, 60 and shaded box 03:00-03:40 with red arrow 02:15, 02:20 and blue dotted lower channel"
-                   },
-                   {
-                       "label":  "trading_range_breakout",
-                       "raw_label":  "Strong breakout above Fridays high (03:40-04:00 bar 72 highs)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "03:35",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "04:05",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6764.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green shaded breakout bars bar 72 lifted through the red dotted 6764 line",
-                       "confidence":  0.65,
-                       "evidence":  "green Strong breakout text with arrow, green shaded bars 03:50-04:00 with bar 72 label and red dotted Fridays high line"
-                   },
-                   {
-                       "label":  "climax",
-                       "raw_label":  "Buy climax, exit longs (04:05 top 6821)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "03:55",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "04:15",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6821.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green shaded buy climax bars into the 04:05 spike 6800 and dormant 04:10 close after chip close 6791.50",
-                       "confidence":  0.6,
-                       "evidence":  "green Buy climax exit longs text at the 04:05 spike with green shaded bars and black sell bar into two snowy pullback bars chips"
-                   },
-                   {
-                       "label":  "measured_move",
-                       "raw_label":  "Measured move (open to Fridays close \u0026 midday) (04:05 high 6821)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "23:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "04:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6821.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "orange dotted measured move from open to Fridays close and midday target hit at 04:05 spike",
-                       "confidence":  0.55,
-                       "evidence":  "orange dotted line at 6790 under purple dotted measured move text with orange markers at left edge"
-                   }
-               ],
-    "extraction_meta":  {
-                            "provider":  "file",
-                            "model_id":  "muse-spark-opencode",
-                            "prompt_version":  "extract_v2"
-                        }
+  "schema_version": 1,
+  "image_id": "a1efef9ab7eb",
+  "date": "2026-03-09",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Gap Down, Double Bottom, Strong Rally, Outside Up Day' (overnight ET+12 hrs). Large 178-point range for outside up day; double bottom 6643 opened strong bull rally; wedge then midday minor reversal testing Friday's close at 6740; chop in tight bull channels bar 60; strong breakout above Friday's high with buy climax exit longs at 15:00 close 6791 on measured move.",
+  "events": [
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Double top failed and double bottom strong rally (22:20-23:00 low 6643)",
+      "direction": "bull",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6643.0,
+      "outcome": "success",
+      "outcome_reason": "double bottom then strong bull rally lifted from the shaded low box bar 12",
+      "confidence": 0.7,
+      "evidence": "green Double top failed and green Double bottom then strong bull rally text over the blue shaded box lows with green arrow bar 12 and red arrows 22:15-22:45"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Wedge then midday minor reversal testing Fridays close (23:10-01:40)",
+      "direction": "bull",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6740.0,
+      "outcome": "success",
+      "outcome_reason": "pink dotted wedge into red dotted 6740 Friday's close railed and gave minor reversal with red arrows 01:00-01:30 (bar 48 lows 6708)",
+      "confidence": 0.65,
+      "evidence": "green Wedge then midday minor reversal magenta channel to bar 36 highs; orange dotted line at 6740, red arrows 01:05, 01:25 and green arrow bar 36"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Small pullback bull trends, tight bull channels (01:45-03:40)",
+      "direction": "bull",
+      "start_time": {
+        "time": "01:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6730.0,
+      "outcome": "success",
+      "outcome_reason": "green shaded Small pullback bull trends Tight bull channels text over bar 60 (02:40) lows and shaded blue box near 03:20",
+      "confidence": 0.6,
+      "evidence": "green arrows bars 48, 60 and shaded box 03:00-03:40 with red arrow 02:15, 02:20 and blue dotted lower channel"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Small pullback bull trends, tight bull channels (01:45-03:40)",
+      "direction": "bull",
+      "start_time": {
+        "time": "01:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6730.0,
+      "outcome": "success",
+      "outcome_reason": "green shaded Small pullback bull trends Tight bull channels text over bar 60 (02:40) lows and shaded blue box near 03:20",
+      "confidence": 0.6,
+      "evidence": "green arrows bars 48, 60 and shaded box 03:00-03:40 with red arrow 02:15, 02:20 and blue dotted lower channel"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Strong breakout above Fridays high (03:40-04:00 bar 72 highs)",
+      "direction": "bull",
+      "start_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6764.0,
+      "outcome": "success",
+      "outcome_reason": "green shaded breakout bars bar 72 lifted through the red dotted 6764 line",
+      "confidence": 0.65,
+      "evidence": "green Strong breakout text with arrow, green shaded bars 03:50-04:00 with bar 72 label and red dotted Fridays high line"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Buy climax, exit longs (04:05 top 6821)",
+      "direction": "bull",
+      "start_time": {
+        "time": "03:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6821.0,
+      "outcome": "success",
+      "outcome_reason": "green shaded buy climax bars into the 04:05 spike 6800 and dormant 04:10 close after chip close 6791.50",
+      "confidence": 0.6,
+      "evidence": "green Buy climax exit longs text at the 04:05 spike with green shaded bars and black sell bar into two snowy pullback bars chips"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move (open to Fridays close & midday) (04:05 high 6821)",
+      "direction": "bull",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6821.0,
+      "outcome": "success",
+      "outcome_reason": "orange dotted measured move from open to Fridays close and midday target hit at 04:05 spike",
+      "confidence": 0.55,
+      "evidence": "orange dotted line at 6790 under purple dotted measured move text with orange markers at left edge"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

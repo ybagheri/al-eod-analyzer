@@ -7,11 +7,17 @@
   "session_summary": "Title bar: 'Bull Trending TR Day, But Reversed Down'. A triangle opening range sets a double bottom higher low major trend reversal at 3316; the market trends up in green shaded legs with a bull spike to 3330 before bears break out below the upper trading range at 10:30, a wedge low retest of 3316 at 11:00, and a rally to 3325 reverses back down after a third sell setup near the close.",
   "events": [
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "DB HL MTR (07:00 bottom 3316)",
       "direction": "bull",
-      "start_time": {"time": "06:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3316.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "orange DB HL MTR text with blue triangle lines from the open bars to the green underlined low"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Bull spike and channel (07:40-09:50 green bars)",
       "direction": "bull",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3330.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "pink wedge lines around the sequence of green shaded bull legs with small red corrections into 09:20"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "BO below upper TR (10:30)",
       "direction": "bear",
-      "start_time": {"time": "10:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3327.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "wedge_bull_channel",
       "raw_label": "Wedge low and green underline (11:00 low 3316)",
       "direction": "bull",
-      "start_time": {"time": "10:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3316.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "green underline below the 10:55-11:05 lows inside the blue lower channel line"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Rally to 3325 (12:15)",
       "direction": "bull",
-      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3325.5,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "pink trendline rally with green shaded bull bars at 11:35 and 11:55 into 12:10 red box"
     },
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "Late reversal down (12:35 close 3320)",
       "direction": "bear",
-      "start_time": {"time": "12:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3320.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "third red shaded setup at 12:25-12:40 with the drop into 12:55 and close near 3320"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

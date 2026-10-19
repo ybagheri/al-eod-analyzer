@@ -1,148 +1,167 @@
 {
-    "schema_version":  1,
-    "image_id":  "cfed26308aee",
-    "date":  "2024-02-15",
-    "day_type":  "bull_trending_trading_range",
-    "day_type_confidence":  0.75,
-    "session_summary":  "Blue title bar: \u0027Bear Trap, Then Bull Trending Trading Range Day\u0027. Trading range with bear trap fail (5017 double bottom low 08:15 failed break below low of day tall red swing 5014), rally out with two legs and minor wedge since small pullback bull trend after breakout above the trading range (orange text, expect about measured move up), higher low double bottom and triangle, measured move up rally into the 5050 close near day highs.",
-    "events":  [
-                   {
-                       "label":  "trading_range",
-                       "raw_label":  "Opening trading range with bear trap (07:00-08:40 lows 5014)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "07:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "08:45",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5014.0,
-                       "outcome":  "fail/false",
-                       "outcome_reason":  "failed breakout below double bottom and low of day (green dotted baseline)",
-                       "confidence":  0.7,
-                       "evidence":  "orange Failed breakout below double bottom and low of day text under the blue shaded opening range and brown shaded 07:45-08:15 fall box with double dotted lows 5017 line"
-                   },
-                   {
-                       "label":  "bear_trap",
-                       "raw_label":  "Failed breakout below double bottom and low of day; bullish bull breakout up trend (08:15-09:15)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "08:10",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "09:20",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5014.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "tall bear swing current lifted (red arrow 08:10-08:20 shaded bar) after slight descent into a proque dotted bottoms at 5014",
-                       "confidence":  0.7,
-                       "evidence":  "orange text Failed breakout below double bottom and low of day with green shaded bull run 09:30 onward with the trending bars up"
-                   },
-                   {
-                       "label":  "breakout",
-                       "raw_label":  "Breakout above trading range half-height day with two legs up (09:45-10:15)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "09:45",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "10:20",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5033.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "orange text breakup up trend drive into 5031-5033 range top box (orange shaded 09:45-10:10) and trend bars",
-                       "confidence":  0.7,
-                       "evidence":  "orange \u0027Breakout above trading range where range was about half height of an average day\u0027 text and blue \u0027Expect about measured move up\u0027 with orange shaded boxes around bar 28-36"
-                   },
-                   {
-                       "label":  "double_top_bear_flag",
-                       "raw_label":  "Minor double top since small pullback bull trend (10:45-11:00 high 5036)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "10:40",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "11:05",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5036.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "blue Minor double top since small pullback bull trend text with dotted blue arrows at 10:45-11:00 5033 wedges",
-                       "confidence":  0.6,
-                       "evidence":  "blue text with blue dotted descending wedge line below the early minor double top around 5033"
-                   },
-                   {
-                       "label":  "wedge_bull_flag",
-                       "raw_label":  "Minor wedge since small pullback bull trend (11:00-12:25)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "11:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "12:30",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5043.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "magenta dotted wedge trend under the blue shaded 11:15-12:45 box with red arrows 11:35, 12:15 wedge flag and green arrows 12:35-12:45",
-                       "confidence":  0.65,
-                       "evidence":  "magenta Minor wedge since small pullback bull trend text with dotted wedge and blue streaks D at 11:25 and 12:15 wedge going pullback"
-                   },
-                   {
-                       "label":  "double_bottom",
-                       "raw_label":  "Higher low double bottom and triangle (12:25-13:10)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "12:25",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "13:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5040.0,
-                       "outcome":  "unknown",
-                       "outcome_reason":  "green higher low double bottom triangle pattern with dotted blue wedge 12:40",
-                       "confidence":  0.6,
-                       "evidence":  "green higher low double bottom and triangle text with red arrow 12:15 5043 lows at dotted rising wedge bars"
-                   },
-                   {
-                       "label":  "measured_move",
-                       "raw_label":  "Measured move up into close 5048 (13:00-13:15 high 5050)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "13:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "13:15",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5050.0,
-                       "outcome":  "unknown",
-                       "outcome_reason":  "blue dotted measured move arrows into the measured move up rally to peak highs 5050 near close",
-                       "confidence":  0.6,
-                       "evidence":  "blue Measured move text with dotted blue trend wedge above bars 13:00-13:15 5051 tops EMA 5046"
-                   }
-               ],
-    "extraction_meta":  {
-                            "provider":  "file",
-                            "model_id":  "muse-spark-opencode",
-                            "prompt_version":  "extract_v2"
-                        }
+  "schema_version": 1,
+  "image_id": "cfed26308aee",
+  "date": "2024-02-15",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bear Trap, Then Bull Trending Trading Range Day'. Trading range with bear trap fail (5017 double bottom low 08:15 failed break below low of day tall red swing 5014), rally out with two legs and minor wedge since small pullback bull trend after breakout above the trading range (orange text, expect about measured move up), higher low double bottom and triangle, measured move up rally into the 5050 close near day highs.",
+  "events": [
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Opening trading range with bear trap (07:00-08:40 lows 5014)",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5014.0,
+      "outcome": "unclear",
+      "outcome_reason": "failed breakout below double bottom and low of day (green dotted baseline)",
+      "confidence": 0.7,
+      "evidence": "orange Failed breakout below double bottom and low of day text under the blue shaded opening range and brown shaded 07:45-08:15 fall box with double dotted lows 5017 line"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Opening trading range with bear trap (07:00-08:40 lows 5014)",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5014.0,
+      "outcome": "unclear",
+      "outcome_reason": "failed breakout below double bottom and low of day (green dotted baseline)",
+      "confidence": 0.7,
+      "evidence": "orange Failed breakout below double bottom and low of day text under the blue shaded opening range and brown shaded 07:45-08:15 fall box with double dotted lows 5017 line"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Failed breakout below double bottom and low of day; bullish bull breakout up trend (08:15-09:15)",
+      "direction": "bull",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5014.0,
+      "outcome": "success",
+      "outcome_reason": "tall bear swing current lifted (red arrow 08:10-08:20 shaded bar) after slight descent into a proque dotted bottoms at 5014",
+      "confidence": 0.7,
+      "evidence": "orange text Failed breakout below double bottom and low of day with green shaded bull run 09:30 onward with the trending bars up"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Breakout above trading range half-height day with two legs up (09:45-10:15)",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5033.0,
+      "outcome": "success",
+      "outcome_reason": "orange text breakup up trend drive into 5031-5033 range top box (orange shaded 09:45-10:10) and trend bars",
+      "confidence": 0.7,
+      "evidence": "orange 'Breakout above trading range where range was about half height of an average day' text and blue 'Expect about measured move up' with orange shaded boxes around bar 28-36"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Minor double top since small pullback bull trend (10:45-11:00 high 5036)",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5036.0,
+      "outcome": "success",
+      "outcome_reason": "blue Minor double top since small pullback bull trend text with dotted blue arrows at 10:45-11:00 5033 wedges",
+      "confidence": 0.6,
+      "evidence": "blue text with blue dotted descending wedge line below the early minor double top around 5033"
+    },
+    {
+      "label": "bull_flag",
+      "raw_label": "Minor wedge since small pullback bull trend (11:00-12:25)",
+      "direction": "bull",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5043.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge trend under the blue shaded 11:15-12:45 box with red arrows 11:35, 12:15 wedge flag and green arrows 12:35-12:45",
+      "confidence": 0.65,
+      "evidence": "magenta Minor wedge since small pullback bull trend text with dotted wedge and blue streaks D at 11:25 and 12:15 wedge going pullback"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Higher low double bottom and triangle (12:25-13:10)",
+      "direction": "bull",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5040.0,
+      "outcome": "unclear",
+      "outcome_reason": "green higher low double bottom triangle pattern with dotted blue wedge 12:40",
+      "confidence": 0.6,
+      "evidence": "green higher low double bottom and triangle text with red arrow 12:15 5043 lows at dotted rising wedge bars"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move up into close 5048 (13:00-13:15 high 5050)",
+      "direction": "bull",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5050.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue dotted measured move arrows into the measured move up rally to peak highs 5050 near close",
+      "confidence": 0.6,
+      "evidence": "blue Measured move text with dotted blue trend wedge above bars 13:00-13:15 5051 tops EMA 5046"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

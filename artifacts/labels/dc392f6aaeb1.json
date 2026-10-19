@@ -1,0 +1,241 @@
+{
+  "date": "2026-06-03",
+  "day_type": "spike_and_channel_bear",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrow sell bars 09:45-10:05 with 'Climactic Bear spike' red text and brown 2R lines",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "climactic bear spike after the gap down reached the 2R measured move of yesterday bear wedge",
+      "placement": null,
+      "price_hint": 7595.0,
+      "raw_label": "Gap down - pause - Climactic Bear spike down to 2R",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta arrow into the 10:15 bear flag under 7600",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "wedge bear flag to the EMA led to continued bear selling",
+      "placement": null,
+      "price_hint": 7600.0,
+      "raw_label": "Wedge Bear Flag to EMA",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Triple Top dotted lines at 7600 with sell bars below",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "triple top failed to breakout to the upside and the bears sold for the measured move below",
+      "placement": null,
+      "price_hint": 7600.0,
+      "raw_label": "Triple Top fails to Breakout and bears sell for MM of breakout bear spike",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "black dotted parallel channel lines from 10:45 to the 12:55 low",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "black dotted bear channel ground the market from 7600 down to 7555",
+      "placement": null,
+      "price_hint": 7555.0,
+      "raw_label": "Bears sustain EMA gap x 42 bars; bear channel down",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrow at the 12:55 low below the channel line with oversized red bar",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "final leg beyond the channel trendline marked exhaustion and the day low at 7555 held",
+      "placement": null,
+      "price_hint": 7555.0,
+      "raw_label": "Final Leg overshoots channel trendline - exhaustion signal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green horizontal dotted lines at 7557-7560 with green boxed bull bars",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "higher low double bottoms lifted the market off the low into the midday rally",
+      "placement": null,
+      "price_hint": 7557.0,
+      "raw_label": "Higher Low with Multiple Double Bottoms",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedged uptrend lines from the 12:55 low to the 14:45 high",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "midday wedge of higher lows reversed the market up to 7588 into the EMA",
+      "placement": null,
+      "price_hint": 7588.0,
+      "raw_label": "Midday Bull Wedge Reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "16:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue boxed ranges 15:00-15:40 with close sell bars to 7562",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "afternoon became a trading range near the EMA that broke down into the close at 7562",
+      "placement": null,
+      "price_hint": 7572.0,
+      "raw_label": "After opening climactic sell, trending trading range; limit bulls buy low, limit bears sell high",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "16:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue boxed ranges 15:00-15:40 with close sell bars to 7562",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "afternoon became a trading range near the EMA that broke down into the close at 7562",
+      "placement": null,
+      "price_hint": 7572.0,
+      "raw_label": "After opening climactic sell, trending trading range; limit bulls buy low, limit bears sell high",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "dc392f6aaeb1",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Spike and Channel to Midday Reversal then Trading Range'. After a gap down a climactic bear spike reaches the 2R measured move; triple top failure and a 42-bar EMA gap bear channel grind the market to 7555 where an overshoot exhaustion final leg forms the low. Midday bull wedge and multiple double bottoms reverse the market up to 7588, but the trending range rolls over and the close sells back to 7562."
+}

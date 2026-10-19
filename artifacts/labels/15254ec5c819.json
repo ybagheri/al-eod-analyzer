@@ -1,0 +1,216 @@
+{
+  "date": "2026-04-08",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red texts beside bar 18 and green dotted line to 00:00",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted 6780 floor with Bear channel breakout, Exhaustive sell climax and Strong buying pressure texts before the broad rally",
+      "placement": null,
+      "price_hint": 6780.0,
+      "raw_label": "Exhaustive sell climax, bear channel breakout and strong buying pressure (22:45-23:10 low 6780)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Bear trap text bottom left with green arrows 22:40-23:55",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue box lows with green up arrows and red Bear trap text before the gap day settled into the range",
+      "placement": null,
+      "price_hint": 6795.0,
+      "raw_label": "Bear trap double bottom (22:30-23:10 lows 6805/6795)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.7,
+      "direction": "neutral",
+      "end_time": {
+        "time": "03:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text top and blue shaded boxes with bar numbers 24, 48, 60",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue title text 'Trading range reversal setups - multiple 2 leg moves throughout day' with boxed pullback bars 24, 48, 60",
+      "placement": null,
+      "price_hint": 6800.0,
+      "raw_label": "Broad sideways trading range with multiple 2 leg moves (23:15-02:55)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text above bar 36 with red arrows and green arrow-up continuation up to 6828",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red dotted 6817.5 line with red Double top failed text and red arrows at bar 36 before the wedge top rally",
+      "placement": null,
+      "price_hint": 6817.5,
+      "raw_label": "Double top failed at 6817.5 (00:05-00:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 40,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Truncated wedge text with magenta dotted wedge and red dotted 6828 line",
+      "label": "truncated_wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted truncated wedge up to the 6828 red dotted ceiling then a tapering sell-off to the 01:30-02:00 box",
+      "placement": null,
+      "price_hint": 6828.0,
+      "raw_label": "Truncated wedge top (00:20-01:05 high 6828)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Micro double bottom text under bar 48 with green dotted line and green arrows 01:35",
+      "label": "micro_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "green dotted micro double bottom floor inside the 01:30-02:00 box with green arrows to the bull trap top",
+      "placement": null,
+      "price_hint": 6812.0,
+      "raw_label": "Micro double bottom at 6812 (01:25-01:50)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 58,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Double top 2nd leg up, bull trap text with red dotted line and red arrow 01:55",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6830 double top with red arrows at bar 58 then the sharp sell-off to 6787.5",
+      "placement": null,
+      "price_hint": 6830.0,
+      "raw_label": "Double top, 2nd leg up bull trap at 6830 (01:50-02:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text right of bar 72 with green dotted floor line and final rally to chip 6820.50",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted support below bar 72 held and the green 2nd leg down to support, Bear trap text precedes the rally into the close",
+      "placement": null,
+      "price_hint": 6787.5,
+      "raw_label": "2nd leg down to support, bear trap (02:55-03:25 low 6787.5)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "15254ec5c819",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Big Gap Up Then Broad Sideways Trading Range' (ET+12 hrs, Apr 8/9). 100+ point overnight gap up (inset daily trendline breakout), sell-off to an exhaustive sell climax and bear channel breakout at 6780 (bar 18) with strong buying pressure, then a broad sideways trading range the rest of the day with multiple 2 leg reversal moves, double top failed, truncated wedge top (01:00 high 6828), second leg up bull trap, micro double bottom, late 2nd leg down to support bear trap (03:15 low 6787.5) and rally into the close 6820.50. Inset: Trading Range or Santa Claus Rally?"
+}

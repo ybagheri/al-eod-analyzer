@@ -7,11 +7,17 @@
   "session_summary": "Blue title bar: 'Bear Trend From The Open: Late Resumption Down'. Consecutive bear bars sell the close from the 2nd bar, a high 2 bottom and wedge minor reversals stall into an HH DT at the EMA and blue boxed trading range, then a breakout test micro DT trend resumption down at the close sells a bear surprise to the close at 4034.",
   "events": [
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Consecutive bear bars sell the close; bear trend from the open (2nd bar of day)",
       "direction": "bear",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4060.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "double_bottom",
       "raw_label": "2nd reversal up both buy bars with big bodies high 2 bottom",
       "direction": "bull",
-      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4052.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "double_top",
       "raw_label": "LH DT red dotted line (09:40)",
       "direction": "bear",
-      "start_time": {"time": "09:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4075.0,
       "outcome": "success",
@@ -46,11 +64,36 @@
       "evidence": "red dotted double top line 07:10 with red LH DT boxed reversal 09:20-09:40"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Bear trend from the open then trading range (11:30 HH DT at EMA)",
-      "direction": null,
-      "start_time": {"time": "10:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:20", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4055.0,
+      "outcome": "success",
+      "outcome_reason": "bear trend then blue shaded trading range chopped at the EMA with HH DT and OO",
+      "confidence": 0.7,
+      "evidence": "big blue shaded midday box with red and green arrows and pink boxed bar 18"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Bear trend from the open then trading range (11:30 HH DT at EMA)",
+      "direction": "neutral",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4055.0,
       "outcome": "success",
@@ -62,8 +105,14 @@
       "label": "wedge",
       "raw_label": "Wedge expanding triangle with tight bull channel minor reversal (14:15)",
       "direction": "bull",
-      "start_time": {"time": "14:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4060.0,
       "outcome": "success",
@@ -75,8 +124,14 @@
       "label": "failed_breakout",
       "raw_label": "Breakout test micro DT big outside down bar at top of trading range failed at EMA",
       "direction": "bear",
-      "start_time": {"time": "15:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "15:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4062.0,
       "outcome": "success",
@@ -85,11 +140,17 @@
       "evidence": "blue boxed 15:15 outside down bar with Trend Resumption Down and Sell The Close texts"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "LL MTR bear surprise sell the close",
       "direction": "bear",
-      "start_time": {"time": "15:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "16:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "16:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4034.0,
       "outcome": "success",
@@ -98,5 +159,9 @@
       "evidence": "blue boxed sell bars 15:40-15:55 with LL MTR Micro DB and Bear Surprise texts"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

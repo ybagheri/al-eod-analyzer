@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "Bull trap (07:45 top 5575)",
       "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5575.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "brown shaded 07:15-07:35 trap bars with orange Bull trap text and red arrows"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Breakout test (08:20-09:30 under 5570)",
       "direction": "bear",
-      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5558.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "red dotted 5570 line with red Breakout test text over the blue shaded early range"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Breakout below wedge (09:35)",
       "direction": "bear",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5558.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "wedge",
       "raw_label": "Wedged lows 5530 (10:55 parabolic wedge)",
       "direction": "bull",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5530.0,
       "outcome": "success",
@@ -59,11 +83,36 @@
       "evidence": "magenta Wedge text with dotted lines into the 10:55 low and boxed reversal bar"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Bear trending trading range day (11:00-13:05 range 5530-5555)",
       "direction": "bear",
-      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5545.0,
+      "outcome": "success",
+      "outcome_reason": "afternoon chopped as a bear trending trading range between 5530 and 5555",
+      "confidence": 0.7,
+      "evidence": "large blue shaded afternoon box 10:50-13:10 and blue Bear trending trading range day text"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Bear trending trading range day (11:00-13:05 range 5530-5555)",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5545.0,
       "outcome": "success",
@@ -75,8 +124,14 @@
       "label": "failed_breakout",
       "raw_label": "Breakout test 5530 (13:00)",
       "direction": "bull",
-      "start_time": {"time": "12:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5530.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "green Breakout test text with green arrows under the 12:45-13:00 lows"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -10,8 +10,14 @@
       "label": "double_bottom",
       "raw_label": "Lower low double bottom (early range)",
       "direction": "bull",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5662.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "double_bottom",
       "raw_label": "Higher low double bottom Major trend reversal (09:15)",
       "direction": "bull",
-      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5662.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "orange shaded 09:15 bars with bull breakout into 09:35 high 5690"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Bull channel from the reversal (bull trend trading range day)",
       "direction": "bull",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5720.0,
       "outcome": "success",
@@ -49,11 +67,17 @@
       "label": "double_top",
       "raw_label": "Lower high double tops with failed head and shoulders top (5710)",
       "direction": "bear",
-      "start_time": {"time": "10:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5710.0,
-      "outcome": "failure",
+      "outcome": "unclear",
       "outcome_reason": "three topped shoulder tests around 5710 failed to break lower and became a carryover breakout",
       "confidence": 0.6,
       "evidence": "red arcs over bar 42, bar 54 and bar 66 peaks with red dotted line at 5710"
@@ -62,8 +86,14 @@
       "label": "wedge",
       "raw_label": "Minor wedge Bar 42 midday reversal",
       "direction": "bear",
-      "start_time": {"time": "10:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5712.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "magenta Minor wedge text with arc over the 10:40 top at 5712"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Midday blue shaded trading range",
-      "direction": null,
-      "start_time": {"time": "10:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:15", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5692.0,
       "outcome": "success",
@@ -85,11 +121,36 @@
       "evidence": "large blue shaded box 10:15-13:00"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "trading_range_end",
+      "raw_label": "Midday blue shaded trading range",
+      "direction": "neutral",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5692.0,
+      "outcome": "success",
+      "outcome_reason": "market chopped in the blue shaded 5688-5712 range before the close breakout",
+      "confidence": 0.6,
+      "evidence": "large blue shaded box 10:15-13:00"
+    },
+    {
+      "label": "breakout",
       "raw_label": "Close breakout above 5710 to 5720",
       "direction": "bull",
-      "start_time": {"time": "13:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5720.0,
       "outcome": "success",
@@ -98,5 +159,9 @@
       "evidence": "green boxed bull bars at 13:10 with green arrows through 5720"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

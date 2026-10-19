@@ -10,8 +10,14 @@
       "label": "double_top",
       "raw_label": "Micro double top (07:00 at 5600)",
       "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5600.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "channel",
       "raw_label": "18-bar bear micro channel became measuring gap (07:40)",
       "direction": "bear",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5525.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "orange 18-bar bear micro channel text with brown shaded wedge and blue gap arrow into bar 18"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Small pullback bear trend so only look to sell (08:00-11:00)",
       "direction": "bear",
-      "start_time": {"time": "07:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5470.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "failed_breakout",
       "raw_label": "20-gap bar sell (10:50 test of red dotted 5477)",
       "direction": "bear",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5477.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "outside_outside",
       "raw_label": "OO (11:30 range low)",
       "direction": "bull",
-      "start_time": {"time": "11:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5458.0,
       "outcome": "success",
@@ -75,8 +105,14 @@
       "label": "measured_move",
       "raw_label": "Measured move end of day profit taking (12:15-13:00)",
       "direction": "bull",
-      "start_time": {"time": "12:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5467.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "blue Measured move text with blue/red shaded bounce bars into the 12:55 close"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

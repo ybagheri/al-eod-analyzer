@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "0d72f85bae45",
+  "date": "2026-01-14",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Bear Trend From Open, Trading Range Day Overall' (overnight ET+13 hrs, Jan 14/15). Bear trend from open trending trading range down (red dotted trend line 6980 to 6935), double bottom two legs down (23:20 low 6953), truncated wedge double bottom (00:50 low 6926), midday trading range with limit order scalping (blue box 01:00-03:00), then bull breakout and buying pressure with end of day rally back near the open (bars 60-72, close chip 6964.50).",
+  "events": [
+    {
+      "label": "channel",
+      "raw_label": "Bear trend from open trending trading range down (23:00-00:50 high 6980)",
+      "direction": "bear",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6980.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted straight trend line across the falling legs with stacked red arrows down to 6927",
+      "confidence": 0.7,
+      "evidence": "red Bear trend from open Trending trading range down Trading range reversal trades text stack with red dotted trend line"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Double bottom two legs down (23:10-23:35 low 6953)",
+      "direction": "bull",
+      "start_time": {"time": "23:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6953.0,
+      "outcome": "success",
+      "outcome_reason": "green Double bottom Two legs down text under the bar 12 low cluster with green dotted 6954 floor and green arrow 23:35",
+      "confidence": 0.6,
+      "evidence": "green text stack at the mid-left lows with green dotted floor line"
+    },
+    {
+      "label": "truncated_wedge",
+      "raw_label": "Truncated wedge double bottom (00:45-00:20 low 6926)",
+      "direction": "bull",
+      "start_time": {"time": "00:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 22,
+      "price_hint": 6926.0,
+      "outcome": "success",
+      "outcome_reason": "magenta truncated wedge dotted line into the 00:45 bar 22 lows with green dotted 6927 floor",
+      "confidence": 0.6,
+      "evidence": "magenta truncated wedge dotted channel under the falling legs to the bar 22 lows with green text Double bottom Truncated wedge at bottom"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Midday trading range limit order scalping (01:05-03:05, floor 6930)",
+      "direction": "neutral",
+      "start_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6932.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded box bars 30-50 with black bars 01:45-02:20 and green arrows at 02:35, floor dotted 6931",
+      "confidence": 0.6,
+      "evidence": "black Midday trading range Limit order scalping text over the blue shaded midday box with bars 36, 48 labels"
+    },
+    {
+      "label": "lower_low_double_bottom",
+      "raw_label": "Lower low double bottom at range floor (02:15-02:45 low 6926.5)",
+      "direction": "bull",
+      "start_time": {"time": "02:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6926.5,
+      "outcome": "success",
+      "outcome_reason": "green dotted floor under the bar 48-50 lows with green arrows 02:35-02:50 lifting",
+      "confidence": 0.6,
+      "evidence": "green arrows under the blue shaded box lows and magenta truncated wedge dotted floor beneath"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Bull breakout and buying pressure with end of day rally back to open (03:05-03:25)",
+      "direction": "bull",
+      "start_time": {"time": "03:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 56,
+      "price_hint": 6936.0,
+      "outcome": "success",
+      "outcome_reason": "green arrow at the 03:10 base and tall bull leg bars off the range floor",
+      "confidence": 0.65,
+      "evidence": "green Bull breakout and buying pressure with end of day rally back to open text with arrow to the breakout cluster bars 52-58"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Rally back to open with bars 60-72 (03:25-05:00, close chip 6964.50)",
+      "direction": "bull",
+      "start_time": {"time": "03:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "05:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 60,
+      "price_hint": 6975.0,
+      "outcome": "success",
+      "outcome_reason": "blue shaded rally box bars 60-78 with green arrows 03:45 and 04:25 to the 6975 highs",
+      "confidence": 0.6,
+      "evidence": "blue shaded right-edge box with bars 60, 72 labels and close chips 6964.50/6954.43"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs"}
+}

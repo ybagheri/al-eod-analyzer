@@ -10,8 +10,14 @@
       "label": "double_top",
       "raw_label": "Lower high double top (07:45)",
       "direction": "bear",
-      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6730.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "channel",
       "raw_label": "Small pullback bear trend in tight channel",
       "direction": "bear",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6695.0,
       "outcome": "success",
@@ -36,11 +48,17 @@
       "label": "wedge",
       "raw_label": "Wedge (10:45 area low)",
       "direction": "bull",
-      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6702.0,
-      "outcome": "failure",
+      "outcome": "unclear",
       "outcome_reason": "wedge low at 6702 only led to a small bounce; the market kept making lower lows",
       "confidence": 0.6,
       "evidence": "magenta wedge text under the 10:40 low with green dotted 6700 breakout line"
@@ -49,8 +67,14 @@
       "label": "double_top",
       "raw_label": "Lower high double top (11:50)",
       "direction": "bear",
-      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6715.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout below wedge Became bigger wedge",
       "direction": "bull",
-      "start_time": {"time": "12:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6695.0,
       "outcome": "success",
@@ -72,5 +102,9 @@
       "evidence": "blue text at the 12:50 spike low with tall reversal bar and green buy bars into 13:00"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

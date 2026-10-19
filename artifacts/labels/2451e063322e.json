@@ -1,0 +1,216 @@
+{
+  "date": "2026-05-06",
+  "day_type": "bull_trend_resumption",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "two green Bull trend from the open Tight bull channel texts and green arrows 22:15, 22:40",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "big gap up bars from 7330 to the bar 12 spike with green arrows below both tight bull channel texts",
+      "placement": null,
+      "price_hint": 7352.0,
+      "raw_label": "Bull trend from the open, tight bull channel (22:00-22:35 high 7352)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text bottom left and magenta dotted line under bars 6-14",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge with the magenta Wedge but, tight bull channel, Do not sell texts preceding the rally to 7372",
+      "placement": null,
+      "price_hint": 7345.0,
+      "raw_label": "Wedge but tight bull channel, do not sell (22:05-22:40 low 7345)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Three-line text above bar 24 and red dotted line to 23:40",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted overhead line at 7365 with stacked red arrows at bars 20-24 before the slide into the tight trading range box",
+      "placement": null,
+      "price_hint": 7365.0,
+      "raw_label": "Double top after 2 legs up, low probability aggressive sells with low risk (23:00-23:30 high 7365)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text above the blue shaded box with bar numbers 36, 48",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue Tight trading range text with blue shaded box over bars 34-52 hugging the rising EMA before the breakout to measured move targets",
+      "placement": null,
+      "price_hint": 7358.0,
+      "raw_label": "Tight trading range at the EMA (23:30-01:20 low 7358)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and red text under the bar 48 lows and green arrows 01:30",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge, Double bottom, 2 legs down, Bear trap text at the lows with green arrow up 01:30 and the shaded bear-trap bars",
+      "placement": null,
+      "price_hint": 7358.0,
+      "raw_label": "Wedge, double bottom, 2 legs down, bear trap (00:55-01:30 low 7358)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text and three orange dotted horizontal lines with bar numbers 60, 72",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Midday range measured move text with orange dotted projection lines from the 7368 range down-leg to the upper corridor 7381 before the all-time high",
+      "placement": null,
+      "price_hint": 7381.0,
+      "raw_label": "Midday range measured move (01:25-03:30 high 7381)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "three green text lines at right of the midday corridor and green arrows",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Midday trend resumption, Bull micro channel, Buy for any reason! texts with stacked green arrows up bars 62-72",
+      "placement": null,
+      "price_hint": 7379.0,
+      "raw_label": "Midday trend resumption, bull micro channel, buy for any reason (02:00-03:20 high 7379)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 74,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "purple Yet another all-time high text, purple dotted line, black Limit order trading into end of day text",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded final breakout bars to the purple dotted all-time high 7396 line near chips 7394.00/7384.96",
+      "placement": null,
+      "price_hint": 7398.0,
+      "raw_label": "Yet another all-time high on limit order trading into end of day (03:45-04:15 high 7398)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "2451e063322e",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Big Gap Up, Bull Trend Resumption from Open' (ET+12 hrs, May 6/7). Bull trend from the open in a tight bull channel (7330 to 7372), magenta wedge 'do not sell', double top after 2 legs up got low probability aggressive sells, tight trading range at the EMA (bar 36) and a wedge double bottom with 2 legs down bear trap (low 7358), then midday trend resumption in a bull micro channel (buy for any reason), a midday range measured move (7368-7381) and yet another all-time high 7396/7398 with limit order trading into the close 7394. Inset: relentless bull trend resumption to new high."
+}

@@ -10,8 +10,14 @@
       "label": "low_2",
       "raw_label": "Low 2 but bull bar top (07:20 high 5632)",
       "direction": "bear",
-      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5632.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "wedge",
       "raw_label": "Minor wedge selloff and wedge bottom (08:10-09:25 low 5617)",
       "direction": "bull",
-      "start_time": {"time": "08:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5617.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "pink Minor wedge lines and beige box 09:05-09:20 with green Wedge text under the 09:15 lows and green arrows 09:30, 10:15"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Wedge bottom and trading range (09:30-11:40)",
       "direction": "bear",
-      "start_time": {"time": "09:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5621.0,
       "outcome": "success",
@@ -46,25 +64,55 @@
       "evidence": "beige boxes 10:45-11:10 and 11:15-11:30, red Lower high in bear channel text with red dotted line 5630, green arrows 10:15, 10:30"
     },
     {
-      "label": "trend_reversal",
+      "label": "trading_range_end",
+      "raw_label": "Wedge bottom and trading range (09:30-11:40)",
+      "direction": "bear",
+      "start_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5621.0,
+      "outcome": "success",
+      "outcome_reason": "tight trading range with magenta dotted channel to 10:45 lows and dark green close to 11:30 lows 5617 with red arrows at 10:50, 11:15",
+      "confidence": 0.6,
+      "evidence": "beige boxes 10:45-11:10 and 11:15-11:30, red Lower high in bear channel text with red dotted line 5630, green arrows 10:15, 10:30"
+    },
+    {
+      "label": "major_trend_reversal",
       "raw_label": "Lower low double bottom (11:45-12:15 lows 5616)",
-      "direction": "bull",
-      "start_time": {"time": "11:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5616.0,
       "outcome": "success",
       "outcome_reason": "green Lower low double bottom text with greens arrows 12:00 and 12:10 at the selloff lows near 5616",
       "confidence": 0.6,
-      "evidence": "green Lower low double bottom text and green arrows under the 11:50-12:10 brown/dark bear bars 12:10",
-      "direction": null
+      "evidence": "green Lower low double bottom text and green arrows under the 11:50-12:10 brown/dark bear bars 12:10"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Bull breakout to close 5629 (12:15-13:05)",
       "direction": "bull",
-      "start_time": {"time": "12:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5629.0,
       "outcome": "success",
@@ -73,5 +121,9 @@
       "evidence": "beige box 12:15-12:25 with green shaded bull bars 12:40-13:00 and chip 5628.5 close"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

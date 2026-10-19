@@ -10,74 +10,139 @@
       "label": "failed_breakout",
       "raw_label": "Bear trap, support at yesterday's close 6457 (22:20 low 6460)",
       "direction": "bull",
-      "start_time": {"time": "22:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "22:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "22:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6457.0,
       "outcome": "success",
       "outcome_reason": "opening range shaded box lows bar 12 with red arrows 22:15-22:40 and orange dotted 6453/6458 lows",
       "confidence": 0.7,
-      "evidence": "red Bear trap, Support at yesterday's close text under the blue shaded opening range box with red dotted red MTR line and green/black arrows"    },
+      "evidence": "red Bear trap, Support at yesterday's close text under the blue shaded opening range box with red dotted red MTR line and green/black arrows"
+    },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Opening range breakout and bull trend resumption (22:40-23:25)",
       "direction": "bull",
-      "start_time": {"time": "22:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "22:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6480.0,
       "outcome": "success",
       "outcome_reason": "bull leg off bar 12 breakout with bars 18 and 24 labels and green arrows 23:00-23:05",
       "confidence": 0.7,
-      "evidence": "blue Opening range breakout and bull trend resumption from previous day's rally text with green arrows and bars 18, 24 labels"    },
+      "evidence": "blue Opening range breakout and bull trend resumption from previous day's rally text with green arrows and bars 18, 24 labels"
+    },
     {
-      "label": "bull_channel",
+      "label": "channel",
       "raw_label": "Tight bull channel after breakout (23:45-01:00 bars 36-48)",
       "direction": "bull",
-      "start_time": {"time": "23:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6488.0,
       "outcome": "success",
       "outcome_reason": "green tight bull channel text with blue shaded 00:00-01:00 box and orange dotted 6485 highs",
       "confidence": 0.65,
-      "evidence": "blue shaded 00:00-01:00 box, green Tight bull channel after breakout text, bars 36 and 48 labels with green arrows"    },
+      "evidence": "blue shaded 00:00-01:00 box, green Tight bull channel after breakout text, bars 36 and 48 labels with green arrows"
+    },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Midday tight trading range breakout mode (00:00-01:00)",
       "direction": "bull",
-      "start_time": {"time": "23:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6485.0,
       "outcome": "success",
       "outcome_reason": "blue shaded range with green dotted 6480 lows, orange dotted 6486 top and green arrows 00:25, 01:00",
       "confidence": 0.6,
-      "evidence": "green Midday tight trading range Breakout mode text over the blue shaded box with green dotted lows and orange dotted top with dark bar 01:00"    },
+      "evidence": "green Midday tight trading range Breakout mode text over the blue shaded box with green dotted lows and orange dotted top with dark bar 01:00"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Midday tight trading range breakout mode (00:00-01:00)",
+      "direction": "bull",
+      "start_time": {
+        "time": "23:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6485.0,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range with green dotted 6480 lows, orange dotted 6486 top and green arrows 00:25, 01:00",
+      "confidence": 0.6,
+      "evidence": "green Midday tight trading range Breakout mode text over the blue shaded box with green dotted lows and orange dotted top with dark bar 01:00"
+    },
     {
       "label": "small_pullback_bull_trend",
       "raw_label": "Two legs up with strong close bars 60-72 (01:05-03:40)",
       "direction": "bull",
-      "start_time": {"time": "01:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6510.0,
       "outcome": "success",
       "outcome_reason": "small pullback bull trend green arrows bars 60, 72 up past highs 6500",
       "confidence": 0.7,
-      "evidence": "green Small pullback bull trend resumed Two legs up with strong close text with green shaded bars 02:15 and bull bars with 60 and 72 labels near 03:30"    },
+      "evidence": "green Small pullback bull trend resumed Two legs up with strong close text with green shaded bars 02:15 and bull bars with 60 and 72 labels near 03:30"
+    },
     {
       "label": "measured_move",
       "raw_label": "Measured move reached, closing near all-time high (04:00 close 6514.75 high 6545)",
       "direction": "bull",
-      "start_time": {"time": "03:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "04:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6545.0,
       "outcome": "success",
       "outcome_reason": "orange dotted measured move reached after RTH session close with chip 6514.75 close and inset Market at top of Monthlong Trading Range",
       "confidence": 0.6,
-      "evidence": "orange Measured move reached after RTH session close Closing near all-time high text with dotted orange line near the final tall bull 04:00 highs and black chip 6514.75"    }
+      "evidence": "orange Measured move reached after RTH session close Closing near all-time high text with dotted orange line near the final tall bull 04:00 highs and black chip 6514.75"
+    }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

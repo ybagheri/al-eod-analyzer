@@ -10,8 +10,14 @@
       "label": "climax",
       "raw_label": "Big gap down sell climax (22:20 low 4435)",
       "direction": "bull",
-      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "22:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "21:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4435.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "red Big gap down text with red shaded 21:55-22:05 box, green boxes 22:00-22:25 and magenta Truncated Wedge text"
     },
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "Truncated wedge double/triple bottom and momentum breakout (22:40)",
       "direction": "bull",
-      "start_time": {"time": "22:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4437.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "magenta Truncated Wedge Double/Triple Bottom text, blue arrow to green shaded 22:45 bar and green dotted 4438 low line"
     },
     {
-      "label": "broad_bull_channel",
+      "label": "channel",
       "raw_label": "Broad bull channel up to wedge top (23:20-01:00)",
       "direction": "bull",
-      "start_time": {"time": "23:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4459.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout of double top (01:55 high 4462)",
       "direction": "bear",
-      "start_time": {"time": "01:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "01:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4462.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "climax",
       "raw_label": "Micro channel sell climax (02:45 low 4451)",
       "direction": "bear",
-      "start_time": {"time": "02:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4451.0,
       "outcome": "success",
@@ -72,11 +102,36 @@
       "evidence": "red Micro Channel Sell Climax text under the black 02:35-02:45 spike low with preceding red shaded bars"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Late chop 4451-4459 (03:00-04:00)",
       "direction": "bear",
-      "start_time": {"time": "02:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "04:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4455.0,
+      "outcome": "success",
+      "outcome_reason": "trading range in broad bull channel with bull bars 03:05 and 03:55 hovering 4455",
+      "confidence": 0.55,
+      "evidence": "green shaded bars 03:05, 03:55 with blue EMA and chop around 4455-4458"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Late chop 4451-4459 (03:00-04:00)",
+      "direction": "bear",
+      "start_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4455.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "green shaded bars 03:05, 03:55 with blue EMA and chop around 4455-4458"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

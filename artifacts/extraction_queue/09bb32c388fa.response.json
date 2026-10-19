@@ -10,8 +10,14 @@
       "label": "outside_outside",
       "raw_label": "OO (06:50 bottom)",
       "direction": "bull",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4395.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "climax",
       "raw_label": "Buy Climax (07:20)",
       "direction": "bull",
-      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4419.0,
       "outcome": "success",
@@ -35,9 +47,15 @@
     {
       "label": "triple_top",
       "raw_label": "Triangle with red dotted resistance 4417 (07:25-10:20)",
-      "direction": null,
-      "start_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:30", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4408.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "higher_low_major_trend_reversal",
       "raw_label": "Higher Low Major Trend Reversal (08:15)",
       "direction": "bull",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4401.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout below Triangle and Double Bottom (10:20 low 4403)",
       "direction": "bull",
-      "start_time": {"time": "09:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4403.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "orange arrow into the broad brown 10:15-10:25 bull spike bar"
     },
     {
-      "label": "spike_and_channel_bull",
+      "label": "spike",
       "raw_label": "Spike and Channel Bull Trend (10:25-12:35)",
       "direction": "bull",
-      "start_time": {"time": "10:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4422.0,
       "outcome": "success",
@@ -88,8 +124,14 @@
       "label": "failed_breakout",
       "raw_label": "Bear Trap / Lower Low Double Bottom (12:20 pullback 4411)",
       "direction": "bull",
-      "start_time": {"time": "12:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4411.0,
       "outcome": "success",
@@ -101,8 +143,14 @@
       "label": "wedge",
       "raw_label": "Minor Wedge (13:00 top)",
       "direction": "bull",
-      "start_time": {"time": "12:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4423.0,
       "outcome": "success",
@@ -111,5 +159,9 @@
       "evidence": "magenta Minor Wedge text with dotted lines over the 12:25-13:05 swing"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

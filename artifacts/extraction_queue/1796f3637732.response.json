@@ -10,8 +10,14 @@
       "label": "outside_outside",
       "raw_label": "Outside down day after broad bear channel (22:00)",
       "direction": "bear",
-      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "22:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "21:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7170.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "double_bottom",
       "raw_label": "Double bottom at yesterdays low (23:15)",
       "direction": "bull",
-      "start_time": {"time": "22:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "22:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7120.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "channel",
       "raw_label": "Weak buy inside tight bear channel",
       "direction": "bear",
-      "start_time": {"time": "23:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "24:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "24:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7140.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "channel",
       "raw_label": "Broad bear channel limit order market (00:00-02:30)",
       "direction": "bear",
-      "start_time": {"time": "24:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "24:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7115.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "failed_breakout",
       "raw_label": "Breakout below yesterdays low but only one reasonable stop entry",
       "direction": "bear",
-      "start_time": {"time": "01:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7105.0,
       "outcome": "success",
@@ -75,21 +105,52 @@
       "label": "major_trend_reversal",
       "raw_label": "Major trend reversal failed; two legs down minor reversal",
       "direction": "bear",
-      "start_time": {"time": "02:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "02:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7135.0,
-      "outcome": "failure",
+      "outcome": "unclear",
       "outcome_reason": "major trend reversal attempt failed with two legs down into a minor reversal",
       "confidence": 0.6,
       "evidence": "green Major trend reversal failed text with red Two legs down Minor reversal and magenta wedge bar 72"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Trading range at end of day, possible end of bear channel",
-      "direction": null,
-      "start_time": {"time": "03:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "04:00", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 7108.0,
+      "outcome": "success",
+      "outcome_reason": "market closed in a tight range possibly ending the bear channel pullback",
+      "confidence": 0.6,
+      "evidence": "blue shaded end-of-day box 03:40-04:00 with Trading range at end of day text"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Trading range at end of day, possible end of bear channel",
+      "direction": "neutral",
+      "start_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7108.0,
       "outcome": "success",
@@ -98,5 +159,9 @@
       "evidence": "blue shaded end-of-day box 03:40-04:00 with Trading range at end of day text"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

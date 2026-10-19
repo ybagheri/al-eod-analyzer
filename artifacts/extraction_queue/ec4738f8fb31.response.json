@@ -9,9 +9,15 @@
     {
       "label": "inside_inside",
       "raw_label": "ii (07:15)",
-      "direction": null,
-      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4165.0,
       "outcome": "success",
@@ -22,9 +28,15 @@
     {
       "label": "outside_outside",
       "raw_label": "OO (09:00)",
-      "direction": null,
-      "start_time": {"time": "08:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:10", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4160.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "double_top",
       "raw_label": "Higher High Double Top (08:00)",
       "direction": "bear",
-      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4176.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "double_bottom",
       "raw_label": "Lower Low Double Bottom (07:45)",
       "direction": "bull",
-      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4150.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "green dotted line at 4150 with green boxed bull bars 08:10-08:35"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Small Pullback Bear Trend",
       "direction": "bear",
-      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4147.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "red arrows over pullbacks and magenta dotted trend channel into the 10:15 breakout bar"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Breakout below small Trading Range Possible Trending Trading Range Day",
       "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4147.0,
       "outcome": "success",
@@ -88,8 +124,14 @@
       "label": "expanding_triangle",
       "raw_label": "Expanding Triangle (afternoon range)",
       "direction": "bull",
-      "start_time": {"time": "10:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4120.0,
       "outcome": "success",
@@ -101,8 +143,14 @@
       "label": "double_bottom",
       "raw_label": "Lower Low Double Bottom (12:50)",
       "direction": "bull",
-      "start_time": {"time": "12:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4120.0,
       "outcome": "success",
@@ -111,5 +159,9 @@
       "evidence": "green dotted lows at 4120 with green arrows into 13:00"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

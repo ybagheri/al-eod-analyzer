@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "Major bear surprise oops bars (07:10 top 4692)",
       "direction": "bear",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4692.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "wedge",
       "raw_label": "Failed breakout below wedge (08:20 low 4680)",
       "direction": "bear",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4680.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "green Failed breakout below wedge text with magenta wedge lines and green shaded bull bars 07:55-08:10"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "z-wave selloff to 4670 (08:40)",
       "direction": "bear",
-      "start_time": {"time": "08:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4670.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "bear bar selloff at 08:35 into 09:00 with green dotted远离 4670 line held"
     },
     {
-      "label": "swing_and_channel_bull",
+      "label": "channel",
       "raw_label": "Bounce off 4670 and 60-min EMA (09:45)",
       "direction": "bull",
-      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4670.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "green DB at MM down and 60-min EMA text with green shaded bull bars at 09:25-09:35 in the 10:00 lateral brown shaded axes area"
     },
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "Wedge, ii final bull flag failed (10:20 push 4680)",
       "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4680.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "Wedge, ii Final Bull Flag text with red arrow to the 10:20 brown bar and red dotted 4680 line with LH DT labels"
     },
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "Wedge DB PB HL MTR (11:35 low 4670) and 12:55 buy close 4687",
       "direction": "bull",
-      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4670.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "orange Wedge DB PB HL MTR text and orange Db HL MTR text with green dotted 4670 line and red shaded buy setups 12:40-13:00 into close 4680"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

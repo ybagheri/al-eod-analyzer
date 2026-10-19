@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "271ca2f5ad58",
+  "date": "2025-09-08",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Trading Range'. Higher high double top at 6540 led a major bear breakout (beige boxed bars) down a minor parabolic wedge to a sell climax low 6487 (bar 18-24 zone, 08:15-08:40), then a tight afternoon trading range (blue box bars 36-72) with a failed breakout below the tight trading range and a breakout test of a bad buy signal bar (11:05), finally an asecnding wedge thrust above the box at bar 72 into the 6490 close.",
+  "events": [
+    {
+      "label": "double_top",
+      "raw_label": "Higher high double top at 6540 (06:45-07:20 high 6540)",
+      "direction": "bear",
+      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6540.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted 6540 line across the opening highs with red arrows down 07:10-07:45 starting the bear trend",
+      "confidence": 0.6,
+      "evidence": "red Higher high double top text above the red dotted line"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Major bear breakout (07:15-08:00 low 6505)",
+      "direction": "bear",
+      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6505.0,
+      "outcome": "success",
+      "outcome_reason": "orange Major bear breakout text over the beige boxed bar leg 23-45 heading below the EMA into the lows",
+      "confidence": 0.65,
+      "evidence": "orange text above beige box with red arrows stacked on the leg dwarfs"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Minor parabolic wedge into the lows (07:20-08:45 low 6487)",
+      "direction": "bear",
+      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 18,
+      "price_hint": 6487.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling parabolic wedge into the green/white boxed reversal bars at 08:20-08:40",
+      "confidence": 0.65,
+      "evidence": "magenta Minor parabolic wedge text under bar 18 with magenta dotted line"
+    },
+    {
+      "label": "exhaustive_climax",
+      "raw_label": "Sell climax low (08:25-08:50 low 6487)",
+      "direction": "bear",
+      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6487.0,
+      "outcome": "success",
+      "outcome_reason": "red Sell climax text at the bar 24 lows followed by green arrows up ending the bear leg",
+      "confidence": 0.65,
+      "evidence": "red Sell climax text beside the beige box and green arrows 08:40"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Tight trading range after the sell climax (08:50-12:30)",
+      "direction": "neutral",
+      "start_time": {"time": "08:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6478.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded box bars 30-70 sidetracked between red dotted 6488 ceiling and green dotted 6468 floor",
+      "confidence": 0.65,
+      "evidence": "blue box with bar numbers 36, 48, 60, 72"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Failed breakout below tight trading range, breakout test of bad buy signal bar (10:55-11:25 low 6470)",
+      "direction": "bear",
+      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6470.0,
+      "outcome": "fail",
+      "outcome_reason": "blue Failed breakout below tight trading range and green Breakout test of bad buy signal bar texts with the bar 56 floor dip snapped back higher",
+      "confidence": 0.6,
+      "evidence": "blue and green texts under the midday dip with red arrows 10:45-11:10 and green arrow 11:15"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Ascending wedge thrust above the range at bar 72 (11:20-12:45 high 6490)",
+      "direction": "bull",
+      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6490.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted ascending wedge carried the range floor drift up to bar 72 and price closed near the box top with a red arrow test down",
+      "confidence": 0.6,
+      "evidence": "magenta dotted rising line and final bars 68-84 near the red dotted ceiling, 9/8 footer"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "footer 9/8 marks the day; bar numbers 12-72"}
+}

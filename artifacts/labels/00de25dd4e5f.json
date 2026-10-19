@@ -1,0 +1,191 @@
+{
+  "date": "2025-09-24",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Sell the close text with brown shaded 06:55-07:15 boxes and stacked red arrows 07:00-07:15",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "brown shaded opening sell bars with red arrows down to the blue dotted 6715 floor",
+      "placement": null,
+      "price_hint": 6705.0,
+      "raw_label": "Sell the close from the open (06:55-07:10 low 6705)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge bear flag text over the blue shaded 07:15-08:40 box with bars 12, 18, 24 and green dotted floor and orange dotted ceiling",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pink dotted wedge testing the 6718 ceiling with red arrow cluster 07:35-08:35 then break of the green dotted 6705 floor at bar 24",
+      "placement": null,
+      "price_hint": 6715.0,
+      "raw_label": "Wedge bear flag under the 6715 floor (07:15-08:40)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 26,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Possible measured move down text with arrow at the 09:00-09:15 tall sell bars and blue dotted baseline at 6676",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange arrow to the dark brown sell-off bars with blue dotted 6703 top and dotted green 6676 bottom",
+      "placement": null,
+      "price_hint": 6677.0,
+      "raw_label": "Possible measured move down bear leg (08:55-09:20 low 6677)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Parabolic wedge text with dotted wedge and brown shaded 09:20-09:25 box and green arrow at bar 36",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted parabolic wedge to the bar 36 low with green arrow 09:25-09:30 reversal, Measured move text below",
+      "placement": null,
+      "price_hint": 6677.0,
+      "raw_label": "Parabolic wedge bottom reversal (09:15-09:35 low 6677)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 44,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Bear trending trading range day text over the big blue shaded box starting after bar 36",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "pink dotted wedge climb to the minor double top 6701 inside the blue shaded range box",
+      "placement": null,
+      "price_hint": 6701.0,
+      "raw_label": "Bear trending trading range opens (09:30-13:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 52,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted rising wedge tops with clustered red arrows at 10:45 and bar 48 label nearby",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pink dotted double top ceiling with stacked red arrows 10:45-10:55 selling to the range middle",
+      "placement": null,
+      "price_hint": 6701.0,
+      "raw_label": "Minor wedge double top at range top (10:25-10:50 high 6701)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Minor wedge higher low text along the dotted wedge from bar 60 to bar 72 area and bars 60, 72 labels with green arrows",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "magenta dotted Minor wedge higher low text with green arrow cluster 12:40-12:55 lifting out of the range bottom into the close",
+      "placement": null,
+      "price_hint": 6699.0,
+      "raw_label": "Minor wedge higher lows bounce into close 6699 (12:00-13:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "00de25dd4e5f",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trending Trading Range Day'. Sell the close from the open (orange box low 6705) into a wedge bear flag (bars 12-24), possible measured move down bear leg to the parabolic wedge bottom (09:20 low 6677, measured move reached), then a large bear trending trading range (blue box 09:30-13:00) with a minor wedge double top at 6701 and minor wedge higher lows bouncing toward the 6699 close."
+}

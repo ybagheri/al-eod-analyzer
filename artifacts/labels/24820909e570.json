@@ -1,0 +1,166 @@
+{
+  "date": "2023-05-24",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Consecutive bear bars and red Sell The Close Bear Trend texts with orange arrow to the opening sell-off box",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "beige/red boxed consecutive bear bars with the orange and red texts and arrow into a steady sell-off to the 4115 lows",
+      "placement": null,
+      "price_hint": 4136.0,
+      "raw_label": "Consecutive bear bars, sell the close bear trend (07:00-09:00 low 4115)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange/red text above the 08:30 tall bar and blue dotted rising diagonal into 09:30",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "beige boxed gap spike bar above the red dotted 4128 line with the Bull Trap Gap Bar Sell text and blue dotted rebound channel",
+      "placement": null,
+      "price_hint": 4135.0,
+      "raw_label": "Bull trap gap bar sell at 4135 (08:25-08:50 high 4135)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Minor Lower Low Double Bottom text with green and blue arrows at the bottoming bars",
+      "label": "lower_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "green text with arrows under the bar lows; bears pushed the lower low into the expanding triangle lows",
+      "placement": null,
+      "price_hint": 4114.0,
+      "raw_label": "Minor lower low double bottom (09:20-10:05 lows 4115/4114)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Expanding Triangle text with blue dotted diverging trendlines",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue dotted expanding lines from the lower low through the midday range to the higher low",
+      "placement": null,
+      "price_hint": 4122.0,
+      "raw_label": "Expanding triangle (09:05-12:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Need breakout...else just bull leg in Trading Range text, magenta dotted rising line, blue dotted falling channel top",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "green text notes need breakout and follow-through above the trading range else just a bull leg; boxed bull/bear swing pairs and red dotted ceilings at 4125",
+      "placement": null,
+      "price_hint": 4125.0,
+      "raw_label": "Afternoon trading range with repeated bull legs (09:50-12:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text and orange Strong breakout came after day session close text with orange arrow to the boxed breakout bars",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Higher Low Major Trend Reversal text with the breakout after the day session close (orange arrow to beige/green boxed bars) spiking into the close",
+      "placement": null,
+      "price_hint": 4118.0,
+      "raw_label": "Higher low, major trend reversal (11:55-12:50 low 4118)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "24820909e570",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend, Trading Range, Late Reversal Up'. Consecutive bear bars sell-the-close bear trend from the 4140 open to the 4118-4115 lows (07:00-09:00), a bull trap gap bar sell spike to 4135 (08:30), then an afternoon trading range with a minor lower low double bottom (09:55) and expanding triangle; bulls held a higher low major trend reversal at 12:00 and the strong breakout came after the day session close with colored swing boxes into a ~4135 close-ease from the session highs."
+}

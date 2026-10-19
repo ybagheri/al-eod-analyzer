@@ -10,8 +10,14 @@
       "label": "climax",
       "raw_label": "ii in Sell Climax But EMA is magnet (07:15 low 4520)",
       "direction": "bull",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4520.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "double_bottom",
       "raw_label": "High 2 bottom (08:15 low since 4 bear bars)",
       "direction": "bull",
-      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4520.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "major_trend_reversal",
       "raw_label": "Higher Low Major Trend Reversal Head and Shoulders Bottom (09:20)",
       "direction": "bull",
-      "start_time": {"time": "08:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4524.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "green arrow to the 09:15-09:30 bottom with green Higher Low Major Trend Reversal text"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Weak rally (09:40-13:00)",
       "direction": "bull",
-      "start_time": {"time": "09:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4541.0,
       "outcome": "success",
@@ -59,11 +83,36 @@
       "evidence": "green boxed bars rising 10:15-12:05 to the 12:10 top 4541 with magenta dotted trend line"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Late range near 4540",
-      "direction": null,
-      "start_time": {"time": "11:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4538.0,
+      "outcome": "success",
+      "outcome_reason": "market flattened near 4538-4541 into the close",
+      "confidence": 0.55,
+      "evidence": "sideways bars 12:05-13:05 near the magenta dotted top line"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Late range near 4540",
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4538.0,
       "outcome": "success",
@@ -72,5 +121,9 @@
       "evidence": "sideways bars 12:05-13:05 near the magenta dotted top line"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

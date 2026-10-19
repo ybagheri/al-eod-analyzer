@@ -10,8 +10,14 @@
       "label": "expanding_triangle",
       "raw_label": "Expanding Triangle",
       "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4560.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "major_trend_reversal",
       "raw_label": "Lower High Major Trend Reversal",
       "direction": "bear",
-      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4555.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "dotted red line above the 09:00 spike high at 4555 with sell bars below"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Green dotted line breakout test at 4539",
       "direction": "bull",
-      "start_time": {"time": "10:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4539.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "double_top",
       "raw_label": "Lower High Double Top",
       "direction": "bear",
-      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4549.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "wedge",
       "raw_label": "Minor Wedge / Nested Wedge failed Broad Bear Channel",
       "direction": "bear",
-      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4539.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "magenta dotted Minor Wedge lines with arrow at the 10:15 low 4539"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Broad bear channel with stop order bulls making money",
       "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4536.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "red text 'Broad Bear Channel' with descending swing highs to the close lows at 4536"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

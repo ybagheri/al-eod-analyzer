@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "336488e1219f",
+  "date": "2025-09-16",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.65,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Trading Range' (9/16 with a 9/17 footer). Beige boxed bear trend from the open (6704 to 6661 lows at 09:05 under the pink minor wedge dotted line), then a broad highlighted trading range day (blue shaded box) with repeated two-leg moves, magenta dotted ascending wedge midday highs, and a higher high double top at 6679 (12:00) that sold to 6668 (bar 72) with a final bounce into the close 6674.",
+  "events": [
+    {
+      "label": "channel",
+      "raw_label": "Bear trend from the open (07:00-09:05 low 6661)",
+      "direction": "bear",
+      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6661.0,
+      "outcome": "success",
+      "outcome_reason": "beige boxed opening leg followed by stacked red arrows 07:15-09:00 down to the pink dotted wedge lows",
+      "confidence": 0.7,
+      "evidence": "orange Bear trend from the open text beside the beige box"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Minor wedge into the lows (07:20-09:05 low 6661)",
+      "direction": "bear",
+      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 18,
+      "price_hint": 6661.0,
+      "outcome": "success",
+      "outcome_reason": "magenta Minor wedge text with pink dotted wedge lines from the 07:25 bear leg into the bar 36 lows",
+      "confidence": 0.6,
+      "evidence": "magenta text at bottom left with dotted pink diverging lines"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Broad trading range day after the bear leg (08:40-13:00)",
+      "direction": "neutral",
+      "start_time": {"time": "08:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6670.0,
+      "outcome": "unclear",
+      "outcome_reason": "large blue shaded highlighting over bars 48-170 with repeated green arrow two-leg ups and red arrow two-leg downs between 6664 and 6679",
+      "confidence": 0.7,
+      "evidence": "blue shaded box, red dotted 6675 overhead line, green dotted 6664 support, bar numbers 12, 18, 24, 36, 48, 60, 72"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Ascending wedge inside the range (09:00-11:55 high 6679)",
+      "direction": "bull",
+      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6679.0,
+      "outcome": "partial",
+      "outcome_reason": "magenta dotted ascending wedge lines rising through the middle of the range into the higher high double top",
+      "confidence": 0.6,
+      "evidence": "two pink dotted parallel rising lines across the midday range"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Higher high double top at 6679 (11:50-12:40 high 6679)",
+      "direction": "bear",
+      "start_time": {"time": "11:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6679.0,
+      "outcome": "success",
+      "outcome_reason": "red Higher high double top text with red arrows down 12:15-12:30 into the bar 72 lows 6668",
+      "confidence": 0.65,
+      "evidence": "red text above bar 72 area with stacked red arrows"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "footer 9/17 marks next day; blues highlight the broad range"}
+}

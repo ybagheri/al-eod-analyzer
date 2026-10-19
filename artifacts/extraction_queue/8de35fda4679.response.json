@@ -1,129 +1,148 @@
 {
-    "schema_version":  1,
-    "image_id":  "8de35fda4679",
-    "date":  "2023-12-27",
-    "day_type":  "trading_range",
-    "day_type_confidence":  0.7,
-    "session_summary":  "Blue title bar: \u0027Trading Range, Expanding Triangle\u0027. OO and wedge selloffs down to the 09:50 bar 15 lows (4817), expanding triangle between 4816 lows and blue dotted 4836 top with higher high double bottom and lower high double top buying to the 13:00 close at 4834.",
-    "events":  [
-                   {
-                       "label":  "inside_outside",
-                       "raw_label":  "Minor wedge and OO wedge selloff (07:00-08:15)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "06:55",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "08:20",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  4818.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "OO and wedge sold highs into the wedged lows (magenta lines) with red arrows 07:50-08:05 and green bottom 4819",
-                       "confidence":  0.6,
-                       "evidence":  "pink Minor wedge text, blue OO and magenta Wedge texts, red arrows shaded boxes pink/blue in the 08:15 lows"
-                   },
-                   {
-                       "label":  "trading_range",
-                       "raw_label":  "Expanding triangle range (10:40-11:10)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "10:35",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "11:15",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  4822.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "ii label and blue shaded low box into Expanding triangle low break (11:15)",
-                       "confidence":  0.6,
-                       "evidence":  "blue Expanding triangle text, ii label under the blue shaded 10:55-11:10 box, red arrows 10:35-10:45 and green arrows 10:55, 11:05"
-                   },
-                   {
-                       "label":  "failed_breakout",
-                       "raw_label":  "Bull trap and lower high double top (11:05 high 4834)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "10:55",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "11:30",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  4834.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green Bull trap and red Lower high double top with bear bars stacked selloff to 11:15 lows 4818",
-                       "confidence":  0.65,
-                       "evidence":  "green Bull trap and red Lower high double top texts with red dotted 4834.5 line, red arrows 11:10-11:30 and big black bar 11:10"
-                   },
-                   {
-                       "label":  "double_top",
-                       "raw_label":  "Lower high double top test of 4833.5 (12:05-12:40)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "12:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "12:50",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  4833.5,
-                       "outcome":  "success",
-                       "outcome_reason":  "red dotted double top under the blue dotted expanding top channel with red shaded setup at 12:30",
-                       "confidence":  0.6,
-                       "evidence":  "red dotted line at 12:05-12:40 tops and pink channel lines toward the 12:30-12:45 top"
-                   },
-                   {
-                       "label":  "trend_reversal",
-                       "raw_label":  "Higher high double bottom (12:05-12:45 lows 4820)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "12:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "12:55",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  4820.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green Higher high Double bottom text beneath the green shaded box at 12:05 lows with green arrows 12:25, 12:45",
-                       "confidence":  0.6,
-                       "evidence":  "green Higher high Double bottom text and green shaded 12:05-12:15 lows box with green arrows"
-                   },
-                   {
-                       "label":  "trading_range_breakout",
-                       "raw_label":  "Bull breakout to close 4834 (12:55-13:05)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "12:50",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "13:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  4834.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "tall black bar 12:55-13:00 lifted the close to 4834 above the expanding triangle",
-                       "confidence":  0.55,
-                       "evidence":  "tall bull bar 12:55 with green arrow 12:55 and blue dotted trend line sweep into the close"
-                   }
-               ],
-    "extraction_meta":  {
-                            "provider":  "file",
-                            "model_id":  "muse-spark-opencode",
-                            "prompt_version":  "extract_v2"
-                        }
+  "schema_version": 1,
+  "image_id": "8de35fda4679",
+  "date": "2023-12-27",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Trading Range, Expanding Triangle'. OO and wedge selloffs down to the 09:50 bar 15 lows (4817), expanding triangle between 4816 lows and blue dotted 4836 top with higher high double bottom and lower high double top buying to the 13:00 close at 4834.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Minor wedge and OO wedge selloff (07:00-08:15)",
+      "direction": "bear",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4818.0,
+      "outcome": "success",
+      "outcome_reason": "OO and wedge sold highs into the wedged lows (magenta lines) with red arrows 07:50-08:05 and green bottom 4819",
+      "confidence": 0.6,
+      "evidence": "pink Minor wedge text, blue OO and magenta Wedge texts, red arrows shaded boxes pink/blue in the 08:15 lows"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Expanding triangle range (10:40-11:10)",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4822.0,
+      "outcome": "success",
+      "outcome_reason": "ii label and blue shaded low box into Expanding triangle low break (11:15)",
+      "confidence": 0.6,
+      "evidence": "blue Expanding triangle text, ii label under the blue shaded 10:55-11:10 box, red arrows 10:35-10:45 and green arrows 10:55, 11:05"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Expanding triangle range (10:40-11:10)",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4822.0,
+      "outcome": "success",
+      "outcome_reason": "ii label and blue shaded low box into Expanding triangle low break (11:15)",
+      "confidence": 0.6,
+      "evidence": "blue Expanding triangle text, ii label under the blue shaded 10:55-11:10 box, red arrows 10:35-10:45 and green arrows 10:55, 11:05"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap and lower high double top (11:05 high 4834)",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4834.0,
+      "outcome": "success",
+      "outcome_reason": "green Bull trap and red Lower high double top with bear bars stacked selloff to 11:15 lows 4818",
+      "confidence": 0.65,
+      "evidence": "green Bull trap and red Lower high double top texts with red dotted 4834.5 line, red arrows 11:10-11:30 and big black bar 11:10"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Lower high double top test of 4833.5 (12:05-12:40)",
+      "direction": "bear",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4833.5,
+      "outcome": "success",
+      "outcome_reason": "red dotted double top under the blue dotted expanding top channel with red shaded setup at 12:30",
+      "confidence": 0.6,
+      "evidence": "red dotted line at 12:05-12:40 tops and pink channel lines toward the 12:30-12:45 top"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Higher high double bottom (12:05-12:45 lows 4820)",
+      "direction": "bull",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4820.0,
+      "outcome": "success",
+      "outcome_reason": "green Higher high Double bottom text beneath the green shaded box at 12:05 lows with green arrows 12:25, 12:45",
+      "confidence": 0.6,
+      "evidence": "green Higher high Double bottom text and green shaded 12:05-12:15 lows box with green arrows"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Bull breakout to close 4834 (12:55-13:05)",
+      "direction": "bull",
+      "start_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4834.0,
+      "outcome": "success",
+      "outcome_reason": "tall black bar 12:55-13:00 lifted the close to 4834 above the expanding triangle",
+      "confidence": 0.55,
+      "evidence": "tall bull bar 12:55 with green arrow 12:55 and blue dotted trend line sweep into the close"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

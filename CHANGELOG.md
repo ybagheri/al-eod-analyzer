@@ -8,6 +8,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Wave-2 bulk labeling wave: 24 wave-2 request/response pairs filled (routine
+  agent labeling under the strict v1.3 enums; compound labels forbidden,
+  trading_range always begin/end pairs, int bar_index_hint, outcome enum
+  success|fail|partial|unclear); 20 new labels converted -> 49 batch-1 labels
+  live; 55 wave-2 request files still pending responses.
 - Wave-2 regeneration recovery: all 169 batch-1 extraction_queue request+response
   pairs restored/refilled and JSON-valid under taxonomy v1.3 (71 tracked restored
   via git checkout, 15 restored verbatim, 98 re-authored by chart re-inspection at

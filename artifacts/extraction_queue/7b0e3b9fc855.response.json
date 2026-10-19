@@ -10,8 +10,14 @@
       "label": "climax",
       "raw_label": "Sell climax (06:55 low 5335)",
       "direction": "bull",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5335.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "orange Sell climax text under the beige 06:45-07:30 box with red arrows 06:55-07:05 and blue shaded retest bars 07:30-07:45"
     },
     {
-      "label": "bull_channel",
+      "label": "channel",
       "raw_label": "15-bar bull micro channel (07:10-08:10 back to 5358)",
       "direction": "bull",
-      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5358.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "orange 15-bar bull micro channel text with green arrows 07:15-08:05 and minor buy climax label at the 08:10 highs"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Cup and handle range (08:15-10:15 lows 5350)",
       "direction": "bull",
-      "start_time": {"time": "08:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5350.0,
       "outcome": "success",
@@ -46,11 +64,36 @@
       "evidence": "green Cup and handle text with green curve, red dotted double top side boxes 08:20-10:15, red arrow 08:25 and 10:20"
     },
     {
-      "label": "bull_trend_resumption",
+      "label": "trading_range_end",
+      "raw_label": "Cup and handle range (08:15-10:15 lows 5350)",
+      "direction": "bull",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5350.0,
+      "outcome": "success",
+      "outcome_reason": "cup and handle with green curved line and green arrows at 09:45 lows forming a high 2 bull flag",
+      "confidence": 0.6,
+      "evidence": "green Cup and handle text with green curve, red dotted double top side boxes 08:20-10:15, red arrow 08:25 and 10:20"
+    },
+    {
+      "label": "breakout",
       "raw_label": "Trend resumption breakout (10:45-11:35)",
       "direction": "bull",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5380.0,
       "outcome": "success",
@@ -59,11 +102,36 @@
       "evidence": "magenta dotted wedge channel with green shaded bull bars 10:50-11:30 and pink minor wedge label at 12:15"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Minor pullback range (11:40-13:05)",
       "direction": "bull",
-      "start_time": {"time": "11:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5375.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted minor wedge 5383 top failed retest, green dotted 5370 lows and double bottom green arrows 12:35 and 13:10",
+      "confidence": 0.6,
+      "evidence": "magenta Minor wedge label at 12:15, red arrow 12:20 sell bar, green dotted 5369.5 lows and green shaded bull bars 13:00-13:10"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Minor pullback range (11:40-13:05)",
+      "direction": "bull",
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5375.0,
       "outcome": "success",
@@ -72,5 +140,9 @@
       "evidence": "magenta Minor wedge label at 12:15, red arrow 12:20 sell bar, green dotted 5369.5 lows and green shaded bull bars 13:00-13:10"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

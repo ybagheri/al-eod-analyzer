@@ -7,11 +7,17 @@
   "session_summary": "Blue title bar: 'Bull Channel'. HL DB cup and handle double bottom forms a bull channel after افتتاح Tue Sep selloff, bulls break out over the 3503 gap and channel to 3518 (12:15) then failed BO above wedge after 13:00 bear gave a couple of red 2nd entry sell setups; bulls retested 3525 into the close, close 3526.",
   "events": [
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "HL DB cup and handle double bottom (07:15 low 3490)",
       "direction": "bull",
-      "start_time": {"time": "12:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3490.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "blue HL DB Cup and Handle text with green shaded retest bars and green dotted 3490 low line"
     },
     {
-      "label": "bull_channel",
+      "label": "channel",
       "raw_label": "Wedge DT channel top and failed wedge (07:35 high 3513)",
       "direction": "bull",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3513.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "magenta Wedge DT text with red dotted 3513 top line and blue channel lines to the green shaded retest 08:15"
     },
     {
-      "label": "bull_channel",
+      "label": "channel",
       "raw_label": "Cup and handle bull channel to 3509 (09:55-10:05)",
       "direction": "bull",
-      "start_time": {"time": "09:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3509.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "green Bull trend resumption text with green shaded bull bars 09:30, 10:00 and blue dotted channel to the pink bar 3505"
     },
     {
-      "label": "bull_trend_resumption",
+      "label": "breakout",
       "raw_label": "Bull trend resumption breakout (10:30 high 3514)",
       "direction": "bull",
-      "start_time": {"time": "10:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3514.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed BO above wedge, bear trap (12:00-12:15 top 3518)",
       "direction": "bull",
-      "start_time": {"time": "11:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3518.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "magenta Failed BO above wedge text with red shaded 2nd entry sell setups 12:05-12:20 and green dotted low"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Bull break to close 3526 (12:40-13:05)",
       "direction": "bull",
-      "start_time": {"time": "12:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3526.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "green shaded breakout bars at 12:50 and 13:00 with green shaded 13:05 box near 3518-3523"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

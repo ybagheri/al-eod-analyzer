@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "7/6 high, weak bull wedge rally, double top failed (10:30 bear bar)",
       "direction": "bear",
-      "start_time": {"time": "09:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7600.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "failed_breakout",
       "raw_label": "Major bear surprise, vacuum selloff (10:35 tall bear bar)",
       "direction": "bear",
-      "start_time": {"time": "10:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7586.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "pink shaded selloff with red Major Bear Surprise Bar but long lower wick closes above mid-point with full bull retrace text"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Higher low double bottom / 2nd leg bear trap (10:55 low 7585)",
       "direction": "bull",
-      "start_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7585.0,
       "outcome": "success",
@@ -46,11 +64,36 @@
       "evidence": "red Higher Low Double Bottom and red 2nd Leg Bear Trap text with green underline lows at 10:55-11:10 and red boxes 11:05"
     },
     {
-      "label": "bull_channel",
+      "label": "trading_range_end",
+      "raw_label": "Higher low double bottom / 2nd leg bear trap (10:55 low 7585)",
+      "direction": "bull",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 7585.0,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom and 2nd leg bear trap; trapped bears exit breakeven = 2nd leg",
+      "confidence": 0.65,
+      "evidence": "red Higher Low Double Bottom and red 2nd Leg Bear Trap text with green underline lows at 10:55-11:10 and red boxes 11:05"
+    },
+    {
+      "label": "channel",
       "raw_label": "Micro-wedge to EMA rally then tight bull channel (12:30 onward)",
       "direction": "bull",
-      "start_time": {"time": "11:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7620.0,
       "outcome": "success",
@@ -59,11 +102,17 @@
       "evidence": "blue Micro-Wedge to EMA text, green Tight Bull Channel in form of Small Pullback Bull Trend, bar labels 24, 36, 48, 60, 72, 78 and green arrows"
     },
     {
-      "label": "bull_trend_resumption",
+      "label": "breakout",
       "raw_label": "HR Yesterday's Range breakout / RTH high reached (15:20 7620)",
       "direction": "bull",
-      "start_time": {"time": "14:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "15:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "14:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7620.0,
       "outcome": "success",
@@ -72,5 +121,9 @@
       "evidence": "brown dotted line HR Yesterdays Range RTH Low to RTH High over the green shaded box with black 7622.5 chip"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -1,138 +1,129 @@
 {
-    "schema_version":  1,
-    "image_id":  "c6fb77295c28",
-    "date":  "2024-07-12",
-    "day_type":  "trend_reversal_to_bear",
-    "day_type_confidence":  0.7,
-    "session_summary":  "Blue title bar: \u0027Bull Trend From The Open, Then Late Reversal\u0027. Bull trend from the open with a minor wedge pullback (07:15-08:30 around the orange dotted 5668 line), rally to a parabolic wedge bull climax (11:00 high 5706.5) and late reversal: lower high double top major trend reversal (red dotted 5703 line at 12:15) sold into the close 5668 low 5659.",
-    "events":  [
-                   {
-                       "label":  "trend_bars",
-                       "raw_label":  "Bull trend from the open (06:50-08:00 low 5640)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "06:45",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "08:05",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5645.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "green arrows stairs up from the 5645 open to 5685 highs in bars 1-20",
-                       "confidence":  0.75,
-                       "evidence":  "magenta dotted rising wedge with green arrows on opening grill bars from 5640-5645 lows to 5683 peaks"
-                   },
-                   {
-                       "label":  "minor_wedge",
-                       "raw_label":  "Minor wedge pullback at the orange dotted lows (07:55-09:05)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "07:55",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "09:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5668.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "orange dotted pullback lows around 5668-5670 with green push ups and wedging bars from the highs",
-                       "confidence":  0.6,
-                       "evidence":  "magenta Minor wedge text with dotted channel near bar 18-24 area and orange dotted support line 5668"
-                   },
-                   {
-                       "label":  "double_bottom_bull_flag",
-                       "raw_label":  "Trading range double bottom at highs (08:45-09:40)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "08:45",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "09:45",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  5675.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "sideways range pivot with red arrow 09:00 down to green arrows 09:30-09:40 renewing the bull run",
-                       "confidence":  0.55,
-                       "evidence":  "sideways bars around 5675-5680 with green arrows 09:30 and dotted magenta wedge shape at 09:35 lows"
-                   },
-                   {
-                       "label":  "parabolic_wedge_bull_climax",
-                       "raw_label":  "Parabolic wedges and bull climax pullbacks ups (09:45-11:00 high 5706.5)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "09:45",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "11:05",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  {
-                                              "low":  40,
-                                              "high":  54
-                                          },
-                       "price_hint":  5706.5,
-                       "outcome":  "success",
-                       "outcome_reason":  "magenta dotted wedge around bars 44-54 rally to 5706 with green arrows cluster 11:00 high wedge",
-                       "confidence":  0.7,
-                       "evidence":  "magenta Parabolic Wedge text with dotted wedge rising to the 11:00 cluster of green arrows and stacked twin peaks bar cluster"
-                   },
-                   {
-                       "label":  "double_top_bear_flag",
-                       "raw_label":  "Lower high double top major trend reversal (11:55-12:20 high 5703)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "11:50",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "12:25",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  {
-                                              "low":  56,
-                                              "high":  64
-                                          },
-                       "price_hint":  5703.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "red dotted line 5703 between the 11:15 highs and 12:00 second peak with red arrows 12:00-12:15 sell phases",
-                       "confidence":  0.7,
-                       "evidence":  "red \u0027Lower high double top Major trend reversal\u0027 text with red dotted line and stacked red arrows at 12:00 (bar 58) and 12:15-12:20"
-                   },
-                   {
-                       "label":  "bear_leg",
-                       "raw_label":  "Late bear leg into close 5668 (12:30-13:10 low 5659)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "12:30",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "13:10",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  {
-                                              "low":  64,
-                                              "high":  72
-                                          },
-                       "price_hint":  5659.0,
-                       "outcome":  "unknown",
-                       "outcome_reason":  "stacked red arrows down the EMA into the 5659 low and flat close bars at 5668",
-                       "confidence":  0.65,
-                       "evidence":  "red arrows on 12:45 and 13:00 sell bars below EMA to the 5659 low with flat close chips at 5668"
-                   }
-               ],
-    "extraction_meta":  {
-                            "provider":  "file",
-                            "model_id":  "muse-spark-opencode",
-                            "prompt_version":  "extract_v2"
-                        }
+  "schema_version": 1,
+  "image_id": "c6fb77295c28",
+  "date": "2024-07-12",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Late Reversal'. Bull trend from the open with a minor wedge pullback (07:15-08:30 around the orange dotted 5668 line), rally to a parabolic wedge bull climax (11:00 high 5706.5) and late reversal: lower high double top major trend reversal (red dotted 5703 line at 12:15) sold into the close 5668 low 5659.",
+  "events": [
+    {
+      "label": "channel",
+      "raw_label": "Bull trend from the open (06:50-08:00 low 5640)",
+      "direction": "bull",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5645.0,
+      "outcome": "success",
+      "outcome_reason": "green arrows stairs up from the 5645 open to 5685 highs in bars 1-20",
+      "confidence": 0.75,
+      "evidence": "magenta dotted rising wedge with green arrows on opening grill bars from 5640-5645 lows to 5683 peaks"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Minor wedge pullback at the orange dotted lows (07:55-09:05)",
+      "direction": "bear",
+      "start_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5668.0,
+      "outcome": "success",
+      "outcome_reason": "orange dotted pullback lows around 5668-5670 with green push ups and wedging bars from the highs",
+      "confidence": 0.6,
+      "evidence": "magenta Minor wedge text with dotted channel near bar 18-24 area and orange dotted support line 5668"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Trading range double bottom at highs (08:45-09:40)",
+      "direction": "bull",
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5675.0,
+      "outcome": "success",
+      "outcome_reason": "sideways range pivot with red arrow 09:00 down to green arrows 09:30-09:40 renewing the bull run",
+      "confidence": 0.55,
+      "evidence": "sideways bars around 5675-5680 with green arrows 09:30 and dotted magenta wedge shape at 09:35 lows"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Parabolic wedges and bull climax pullbacks ups (09:45-11:00 high 5706.5)",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 40,
+      "price_hint": 5706.5,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge around bars 44-54 rally to 5706 with green arrows cluster 11:00 high wedge",
+      "confidence": 0.7,
+      "evidence": "magenta Parabolic Wedge text with dotted wedge rising to the 11:00 cluster of green arrows and stacked twin peaks bar cluster"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Lower high double top major trend reversal (11:55-12:20 high 5703)",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 56,
+      "price_hint": 5703.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted line 5703 between the 11:15 highs and 12:00 second peak with red arrows 12:00-12:15 sell phases",
+      "confidence": 0.7,
+      "evidence": "red 'Lower high double top Major trend reversal' text with red dotted line and stacked red arrows at 12:00 (bar 58) and 12:15-12:20"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Late bear leg into close 5668 (12:30-13:10 low 5659)",
+      "direction": "bear",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": 64,
+      "price_hint": 5659.0,
+      "outcome": "unclear",
+      "outcome_reason": "stacked red arrows down the EMA into the 5659 low and flat close bars at 5668",
+      "confidence": 0.65,
+      "evidence": "red arrows on 12:45 and 13:00 sell bars below EMA to the 5659 low with flat close chips at 5668"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -1,0 +1,216 @@
+{
+  "date": "2023-07-12",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge rising into green shaded bull chases 07:15-07:55 with pink shaded reversal boxes and red shaded bear flags 07:35-08:20",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue text Wedge and magenta Failed breakout above Wedge at the pink shaded 08:05-08:25 top bars",
+      "placement": null,
+      "price_hint": 4525.0,
+      "raw_label": "Failed breakout above wedge (07:00-08:25 high 4525)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown shaded 08:20-08:40 boxes breaking the red dotted line with tall red climax bars and pink shaded run",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "brown shaded break bars below the red dotted 4513 line into the pink shaded climax run at 08:35-08:40",
+      "placement": null,
+      "price_hint": 4503.0,
+      "raw_label": "Breakout sell climax bear leg (08:30-08:55 low 4503)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded boxes 08:50-09:25 with green LL DB reversal text and shaded 08:15-08:45 bottom plateau",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Lower Low Double Bottom 2nd leg down from Sell Climax text with green shaded late bar 09:15 lower low bars",
+      "placement": null,
+      "price_hint": 4502.0,
+      "raw_label": "Lower low double bottom, 2nd leg down from sell climax (09:00-09:30 low 4502)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge rising through the pink shaded 08:40-13:00 band with green/red shaded 10:10-11:00 bars",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "magenta dotted rising wedge from 09:30 lows to the 4515 top with green and red shaded small bars inside the pink shaded band",
+      "placement": null,
+      "price_hint": 4515.0,
+      "raw_label": "Rally into breakout mode magenta wedge (09:30-11:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge rising through the pink shaded 08:40-13:00 band with green/red shaded 10:10-11:00 bars",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "magenta dotted rising wedge from 09:30 lows to the 4515 top with green and red shaded small bars inside the pink shaded band",
+      "placement": null,
+      "price_hint": 4515.0,
+      "raw_label": "Rally into breakout mode magenta wedge (09:30-11:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Breakout Test text with downward red arrow to the orange dotted 4515 line and brown shaded black sell bars 11:25-11:45",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted top line and red arrow Breakout Test text with green shaded bars touching the wedge 11:20",
+      "placement": null,
+      "price_hint": 4515.0,
+      "raw_label": "Breakout test of 4515 bear flag top (11:20-11:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Lower Trading Range in Bear Trending Trading Range Day text inside the pink shaded box with red 12:15 climax bar and green shaded 12:45 up recovery",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "range boxes drifting down to 4503 spike and back to close 4510 at EMA",
+      "placement": null,
+      "price_hint": 4510.0,
+      "raw_label": "Lower trading range in bear trending trading range day (11:35-13:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Lower Trading Range in Bear Trending Trading Range Day text inside the pink shaded box with red 12:15 climax bar and green shaded 12:45 up recovery",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "range boxes drifting down to 4503 spike and back to close 4510 at EMA",
+      "placement": null,
+      "price_hint": 4510.0,
+      "raw_label": "Lower trading range in bear trending trading range day (11:35-13:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "b949fb25e270",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trending Trading Range Day'. Failed breakout above the opening wedge (07:00-08:25 high 4525) sold down sell climax at 08:35, lower low double bottom 2nd leg down from sell climax (09:15 low 4502), rally to upper range breakout test (11:30 at 4515), then a lower trading range in this bear trending trading range day with close 4510."
+}

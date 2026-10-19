@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "03f3d7726612",
+  "date": "2026-02-27",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Big Gap Down Then 50% Pullback in Trading Range Day' (overnight ET+13 hrs, Feb 27/28). Big gap down and second leg down attempt met strong buying pressure (23:00 low 6845.5), 50% pullback from open to yesterday's close (6882.5, bar 4), tight bull channel wedge rally (bars 12-18), double top fail (01:00 red dotted 6882), weak bear channel with reasonable short selling in the midday range (bars 36-60, floor 6856), double bottom (03:45 low 6856), wedge rally to 6889.5 and late double top into the 6885.25 close; inset Broad Trading Range Continues.",
+  "events": [
+    {
+      "label": "gap",
+      "raw_label": "Big gap down with second leg down attempt but strong buying pressure (23:00-23:30 low 6845.5)",
+      "direction": "bear",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6845.5,
+      "outcome": "fail",
+      "outcome_reason": "blue shaded opening box lows 6845 with spike low and green arrow 23:25 reversal",
+      "confidence": 0.65,
+      "evidence": "red Second leg down attempt but strong buying pressure text under the blue shaded 23:00-23:25 open box"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "50% pullback from open to yesterday's close (00:10-00:30 high 6882.5)",
+      "direction": "bull",
+      "start_time": {"time": "00:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 4,
+      "price_hint": 6882.5,
+      "outcome": "success",
+      "outcome_reason": "tall bull bar 00:20 to the black dotted yesterday close line at 6882.5 with text arrow",
+      "confidence": 0.65,
+      "evidence": "black '50% pullback from open to yesterday's close' text with down arrow over the open drive bar 4"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Tight bull channel with wedge tops (23:30-01:05 high 6882)",
+      "direction": "bull",
+      "start_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6882.0,
+      "outcome": "success",
+      "outcome_reason": "green Tight bull channel text with arrow to the magenta dotted wedge at bars 12-18 with green arrows 00:35-00:45",
+      "confidence": 0.65,
+      "evidence": "green Tight bull channel text below magenta dotted rising wedge labeled bars 12, 18"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top reversal at 6882 (00:50-01:15)",
+      "direction": "bear",
+      "start_time": {"time": "00:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6882.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted 6882 line over blue shaded box bars 20-26 with red arrows 01:00-01:10 selling the second test",
+      "confidence": 0.65,
+      "evidence": "red Double top text with dotted line and blue shaded range top box"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Midday weak bear channel trading range (01:20-03:40, floor 6856)",
+      "direction": "bear",
+      "start_time": {"time": "01:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6856.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded box bars 36-60 with red arrows 01:30-02:05 and 02:45 drifting to the green dotted floor",
+      "confidence": 0.6,
+      "evidence": "red Weak bear channel but reasonable short selling text and Many swing trades failed Stop orders trading difficult text over the blue shaded midday box"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Double bottom at range low (03:40-04:10 low 6856)",
+      "direction": "bull",
+      "start_time": {"time": "03:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 60,
+      "price_hint": 6856.0,
+      "outcome": "unclear",
+      "outcome_reason": "green Double bottom text with red arrow annotation at the blue shaded box bottom lows and green arrows 04:10-04:20",
+      "confidence": 0.6,
+      "evidence": "green Double bottom text under the range lows with red arrow sweep pointing to the double bottom cluster"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge rally to 6889.5 and late double top into close 6885.25 (04:10-05:00)",
+      "direction": "bull",
+      "start_time": {"time": "04:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "05:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6889.5,
+      "outcome": "unclear",
+      "outcome_reason": "magenta dotted wedge from bar 66 to the bar 72 top 6889.5 (red dotted 6887 second top line) with red arrows 04:40 close bars",
+      "confidence": 0.6,
+      "evidence": "magenta Wedge text at the magenta dotted rising wedge over bars 66-76 with bar 72 label and red arrows near the close"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs"}
+}

@@ -10,8 +10,14 @@
       "label": "climax",
       "raw_label": "Parabolic Wedge buy climax (08:00 top 5352)",
       "direction": "bull",
-      "start_time": {"time": "07:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5352.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "magenta Parabolic Wedge text over shaded top box and tan climax bars 07:35-08:05"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Bear trending trading range day (08:10-10:20 blue box)",
       "direction": "bear",
-      "start_time": {"time": "08:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5337.0,
       "outcome": "success",
@@ -33,11 +45,36 @@
       "evidence": "top blue shaded box with red dotted 5340 and orange arrows down to 10:25"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "trading_range_end",
+      "raw_label": "Bear trending trading range day (08:10-10:20 blue box)",
+      "direction": "bear",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5337.0,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range chopped down toward the orange dotted breakout",
+      "confidence": 0.65,
+      "evidence": "top blue shaded box with red dotted 5340 and orange arrows down to 10:25"
+    },
+    {
+      "label": "breakout",
       "raw_label": "Breakout below trading range (10:30)",
       "direction": "bear",
-      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5330.0,
       "outcome": "success",
@@ -49,8 +86,14 @@
       "label": "wedge",
       "raw_label": "Wedge measured move (11:10 low 5325)",
       "direction": "bear",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5325.0,
       "outcome": "success",
@@ -59,11 +102,36 @@
       "evidence": "Wedge Measured move text with magenta dotted lines under the 11:05 lows"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Red dotted 5336 second range 11:20-12:20",
       "direction": "bear",
-      "start_time": {"time": "11:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5336.0,
+      "outcome": "success",
+      "outcome_reason": "second blue shaded range 5324-5336 rolled sideways-down LH DT red arrows",
+      "confidence": 0.6,
+      "evidence": "red dotted 5336 line with red arrows before 12:40 and blue shaded second box"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Red dotted 5336 second range 11:20-12:20",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5336.0,
       "outcome": "success",
@@ -75,8 +143,14 @@
       "label": "measured_move",
       "raw_label": "Measured move (13:10 close 5321)",
       "direction": "bear",
-      "start_time": {"time": "12:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5321.0,
       "outcome": "success",
@@ -85,5 +159,9 @@
       "evidence": "blue Measured move text at bottom right and blue shaded 12:45-13:00 box with close wedge down bar"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

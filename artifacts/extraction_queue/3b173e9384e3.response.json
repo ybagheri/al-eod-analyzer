@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "3b173e9384e3",
+  "date": "2025-12-08",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.65,
+  "session_summary": "Blue title bar: 'Bear Trend From Open Then Trading Range' (ET+13 hrs, Dec 8/9; inset Bear Channel Breakout). Bear trend from the open down the blue trendline to consecutive-wedge bear trend exhaustion lows 6844 (bar 36), low 2 sell setup, a failed bear channel breakout rally to 6862 (02:10), a drop wedge 2 legs down to 6840 (03:00), the red dotted 6856 double top ceiling and an afternoon trading range (blue box bars 60-72) closing near 6848-6855 with the 6854.75/6847.77 chips.",
+  "events": [
+    {
+      "label": "channel",
+      "raw_label": "Bear trend from open (23:00-01:25 low 6840)",
+      "direction": "bear",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6840.0,
+      "outcome": "success",
+      "outcome_reason": "red text with red arrow under the blue descending trendline and stacked red arrows from the 6885 open into the bar 36 lows",
+      "confidence": 0.7,
+      "evidence": "red Bear trend from open text and red arrows 23:05-00:40, bar numbers 12, 18, 24, 36"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge down to the morning lows (23:10-01:25 low 6844)",
+      "direction": "bear",
+      "start_time": {"time": "23:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6844.0,
+      "outcome": "success",
+      "outcome_reason": "pink dotted wedge lines falling from bar 12 into bear trend exhaustion lows with the magenta Wedge text",
+      "confidence": 0.65,
+      "evidence": "magenta Wedge text and two pink dotted falling lines"
+    },
+    {
+      "label": "exhaustive_climax",
+      "raw_label": "Consecutive wedges, bear trend exhaustion (01:35-02:00 low 6844)",
+      "direction": "bear",
+      "start_time": {"time": "01:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6844.0,
+      "outcome": "success",
+      "outcome_reason": "magenta Consecutive wedges and red Bear trend exhaustion texts at the bar 36 lows with red arrow and green arrow 01:50",
+      "confidence": 0.6,
+      "evidence": "the two bottom-center texts under the exhaustion lows"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bear channel breakout failed (01:50-02:20 high 6862)",
+      "direction": "bull",
+      "start_time": {"time": "01:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 40,
+      "price_hint": 6862.0,
+      "outcome": "fail",
+      "outcome_reason": "green Bear channel breakout failed text with green arrow to the 6862 green dotted line and blue boxed push that reversed back down",
+      "confidence": 0.6,
+      "evidence": "green text and green dotted horizontal at 6862, green arrow 02:00 plus blue box bars 48-54"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge 2 legs down to 6840 (02:25-03:10 low 6840)",
+      "direction": "bear",
+      "start_time": {"time": "02:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6840.0,
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge 2 legs down text under the falling pink dotted line into the 03:00 lows",
+      "confidence": 0.6,
+      "evidence": "magenta and black texts with pink dotted falling line through bars 54-64"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top at 6856 (02:20-04:40)",
+      "direction": "bear",
+      "start_time": {"time": "02:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6856.0,
+      "outcome": "partial",
+      "outcome_reason": "red dotted 6856 line spanning the middle of the day with the red Double top text and red arrows 02:40, 03:00, 04:35",
+      "confidence": 0.6,
+      "evidence": "red text upper right and the long red dotted ceiling line as price ranged below"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Afternoon trading range above 6841 floor (03:10-05:00)",
+      "direction": "neutral",
+      "start_time": {"time": "03:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "05:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 60,
+      "price_hint": 6848.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded box bars 70-92 over the EMA with green dotted 6841 floor and the 6854.75/6847.77 chips at the close",
+      "confidence": 0.6,
+      "evidence": "blue box, green arrows 03:35/03:50/04:25, red arrow 04:45, bar numbers 60 and 72"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs; axis label Dec 9 mid-chart; inset shows Bear Channel Breakout"}
+}

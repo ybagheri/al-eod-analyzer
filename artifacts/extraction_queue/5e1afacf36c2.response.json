@@ -7,11 +7,17 @@
   "session_summary": "Blue title bar: 'Spike and Channel Bull Trend'. Three big bull bars spike up from 3205 open; ooo ledge at 07:35 high 3229 sold to a wedge selloff higher low double bottom (09:00 low 3213); bull channel with small pullback bull trend rallied into the close at 3232.",
   "events": [
     {
-      "label": "spike_and_channel_bull",
+      "label": "spike",
       "raw_label": "Three big bull bars spike up (06:55-07:15 high 3225)",
       "direction": "bull",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3225.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "ooo",
       "raw_label": "OOO ledge (07:35 top 3229)",
       "direction": "bull",
-      "start_time": {"time": "07:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3229.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "trend_reversal_to_bull",
       "raw_label": "Wedge selloff to higher low double bottom (08:55 low 3213)",
       "direction": "bull",
-      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3213.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "magenta Wedge Selloff to HL DB text with pink dotted channel, red boxes 08:30-09:00 and green shaded bull bars at 09:00"
     },
     {
-      "label": "bull_channel",
+      "label": "channel",
       "raw_label": "Bull channel small pullback bull trend (09:05-13:05)",
       "direction": "bull",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 3232.0,
       "outcome": "success",
@@ -59,5 +83,9 @@
       "evidence": "green bull channel shading with green Bull Channel Small PB Bull Trend text, blue dotted wedge pullback at 12:00 lows and pink dotted rally to 12:50"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

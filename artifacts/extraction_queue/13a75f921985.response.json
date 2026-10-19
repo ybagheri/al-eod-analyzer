@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "13a75f921985",
+  "date": "2026-01-05",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Bull Channel from Open, Wedge Top Reversal into Bear Channel' (overnight ET+13 hrs, Jan 5/6). Opening trading range with buying pressure, bull channel rally to a truncated wedge top (01:05 high 6963.75), support minor reversal pig mounts at 6948 (bar 36), double top in bear channel (red dotted 6956.5) and bear channel down all afternoon with failed double bottoms in bear channel, closing 6944.5. Inset: Back Inside Trading Range.",
+  "events": [
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Opening trading range with buying pressure (23:00-23:40 low 6933)",
+      "direction": "bull",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6933.0,
+      "outcome": "success",
+      "outcome_reason": "dark opening bars 6933-6945 with green arrows 23:20-23:30",
+      "confidence": 0.6,
+      "evidence": "blue Opening trading range with buying pressure text at bottom left with chips 6947.23/6944.50"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Bull channel from the open (23:05-00:50 high 6961)",
+      "direction": "bull",
+      "start_time": {"time": "23:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6961.0,
+      "outcome": "success",
+      "outcome_reason": "green Bull channel text with magenta dotted channel top rising through bars 12/18/24 to the wedge top",
+      "confidence": 0.65,
+      "evidence": "green Bull channel text along the rising run with magenta dotted truncated wedge above"
+    },
+    {
+      "label": "truncated_wedge",
+      "raw_label": "Truncated wedge top reversal (00:20-01:20 high 6963.75)",
+      "direction": "bear",
+      "start_time": {"time": "00:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 26,
+      "price_hint": 6963.75,
+      "outcome": "success",
+      "outcome_reason": "magenta Truncated wedge text with dotted apex at 01:05 and red arrows 01:20-01:35 selling off",
+      "confidence": 0.65,
+      "evidence": "magenta Truncated wedge text above the magenta dotted wedge into the 6960s top with red arrow cluster at 01:20"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Support minor reversal then double top in bear channel (01:40-02:55 high 6956.5)",
+      "direction": "bear",
+      "start_time": {"time": "01:40", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6956.5,
+      "outcome": "success",
+      "outcome_reason": "green Support Minor reversal texts at the bar 36 lows 6948 floor with green arrows 02:40 then red dotted 6956.5 double top and red arrows 02:55",
+      "confidence": 0.6,
+      "evidence": "blue Support and blue Minor reversal texts with green dotted 6948 line, red Double top in bear channel text with red dotted line and red arrows at 02:55"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Bear channel down the afternoon (02:55-05:00 low 6938)",
+      "direction": "bear",
+      "start_time": {"time": "02:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "05:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 60,
+      "price_hint": 6938.0,
+      "outcome": "unclear",
+      "outcome_reason": "magenta dotted bear channel to the green dotted 6938 double-bottom floor with stacked red arrows 03:25-05:00",
+      "confidence": 0.65,
+      "evidence": "green Failed double bottoms in bear channel text at the green dotted 6938 floor and bars 60, 72 labels with red arrows 04:40 and 05:00"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs"}
+}

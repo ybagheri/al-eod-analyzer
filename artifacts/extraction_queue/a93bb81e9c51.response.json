@@ -7,101 +7,199 @@
   "session_summary": "Blue title bar: 'Parabolic Wedge Bottom, Then Trading Range' with subtitle 'Trading Range day with close near open'. Overnight parabolic wedge bottom reversal (06:45-07:20 low 4958), failed breakout above wedge at 08:30 high 4970.50, higher low double bottom 09:15, ii breakout mode no success, test of open forming a higher high double top OO failure 11:05, lower high double top 12:15 after a double bottom after higher high so early bull trend 12:05, rally to close just below the 4970 open.",
   "events": [
     {
-      "label": "parabolic_wedge_bottom",
+      "label": "wedge",
       "raw_label": "Parabolic Wedge decline and bottom reversal (06:45-07:30 low 4958)",
       "direction": "bull",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4958.0,
       "outcome": "success",
       "outcome_reason": "brown shaded open sell-off wedge with red arrows 07:00-07:10 into magenta dotted low and green arrow 07:25 reversal gap",
       "confidence": 0.7,
-      "evidence": "magenta dotted Wedge channel under 'Parabolic Wedge' text with shaded brown boxes and red then green arrows at the bottom reversal"    },
+      "evidence": "magenta dotted Wedge channel under 'Parabolic Wedge' text with shaded brown boxes and red then green arrows at the bottom reversal"
+    },
     {
       "label": "failed_breakout",
       "raw_label": "Failed breakout above wedge (08:25-09:05 high 4970.50)",
       "direction": "bear",
-      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4970.5,
       "outcome": "success",
       "outcome_reason": "magenta dotted wedge top paused by blue dotted 4970 line and red arrows 08:35-08:45",
       "confidence": 0.7,
-      "evidence": "magenta 'Failed breakout above wedge' text with blue dotted horizontal line at 4970 and red arrows over the gray shaded pullback boxes"    },
+      "evidence": "magenta 'Failed breakout above wedge' text with blue dotted horizontal line at 4970 and red arrows over the gray shaded pullback boxes"
+    },
     {
       "label": "double_bottom",
       "raw_label": "Higher low double bottom and micro channel test of open (08:45-09:45 low 4959)",
       "direction": "bull",
-      "start_time": {"time": "08:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4959.0,
       "outcome": "success",
       "outcome_reason": "magenta dotted higher low wedge into green dotted 4955 line with green arrows 09:00-09:15",
       "confidence": 0.6,
-      "evidence": "green 'Higher low double bottom' text under the magenta dotted lower wedge and gray shaded box with green arrows"    },
+      "evidence": "green 'Higher low double bottom' text under the magenta dotted lower wedge and gray shaded box with green arrows"
+    },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "ii breakout mode mid-range (09:45-10:40)",
       "direction": "bull",
-      "start_time": {"time": "09:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4960.0,
       "outcome": "success",
       "outcome_reason": "blue shaded ii tight triangle whipsaw between 4959-4965 with green then red arrows",
       "confidence": 0.6,
-      "evidence": "blue 'ii' text over the gray/blue shaded diagonal converge pattern under 'Trading Range day with close near open' subtitle"    },
+      "evidence": "blue 'ii' text over the gray/blue shaded diagonal converge pattern under 'Trading Range day with close near open' subtitle"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "ii breakout mode mid-range (09:45-10:40)",
+      "direction": "bull",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4960.0,
+      "outcome": "success",
+      "outcome_reason": "blue shaded ii tight triangle whipsaw between 4959-4965 with green then red arrows",
+      "confidence": 0.6,
+      "evidence": "blue 'ii' text over the gray/blue shaded diagonal converge pattern under 'Trading Range day with close near open' subtitle"
+    },
     {
       "label": "failed_breakout",
       "raw_label": "Test of open, Higher high double top OO failure (10:50-11:30 high 4970.50)",
       "direction": "bear",
-      "start_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4970.5,
       "outcome": "success",
       "outcome_reason": "brown shaded 10:50-11:20 rally to blue arrow Test of open then OO label with red arrow 11:15 rejection",
       "confidence": 0.7,
-      "evidence": "blue 'Test of open' text with blue arrow, red 'Higher high double top' and blue 'OO' labels at the red dotted 4970 line with shaded brown boxes"    },
+      "evidence": "blue 'Test of open' text with blue arrow, red 'Higher high double top' and blue 'OO' labels at the red dotted 4970 line with shaded brown boxes"
+    },
     {
       "label": "double_bottom",
       "raw_label": "Double bottom after higher high so early bull trend (11:15-12:50 low 4957)",
       "direction": "bull",
-      "start_time": {"time": "11:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4957.0,
       "outcome": "success",
       "outcome_reason": "brown shaded 11:15-11:45 sell-off wedge into green dotted 4955 line with green arrows 12:40-12:50",
       "confidence": 0.6,
-      "evidence": "green 'Double bottom after higher high so early bull trend' text under the brown shaded 11:15 wedge lows with magenta dotted channel and green arrows"    },
+      "evidence": "green 'Double bottom after higher high so early bull trend' text under the brown shaded 11:15 wedge lows with magenta dotted channel and green arrows"
+    },
     {
-      "label": "double_top_bear_flag",
+      "label": "double_top",
       "raw_label": "Lower high double top (12:10-12:20 high 4970)",
       "direction": "bear",
-      "start_time": {"time": "12:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4970.0,
       "outcome": "success",
       "outcome_reason": "red dotted lower high at 4970 line with red arrow 12:20 sell signal bar under 'Lower high double top' text",
       "confidence": 0.6,
-      "evidence": "red 'Lower high double top' text with red dotted 4970 line at the midday peak shaded box"    },
+      "evidence": "red 'Lower high double top' text with red dotted 4970 line at the midday peak shaded box"
+    },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Close just below open 4968.75 (12:45-13:30)",
       "direction": "bull",
-      "start_time": {"time": "12:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4968.75,
       "outcome": "success",
       "outcome_reason": "blue dotted 4970 open line nearly tagged into the close near blue dotted 4966 line",
       "confidence": 0.5,
-      "evidence": "blue 'Close just below open' text at right edge with blue arrows 12:50-13:25 under the red double top dotted line"    }
+      "evidence": "blue 'Close just below open' text at right edge with blue arrows 12:50-13:25 under the red double top dotted line"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Close just below open 4968.75 (12:45-13:30)",
+      "direction": "bull",
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4968.75,
+      "outcome": "success",
+      "outcome_reason": "blue dotted 4970 open line nearly tagged into the close near blue dotted 4966 line",
+      "confidence": 0.5,
+      "evidence": "blue 'Close just below open' text at right edge with blue arrows 12:50-13:25 under the red double top dotted line"
+    }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

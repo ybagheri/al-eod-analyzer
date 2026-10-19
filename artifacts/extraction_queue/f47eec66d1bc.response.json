@@ -10,8 +10,14 @@
       "label": "double_top",
       "raw_label": "Higher high double top (23:25)",
       "direction": "bear",
-      "start_time": {"time": "23:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5917.0,
       "outcome": "success",
@@ -23,11 +29,17 @@
       "label": "double_bottom",
       "raw_label": "Higher low double bottom (23:30-00:05 range lows)",
       "direction": "bull",
-      "start_time": {"time": "23:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "00:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5885.0,
-      "outcome": "failure",
+      "outcome": "unclear",
       "outcome_reason": "higher low double bottom at 5885 failed and the sell climax broke the range down to 5858",
       "confidence": 0.6,
       "evidence": "orange dotted 5885 support with green arrows that failed into the 00:55 sell climax"
@@ -36,8 +48,14 @@
       "label": "climax",
       "raw_label": "Sell climax, tight channel, then midday reversal with measured move down",
       "direction": "bear",
-      "start_time": {"time": "00:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5858.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "wedge",
       "raw_label": "Wedge of higher lows (01:15-02:05 blue shaded)",
       "direction": "bull",
-      "start_time": {"time": "01:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5876.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "magenta dotted wedge lines in the blue shaded 01:10-02:05 box"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Breakout above trading range (02:15)",
       "direction": "bull",
-      "start_time": {"time": "02:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5890.0,
       "outcome": "success",
@@ -75,8 +105,14 @@
       "label": "measured_move",
       "raw_label": "Measured move up (03:20)",
       "direction": "bull",
-      "start_time": {"time": "02:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "02:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5927.0,
       "outcome": "success",
@@ -88,8 +124,14 @@
       "label": "climax",
       "raw_label": "Buy climax (03:30)",
       "direction": "bull",
-      "start_time": {"time": "03:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5931.0,
       "outcome": "success",
@@ -98,5 +140,9 @@
       "evidence": "green Buy climax text above the 03:30 spike bar and red arrows into the close"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

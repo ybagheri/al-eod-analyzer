@@ -1,0 +1,241 @@
+{
+  "date": "2022-12-15",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text top left and beige box plus stacked red boxes down the opening leg",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Sell The Close text above the beige boxed opening bear bars and red shaded legs to 3960",
+      "placement": null,
+      "price_hint": 3965.0,
+      "raw_label": "Sell the close from the open (07:00-07:25 low 3965)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Sell Climax text beside the red shaded bars and pink dotted line",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Sell Climax text at the pink dotted wedge base lows before the 07:30-08:05 rebound",
+      "placement": null,
+      "price_hint": 3933.0,
+      "raw_label": "Sell climax at 3933 (07:10-07:35 low 3933)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink dotted rising wedge into the 08:00 high",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta dotted wedge up under the green shaded bull bars topping at 3950 before the rollover",
+      "placement": null,
+      "price_hint": 3950.0,
+      "raw_label": "Wedge bull leg to 3950 (07:25-08:10 high 3950)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text under the 08:45 lows and pink dotted wedge",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "magenta Nested Wedge text under the red shaded lows with the pink dotted restrained wedge still holding",
+      "placement": null,
+      "price_hint": 3920.0,
+      "raw_label": "Nested wedge into the evening lows (08:35-09:10 low 3920)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 20-Gap Bar sell and blue Breakout Test texts beside the green shaded bear bars",
+      "label": "gap",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green boxed 20-gap bar sell with the red dotted test line at 3935, then the bear leg down to 3912 into the blue dotted breakout-test area",
+      "placement": null,
+      "price_hint": 3912.0,
+      "raw_label": "20-gap bar sell and breakout test (09:40-10:45 low 3912)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text with an arrow pointed at the shallow lower low bars",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta Failed breakout below wedge text with pink arrow at the bar lows under the pink dotted wedge support",
+      "placement": null,
+      "price_hint": 3912.0,
+      "raw_label": "Failed breakout below wedge (09:50-10:10 low 3912)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text and green dotted support line spanning 10:05-11:15 area",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green DB PB text at the higher low with green dotted floor before the buy-the-close thrust",
+      "placement": null,
+      "price_hint": 3915.0,
+      "raw_label": "DB PB higher low at 3915 (10:45-11:50 low 3915)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text and arrow over the strong bull leg and green shaded highs",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Buy The Close text with orange arrow to the beige boxed breakout bars through the red dotted 3935 line",
+      "placement": null,
+      "price_hint": 3938.0,
+      "raw_label": "Buy the close thrust through 3935 (11:35-12:10 high 3950)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red HH DT text near 12:45 and the red dotted overhead line, 12/16 footer",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red HH DT text with red dotted line at the falcon highs, then red shaded bear bars into the 12/16 close 3925",
+      "placement": null,
+      "price_hint": 3948.0,
+      "raw_label": "HH DT higher high double top into the close (12:05-13:05 high 3948)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "3e133be4f453",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Trading Range' (13:00 axis, 12/15 with a 12/16 footer). Sell the close from the open (3980 to 3965), sell climax at 3933, pink dotted wedge rally to 3950 (08:00) that failed, nested wedge into the 3920 lows, a 20-gap bar sell with breakout test into failed-breakout-below-the-wedge lows 3912-3915 (09:50-11:45), DB PB green support, then buy the close thrust through 3935 to 3945-3948 higher highs (HH DT) sold into the 12/16 close 3925."
+}

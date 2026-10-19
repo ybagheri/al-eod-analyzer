@@ -10,8 +10,14 @@
       "label": "wedge",
       "raw_label": "Minor wedge (07:30-08:05 highs)",
       "direction": "bull",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4668.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout at 4668 (08:05)",
       "direction": "bear",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4668.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "wedge",
       "raw_label": "Wedge / Higher low double bottom (09:00)",
       "direction": "bull",
-      "start_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4657.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "magenta wedge lines into the 08:55 low 4657 with green dotted double bottom line"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Breakout above wedge lower high (10:20)",
       "direction": "bull",
-      "start_time": {"time": "09:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4668.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "orange shaded 10:15-10:25 bull bars with orange arrow and text"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Small pullback bull trend",
       "direction": "bull",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4680.0,
       "outcome": "success",
@@ -75,8 +105,14 @@
       "label": "measured_move",
       "raw_label": "Measured move up",
       "direction": "bull",
-      "start_time": {"time": "12:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4683.0,
       "outcome": "success",
@@ -88,8 +124,14 @@
       "label": "bull_trending_trading_range",
       "raw_label": "Bull trending trading range day (blue shaded 11:00-13:00)",
       "direction": "bull",
-      "start_time": {"time": "10:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4672.0,
       "outcome": "success",
@@ -98,5 +140,9 @@
       "evidence": "blue shaded range box 10:50-13:00 with Bull trending trading range day text"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

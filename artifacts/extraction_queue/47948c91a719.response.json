@@ -10,8 +10,14 @@
       "label": "low_2",
       "raw_label": "Higher high double top, Low 2 top (07:15)",
       "direction": "bear",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4086.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "double_top",
       "raw_label": "Lower high double top (08:30 top 4085)",
       "direction": "bear",
-      "start_time": {"time": "07:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4085.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "red Lower High Double Top arrow to the red dotted line and consecutive red boxes at 08:15"
     },
     {
-      "label": "spike_and_channel_bear",
+      "label": "spike",
       "raw_label": "Break below wedge bull flag, spike and channel bear trend (08:55)",
       "direction": "bear",
-      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4065.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "measured_move",
       "raw_label": "Measured move target (10:50 low 4062)",
       "direction": "bear",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4062.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "wedge",
       "raw_label": "Wedge micro double bottom low 4060 (11:15)",
       "direction": "bull",
-      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4060.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "magenta Wedge, blue Measured Move and green Micro Double Bottom labels under the 11:05-11:15 lapse lows and beige 11:15 box"
     },
     {
-      "label": "bull_trend_resumption",
+      "label": "breakout",
       "raw_label": "Rally to 4083 close (11:20-13:05)",
       "direction": "bull",
-      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4083.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "blue dotted Start of bear channel line, beige 11:20 breakout box, bull bars to 12:45 with green 12:10 bar and late pullback green dotted 4072 line"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

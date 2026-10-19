@@ -1,110 +1,148 @@
 {
-    "schema_version":  1,
-    "image_id":  "74b07ffbe6c9",
-    "date":  "2026-03-22",
-    "day_type":  "bear_trend_resumption",
-    "day_type_confidence":  0.7,
-    "session_summary":  "Blue title bar: \u0027Gap Down, Sideways Then Bear Trend Resumption\u0027 (ET+12 overnight Fri Mar 20 session shown 22:00-04:00). Double top selloff to overnight low, sideways limit order trading from bars 14 to 36, tight bull channel leg in trading range, double tops at 01:10, bear trend resumes with bars 48 to 60 into a wedge lower low followed by end of day profit taking, close 6565.",
-    "events":  [
-                   {
-                       "label":  "double_top",
-                       "raw_label":  "Double top selloff (22:10)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "21:50",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "22:25",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6645.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "double top under the orange dotted 6649 line, break down into bear candles to 6600",
-                       "confidence":  0.65,
-                       "evidence":  "red Double top text at 22:15 highs with red dotted line and red arrows down through bar 12, chip 6658 close orange dotted 6637 line"
-                   },
-                   {
-                       "label":  "trading_range",
-                       "raw_label":  "Sideways bars 14-36 (23:00-00:55)",
-                       "direction":  "bull",
-                       "start_time":  {
-                                          "time":  "22:50",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "01:00",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6600.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "sideways shaded trading ranges with bars 24 and 36, double bottom failed below green dotted 6595 lows and tight bull channel legs sold at 01:05",
-                       "confidence":  0.65,
-                       "evidence":  "blue shaded boxes 22:35-23:50 and 00:35-01:00, bars 12, 18, 24, 36 labels and green arrows 22:35, 00:45"
-                   },
-                   {
-                       "label":  "trading_range",
-                       "raw_label":  "Double tops (01:10 high 6620)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "00:55",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "01:30",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6620.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "double tops red dotted 6617 top from failed wedge and bear bars 48 shaded box",
-                       "confidence":  0.6,
-                       "evidence":  "red arrows 01:00-01:30 and bear channel box near bar 48 with magenta dotted channel below"
-                   },
-                   {
-                       "label":  "measured_move",
-                       "raw_label":  "Wedge bear trend resumption measured move (01:30-02:35)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "01:20",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "02:40",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6535.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "orange Measured move channel from bar 48 wedge lower lows toward the green dotted 6536 support",
-                       "confidence":  0.55,
-                       "evidence":  "magenta dotted channel down from 01:35 to 03:30 with orange Measured move text at bottom and bear shaded boxes"
-                   },
-                   {
-                       "label":  "bear_trend_resumption",
-                       "raw_label":  "Bear trend resumes lower low wedge (03:35 low 6530)",
-                       "direction":  "bear",
-                       "start_time":  {
-                                          "time":  "03:00",
-                                          "tz":  "America/Los_Angeles"
-                                      },
-                       "end_time":  {
-                                        "time":  "04:00",
-                                        "tz":  "America/Los_Angeles"
-                                    },
-                       "bar_index_hint":  null,
-                       "price_hint":  6530.0,
-                       "outcome":  "success",
-                       "outcome_reason":  "wedge lower low purple channel sold through Sep 2025 low green dotted 6545 lows to 6530 then profit taking with green setup near close 6565",
-                       "confidence":  0.6,
-                       "evidence":  "magenta Wedge followed by End of day profit taking text, chip 6568, green dotted Sept. 2025 lows near red arrow 03:35 and green box 03:55"
-                   }
-               ],
-    "extraction_meta":  {
-                            "provider":  "file",
-                            "model_id":  "muse-spark-opencode",
-                            "prompt_version":  "extract_v2"
-                        }
+  "schema_version": 1,
+  "image_id": "74b07ffbe6c9",
+  "date": "2026-03-22",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Gap Down, Sideways Then Bear Trend Resumption' (ET+12 overnight Fri Mar 20 session shown 22:00-04:00). Double top selloff to overnight low, sideways limit order trading from bars 14 to 36, tight bull channel leg in trading range, double tops at 01:10, bear trend resumes with bars 48 to 60 into a wedge lower low followed by end of day profit taking, close 6565.",
+  "events": [
+    {
+      "label": "double_top",
+      "raw_label": "Double top selloff (22:10)",
+      "direction": "bear",
+      "start_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6645.0,
+      "outcome": "success",
+      "outcome_reason": "double top under the orange dotted 6649 line, break down into bear candles to 6600",
+      "confidence": 0.65,
+      "evidence": "red Double top text at 22:15 highs with red dotted line and red arrows down through bar 12, chip 6658 close orange dotted 6637 line"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Sideways bars 14-36 (23:00-00:55)",
+      "direction": "bull",
+      "start_time": {
+        "time": "22:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6600.0,
+      "outcome": "success",
+      "outcome_reason": "sideways shaded trading ranges with bars 24 and 36, double bottom failed below green dotted 6595 lows and tight bull channel legs sold at 01:05",
+      "confidence": 0.65,
+      "evidence": "blue shaded boxes 22:35-23:50 and 00:35-01:00, bars 12, 18, 24, 36 labels and green arrows 22:35, 00:45"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Sideways bars 14-36 (23:00-00:55)",
+      "direction": "bull",
+      "start_time": {
+        "time": "22:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6600.0,
+      "outcome": "success",
+      "outcome_reason": "sideways shaded trading ranges with bars 24 and 36, double bottom failed below green dotted 6595 lows and tight bull channel legs sold at 01:05",
+      "confidence": 0.65,
+      "evidence": "blue shaded boxes 22:35-23:50 and 00:35-01:00, bars 12, 18, 24, 36 labels and green arrows 22:35, 00:45"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Double tops (01:10 high 6620)",
+      "direction": "bear",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6620.0,
+      "outcome": "success",
+      "outcome_reason": "double tops red dotted 6617 top from failed wedge and bear bars 48 shaded box",
+      "confidence": 0.6,
+      "evidence": "red arrows 01:00-01:30 and bear channel box near bar 48 with magenta dotted channel below"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Double tops (01:10 high 6620)",
+      "direction": "bear",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:30",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6620.0,
+      "outcome": "success",
+      "outcome_reason": "double tops red dotted 6617 top from failed wedge and bear bars 48 shaded box",
+      "confidence": 0.6,
+      "evidence": "red arrows 01:00-01:30 and bear channel box near bar 48 with magenta dotted channel below"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Wedge bear trend resumption measured move (01:30-02:35)",
+      "direction": "bear",
+      "start_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:40",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6535.0,
+      "outcome": "success",
+      "outcome_reason": "orange Measured move channel from bar 48 wedge lower lows toward the green dotted 6536 support",
+      "confidence": 0.55,
+      "evidence": "magenta dotted channel down from 01:35 to 03:30 with orange Measured move text at bottom and bear shaded boxes"
+    },
+    {
+      "label": "bear_trend_resumption",
+      "raw_label": "Bear trend resumes lower low wedge (03:35 low 6530)",
+      "direction": "bear",
+      "start_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6530.0,
+      "outcome": "success",
+      "outcome_reason": "wedge lower low purple channel sold through Sep 2025 low green dotted 6545 lows to 6530 then profit taking with green setup near close 6565",
+      "confidence": 0.6,
+      "evidence": "magenta Wedge followed by End of day profit taking text, chip 6568, green dotted Sept. 2025 lows near red arrow 03:35 and green box 03:55"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "Bear trap at yesterday's high 7270 (22:00)",
       "direction": "bull",
-      "start_time": {"time": "21:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "22:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "21:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7270.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "red Yesterday's high arrow to the red dotted line with green double bottom underline below"
     },
     {
-      "label": "spike_and_channel_bull",
+      "label": "spike",
       "raw_label": "Bull spike (22:30 bar 12 to bar 18)",
       "direction": "bull",
-      "start_time": {"time": "22:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7278.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "bars 12 and 18 labels under the green arrow spike bars below the shaded box"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Blue shaded trading range (23:35-01:20)",
       "direction": "bull",
-      "start_time": {"time": "23:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7284.0,
       "outcome": "success",
@@ -46,11 +64,36 @@
       "evidence": "blue shaded box with red dotted top, green dotted bottom, red Double tops arrows and red 2nd entry sell setups text"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "trading_range_end",
+      "raw_label": "Blue shaded trading range (23:35-01:20)",
+      "direction": "bull",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 7284.0,
+      "outcome": "success",
+      "outcome_reason": "range with double tops and double bottoms; low risk 2nd entry sell setups failed",
+      "confidence": 0.7,
+      "evidence": "blue shaded box with red dotted top, green dotted bottom, red Double tops arrows and red 2nd entry sell setups text"
+    },
+    {
+      "label": "breakout",
       "raw_label": "Trading range breakout then tight bull channel (01:25)",
       "direction": "bull",
-      "start_time": {"time": "01:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7288.0,
       "outcome": "success",
@@ -59,11 +102,17 @@
       "evidence": "green Trading range breakout Then tight bull channel text over the 01:20-02:00 green arrows (48, 60)"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "All-time high RTH test (03:10 high 7300)",
       "direction": "bull",
-      "start_time": {"time": "03:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7300.0,
       "outcome": "success",
@@ -75,8 +124,14 @@
       "label": "climax",
       "raw_label": "End of day profit taking, aggressive swing sell setup (03:35 bar 72)",
       "direction": "bear",
-      "start_time": {"time": "03:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "03:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "03:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 7295.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "red down arrow at bar 72 beside blue End of day profit taking text and the tall black sell bar into 04:00"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

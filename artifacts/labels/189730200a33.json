@@ -1,0 +1,241 @@
+{
+  "date": "2026-04-29",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green and red texts at lower left with green arrows 22:35 and blue shaded box bars 6-12",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Globex low text with boxed first low, then Yesterday's low, Double bottom, Bear trap texts before the wedge top rally",
+      "placement": null,
+      "price_hint": 7144.0,
+      "raw_label": "Globex low, yesterday's low, double bottom bear trap (22:05-23:10 low 7144)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text 'Parabolic wedge top after tight bull channel' and green arrows up bars 12-18",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green arrows and bar 12 label along the rising run into the parabolic wedge top",
+      "placement": null,
+      "price_hint": 7175.0,
+      "raw_label": "Tight bull channel (22:30-23:12 high 7175)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text and magenta dotted wedge over the bar 18 peak, red arrows 23:20 and 23:40",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted parabolic wedge top at 7175 with red arrows down bars 18-19 into the broad bear channel",
+      "placement": null,
+      "price_hint": 7175.0,
+      "raw_label": "Parabolic wedge top reversal (22:55-23:30 high 7175)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted descending channel lines and boxed bars 24-36, green dotted support 7150",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted bear channel carrying price from the 7175 top toward the 7141 midday floor",
+      "placement": null,
+      "price_hint": 7148.0,
+      "raw_label": "Broad bear channel decline (23:20-01:20 low 7144)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text below bars 34-36 with green dotted 7145 support line and green arrows",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Sell climax 2nd leg down text at the bar 36 lows with green arrows 00:30 snapping back",
+      "placement": null,
+      "price_hint": 7144.0,
+      "raw_label": "Sell climax, 2nd leg down (00:20-00:40 low 7144)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text bottom right with green dotted line under bars 48-60",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Consecutive wedges, Lower bear channel trendline (support) texts at the 7141 floor with green dotted support before the post-FOMC rally",
+      "placement": null,
+      "price_hint": 7141.0,
+      "raw_label": "Consecutive wedges at lower bear channel trendline support (00:55-02:15 low 7141)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "black FOMC arrows at 02:40-03:00, green arrows at 02:15 and 03:00-03:15, green text right of the box",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "FOMC statement and press conference dip below 7141 failed and the green 2nd leg up then 2nd entry buy text marks the recovery",
+      "placement": null,
+      "price_hint": 7141.0,
+      "raw_label": "Middayholding bottom then 2nd leg up, 2nd entry buy (02:10-03:15 low 7141)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green arrows up bars 72-74 and boxed bars 72 rally with red arrow before the final collapse",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "recovery run through bar 72 into the Globex high 7190 area collapsing at the close",
+      "placement": null,
+      "price_hint": 7166.0,
+      "raw_label": "2nd leg up rally (03:05-03:55 high 7166)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Globex high and Yesterday's high texts top right with red dotted lines and the tall final black-down close",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted Globex high and Yesterday's high ceilings broke for one spike then price fell to the 7137.75 closing chip",
+      "placement": null,
+      "price_hint": 7190.0,
+      "raw_label": "Spike above Globex high 7190 and collapse into close (03:55-04:10 high 7190)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "189730200a33",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel Inside Trading Range Day' (ET+12 hrs, Apr 29/30). Trading range reversal swing setups throughout the day but many scalps only. Double bottom bear trap at yesterday's low 7144, tight bull channel rally to a parabolic wedge top 7175 (bar 18), broad bear channel decline with sell climax 2nd leg down 7144 (bar 36), midday drift on consecutive wedges along the lower bear channel trendline (support) 7141 before the FOMC statement and press conference, then a 2nd leg up, 2nd entry buy rally that spiked to the Globex high 7190 and collapsed into the close 7137.75. Inset: Market Continuing Broad Trading Range."
+}

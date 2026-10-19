@@ -1,0 +1,191 @@
+{
+  "date": "2025-08-14",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text left with orange arrow to the opening box",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "beige boxed bull bars with the orange Buy the close text and arrow leading the trend from the open",
+      "placement": null,
+      "price_hint": 6472.0,
+      "raw_label": "Buy the close from the open (07:00-07:20 low 6465)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink dotted rising wedge lines and bar numbers 12, 18 under the leg",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge pair rising beside the green arrow stair-step bars 12-16 into the red dotted 6494 ceiling",
+      "placement": null,
+      "price_hint": 6494.0,
+      "raw_label": "Bull trend from the open to the buy climax (07:05-08:05 high 6494)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text above the red dotted line",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Buy climax text at the spike top with red dotted 6494 line spanning to the close and red arrows 08:05-08:25",
+      "placement": null,
+      "price_hint": 6494.0,
+      "raw_label": "Buy climax at 6494 (07:55-08:15 high 6494)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text under the lows with green dotted horizontal and green arrows 09:40-09:45",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Higher low double bottom text with green dotted floor under the brown-boxed bar 24 lows and the beige-boxed bar 36 lows reversal",
+      "placement": null,
+      "price_hint": 6465.0,
+      "raw_label": "Higher low double bottom at 6465 (08:35-09:45 low 6465)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text and blue dotted horizontal with red arrows 10:50 and 11:05 pressing down",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue dotted 6485 line with the blue Breakout test text and boxed corner bars holding before the afternoon wedge",
+      "placement": null,
+      "price_hint": 6485.0,
+      "raw_label": "Breakout test at 6485 (10:45-11:35 low 6485)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge Higher high double top texts and the red dotted ceiling touch",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "magenta Wedge text with dotted rising wedge into the blue boxed bars 72 at the 6494 re-test then red arrows down into the close",
+      "placement": null,
+      "price_hint": 6494.0,
+      "raw_label": "Wedge up to the re-test of 6494 (11:30-12:50 high 6494)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Higher high double top text above the red dotted line, 8/15 footer",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue boxed bars at the 6494 sweep with red arrows 12:35 and 12:55 and the final bear bars closing near 6487",
+      "placement": null,
+      "price_hint": 6494.0,
+      "raw_label": "Higher high double top re-test at 6494 (12:20-13:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "03272b80a6f8",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trading Range' (8/14 with 8/15 footer). Buy the close from the open (beige boxed bull bars) rallied with pink dotted wedge lines to a buy climax at 6494 (red dotted line all day), then a higher low double bottom at 6465 (green text, green dotted floor), a bull leg to 6491 and a breakout test at 6485 (blue dotted), and an afternoon wedge into a higher high double top re-test of 6494 with boxed bars 72 before the 6487 close."
+}

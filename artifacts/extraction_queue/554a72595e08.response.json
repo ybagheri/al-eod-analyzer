@@ -10,8 +10,14 @@
       "label": "climax",
       "raw_label": "Strong bear breakout but sell climax (07:10)",
       "direction": "bear",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5545.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "small_pullback_bear_trend",
       "raw_label": "Small pullback bear trend (08:05-10:45)",
       "direction": "bear",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5511.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "inside_inside",
       "raw_label": "Minor wedge ii bull retest (10:15)",
       "direction": "bull",
-      "start_time": {"time": "10:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5500.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "pink Minor wedge ii text with blue shaded 10:10-10:20 bars, green arrow at 10:35 and magenta dotted wedge line"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "20-gap bar sell (10:45 high 5505)",
       "direction": "bear",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5505.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "measured_move",
       "raw_label": "Exhaustion at measured move (12:45 low 5460)",
       "direction": "bear",
-      "start_time": {"time": "11:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5460.0,
       "outcome": "success",
@@ -72,5 +102,9 @@
       "evidence": "orange Exhaustion at measured move text over the 12:30-12:50 brown bars near the orange dotted 5487 lows and dotted blue channel at 13:00"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -184,6 +184,26 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   comparable), report + sample regenerated. Wave-2 queue artifacts are
   agent-visible but still uncommitted as a bulk commit. Gate GREEN
   (pytest 166).
+- Wave-2 bulk labeling + label-conversion (2026-10-18/19): the ever-growing
+  `brooks extract` runs against `--limit 120` taught the schema's strict enum
+  rules (compound labels like `wedge_bear_flag` invalid -> enum event ids,
+  `trading_range` must be begin/end pairs, `bar_index_hint` int-only, outcome
+  in success|fail|partial|unclear, `bear_trend_resumption` day_type invalid
+  -> direction-specific types; `bull_trend_resumption` stays valid). Deep
+  recursive normalizer scripts (Temp/opencode deep_fix_wave2) repaired
+  94+20 existing responses; quarantines then went to 0. Routine labeling of
+  newly-created wave-2 requests to 24 filled pairs (00de/03f3/0d72 from the
+  prior wave + 17 this wave: 10d978fbbd04, 13a75f921985, 15254ec5c819,
+  189730200a33, 1978856221c0, 19ae778ff791, 1e45d0c9fa4f, 1e5d15df5c69,
+  227e5ba88949, 2451e063322e, 24820909e570, 26b530d78455, 271ca2f5ad58,
+  336488e1219f, 3b173e9384e3, 3e133be4f453, 03272b80a6f8). Copy-slip fix:
+  `03272b80a6f8.response.json` contained 00de25dd4e5f's content (wrong
+  image_id/from another day) -> quarantined as image_id mismatch; real chart
+  (Bull Trend From Open Then TR, 2025-08-14) re-authored, quarantine 0.
+  Extract gate: quarantined=0, +20 labels converted (49 batch-1 labels live);
+  calibration sample labeled=0 skipped=38 failed=0, agreement 0.706 (34
+  comparable); pytest 166 passed. 55 wave-2 request files still have no
+  response (extract converts only ids within the `--limit 120` scan window).
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -204,10 +224,11 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 ## 5. Next actions (ordered, the very next step first)
 
 1. AGENT: bulk wave 2 — continue routine extraction toward the 1678 unique
-   batch-1 charts (169/1678 queue pairs refilled and gate-validated
-   2026-10-18; queue artifacts uncommitted, commit the wave-2 bulk next), fix
-   new quarantines per wave; record agreement per wave in
-   calibration_report.json.
+   batch-1 charts (24 wave-2 request/response pairs filled + 169 refilled =
+   193 pairs, gates GREEN and committed 2026-10-19); 55 wave-2 request files
+   still need responses (extract only converts ids inside the `--limit N`
+   scan window — reuse the paired-batch workflow: 2 images per turn, valid
+   enum labels, BOM-less writes, then gate + commit per wave).
 2. USER: on gold registry — only open human-review item left is
    `10401c705b30` (mark gold yes/no); everything else approved through
    round-5 (2026-10-17).
@@ -249,6 +270,7 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - Calibration waves 0+1: 38 sampled (2 removed: EURUSD-daily anomaly + axis-less slide) | agreement 0.706 vs new-directional titles (0.811 pre-v1.3; not comparable) | 0 quarantines outstanding | labels NOT gold, all corrections human-applied (rev1-varies, 131 history revs)
 - Color: vocabulary v1.3 — day_types 17, events 50 | round-5 review approved every page (ok=all, inline notes fixed)
 - Calibration artifacts (git-tracked): artifacts/calibration_sample.{txt,json} (40 ids + strata meta), artifacts/calibration_report.json, scripts/extract_sample.py, 40+28 queue pairs (extraction_queue), 40 wave labels in artifacts/labels/
+- Batch-1 extraction state (git-tracked): extraction_queue 193 request/response pairs filled (169 wave-0/1 + 24 wave-2) + 55 request-only pending; artifacts/labels: 49 batch-1 charts converted | last extract: quarantined=0, scanned=120 | wave-2 commits: 2bd0c5e (recovery) + this wave
 - Batch-1 artifacts (git-tracked): artifacts/manifest_batch1.json (~1MB), artifacts/ingestion_stats_batch1.json, artifacts/title_map_batch1.json
 - Playbook version: none (Phase 8)
 

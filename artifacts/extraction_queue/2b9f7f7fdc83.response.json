@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "Bear trap high 2 (06:45 low 5296)",
       "direction": "bull",
-      "start_time": {"time": "06:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5296.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "red Bear trap and green High2 texts with magenta dotted rising wedge under boxed bars"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Parabolic wedge bull trend (07:40-08:30 to trap)",
       "direction": "bull",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5331.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "failed_breakout",
       "raw_label": "Parabolic wedge 2nd leg bull trap (08:30)",
       "direction": "bear",
-      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5331.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "double_top",
       "raw_label": "Lower high double top (09:50-11:55 boxed LH DT red dotted 5327)",
       "direction": "bear",
-      "start_time": {"time": "09:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5327.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "double_top",
       "raw_label": "Wedge higher high double top (12:00)",
       "direction": "bear",
-      "start_time": {"time": "11:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5327.0,
       "outcome": "success",
@@ -75,8 +105,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout below trading range (12:15 low 5310)",
       "direction": "bull",
-      "start_time": {"time": "12:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5310.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "orange Failed breakout below trading range text with blue dotted line at 5314"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

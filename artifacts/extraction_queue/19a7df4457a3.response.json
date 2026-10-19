@@ -7,11 +7,17 @@
   "session_summary": "Blue title bar: 'Wedge Top Then Major Reversal Down'. A small pullback bull trend climbs to a minor wedge top 6068 that grows into a major reversal; endless pullback and measuring gap gracefully sell down through the green dotted 6030 breakout into minor wedge 6015 lows, MM measured down to 6004 scrapes then lifts back up at close 6026.",
   "events": [
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Small pullback bull trend (07:00-08:40 to top)",
       "direction": "bull",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6068.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "wedge",
       "raw_label": "Minor wedge top reversal grew into major reversal (08:40)",
       "direction": "bear",
-      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6068.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "magenta dotted wedge lines withé—´و–­ purple purple arrow at the 08:40 top"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Endless pullback major trend down",
       "direction": "bear",
-      "start_time": {"time": "08:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6065.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "measured_move",
       "raw_label": "Measuring gap",
       "direction": "bear",
-      "start_time": {"time": "10:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6035.0,
       "outcome": "success",
@@ -62,11 +86,17 @@
       "label": "wedge",
       "raw_label": "Minor wedge (11:15 low)",
       "direction": "bull",
-      "start_time": {"time": "10:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6015.0,
-      "outcome": "failure",
+      "outcome": "unclear",
       "outcome_reason": "minor wedge low at 6015 failed to reverse well and the market dropped to 6004",
       "confidence": 0.6,
       "evidence": "magenta Minor wedge text under the 11:20 small pickup with blue shaded lows"
@@ -75,8 +105,14 @@
       "label": "measured_move",
       "raw_label": "Measured move (12:45 target 6004 with orange dotted at 6000)",
       "direction": "bear",
-      "start_time": {"time": "12:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6004.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "orange dotted lines at 6000 with red arrows down to 12:50 and the 6004 low"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

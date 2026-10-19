@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "10d978fbbd04",
+  "date": "2025-12-19",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.65,
+  "session_summary": "Blue title bar: 'Bull Trend From Open Then Bull Channel into Trading Range' (overnight ET+13 hrs, Dec 19/20). Parabolic wedge then 2 legs down (gap up but potential strong rally did not happen; weak High 2), double double-tops (6885.5 bar 10, double top and 2 legs up bar 24 at 01:15), tight trading range the rest of the day (red dotted ceiling, blue box bars 36-72) with failed breakouts, mainly limit order trading through EOD possible accumulation for Santa Claus rally next week, failed breakout at bar 72 and close 6889.5. Inset: Trading Range or Santa Claus Rally?",
+  "events": [
+    {
+      "label": "wedge",
+      "raw_label": "Parabolic wedge then 2 legs down (23:00-23:45 high 6885.5)",
+      "direction": "bear",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 10,
+      "price_hint": 6885.5,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted parabolic wedge to the green arrow 23:40 peak then two black legs down to bar 12 lows",
+      "confidence": 0.65,
+      "evidence": "magenta Parabolic wedge then 2 legs down text with dotted wedge and red arrows 23:35"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top at 6885.5 (23:30-23:50)",
+      "direction": "bear",
+      "start_time": {"time": "23:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 10,
+      "price_hint": 6885.5,
+      "outcome": "success",
+      "outcome_reason": "red dotted horizontal 6885 line from bar 10 across to bar 24 with red arrows",
+      "confidence": 0.6,
+      "evidence": "red Double top text with red dotted line and red arrows at 23:35"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Double bottom and weak High 2 (23:50-00:15 low 6865)",
+      "direction": "bull",
+      "start_time": {"time": "23:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6865.0,
+      "outcome": "success",
+      "outcome_reason": "green Double bottom and Weak High 2 texts at the bar 12 lows with green arrow 23:55",
+      "confidence": 0.6,
+      "evidence": "green texts under the bar 12 low cluster and green Gap up but potential strong rally for the day did not happen text at bottom"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top and 2 legs up stall (01:05-01:30 high 6888)",
+      "direction": "bear",
+      "start_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6888.0,
+      "outcome": "success",
+      "outcome_reason": "red Double top and 2 legs up text with red arrow at bar 24 before the breakout mode box",
+      "confidence": 0.6,
+      "evidence": "red text at bar 24 with red arrow above the tight range box start"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Tight trading range breakout mode, early swing stop orders failed (01:45-03:45)",
+      "direction": "neutral",
+      "start_time": {"time": "01:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "03:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6881.0,
+      "outcome": "unclear",
+      "outcome_reason": "red dotted 6885 ceiling and green dotted 6881 floor with failed breakouts green arrows at bars 36, 44",
+      "confidence": 0.65,
+      "evidence": "black Tight trading range - Early swing stop orders failed text and green Failed breakouts text with arrows on the blue shaded box bars 36-72"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Late failed breakout and close at range top 6889.5 (04:15-05:00)",
+      "direction": "bull",
+      "start_time": {"time": "04:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "05:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6889.5,
+      "outcome": "unclear",
+      "outcome_reason": "red Failed breakout text at the dip below the range floor bar 72 followed by the final bull bars to the closing chip 6889.50",
+      "confidence": 0.6,
+      "evidence": "red Failed breakout text under the bar 72 blue shaded box and white final bars to chip 6889.50"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs"}
+}

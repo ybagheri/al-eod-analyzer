@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "Lower low double bottom, bear trap (08:05 low 4318)",
       "direction": "bull",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4318.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "trend_reversal_to_bull",
       "raw_label": "Higher low double bottom, breakout at 4345 (09:15)",
       "direction": "bull",
-      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4345.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "magenta Minor Wedge since Small Pullback Bull Trend text with green Higher Low Double Bottom text and beige box 09:05-09:35"
     },
     {
-      "label": "spike_and_channel_bull",
+      "label": "spike",
       "raw_label": "Major bull surprise spike and channel bull (10:35-11:30)",
       "direction": "bull",
-      "start_time": {"time": "10:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4370.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "measured_move",
       "raw_label": "Measured move, minor wedge top (11:30 high 4370)",
       "direction": "bear",
-      "start_time": {"time": "11:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4370.0,
       "outcome": "success",
@@ -59,11 +83,36 @@
       "evidence": "orange dotted Measured Move and magenta Minor Wedge labels at 11:30 high with pink dotted lines and red shaded box 12:05"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Late chop 4364-4372 (11:45-13:05)",
       "direction": "bear",
-      "start_time": {"time": "11:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4368.0,
+      "outcome": "success",
+      "outcome_reason": "post wedge top chop between trend top and EMA with red boxes 12:05 and bull gauge late green shaded bar 12:55",
+      "confidence": 0.55,
+      "evidence": "green shaded bars 11:55-12:10, red box 12:05, green box 12:55 and 13:10 with pink dotted wedge channel under the pullback"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Late chop 4364-4372 (11:45-13:05)",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4368.0,
       "outcome": "success",
@@ -72,5 +121,9 @@
       "evidence": "green shaded bars 11:55-12:10, red box 12:05, green box 12:55 and 13:10 with pink dotted wedge channel under the pullback"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

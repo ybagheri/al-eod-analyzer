@@ -10,8 +10,14 @@
       "label": "failed_breakout",
       "raw_label": "Bull trap (07:00-07:15)",
       "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5265.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "green and brown boxed 07:00-07:20 bars with Bull trap orange text and red arrows"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Bear trend from the open (magenta dotted to day low)",
       "direction": "bear",
-      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "14:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5210.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "double_bottom",
       "raw_label": "Parabolic Wedge became V-bottom (14:05)",
       "direction": "bull",
-      "start_time": {"time": "13:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "14:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "13:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "14:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5208.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "wedge",
       "raw_label": "Magenta dotted bull wedge recovery (14:00-16:00)",
       "direction": "bull",
-      "start_time": {"time": "14:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "16:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "14:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "16:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5252.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "magenta dotted rising trend lines with green arrows up the afternoon"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "Strong breakout at end of month above 5252-5271",
       "direction": "bull",
-      "start_time": {"time": "15:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "16:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "15:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "16:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5303.0,
       "outcome": "success",
@@ -72,5 +102,9 @@
       "evidence": "brown shaded breakout from 15:40 close bars with orange dotted 5271 resistance line"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -7,11 +7,17 @@
   "session_summary": "Blue title bar: 'High 2, Then Small Pullback Bull Trend'. Higher low double bottom at 5014 leads to High 2 buys and a minor wedge small pullback bull trend from the open; a close of body gap around 09:35, a 10 gap bar push to 5033 and a gap up to 5037 drive a buy climax at 5045 before late profit taking chops to 5042.",
   "events": [
     {
-      "label": "spike_and_channel_bull",
+      "label": "spike",
       "raw_label": "Open bull gap and spike (07:10 high 5027)",
       "direction": "bull",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5027.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "inside_inside",
       "raw_label": "Higher low double bottom and High 2 buys (08:20)",
       "direction": "bull",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5014.0,
       "outcome": "success",
@@ -33,11 +45,17 @@
       "evidence": "green Higher low double bottom text with High 2 label under the 08:10-08:20 lows and green dotted swing line"
     },
     {
-      "label": "trend_reversal",
+      "label": "major_trend_reversal",
       "raw_label": "Major trend reversal wedge pullback failed (09:30 low 5027)",
       "direction": "bear",
-      "start_time": {"time": "08:49", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:49",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5027.0,
       "outcome": "fail",
@@ -49,8 +67,14 @@
       "label": "gap_up",
       "raw_label": "Gap up 10 gap bar (10:05 high 5037)",
       "direction": "bull",
-      "start_time": {"time": "09:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5037.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "climax",
       "raw_label": "Buy climax (11:50 high 5045)",
       "direction": "bull",
-      "start_time": {"time": "11:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5045.0,
       "outcome": "success",
@@ -72,11 +102,36 @@
       "evidence": "orange Buy climax text with orange arrow to the 11:45-11:50 green shaded climax bar and red sell setups after"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Late range chop (12:00-13:05 close 5042)",
       "direction": "bull",
-      "start_time": {"time": "12:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 5040.0,
+      "outcome": "success",
+      "outcome_reason": "two red 2nd entry sell setups failed and the close was 5042",
+      "confidence": 0.6,
+      "evidence": "red arrows and shaded red sell setups at 11:55 and 12:05 with brown shaded 13:50 bar and close near 5042"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Late range chop (12:00-13:05 close 5042)",
+      "direction": "bull",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 5040.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "red arrows and shaded red sell setups at 11:55 and 12:05 with brown shaded 13:50 bar and close near 5042"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

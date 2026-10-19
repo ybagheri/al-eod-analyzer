@@ -7,11 +7,17 @@
   "session_summary": "Blue title bar: 'Spike and Channel Bear Trend'. Open is high and a bear spike sells off from 4250 with Sell Climax/High 2 buys only giving今天就 back; the market channels down in a beige bear channel through iri bear flag bars to 4215 low before the close.",
   "events": [
     {
-      "label": "spike_and_channel_bear",
+      "label": "spike",
       "raw_label": "Bear spike from open (06:55 high 4250)",
       "direction": "bear",
-      "start_time": {"time": "06:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4250.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "orange Open=high arrow into the brown shaded 07:05-07:15 spike box with red sell arrows"
     },
     {
-      "label": "spike_and_channel_bear",
+      "label": "spike",
       "raw_label": "Sell Climax, High 2 buys failed (07:45 low 4217)",
       "direction": "bear",
-      "start_time": {"time": "07:30", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4217.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "wedge",
       "raw_label": "Wedge rally into 08:15 (high 4247)",
       "direction": "bear",
-      "start_time": {"time": "07:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4247.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "small_pullback_bear_trend",
       "raw_label": "ioi bear flag after OO channel (09:55-10:35 brown box)",
       "direction": "bear",
-      "start_time": {"time": "09:55", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4215.0,
       "outcome": "success",
@@ -59,11 +83,17 @@
       "evidence": "blue ioi Bear Flag after OO text over the beige channel with magenta minor wedge and red/oxford arrows at 10:25"
     },
     {
-      "label": "spike_and_channel_bear",
+      "label": "spike",
       "raw_label": "Minor wedge low 4204 (10:55)",
       "direction": "bear",
-      "start_time": {"time": "10:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4204.0,
       "outcome": "success",
@@ -72,11 +102,36 @@
       "evidence": "magenta Minor Wedge text and orange Minor Wedge Possible end of Spike and Channel Bear Trend under the 10:45-11:05 lows"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Late trading range (11:10-13:10 4208-4220)",
       "direction": "bear",
-      "start_time": {"time": "11:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4214.0,
+      "outcome": "success",
+      "outcome_reason": "beige trading range 4206-4220 with red boxes and green dip at 12:15",
+      "confidence": 0.6,
+      "evidence": "blue/red channel lines around the 11:15-13:05 spikes with 12:05 green shaded bear wedge and 12:15 green arrow"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Late trading range (11:10-13:10 4208-4220)",
+      "direction": "bear",
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4214.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "blue/red channel lines around the 11:15-13:05 spikes with 12:05 green shaded bear wedge and 12:15 green arrow"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -1,0 +1,166 @@
+{
+  "date": "2026-07-10",
+  "day_type": "trading_range_bull_breakout",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Weak Bull Wedge Rally text, red dotted 7/6 High line, pink shaded double top box into bar 12",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "weak bull wedge rally into trading range high after extended bull trend gave failed bull breakout",
+      "placement": null,
+      "price_hint": 7600.0,
+      "raw_label": "7/6 high, weak bull wedge rally, double top failed (10:30 bear bar)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink shaded selloff with red Major Bear Surprise Bar but long lower wick closes above mid-point with full bull retrace text",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "vacuum selloff to support cluster after failed bull breakout of trading range",
+      "placement": null,
+      "price_hint": 7586.0,
+      "raw_label": "Major bear surprise, vacuum selloff (10:35 tall bear bar)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Higher Low Double Bottom and red 2nd Leg Bear Trap text with green underline lows at 10:55-11:10 and red boxes 11:05",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom and 2nd leg bear trap; trapped bears exit breakeven = 2nd leg",
+      "placement": null,
+      "price_hint": 7585.0,
+      "raw_label": "Higher low double bottom / 2nd leg bear trap (10:55 low 7585)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Higher Low Double Bottom and red 2nd Leg Bear Trap text with green underline lows at 10:55-11:10 and red boxes 11:05",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom and 2nd leg bear trap; trapped bears exit breakeven = 2nd leg",
+      "placement": null,
+      "price_hint": 7585.0,
+      "raw_label": "Higher low double bottom / 2nd leg bear trap (10:55 low 7585)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Micro-Wedge to EMA text, green Tight Bull Channel in form of Small Pullback Bull Trend, bar labels 24, 36, 48, 60, 72, 78 and green arrows",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "micro-wedge to EMA pushed to 7610 and tight bull channel small pullback bull trend drove to 7622",
+      "placement": null,
+      "price_hint": 7620.0,
+      "raw_label": "Micro-wedge to EMA rally then tight bull channel (12:30 onward)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown dotted line HR Yesterdays Range RTH Low to RTH High over the green shaded box with black 7622.5 chip",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "brown dotted yesterday-range high breakout; green shaded 15:20-15:30 box with last line 7622 highlight",
+      "placement": null,
+      "price_hint": 7620.0,
+      "raw_label": "HR Yesterday's Range breakout / RTH high reached (15:20 7620)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "46a4b17701fd",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Vacuum Selloff to Trading Range Bull Breakout'. Weak bull wedge rally into a trading range high after an extended bull trend, failed bull breakout, and a vacuum selloff bar 12 to the support cluster (bar 12 close, 50% retrace yesterday ETH, Daily RTH EMA); higher low double bottom and 2nd leg bear trap turned bulls into a tight bull channel in the form of a small pullback bull trend to hit 50% retrace (HR Yesterday's Range) overnight, close 7622."
+}

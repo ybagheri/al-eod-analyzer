@@ -10,8 +10,14 @@
       "label": "double_top",
       "raw_label": "Lower High Double Top (07:35)",
       "direction": "bear",
-      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4160.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "red dotted lines at 4158-4160 with red arrow and boxed reversal bars 07:30-07:50"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Bear Surprise sell-off",
       "direction": "bear",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4128.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "climax",
       "raw_label": "Parabolic Wedge Sell Climax (08:20 low 4120)",
       "direction": "bear",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:25", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4120.0,
       "outcome": "success",
@@ -46,11 +64,17 @@
       "evidence": "magenta parabolic wedge connecting dotted lines into the 08:20 low with text"
     },
     {
-      "label": "bull_trend",
+      "label": "channel",
       "raw_label": "Reversal up rally from 4120 to 4155",
       "direction": "bull",
-      "start_time": {"time": "08:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4155.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "double_top",
       "raw_label": "Triple Top Lower High Double Top Failed OOO (11:30)",
       "direction": "bear",
-      "start_time": {"time": "10:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4155.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "blue dotted line at 4155 magenta dotted reaction line and OO text at 11:45"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Major Bear Surprise Trend Resumption Down",
       "direction": "bear",
-      "start_time": {"time": "11:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4118.0,
       "outcome": "success",
@@ -85,5 +121,9 @@
       "evidence": "orange arrow into the tall brown 11:50 bar with boxes down to 12:30 lows"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

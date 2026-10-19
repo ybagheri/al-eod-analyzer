@@ -10,8 +10,14 @@
       "label": "double_top",
       "raw_label": "Micro Double Top then Double Top (23:30)",
       "direction": "bear",
-      "start_time": {"time": "23:20", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6040.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "double_top",
       "raw_label": "Double Top (12 Nov 00:30)",
       "direction": "bear",
-      "start_time": {"time": "00:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6042.0,
       "outcome": "success",
@@ -36,11 +48,17 @@
       "label": "double_bottom",
       "raw_label": "High 2 / Double Bottom but failed (00:00)",
       "direction": "bull",
-      "start_time": {"time": "23:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "00:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6030.0,
-      "outcome": "failure",
+      "outcome": "unclear",
       "outcome_reason": "double bottom attempt at 6030 failed and only bought a small bounce back to 6035",
       "confidence": 0.55,
       "evidence": "green dotted bottom line at 6030 under bar 16 with green arrows"
@@ -49,8 +67,14 @@
       "label": "failed_breakout",
       "raw_label": "Triangle breakout (01:30)",
       "direction": "bear",
-      "start_time": {"time": "01:10", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "01:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6035.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "climax",
       "raw_label": "Consecutive sell climaxes with measured move from opening range",
       "direction": "bear",
-      "start_time": {"time": "02:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "02:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6013.0,
       "outcome": "success",
@@ -72,11 +102,36 @@
       "evidence": "orange dotted MM line down to bar 48 at 6013 with big climax sell bars"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Tight trading range reversal trades with limit orders no stop orders / Low 2",
       "direction": "bull",
-      "start_time": {"time": "03:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "05:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 6033.0,
+      "outcome": "success",
+      "outcome_reason": "tight trading range with limit order fills reversed the market up to 6033 into the close",
+      "confidence": 0.6,
+      "evidence": "blue shaded tight range 03:05-04:55 with blue text and final green dot bull bars to 6033"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Tight trading range reversal trades with limit orders no stop orders / Low 2",
+      "direction": "bull",
+      "start_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 6033.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "blue shaded tight range 03:05-04:55 with blue text and final green dot bull bars to 6033"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

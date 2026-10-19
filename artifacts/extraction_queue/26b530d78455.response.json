@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "26b530d78455",
+  "date": "2026-01-22",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.6,
+  "session_summary": "Blue title bar: 'Big Gap Up, Wedge Reversal Then Trading Range Day' (ET+13 hrs, Jan 22/23). Big gap up open to 6965 with a wedge reversal dumping to the 6925 lows (blue box bar 12), then a small pullback bull trend with consecutive wedges and High 1 entries to the high of day 6962; double top at 6964 (red dotted) led a tight bear channel with 2nd leg down and a truncated wedge at the 6933 lows (bar 72) into the closing chips near 6948. Inset: gap up open and wedge on the daily chart.",
+  "events": [
+    {
+      "label": "wedge",
+      "raw_label": "Wedge reversal on the gap up open (23:00-23:30 low 6925)",
+      "direction": "bear",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6964.0,
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge reversal (see chart inset) text with the red arrow down at 23:05 and tall bear bars to the blue box lows 6925",
+      "confidence": 0.65,
+      "evidence": "magenta text top left with bear spike bars and blue shaded box at bar 12"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Small pullback bull trend up to high of day (23:30-01:10 high 6962)",
+      "direction": "bull",
+      "start_time": {"time": "23:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6962.0,
+      "outcome": "success",
+      "outcome_reason": "green text with arrows along the stair-step bull leg from the bar 12 low to the high of day",
+      "confidence": 0.65,
+      "evidence": "green Small pullback bull trend up to high of day text and stacked green arrows bars 14-30"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Consecutive wedges up the leg (23:35-00:55 high 6957)",
+      "direction": "bull",
+      "start_time": {"time": "23:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6952.0,
+      "outcome": "partial",
+      "outcome_reason": "magenta Consecutive wedges text with dotted rising lines under the pullback bars 18/24/36",
+      "confidence": 0.6,
+      "evidence": "magenta text top-left of the rally and magenta dotted trendline pair"
+    },
+    {
+      "label": "h1",
+      "raw_label": "High 1 breakout attempt (00:30-00:50 high 6958)",
+      "direction": "bull",
+      "start_time": {"time": "00:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6958.0,
+      "outcome": "success",
+      "outcome_reason": "green High 1 text with the green arrow at bar 36 preceding the final push to the double top",
+      "confidence": 0.55,
+      "evidence": "green High 1 text with green arrows (also an earlier High 1 near bars 20-26)"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top at 6964 high of day (01:05-02:30)",
+      "direction": "bear",
+      "start_time": {"time": "01:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6964.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted 6964 line across the session high with the red Double top text and red arrows at bars 48-52",
+      "confidence": 0.65,
+      "evidence": "red text top right and red dotted horizontal with red arrows 02:05, 02:25"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Tight bear channel with 2nd leg down (02:15-04:35 low 6933)",
+      "direction": "bear",
+      "start_time": {"time": "02:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6933.0,
+      "outcome": "success",
+      "outcome_reason": "red text Tight bear channel with 2nd leg down and stacked red arrows down the double-boxed bear legs to bar 72",
+      "confidence": 0.65,
+      "evidence": "red text right with blue boxes at bars 48 and 60, magenta dotted falling line into the lows"
+    },
+    {
+      "label": "truncated_wedge",
+      "raw_label": "Truncated wedge at the lows (04:20-04:45 low 6933)",
+      "direction": "bull",
+      "start_time": {"time": "04:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6933.0,
+      "outcome": "success",
+      "outcome_reason": "magenta Truncated wedge text with falling dotted line into the bar 72 lows and the recovery into the closing chips",
+      "confidence": 0.6,
+      "evidence": "magenta text bottom right with magenta dotted line and final up bars toward 6948"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs; axis label Jan 23 mid-chart; inset daily chart Gap Up Open and Wedge"}
+}

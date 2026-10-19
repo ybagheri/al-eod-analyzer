@@ -10,8 +10,14 @@
       "label": "outside_outside",
       "raw_label": "OO (06:50)",
       "direction": "bear",
-      "start_time": {"time": "06:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "07:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4446.0,
       "outcome": "success",
@@ -20,11 +26,17 @@
       "evidence": "blue OO text with blue shaded opening box under the red dotted 4446 line"
     },
     {
-      "label": "bear_trend",
+      "label": "channel",
       "raw_label": "Buying pressure wedge tight bear channel low 4419 (08:25)",
       "direction": "bear",
-      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4419.0,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "climax",
       "raw_label": "Parabolic wedge sell climax (08:20 low 4419)",
       "direction": "bear",
-      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:30", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4419.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "measured_move",
       "raw_label": "Measuring gap (09:45 orange dotted 4436)",
       "direction": "bull",
-      "start_time": {"time": "09:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:00", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4436.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "outside_outside",
       "raw_label": "OOO (10:45)",
       "direction": "bull",
-      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:55", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4441.0,
       "outcome": "success",
@@ -72,11 +102,17 @@
       "evidence": "blue OOO text with blue shaded 10:40-10:55 bars above the blue dotted line"
     },
     {
-      "label": "trading_range_breakout",
+      "label": "breakout",
       "raw_label": "20-Gap Bar Buy (11:40 breakout of 4446)",
       "direction": "bull",
-      "start_time": {"time": "11:25", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4446.0,
       "outcome": "success",
@@ -88,8 +124,14 @@
       "label": "measured_move",
       "raw_label": "Measured Move (12:05 high 4450)",
       "direction": "bull",
-      "start_time": {"time": "11:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "12:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4450.0,
       "outcome": "success",
@@ -98,5 +140,9 @@
       "evidence": "orange Measured Move dotted line at 4450 with the 12:00 green shaded top"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -7,77 +7,123 @@
   "session_summary": "Blue title bar: 'Bull Trend From The Open, Late Failed Breakout'. Buy the close bull trend from the open (gap bar 3) drove a small pullback bull trend most of the day; midday sideways 20-gap bar buy signal wedge bull flag at EMA, trend resumption up in the afternoon, then a late failed trend resumption up micro double top (12:50 high 4465) sold the close back to 4440.",
   "events": [
     {
-      "label": "trend_resumption",
+      "label": "breakout",
       "raw_label": "Buy the close bull trend from the open, gap bar (06:45-08:15)",
       "direction": "bull",
-      "start_time": {"time": "06:40", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:15", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "06:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4390.0,
       "outcome": "success",
       "outcome_reason": "green shaded smooth trend bars from 4390 lows to the 4450 area with brown shaded bars 07:10-07:20",
       "confidence": 0.75,
-      "evidence": "orange 'Buy The Close Bull Trend From The Open' text with orange arrow at the gap-bar buy cluster of green shaded opening bars"    },
+      "evidence": "orange 'Buy The Close Bull Trend From The Open' text with orange arrow at the gap-bar buy cluster of green shaded opening bars"
+    },
     {
-      "label": "wedge_bear_flag",
+      "label": "bear_flag",
       "raw_label": "Minor wedge bear flag at highs (07:45-08:05 high 4445)",
       "direction": "bear",
-      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:10", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4445.0,
       "outcome": "success",
       "outcome_reason": "magenta dotted Minor Wedge on the pullback to EMA with red arrow 08:40 sell signal",
       "confidence": 0.6,
-      "evidence": "magenta dotted 'Minor Wedge' channel under the brown shaded 07:45-08:10 box and red arrow 08:40"    },
+      "evidence": "magenta dotted 'Minor Wedge' channel under the brown shaded 07:45-08:10 box and red arrow 08:40"
+    },
     {
-      "label": "gap_bar",
+      "label": "gap",
       "raw_label": "20-gap bar buy signal sideways after probe (09:20-10:35 low 4435)",
       "direction": "bull",
-      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:35", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4435.0,
       "outcome": "success",
       "outcome_reason": "green '20-Gap Bar Buy' text at the magenta dotted wedge of sideways after small probe down trend bars",
       "confidence": 0.6,
-      "evidence": "magenta dotted downward wedge under 09:30-10:20 bars with the green 20-Gap Bar Buy label"    },
+      "evidence": "magenta dotted downward wedge under 09:30-10:20 bars with the green 20-Gap Bar Buy label"
+    },
     {
       "label": "ii",
       "raw_label": "ii pattern and wedge bull flag at EMA (10:20-11:45)",
       "direction": "bull",
-      "start_time": {"time": "10:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:45", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4438.0,
-      "outcome": "unknown",
+      "outcome": "unclear",
       "outcome_reason": "sideways after 20-gap bar buy signal converging on the rising EMA before trend resumption up",
       "confidence": 0.6,
-      "evidence": "blue 'ii' text and 'Wedge Bull Flag at EMA / Sideways after 20-Gap Bar buy signal / Trend Resumption Up' text with magenta dotted wedge at 11:30"    },
+      "evidence": "blue 'ii' text and 'Wedge Bull Flag at EMA / Sideways after 20-Gap Bar buy signal / Trend Resumption Up' text with magenta dotted wedge at 11:30"
+    },
     {
-      "label": "trend_resumption",
+      "label": "breakout",
       "raw_label": "Trend resumption up to 4465 high (11:45-13:00)",
       "direction": "bull",
-      "start_time": {"time": "11:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4465.0,
       "outcome": "success",
       "outcome_reason": "green arrows and shaded step up from bar 12 wedge bull flag into green shaded afternoon chases",
       "confidence": 0.7,
-      "evidence": "green 'Trend Resumption Up' subheading and green shaded 12:10-12:50 chains with tall step bars"    },
+      "evidence": "green 'Trend Resumption Up' subheading and green shaded 12:10-12:50 chains with tall step bars"
+    },
     {
       "label": "failed_breakout",
       "raw_label": "Failed trend resumption up micro DT late reversal (12:45-13:20 high 4465)",
       "direction": "bear",
-      "start_time": {"time": "12:45", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4465.0,
       "outcome": "success",
       "outcome_reason": "green 'Failed Trend Resumption up Micro DT' text at the magenta dotted wedge top with tall reversal bars into the close at 4440",
       "confidence": 0.7,
-      "evidence": "magenta dotted wedge above the last green shaded chains with red and black reversal bars into 4/20 close"    }
+      "evidence": "magenta dotted wedge above the last green shaded chains with red and black reversal bars into 4/20 close"
+    }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }

@@ -10,8 +10,14 @@
       "label": "double_top",
       "raw_label": "Double Top (07:50)",
       "direction": "bear",
-      "start_time": {"time": "07:35", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4447.0,
       "outcome": "success",
@@ -23,8 +29,14 @@
       "label": "wedge",
       "raw_label": "Nested Wedge (08:55 low)",
       "direction": "bull",
-      "start_time": {"time": "08:00", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:05", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4423.5,
       "outcome": "success",
@@ -36,8 +48,14 @@
       "label": "double_bottom",
       "raw_label": "Higher Low Major Trend Reversal / Head and Shoulders Bottom (09:40)",
       "direction": "bull",
-      "start_time": {"time": "09:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "09:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4424.0,
       "outcome": "success",
@@ -49,8 +67,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout above high (10:30)",
       "direction": "bear",
-      "start_time": {"time": "10:05", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4449.0,
       "outcome": "success",
@@ -62,8 +86,14 @@
       "label": "failed_breakout",
       "raw_label": "Failed breakout below low 2nd Leg Bear Trap (11:05)",
       "direction": "bull",
-      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4424.0,
       "outcome": "success",
@@ -72,11 +102,36 @@
       "evidence": "green arrow at the 11:05 low with orange and green text and boxed reversal bars"
     },
     {
-      "label": "trading_range",
+      "label": "trading_range_begin",
       "raw_label": "Trading range day around the open at 4438",
-      "direction": null,
-      "start_time": {"time": "11:15", "tz": "America/Los_Angeles"},
-      "end_time": {"time": "13:20", "tz": "America/Los_Angeles"},
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 4438.0,
+      "outcome": "success",
+      "outcome_reason": "afternoon chopped around the open 4438 with late spike to 4449 and close at 4440",
+      "confidence": 0.6,
+      "evidence": "blue dotted Open line at 4438 across the chart with boxed afternoon swings"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Trading range day around the open at 4438",
+      "direction": "neutral",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
       "bar_index_hint": null,
       "price_hint": 4438.0,
       "outcome": "success",
@@ -85,5 +140,9 @@
       "evidence": "blue dotted Open line at 4438 across the chart with boxed afternoon swings"
     }
   ],
-  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
 }
