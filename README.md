@@ -68,8 +68,8 @@ Git hooks (plan-compliance) activate with `git config core.hooksPath .githooks`
 
 ### Status (auto-generated from docs/STATUS.yaml)
 
-- **Current step:** S0 - Re-plan, doc sync, safety rails, privacy (done)
-- **Steps done:** S0
+- **Current step:** S2 - Extraction v3: compact schema, validator-gated writes, anchors (pending)
+- **Steps done:** S0, S1
 - **Steps in progress:** none
 - **Last gate:** green (2026-10-19): ruff ok / format ok / mypy --strict ok / pytest green (180 collected) / coverage 92.38%
 - **Data:** 1678 unique batch-1 charts; 244 filled queue pairs (0 pending); 162 labels; gold 32

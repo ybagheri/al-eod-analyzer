@@ -4,7 +4,7 @@ _Last updated: 2026-10-19 by Muse Spark (opencode) — wave-2 fill-out complete 
 <!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
 
 Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd71…, method vv2.6)
-Current step: S0; STATUS.yaml updated: 2026-10-19
+Current step: S2; STATUS.yaml updated: 2026-10-19
 Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (180 collected) / coverage 92.38%
 Counts: queue pairs 244/244, labels 162, quarantined 0, gold 32, gold open items 1, calibration sample 38
 
@@ -21,9 +21,9 @@ deterministic streaming engine (Python reference + MQL5 port). Plan of record:
 
 ## 2. Current status
 
-- Current step: S0 (`docs/evidence/S0.md`, S0 DoD complete; next S1) — see `docs/STATUS.yaml`
+- Current step: S2 next (S0 done: `docs/evidence/S0.md`; S1 done: `docs/evidence/S1.md`) — see `docs/STATUS.yaml`
 - Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd717d4c…, method v2.6, ADR-012); `docs/MASTER_PROMPT.md` superseded for phase order/sizing/process
-- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 done (status sync, public-safety scanner+history scan: 1 finding ACCEPTED by user, backups, gates/hhooks/CI plan-compliance)
+- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 done (status sync, public-safety scanner+history scan: 1 finding ACCEPTED by user, backups, hooks/CI plan-compliance); S1 done (core deps typer/pydantic/PyYAML/Pillow, extras restructured, wheelhouse offline-install proven in a fresh clone, engine stdlib-only guard)
 - Last green quality gate: 2026-10-19 (ruff ✓ / format ✓ / mypy --strict ✓ / pytest green, 180 collected / coverage 92.38% ≥85)
 
 ## 3. What was done in this session
