@@ -44,15 +44,41 @@ python -m tasks check   # canonical quality gate (use instead of `make` on Windo
 
 `make check` runs the same gate on systems with `make`.
 
+<!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
+
+### Status (auto-generated from docs/STATUS.yaml)
+
+- **Current step:** S0 - Re-plan, doc sync, safety rails, privacy (in_progress)
+- **Steps done:** none
+- **Steps in progress:** S0
+- **Last gate:** green (2026-10-19): ruff ok / format ok / mypy --strict ok / pytest green (180 collected) / coverage 92.38%
+- **Data:** 1678 unique batch-1 charts; 244 filled queue pairs (0 pending); 162 labels; gold 32
+- **Market-data coverage:** none
+- Updated: 2026-10-19
+
+<!-- STATUS:END -->
+
 ## CLI reference (so far)
 
 | Command | Description |
 |---|---|
 | `brooks --version` / `brooks version` | Show version |
+| `brooks ingest` / `brooks manifest-stats` | Image inventory + stats |
+| `brooks schema-export` | Dump the label JSON schema |
+| `brooks extract` / `brooks extract-status` | File-exchange vision extraction |
+| `brooks title-map` | Map batch-1 filename titles to provisional day types |
+| `brooks review-queue` / `brooks review-apply` | Human review pages + apply corrections |
 
-Later phases add: `ingest`, `manifest-stats`, `schema-export`, `extract`,
-`extract-status`, `review-queue`, `review-apply`, `data-check`, `attach-labels`,
-`evaluate`, `tune`, `live`.
+Later phases add: `data-check`, `attach-labels`, `coverage-probe`,
+`write-response`, `extract-batch`, `evaluate`, `tune`, `live`.
+
+## Plan of record
+
+The project follows `docs/PLAN_V2.md` (master re-plan v2.6): tiered labels
+(Bronze/Silver-Dev/Gold-Test), market-data-first scope driven by broker-feed
+coverage, validator-gated label writes, and a public-repo safety policy
+(`docs/PUBLIC_SAFETY.md`). `docs/MASTER_PROMPT.md` remains the architecture
+reference; on conflicts `docs/PLAN_V2.md` wins (ADR-012).
 
 ## Config
 
@@ -79,7 +105,7 @@ Tests never call paid/online APIs (fakes/recorded fixtures only).
 
 `mql5/` holds the later indicator/EA port. Install: copy `mql5/` contents into the
 MT5 data-folder `MQL5/` tree, compile in MetaEditor (see `docs/MT5_SETUP.md` once
-Phase 9 lands). Nothing tradable exists yet — Phase 0 is skeleton only.
+Phase 9 lands).
 
 ## FAQ
 
@@ -91,5 +117,9 @@ Phase 9 lands). Nothing tradable exists yet — Phase 0 is skeleton only.
 
 ## License / legal
 
-Code: MIT (see `pyproject.toml`). Chart images in `data/` are third-party
-copyrighted — personal research use only; keep this repo **private**.
+Code: MIT (see `pyproject.toml`). The Brooks-style chart images are third-party
+material that is NOT distributed in this repository and is kept locally for
+personal research only; broker market data is not redistributed; labels and the
+playbook are the author's own derived annotations and statistics; the repo is
+public by design and must stay public-safe (see `docs/PUBLIC_SAFETY.md`).
+Contact for take-down requests.

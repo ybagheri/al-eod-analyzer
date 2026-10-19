@@ -1,18 +1,30 @@
 # HANDOFF
 _Last updated: 2026-10-19 by Muse Spark (opencode) — wave-2 fill-out complete (extraction_queue 244/244, 162 labels; see §3)_
 
+<!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
+
+Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd71…, method vv2.6)
+Current step: S0; STATUS.yaml updated: 2026-10-19
+Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (180 collected) / coverage 92.38%
+Counts: queue pairs 244/244, labels 162, quarantined 0, gold 32, gold open items 1, calibration sample 38
+
+<!-- STATUS:END -->
+
 ## 1. Project in one paragraph
 
 al-eod-analyzer extracts Brooks-style structure from EOD review charts (ES M5
-screenshots in `data/`), distils it into a playbook, and reproduces the reading with
-a deterministic streaming engine (Python reference + later MQL5 port). Phase 0 builds
-the skeleton only; no extraction, engine, or trading logic exists yet.
+screenshots, batch of 2042 files in `data/raw_batch1/`), attaches it to real M5
+market bars from the user's broker (Phase 5b), distils it into a tiered label
+set (Bronze/Silver-Dev/Gold-Test), and reproduces the reading with a
+deterministic streaming engine (Python reference + MQL5 port). Plan of record:
+`docs/PLAN_V2.md` (master re-plan v2.6, ADR-012).
 
 ## 2. Current status
 
-- Current phase: 5a — Batch-1 dataset expansion (2042 new ES/M5 charts, title-as-label)
-- Phase status: intake + title mapping + calibration waves 0&1 + FULL user review DONE (2026-10-17); taxonomy v1.3 live; bulk extraction pending user green light
-- Last green quality gate: 2026-10-17 post-v1.3 (ruff ✓ / format ✓ 55 files / mypy --strict ✓ 22 files / pytest 160 passed / coverage 92.38%)
+- Current step: S0 (re-plan, doc sync, safety rails, privacy) — see `docs/STATUS.yaml`
+- Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd717d4c…, method v2.6, ADR-012); `docs/MASTER_PROMPT.md` superseded for phase order/sizing/process
+- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 in progress (S0.2 done; S0.3 scanner built, worktree clean, history has 1 finding → user checkpoint pending)
+- Last green quality gate: 2026-10-19 (ruff ✓ / format ✓ / mypy --strict ✓ / pytest green, 180 collected / coverage 92.38% ≥85)
 
 ## 3. What was done in this session
 

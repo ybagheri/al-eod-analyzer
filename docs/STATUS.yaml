@@ -1,0 +1,61 @@
+# STATUS.yaml - single source of truth for project status.
+# Rendered into README.md, ROADMAP.md and HANDOFF.md by scripts/sync_status.py;
+# a test (tests/test_status_sync.py) fails if the rendered blocks drift.
+schema_version: 1
+updated_at: "2026-10-19"
+plan:
+  file: docs/PLAN_V2.md
+  sha256: fd3cd030dd717d4c36cad41dd54181c1ed4de0092fa57ca89f61546eceebee74
+  method_version: "v2.6"
+current_step: S0
+steps:
+  S0: {name: "Re-plan, doc sync, safety rails, privacy", status: in_progress, commit: null}
+  S1: {name: "Dependency and environment repair", status: pending, commit: null}
+  S2: {name: "Extraction v3: compact schema, validator-gated writes, anchors", status: pending, commit: null}
+  S3: {name: "Phase 5b: market data layer + session calendar + axis resolution", status: pending, commit: null}
+  S4: {name: "Phase 5c: date alignment and label->bar attachment", status: pending, commit: null}
+  S5: {name: "Phase 5a-reduced: Silver-Dev and Gold-Test labeling", status: pending, commit: null}
+  S6: {name: "Phase 6: Python streaming engine v0", status: pending, commit: null}
+  S7: {name: "Phase 7: evaluation framework + first baseline report", status: pending, commit: null}
+  S8: {name: "Active-learning Hard set + engine iteration", status: pending, commit: null}
+  S9: {name: "Phase 8: playbook (stats with n and CIs)", status: pending, commit: null}
+  S10: {name: "Phase 9: MQL5 indicator with parity >= 98%", status: pending, commit: null}
+  S11: {name: "Phase 10: signals + EA + walk-forward", status: pending, commit: null}
+  S12: {name: "Phase 11 (optional) LLM commentary bridge", status: pending, commit: null}
+  S13: {name: "Phase 12: hardening and v1.0.0", status: pending, commit: null}
+# Finished predecessor phases (pre-re-plan), kept for history.
+legacy_phases:
+  phase0: {status: done, commit: 4338faa}
+  phase1: {status: done, commit: null}
+  phase2: {status: done, commit: null}
+  phase3: {status: done, commit: null}
+  phase4: {status: done, commit: null}
+  phase5a: {status: superseded_by_S2_S5, commit: 2300fe7}
+last_gate:
+  result: green
+  when: "2026-10-19"
+  details: "ruff ok / format ok / mypy --strict ok / pytest green (180 collected) / coverage 92.38%"
+counts:
+  batch1_received: 2044
+  batch1_usable: 2042
+  batch1_unique_ok: 1678
+  batch1_hash_duplicates: 364
+  extraction_queue_pairs: 244
+  extraction_queue_request_only: 0
+  labels_active: 162
+  labels_quarantined: 0
+  gold_set: 32
+  gold_open_items: 1  # 10401c705b30 pending user gold yes/no
+  calibration_sample: 38
+  day_type_agreement: 0.706  # 34 comparable, taxonomy v1.3, prompt v2
+checks:
+  public_safety: worktree_clean  # full history: 1 finding (old MASTER_PROMPT.md blob) -> USER CHECKPOINT pending
+  plan_hash_guard: not_implemented
+coverage:
+  market_data: none  # Phase 5b not started; no broker CSVs yet
+  n_cov: null
+  case: null
+metrics:
+  extraction: "day_type agreement 0.706 (34 comparable)"
+  engine: NOT RUN
+  parity: NOT RUN
