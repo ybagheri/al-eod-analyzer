@@ -27,7 +27,7 @@ Layered Python package (`src/brooks_lab`): `domain` (pure models/rules) →
 
 ## Install
 
-Requires Python 3.11+.
+Requires Python 3.11+. Core deps: `typer`, `pydantic`, `PyYAML`, `Pillow` only.
 
 ```powershell
 python -m venv .venv
@@ -35,14 +35,34 @@ python -m venv .venv
 pip install -e ".[dev]"
 ```
 
-## Quick start (Phase 0)
+Offline install (restricted network): `wheelhouse/` (git-ignored) holds every
+wheel pinned in `requirements-lock.txt`:
+
+```powershell
+# (one-time, on an online machine)
+python -m pip download -d wheelhouse --timeout 120 --retries 10 -r requirements-lock.txt
+# (offline machine, fresh clone)
+python -m pip install --no-index --find-links wheelhouse setuptools wheel
+python -m pip install --no-index --find-links wheelhouse --no-build-isolation -e ".[dev]"
+```
+
+Never run a non-editable `pip install file:///...` inside the repo path
+(shadow-import hazard; guarded by `tests/test_smoke.py`).
+
+Extras: `vision` (httpx network providers), `vision-local` (opencv/pytesseract,
+optional, unused by the pipeline), `data` (pandas/numpy, analysis only — never
+imported by the engine). The engine package is enforced stdlib-only by
+`tests/test_engine_purity.py` (MQL5 parity).
+
+## Quick start
 
 ```powershell
 brooks --version
 python -m tasks check   # canonical quality gate (use instead of `make` on Windows)
 ```
 
-`make check` runs the same gate on systems with `make`.
+Git hooks (plan-compliance) activate with `git config core.hooksPath .githooks`
+(activated in this checkout); never bypass with `--no-verify`.
 
 <!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
 
@@ -84,7 +104,8 @@ reference; on conflicts `docs/PLAN_V2.md` wins (ADR-012).
 
 - `config/default.yaml` — engine thresholds, session times, paths (single source
   for named parameters; no magic constants in code).
-- `config/taxonomy.yaml` — label vocabulary (DRAFT stub; frozen as v1 in Phase 2).
+- `config/taxonomy.yaml` — label vocabulary, frozen v1.3 for bulk labeling
+  (future ids only through ADR + `config/taxonomy_migrations.yaml`).
 - `.env` (git-ignored; see `.env.example`) — optional API keys. Core flow works
   offline via file-exchange vision mode.
 
