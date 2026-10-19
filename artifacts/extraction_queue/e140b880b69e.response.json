@@ -1,0 +1,187 @@
+{
+    "date":  "2026-03-16",
+    "day_type":  "trading_range",
+    "day_type_confidence":  0.6,
+    "events":  [
+                   {
+                       "bar_index_hint":  12,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "23:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top left",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Micro double top text with red arrows down the gap-up open wave highs",
+                       "price_hint":  6778.0,
+                       "raw_label":  "Micro double top (22:40-23:05 high 6778)",
+                       "start_time":  {
+                                          "time":  "22:40",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  18,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "23:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green arrows and text",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green arrows up from the double bar lows with the green Double bottom text",
+                       "price_hint":  6748.0,
+                       "raw_label":  "Double bottom in the open chop (23:00-23:25 low 6748)",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "00:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Lower high double top text over the shaded two-legs-up box",
+                       "price_hint":  6770.0,
+                       "raw_label":  "Lower high double top (23:30-00:10 high 6770)",
+                       "start_time":  {
+                                          "time":  "23:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "01:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "orange dotted line and red text",
+                       "label":  "trend_line_break",
+                       "outcome":  "success",
+                       "outcome_reason":  "orange dotted descending trendline broken by the bar 36 momentum bars after the two legs up",
+                       "price_hint":  6755.0,
+                       "raw_label":  "Two legs up then trendline sell (00:00-01:10)",
+                       "start_time":  {
+                                          "time":  "00:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "00:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "text at bar 36 low",
+                       "label":  "climax",
+                       "outcome":  "success",
+                       "outcome_reason":  "big dark bars at 6737 with the green Double bottom and red Sell climax texts and green arrow up",
+                       "price_hint":  6737.0,
+                       "raw_label":  "Double bottom sell climax (00:10-00:35 low 6737)",
+                       "start_time":  {
+                                          "time":  "00:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "01:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue and red texts mid-chart",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "shaded box with red Selling pressure and blue No stop order setups and 50% pullback texts",
+                       "price_hint":  6750.0,
+                       "raw_label":  "Selling pressure, no stop order setups, 50% pullback boxes (00:50-01:40)",
+                       "start_time":  {
+                                          "time":  "00:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "03:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top right",
+                       "label":  "double_top",
+                       "outcome":  "fail",
+                       "outcome_reason":  "red Double top at high of day text but price broke above Friday\u0027s high on the next spike",
+                       "price_hint":  6768.0,
+                       "raw_label":  "Double top at Friday\u0027s high, uptrend exhausted (02:30-03:00 high 6768)",
+                       "start_time":  {
+                                          "time":  "02:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "03:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top right",
+                       "label":  "climax",
+                       "outcome":  "fail",
+                       "outcome_reason":  "red Buy climax Bull trap arrow at the breakout bar before the sell-off to 6748",
+                       "price_hint":  6797.0,
+                       "raw_label":  "Buy climax, bull trap above Friday\u0027s high (03:00-03:20 high 6797)",
+                       "start_time":  {
+                                          "time":  "03:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "04:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text bottom right",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green arrow up at the 6748 retest with the green Weak buy at support but late in day text",
+                       "price_hint":  6748.0,
+                       "raw_label":  "Weak buy at support but late in the day (03:40-04:00 low 6748)",
+                       "start_time":  {
+                                          "time":  "03:40",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "overnight chart axis ET+12 hrs, 22:00-04:00, Mar 17 markers; bar numbers 12-72; chips 6757.00/6755.95; inset Bear Channel Breakout dailies",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "e140b880b69e",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Big Gap Up Then Trading Range and Inside Day\u0027 (ET+12 hrs, Mar 16-17; inset Bear Channel Breakout dailies Tues-Fri-Mon). Gap up into Friday\u0027s high resistance with a micro double top, lower high double top and two-legs-up trendline sell, double bottom sell climax at 6737, the shaded 50% pullback boxes while selling pressure waited, then a double top at Friday\u0027s high followed by a buy climax bull trap at 6797 and a weak late buy at support."
+}

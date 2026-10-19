@@ -1,0 +1,216 @@
+{
+  "date": "2025-12-18",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "texts under the blue shaded box",
+      "label": "opening_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red Opening reversal failed text under the shaded gap-up box; the bulls broke out instead",
+      "placement": null,
+      "price_hint": 6851.0,
+      "raw_label": "Opening reversal that failed on the gap up (23:00-00:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text above the breakout",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge into the red dotted 6870 ceiling with the magenta Wedge top text",
+      "placement": null,
+      "price_hint": 6870.0,
+      "raw_label": "Wedge top: bear channel breakout at 6870 (00:00-00:30 high 6870)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Tight trading range text",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box under the red dotted ceiling with the Tight trading range text and stacked red arrows",
+      "placement": null,
+      "price_hint": 6865.0,
+      "raw_label": "Tight trading range under 6870 (00:20-01:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text with red arrow",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Strong bear breakout arrow over the big black trend bars into the bar 36 low",
+      "placement": null,
+      "price_hint": 6815.0,
+      "raw_label": "Strong bear breakout into the lower-low double bottom (01:00-01:40 low 6815)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text under the low",
+      "label": "lower_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted floor with the Lower low double bottom text and the green arrow reversal",
+      "placement": null,
+      "price_hint": 6815.0,
+      "raw_label": "Lower low double bottom at 6815 (01:25-02:00 low 6815)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text with dotted line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Lower high double top text behind the red dotted 6862 line with the magenta two legs up and wedge on top",
+      "placement": null,
+      "price_hint": 6862.0,
+      "raw_label": "Lower high double top at 6862 (02:00-02:30 high 6862)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text at the lows",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Higher low double bottom text and green arrows after the falling wedge decline",
+      "placement": null,
+      "price_hint": 6823.0,
+      "raw_label": "Higher low double bottom at 6823 (03:25-04:10 low 6823)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top right",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Double top text with red arrow at the rally top before the close",
+      "placement": null,
+      "price_hint": 6855.0,
+      "raw_label": "Final double top at 6855 (04:20-04:40)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "ac73290ffe08",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Channel Breakout on Gap Up Then Trading Range Day' (ET+13 hrs, Dec 18/19; inset Bear Channel Breakout Fri-Thurs). Gap-up trading range open with the failed opening reversal, the tight-range wedge top breakout at 6870, the strong bear breakout off the blue shaded box into the lower-low double bottom at 6815, the strong reversal after tight bear channel up to the 6862 lower-high double top, the magenta falling-wedge decline into the higher-low double bottom at 6823 and the final double top at 6855 into the close."
+}

@@ -1,0 +1,206 @@
+{
+    "date":  "2026-05-29",
+    "day_type":  "trend_reversal_to_bear",
+    "day_type_confidence":  0.55,
+    "events":  [
+                   {
+                       "bar_index_hint":  12,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "orange text and dotted line",
+                       "label":  "measured_move",
+                       "outcome":  "success",
+                       "outcome_reason":  "orange Measured Move 1.5R with the orange dotted target line hit by the opening rally",
+                       "price_hint":  7605.0,
+                       "raw_label":  "Measured Move 1.5R of yesterday\u0027s B9 breakout bar reached at the open high (9:30-10:25 high 7606)",
+                       "start_time":  {
+                                          "time":  "09:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "11:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text with dotted line",
+                       "label":  "channel",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Tight bear channel text with the red dotted descending rail over the bear bars",
+                       "price_hint":  7590.0,
+                       "raw_label":  "Tight bear channel reversal from the new all-time high (10:35-11:45 low 7584)",
+                       "start_time":  {
+                                          "time":  "10:35",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "11:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text and 1-2-3 labels",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "numbers 1-2-3 under bars 24-30 with the green Triple Bottom Bull Flag text inside the shaded box",
+                       "price_hint":  7598.0,
+                       "raw_label":  "123 triple bottom bull flag (11:20-11:55)",
+                       "start_time":  {
+                                          "time":  "11:20",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  42,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "12:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top center",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Failed Breakout above Double Top = Wedge Top text over the swing to 7611 with red arrows",
+                       "price_hint":  7611.0,
+                       "raw_label":  "Failed breakout above double top equals wedge top (12:00-12:55 high 7611)",
+                       "start_time":  {
+                                          "time":  "12:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "12:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text mid-chart",
+                       "label":  "double_bottom",
+                       "outcome":  "fail",
+                       "outcome_reason":  "green Double Bottom text before the rally reversed into the bear spike instead",
+                       "price_hint":  7600.0,
+                       "raw_label":  "Double bottom on the failed bears (12:15-12:55 low 7600)",
+                       "start_time":  {
+                                          "time":  "12:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "14:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text and shaded spike corridor",
+                       "label":  "channel",
+                       "outcome":  "success",
+                       "outcome_reason":  "shaded corridor with the red Bear Spike tight bear channel text and red arrows down the momentum bars",
+                       "price_hint":  7595.0,
+                       "raw_label":  "Bear spike, tight bear channel (13:10-14:15 low 7592)",
+                       "start_time":  {
+                                          "time":  "13:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  57,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "14:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "orange text",
+                       "label":  "measured_move",
+                       "outcome":  "success",
+                       "outcome_reason":  "orange Measured Move Bear Spike text with the green dotted measured floor at 7578",
+                       "price_hint":  7578.0,
+                       "raw_label":  "Measured move of the bear spike toward the green floor (13:30-14:40)",
+                       "start_time":  {
+                                          "time":  "13:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  78,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "15:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text right side",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Higher Low Double Bottom at Trend line text with green arrows up the reversal bars",
+                       "price_hint":  7582.0,
+                       "raw_label":  "Higher low double bottom at trend line (14:45-15:35 low 7582)",
+                       "start_time":  {
+                                          "time":  "14:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  78,
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "16:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue text top right",
+                       "label":  "triangle",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue header text with the contracting afternoon range above the higher-low lows",
+                       "price_hint":  7596.0,
+                       "raw_label":  "Intraday contracting triangle bear flag within a higher time frame extended bull channel (13:00-16:00)",
+                       "start_time":  {
+                                          "time":  "13:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  57,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "15:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green dotted line and text bottom center",
+                       "label":  "trend_line_break",
+                       "outcome":  "fail",
+                       "outcome_reason":  "green dotted Major Higher Low Overnight session line with the red No bear Breakout below major low text",
+                       "price_hint":  7577.0,
+                       "raw_label":  "No bear breakout below the major low, market remains technically bullish (12:30-15:40 low 7578)",
+                       "start_time":  {
+                                          "time":  "12:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "regular session chart, 9:30-16:00 axis; bar numbers 5-78; chip 7596.25 at 15:45",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "e85595c17242",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Bull Spike to MM Target then Bear Reversal and Triangle Bear Flag\u0027 (9:30-16:00; dailies Fri label). Tight bull exhaustion channel into the measured move target, nested wedge reversal into the bear slide, a bear channel from 10:35, a 123 triple bottom bull flag within the shaded box, the wedge-top failed breakout above the double top, the bear spike tight bear channel to the measured move low, the higher-low double bottom at trend line, and no bear breakout below the major low so the market remains technically bullish."
+}

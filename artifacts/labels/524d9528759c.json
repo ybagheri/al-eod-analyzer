@@ -1,0 +1,166 @@
+{
+  "date": "2026-02-04",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left with red dotted line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6960 line with stacked red arrows 23:10-00:30 as the Low 2 failed to hold bulls",
+      "placement": null,
+      "price_hint": 6960.0,
+      "raw_label": "Double top, 2 legs up and Low 2 at the open (23:00-00:25 high 6960)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text upper area and the magenta dotted descending support under bars 36-44",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Broad Bear channel text with arrow to the red dotted 6930 resistance and pink dotted falling wedge support into the lows",
+      "placement": null,
+      "price_hint": 6855.0,
+      "raw_label": "Broad bear channel decline (00:20-02:05 low 6855)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text and green dotted horizontal near bars 20-26",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "green Double/triple bottom but in bear channel text with green dotted floor and green arrow 00:40; the bounce faded back into the channel",
+      "placement": null,
+      "price_hint": 6910.0,
+      "raw_label": "Double/triple bottom but in bear channel (00:30-01:05 lows 6907-6910)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and red texts at the bar 36 valley",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge bottom falling into the bar 36 lows with Parabolic wedge and Sell climax texts",
+      "placement": null,
+      "price_hint": 6855.0,
+      "raw_label": "Parabolic wedge sell climax at the lows (01:25-02:00 low 6855)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with green arrows beside bars 58-66",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Breakout of bear channel text with arrow and green arrows 03:20-03:30 lifting price through the channel top to the 6925-6930 box",
+      "placement": null,
+      "price_hint": 6900.0,
+      "raw_label": "Breakout of the bear channel (03:10-03:55 high 6900)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "05:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line spanning to 04:35 with final red arrows and shaded box bars 70-76",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue boxed lows-to-highs bars pressed the red dotted 6930 line from the open-line and red arrows 04:40, 04:50 closed the tape below",
+      "placement": null,
+      "price_hint": 6930.0,
+      "raw_label": "Late rally stalls at the 6930 resistance, sideways into close (04:05-05:00 high 6930)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "524d9528759c",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel, Bull Breakout Then Sideways into Close' (ET+13 hrs, Feb 4/5, Feb 5 axis; inset Broad Bear Channel daily Th-W). Double top 2 legs up and Low 2 at the 6960 open high, then a broad bear channel staircase with double/triple bottom attempts inside the channel, parabolic wedge sell climax at the 6855 lows (01:40-02:00), a double/triple bottom breakout of the bear channel late (03:15) up to the 6930 resistance (red dotted Low 2 area), and a sideways boxed close 6890-6930."
+}

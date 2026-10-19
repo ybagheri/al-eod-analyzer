@@ -1,0 +1,216 @@
+{
+  "date": "2026-05-18",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 7448 Overnight high line with the red text and red arrow starting the bear leg",
+      "placement": null,
+      "price_hint": 7448.0,
+      "raw_label": "Double top with overnight high (22:00-22:20 high 7448)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text over the stair-step decline",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted descending channel line with the red Broad bear channel and blue Trading range reversal setups texts",
+      "placement": null,
+      "price_hint": 7400.0,
+      "raw_label": "Broad bear channel with trading range reversal setups (22:10-01:20 low 7384)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text left side",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green text with green arrows at the 7405 lows and the blue 7407 chip line",
+      "placement": null,
+      "price_hint": 7405.0,
+      "raw_label": "Double bottom with yesterday's low (22:40-23:05 low 7405)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded chop boxes",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded boxes with red dotted 7415 ceiling, mixed red and green arrows and bar 48",
+      "placement": null,
+      "price_hint": 7410.0,
+      "raw_label": "Shaded chop boxes on the way down (23:00-02:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising support with the Consecutive wedges text beside the midday low",
+      "placement": null,
+      "price_hint": 7384.0,
+      "raw_label": "Consecutive wedges into the 7384 low (00:20-01:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom right",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green arrow and green text at the overnight-low lows before the end-of-day rally",
+      "placement": null,
+      "price_hint": 7376.0,
+      "raw_label": "Double bottoms with overnight low (02:45-03:15 low 7376)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text right side",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red Buy climax and breakout / Weak bulls trap texts over the strong bull spike; weak bulls chased the breakout",
+      "placement": null,
+      "price_hint": 7440.0,
+      "raw_label": "Buy climax and breakout, weak bulls trap (03:10-03:45 high 7440)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom right",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green arrow into the pullback low with the green Reasonable buy with 50% breakout pullback text at bar 72",
+      "placement": null,
+      "price_hint": 7400.0,
+      "raw_label": "Reasonable buy with 50% breakout pullback (03:35-04:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "cfadf38b6cae",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Channel from Open with End of Day Pullback' (ET+12 hrs, May 18-19; inset Broad Trading Range Since All-time High). Double top with the overnight high at 7448, the broad bear channel with shaded chop boxes and the double bottom with yesterday's low, the consecutive wedges into 7384 and the double bottoms with the overnight low, then the buy climax breakout with weak bulls trapped and the 50% breakout pullback buy."
+}

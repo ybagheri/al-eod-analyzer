@@ -1,0 +1,241 @@
+{
+  "date": "2025-11-14",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text bottom left",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "big dark first bar at 6672 with the sell climax red text and orange dotted baseline",
+      "placement": null,
+      "price_hint": 6672.0,
+      "raw_label": "Big gap down to sell climax at the open (23:00-23:10 low 6672)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom left",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Bull trend reversal under the reversal bars that bought the gap-down sell climax",
+      "placement": null,
+      "price_hint": 6700.0,
+      "raw_label": "Bull trend reversal from the open (23:00-23:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text mid-chart",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green text with green arrows up the trend bars and orange dotted trendline under the wave",
+      "placement": null,
+      "price_hint": 6730.0,
+      "raw_label": "Strong bull trend, only buy (23:00-01:00 rally 6672-6770)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text and dotted line",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted Measured move line at the open high reached again at the wedge top highs",
+      "placement": null,
+      "price_hint": 6790.0,
+      "raw_label": "Measured move projected toward the wedge top (23:15-00:30 hit 6790)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red text with red arrow at the first swing high, but the market continued up",
+      "placement": null,
+      "price_hint": 6770.0,
+      "raw_label": "Two legs up so reasonable sell but failed (23:45-00:15 high 6770)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge top but wait to sell text under the magenta dotted rising wedge at the red dotted 6790 ceiling",
+      "placement": null,
+      "price_hint": 6790.0,
+      "raw_label": "Wedge top but wait to sell (00:15-00:45 high 6793)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Double/triple top text over the red dotted ceiling before the sell-off to 6752",
+      "placement": null,
+      "price_hint": 6797.0,
+      "raw_label": "Double/triple top (00:50-01:30 high 6797)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded blue box top right",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with green dotted floor, bars 36-72, and the Midday minor reversal into trading range green text",
+      "placement": null,
+      "price_hint": 6770.0,
+      "raw_label": "Midday minor reversal into trading range (01:30-05:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text right side",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green arrow up the late leg to 6788 with the Tight bull channel but leg in trading range text",
+      "placement": null,
+      "price_hint": 6788.0,
+      "raw_label": "Tight bull channel but leg in trading range (03:40-05:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "cae4fefa4940",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Big Gap Down to Bull Trend Reversal Then Trading Range' (ET+13 hrs, Nov 14-15; inset Trading Range dailies F-T-W-T-F). Big gap down to sell climax and bull trend reversal at the open, the strong bull trend only-buy rally to the wedge and double/triple top near 6797, the midday minor reversal into the blue shaded trading range, and the tight bull channel leg in the trading range late in the day."
+}

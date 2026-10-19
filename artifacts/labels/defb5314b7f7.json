@@ -1,0 +1,166 @@
+{
+  "date": "2026-03-11",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom left",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green arrow below bar 12 with the green and red texts at the Yesterday's low dotted line",
+      "placement": null,
+      "price_hint": 6766.0,
+      "raw_label": "Double bottom with yesterday's low, weak bears' trap (22:25-22:50 low 6766)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Trading range price action text overhead",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted descending channel line with blue and magenta dotted rails over the stair-step decline",
+      "placement": null,
+      "price_hint": 6749.0,
+      "raw_label": "Bear channel corridor down to 6749 (22:15-00:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Consecutive wedges then minor reversal text at the green dotted 6749 floor",
+      "placement": null,
+      "price_hint": 6749.0,
+      "raw_label": "Consecutive wedges then minor reversal (00:00-00:40 low 6749)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text top center",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "partial",
+      "outcome_reason": "green arrow up with the green texts and small shaded chop, only a marginal trendline break",
+      "placement": null,
+      "price_hint": 6780.0,
+      "raw_label": "Reasonable buys but only just breaking out of bear channel trendline (00:55-01:20 high 6788)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom center",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Double bottoms text with green arrows at the 6758 lows and red dotted 6758 line",
+      "placement": null,
+      "price_hint": 6758.0,
+      "raw_label": "Double bottoms midday (01:50-02:25 low 6758)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "04:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded box right side",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "shaded blue box at the late highs with the blue Choppy trading range Limit order trading text and red arrow",
+      "placement": null,
+      "price_hint": 6778.0,
+      "raw_label": "Choppy trading range, limit order trading (03:35-04:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "defb5314b7f7",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Channel with Midday Minor Reversal Into Trading Range' (ET+12 hrs, Mar 11-12; inset Broad Trading Range Continues). Double bottom with yesterday's low that trapped weak bears, the bear channel corridor of consecutive wedges down to 6749, reasonable buys only just breaking the bear channel trendline, the double bottoms midday, and the choppy limit-order trading range into the close."
+}

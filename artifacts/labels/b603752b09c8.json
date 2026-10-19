@@ -1,0 +1,141 @@
+{
+  "date": "2025-09-17",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text upper left",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Bear trend from the open text over the stair-stepped bear bars to the bar 48 lows",
+      "placement": null,
+      "price_hint": 6650.0,
+      "raw_label": "Bear trend from the open (07:15-10:50 low 6650)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded box and red dotted 6670 line",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with the magenta dotted wedge and bars 12-48 chop inside it",
+      "placement": null,
+      "price_hint": 6656.0,
+      "raw_label": "Bearish shaded trading range (07:30-11:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line across the box",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge under the pullback highs into the 6650 lows",
+      "placement": null,
+      "price_hint": 6650.0,
+      "raw_label": "Falling wedge through the range lows (07:20-10:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green FOMC statement and Failed bull breakout texts",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "tan shaded FOMC spike box with the FOMC statement and Failed bull breakout texts above the orange dotted 6680 line",
+      "placement": null,
+      "price_hint": 6685.0,
+      "raw_label": "FOMC statement failed bull breakout at 6685 (12:20-12:45 high 6685)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text under the orange dotted floor",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "big dark bar under the orange dotted 6612 line with the green Failed bear breakout text",
+      "placement": null,
+      "price_hint": 6612.0,
+      "raw_label": "Failed bear breakout sweep to 6613 (12:45-13:10 low 6613)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "b603752b09c8",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Trading Range' (FOMC statement day; bars 12-72). Bear trend from the open into the shaded bearish trading range with the magenta falling wedge, the 6650 lows with green arrows, the FOMC statement failed bull breakout at the 6685 top, the failed bear breakout sweep to 6613, and the close just below open rounding out a trading range day."
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "67d566b615f6",
+  "date": "2019-12-02",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then TR'. Consecutive big bear bars closing near their lows from the open into the 3111 parabolic wedge and doji minor bottom (High 2 but doji so minor, HL MTR), a 3114-3121 trading range with the MA gap bar sell line at 3122, an afternoon rising-wedge rally to the 3124 wedge-double-top-low-2 top, and a final sell-off into the 3114 close.",
+  "events": [
+    {
+      "label": "channel",
+      "raw_label": "Bear trend from the open (06:55-07:40 high 3140)",
+      "direction": "bear",
+      "start_time": {"time": "06:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3139.0,
+      "outcome": "success",
+      "outcome_reason": "shaded bear leg with_consecutive big bear bars closing near their lows and Always In Short but stop far above texts",
+      "confidence": 0.65,
+      "evidence": "orange and red texts with the opening shaded box"
+    },
+    {
+      "label": "h2",
+      "raw_label": "High 2 but doji so minor (07:10-07:35 high 3139)",
+      "direction": "bull",
+      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3139.0,
+      "outcome": "fail",
+      "outcome_reason": "blue High 2 but doji so minor arrow as the setup failed and the trend resumed down",
+      "confidence": 0.55,
+      "evidence": "blue text bottom left"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge but doji so minor bottom (07:45-08:40 low 3111)",
+      "direction": "bull",
+      "start_time": {"time": "07:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3111.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge into the doji low with the magenta Wedge but doji so minor bottom text",
+      "confidence": 0.55,
+      "evidence": "magenta text and arrow at the low"
+    },
+    {
+      "label": "higher_low_double_bottom",
+      "raw_label": "HL MTR double bottom 3111/3114 (08:35-10:00)",
+      "direction": "bull",
+      "start_time": {"time": "08:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3114.0,
+      "outcome": "success",
+      "outcome_reason": "orange HL MTR double arrows over the two lows with the green bull boxes leading into the breakout",
+      "confidence": 0.6,
+      "evidence": "orange HL MTR text with double arrows"
+    },
+    {
+      "label": "ema_gap_bar",
+      "raw_label": "MA gap bar sell at 3122 (07:10-12:20)",
+      "direction": "bear",
+      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3122.0,
+      "outcome": "fail",
+      "outcome_reason": "blue horizontal line labeled red MA Gap Bar S under the EMA; the afternoon rally eventually closed above it",
+      "confidence": 0.5,
+      "evidence": "red MA Gap Bar S text with the long blue 3122 line"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Rising wedge rally out of the range (10:35-11:55 high 3124)",
+      "direction": "bull",
+      "start_time": {"time": "10:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3124.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge through the green boxes to the day high",
+      "confidence": 0.6,
+      "evidence": "magenta dotted line ascending into the top"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Wedge, DT and Low 2 at 3124 (11:30-12:15 high 3124)",
+      "direction": "bear",
+      "start_time": {"time": "11:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3124.0,
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge, blue DT and red Low 2 labels at the top followed by the red sell bars",
+      "confidence": 0.65,
+      "evidence": "stacked magenta, blue and red labels at the top"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "axis Dec 2-3, bars 07:00-13:20, no bar numbers; BrooksTradingCourse slide with annotation texts and colored boxes"}
+}

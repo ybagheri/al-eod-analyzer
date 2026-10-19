@@ -1,0 +1,266 @@
+{
+  "date": "2025-07-29",
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6440 open spike line with the red text and first red arrow down",
+      "placement": null,
+      "price_hint": 6436.0,
+      "raw_label": "Gap up micro double top (22:00-22:10 high 6440)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "23:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded box left",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "shaded box with bars 12-24, red arrows down and the green High 2 but weak text",
+      "placement": null,
+      "price_hint": 6430.0,
+      "raw_label": "Opening shaded chop, high 2 but weak (22:10-23:50)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge with the Wedge text at the bars over the stair-step sell-off",
+      "placement": null,
+      "price_hint": 6410.0,
+      "raw_label": "Falling wedge into 6400 (23:15-00:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text bottom left",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "big dark bars at the green arrow low with the red Sell climax text; price stabilized",
+      "placement": null,
+      "price_hint": 6400.0,
+      "raw_label": "Sell climax at 6400 (00:00-00:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box right",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with the blue exhaustion texts and continued sideways price action",
+      "placement": null,
+      "price_hint": 6410.0,
+      "raw_label": "Possible market exhaustion after climatic rally, sideways trading range (00:05-04:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text mid-chart",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red text with red arrow at the first bear leg against the range",
+      "placement": null,
+      "price_hint": 6415.0,
+      "raw_label": "Leg 1, Low 2 (00:15-00:35 high 6418)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top center",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6418 ceiling with the Leg 2, Low 2 text and red arrows down",
+      "placement": null,
+      "price_hint": 6415.0,
+      "raw_label": "Leg 2, Low 2 (01:20-01:45 high 6418)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green text and green arrow at the first range low",
+      "placement": null,
+      "price_hint": 6410.0,
+      "raw_label": "Double bottom (00:55-01:15 low 6408)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Triple bottom text and green arrows at the midday lows",
+      "placement": null,
+      "price_hint": 6406.0,
+      "raw_label": "Triple bottom (02:00-02:30 low 6404)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text bottom right",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "big dark bar under the range with the red Failed breakout text and green arrows back up",
+      "placement": null,
+      "price_hint": 6400.0,
+      "raw_label": "Failed breakout below the lows at the close (03:40-04:00 low 6397)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "fc17e0fa2472",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend from Open, Sell Climax Then Trading Range' (ET+12 hrs, Jul 29-30). Gap up micro double top at the open, the falling wedge sell climax into 6399, the possible market exhaustion sideways trading range with leg 1/leg 2 low 2s, double and triple bottoms, and the failed breakout close at 6397."
+}

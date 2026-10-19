@@ -1,0 +1,241 @@
+{
+  "date": "2025-08-04",
+  "day_type": "bull_trend_from_open",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text left",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge text with the magenta dotted rising line over the opening bull rally and High 1 text",
+      "placement": null,
+      "price_hint": 6337.0,
+      "raw_label": "Opening wedge up to 6337 (22:00-22:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text left",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with the Trading range with limit order trading text and bars 12-24",
+      "placement": null,
+      "price_hint": 6332.0,
+      "raw_label": "Trading range with limit order trading (22:15-23:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text center",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "green Failed breakout but reasonable buy text with green arrow - the breakout drifted back",
+      "placement": null,
+      "price_hint": 6338.0,
+      "raw_label": "Failed breakout but reasonable buy (23:35-00:10 high 6346)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text mid-chart",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta Wedge text at the high of day followed by the red arrows and failed breakout bear trap",
+      "placement": null,
+      "price_hint": 6346.0,
+      "raw_label": "Micro wedge breakout into the double top (01:00-01:25 high 6352)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6352 ceiling with the red Double top text and red arrow down",
+      "placement": null,
+      "price_hint": 6350.0,
+      "raw_label": "Double top at 6352 (01:10-01:55)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text center",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red Failed breakout Bear trap text over the failed sell-off low before the sideways market",
+      "placement": null,
+      "price_hint": 6338.0,
+      "raw_label": "Failed breakout bear trap (01:50-02:35 low 6338)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text top center",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue Tight trading ranges - Sideways trading text with arrows over the shaded boxes at bars 36-60",
+      "placement": null,
+      "price_hint": 6347.0,
+      "raw_label": "Tight trading ranges, sideways trading (00:15-03:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrows right side",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red arrow at the retest of the ceiling, but price then broke above on the end of day rally",
+      "placement": null,
+      "price_hint": 6352.0,
+      "raw_label": "Second double top test at 6352 (02:45-03:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text top right",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green text with the green dotted 6360 line and green arrows up the close breakout bars",
+      "placement": null,
+      "price_hint": 6357.0,
+      "raw_label": "End of day breakout above July 31 low/close (03:40-04:30 high 6364)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "f9bf1e614264",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bull Breakout and Trend from Open Then Weak Bull Channel' (ET+12 hrs, Aug 4-5; inset Testing July Close/Selloff Low Resistance Thurs-Fri-Mon). Bull trend from the open continuation of the overnight rally, trading range with limit order trading, failed breakout but reasonable buy, tight trading ranges sideways, the wedge top into the failed breakout bear trap, and the end of day breakout above the July 31 low/close to 6364."
+}

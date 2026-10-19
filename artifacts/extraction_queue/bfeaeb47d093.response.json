@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "bfeaeb47d093",
+  "date": "2022-12-28",
+  "day_type": "small_pullback_bear_trend",
+  "day_type_confidence": 0.6,
+  "session_summary": "Blue title bar: 'Bull Trap, Endless Pullback, Bear Trend Day' (axis 08:55-15:00). Big-bar bull trap at the open (big bar so big risk, not ideal stop entry), breakout below the bull flag with the sell-the-close leg in the small pullback bear trend, the parabolic wedge at 3842 with the 20 gap bar sell, endless pullback after the parabolic wedge top in the tight channel, and the late sell the close into the 3812 low.",
+  "events": [
+    {
+      "label": "failed_breakout",
+      "raw_label": "Bull trap big bar at the open (08:55-09:15 high 3875)",
+      "direction": "bull",
+      "start_time": {"time": "08:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "09:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3875.0,
+      "outcome": "fail",
+      "outcome_reason": "green arrow into the box with the Big Bar so Big Risk and Not Ideal Stop Entry texts",
+      "confidence": 0.6,
+      "evidence": "green texts top left"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "Breakout below bull flag and sell the close (09:35-10:45 low 3825)",
+      "direction": "bear",
+      "start_time": {"time": "09:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3843.0,
+      "outcome": "success",
+      "outcome_reason": "red Breakout below Bull Flag and Sell the Close texts over the small PB bear trend staircase",
+      "confidence": 0.6,
+      "evidence": "red text top center"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Small pullback bear trend (09:30-11:05 low 3825)",
+      "direction": "bear",
+      "start_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3825.0,
+      "outcome": "success",
+      "outcome_reason": "red Small PB Bear Trend text with paired blue and magenta dotted lines under the staircase",
+      "confidence": 0.6,
+      "evidence": "red text mid-left"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Parabolic wedge 20 gap bar sell (11:45-12:25 high 3842)",
+      "direction": "bull",
+      "start_time": {"time": "11:45", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3842.0,
+      "outcome": "fail",
+      "outcome_reason": "magenta dotted rising wedge into the green top box with the Parabolic Wedge 20 Gap bar sell red arrow",
+      "confidence": 0.6,
+      "evidence": "magenta text with red arrow"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Endless pullback after parabolic wedge top in tight channel (12:25-13:45 low 3825)",
+      "direction": "bear",
+      "start_time": {"time": "12:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3825.0,
+      "outcome": "success",
+      "outcome_reason": "red Endless PB after Parabolic Wedge Top Tight Channel text with the pink dotted falling wedge",
+      "confidence": 0.6,
+      "evidence": "red texts top right"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Third leg into the 3812 low (14:05-14:30 low 3812)",
+      "direction": "bear",
+      "start_time": {"time": "14:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "14:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3812.0,
+      "outcome": "success",
+      "outcome_reason": "red bear boxes down the final leg with the magenta dotted wedge bottom",
+      "confidence": 0.6,
+      "evidence": "magenta dotted line at the lows"
+    },
+    {
+      "label": "sell_the_close",
+      "raw_label": "Sell the close but late in day, be quick to exit (14:10-15:00)",
+      "direction": "bear",
+      "start_time": {"time": "14:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "15:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 3818.0,
+      "outcome": "success",
+      "outcome_reason": "red Sell the Close but late in day, be quick to exit text with arrow over the late leg",
+      "confidence": 0.55,
+      "evidence": "red text bottom right"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis 08:55-15:00 and 12/29, no bar numbers; BrooksTradingCourse slide with colored boxes"}
+}

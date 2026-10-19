@@ -1,0 +1,241 @@
+{
+  "date": "2026-05-15",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with the shaded opening box",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Wedge then reasonable buys looking for bull trend resumption text under the shaded gap leg with the magenta wedge",
+      "placement": null,
+      "price_hint": 7416.0,
+      "raw_label": "Gap-down wedge low with reasonable buys (22:00-22:40 low 7416)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text left of center",
+      "label": "l1",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Low 1 label at the first swing low before the bull turn",
+      "placement": null,
+      "price_hint": 7416.0,
+      "raw_label": "Low 1 at the gap low (22:15-22:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text above the first swing high",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Low 2 label at the red dotted 7465 high as the bears sold into it",
+      "placement": null,
+      "price_hint": 7465.0,
+      "raw_label": "Low 2 rally into 7465 (22:40-23:15 high 7465)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and green texts below the lows",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Consecutive wedges and higher low double bottom texts with the green arrows off bar 36 into the rally",
+      "placement": null,
+      "price_hint": 7437.0,
+      "raw_label": "Consecutive wedges, higher low double bottom at 7437 (23:30-00:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "stacked magenta and red texts at the top",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Double top at high of day text with the magenta wedge top testing yesterday's low and the failed bull trend resumption comment",
+      "placement": null,
+      "price_hint": 7475.0,
+      "raw_label": "Double top at high of day 7475 (01:55-02:25 high 7477)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top right",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "black arrow with red Breakout mode in bear channel text over the stair-stepping bear leg",
+      "placement": null,
+      "price_hint": 7455.0,
+      "raw_label": "Breakout mode in bear channel after the double top (02:25-04:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text mid-right",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Low 2 text with the red arrow into the bar 72 area amid red sell arrows",
+      "placement": null,
+      "price_hint": 7449.0,
+      "raw_label": "Low 2 at 7449 in the bear channel (03:05-03:20 high 7449)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text and dotted line right of center",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "green Double bottom text with the green dotted floor line; the late wedge sell-off broke below it instead",
+      "placement": null,
+      "price_hint": 7441.0,
+      "raw_label": "Double bottom attempt at 7441-7445 (02:40-03:50)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text bottom right",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge into the close with the blue Profit taking at end of day text",
+      "placement": null,
+      "price_hint": 7412.0,
+      "raw_label": "Late wedge sell-off to 7412 and profit taking into close (03:25-04:15 low 7412)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "6fdc669c3c58",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Big Gap Down Then Sideways Trading Range Day' (ET+12 hrs, May 15/16; inset Back to Middle of Broad Trading Range weekly). Gap down into the wedge at 7416 with reasonable buys looking for bull trend resumption (Low 1 then Low 2), swing highs and lows through 7465-7475, consecutive wedges and a higher-low double bottom at 7437, a rally to the 7475 double top at high of day testing yesterday's low (failed bull trend resumption), breakout mode in a bear channel with another Low 2 at 7449, and a late wedge sell-off to 7412 into the close."
+}

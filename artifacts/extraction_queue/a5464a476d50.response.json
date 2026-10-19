@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "image_id": "a5464a476d50",
+  "date": "2021-11-08",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.6,
+  "session_summary": "Blue title bar: 'Trading Range'. Outside down open then bear trend from the open but bad follow-through, LH double top at 4703 and the wedges down to the 4687 HL double bottom, HH double top failures into the bear channel, the bull wedge rally to the 4699 HH MTR double top and the final sell-off into the 4690 close.",
+  "events": [
+    {
+      "label": "outside_outside",
+      "raw_label": "Outside down bar at the open (07:10-07:25 high 4707)",
+      "direction": "bear",
+      "start_time": {"time": "07:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4706.0,
+      "outcome": "unclear",
+      "outcome_reason": "orange Outside down text over the tall opening outside bar with bad follow-through",
+      "confidence": 0.55,
+      "evidence": "orange text top left"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Bear trend from the open, bad follow-through (07:05-08:30 low 4691)",
+      "direction": "bear",
+      "start_time": {"time": "07:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4691.0,
+      "outcome": "success",
+      "outcome_reason": "red Bear Trend From The Open with blue But bad follow-through texts and the magenta wedge lower lows",
+      "confidence": 0.55,
+      "evidence": "three texts stacked top left"
+    },
+    {
+      "label": "lower_high_double_top",
+      "raw_label": "LH DT at 4703 (07:15-07:35)",
+      "direction": "bear",
+      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4703.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted 4703 line with LH DT label",
+      "confidence": 0.6,
+      "evidence": "red text and dotted line"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "DB wedge bottom then failed breakout and HL DB at 4687 (08:20-10:05 low 4687)",
+      "direction": "bull",
+      "start_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4687.0,
+      "outcome": "success",
+      "outcome_reason": "green dotted floors with DB, Wedge Failed breakout and HL DB texts off the lows",
+      "confidence": 0.6,
+      "evidence": "green and magenta labels bottom left"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Bull wedge rally to 4699 (10:00-11:15 high 4699)",
+      "direction": "bull",
+      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4699.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge through the green bull boxes to the HH DT fringe",
+      "confidence": 0.6,
+      "evidence": "magenta dotted line upper area"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Wedge HH DT and HH MTR at 4699 (11:15-12:20 high 4699)",
+      "direction": "bear",
+      "start_time": {"time": "11:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "12:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4699.0,
+      "outcome": "success",
+      "outcome_reason": "magenta/red Wedge HH DT and Wedge HH MTR labels over the red dotted ceiling before the final decline",
+      "confidence": 0.6,
+      "evidence": "magenta and red texts top right"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis 11/8 07:00-13:00 with prior bars, no bar numbers; BrooksTradingCourse slide with colored boxes"}
+}

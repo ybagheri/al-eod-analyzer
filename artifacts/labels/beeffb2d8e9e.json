@@ -1,0 +1,216 @@
+{
+  "date": "2026-02-05",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text top left",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Buy climax text at the red dotted 6881 top",
+      "placement": null,
+      "price_hint": 6881.0,
+      "raw_label": "Buy climax at 6881 on the gap down (23:00-23:15 high 6881)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red texts upper left",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Tight bear channel Sell the close texts with stacked red bars off the buy climax",
+      "placement": null,
+      "price_hint": 6802.0,
+      "raw_label": "Tight bear channel, sell the close (23:10-00:20 low 6802)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text at the lows",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Sell climax text with arrow at the green dotted floor lows",
+      "placement": null,
+      "price_hint": 6802.0,
+      "raw_label": "Sell climax at 6802 (00:05-00:15 low 6802)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and green texts",
+      "label": "truncated_wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Truncated wedge and green Double bottom texts under the blue shaded chop box",
+      "placement": null,
+      "price_hint": 6802.0,
+      "raw_label": "Truncated wedge double bottom at 6802 (00:15-01:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text with arrows",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue Volatile ranges arrows pointing at the blue shadedbox between the climax legs",
+      "placement": null,
+      "price_hint": 6812.0,
+      "raw_label": "Volatile ranges shaded box (23:30-01:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top center",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6870 ceiling under the Double tops Lower highs bear channel continues texts with red arrows",
+      "placement": null,
+      "price_hint": 6870.0,
+      "raw_label": "Double top lower highs at 6870 (01:25-02:30 high 6870)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "05:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line across the day",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge under the bear swings bars 48-72 into the low",
+      "placement": null,
+      "price_hint": 6806.0,
+      "raw_label": "Falling wedge series under the lower highs (01:55-05:00 low 6806)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.5,
+      "direction": "bull",
+      "end_time": {
+        "time": "05:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and green texts bottom right",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "magenta Wedge and green Double bottom texts at the very lows into the close",
+      "placement": null,
+      "price_hint": 6806.0,
+      "raw_label": "Wedge double bottom at 6806 (04:40-05:05 low 6806)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "beeffb2d8e9e",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Big Gap Down, Buy Climax, Bear Channel Continued' (ET+13 hrs, Feb 5/6; inset Bear Channel Continues Fri-Thurs). Broad 80+ point volatile trending trading range day: gap-down buy climax at 6881, tight bear channel sell-the-close into the sell climax at 6802, truncated wedge double bottom breakout rally to the double-top lower-highs box, the wedge lower highs decline and the final wedge double bottom sell-off into the 6808 close."
+}

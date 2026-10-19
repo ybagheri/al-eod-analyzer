@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "93df6c018339",
+  "date": "2023-05-31",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.6,
+  "session_summary": "Blue title bar: 'Bear Trend, Reversal Up, Trading Range Day'. Sell-the-close leg at the open into the minor parabolic wedge at the 4175 lower-low major trend reversal, a higher-low bull trend with the OOO ledge and failed breakouts below and above it (bull trap trapped out of longs, bear trap but weak sell, higher-low major trend reversal 2nd signal), the magenta wedge rally to the 4203 high and the sell-off into the 4188 close.",
+  "events": [
+    {
+      "label": "sell_the_close",
+      "raw_label": "Sell the close leg at the open (07:00-07:20 high 4205)",
+      "direction": "bear",
+      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "07:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4200.0,
+      "outcome": "success",
+      "outcome_reason": "shaded tan leg with the 1st bear bar had big body, 3rd bar closed near its low, Sell The Close texts",
+      "confidence": 0.55,
+      "evidence": "orange texts with arrow over shaded box"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Minor parabolic wedge into 4175 (07:15-08:20 low 4175)",
+      "direction": "bear",
+      "start_time": {"time": "07:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4175.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted parabolic wedge through the red bear boxes with the Minor Parabolic Wedge text and arrow",
+      "confidence": 0.65,
+      "evidence": "magenta text bottom left"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Lower low major trend reversal wedge (08:15-08:55 low 4175)",
+      "direction": "bull",
+      "start_time": {"time": "08:15", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:55", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4175.0,
+      "outcome": "success",
+      "outcome_reason": "green text Lower Low Major Trend Reversal Wedge with the green box at the doji lows",
+      "confidence": 0.6,
+      "evidence": "green text next to the low"
+    },
+    {
+      "label": "failed_breakout",
+      "raw_label": "Failed breakout below OOO and ledge after failed breakout above (09:30-10:10)",
+      "direction": "bull",
+      "start_time": {"time": "09:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4178.0,
+      "outcome": "success",
+      "outcome_reason": " Bull Trap trapped out of longs, Bear Trap but weak sell so not many trapped bears texts with the tan box low setting up the higher-low reversal",
+      "confidence": 0.6,
+      "evidence": "orange and blue text block right of center"
+    },
+    {
+      "label": "outside_outside",
+      "raw_label": "OOO ledge (inside-outside attempts) (09:35-10:05)",
+      "direction": "neutral",
+      "start_time": {"time": "09:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "10:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4179.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue OOO Ledge text with the light blue shaded box and the OO dotted line",
+      "confidence": 0.55,
+      "evidence": "blue text with arrow and shaded box"
+    },
+    {
+      "label": "higher_low_double_bottom",
+      "raw_label": "Higher low major trend reversal, 2nd signal (10:25-11:00 low 4186)",
+      "direction": "bull",
+      "start_time": {"time": "10:25", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 4186.0,
+      "outcome": "success",
+      "outcome_reason": "green Higher Low Major Trend Reversal 2nd signal text beside the green bull boxes",
+      "confidence": 0.6,
+      "evidence": "green text right of the rally"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Rising wedge bull trend to 4203 (10:00-13:05 high 4203)",
+      "direction": "bull",
+      "start_time": {"time": "10:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 4203.0,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge under the staircased green-box rally with green/dotted breakout lines to the far right high",
+      "confidence": 0.6,
+      "evidence": "magenta dotted line mid and upper right"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis 5/31 07:00-13:00 and Jun, no bar numbers; Consecutive bear bars closing near their lows Sell The Close for possible MM down text"}
+}

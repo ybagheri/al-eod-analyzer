@@ -1,0 +1,168 @@
+{
+    "date":  "2023-06-07",
+    "day_type":  "bear_trending_trading_range",
+    "day_type_confidence":  0.6,
+    "events":  [
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "07:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green Buy The Close text and shaded box",
+                       "label":  "buy_the_close",
+                       "outcome":  "fail",
+                       "outcome_reason":  "green arrow over the shaded opening bull box with the blue 50% chance of Bull Trap comment; the trap formed",
+                       "price_hint":  4300.0,
+                       "raw_label":  "Buy the close, 50% chance of bull trap (06:45-07:00 high 4305)",
+                       "start_time":  {
+                                          "time":  "06:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "07:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text with red arrow on the box tops",
+                       "label":  "micro_double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted fringe at the top with red Micro Double Top and orange Bull Trap texts leading into the bear trend",
+                       "price_hint":  4305.0,
+                       "raw_label":  "Micro double top and bull trap at 4305 (06:50-07:05)",
+                       "start_time":  {
+                                          "time":  "06:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "08:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "orange text and magenta Minor Wedge label",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "orange Weak breakout below Wedge arrow over the shaded bear box and the magenta minor wedge falling into the EMA",
+                       "price_hint":  4286.0,
+                       "raw_label":  "Weak breakout below the minor wedge (07:40-08:15 low 4286)",
+                       "start_time":  {
+                                          "time":  "07:40",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "09:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red Low 2 text and arrow",
+                       "label":  "l2",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted 4290 line with the red Low 2 arrow as the bear leg resumed",
+                       "price_hint":  4290.0,
+                       "raw_label":  "Low 2 sell-off at 4290 (08:40-09:00 high 4290)",
+                       "start_time":  {
+                                          "time":  "08:40",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "10:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red arrow and dotted line mid-chart",
+                       "label":  "l2",
+                       "outcome":  "success",
+                       "outcome_reason":  "second red Low 2 arrow above the red dotted 4284 line before the low of the day leg",
+                       "price_hint":  4284.0,
+                       "raw_label":  "Second Low 2 at 4284 (10:00-10:20 high 4284)",
+                       "start_time":  {
+                                          "time":  "10:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "11:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text bottom right",
+                       "label":  "micro_double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Micro Double Bottom and Trading Range likely texts with the arrow under the lows and the magenta wedge off them",
+                       "price_hint":  4270.0,
+                       "raw_label":  "Micro double bottom, trading range likely (10:30-11:10 low 4270)",
+                       "start_time":  {
+                                          "time":  "10:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.65,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "13:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "large blue shaded region",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded box holding the choppy swings and the rising wedge probe to 4284 within the range",
+                       "price_hint":  4277.0,
+                       "raw_label":  "Blue shaded trading range 4270-4284 (09:45-13:05)",
+                       "start_time":  {
+                                          "time":  "09:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.5,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "12:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta dotted line inside the blue box",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted wedge off the micro double bottom with green bull boxes to the range top",
+                       "price_hint":  4284.0,
+                       "raw_label":  "Rising wedge rally in the range (11:15-12:05 high 4284)",
+                       "start_time":  {
+                                          "time":  "11:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "axis 6/7 06:45-13:00 and 6/8; no bar numbers; BrooksTradingCourse slide with shaded boxes",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "6e54617055d4",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Bull Trap, Then Bear Trend From The Open\u0027. Buy the close rally into a micro double top bull trap at the 4305 high, a bear trend from the open with weak breakout below the minor wedge, two Low 2 sell-offs at 4290 and 4284 into the 4268-4270 lows (micro double bottom, trading range likely), and a sideways blue-shaded range 4270-4284 chop with a rising wedge into the close."
+}

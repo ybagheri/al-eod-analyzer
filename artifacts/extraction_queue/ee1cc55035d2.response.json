@@ -1,0 +1,187 @@
+{
+    "date":  "2022-05-31",
+    "day_type":  "bear_trend_from_open",
+    "day_type_confidence":  0.6,
+    "events":  [
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "07:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue text top left",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue Tight Trading Range text at the small green box with the red dotted open high line",
+                       "price_hint":  4150.0,
+                       "raw_label":  "Tight trading range, okay to take stop entries but not ideal (7:00-7:20 high 4156)",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "08:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "title and heavy sell bars",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "bear trend from the open title with the strong dark sell bars breaking 4130 and 4115",
+                       "price_hint":  4130.0,
+                       "raw_label":  "Bear breakout from the open (7:10-8:00 down to 4105)",
+                       "start_time":  {
+                                          "time":  "07:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "07:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text bottom left",
+                       "label":  "climax",
+                       "outcome":  "fail",
+                       "outcome_reason":  "red and green overlay boxes at the open rally that failed with the green exhaustion context text",
+                       "price_hint":  4135.0,
+                       "raw_label":  "Third bull leg off yesterday\u0027s trading range breakout buy climax trapped late bulls (7:15-7:35)",
+                       "start_time":  {
+                                          "time":  "07:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "08:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta text bottom left",
+                       "label":  "wedge",
+                       "outcome":  "fail",
+                       "outcome_reason":  "magenta dotted falling wedge with the pink Nested Wedge bottom text; price kept falling after",
+                       "price_hint":  4098.0,
+                       "raw_label":  "Nested wedge bottom, second entry buy ok for swing but tight bear channel so probably minor reversal (8:00-8:50 low 4098)",
+                       "start_time":  {
+                                          "time":  "08:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "09:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text center",
+                       "label":  "final_flag",
+                       "outcome":  "fail",
+                       "outcome_reason":  "red L2 Late in Bear possible Final Flag text over the last lower high before the major reversal",
+                       "price_hint":  4084.0,
+                       "raw_label":  "L2 late in bear, possible final flag (9:10-9:30 high 4084)",
+                       "start_time":  {
+                                          "time":  "09:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "10:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text bottom center",
+                       "label":  "major_trend_reversal",
+                       "outcome":  "success",
+                       "outcome_reason":  "green text with green arrow at the blue rounded reversal box above the 4072 green dotted flush line",
+                       "price_hint":  4080.0,
+                       "raw_label":  "LL major trend reversal, probably minor but ok swing buy (9:50-10:15 low 4072)",
+                       "start_time":  {
+                                          "time":  "09:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "12:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta text right side",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "green h2 overlay boxes up the stair-step rally with the Negative Gap Possible Small PB bull trend text",
+                       "price_hint":  4110.0,
+                       "raw_label":  "Rally out of the reversal into the small pullback bull trend (10:10-12:10 high 4128)",
+                       "start_time":  {
+                                          "time":  "10:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "11:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta dotted line",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted rising wedge under the midday rally bars",
+                       "price_hint":  4118.0,
+                       "raw_label":  "Rising wedge in the bull trend (10:45-11:30 high 4118)",
+                       "start_time":  {
+                                          "time":  "10:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "12:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top right",
+                       "label":  "trend_line_break",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted ceiling with the Not great sell but ok to take profits text and blue dotted channel lines from the high",
+                       "price_hint":  4128.0,
+                       "raw_label":  "Not great sell but ok to take profits at the wedge high (12:05-12:50 high 4128)",
+                       "start_time":  {
+                                          "time":  "12:05",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "regular hours chart, Jun 1 07:00-13:00 plus 6/2; formatted with Brooks overlay boxes (red sells, green buys, blue rounded reversal boxes) and no bar-number chips",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "ee1cc55035d2",
+    "schema_version":  1,
+    "session_summary":  "White title bar: \u0027Bear Trend from Open, Late Reversal Up\u0027 (Jun 1, 7:00-13:00 plus 6/2). Tight trading range stop entries at the open, the trend from the open sell-off off yesterday\u0027s buy climax with nested wedge bottom, the LL major trend reversal swing buy at the 4072 lows, the small pullback bull trend recovery with negative gap, and the not-great sell for profits after the 4128 wedge high."
+}

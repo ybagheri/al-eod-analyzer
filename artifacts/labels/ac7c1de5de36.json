@@ -1,0 +1,241 @@
+{
+  "date": "2026-07-15",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.5,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line top left",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted 7630 line with the red Double Top 1 texts and red arrows off the opening range",
+      "placement": null,
+      "price_hint": 7630.0,
+      "raw_label": "Double Top 1 at the 7630 open high (09:45-10:45 high 7630)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 21,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text with shaded flags",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "pink shaded flag boxes labeled 2 and 3 with the magenta Wedge Bear Flags to EMA text as each broke down in the broad bear channel",
+      "placement": null,
+      "price_hint": 7615.0,
+      "raw_label": "Wedge bear flags to EMA 2 and 3 (10:45-11:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 30,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red italic text with arrow left side",
+      "label": "channel_line_overshoot",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "black arrow with red italic Channel trendline overshoot exhaustion signal and expect test of channel midpoint texts; the leg exhausted and reversed up",
+      "placement": null,
+      "price_hint": 7580.0,
+      "raw_label": "Channel trendline overshoot exhaustion signal (11:45-12:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text and dotted line",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted 7578 line with the MM Double Top text at the lows",
+      "placement": null,
+      "price_hint": 7578.0,
+      "raw_label": "MM double top target at 7578 (12:35-13:05 low 7575)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 57,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text mid-chart",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green shaded box then green Tight Bull Channel text with green arrows up and the Bull Channel magnet line",
+      "placement": null,
+      "price_hint": 7622.0,
+      "raw_label": "Tight bull channel reversal, expect minor reversal 2nd leg likely (12:45-14:20 high 7622)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 57,
+      "confidence": 0.5,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text mid-chart",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange MM Bull Channel text with the orange dotted line along the bull leg",
+      "placement": null,
+      "price_hint": 7600.0,
+      "raw_label": "MM bull channel magnet (13:20-14:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 63,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "14:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top center",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Double Top text at the red dotted 7619-7630-fringe with red arrows down into the pullback",
+      "placement": null,
+      "price_hint": 7622.0,
+      "raw_label": "Double top at 7622 (14:15-14:40 high 7622)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 69,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text under the box",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Double Bottom text next to the blue shaded box and the green dotted floor",
+      "placement": null,
+      "price_hint": 7602.0,
+      "raw_label": "Double bottom at 7602 (14:45-15:20 low 7602)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 78,
+      "confidence": 0.5,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red texts top right",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "red Bear Vacuum Test of Support and Minor Reversal texts over the bar 78 spike before the late red sell bars",
+      "placement": null,
+      "price_hint": 7612.0,
+      "raw_label": "Bear vacuum test of support, minor reversal at 7612 (15:20-15:45 high 7616)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "ac7c1de5de36",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel Trend then Bull Reversal - Trading Range Day' (Wed 09:45-15:30 Thu). Large gap up opening trading range with Double Top 1 at 7630, broad bear channel wedge bear flags to the EMA down to the 7575 tight bull channel reversal (MM double top target at 7578, channel trendline overshoot exhaustion signal), the tight bull channel rally to the 7622 double top (MM bull channel magnet), the double bottom at 7602 and the bar 78 vacuum test of support into the 7609 close."
+}

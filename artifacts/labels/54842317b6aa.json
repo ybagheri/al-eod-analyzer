@@ -1,0 +1,241 @@
+{
+  "date": "2021-09-07",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Parabolic wedge magenta text bottom left",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Bear Trend From The Open arrow into the shaded leg and magenta dotted wedge into the green dotted floor low 4510",
+      "placement": null,
+      "price_hint": 4510.0,
+      "raw_label": "Parabolic wedge bear trend from the open (07:00-07:40 low 4510)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red LH DT text above the red dotted ceiling",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 4519 line with LH DT red text and blue dotted descending line into the 4513 retest",
+      "placement": null,
+      "price_hint": 4519.0,
+      "raw_label": "LH DT lower-high double top in the range (08:00-08:30 high 4519)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text and dotted lines mid-chart",
+      "label": "triangle",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue Triangle label with blue dotted descending line off the LH DT forming a small triangle before the breakouts",
+      "placement": null,
+      "price_hint": 4516.0,
+      "raw_label": "Triangle within the trading range (08:15-09:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange HL MTR and DB PB labels under the range",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted 4510-4519 floor line with HL MTR and DB PB orange texts and the magenta rising wedge off the lows",
+      "placement": null,
+      "price_hint": 4512.0,
+      "raw_label": "HL MTR / DB PB higher-low double bottom pullback (07:45-09:10 lows 4510-4514)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue and green texts with the blue shaded leg box",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue BO and follow-through arrow into the shaded blue box with OO outside bars and green bull trend bars",
+      "placement": null,
+      "price_hint": 4526.0,
+      "raw_label": "BO and follow-through, possible bull trending TR day (09:15-10:15 high 4526)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text and arrow at the top",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Failed BO above wedge arrow at the red dotted 4529 ceiling followed by the sell-off bars",
+      "placement": null,
+      "price_hint": 4529.0,
+      "raw_label": "Failed breakout above the wedge at 4529 (10:45-11:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "dotted descending line mid-chart",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge through the red sell bars into the 4519 support",
+      "placement": null,
+      "price_hint": 4520.0,
+      "raw_label": "Falling wedge pullback after the failed breakout (11:00-11:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom right with the green dotted support line",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "green Wedge but room to start of bull channel comment as the bulls test the 4527 red dotted double top",
+      "placement": null,
+      "price_hint": 4527.0,
+      "raw_label": "Wedge but room to start of bull channel (11:45-12:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red LH DT above blue LH MTR texts top right",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 4527 line with LH DT and LH MTR texts and the final sell-off into the 4515 close",
+      "placement": null,
+      "price_hint": 4527.0,
+      "raw_label": "LH DT and LH MTR at 4527 (11:50-13:20 high 4527)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "54842317b6aa",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear trend From The Open, Then Trading Range'. Bear trend from the open into a parabolic wedge at the 4510 low, then a trading range of higher lows, a degenerate triangle double top and a breakout-and-follow-through bull leg (possible bull trending TR day) up to the 4529 high where the failed breakout above the wedge led to an LH double top and LH MTR sell-off through the 4519 green dotted floor into the 4515 close."
+}

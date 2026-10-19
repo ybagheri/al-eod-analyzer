@@ -1,0 +1,241 @@
+{
+  "date": "2026-06-05",
+  "day_type": "spike_and_channel_bear",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text, Do Not Buy red top text",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Bear Spike text under the big red gap-down bars with Yesterday's Low red dotted line overhead",
+      "placement": null,
+      "price_hint": 7505.0,
+      "raw_label": "Bear spike gap down at the open (09:40-10:10 low 7505)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red/orange text stack with shaded pink box",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "pink shaded flag box and magenta dotted wedge under the Wedge Bear flag to 50% texts; the flag broke down into the tight bear channel",
+      "placement": null,
+      "price_hint": 7535.0,
+      "raw_label": "Wedge bear flag to 50% of the bear spike (10:00-10:55 high 7535)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dashed channel lines",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "black dashed parallel channel lines with the red Tight Bear Channel text and stacked red arrows",
+      "placement": null,
+      "price_hint": 7437.0,
+      "raw_label": "Tight bear channel (10:10-13:15 low 7437)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": {
+        "time": "14:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text and dotted line",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted 7467 line with the MM Bear Spike label spanning the midday channel",
+      "placement": null,
+      "price_hint": 7467.0,
+      "raw_label": "MM bear spike measured move at 7467 (11:25-14:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text below the lows",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Double Bottom text with the green dotted floor as the bulls rallied back to the EMA",
+      "placement": null,
+      "price_hint": 7437.0,
+      "raw_label": "Double bottom at 7437-7445 (13:10-13:50 low 7437)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and blue texts with Daily EMA magnet dotted line",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta Wedge Bear flag to EMA first touch after > 20 bars in strong trend likely to be sold; the flag collapsed after the EMA test",
+      "placement": null,
+      "price_hint": 7477.0,
+      "raw_label": "Wedge bear flag to EMA sold on first touch after 20 bars (13:50-14:25 high 7477)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "black Final flag text and dotted wedge",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "pink dotted rising wedge under the Final flag text inside the blue shaded box; the breakout failed",
+      "placement": null,
+      "price_hint": 7420.0,
+      "raw_label": "Final flag inside the shaded box (15:15-15:55 high 7420)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "16:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red italic text bottom right",
+      "label": "channel_line_overshoot",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red italic Final Leg overshoots channel trendline exhaustion signal text over the final big red bars to the 7360 low",
+      "placement": null,
+      "price_hint": 7360.0,
+      "raw_label": "Final leg overshoots channel trendline, exhaustion signal (15:50-16:20 low 7360)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text left of the late leg",
+      "label": "trend_line",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "orange 3R Bear Spike label with red bracket over the three-legged bear continuation",
+      "placement": null,
+      "price_hint": 7390.0,
+      "raw_label": "3R bear spike off the late flag (14:30-15:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "7b897fb9eae8",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend from the Open Spike and Channel All Day Trend' (Fri 09:45-16:00 RTH; inset Daily ETH chart 6/2-6/3 trapped 5/19 bears exit breakeven). Large gap down opening bear spike into a tight bear channel (wedge bear flag to 50% of the bear spike then contracting triangle bear flag), MM bear spike and daily EMA magnet, wedge bear flag to EMA sold on first touch, a double bottom at 7437 rallying to the EMA, the 3R bear spike, final flag and the final leg overshooting the channel trendline as an exhaustion signal into the 7360 low."
+}

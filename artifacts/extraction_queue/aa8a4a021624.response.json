@@ -1,0 +1,187 @@
+{
+    "date":  "2026-02-17",
+    "day_type":  "bull_trending_trading_range",
+    "day_type_confidence":  0.65,
+    "events":  [
+                   {
+                       "bar_index_hint":  12,
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "00:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text bottom left",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green dotted floor with the Double bottom 2 legs down text before the bull streak",
+                       "price_hint":  6798.0,
+                       "raw_label":  "Double bottom, 2 legs down at 6798 (23:25-00:30 low 6798)",
+                       "start_time":  {
+                                          "time":  "23:25",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  18,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "01:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text with arrow",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Bull micro channel text with arrow over the green arrow staircase into the 6860 box",
+                       "price_hint":  6860.0,
+                       "raw_label":  "Bull micro channel breakout (00:30-01:35 high 6860)",
+                       "start_time":  {
+                                          "time":  "00:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "01:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top left",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Double top text over the red dotted 6859 lines as the leg rolled over",
+                       "price_hint":  6859.0,
+                       "raw_label":  "Double top at 6859 (01:00-01:50 high 6860)",
+                       "start_time":  {
+                                          "time":  "01:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "02:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta text mid-chart",
+                       "label":  "truncated_wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted falling wedge with the magenta Truncated wedge text and red arrows to bar 48",
+                       "price_hint":  6830.0,
+                       "raw_label":  "Truncated wedge into 6830 (01:30-02:15 low 6830)",
+                       "start_time":  {
+                                          "time":  "01:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  39,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "02:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green and red texts mid-chart",
+                       "label":  "failed_breakout",
+                       "outcome":  "fail",
+                       "outcome_reason":  "green/red Buying pressure Bar 39 breakout trade reasonable but failed texts",
+                       "price_hint":  6847.0,
+                       "raw_label":  "Bar 39 breakout trade failed (02:00-02:15)",
+                       "start_time":  {
+                                          "time":  "02:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  60,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "03:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta and green texts upper area",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted wedge under the rally with the Magenta Wedge and nested wedge text and Bull 2nd leg up label; the double top failed",
+                       "price_hint":  6881.0,
+                       "raw_label":  "Wedge and nested wedge, bull 2nd leg up to 6880 (02:15-03:20 high 6881)",
+                       "start_time":  {
+                                          "time":  "02:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  60,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "03:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text top center",
+                       "label":  "failed_breakout",
+                       "outcome":  "fail",
+                       "outcome_reason":  "green Double top failed text into the shaded rally box",
+                       "price_hint":  6875.0,
+                       "raw_label":  "Double top failed for the bears (02:55-03:20)",
+                       "start_time":  {
+                                          "time":  "02:55",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "04:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text top right",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Double top text over the red dotted 6881 fringe with red arrows 04:00-04:20 into the bear leg",
+                       "price_hint":  6881.0,
+                       "raw_label":  "Final double top at 6881 (03:25-04:25 high 6881)",
+                       "start_time":  {
+                                          "time":  "03:25",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "05:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text bottom right and shaded box",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded close box with the red Bear leg down but sideways into close text at the lower range",
+                       "price_hint":  6865.0,
+                       "raw_label":  "Bear leg down but sideways into close (04:15-05:10)",
+                       "start_time":  {
+                                          "time":  "04:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "overnight chart axis ET+13 hrs, 23:00-05:00 and Feb 18; bar numbers 12-72; chips 6863.96/6861.75; inset Upper \u0026 Lower Trading Ranges",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "aa8a4a021624",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Broad Bull Trending Trading Range Day\u0027 (ET+13 hrs, Feb 17/18; inset Upper \u0026 Lower Trading Ranges T-T). Broad 90+ point bull trending trading range with volatile limit-order setups: double bottom two legs down at 6798, bull micro channel breakout to the 6860 double top, truncated wedge into 6830 with the failed bar 39 breakout, the nested-wedge bull second leg up to 6880, the final double top at 6881 and the bear leg sideways into the 6862-6869 close."
+}

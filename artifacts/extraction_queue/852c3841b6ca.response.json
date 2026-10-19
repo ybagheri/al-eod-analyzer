@@ -1,0 +1,168 @@
+{
+    "date":  "2022-04-11",
+    "day_type":  "small_pullback_bear_trend",
+    "day_type_confidence":  0.6,
+    "events":  [
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red LH DT text and dotted line",
+                       "label":  "lower_high_double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted 4455 line with LH DT text as the failed bull box rolled over",
+                       "price_hint":  4455.0,
+                       "raw_label":  "LH DT at 4455 (07:10-07:30 high 4455)",
+                       "start_time":  {
+                                          "time":  "07:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta text with dotted wedge",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted falling wedge under the bear staircase with the Wedge But Small Pullback Bear Trend texts",
+                       "price_hint":  4422.0,
+                       "raw_label":  "Wedge but small pullback bear trend (07:20-10:25 low 4422)",
+                       "start_time":  {
+                                          "time":  "07:20",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "10:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text with red dotted lines",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted HH DT at EMA lines with the long blue dotted 4438 line as the EMA tests failed",
+                       "price_hint":  4437.0,
+                       "raw_label":  "HH DT at EMA 4436-4438 (09:00-10:20 high 4437)",
+                       "start_time":  {
+                                          "time":  "09:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "10:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green dotted line and green boxes",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green dotted floor with the green bull box before the EMA retest",
+                       "price_hint":  4422.0,
+                       "raw_label":  "Double bottom at 4422 (09:55-10:25 low 4422)",
+                       "start_time":  {
+                                          "time":  "09:55",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "12:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "OO orange label and shaded box",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "choppy bars between 4423-4438 with the tan OO shaded box at 11:10",
+                       "price_hint":  4430.0,
+                       "raw_label":  "Midday trading range with OO bar (10:20-12:00)",
+                       "start_time":  {
+                                          "time":  "10:20",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "11:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green LL MTR text",
+                       "label":  "higher_low_double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green LL MTR text with the magenta dotted wedge off the low into the breakout test",
+                       "price_hint":  4423.0,
+                       "raw_label":  "LL MTR higher-low double bottom at 4423 (11:25-11:50 low 4423)",
+                       "start_time":  {
+                                          "time":  "11:25",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "12:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red and blue texts at the top",
+                       "label":  "micro_double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted 4438 fringe with green bull box test and the Micro DT Breakout Test texts",
+                       "price_hint":  4438.0,
+                       "raw_label":  "Micro DT breakout test at 4438 (11:55-12:15 high 4438)",
+                       "start_time":  {
+                                          "time":  "11:55",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "13:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "final red ulchars into 4408",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "red bear bars stair-stepping off the EMA into the close after the double top test",
+                       "price_hint":  4408.0,
+                       "raw_label":  "Late trend resumption sell-off to 4408 (12:00-13:20 low 4408)",
+                       "start_time":  {
+                                          "time":  "12:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "overnight chart axis 4/11 07:00-13:20 with prior-day 13:00 sell-the-close leg on the left and 4/12; no bar numbers",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "852c3841b6ca",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Bear Trend, Then Resumption Down\u0027. Sell-the-close carry-over leg (doji and far below EMA so trading range likely) into the 4460 open, LH double top at 4455, wedge but small pullback bear trend down to the 4422 double bottom, HH double top at EMA at 4437, midday trading range with the OO bar, lower-low double bottom at 4423 (LL MTR), micro double top breakout test at 4438 and the final trend resumption sell-off to 4408."
+}

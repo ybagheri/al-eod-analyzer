@@ -1,0 +1,130 @@
+{
+    "date":  "2026-04-17",
+    "day_type":  "bull_trending_trading_range",
+    "day_type_confidence":  0.6,
+    "events":  [
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "22:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta and red texts left edge",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted wedge to the red dotted Globex all-time high line with the Parabolic wedge Minor reversal text",
+                       "price_hint":  7151.0,
+                       "raw_label":  "Parabolic wedge rally to the Globex all-time high (22:05-22:35 high 7151)",
+                       "start_time":  {
+                                          "time":  "22:05",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "23:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text mid-left",
+                       "label":  "channel",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Tight bull channel with two legs up text with green arrows up the strong relentless rally",
+                       "price_hint":  7180.0,
+                       "raw_label":  "Tight bull channel with two legs up (22:45-23:40 high 7180)",
+                       "start_time":  {
+                                          "time":  "22:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  18,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "23:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text above the dotted ceiling",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted 7172 line with red arrows on the twin tops",
+                       "price_hint":  7172.0,
+                       "raw_label":  "Double top at 7172 (22:55-23:20 high 7172)",
+                       "start_time":  {
+                                          "time":  "22:55",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "01:35",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue/red texts top right",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue arrow to the New all-time high (RTH) 7185.75 box with the red arrow reversal and profit taking then trading range comment",
+                       "price_hint":  7185.0,
+                       "raw_label":  "Reversal off the new all-time high 7185 (00:50-01:35 high 7185)",
+                       "start_time":  {
+                                          "time":  "00:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  60,
+                       "confidence":  0.5,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "02:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green arrows at bars 60-72",
+                       "label":  "higher_low_double_bottom",
+                       "outcome":  "unclear",
+                       "outcome_reason":  "green dotted floor with green arrows under the red profit-taking arrows inside the range",
+                       "price_hint":  7143.0,
+                       "raw_label":  "Higher-low double bottom attempt off 7143/7153 (01:15-02:55 low 7143)",
+                       "start_time":  {
+                                          "time":  "01:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.65,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "04:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue shaded box upper right",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded box with the red Profit taking then trading range into close and Major trend reversal failed texts",
+                       "price_hint":  7155.0,
+                       "raw_label":  "Trading range into close (01:15-04:10)",
+                       "start_time":  {
+                                          "time":  "01:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "overnight chart axis ET+12 hrs, 22:00-04:00 and Apr 18; bar numbers 12-72; chips 7165.25/7160.83; inset Market Consolidation or Distribution at All-time High",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "b2bd8ba437ef",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Big Gap Up, Rally to New All-time High Then Trading Range\u0027 (ET+12 hrs, Apr 17/18; inset Market Consolidation or Distribution at All-time High Fri). Gap-up parabolic wedge minor reversal at the Globex all-time high 7151, tight bull channel with two legs up through the 7172 double top to the New All-time High (RTH) 7185.75, reasonable sells and buys with limit order trading up to the ATH, profit taking then trading range into the close (major trend reversal failed) over the shaded 7143-7167 box."
+}

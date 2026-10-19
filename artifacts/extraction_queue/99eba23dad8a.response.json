@@ -1,0 +1,149 @@
+{
+    "schema_version":  1,
+    "image_id":  "99eba23dad8a",
+    "date":  "2025-08-22",
+    "day_type":  "bull_trending_trading_range",
+    "day_type_confidence":  0.6,
+    "session_summary":  "Blue title bar: \u0027Bull Trend From The Open, Then Trading Range\u0027 (07:00-13:00, bar numbers 12-72). Major bull breakout off the open into 6483, minor wedge to the 6493 top and the blue shaded tight trading range with the red dotted 6493 ceiling, minor lower-high double tops and the breakout test at the 6473 green floor, and the minor higher-low double bottom off 6478 into the 6485 close.",
+    "events":  [
+                   {
+                       "label":  "major_bull_surprise",
+                       "raw_label":  "Major bull breakout trend from the open (07:00-07:30 high 6483)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:00",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "07:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  12,
+                       "price_hint":  6483.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "orange Major bull breakout arrow over the shaded bull leg with stacked green arrows",
+                       "confidence":  0.65,
+                       "evidence":  "orange text with shaded box"
+                   },
+                   {
+                       "label":  "wedge",
+                       "raw_label":  "Minor wedge to the 6493 top (07:45-08:40 high 6493)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "07:45",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "08:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  24,
+                       "price_hint":  6493.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta Minor wedge text with arrow and the magenta dotted rising wedge into the red dotted ceiling",
+                       "confidence":  0.6,
+                       "evidence":  "magenta text top left"
+                   },
+                   {
+                       "label":  "lower_high_double_top",
+                       "raw_label":  "Minor lower high double top at 6493 (08:20-09:55 high 6493)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "08:20",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "09:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  24,
+                       "price_hint":  6493.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "red Minor lower high double top text behind the red dotted 6493 line with stacked red arrows down the range",
+                       "confidence":  0.6,
+                       "evidence":  "red text top right"
+                   },
+                   {
+                       "label":  "breakout",
+                       "raw_label":  "Breakout test that failed at the 6473 floor (09:40-10:10)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "09:40",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "10:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  36,
+                       "price_hint":  6473.0,
+                       "outcome":  "fail",
+                       "outcome_reason":  "green Breakout test text with the green dotted 6473 line; the bear push below failed",
+                       "confidence":  0.55,
+                       "evidence":  "green text and dotted line"
+                   },
+                   {
+                       "label":  "double_top",
+                       "raw_label":  "Later double top of the range ceiling (10:15-11:50 high 6493)",
+                       "direction":  "bear",
+                       "start_time":  {
+                                          "time":  "10:15",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "11:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  60,
+                       "price_hint":  6493.0,
+                       "outcome":  "unclear",
+                       "outcome_reason":  "repeated red arrows at the red dotted 6493 fringe kept producing mild pullbacks only",
+                       "confidence":  0.5,
+                       "evidence":  "red arrows at bars 48 and 60"
+                   },
+                   {
+                       "label":  "tight_trading_range",
+                       "raw_label":  "Tight trading range after the bull trend (07:35-13:05)",
+                       "direction":  "neutral",
+                       "start_time":  {
+                                          "time":  "07:35",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  60,
+                       "price_hint":  6483.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded box over the chop between 6473-6493 with the blue Bull trend from the open and then tight trading range text",
+                       "confidence":  0.65,
+                       "evidence":  "blue text and shaded box"
+                   },
+                   {
+                       "label":  "higher_low_double_bottom",
+                       "raw_label":  "Minor higher low double bottom (12:25-13:05 low 6478)",
+                       "direction":  "bull",
+                       "start_time":  {
+                                          "time":  "12:25",
+                                          "tz":  "America/Los_Angeles"
+                                      },
+                       "end_time":  {
+                                        "time":  "13:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "bar_index_hint":  72,
+                       "price_hint":  6478.0,
+                       "outcome":  "success",
+                       "outcome_reason":  "green Minor higher low double bottom text under the bar 72 lows with green arrows",
+                       "confidence":  0.55,
+                       "evidence":  "green text right edge"
+                   }
+               ],
+    "extraction_meta":  {
+                            "provider":  "file",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "image_note":  "overnight chart axis 07:00-13:00, 8/22 and 8/25; bar numbers 12-72; no black bodies (outlined bars)"
+                        }
+}

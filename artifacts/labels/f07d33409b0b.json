@@ -1,0 +1,241 @@
+{
+  "date": "2025-11-17",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted Trend resistance line over the stair-step bear trend with the Bull momentum reducing green text",
+      "placement": null,
+      "price_hint": 6740.0,
+      "raw_label": "Bear channel with trend resistance (23:00-03:40 low 6657)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded box left",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box at bars 12-18 with red dotted fringe and mixed arrows",
+      "placement": null,
+      "price_hint": 6750.0,
+      "raw_label": "Opening shaded chop box (23:30-00:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text with red arrow",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red arrow down bar 24 with the red Opening range breakout Lower low in bear channel text",
+      "placement": null,
+      "price_hint": 6720.0,
+      "raw_label": "Opening range breakout, lower low in bear channel (00:30-00:55 low 6719)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted ceiling with the red Double top text and red arrows starting the next leg down",
+      "placement": null,
+      "price_hint": 6760.0,
+      "raw_label": "Double top at 6765 (00:50-01:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text center",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "green text small pullback that reached the trendline resistance and failed",
+      "placement": null,
+      "price_hint": 6760.0,
+      "raw_label": "Bull micro channel pullback to trendline (01:00-01:35 high 6760)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text",
+      "label": "l2",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Low 2 text with red arrows at the failed bull attempts by midday",
+      "placement": null,
+      "price_hint": 6740.0,
+      "raw_label": "Low 2 in the shaded box (02:50-03:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text right side",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Tight trading range breakout text with red arrow through the box low",
+      "placement": null,
+      "price_hint": 6705.0,
+      "raw_label": "Tight trading range breakout down (03:10-03:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text bottom right",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge with the Nested wedge text and green arrow up at the lows",
+      "placement": null,
+      "price_hint": 6660.0,
+      "raw_label": "Nested wedge into the 6657 low (03:35-04:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta Sell climax text at the exhaustion lows before the reversal rally into the close",
+      "placement": null,
+      "price_hint": 6658.0,
+      "raw_label": "Sell climax at the lows (03:55-04:20 low 6657)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "f07d33409b0b",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Channel & Trending Trading Range Day' (ET+13 hrs, Nov 17-18; inset Bear Channel dailies Tues-Fri-Mon). Bear trend resistance from the open with bull momentum reducing, the opening range breakout lower low in the bear channel, the double top with the bull micro channel pullback to the trendline, the tight trading range breakout down to the nested wedge sell climax at 6657 and the rally into the close."
+}

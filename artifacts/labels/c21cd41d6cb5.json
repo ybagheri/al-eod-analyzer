@@ -1,0 +1,191 @@
+{
+  "date": "2026-01-21",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text upper left",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Small pullback bull trend from open Two legs up text with green arrows up to yesterday's high",
+      "placement": null,
+      "price_hint": 6898.0,
+      "raw_label": "Small pullback bull trend from open, two legs up (23:05-00:10 high 6898)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted Yesterday's high line with the Double top & two legs up Reasonable sell text and red arrows",
+      "placement": null,
+      "price_hint": 6898.0,
+      "raw_label": "Double top and two legs up, reasonable sell at 6898 (23:55-00:25 high 6900)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text mid-chart",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge with the magenta Wedge on 2nd leg down text and red arrows",
+      "placement": null,
+      "price_hint": 6842.0,
+      "raw_label": "Wedge on the 2nd leg down (00:30-01:35 low 6842)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text bottom left",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red Breakout below low of day failed, Sell climax text under the shaded low box",
+      "placement": null,
+      "price_hint": 6842.0,
+      "raw_label": "Breakout below the low of day failed, sell climax (01:15-01:40 low 6842)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom center",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Higher low double bottoms Buying pressure text with the green dotted floor and green arrows",
+      "placement": null,
+      "price_hint": 6848.0,
+      "raw_label": "Higher low double bottoms, buying pressure (01:35-02:20 low 6848)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with green arrow",
+      "label": "buy_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Strong breakout then Buy The Close rally text with green arrows up the big trend bars",
+      "placement": null,
+      "price_hint": 6920.0,
+      "raw_label": "Strong breakout then buy the close rally (02:50-03:40 high 6940)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text top right",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Buy climax text at the shaded box top as the reversal began",
+      "placement": null,
+      "price_hint": 6945.0,
+      "raw_label": "Buy climax top at 6945 (03:30-04:00 high 6945)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "c21cd41d6cb5",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bull Trend From Open in Bull Trending Trading Range Day' (ET+13 hrs, Jan 21/22; inset Lower Trading Range Or Breakout/Rally?). Small pullback bull trend from open with two legs up into the double top at yesterday's high 6898 (reasonable sell), the wedge second leg down with the failed breakout below the low of day and sell climax at 6842, higher-low double bottoms with buying pressure, the strong breakout then buy-the-close rally to the 6945 buy climax, and the pullback into the 6918 close."
+}

@@ -1,0 +1,187 @@
+{
+    "date":  "2026-03-04",
+    "day_type":  "spike_and_channel_bear",
+    "day_type_confidence":  0.6,
+    "events":  [
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "23:30",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text top left",
+                       "label":  "failed_breakout",
+                       "outcome":  "fail",
+                       "outcome_reason":  "green Two legs up Bull trap text over the opening bulls with red arrows following",
+                       "price_hint":  6872.0,
+                       "raw_label":  "Two legs up Bull trap at the open (23:00-23:30 high 6872)",
+                       "start_time":  {
+                                          "time":  "23:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "01:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text with arrow",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Bear breakout (spike) text with arrow over the stair-step bear bars",
+                       "price_hint":  6810.0,
+                       "raw_label":  "Bear breakout spike (23:30-01:00 low 6810)",
+                       "start_time":  {
+                                          "time":  "23:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "00:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta and green texts",
+                       "label":  "truncated_wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta Truncated wedge and green Double bottom texts at the bar 24 lows",
+                       "price_hint":  6810.0,
+                       "raw_label":  "Truncated wedge double bottom at 6810 (00:15-00:50)",
+                       "start_time":  {
+                                          "time":  "00:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "01:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta dotted line",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted rising wedge under the recovery bars into the red dotted ceiling",
+                       "price_hint":  6848.0,
+                       "raw_label":  "Rising wedge to the double top (00:30-01:40 high 6848)",
+                       "start_time":  {
+                                          "time":  "00:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.65,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "01:55",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text and dotted line",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red Double top text over the red dotted line with red arrows starting the next bear leg",
+                       "price_hint":  6848.0,
+                       "raw_label":  "Double top at 6848 (01:30-01:55 high 6848)",
+                       "start_time":  {
+                                          "time":  "01:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "02:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta text at the low",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted falling wedge with the magenta Wedge text at the lows",
+                       "price_hint":  6788.0,
+                       "raw_label":  "Falling wedge into the 6788 low (01:50-02:10 low 6788)",
+                       "start_time":  {
+                                          "time":  "01:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.65,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "04:15",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue shaded range box",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded box with the Tight trading range and Limit order market texts, green dotted floor and blue dotted ceiling",
+                       "price_hint":  6790.0,
+                       "raw_label":  "Tight trading range, limit order market (02:00-04:15)",
+                       "start_time":  {
+                                          "time":  "02:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  60,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "04:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green texts bottom right",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Double bottom and Triple bottom texts beside the range lows ahead of the trend reversal",
+                       "price_hint":  6782.0,
+                       "raw_label":  "Double bottom and triple bottom attempts in the range (02:20-04:10)",
+                       "start_time":  {
+                                          "time":  "02:20",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "05:10",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text with green arrow",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Major trend reversal Then tight bull channel arrow with green arrows up the rally bars",
+                       "price_hint":  6810.0,
+                       "raw_label":  "Major trend reversal then tight bull channel breakout (04:10-05:10 high 6837)",
+                       "start_time":  {
+                                          "time":  "04:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "overnight chart axis ET+13 hrs, 23:00-05:00, Mar 6 markers; bar numbers 12-72; chips 6828.50/6816.31",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "c687a6d8722f",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Bear Spike and Channel with Late Major Trend Reversal\u0027 (ET+13 hrs, Mar 4-6; inset bear-channel dailies Wed-Thurs). Two legs up bull trap at the 6872 open high, the bear breakout spike into the trunc楔ed wedge double bottom at 6810, the bear channel continued with the double top at 6848 and the wedge into the 6788 low, the tight trading range limit-order market with double and triple bottoms, and the late major trend reversal into the tight bull channel rally to 6837."
+}

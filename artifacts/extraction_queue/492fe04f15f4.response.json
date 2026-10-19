@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "image_id": "492fe04f15f4",
+  "date": "2026-01-12",
+  "day_type": "spike_and_channel_bull",
+  "day_type_confidence": 0.7,
+  "session_summary": "Blue title bar: 'Bull Spike from Open, Bull Channel and New All-time High' (ET+13 hrs, Jan 12/13, Jan 13 axis; inset New All-time High daily W-F-M). Bull rally/spike from the open (23:00 low 6969), major trend reversal failed at the pullback low 6995 with buying pressure after strong opening rally, a magenta wedge top with some selling pressure into the 01:55 minor reversal (low 7002.5), then a small pullback bull trend of consecutive wedges up to the previous-day all-time-high breakout at the 7025 new high (bar 72) closing ~7016/7018.",
+  "events": [
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Major trend reversal failed, buying pressure after strong opening rally (23:55-00:20 low 6995)",
+      "direction": "neutral",
+      "start_time": {"time": "23:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:25", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6995.0,
+      "outcome": "fail",
+      "outcome_reason": "green text with the tall green arrow to the bar 12 pullback low; bulls stepped right back in",
+      "confidence": 0.6,
+      "evidence": "green Major trend reversal failed / Buying pressure after strong opening rally texts and green arrows"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge top with some selling pressure (00:50-01:45 high 7011)",
+      "direction": "bear",
+      "start_time": {"time": "00:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 7011.0,
+      "outcome": "partial",
+      "outcome_reason": "magenta dotted wedge to the 01:15 top with red arrows 01:15-01:35 carrying price down to 7005",
+      "confidence": 0.6,
+      "evidence": "magenta Wedge / Some selling pressure texts over the bar 24-36 sector"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge minor reversal at 7002.5 (01:35-02:05 low 7002.5)",
+      "direction": "bear",
+      "start_time": {"time": "01:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 7002.5,
+      "outcome": "fail",
+      "outcome_reason": "red Minor reversal text with magenta dotted falling wedge into bar 36 and the immediate bull leg up 02:05 onward",
+      "confidence": 0.6,
+      "evidence": "magenta Wedge and red Minor reversal texts with red arrow 01:40"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Bull rally/spike from open into bull channel, consecutive wedges (23:00-04:30 high 7025)",
+      "direction": "bull",
+      "start_time": {"time": "23:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:35", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 7025.0,
+      "outcome": "success",
+      "outcome_reason": "green text above the opening spike, small pullback bull trend red text, blue previous day all-time high magnet text and magenta dotted consecutive wedges to the close",
+      "confidence": 0.7,
+      "evidence": "Bull rally/spike from open text, Small Pullback Bull Trend text, stacked green arrows and bar numbers 12-72"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "New all-time high breakout, previous day resistance test and breakout (04:15-04:40 high 7025)",
+      "direction": "bull",
+      "start_time": {"time": "04:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 7025.0,
+      "outcome": "partial",
+      "outcome_reason": "red dash-dot New all-time high line broken at bar 72 before the red arrow sell-off into the close",
+      "confidence": 0.6,
+      "evidence": "red New all-time high text and dash-dot line with blue boxed final bars"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+13 hrs; inset shows new all-time high on the daily chart"}
+}

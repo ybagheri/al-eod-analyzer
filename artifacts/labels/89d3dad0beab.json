@@ -1,0 +1,166 @@
+{
+  "date": "2025-09-03",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with arrow",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Failed low 2 breakout arrow under the shaded box top at 6465 with red arrows down afterward",
+      "placement": null,
+      "price_hint": 6465.0,
+      "raw_label": "Failed low 2 breakout off the open low (22:30-23:10 high 6465)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "00:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top with shaded box and green dotted floors",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box over the choppy doji bars with the Selling pressure doji bars Breakout mode wait text",
+      "placement": null,
+      "price_hint": 6452.0,
+      "raw_label": "Shaded breakout-mode trading range with doji bars (23:15-00:40 high 6465)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Lower low double top text over the red dotted 6450 line before the bear leg",
+      "placement": null,
+      "price_hint": 6450.0,
+      "raw_label": "Lower low double top at 6450 (00:20-01:05 high 6450)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text with magenta dotted line",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge under the bear bars with the Broad bear channel red text",
+      "placement": null,
+      "price_hint": 6428.0,
+      "raw_label": "Broad bear channel falling wedge (00:30-03:30 low 6428)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded box and green dotted floor",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with the green dotted floor over the bar 60 lows before the trendline breakout",
+      "placement": null,
+      "price_hint": 6428.0,
+      "raw_label": "Double bottom at 6428 (02:00-03:25 low 6428)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with arrow right side",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Trendline breakout and rally into close arrow with green arrows up the final bull leg",
+      "placement": null,
+      "price_hint": 6458.0,
+      "raw_label": "Trendline breakout and rally into close (03:25-04:10 high 6458)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "89d3dad0beab",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel in Trading Range Day' (Sep 3/4, 22:00-04:05; chips 6460.50/6432.22). Failure low 2 breakout off the 6438 open low into the 6465 doji top (selling pressure, doji bars, breakout mode, wait), a shaded trading range with a lower-low double top at 6450, the broad bear channel falling wedge into the 6428 double bottom lows, and the trendline breakout rally into the 6458 close."
+}

@@ -1,0 +1,241 @@
+{
+  "date": "2026-06-18",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": 1,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red texts with red dotted 7578 and 7570 lines and red arrows down the first bars",
+      "placement": null,
+      "price_hint": 7570.0,
+      "raw_label": "Double top with bar 64 lower high yesterday, 50% pullback bar 1 (10:00 bar 1 high 7578)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text bottom left",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red text on the strong opening sell bars of the bear spike",
+      "placement": null,
+      "price_hint": 7560.0,
+      "raw_label": "Bear trend from the open, tight bear channel with a second leg likely (10:00-10:35 low 7537)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom left",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green text with green arrows at the shaded box lows and the 50% of strong moves note",
+      "placement": null,
+      "price_hint": 7540.0,
+      "raw_label": "Double bottom at 7537 (10:35-10:55)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta dotted wedge up from the double bottom that rolled over into the second sale",
+      "placement": null,
+      "price_hint": 7550.0,
+      "raw_label": "Rising wedge to 7552 (11:05-11:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green text and green arrow at the second shaded box low before the midday rally",
+      "placement": null,
+      "price_hint": 7545.0,
+      "raw_label": "Second double bottom at 7543 (11:30-11:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text mid-chart",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted 7578 line with the second Double Top red text and red arrows down",
+      "placement": null,
+      "price_hint": 7575.0,
+      "raw_label": "Double top at 7578 retest of the open high (12:55-13:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text center",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Double Bottoms text, green 50% retracement dotted line and shaded chop boxes on the sideways day",
+      "placement": null,
+      "price_hint": 7560.0,
+      "raw_label": "Trading range core with double bottoms and double top (12:30-15:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text top center",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge Bear Flag header with the magenta dotted rails into the Wedge Top at 7582",
+      "placement": null,
+      "price_hint": 7578.0,
+      "raw_label": "Wedge bear flag rising to 7582 (14:40-15:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text right",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted 7545 line with the green Double Bottom text and green arrows up",
+      "placement": null,
+      "price_hint": 7550.0,
+      "raw_label": "Double bottom at 7545 (15:00-15:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "15:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "fa898e2e9764",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Spike then Trading Range Day forms Wedge Bear Flag' (Thu 10:00-15:30 into Fri 9:45). Double top with bar 64 lower high yesterday and the 50% pullback bar 1, bear trend from the open with the tight bear channel second leg, double bottoms at 7537 and 7543, the rally retest double top at 7578, the trading range day with double bottoms, the wedge bear flag to 7582 and the OOO-IO breakout mode close."
+}

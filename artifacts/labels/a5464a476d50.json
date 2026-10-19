@@ -1,0 +1,166 @@
+{
+  "date": "2021-11-08",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text top left",
+      "label": "outside_outside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "orange Outside down text over the tall opening outside bar with bad follow-through",
+      "placement": null,
+      "price_hint": 4706.0,
+      "raw_label": "Outside down bar at the open (07:10-07:25 high 4707)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "three texts stacked top left",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Bear Trend From The Open with blue But bad follow-through texts and the magenta wedge lower lows",
+      "placement": null,
+      "price_hint": 4691.0,
+      "raw_label": "Bear trend from the open, bad follow-through (07:05-08:30 low 4691)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 4703 line with LH DT label",
+      "placement": null,
+      "price_hint": 4703.0,
+      "raw_label": "LH DT at 4703 (07:15-07:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green and magenta labels bottom left",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted floors with DB, Wedge Failed breakout and HL DB texts off the lows",
+      "placement": null,
+      "price_hint": 4687.0,
+      "raw_label": "DB wedge bottom then failed breakout and HL DB at 4687 (08:20-10:05 low 4687)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line upper area",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge through the green bull boxes to the HH DT fringe",
+      "placement": null,
+      "price_hint": 4699.0,
+      "raw_label": "Bull wedge rally to 4699 (10:00-11:15 high 4699)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta and red texts top right",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta/red Wedge HH DT and Wedge HH MTR labels over the red dotted ceiling before the final decline",
+      "placement": null,
+      "price_hint": 4699.0,
+      "raw_label": "Wedge HH DT and HH MTR at 4699 (11:15-12:20 high 4699)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "a5464a476d50",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Trading Range'. Outside down open then bear trend from the open but bad follow-through, LH double top at 4703 and the wedges down to the 4687 HL double bottom, HH double top failures into the bear channel, the bull wedge rally to the 4699 HH MTR double top and the final sell-off into the 4690 close."
+}

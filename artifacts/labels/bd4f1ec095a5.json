@@ -1,0 +1,266 @@
+{
+  "date": "2023-05-10",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.55,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Lower High Double Top after Globex rally Buy Climax text with the red dotted arrow line down",
+      "placement": null,
+      "price_hint": 4170.0,
+      "raw_label": "Lower high double top after Globex rally buy climax (21:30-21:50 high 4170)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "21:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text with dashed arrow lines",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Second Leg Measured Move text with red dotted trendline from the buy climax to the lows",
+      "placement": null,
+      "price_hint": 4131.0,
+      "raw_label": "Second leg measured move down (21:50-23:05 low 4131)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text with dotted lines",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue Broad Bear Channel text with the black dotted parallel channel lines",
+      "placement": null,
+      "price_hint": 4113.0,
+      "raw_label": "Broad bear channel (21:50-02:00 low 4113)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text with dotted wedge",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "magenta Wedge & Low 2 text with the magenta dotted falling wedge into the 4131 low",
+      "placement": null,
+      "price_hint": 4145.0,
+      "raw_label": "Wedge and Low 2 bear flags (22:20-23:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text below the shaded box",
+      "label": "inside_inside",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "tan shaded inside-inside box with the orange Inside-inside bars Breakout Mode Buying Pressure text",
+      "placement": null,
+      "price_hint": 4134.0,
+      "raw_label": "Inside-inside bars breakout mode buying pressure (22:50-23:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded box with the orange text",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded doji chop box under the orange Small Pullback Bear Trend text",
+      "placement": null,
+      "price_hint": 4138.0,
+      "raw_label": "Small pullback bear trend shaded chop (23:40-00:50)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with dotted floor bottom right",
+      "label": "lower_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Lower Low Double Bottom after Tight Bear Channel and Sell Climax text with the green dotted floor",
+      "placement": null,
+      "price_hint": 4113.0,
+      "raw_label": "Lower low double bottom after tight bear channel and sell climax (01:35-02:05 low 4113)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text with arrow",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue Trendline breakout text with arrow at the channel trendline break",
+      "placement": null,
+      "price_hint": 4128.0,
+      "raw_label": "Trendline breakout (01:55-02:15 high 4128)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text and green boxes",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge under the green-box bull staircase with the Small Pullback Bull Trend Buy for any reason Buy breakouts text",
+      "placement": null,
+      "price_hint": 4162.0,
+      "raw_label": "Small pullback bull trend rising wedge (02:05-03:35 high 4162)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top right",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta/pink dotted wedge top into the red Wedge Buy Climax text at the highs",
+      "placement": null,
+      "price_hint": 4162.0,
+      "raw_label": "Wedge buy climax at 4162 (03:30-04:00 high 4162)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "bd4f1ec095a5",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Broad Bear Channel Then Small Pullback Bull Trend Reversal' (May 10/11, 21:30-04:10). Lower-high double top after the Globex rally buy climax, second leg measured move and the broad bear channel with wedge and low 2 down the inside-inside breakout mode bars, the small pullback bear trend chop, the lower-low double bottom after tight bear channel and sell climax at 4113, the trendline breakout and small pullback bull trend rising wedge into the wedge buy climax at 4162."
+}

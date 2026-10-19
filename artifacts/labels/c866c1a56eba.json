@@ -1,0 +1,191 @@
+{
+  "date": "2025-12-17",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6875 fringe with the Double top with yesterday red text and red arrows",
+      "placement": null,
+      "price_hint": 6875.0,
+      "raw_label": "Double top with yesterday at 6875 (23:00-23:10 high 6875)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded upper box",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with red arrows at the 6855-6875 chop and the yesterday dotted line",
+      "placement": null,
+      "price_hint": 6855.0,
+      "raw_label": "Upper trading range shaded box (23:00-00:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text with blue arrow",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue Trading range open breakout arrow breaking the shaded box low",
+      "placement": null,
+      "price_hint": 6845.0,
+      "raw_label": "Trading range open breakout down (23:20-00:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "03:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and descending dotted line",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Tight bear channel text with the red dotted descending arrow line over the relentless decline",
+      "placement": null,
+      "price_hint": 6783.0,
+      "raw_label": "Tight bear channel with lower highs and lows (23:30-03:10 low 6783)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "02:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "shaded lower box",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with red dotted 6818 ceiling, green dotted floor and bars 24-36",
+      "placement": null,
+      "price_hint": 6810.0,
+      "raw_label": "Lower trading range shaded chop (00:25-02:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text mid-chart",
+      "label": "trend_line_break",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Trendline break and second entry buy text with green arrow up to the ceiling",
+      "placement": null,
+      "price_hint": 6830.0,
+      "raw_label": "Trendline break and second entry buy (00:50-01:10 high 6818)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "05:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text bottom right",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "big dark bar under the shaded range with the red End of day range breakout failed text",
+      "placement": null,
+      "price_hint": 6762.0,
+      "raw_label": "End of day range breakout failed (04:20-05:05 low 6762)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "c866c1a56eba",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Channel with Upper/Lower Trading Ranges' (ET+13 hrs, Dec 17; inset Bear Channel Continues Th-W). Double top with yesterday at 6875 and the shaded upper trading range, the trading range open breakout down the tight bear channel into the lower shaded trading range (trendline break second entry buy at 6818), the continued stair-step into the 6783 lows, and the end of day range breakout that failed at 6762."
+}

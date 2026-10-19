@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "4d2d47856071",
+  "date": "2026-04-02",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.65,
+  "session_summary": "Blue title bar: 'Big Gap Down, Rally to Buy Climax Then Trading Range' (ET+12 hrs, Apr 2/3; inset Broad Trading Range Breakout Mode). US-Iran war breaking news spike: opening reversal from the 6525 gap-low on strong bull breakouts (wedge failed) to a buy climax 6625 at 22:35, then a wide 130-point trading range with measured move projections, red double top 6615 sell-offs, a 6590 floor re-test and late bears/bulls swings into the 6623 close (yesterday's close), and late red bars.",
+  "events": [
+    {
+      "label": "opening_reversal",
+      "raw_label": "Opening reversal on the gap down, strong bull breakouts, wedge failed (22:00-22:25 low 6525)",
+      "direction": "bull",
+      "start_time": {"time": "22:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:30", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6525.0,
+      "outcome": "success",
+      "outcome_reason": "blue boxed gap-low flush then green Strong bull breakouts and Opening reversal texts with green arrows lifting price to 6625",
+      "confidence": 0.65,
+      "evidence": "green texts with green arrow into the rebound bars, magenta Wedge failed text with dotted wedge at the open"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Wedge failed at the open (22:05-22:25)",
+      "direction": "bear",
+      "start_time": {"time": "22:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:28", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6540.0,
+      "outcome": "fail",
+      "outcome_reason": "magenta Wedge failed text with magenta dotted wedge under the opening spike bars before the bull ramp",
+      "confidence": 0.6,
+      "evidence": "magenta text bottom left aside the wedge dots"
+    },
+    {
+      "label": "climax",
+      "raw_label": "Buy climax and profit taking at the 6625 news spike (22:25-22:45 high 6625)",
+      "direction": "bull",
+      "start_time": {"time": "22:20", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6625.0,
+      "outcome": "success",
+      "outcome_reason": "tall white news spike bar to yesterday's close level with the Buy climax & profit taking text and red arrows 22:30 onward",
+      "confidence": 0.65,
+      "evidence": "green text beside the red dotted 6623 yesterday close line, blue US-Iran war breaking news spike text"
+    },
+    {
+      "label": "trading_range_begin",
+      "raw_label": "Wide 130-point trading range, limit order market (22:50-04:05)",
+      "direction": "neutral",
+      "start_time": {"time": "22:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 18,
+      "price_hint": 6607.0,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded box (Wide 130-point range for the day) with trading range reversal setups after buy climax, limit order market texts and green dotted 6589 floor",
+      "confidence": 0.65,
+      "evidence": "blue box bars 18-72, blue and black texts bottom center, bar numbers all sectors"
+    },
+    {
+      "label": "measured_move",
+      "raw_label": "Measured move projection from the midday buy leg (00:35-01:40 high 6615)",
+      "direction": "bull",
+      "start_time": {"time": "00:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:45", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6615.0,
+      "outcome": "partial",
+      "outcome_reason": "orange dotted projection lines with the orange Measured move text carried the rebound to the red dotted 6615 double top",
+      "confidence": 0.6,
+      "evidence": "orange Measured move text and orange dotted horizontals at 6597/6604/6633"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Double top at 6615 then sell-off (01:15-02:05 low 6590)",
+      "direction": "bear",
+      "start_time": {"time": "01:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6615.0,
+      "outcome": "success",
+      "outcome_reason": "red dotted 6615 line with red arrows 01:25, 01:35 into the bar 48-52 lows 6590",
+      "confidence": 0.6,
+      "evidence": "red text top center and stacked red arrows"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Persistent bull close at range top (03:35-04:10 high 6625)",
+      "direction": "bull",
+      "start_time": {"time": "03:30", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:15", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6625.0,
+      "outcome": "success",
+      "outcome_reason": "green arrow up bar 74 and the closing thrust bars back to the 6623 yesterday-close ceiling",
+      "confidence": 0.55,
+      "evidence": "green arrows near bar 72/74 and final white bars at the top chip"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+12 hrs; chips 6510/6602; inset Broad Trading Range Breakout Mode; axis label Apr 3"}
+}

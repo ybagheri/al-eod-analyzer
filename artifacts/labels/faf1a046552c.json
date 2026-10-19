@@ -1,0 +1,191 @@
+{
+  "date": "2023-01-06",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text above bar 1 spike",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "shaded brown spike box with the red climax bars and Bear Trap text; bulls reversed the open sell-off",
+      "placement": null,
+      "price_hint": 3838.0,
+      "raw_label": "Consecutive strong bear bars climax spike at the open (09:00-09:10 low 3833)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green and red texts",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "green Bear Trap text under the red trapped-bears boxes that forced shorts to cover higher",
+      "placement": null,
+      "price_hint": 3845.0,
+      "raw_label": "Bear trap - short sales below bar 3 trapped (09:00-09:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text left",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green buy boxes up the reversal bars with scale in bulls buying below bar 1 text",
+      "placement": null,
+      "price_hint": 3860.0,
+      "raw_label": "Reversal up from the open spike low (09:15-09:40)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge over the first recovery wave",
+      "placement": null,
+      "price_hint": 3888.0,
+      "raw_label": "Rising wedge into the 3895 pullback high (09:30-09:50)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "boxed chop mid-chart",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red and green overlay boxes and the green dotted floor on the sideways bars with the blue rounded box",
+      "placement": null,
+      "price_hint": 3898.0,
+      "raw_label": "Midday trading range chop (10:30-12:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green arrow mid-chart",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta and green texts with a green arrow over the rally breakout bars and 20 Gap Buy label",
+      "placement": null,
+      "price_hint": 3900.0,
+      "raw_label": "Bull breakout of TR, BTC rally (12:10-12:45 high 3910)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line top right",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge above the small pullback bull trend highs",
+      "placement": null,
+      "price_hint": 3920.0,
+      "raw_label": "Rising wedge over the afternoon rally (13:45-15:05 high 3928)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "faf1a046552c",
+  "schema_version": 1,
+  "session_summary": "White title bar: 'Bear Trap, Small Pullback Bull Trend' (Jan 6, 09:00-15:00 into 1/9). Consecutive strong bear bars trapped bears into bad shorts at the open climax, scale in bulls buying below bar 1, the midday chop with the 20 gap buy, the bull breakout of the trading range BTC rally and the small pullback bull trend resumption to 3928."
+}

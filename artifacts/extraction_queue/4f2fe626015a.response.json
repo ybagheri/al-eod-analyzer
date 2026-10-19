@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "image_id": "4f2fe626015a",
+  "date": "2025-08-01",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.6,
+  "session_summary": "Blue title bar: 'Big Gap Down, Sell Climax Then Trading Range Day' (ET+12 hrs, Aug 1/2; inset Big gap down below trading ranges). Opening sell climax on the gap dump to 6240 with strong buying pressure, a micro channel bull leg to 6295 (bar 12-18), bear trap at 6255 (bar 24), bull trap second leg top 6295 (00:05 bar 36 boxed), bear trend with falling wedge bottoms to the lower low double bottom 6238 (02:05 bar 60), rebound rally to the red dotted 6275 ceiling and a boxed closing bounce near 6265.",
+  "events": [
+    {
+      "label": "exhaustive_climax",
+      "raw_label": "Sell climax on the gap down with strong buying pressure (22:00-22:15 low 6240)",
+      "direction": "bear",
+      "start_time": {"time": "22:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 6240.0,
+      "outcome": "success",
+      "outcome_reason": "huge dark gap bar 6310 to 6260 with the red Sell climax and green Strong buying pressure texts at the green dotted floor",
+      "confidence": 0.7,
+      "evidence": "red and green texts bottom left beside the tall open bars"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Micro channel bull leg off the climax (22:05-22:45 high 6295)",
+      "direction": "bull",
+      "start_time": {"time": "22:05", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "22:50", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 12,
+      "price_hint": 6295.0,
+      "outcome": "success",
+      "outcome_reason": "green Micro channel text with arrow along the stair-step bars 12-18",
+      "confidence": 0.6,
+      "evidence": "green text and green arrows 22:15-22:35"
+    },
+    {
+      "label": "double_bottom",
+      "raw_label": "Bear trap higher low at 6255 (22:55-23:35 low 6255)",
+      "direction": "bull",
+      "start_time": {"time": "22:55", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "23:40", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 24,
+      "price_hint": 6255.0,
+      "outcome": "success",
+      "outcome_reason": "red Bear trap text at the bar 24 lows with green dotted support preceding the bull push to the second leg top",
+      "confidence": 0.6,
+      "evidence": "red text below the boxed bar 24 lows and green arrows 23:30"
+    },
+    {
+      "label": "double_top",
+      "raw_label": "Bull trap second leg top 6295 (23:50-00:15 high 6295)",
+      "direction": "bear",
+      "start_time": {"time": "23:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "00:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 36,
+      "price_hint": 6295.0,
+      "outcome": "success",
+      "outcome_reason": "blue boxed second leg into the 6295-6299 tops failed with red arrows 00:10 onward",
+      "confidence": 0.6,
+      "evidence": "green Bull trap / Second leg texts above the blue shaded box, bar 36 label"
+    },
+    {
+      "label": "wedge",
+      "raw_label": "Falling wedge bottoms into the lows (00:40-01:15 low 6245)",
+      "direction": "bear",
+      "start_time": {"time": "00:35", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "01:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 48,
+      "price_hint": 6245.0,
+      "outcome": "success",
+      "outcome_reason": "pink dotted falling wedge lines under the bar 48 bear leg toward the green dotted floor",
+      "confidence": 0.6,
+      "evidence": "magenta dotted pair of falling lines beneath the bear bars"
+    },
+    {
+      "label": "lower_low_double_bottom",
+      "raw_label": "Lower low double bottom at 6238 (01:50-02:15 low 6238)",
+      "direction": "bull",
+      "start_time": {"time": "01:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "02:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 60,
+      "price_hint": 6238.0,
+      "outcome": "success",
+      "outcome_reason": "green text below the session lows followed by stacked green arrows 02:15 lifting to 6275",
+      "confidence": 0.65,
+      "evidence": "green Lower low double bottom text with green arrows at bar 60"
+    },
+    {
+      "label": "trading_range_end",
+      "raw_label": "Closing bounce under the 6275 ceiling (02:50-04:05)",
+      "direction": "neutral",
+      "start_time": {"time": "02:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "04:10", "tz": "America/Los_Angeles"},
+      "bar_index_hint": 72,
+      "price_hint": 6275.0,
+      "outcome": "unclear",
+      "outcome_reason": "red dotted 6275 ceiling with boxed late pullback bars 72 and the shaded close under the EMA",
+      "confidence": 0.55,
+      "evidence": "red arrow at the 02:40 top and the boxed bars 62-74 near the red dotted line, footer Aug 2"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2", "image_note": "overnight chart axis ET+12 hrs; chips 6268.00/6264.30; label Aug 2 mid-axis; inset daily chart Big gap down below trading ranges"}
+}

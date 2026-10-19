@@ -1,0 +1,216 @@
+{
+  "date": "2023-01-03",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green and red texts top left",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red Scale in Bulls Trapped arrow over the green opening bull box",
+      "placement": null,
+      "price_hint": 3890.0,
+      "raw_label": "Scale in bulls trapped on the open (09:05-09:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "top left text stack",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red and green warning texts plus the climactic opening selloff often leading to sideways trading note",
+      "placement": null,
+      "price_hint": 3840.0,
+      "raw_label": "Bear trend from the open into sideways trading (09:15-10:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text bottom left",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge with the Minor Wedge Larger 2nd leg down likely text and arrow",
+      "placement": null,
+      "price_hint": 3840.0,
+      "raw_label": "Minor wedge, larger 2nd leg down likely (09:20-10:00 low 3840)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text and dotted line upper left",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red dotted 3860 line with the DT Wedge bear flag text; the flag broke down",
+      "placement": null,
+      "price_hint": 3858.0,
+      "raw_label": "DT wedge bear flag at 3860 (09:50-10:40)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line mid-left",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge through the red boxes",
+      "placement": null,
+      "price_hint": 3828.0,
+      "raw_label": "Second leg into the 3828 low (10:35-11:05 low 3828)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line mid-chart",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "red dotted 3838 line over the choppy pullbacks into the breakout",
+      "placement": null,
+      "price_hint": 3838.0,
+      "raw_label": "Lower-high double top ceiling at 3838 (11:20-12:55)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "14:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text at the low",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green HL MTR text as the bulls broke out above the red dotted ceiling",
+      "placement": null,
+      "price_hint": 3822.0,
+      "raw_label": "HL MTR higher-low reversal at 3822 (13:45-14:05 low 3822)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "15:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line upper right",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge with green bull boxes into the late high",
+      "placement": null,
+      "price_hint": 3846.0,
+      "raw_label": "Magenta wedge rally into the close (14:00-15:10 high 3846)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "14:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "b22753252ad7",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend from the Open, Trading Range' (axis 09:00-15:00). The first two bars signaled a selloff leading to sideways trading with scale-in bulls trapped, the climactic bear trend down through the minor wedge (larger 2nd leg down likely) into 3840, the DT wedge bear flag at 3860, a lower-high double top at 3838 over the midday chop, the HL MTR higher-low reversal at 3822 and the magenta wedge rally into the close."
+}

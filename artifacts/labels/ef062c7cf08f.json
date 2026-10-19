@@ -1,0 +1,241 @@
+{
+  "date": "2023-04-25",
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange OO text and ii overlay",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "shaded blue boxes with ii and OO overlay marks on the open chop",
+      "placement": null,
+      "price_hint": 4132.0,
+      "raw_label": "Opening ii/OO shaded chop (07:05-07:30 low 4130)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge with the Parabolic Wedge text over the steep sell bars",
+      "placement": null,
+      "price_hint": 4128.0,
+      "raw_label": "Parabolic wedge down to 4124 (07:20-08:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text mid-chart",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "the wedge bottom rally broke down; small pullback bear trend resumed after the bull trap",
+      "placement": null,
+      "price_hint": 4130.0,
+      "raw_label": "Failed wedge bottom buy (08:00-08:40 low 4124 high 4137)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top center",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Lower High Double Top Bear Flag text with red arrow and red sell overlay boxes at the trap high",
+      "placement": null,
+      "price_hint": 4135.0,
+      "raw_label": "Lower high double top bear flag, weak rally after weak buy entry bar (08:20-08:45 high 4137)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text mid-chart",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "small pullback bear trend resumption text over the red overlay boxed sell legs",
+      "placement": null,
+      "price_hint": 4125.0,
+      "raw_label": "Bear trend resumed in stair steps (08:50-11:00 low 4095)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red and blue text right",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue dotted expanding triangle lines with the red Lower High Double Top text and red dotted 4108 ceiling",
+      "placement": null,
+      "price_hint": 4108.0,
+      "raw_label": "Expanding triangle, lower high double top (11:25-12:05 high 4108)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text bottom center",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box with the Evolved into Trading Range after Midday arrow text and green buy box",
+      "placement": null,
+      "price_hint": 4102.0,
+      "raw_label": "Evolved into trading range after midday, blue shaded box (10:50-13:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge at the lows with the Minor Parabolic Wedge text",
+      "placement": null,
+      "price_hint": 4098.0,
+      "raw_label": "Minor parabolic wedge (11:40-12:40 low 4094)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text bottom right",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted 4093 baseline with the Measured Move from Double Top text and orange arrow at the lows",
+      "placement": null,
+      "price_hint": 4093.0,
+      "raw_label": "Measured move from the double top down to 4093 (11:30-12:40)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "ef062c7cf08f",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Failed Wedge Bottom' (Apr 25, 07:00-13:00 into 4/26). Parabolic wedge decline in the first hour, small pullback bear trend resumed after the bull trap to the lower high double top bear flag, ii/OO chop, expanding triangle lower high double top, and the evolved after-midday trading range with the measured move from the double top."
+}

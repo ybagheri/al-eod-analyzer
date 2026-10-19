@@ -1,0 +1,130 @@
+{
+    "date":  "2025-07-18",
+    "day_type":  "bear_trending_trading_range",
+    "day_type_confidence":  0.65,
+    "events":  [
+                   {
+                       "bar_index_hint":  null,
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "09:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue text and dotted lines",
+                       "label":  "triangle",
+                       "outcome":  "unclear",
+                       "outcome_reason":  "blue dotted expanding lines with the Expanding Triangle on Open Increased risk of Trading Range Day text",
+                       "price_hint":  6347.0,
+                       "raw_label":  "Expanding triangle on open (08:45-09:20)",
+                       "start_time":  {
+                                          "time":  "08:45",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  12,
+                       "confidence":  0.55,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "09:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "orange texts and shaded box",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "orange shaded leg with the orange breakout texts and Tight Bear Channel Bear Breakout on 60 Min chart comments",
+                       "price_hint":  6330.0,
+                       "raw_label":  "Weak bear breakout after expanding triangle, leg 1 (09:10-09:45 low 6330)",
+                       "start_time":  {
+                                          "time":  "09:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "11:05",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Wedge Minor Bull Reversal labels",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "pink dotted rising wedge with the magenta Wedge and green Minor Bull Reversal texts and green arrows",
+                       "price_hint":  6340.0,
+                       "raw_label":  "Wedge minor bull reversal off 6330 (10:05-11:05 high 6340)",
+                       "start_time":  {
+                                          "time":  "10:05",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "11:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "red text with red arrow",
+                       "label":  "double_top",
+                       "outcome":  "success",
+                       "outcome_reason":  "red dotted Test of bar 8 Breakout Point line with red arrows at the failed tests",
+                       "price_hint":  6340.0,
+                       "raw_label":  "Test of bar 8 breakout point at 6340 (10:50-11:40)",
+                       "start_time":  {
+                                          "time":  "10:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.6,
+                       "direction":  "bear",
+                       "end_time":  {
+                                        "time":  "12:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "Leg 2 label and dotted wedge",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "gray Leg 2 text and magenta dotted falling wedge into the midday lows",
+                       "price_hint":  6330.0,
+                       "raw_label":  "Leg 2 falling wedge into 6330 (11:40-12:50 low 6330)",
+                       "start_time":  {
+                                          "time":  "11:40",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  60,
+                       "confidence":  0.65,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "15:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue texts with shaded box",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded range box with the Tight Trading Range Flag Moving Average Most traders are better off waiting texts",
+                       "price_hint":  6331.0,
+                       "raw_label":  "Tight trading range flag at the moving average (12:50-15:00)",
+                       "start_time":  {
+                                          "time":  "12:50",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "axis 08:45-15:00 and 7/21; bar numbers 12-72; inset 60 Minute Chart Bar 1",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "c33ca6979f4b",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Bear Trending Trading Range Day\u0027 (08:45-15:00; inset 60 Minute Chart Bar 1 Strong Enough for 2nd leg down; bars 12-72). Expanding triangle on open with increased risk of trading range day, the weak bear breakout after the expanding triangle (leg 1 into 6330), the pink wedge minor bull reversal to the test of bar 8 breakout point at 6340, the falling-wedge leg 2 into the midday low, and the tight trading range flag at the moving average into the 15:00 close."
+}

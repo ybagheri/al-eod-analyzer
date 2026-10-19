@@ -1,0 +1,191 @@
+{
+  "date": "2026-03-03",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Sell climax 2 legs down Exhaustion text bottom left",
+      "label": "exhaustive_climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded opening bear box with red arrows into the bar lows followed by green reversal arrows",
+      "placement": null,
+      "price_hint": 6742.0,
+      "raw_label": "Sell climax, 2 legs down, exhaustion (23:05-23:25 low 6742)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green texts beside the lows and the shaded double-bottom box",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange dotted 6737 lows line with Double bottom and Major trend reversal green texts and green arrows 23:30, 23:55",
+      "placement": null,
+      "price_hint": 6742.0,
+      "raw_label": "Double bottom, major trend reversal (23:15-00:05 lows 6737-6742)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "02:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted rising line, blue shaded leg box, bar numbers 24, 36, 48",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "pink dotted wedge under the bars 24-36 bull leg with green arrow stair-steps to bar 48",
+      "placement": null,
+      "price_hint": 6805.0,
+      "raw_label": "Wedge bull leg up the stair-step (00:40-02:35 high 6817)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "02:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red/blue texts beside the box tops plus the red arrow 01:45",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "red dotted 6805 line with red text and blue arrow; reasonable shorts given overall market context but failed on 5-minute chart and price kept rising",
+      "placement": null,
+      "price_hint": 6805.0,
+      "raw_label": "Double top and breakout failed at 6805 (00:50-02:05 high 6805)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Measured move text with dotted line, green arrows at bars 48-52",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Bull trend resumed but then sideways into trading range text with green arrows and orange dotted measured move line at 6843",
+      "placement": null,
+      "price_hint": 6843.0,
+      "raw_label": "Bull trend resumed to the measured move 6843 (02:10-03:20 high 6845)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "04:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text above the red dotted ceiling and stacked red arrows on the box tops",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Double top text with red dotted 6842 line and red arrows 03:35, 04:05 into the decline",
+      "placement": null,
+      "price_hint": 6845.0,
+      "raw_label": "Double top second leg at 6845 (03:15-04:10 high 6845)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "05:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text bottom right with dotted line, chips 6827.53/6821.25",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted falling wedge with the magenta Wedge text into the bar 72 area and the trading-range close 6821-6828",
+      "placement": null,
+      "price_hint": 6820.0,
+      "raw_label": "Falling wedge into the close (03:25-05:00 low 6820)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "4f3b1f9b7a94",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Big Gap Down, Sell Climax Then Major Trend Reversal' (ET+13 hrs, Mar 3/4, Mar 4 axis; inset Broad Bear Channel daily). Big gap down into a sell climax (2 legs down exhaustion, low 6742) with a double bottom major trend reversal, then a stair-step bull trend (shaded legs, bar 36-60) through the failed 6805 double top (reasonable shorts failed on the 5-minute chart, mainly limit order market), rally to the 6843-6845 measured-move double top and a late falling wedge into the 6825-6830 close."
+}

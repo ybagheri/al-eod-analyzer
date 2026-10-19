@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-17 by Muse Spark (opencode) — phase commit a5a4e66 (pushed origin/main; see ADR-003)_
+_Last updated: 2026-10-19 by Muse Spark (opencode) — wave-2 fill-out complete (extraction_queue 244/244, 162 labels; see §3)_
 
 ## 1. Project in one paragraph
 
@@ -204,6 +204,17 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
   calibration sample labeled=0 skipped=38 failed=0, agreement 0.706 (34
   comparable); pytest 166 passed. 55 wave-2 request files still have no
   response (extract converts only ids within the `--limit 120` scan window).
+- Wave-2 fill-out COMPLETE (2026-10-19, this session): all remaining 38
+  request-only files answered by chart re-inspection, 2 images per turn
+  (c687a6d8722f … fc17e0fa2472; full id list in the wave commit) — extraction_queue
+  now 244 filled pairs, 0 pending. Enum lessons hit again: event
+  `trading_range` -> `tight_trading_range`, `low_2` -> `l2`,
+  day_type `trend_reversal_to_bear_attempt` -> `trend_reversal_to_bear`
+  (32 responses normalized post-quarantine, then 99eba23dad8a straggler);
+  after fixes: extract scanned=120 labeled=36 skipped=84 pending=0
+  quarantined=1 -> 0, valid_rate 1.00, **162 batch-1 labels live**, failed dir
+  empty. Calibration sample agreement 0.706 (34 comparable, unchanged);
+  pytest 166 passed. Gate GREEN -> feat commit + push.
 
 ## 4. Decisions made (link to ADR numbers)
 
@@ -223,12 +234,12 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 
 ## 5. Next actions (ordered, the very next step first)
 
-1. AGENT: bulk wave 2 — continue routine extraction toward the 1678 unique
-   batch-1 charts (24 wave-2 request/response pairs filled + 169 refilled =
-   193 pairs, gates GREEN and committed 2026-10-19); 55 wave-2 request files
-   still need responses (extract only converts ids inside the `--limit N`
-   scan window — reuse the paired-batch workflow: 2 images per turn, valid
-   enum labels, BOM-less writes, then gate + commit per wave).
+1. AGENT: bulk wave 2 — extraction_queue is now FULLY filled (244/244
+   request/response pairs, 0 pending, 162 batch-1 labels converted, 0
+   quarantines, gates GREEN 2026-10-19). Next step is broadening conversion:
+   raise `--limit N` on `brooks extract` in chunks (or loop waves) to convert
+   responses beyond the current 120-image scan window; keep the paired-batch
+   workflow for any NEW requests the extract run creates.
 2. USER: on gold registry — only open human-review item left is
    `10401c705b30` (mark gold yes/no); everything else approved through
    round-5 (2026-10-17).
@@ -270,7 +281,10 @@ the skeleton only; no extraction, engine, or trading logic exists yet.
 - Calibration waves 0+1: 38 sampled (2 removed: EURUSD-daily anomaly + axis-less slide) | agreement 0.706 vs new-directional titles (0.811 pre-v1.3; not comparable) | 0 quarantines outstanding | labels NOT gold, all corrections human-applied (rev1-varies, 131 history revs)
 - Color: vocabulary v1.3 — day_types 17, events 50 | round-5 review approved every page (ok=all, inline notes fixed)
 - Calibration artifacts (git-tracked): artifacts/calibration_sample.{txt,json} (40 ids + strata meta), artifacts/calibration_report.json, scripts/extract_sample.py, 40+28 queue pairs (extraction_queue), 40 wave labels in artifacts/labels/
-- Batch-1 extraction state (git-tracked): extraction_queue 193 request/response pairs filled (169 wave-0/1 + 24 wave-2) + 55 request-only pending; artifacts/labels: 49 batch-1 charts converted | last extract: quarantined=0, scanned=120 | wave-2 commits: 2bd0c5e (recovery) + this wave
+- Batch-1 extraction state (git-tracked): extraction_queue 244 filled
+  request/response pairs (0 pending) | artifacts/labels: 162 batch-1 charts
+  converted | last extract: quarantined=0, valid_rate 1.00, scanned=120 | wave-2
+  commits: 2bd0c5e + 7e4e4e7 + this wave
 - Batch-1 artifacts (git-tracked): artifacts/manifest_batch1.json (~1MB), artifacts/ingestion_stats_batch1.json, artifacts/title_map_batch1.json
 - Playbook version: none (Phase 8)
 

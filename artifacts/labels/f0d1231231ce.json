@@ -1,0 +1,216 @@
+{
+  "date": "2025-08-20",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top left",
+      "label": "sell_the_close",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red text with red arrow over the first dark sell bars",
+      "placement": null,
+      "price_hint": 6428.0,
+      "raw_label": "Sell the close carryover at the open (07:00-07:15 high 6430)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "title text",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "title and the relentless dark bars breaking 6380 and 6370",
+      "placement": null,
+      "price_hint": 6395.0,
+      "raw_label": "Bear trend from the open (07:00-08:00 low 6373)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text at bar 18 low",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "big dark exhaustion bars at 6360 with the red Sell climax text; bulls reversed immediately",
+      "placement": null,
+      "price_hint": 6362.0,
+      "raw_label": "Sell climax at 6360 (07:55-08:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text with arrow",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Major bull breakout text with beige breakout box and green arrows up the rally bars",
+      "placement": null,
+      "price_hint": 6390.0,
+      "raw_label": "Major bull breakout out of the beige box (08:10-09:00 high 6402)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at box top",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red dotted 6402 line with red arrows before the pullback to 6385",
+      "placement": null,
+      "price_hint": 6402.0,
+      "raw_label": "Double top at 6402 (08:35-09:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 48,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text top right",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge with the Minor wedge text and red arrows down the bars",
+      "placement": null,
+      "price_hint": 6414.0,
+      "raw_label": "Minor wedge top at 6414 (09:45-10:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text bottom right",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green dotted floor with the green Higher low double bottom text and green arrows before the close rally",
+      "placement": null,
+      "price_hint": 6388.0,
+      "raw_label": "Higher low double bottom (09:05-11:40 low 6383)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green arrows right side",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green arrows up the bull close bars above the wedge resistance",
+      "placement": null,
+      "price_hint": 6405.0,
+      "raw_label": "Late rally to 6425 (11:45-13:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "f0d1231231ce",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Sell Climax' (Aug 20, 07:00-13:00 into 8/21). Sell the close at the open, bear trend down to the sell climax at 6360, the major bull breakout out of the beige box, the minor wedge in the middle, the higher low double bottom at 6383 and the rally to 6425 by the close."
+}

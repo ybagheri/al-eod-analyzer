@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Wave-2 fill-out complete: all remaining 38 wave-2 request-only files answered
+  by agent chart re-inspection (2 images per turn) -> extraction_queue now 244
+  filled request/response pairs, 0 pending; 113 new labels converted in three
+  extract passes -> **162 batch-1 labels live**. Enum normalizations repeated
+  this wave: event `trading_range` -> `tight_trading_range`, `low_2` -> `l2`,
+  day_type `trend_reversal_to_bear_attempt` -> `trend_reversal_to_bear`
+  (33 responses repaired, 0 quarantines remain). Gate: scanned=120 labeled=36
+  valid_rate=1.00; calibration agreement 0.706 (34 comparable); pytest 166 passed.
 - Wave-2 bulk labeling wave: 24 wave-2 request/response pairs filled (routine
   agent labeling under the strict v1.3 enums; compound labels forbidden,
   trading_range always begin/end pairs, int bar_index_hint, outcome enum

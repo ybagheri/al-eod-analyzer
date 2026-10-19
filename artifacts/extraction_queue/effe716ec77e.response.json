@@ -1,0 +1,149 @@
+{
+    "date":  "2025-10-27",
+    "day_type":  "bull_trend_resumption",
+    "day_type_confidence":  0.65,
+    "events":  [
+                   {
+                       "bar_index_hint":  12,
+                       "confidence":  0.65,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "23:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "blue text left side",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "blue shaded box with orange dotted contracting triangle rails and Buying pressure (long lower tails) text",
+                       "price_hint":  6886.0,
+                       "raw_label":  "Opening trading range and contracting triangle (22:00-23:20)",
+                       "start_time":  {
+                                          "time":  "22:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  24,
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "23:40",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text with arrow",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Triangle breakout text with green arrow up through the box high",
+                       "price_hint":  6890.0,
+                       "raw_label":  "Triangle breakout (23:15-23:40 high 6893)",
+                       "start_time":  {
+                                          "time":  "23:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  36,
+                       "confidence":  0.55,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "00:50",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green arrows at 24-36",
+                       "label":  "channel",
+                       "outcome":  "success",
+                       "outcome_reason":  "rally to the lower high around 6892 with red arrows on the pullback legs",
+                       "price_hint":  6891.0,
+                       "raw_label":  "Bull run and pullback low highs (23:30-00:50)",
+                       "start_time":  {
+                                          "time":  "23:30",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "01:20",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "magenta Truncated wedge text",
+                       "label":  "wedge",
+                       "outcome":  "success",
+                       "outcome_reason":  "magenta dotted rising wedge under the run with the red arrows at the lower highs and the green Double bottom text",
+                       "price_hint":  6886.0,
+                       "raw_label":  "Truncated wedge into 6885 (00:00-01:20)",
+                       "start_time":  {
+                                          "time":  "00:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  48,
+                       "confidence":  0.6,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "01:45",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text bottom center",
+                       "label":  "double_bottom",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Wedge bottom Double bottom text with green arrows at the 6885 lows before the resumption rally",
+                       "price_hint":  6885.0,
+                       "raw_label":  "Wedge bottom double bottom at 6885 (01:10-01:45)",
+                       "start_time":  {
+                                          "time":  "01:10",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  60,
+                       "confidence":  0.6,
+                       "direction":  "neutral",
+                       "end_time":  {
+                                        "time":  "03:25",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "shaded tight boxes",
+                       "label":  "tight_trading_range",
+                       "outcome":  "success",
+                       "outcome_reason":  "shaded boxes at bars 60-72 with the black Tight trading ranges Limit order market arrow texts",
+                       "price_hint":  6897.0,
+                       "raw_label":  "Tight trading ranges, limit order market boxes (02:00-03:25)",
+                       "start_time":  {
+                                          "time":  "02:00",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   },
+                   {
+                       "bar_index_hint":  72,
+                       "confidence":  0.65,
+                       "direction":  "bull",
+                       "end_time":  {
+                                        "time":  "04:00",
+                                        "tz":  "America/Los_Angeles"
+                                    },
+                       "evidence":  "green text top right",
+                       "label":  "breakout",
+                       "outcome":  "success",
+                       "outcome_reason":  "green Breakout and rally into close text with green arrows on the strong close bars",
+                       "price_hint":  6905.0,
+                       "raw_label":  "Breakout and rally into the close (03:15-04:00 high 6912)",
+                       "start_time":  {
+                                          "time":  "03:15",
+                                          "tz":  "America/Los_Angeles"
+                                      }
+                   }
+               ],
+    "extraction_meta":  {
+                            "image_note":  "overnight chart axis ET+12 hrs, 22:00-04:00, Oct 28 markers; bar numbers 12-72; chips 6910.00/6902.13; inset Consecutive All-time Highs dailies",
+                            "model_id":  "muse-spark-opencode",
+                            "prompt_version":  "extract_v2",
+                            "provider":  "file"
+                        },
+    "image_id":  "effe716ec77e",
+    "schema_version":  1,
+    "session_summary":  "Blue title bar: \u0027Big Gap Up, Contracting Triangle Then Bull Trend Resumption\u0027 (ET+12 hrs, Oct 27-28; inset Consecutive All-time Highs). Buying pressure with long lower tails into the opening trading range triangle breakout, the rally with the truncated wedge and wedge-bottom double bottom at 6885, then tight trading ranges limit order market and the breakout and rally into the close to 6912."
+}

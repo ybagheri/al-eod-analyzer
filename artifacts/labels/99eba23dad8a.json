@@ -1,0 +1,191 @@
+{
+  "date": "2025-08-22",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text with shaded box",
+      "label": "major_bull_surprise",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "orange Major bull breakout arrow over the shaded bull leg with stacked green arrows",
+      "placement": null,
+      "price_hint": 6483.0,
+      "raw_label": "Major bull breakout trend from the open (07:00-07:30 high 6483)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta text top left",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta Minor wedge text with arrow and the magenta dotted rising wedge into the red dotted ceiling",
+      "placement": null,
+      "price_hint": 6493.0,
+      "raw_label": "Minor wedge to the 6493 top (07:45-08:40 high 6493)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text top right",
+      "label": "lower_high_double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "red Minor lower high double top text behind the red dotted 6493 line with stacked red arrows down the range",
+      "placement": null,
+      "price_hint": 6493.0,
+      "raw_label": "Minor lower high double top at 6493 (08:20-09:55 high 6493)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text and dotted line",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "green Breakout test text with the green dotted 6473 line; the bear push below failed",
+      "placement": null,
+      "price_hint": 6473.0,
+      "raw_label": "Breakout test that failed at the 6473 floor (09:40-10:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrows at bars 48 and 60",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "unclear",
+      "outcome_reason": "repeated red arrows at the red dotted 6493 fringe kept producing mild pullbacks only",
+      "placement": null,
+      "price_hint": 6493.0,
+      "raw_label": "Later double top of the range ceiling (10:15-11:50 high 6493)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.65,
+      "direction": "neutral",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text and shaded box",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "blue shaded box over the chop between 6473-6493 with the blue Bull trend from the open and then tight trading range text",
+      "placement": null,
+      "price_hint": 6483.0,
+      "raw_label": "Tight trading range after the bull trend (07:35-13:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text right edge",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Minor higher low double bottom text under the bar 72 lows with green arrows",
+      "placement": null,
+      "price_hint": 6478.0,
+      "raw_label": "Minor higher low double bottom (12:25-13:05 low 6478)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "99eba23dad8a",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trading Range' (07:00-13:00, bar numbers 12-72). Major bull breakout off the open into 6483, minor wedge to the 6493 top and the blue shaded tight trading range with the red dotted 6493 ceiling, minor lower-high double tops and the breakout test at the 6473 green floor, and the minor higher-low double bottom off 6478 into the 6485 close."
+}

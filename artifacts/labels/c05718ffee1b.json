@@ -1,0 +1,141 @@
+{
+  "date": "2025-09-09",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.6,
+  "events": [
+    {
+      "bar_index_hint": 12,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text below the lows",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "fail",
+      "outcome_reason": "orange Bear trap text under the dark bar 12 and the reversed orange dotted floor",
+      "placement": null,
+      "price_hint": 6490.0,
+      "raw_label": "Bear trap push down to 6490 (07:20-08:00 low 6490)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 18,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text at the lows",
+      "label": "higher_low_double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Higher low double bottom text with green arrows and dotted floor",
+      "placement": null,
+      "price_hint": 6493.0,
+      "raw_label": "Higher low double bottom off 6490 (07:50-08:20 low 6493)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 24,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_time": {
+        "time": "10:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "large blue shaded box",
+      "label": "tight_trading_range",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "large blue shaded box holding the bear trap chop and the wedge rallies",
+      "placement": null,
+      "price_hint": 6502.0,
+      "raw_label": "Shaded morning range before the breakout (06:45-10:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted line in the box",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "magenta dotted rising wedge with green arrows to the orange dotted 6510 line",
+      "placement": null,
+      "price_hint": 6510.0,
+      "raw_label": "Rising wedge through the morning chop (08:10-10:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 72,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text mid-right",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "outcome": "success",
+      "outcome_reason": "green Small pullback bull trend text with the magenta wedges up to the 6528 high near the orange 6530 line",
+      "placement": null,
+      "price_hint": 6528.0,
+      "raw_label": "Small pullback bull trend breakout and rally (10:35-13:10 high 6528)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file"
+  },
+  "image_id": "c05718ffee1b",
+  "schema_version": 1,
+  "session_summary": "Blue title bar: 'Bear Trap, Then Small Pullback Bull Trend' (06:45-13:05, bar numbers 12-72). Bear trap on the shaded morning push down to 6490 and the higher-low double bottom, the magenta rising wedge chop, then the small pullback bull trend breakout up through the orange dotted 6510 ledge, the red-arrow pullbacks above the green dotted 6514 floor, and the final wedge rally to the 6528 high under the orange dotted 6530 line."
+}
