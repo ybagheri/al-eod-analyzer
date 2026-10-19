@@ -26,10 +26,10 @@ def _run(cmd: list[str]) -> int:
 def check() -> int:
     """Run the full quality gate. Returns the process exit code."""
     steps: list[list[str]] = [
-        ["ruff", "check", "."],
-        ["ruff", "format", "--check", "."],
-        ["mypy", "--strict", "src"],
-        ["pytest", "-q", "--cov=src", "--cov-fail-under=85"],
+        [sys.executable, "-m", "ruff", "check", "."],
+        [sys.executable, "-m", "ruff", "format", "--check", "."],
+        [sys.executable, "-m", "mypy", "--strict", "src"],
+        [sys.executable, "-m", "pytest", "-q", "--cov=src", "--cov-fail-under=85"],
         [sys.executable, "scripts/plan_compliance.py"],
     ]
     for cmd in steps:

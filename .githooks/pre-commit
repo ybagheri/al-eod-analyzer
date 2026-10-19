@@ -2,8 +2,10 @@
 # pre-commit hook (plan v2.6 §8.3). Full gate runs on pre-push.
 # --no-verify is FORBIDDEN (AGENTS.md rule 5).
 set -e
-PY="$(git rev-parse --show-toplevel)/.venv/Scripts/python.exe"
+ROOT="$(git rev-parse --show-toplevel)"
+PY="$ROOT/.venv/Scripts/python.exe"
 [ -x "$PY" ] || PY=python
+PATH="$ROOT/.venv/Scripts:$PATH"
 
 echo "[pre-commit] ruff check"
 "$PY" -m ruff check .
