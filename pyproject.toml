@@ -74,6 +74,13 @@ ignore_missing_imports = false
 module = "tests.*"
 disallow_untyped_defs = false
 
+# Optional vision-network extra: httpx is deliberately not installed with the
+# core/dev extras (offline-first). The lazy import in vision.py raises a
+# VisionError when absent; mypy just needs the missing-module warning off.
+[[tool.mypy.overrides]]
+module = "httpx.*"
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"

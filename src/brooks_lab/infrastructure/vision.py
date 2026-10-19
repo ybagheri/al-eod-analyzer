@@ -127,7 +127,13 @@ class AnthropicVisionClient:
     def extract(self, image_bytes: bytes, prompt: str, *, image_id: str = "") -> dict[str, Any]:
         """Call the Messages API once and parse the JSON object from the reply."""
         _ = image_id
-        import httpx
+        try:
+            import httpx
+        except ModuleNotFoundError as exc:
+            raise VisionError(
+                'httpx is not installed; run `pip install -e ".[vision]"` '
+                "or use the offline file-exchange provider"
+            ) from exc
 
         encoded = base64.standard_b64encode(image_bytes).decode("ascii")
         try:
