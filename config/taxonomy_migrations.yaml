@@ -1,10 +1,16 @@
-# Taxonomy migration table (P6, plan step S2).
+# Taxonomy migration table (P6, plan step S2; ADR-013 governs R-FINISH rules).
 # Every taxonomy id change is recorded here; the label loader auto-migrates
 # legacy ids on read so enum changes never invalidate stored label files.
 #   quality: exact  - meaning fully preserved.
-#   quality: lossy  - information dropped; loader sets needs_review=true.
+#   quality: lossy  - information dropped; loader sets needs_review + an
+#                     enumerated needs_review_reason.
+#   handler: <name> - context-aware rule resolved in code (compound ids etc.);
+#                     the target/quality are then advisory.
+# Hard guarantees for every rule: raw_label is kept verbatim; the row records
+# mapped_from (old id) + rule_id and logs it; direction/outcome never change.
 #   to: null        - the old id is invalid; keep raw_label, route to review.
-# Any NEW entry requires: ADR + a migration test + calibration report regen.
+# Any NEW entry requires: ADR + a migration test (+ on-chart test when the
+# rule touches a stored chart) and calibration report regen.
 schema_version: 1
 taxonomy_version: "1.3"
 day_types:
@@ -19,23 +25,28 @@ day_types:
   trending_trading_range:
     to: null
     quality: lossy
-    note: "deprecated by v1.3 ADR-011; direction-specific ids exist, direction is unknowable from the id."
+    handler: day_direction_null
+    note: "deprecated by v1.3 ADR-011; direction-specific ids exist, direction unknowable from the id."
   reversal_day:
     to: null
     quality: lossy
+    handler: day_regime_null
     note: "deprecated by v1.3; maps to trend_reversal_to_bull/bear by PM regime - needs chart context."
   bull_channel:
-    to: broad_bull_channel
+    to: null
     quality: lossy
-    note: "legacy id ambiguous between broad_bull_channel and bull_trending_trading_range."
+    handler: day_bull_channel
+    note: "ADR-013 D1: qualifier in title/note decides broad/tight; bare stays bull_channel (width unspecified) for review."
   small_pullback_bull_trend_from_open:
     to: small_pullback_bull_trend
-    quality: lossy
-    note: "from_open qualifier dropped; record in session_summary if chart re-read."
+    quality: exact
+    handler: day_from_open
+    note: "ADR-013 D2: from_open info kept in starts_at_session_open (+ source); id alone is NOT evidence."
   small_pullback_bear_trend_from_open:
     to: small_pullback_bear_trend
-    quality: lossy
-    note: "from_open qualifier dropped; record in session_summary if chart re-read."
+    quality: exact
+    handler: day_from_open
+    note: "ADR-013 D2: from_open info kept in starts_at_session_open (+ source); id alone is NOT evidence."
 events:
   low_2:
     to: l2
@@ -75,42 +86,52 @@ events:
     quality: lossy
     note: "bare range is not necessarily tight; day-part ranges belong to begin/end pairs."
   low_2_top:
-    to: null
-    quality: lossy
-    note: "conflated day-type/event id; meaning undecodable without chart context."
+    to: l2
+    quality: exact
+    handler: ev_low_2_top
+    note: "ADR-013 D3: low_2_top -> l2 + at_top + expectation note; direction/outcome untouched."
   wedge_bull_channel:
-    to: null
-    quality: lossy
-    note: "compound id; structure split pending user decision."
+    to: channel
+    quality: exact
+    handler: ev_wedge_bull_channel
+    note: "ADR-013 D3: channel + with_wedges; width qualifier stays a modifier."
   triple_top:
-    to: null
+    to: double_top
     quality: lossy
-    note: "not in v1.3; micro/triple handling pending user decision."
+    handler: ev_triple_top
+    note: "ADR-013 D3: double_top + touches=3; range_resistance alternative flagged for review."
   parabolic_wedge:
-    to: null
-    quality: lossy
-    note: "compound id; wedge + parabolic phase pending user decision."
+    to: wedge
+    quality: exact
+    handler: ev_parabolic_wedge
+    note: "ADR-013 D3: wedge + parabolic + at_top/at_bottom from direction; neutral -> ambiguous_direction."
   spike_and_channel:
     to: null
     quality: lossy
-    note: "day-type id used as event; direction missing."
+    handler: ev_spike_and_channel
+    note: "ADR-013 D3: split into spike + channel phase rows when title evidences; else missing_evidence."
   small_pullback_bull_trend:
     to: null
     quality: lossy
-    note: "day-type id used as event; direction missing."
+    handler: ev_day_type_as_event
+    note: "day-type id used as event; unmapped with reason day_type_used_as_event (S5)."
   small_pullback_bear_trend:
     to: null
     quality: lossy
-    note: "day-type id used as event; direction missing."
+    handler: ev_day_type_as_event
+    note: "day-type id used as event; unmapped with reason day_type_used_as_event (S5)."
   bull_trending_trading_range:
     to: null
     quality: lossy
-    note: "day-type id used as event; direction missing."
+    handler: ev_day_type_as_event
+    note: "day-type id used as event; unmapped with reason day_type_used_as_event (S5)."
   trend_reversal_to_bull:
     to: null
     quality: lossy
-    note: "day-type id used as event; direction missing."
+    handler: ev_day_type_as_event
+    note: "day-type id used as event; unmapped with reason day_type_used_as_event (S5)."
   bear_trend_resumption:
     to: null
     quality: lossy
-    note: "day-type id used as event; direction missing."
+    handler: ev_day_type_as_event
+    note: "day-type id used as event; unmapped with reason day_type_used_as_event (S5)."

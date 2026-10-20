@@ -65,14 +65,26 @@ def test_repo_migrations_load() -> None:
     ]:
         rule = migrations.events[event_id]
         assert rule.to == target and rule.quality == "exact"
-    assert migrations.day_types["bull_channel"].to == "broad_bull_channel"
-    assert migrations.day_types["reversal_day"].to is None
+    # ADR-013 handler-backed compound rules.
+    assert migrations.day_types["bull_channel"].handler == "day_bull_channel"
+    assert (
+        migrations.day_types["small_pullback_bull_trend_from_open"].to
+        == "small_pullback_bull_trend"
+    )
+    assert migrations.day_types["small_pullback_bull_trend_from_open"].handler == "day_from_open"
+    assert migrations.day_types["trending_trading_range"].handler == "day_direction_null"
+    assert migrations.day_types["reversal_day"].handler == "day_regime_null"
+    compound = {
+        "low_2_top": ("l2", "ev_low_2_top"),
+        "wedge_bull_channel": ("channel", "ev_wedge_bull_channel"),
+        "triple_top": ("double_top", "ev_triple_top"),
+        "parabolic_wedge": ("wedge", "ev_parabolic_wedge"),
+        "spike_and_channel": (None, "ev_spike_and_channel"),
+    }
+    for event_id, (target, handler) in compound.items():
+        rule = migrations.events[event_id]
+        assert rule.to == target and rule.handler == handler
     for event_id in (
-        "low_2_top",
-        "wedge_bull_channel",
-        "triple_top",
-        "parabolic_wedge",
-        "spike_and_channel",
         "small_pullback_bull_trend",
         "small_pullback_bear_trend",
         "bull_trending_trading_range",
@@ -80,7 +92,7 @@ def test_repo_migrations_load() -> None:
         "bear_trend_resumption",
     ):
         assert migrations.events[event_id].to is None
-        assert migrations.events[event_id].quality == "lossy"
+        assert migrations.events[event_id].handler == "ev_day_type_as_event"
 
 
 @pytest.mark.parametrize(
@@ -152,6 +164,9 @@ def test_apply_to_label_migrates_and_flags_lossy() -> None:
         "raw_label": "bear trap",  # original wording preserved
         "confidence": 0.9,
         "needs_review": True,
+        "needs_review_reason": "lossy_migration",
+        "mapped_from": "traps",
+        "rule_id": "1.4:traps",
     }
     assert out["extraction_meta"]["taxonomy_version"] == "1.4"
 

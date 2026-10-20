@@ -59,3 +59,64 @@
   governs everything); similarity gate (S3) decides evaluation tolerance
   (GO-FINE / GO-STRUCTURAL / STOP); docs stale text is fixed in S0; any
   deviation from PLAN_V2 requires an ADR and explicit user approval.
+
+## ADR-013 - Legacy-id migration decisions (R-FINISH 8b, 2026-10-20, accepted)
+
+- Context: after the R-FINISH conversion pass (243/244 queue responses
+  mapped, 0 quarantines), stored labels still carried legacy taxonomy ids
+  (bull_channel, trending_trading_range, reversal_day,
+  small_pullback_bull/bear_trend_from_open as day types; low_2_top,
+  wedge_bull_channel, triple_top, parabolic_wedge, spike_and_channel and
+  day-type ids used as events inside `events`). A first migration table
+  demoted these to `other`/`null` + bare needs_review, which loses
+  attributes. The user ruled on every mapping (decisions verbatim below).
+  Taxonomy stays v1.3: no new event ids, no version bump; only a
+  day-type enum re-admission (`bull_channel`), a day-level modifier list,
+  a session-open-provenance field and an enumerated
+  `needs_review_reason` are added (schema-additive, see the ADR).
+- Decisions:
+  1. `bull_channel` (day type) is NOT renamed by id. Mapping is decided by
+     the on-chart qualifier in the title/note text: "tight"/"small
+     pullback" -> `small_pullback_bull_trend`; "broad" ->
+     `broad_bull_channel`; bare "channel" -> `bull_channel` stays canonical
+     with width=unspecified. `bull_trending_trading_range` is a separate
+     day-type symbol still; do not merge it with `broad_bull_channel`.
+  2. Dropping "from_open" from an id is allowed ONLY if the information is
+     kept: new field `starts_at_session_open` (true/false/unknown) plus
+     `starts_at_session_open_source` (title|note|marker|none). Evidence
+     must come from the title/note wording or a session-start marker
+     (dotted vertical line / date label) directly before the first bar of
+     the move; the id itself is NOT evidence and the first visible bar is
+     NOT the session open (prior-session bars may be visible). Without
+     image evidence: unknown + needs_review (reason missing_evidence).
+  3. Compound legacy ids map structurally, never blindly to null:
+     `low_2_top` -> `l2` + modifier `at_top` (+ expectation recorded);
+     `wedge_bull_channel` -> event `channel` + modifier `with_wedges`
+     (width qualifier stays a modifier; none -> width unspecified);
+     `triple_top` -> `double_top` + touches=3 (alternative reading
+     `range_resistance` kept in review); `parabolic_wedge` -> `wedge` +
+     modifier `parabolic` + `at_top`/`at_bottom` implied by direction
+     (title first, then dotted-line slope; undecided -> needs_review
+     reason ambiguous_direction); `spike_and_channel` -> split into two
+     phase rows (`spike` + `channel`, linked, direction from the move)
+     when the title evidences it, else needs_review (missing_evidence).
+     Remaining unmappable legacy ids go to the S5 review pass as
+     `label: null` + `raw_label` + an enumerated
+     `needs_review_reason` (never a bare null).
+- Conditions common to every lossy rule (hard guarantees):
+  - `raw_label` is always kept verbatim.
+  - Every migrated row records `mapped_from` (old id) and `rule_id`
+    (rule name in `config/taxonomy_migrations.yaml`) and emits a log line.
+  - No rule may change `direction` or `outcome` of a row (verified by
+    charts-own-image tests).
+  - Each rule has a test against the stored label of the chart(s) it came
+    from (tests/integration/test_migration_rules.py).
+  - The dry run (12 charts, migration replay on stored labels, run on a
+    branch/copy after checkpoint commit + backup) reports: rows per
+    chart, remapped count by rule_id, needs_review count by reason,
+    attributes lost (must be 0) and any row whose direction or outcome
+    changed (must be empty).
+- Consequences: `config/taxonomy_migrations.yaml` gains handler-backed
+  rules (`taxonomy_migrations` + rule_id); loader emits `mapped_from`,
+  `rule_id` and `needs_review_reason`; `scripts/migration_dryrun.py`
+  produces `artifacts/migration_dryrun.json` on request.

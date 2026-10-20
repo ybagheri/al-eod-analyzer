@@ -46,6 +46,10 @@ class DayType(StrEnum):
     TRADING_RANGE_BEAR_BREAKOUT = "trading_range_bear_breakout"
     BROAD_BULL_CHANNEL = "broad_bull_channel"
     BROAD_BEAR_CHANNEL = "broad_bear_channel"
+    # ADR-013 (R-FINISH 8b): bare bull_channel re-admitted as its own day type;
+    # width (broad/tight/unspecified) is resolved by on-chart qualifier, else a
+    # width_unspecified modifier + review.
+    BULL_CHANNEL = "bull_channel"
     # v1.3 (ADR-011): reversal_day REMOVED - use direction-specific ids below.
     TREND_REVERSAL_TO_BULL = "trend_reversal_to_bull"
     TREND_REVERSAL_TO_BEAR = "trend_reversal_to_bear"
@@ -137,6 +141,30 @@ class LabelSource(StrEnum):
     VISION = "vision"
     HUMAN = "human"
     ENGINE = "engine"
+
+
+class SessionStartSource(StrEnum):
+    """Evidence source for ``starts_at_session_open`` (ADR-013)."""
+
+    TITLE = "title"
+    NOTE = "note"
+    MARKER = "marker"
+    NONE = "none"
+
+
+class NeedsReviewReason(StrEnum):
+    """Enumerated reason a migrated/unmapped row needs human review (ADR-013)."""
+
+    LOSSY_MIGRATION = "lossy_migration"
+    UNKNOWN_ID = "unknown_id"
+    MISSING_EVIDENCE = "missing_evidence"
+    AMBIGUOUS_BOUNDARY = "ambiguous_boundary"
+    AMBIGUOUS_DIRECTION = "ambiguous_direction"
+    DIRECTION_MISSING = "direction_missing"
+    REGIME_DIRECTION_MISSING = "regime_direction_missing"
+    DAY_TYPE_USED_AS_EVENT = "day_type_used_as_event"
+    WIDTH_UNSPECIFIED = "width_unspecified"
+    ALTERNATIVE_MAPPING = "alternative_mapping"
 
 
 class EventRole(StrEnum):
@@ -274,6 +302,22 @@ class EventLabel(BaseModel):
         default=False,
         description="True when a lossy migration or unmapped id requires human review.",
     )
+    mapped_from: str | None = Field(
+        default=None,
+        description="Legacy id this row was read from during migration (ADR-013).",
+    )
+    rule_id: str | None = Field(
+        default=None,
+        description="Migration-table rule id applied to this row (ADR-013).",
+    )
+    linked_to: str | None = Field(
+        default=None,
+        description="Opaque id of a linked counterpart row (e.g. spike<->channel split).",
+    )
+    needs_review_reason: NeedsReviewReason | None = Field(
+        default=None,
+        description="Enumerated review reason; null when needs_review is False.",
+    )
     evidence: str = Field(
         default="", description="What text/graphic on THIS image supports this event."
     )
@@ -310,6 +354,30 @@ class DayLabel(BaseModel):
     needs_review: bool = Field(
         default=False,
         description="True when a lossy day_type migration requires human review.",
+    )
+    mapped_from: str | None = Field(
+        default=None,
+        description="Legacy id this day-type was read from during migration (ADR-013).",
+    )
+    rule_id: str | None = Field(
+        default=None,
+        description="Migration-table rule id applied to this day (ADR-013).",
+    )
+    needs_review_reason: NeedsReviewReason | None = Field(
+        default=None,
+        description="Enumerated review reason; null when needs_review is False.",
+    )
+    starts_at_session_open: bool | None = Field(
+        default=None,
+        description="True/False from title/note/marker evidence; None = unknown (ADR-013).",
+    )
+    starts_at_session_open_source: SessionStartSource | None = Field(
+        default=None,
+        description="Evidence source for starts_at_session_open (title|note|marker|none).",
+    )
+    modifiers: list[str] = Field(
+        default_factory=list,
+        description="Day-level modifiers (e.g. width qualifiers); see ADR-013.",
     )
     events: list[EventLabel] = Field(default_factory=list)
     extraction_meta: ExtractionMeta
