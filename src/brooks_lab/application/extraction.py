@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 PROMPT_VERSION = "extract_v1"
 
-_OVERNIGHT_HOUR_RE = re.compile(r"^2[4-9]:(\d{2})$")
+_OVERNIGHT_HOUR_RE = re.compile(r"^(\d+):(\d{2})$")
 
 
 def normalize_overnight_times(payload: Any) -> Any:
@@ -57,7 +57,9 @@ def normalize_overnight_times(payload: Any) -> Any:
                 continue
             match = _OVERNIGHT_HOUR_RE.match(str(entry.get("time", "")))
             if match:
-                entry["time"] = f"{int(match.group(1)) % 24:02d}:{match.group(2)}"
+                hour, minute = int(match.group(1)), match.group(2)
+                if hour >= 24:
+                    entry["time"] = f"{hour % 24:02d}:{minute}"
     return payload
 
 
