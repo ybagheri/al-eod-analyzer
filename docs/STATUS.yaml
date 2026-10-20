@@ -51,7 +51,7 @@ counts:
 s2_progress:
   item1_tax_freeze_migrations: done  # v1.3 stamped; config/taxonomy_migrations.yaml; loader auto-migrates (label_store.py); version stamps
   item2_schema_v3: done  # extract_v3.md + extract_day_v3.md; parser application/schema_v3.py; LABEL_SCHEMA.md v3 section
-  item3_write_response: pending
+  item3_write_response: done  # brooks write-response: strict v3 validation, key-whitelist, atomic BOM-less LF, --replace guard vs reviewed labels
   item4_extract_batch_guards: partial  # dirty-tree guard done; extract-batch pending
   item5_checkpoint_commits: pending
   item6_day_only: done  # extract_day_v3.md prompt + parser accepts events-less payload

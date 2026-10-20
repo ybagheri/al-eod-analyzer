@@ -64,6 +64,52 @@ def version() -> None:
     _print_version()
 
 
+@app.command(name="write-response")
+def write_response(
+    image_id: str = typer.Argument(..., help="Target image id (must be in the manifest)."),
+    file: Path | None = typer.Option(
+        None,
+        "--file",
+        help="Response JSON file to validate and write; omit to read stdin.",
+    ),
+    queue_dir: Path = typer.Option(
+        Path("artifacts/extraction_queue"), "--queue-dir", help="File-exchange queue."
+    ),
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    labels_dir: Path = typer.Option(
+        Path("artifacts/labels"), "--labels-dir", help="Labels dir (review check)."
+    ),
+    taxonomy_file: Path = typer.Option(
+        Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
+    ),
+    replace: bool = typer.Option(
+        False, "--replace", help="Allow overwriting an existing response."
+    ),
+) -> None:
+    """Validate one compact v3 response and write it into the queue (gated)."""
+    import sys
+
+    from brooks_lab.application.response_writer import ResponseWriteError, ResponseWriter
+
+    text = file.read_text(encoding="utf-8-sig") if file is not None else sys.stdin.read()
+    loaded = ImageIngestionService.read_manifest(manifest)
+    writer = ResponseWriter(
+        queue_dir=queue_dir,
+        manifest=loaded,
+        taxonomy=load_taxonomy(taxonomy_file),
+        labels_dir=labels_dir,
+    )
+    try:
+        result = writer.write(text, image_id, replace=replace)
+    except ResponseWriteError as exc:
+        typer.echo(f"REJECTED: {exc}")
+        raise typer.Exit(code=1) from exc
+    suffix = " (replaced)" if result.replaced else ""
+    typer.echo(f"wrote {result.path}{suffix}")
+
+
 @app.command()
 def ingest(
     data_dir: Path = typer.Option(

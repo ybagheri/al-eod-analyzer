@@ -157,3 +157,68 @@ def test_guard_refuses_dirty_queue(tmp_path: Path) -> None:
     clean = runner.invoke(app, ["extract", "--provider", "file", *args])
     assert clean.exit_code == 0, clean.output
     assert "valid_rate=1.00" in clean.output
+
+
+def _v3_response(image_id: str) -> dict[str, Any]:
+    return {
+        "image_id": image_id,
+        "scope_ok": True,
+        "scope_note": "",
+        "day_type": "trading_range",
+        "day_type_conf": 0.6,
+        "axis": {"style": "none", "first_label": "", "last_label": ""},
+        "anchors": {
+            "open_dir_first_hour": "flat",
+            "day_close_vs_open": "near",
+            "high_of_day_bar_index_hint": None,
+            "low_of_day_bar_index_hint": None,
+            "n_bars_visible": 78,
+        },
+        "events": [],
+    }
+
+
+def test_write_response_cli(tmp_path: Path) -> None:
+    """The gated writer CLI persists a manifest-backed response (S2.3)."""
+    work = tmp_path / "repo"
+    (work / "queue").mkdir(parents=True)
+    data = work / "data"
+    data.mkdir()
+    (data / "a.jpg").write_bytes(b"bytes")
+    _manifest(work / "manifest.json", "id-1", "a.jpg")
+    response = work / "spill.json"
+    response.write_text(json.dumps(_v3_response("id-1")), encoding="utf-8")
+    runner = CliRunner()
+    result = runner.invoke(
+        app,
+        [
+            "write-response",
+            "id-1",
+            "--file",
+            str(response),
+            "--queue-dir",
+            str(work / "queue"),
+            "--manifest",
+            str(work / "manifest.json"),
+            "--labels-dir",
+            str(work / "labels"),
+        ],
+    )
+    assert result.exit_code == 0, result.output
+    assert (work / "queue" / "id-1.response.json").is_file()
+    # overwrite requires --replace
+    again = runner.invoke(
+        app,
+        [
+            "write-response",
+            "id-1",
+            "--file",
+            str(response),
+            "--queue-dir",
+            str(work / "queue"),
+            "--manifest",
+            str(work / "manifest.json"),
+        ],
+    )
+    assert again.exit_code == 1, again.output
+    assert "--replace" in again.output
