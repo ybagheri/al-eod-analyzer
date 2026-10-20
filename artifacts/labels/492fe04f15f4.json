@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2026-01-12",
   "day_type": "spike_and_channel_bull",
   "day_type_confidence": 0.7,
@@ -7,6 +9,7 @@
       "bar_index_hint": 12,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "00:25",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "green Major trend reversal failed / Buying pressure after strong opening rally texts and green arrows",
       "label": "major_trend_reversal",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "green text with the tall green arrow to the bar 12 pullback low; bulls stepped right back in",
       "placement": null,
       "price_hint": 6995.0,
       "raw_label": "Major trend reversal failed, buying pressure after strong opening rally (23:55-00:20 low 6995)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:55",
@@ -32,6 +40,7 @@
       "bar_index_hint": 24,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:50",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "magenta Wedge / Some selling pressure texts over the bar 24-36 sector",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "magenta dotted wedge to the 01:15 top with red arrows 01:15-01:35 carrying price down to 7005",
       "placement": null,
       "price_hint": 7011.0,
       "raw_label": "Wedge top with some selling pressure (00:50-01:45 high 7011)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "00:50",
@@ -57,6 +71,7 @@
       "bar_index_hint": 36,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "02:10",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "magenta Wedge and red Minor reversal texts with red arrow 01:40",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "red Minor reversal text with magenta dotted falling wedge into bar 36 and the immediate bull leg up 02:05 onward",
       "placement": null,
       "price_hint": 7002.5,
       "raw_label": "Wedge minor reversal at 7002.5 (01:35-02:05 low 7002.5)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:35",
@@ -82,6 +102,7 @@
       "bar_index_hint": 12,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "04:35",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "Bull rally/spike from open text, Small Pullback Bull Trend text, stacked green arrows and bar numbers 12-72",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green text above the opening spike, small pullback bull trend red text, blue previous day all-time high magnet text and magenta dotted consecutive wedges to the close",
       "placement": null,
       "price_hint": 7025.0,
       "raw_label": "Bull rally/spike from open into bull channel, consecutive wedges (23:00-04:30 high 7025)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:00",
@@ -107,6 +133,7 @@
       "bar_index_hint": 72,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "04:45",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "red New all-time high text and dash-dot line with blue boxed final bars",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "red dash-dot New all-time high line broken at bar 72 before the red arrow sell-off into the close",
       "placement": null,
       "price_hint": 7025.0,
       "raw_label": "New all-time high breakout, previous day resistance test and breakout (04:15-04:40 high 7025)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "04:10",
@@ -133,9 +165,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "492fe04f15f4",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bull Spike from Open, Bull Channel and New All-time High' (ET+13 hrs, Jan 12/13, Jan 13 axis; inset New All-time High daily W-F-M). Bull rally/spike from the open (23:00 low 6969), major trend reversal failed at the pullback low 6995 with buying pressure after strong opening rally, a magenta wedge top with some selling pressure into the 01:55 minor reversal (low 7002.5), then a small pullback bull trend of consecutive wedges up to the previous-day all-time-high breakout at the 7025 new high (bar 72) closing ~7016/7018."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Spike from Open, Bull Channel and New All-time High' (ET+13 hrs, Jan 12/13, Jan 13 axis; inset New All-time High daily W-F-M). Bull rally/spike from the open (23:00 low 6969), major trend reversal failed at the pullback low 6995 with buying pressure after strong opening rally, a magenta wedge top with some selling pressure into the 01:55 minor reversal (low 7002.5), then a small pullback bull trend of consecutive wedges up to the previous-day all-time-high breakout at the 7025 new high (bar 72) closing ~7016/7018.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

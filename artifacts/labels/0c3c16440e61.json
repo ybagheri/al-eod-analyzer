@@ -1,158 +1,37 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2023-02-13",
   "day_type": "bull_trend_from_open",
-  "day_type_confidence": 0.7,
+  "day_type_confidence": 0.8,
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.65,
+      "confidence": 0.75,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "10:15",
+        "time": "13:35",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "blue note with arrow and maroon gap candle at the day-roll marker",
-      "label": "gap",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "gap-up open fed the small pullback bull trend",
-      "placement": null,
-      "price_hint": 4108.0,
-      "raw_label": "Two gaps from open",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "10:00",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bull",
-      "end_time": {
-        "time": "10:15",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "blue rectangle over the 10:05 candle plus right-panel note",
-      "label": "body_gap",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "blue-boxed bull bar closing near its high continued the trend",
-      "placement": null,
-      "price_hint": 4131.0,
-      "raw_label": "20-Gap bar buy setup (blue box, first)",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "10:05",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bull",
-      "end_time": {
-        "time": "11:45",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "blue text 'Small Pullback Bull Trend', green 'Bulls creating gaps Don't sell', repeated green boxes",
+      "evidence": "black vertical open line 09:55, green boxed pullbacks, blue Small Pullback Bull Trend text",
       "label": "channel",
       "label_explicit": null,
-      "modifiers": [
-        "small_pullback"
-      ],
-      "outcome": "success",
-      "outcome_reason": "bull trend of higher lows with green-boxed pullbacks",
-      "placement": null,
-      "price_hint": 4140.0,
-      "raw_label": "Small Pullback Bull Trend / Bulls creating gaps Don't sell",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "10:05",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "bull",
-      "end_time": {
-        "time": "14:00",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "orange 'Possible MM' text with dotted line at 4157",
-      "label": "measured_move",
-      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
-      "outcome": "fail",
-      "outcome_reason": "orange dotted MM target 4157 was never reached (day high 4150)",
-      "placement": null,
-      "price_hint": 4157.0,
-      "raw_label": "Possible MM",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "11:30",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": {
-        "time": "14:05",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "yellow/magenta note and magenta dotted rising wedge lines",
-      "label": "wedge",
-      "label_explicit": null,
-      "modifiers": [
-        "parabolic"
-      ],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "parabolic dotted wedge into the 14:00 top ended the leg",
+      "outcome_reason": "small pullback bull trend from the open rallied through the overnight range to 4148",
       "placement": null,
       "price_hint": 4148.0,
-      "raw_label": "Strong trends always form Wedges and Parabolic Wedges",
+      "raw_label": "Two gaps from open small pullback bull trend",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "11:00",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bull",
-      "end_time": {
-        "time": "13:25",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "blue rectangle over the 13:20 green candle",
-      "label": "body_gap",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "second blue-boxed candle pushed toward the wedge top",
-      "placement": null,
-      "price_hint": 4144.0,
-      "raw_label": "20-Gap bar buy setup (blue box, second)",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "13:15",
+        "time": "16:00",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -161,48 +40,29 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "14:00",
+        "time": "12:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "blue text with yellow 'MM Up' and green dotted gap lines 4135",
-      "label": "measured_move",
+      "evidence": "green text with blue boxed gap bars 11:05 and 12:55 and navy dotted breakout line at 4130",
+      "label": "gap",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "bull_gap",
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "MM up off the intact gap reached the 4148 top",
+      "outcome_reason": "bulls created gaps that stayed open all day",
       "placement": null,
-      "price_hint": 4148.0,
-      "raw_label": "Gap stayed open Possible MM Up",
+      "price_hint": 4130.0,
+      "raw_label": "Bulls creating gaps. Don't sell",
       "role": "pattern",
+      "rule_id": "1.3:bull_gap",
       "source": "vision",
       "start_time": {
-        "time": "13:30",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_time": {
-        "time": "14:35",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red shaded boxes 14:00-14:30 and magenta text 'Wedge'",
-      "label": "wedge",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "falling wedge pullback into the red-boxed bars dipped to 4136",
-      "placement": null,
-      "price_hint": 4144.0,
-      "raw_label": "Wedge (falling pullback lines)",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "14:05",
+        "time": "11:15",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -211,23 +71,63 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "15:10",
+        "time": "13:40",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "magenta text 'Wedge DB' with magenta dotted falling wedge lines",
-      "label": "double_bottom",
+      "evidence": "magenta dotted parabolic line to the 13:30 spike with highlighted text",
+      "label": "wedge",
       "label_explicit": null,
-      "modifiers": [],
+      "linked_to": null,
+      "mapped_from": "parabolic_wedge",
+      "modifiers": [
+        "parabolic",
+        "at_bottom"
+      ],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "wedge double bottom at 4136 based the closing rally",
+      "outcome_reason": "parabolic wedge into the 13:30 highs marked the first climax",
       "placement": null,
-      "price_hint": 4136.0,
-      "raw_label": "DB",
+      "price_hint": 4149.0,
+      "raw_label": "Strong trends always form Wedges and Parabolic Wedges (13:30 wedge top)",
       "role": "pattern",
+      "rule_id": "1.3:parabolic_wedge",
       "source": "vision",
       "start_time": {
-        "time": "14:35",
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Possible MM line at 4155 and blue texts with the blue boxed bar 12:55",
+      "label": "measured_move",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "possible measuring move up from the open gap reached the January High line",
+      "placement": null,
+      "price_hint": 4148.0,
+      "raw_label": "Possible MM - gap stayed open possible MM Up (13:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:00",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -236,25 +136,29 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "15:50",
+        "time": "15:20",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "green-boxed bars into the final close",
-      "label": "breakout",
+      "evidence": "magenta Wedge DB text under the 15:00-15:20 lows and blue 20-Gap bar buy highlighted text right",
+      "label": null,
       "label_explicit": null,
-      "modifiers": [
-        "buy"
-      ],
+      "linked_to": null,
+      "mapped_from": "wedge_db",
+      "modifiers": [],
+      "needs_review": true,
+      "needs_review_reason": "unknown_id",
       "outcome": "success",
-      "outcome_reason": "bull breakout lifted the close to the 4150 high",
+      "outcome_reason": "20 gap bar buy at the wedge DB low delivered the high of day test at close",
       "placement": null,
-      "price_hint": 4150.0,
-      "raw_label": "closing breakout to the day high",
+      "price_hint": 4133.0,
+      "raw_label": "Wedge DB (15:00) with first pullback to EMA in 20 bars",
       "role": "pattern",
+      "rule_id": "1.3:unknown_event",
       "source": "vision",
       "start_time": {
-        "time": "15:20",
+        "time": "13:40",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -264,9 +168,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "0c3c16440e61",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trading Range'. Reading: gap-up open at 4108 launches a small-title bull trend of two open gaps (blue note 'Two gaps from open / Small Pullback Bull Trend') with bulls creating gaps and blue-boxed 20-Gap-bar buy candles; a parabolic wedge runs to the 4148 top, a falling-wedge double bottom at 4136 pulls back, and a closing breakout lifts to the 4150 day-high close; the gap stayed open all day (green dotted 4135 gap line). bull_trend_from_open per title and the open spike + higher lows; the post-noon sideways segment is a range within the trend. Axis: left tail belongs to the prior session; day-roll marker '13' gap bars; day = 2023-02-13."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trading Range'. Two gaps from the open hold as a small pullback bull trend with bulls creating bull gaps and a parabolic wedge rally to 4148; a wedge pullback DB at 4130 becomes the first pullback to the EMA after 20 bars and the January High breakout high test at 4149 closes the day back up at 4149.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

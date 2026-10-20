@@ -5,6 +5,7 @@ from __future__ import annotations
 import datetime
 import json
 import logging
+import re
 import time
 from collections import Counter
 from dataclasses import dataclass, field
@@ -28,6 +29,36 @@ from brooks_lab.infrastructure.vision import (
 logger = logging.getLogger(__name__)
 
 PROMPT_VERSION = "extract_v1"
+
+_OVERNIGHT_HOUR_RE = re.compile(r"^2[4-9]:(\d{2})$")
+
+
+def normalize_overnight_times(payload: Any) -> Any:
+    """Rewrite overnight clock times like ``24:00`` to calendar-lawful ``00:00``.
+
+    Brooks overnight annotations use ``24:00`` for midnight (post-publish
+    convention). The schema only allows ``00:``-``23:``; without this rewrite
+    those historically-valid payloads quarantine. Normalization is value-safe:
+    it only rewrites strictly-malformed hours (>= 24), so genuine ``00:00``
+    readings are untouched.
+    """
+    if not isinstance(payload, dict):
+        return payload
+    payload = json.loads(json.dumps(payload, ensure_ascii=False))  # deep copy
+    events = payload.get("events")
+    if not isinstance(events, list):
+        return payload
+    for event in events:
+        if not isinstance(event, dict):
+            continue
+        for key in ("start_time", "end_time"):
+            entry = event.get(key)
+            if not isinstance(entry, dict):
+                continue
+            match = _OVERNIGHT_HOUR_RE.match(str(entry.get("time", "")))
+            if match:
+                entry["time"] = f"{int(match.group(1)) % 24:02d}:{match.group(2)}"
+    return payload
 
 
 class ExtractionPromptBuilder:
@@ -198,8 +229,10 @@ class ExtractionService:
         if not isinstance(raw, dict):
             raise VisionError("response must be a JSON object")
         payload: Any = raw
-        if not looks_like_v3(raw) and self.migrations is not None:
-            payload = self.migrations.apply_to_label(raw)
+        if not looks_like_v3(raw):
+            payload = normalize_overnight_times(payload)
+            if self.migrations is not None:
+                payload = self.migrations.apply_to_label(payload)
         try:
             if looks_like_v3(raw):
                 label = parse_v3_response(

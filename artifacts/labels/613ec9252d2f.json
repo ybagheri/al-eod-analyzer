@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2019-12-11",
   "day_type": "bull_trend_resumption",
   "day_type_confidence": 0.65,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:50",
         "tz": "America/Los_Angeles"
@@ -14,15 +17,18 @@
       "evidence": "pink 'Parabolic wedge' text over the magenta dotted rising line to the 3142.5 top",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "parabolic"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "sell-off to 3134 followed the spike top",
       "placement": null,
       "price_hint": 3142.5,
       "raw_label": "Parabolic wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:20",
@@ -34,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.5,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:05",
         "tz": "America/Los_Angeles"
@@ -41,13 +48,18 @@
       "evidence": "magenta drawn rising line into the 09:00 retest top with red signal boxes",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "broke down at 09:20 into the 3134 zone",
       "placement": null,
       "price_hint": 3138.5,
       "raw_label": "drawn wedge line",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:30",
@@ -59,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:55",
         "tz": "America/Los_Angeles"
@@ -66,13 +79,18 @@
       "evidence": "small magenta drawn wedge line under bars and the red horizontal 3136 reference line",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "range broke upward at the FOMC hour",
       "placement": null,
       "price_hint": 3135.0,
       "raw_label": "tight pre-FOMC range",
-      "role": "day_part",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:00",
@@ -84,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:55",
         "tz": "America/Los_Angeles"
@@ -91,13 +110,18 @@
       "evidence": "small magenta drawn wedge line under bars and the red horizontal 3136 reference line",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "range broke upward at the FOMC hour",
       "placement": null,
       "price_hint": 3135.0,
       "raw_label": "tight pre-FOMC range",
-      "role": "day_part",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:00",
@@ -109,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.5,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:55",
         "tz": "America/Los_Angeles"
@@ -116,15 +141,18 @@
       "evidence": "small magenta drawn rising line at the 10:05-10:45 lows",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "bottom"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "wedge bottom fed the FOMC breakout leg",
       "placement": null,
       "price_hint": 3134.0,
       "raw_label": "drawn wedge line",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:05",
@@ -136,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.8,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:15",
         "tz": "America/Los_Angeles"
@@ -143,13 +172,18 @@
       "evidence": "blue 'FOMC' text with blue up arrow at 11:00 plus green breakout boxes above the drawn red line",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bull trend of higher lows to 3145.5 followed",
       "placement": null,
       "price_hint": 3136.0,
       "raw_label": "FOMC",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:55",
@@ -161,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.5,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:10",
         "tz": "America/Los_Angeles"
@@ -168,15 +203,18 @@
       "evidence": "two magenta drawn rising lines bracketing the 3140-3145.5 rally",
       "label": "channel",
       "label_explicit": null,
-      "modifiers": [
-        "tight"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "channel held until the afternoon pullback test of its lower line",
       "placement": null,
       "price_hint": null,
       "raw_label": "drawn rising channel",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:15",
@@ -189,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "613ec9252d2f",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Weak Trend Resumption Up'; filename 'bull trend resumption after FOMC 3'. Chart is the day after a FOMC release (inset sliver 12:30-13:00 of the previous day, dotted separator, 12/11 edge marker): early bear drift to 3128, parabolic wedge (drawn magenta dotted rising line) topping 3142.5 with sell-off, mid-morning wedge retest at 3138.5 with red signal boxes, a drawn red horizontal reference line at 3136 (09:30-10:45) and a tight pre-FOMC range 3134-3135.5, then a blue-arrow 'FOMC' break at 11:00 launching the weak bullish resumption to 3145.5 (drawn rising channel 11:15-12:10), an afternoon pullback to the channel low 3138.5 (red boxes) and recovery to about 3143 into the close. Axis prints 07:00-13:00 with 12/11 -> 12/12 edge markers (offset-style)."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Weak Trend Resumption Up'; filename 'bull trend resumption after FOMC 3'. Chart is the day after a FOMC release (inset sliver 12:30-13:00 of the previous day, dotted separator, 12/11 edge marker): early bear drift to 3128, parabolic wedge (drawn magenta dotted rising line) topping 3142.5 with sell-off, mid-morning wedge retest at 3138.5 with red signal boxes, a drawn red horizontal reference line at 3136 (09:30-10:45) and a tight pre-FOMC range 3134-3135.5, then a blue-arrow 'FOMC' break at 11:00 launching the weak bullish resumption to 3145.5 (drawn rising channel 11:15-12:10), an afternoon pullback to the channel low 3138.5 (red boxes) and recovery to about 3143 into the close. Axis prints 07:00-13:00 with 12/11 -> 12/12 edge markers (offset-style).",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

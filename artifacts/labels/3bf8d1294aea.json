@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2026-05-04",
   "day_type": "bull_trending_trading_range",
   "day_type_confidence": 0.75,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "22:20",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "red Yesterday's high arrow to the red dotted line with green double bottom underline below",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "gap above yesterday's high shook out shorts and reversed up with a double bottom",
       "placement": null,
       "price_hint": 7270.0,
       "raw_label": "Bear trap at yesterday's high 7270 (22:00)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "21:55",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:00",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "bars 12 and 18 labels under the green arrow spike bars below the shaded box",
       "label": "spike",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "strong bull legs lifted the market from 7272 to 7282",
       "placement": null,
       "price_hint": 7278.0,
       "raw_label": "Bull spike (22:30 bar 12 to bar 18)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:25",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:25",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "blue shaded box with red dotted top, green dotted bottom, red Double tops arrows and red 2nd entry sell setups text",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "range with double tops and double bottoms; low risk 2nd entry sell setups failed",
       "placement": null,
       "price_hint": 7284.0,
       "raw_label": "Blue shaded trading range (23:35-01:20)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:30",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:25",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "blue shaded box with red dotted top, green dotted bottom, red Double tops arrows and red 2nd entry sell setups text",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "range with double tops and double bottoms; low risk 2nd entry sell setups failed",
       "placement": null,
       "price_hint": 7284.0,
       "raw_label": "Blue shaded trading range (23:35-01:20)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:30",
@@ -107,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:00",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "green Trading range breakout Then tight bull channel text over the 01:20-02:00 green arrows (48, 60)",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "upside breakout at bar 48 turned into a tight bull channel through bar 60",
       "placement": null,
       "price_hint": 7288.0,
       "raw_label": "Trading range breakout then tight bull channel (01:25)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:20",
@@ -132,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:20",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "purple All-time high (RTH) label with dotted line at the 03:05-03:15 highs",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "purple dotted all-time high tested in regular trading hours",
       "placement": null,
       "price_hint": 7300.0,
       "raw_label": "All-time high RTH test (03:10 high 7300)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "03:00",
@@ -157,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:55",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "red down arrow at bar 72 beside blue End of day profit taking text and the tall black sell bar into 04:00",
       "label": "climax",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bar 72 sell setup drove end of day profit taking into the evening halt",
       "placement": null,
       "price_hint": 7295.0,
       "raw_label": "End of day profit taking, aggressive swing sell setup (03:35 bar 72)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "03:30",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "3bf8d1294aea",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Big Gap Up Then Bull Trending Trading Range Day'. Overnight session x-axis is ET+12 hours (22:00-04:00 vs the original 10:00-16:00 ET labels). Big gap up above yesterday's high 7270, opening double bottom, bull spike, blue shaded trading range with failed 2nd entry sell setups, breakout into a tight bull channel, all-time high tested before end-of-day profit taking and a new all-time high in the after-close extension."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Big Gap Up Then Bull Trending Trading Range Day'. Overnight session x-axis is ET+12 hours (22:00-04:00 vs the original 10:00-16:00 ET labels). Big gap up above yesterday's high 7270, opening double bottom, bull spike, blue shaded trading range with failed 2nd entry sell setups, breakout into a tight bull channel, all-time high tested before end-of-day profit taking and a new all-time high in the after-close extension.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

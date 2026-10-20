@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2021-11-15",
   "day_type": "bear_trending_trading_range",
   "day_type_confidence": 0.75,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:20",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "brown shaded 07:05-07:10 bars under the red dotted 4692 line with Major Bear Surprise text below",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bear surprise oops bars sold from 4692",
       "placement": null,
       "price_hint": 4692.0,
       "raw_label": "Major bear surprise oops bars (07:10 top 4692)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "06:50",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:25",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "green Failed breakout below wedge text with magenta wedge lines and green shaded bull bars 07:55-08:10",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "wedge at 4680 with green shaded bull wedge buying pressure bars; failed exactly below the wedge at 08:20",
       "placement": null,
       "price_hint": 4680.0,
       "raw_label": "Failed breakout below wedge (08:20 low 4680)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:35",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:55",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "bear bar selloff at 08:35 into 09:00 with green dotted\u8fdc\u79bb 4670 line held",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "z-wave selloff and deep pullback traded to the green dotted 4670 area (08:35-09:00 green underline)",
       "placement": null,
       "price_hint": 4670.0,
       "raw_label": "z-wave selloff to 4670 (08:40)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:30",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "green DB at MM down and 60-min EMA text with green shaded bull bars at 09:25-09:35 in the 10:00 lateral brown shaded axes area",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "double bottom at the measured move down and 60-min EMA bought back to 4678",
       "placement": null,
       "price_hint": 4670.0,
       "raw_label": "Bounce off 4670 and 60-min EMA (09:45)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:15",
@@ -107,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:40",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "Wedge, ii Final Bull Flag text with red arrow to the 10:20 brown bar and red dotted 4680 line with LH DT labels",
       "label": "major_trend_reversal",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "final bull flag ii failed below the red dotted 4680 line with LH DT setting the midday reversal",
       "placement": null,
       "price_hint": 4680.0,
       "raw_label": "Wedge, ii final bull flag failed (10:20 push 4680)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:10",
@@ -132,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:05",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "orange Wedge DB PB HL MTR text and orange Db HL MTR text with green dotted 4670 line and red shaded buy setups 12:40-13:00 into close 4680",
       "label": "major_trend_reversal",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "double bottom higher low major trend reversal bull run lifted 4670 to the close at 4680",
       "placement": null,
       "price_hint": 4670.0,
       "raw_label": "Wedge DB PB HL MTR (11:35 low 4670) and 12:55 buy close 4687",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:20",
@@ -158,9 +196,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "42c4c9a36418",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Title bar: 'Bear Trending Trading Range Day' with 60-min EMA. Major bear surprise oops bars sell off the open (07:10 top 4692), a failed breakout below the wedge sell off to a z-wave selloff and deep pullback 4670 (08:35) before liftoff, buying pressure lifts 4670 to another selloff, orange shaded 12:10 double bottom break of the blue dotted 4677 line, then wedge low buys at 4677 (12:35 orange dotted) closed the day at 4687."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Title bar: 'Bear Trending Trading Range Day' with 60-min EMA. Major bear surprise oops bars sell off the open (07:10 top 4692), a failed breakout below the wedge sell off to a z-wave selloff and deep pullback 4670 (08:35) before liftoff, buying pressure lifts 4670 to another selloff, orange shaded 12:10 double bottom break of the blue dotted 4677 line, then wedge low buys at 4677 (12:35 orange dotted) closed the day at 4687.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

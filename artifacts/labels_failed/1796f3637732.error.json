@@ -1,0 +1,171 @@
+{
+  "image_id": "1796f3637732",
+  "reason": "schema validation failed: 2 validation errors for DayLabel\nevents.2.end_time.time\n  String should match pattern '^([01]\\d|2[0-3]):[0-5]\\d$' [type=string_pattern_mismatch, input_value='24:00', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_pattern_mismatch\nevents.3.start_time.time\n  String should match pattern '^([01]\\d|2[0-3]):[0-5]\\d$' [type=string_pattern_mismatch, input_value='24:00', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_pattern_mismatch (auto-repair: none available offline)",
+  "response": {
+    "date": "2026-04-21",
+    "day_type": "broad_bear_channel",
+    "day_type_confidence": 0.8,
+    "events": [
+      {
+        "bar_index_hint": null,
+        "confidence": 0.7,
+        "direction": "bear",
+        "end_time": {
+          "time": "22:30",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "brown boxed overnight bars with red dotted 7175 line and FYE - Failwick gap note at left",
+        "label": "outside_outside",
+        "outcome": "success",
+        "outcome_reason": "outside down day after the broad bear channel sells the open range below yesterdays high",
+        "price_hint": 7170.0,
+        "raw_label": "Outside down day after broad bear channel (22:00)",
+        "start_time": {
+          "time": "21:55",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.6,
+        "direction": "bull",
+        "end_time": {
+          "time": "23:30",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "green Double bottom at yesterdays low text with green arrows bar 14 and 23:50",
+        "label": "double_bottom",
+        "outcome": "success",
+        "outcome_reason": "double bottom at 7120 lifted the weak buy into tight bear channel",
+        "price_hint": 7120.0,
+        "raw_label": "Double bottom at yesterdays low (23:15)",
+        "start_time": {
+          "time": "22:45",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.7,
+        "direction": "bear",
+        "end_time": {
+          "time": "24:00",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "green Weak buy inside tight bear channel text with red Breakout below opening range and Low 1 notes",
+        "label": "channel",
+        "outcome": "success",
+        "outcome_reason": "weak buy failed at 7140 and the bear channel breakout broke below the opening range",
+        "price_hint": 7140.0,
+        "raw_label": "Weak buy inside tight bear channel",
+        "start_time": {
+          "time": "23:20",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.75,
+        "direction": "bear",
+        "end_time": {
+          "time": "02:40",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "gray shaded boxes 00:15-01:30 and 01:45-02:30 with magenta dotted descending wedges",
+        "label": "channel",
+        "outcome": "success",
+        "outcome_reason": "limit order broad bear channel ground down through the shaded range below yesterdays low",
+        "price_hint": 7115.0,
+        "raw_label": "Broad bear channel limit order market (00:00-02:30)",
+        "start_time": {
+          "time": "24:00",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.6,
+        "direction": "bear",
+        "end_time": {
+          "time": "02:00",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "blue Breakout below yesterdays low text with magenta lines cross under bar 48",
+        "label": "failed_breakout",
+        "outcome": "success",
+        "outcome_reason": "breakout below yesterdays low sold but only bought a weak inside bear-channel follow-through",
+        "price_hint": 7105.0,
+        "raw_label": "Breakout below yesterdays low but only one reasonable stop entry",
+        "start_time": {
+          "time": "01:20",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.6,
+        "direction": "bear",
+        "end_time": {
+          "time": "03:40",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "green Major trend reversal failed text with red Two legs down Minor reversal and magenta wedge bar 72",
+        "label": "major_trend_reversal",
+        "outcome": "unclear",
+        "outcome_reason": "major trend reversal attempt failed with two legs down into a minor reversal",
+        "price_hint": 7135.0,
+        "raw_label": "Major trend reversal failed; two legs down minor reversal",
+        "start_time": {
+          "time": "02:50",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.6,
+        "direction": "neutral",
+        "end_time": {
+          "time": "04:00",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "blue shaded end-of-day box 03:40-04:00 with Trading range at end of day text",
+        "label": "trading_range_begin",
+        "outcome": "success",
+        "outcome_reason": "market closed in a tight range possibly ending the bear channel pullback",
+        "price_hint": 7108.0,
+        "raw_label": "Trading range at end of day, possible end of bear channel",
+        "start_time": {
+          "time": "03:45",
+          "tz": "America/Los_Angeles"
+        }
+      },
+      {
+        "bar_index_hint": null,
+        "confidence": 0.6,
+        "direction": "neutral",
+        "end_time": {
+          "time": "04:00",
+          "tz": "America/Los_Angeles"
+        },
+        "evidence": "blue shaded end-of-day box 03:40-04:00 with Trading range at end of day text",
+        "label": "trading_range_end",
+        "outcome": "success",
+        "outcome_reason": "market closed in a tight range possibly ending the bear channel pullback",
+        "price_hint": 7108.0,
+        "raw_label": "Trading range at end of day, possible end of bear channel",
+        "start_time": {
+          "time": "03:45",
+          "tz": "America/Los_Angeles"
+        }
+      }
+    ],
+    "extraction_meta": {
+      "model_id": "muse-spark-opencode",
+      "prompt_version": "extract_v2",
+      "provider": "file"
+    },
+    "image_id": "1796f3637732",
+    "schema_version": 1,
+    "session_summary": "Blue title bar: 'Broad Bear Channel Working Down from All-time High'. Overnight ET+12: outside down after the broad bear channel with double bottom at yesterday low selling the day; a limit order trading range breaks below yesterdays low, a failed major trend reversal with two legs down and a minor reversal to 7135 closes into a late range, possibly ending the pullback."
+  }
+}

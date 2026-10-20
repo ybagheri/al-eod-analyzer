@@ -1,76 +1,34 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-06-05",
   "day_type": "trend_reversal_to_bear",
-  "day_type_confidence": 0.55,
+  "day_type_confidence": 0.7,
   "events": [
     {
       "bar_index_hint": null,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": {
-        "time": "07:10",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red arrows on the descending open bars",
-      "label": "spike",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "opening bear leg sold into the 5955 floor",
-      "placement": null,
-      "price_hint": 5960.0,
-      "raw_label": "bear leg from the open",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "06:45",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.5,
-      "direction": "bear",
-      "end_time": {
-        "time": "08:15",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red dotted line at 5992-5995 over 06:45-08:15",
-      "label": "trend_line",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "unclear",
-      "outcome_reason": "dotted level capping the opening bars; broken by the bull leg",
-      "placement": null,
-      "price_hint": 5995.0,
-      "raw_label": "red dotted line above the open highs",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "06:45",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 12,
-      "confidence": 0.65,
+      "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "07:45",
+        "time": "07:40",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "green text 'Higher low double bottom' and green dotted support line from 07:30",
-      "label": "higher_low_double_bottom",
+      "evidence": "green dotted lows at 5958 with green Higher low double bottom text and magenta wedge",
+      "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "first double bottom on the green support line began the bull leg",
+      "outcome_reason": "higher low double bottom at 5958 lifted the market into the wedge rally to 6005",
       "placement": null,
-      "price_hint": 5955.0,
-      "raw_label": "Higher low double bottom",
+      "price_hint": 5958.0,
+      "raw_label": "Higher low double bottom (07:15 lows 5958)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "06:55",
@@ -79,26 +37,63 @@
       "x_px": null
     },
     {
-      "bar_index_hint": 36,
-      "confidence": 0.7,
+      "bar_index_hint": null,
+      "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "09:35",
+        "time": "08:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "magenta 'Wedge' text with dotted wedge lines into the 09:25 top",
+      "evidence": "magenta Wedge text with dotted lines rising to the 08:40 spike",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "majenta rising wedge to the 6005 top failed into the afternoon decline",
+      "outcome_reason": "magenta wedge into the 08:40 top 6005 marked the swing high",
       "placement": null,
       "price_hint": 6005.0,
-      "raw_label": "Wedge",
+      "raw_label": "Wedge (08:40 top 6005)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "08:15",
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted lines at 5998 and 5990 with red arrows and sell bars 10:00-10:20",
+      "label": "double_top",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "double top at 5990 after the wedge started the bear channel",
+      "placement": null,
+      "price_hint": 5990.0,
+      "raw_label": "Double Top / Lower high double top at 5990 (09:55)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -106,74 +101,92 @@
     {
       "bar_index_hint": null,
       "confidence": 0.6,
-      "direction": "bear",
-      "end_time": {
-        "time": "11:00",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red dotted line at 5990 over the 09:45-11:00 highs",
-      "label": "lower_high_double_top",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "retest stalled under 5990 and the market broke down",
-      "placement": null,
-      "price_hint": 5990.0,
-      "raw_label": "red dotted lower-high line",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "09:40",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 48,
-      "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "10:55",
+        "time": "10:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "second green 'Higher low double bottom' text at 10:45 (bar 48)",
-      "label": "higher_low_double_bottom",
+      "evidence": "green Higher low double bottom text near 10:15 with green arrows to 10:50",
+      "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "second double bottom bounced to the 5990 retest",
+      "outcome_reason": "higher low double bottom at 5960 only bought a small rally back to 5985",
       "placement": null,
-      "price_hint": 5965.0,
-      "raw_label": "Higher low double bottom",
+      "price_hint": 5960.0,
+      "raw_label": "Higher low double bottom (10:20 low)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "10:15",
+        "time": "09:55",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 72,
-      "confidence": 0.7,
+      "bar_index_hint": null,
+      "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "13:10",
+        "time": "12:40",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "red 'Bear channel' text over the 11:30-13:15 decline",
+      "evidence": "magenta dotted descending line from 10:05 to the 12:20 low and Bear channel red text",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "bear channel under the EMA sold to the 5930 low",
+      "outcome_reason": "bear channel ground down from 5985 through the 5958 support to 5932",
       "placement": null,
-      "price_hint": 5930.0,
-      "raw_label": "Bear channel",
+      "price_hint": 5932.0,
+      "raw_label": "Bear channel (magenta dotted descending line, 10:05-12:35)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "11:00",
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 5985 over bar 54 with red arrows across the boxed bar 50-64 series",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "failed breakout to 5985 completed the LH DT and the bear channel resumed",
+      "placement": null,
+      "price_hint": 5985.0,
+      "raw_label": "Failed breakout up (11:00 LH DT 5985)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -183,9 +196,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "050ac5025d93",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Double Bottom, Then Bear Channel'. Reading: bear leg from the open (06:45-07:10) set a 5955 floor that formed the first higher-low double bottom; a bull leg lifted to a 6005 wedge top; after the wedge top failed lower highs under the 5990 red line, a second higher-low double bottom at 5965 gave only a weak 5990 retest and the afternoon became a bear channel sliding under the EMA to the 5930 low before a weak bounce. trend_reversal_to_bear (morning bull leg reversed into the bear channel afternoon; the title's 'Then Bear Channel' phrasing describes the same shift). Axis plain 06:45-13:15, day 2025-06-05."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Double Bottom, Then Bear Channel'. Higher low double bottoms at 5958 launch a wedge rally to the double top breakout level 5998, a lower high double top at 5990 with failed later attempts extends the evening, and the bear channel obligation sells down through the green dotted 5958 line to 5932.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

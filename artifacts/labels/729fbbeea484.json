@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2026-01-28",
   "day_type": "broad_bear_channel",
   "day_type_confidence": 0.6,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:45",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "green text with red dotted top line",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green New All-time high (RTH) text under the red dotted 7030 fringe with the reversal red arrows off the open",
       "placement": null,
       "price_hint": 7030.0,
       "raw_label": "Bearish reversal at the new all-time high 7030 (23:00-23:45)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": 18,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:10",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "red text top center",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red text over the stair-stepped blue shaded boxes with red arrows into the lows",
       "placement": null,
       "price_hint": 7000.0,
       "raw_label": "Bear channel after opening range and consecutive trading range breakouts (23:20-01:05 low 7000)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:20",
@@ -57,6 +71,7 @@
       "bar_index_hint": 36,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:30",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "magenta dotted line and text",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta dotted falling wedge into the green dotted floor with the magenta Wedge bottom minor reversal label",
       "placement": null,
       "price_hint": 6996.0,
       "raw_label": "Falling wedge into 6996 and wedge bottom minor reversal (23:20-01:25 low 6996)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:20",
@@ -82,6 +102,7 @@
       "bar_index_hint": 36,
       "confidence": 0.55,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "02:05",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "green text with arrow up",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "green Two legs up to bear channel trendline arrow into the red dotted 7001 line; the push failed and price fell back",
       "placement": null,
       "price_hint": 7001.0,
       "raw_label": "Two legs up to the bear channel trendline, buy scalps only (01:15-02:00 high 7001)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:15",
@@ -107,6 +133,7 @@
       "bar_index_hint": 48,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:50",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "blue texts above the shaded range box",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue shaded box with the blue Tight trading range into/after FOMC report and Limit order market texts",
       "placement": null,
       "price_hint": 7000.0,
       "raw_label": "Tight trading range into/after FOMC report (01:40-03:45)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:40",
@@ -132,6 +164,7 @@
       "bar_index_hint": 72,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "04:25",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "red text top right with black arrow",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "red Bear trend resumption failed text behind the red dotted 7013 line at the post-FOMC spike",
       "placement": null,
       "price_hint": 7013.0,
       "raw_label": "Bear trend resumption failed at 7013 after FOMC (03:50-04:20 high 7015)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "03:50",
@@ -157,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "05:10",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "green text bottom right over the final leg",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "big black bear bars off the red dotted high with the green Testing Monday's close text bottom right and Limit order market Scalp setups note",
       "placement": null,
       "price_hint": 6976.0,
       "raw_label": "Final wedge decline testing Monday's close (04:20-05:10 low 6976)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "04:20",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "729fbbeea484",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bear Channel after New All-time High, Minor Reversal, Trading Range' (ET+13 hrs, Jan 28/29; inset Upper Trading Range Breakout Failure T-W). New all-time high at the open (7030) reversed into consecutive trading range breakouts in a bear channel down to 6996, two legs up to the bear channel trendline, the FOMC statement and press conference bars (minimal impact, bear trend resumption failed at 7013, limit order market scalp setups), and the final wedge sell-off testing Monday's close."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Channel after New All-time High, Minor Reversal, Trading Range' (ET+13 hrs, Jan 28/29; inset Upper Trading Range Breakout Failure T-W). New all-time high at the open (7030) reversed into consecutive trading range breakouts in a bear channel down to 6996, two legs up to the bear channel trendline, the FOMC statement and press conference bars (minimal impact, bear trend resumption failed at 7013, limit order market scalp setups), and the final wedge sell-off testing Monday's close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

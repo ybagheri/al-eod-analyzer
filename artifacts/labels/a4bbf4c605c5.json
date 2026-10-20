@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-09-23",
   "day_type": "small_pullback_bear_trend",
   "day_type_confidence": 0.85,
@@ -7,6 +9,7 @@
       "bar_index_hint": 12,
       "confidence": 0.8,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:40",
         "tz": "America/Los_Angeles"
@@ -14,15 +17,18 @@
       "evidence": "red 'Higher high double top' text; red dotted line at 6758 and blue dotted twin-peak boxes at 07:00",
       "label": "double_top",
       "label_explicit": null,
-      "modifiers": [
-        "HH"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bear trend down to 6700 for the first three hours followed",
       "placement": null,
       "price_hint": 6758.0,
       "raw_label": "Higher high double top",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -34,6 +40,7 @@
       "bar_index_hint": 24,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
@@ -41,15 +48,18 @@
       "evidence": "blue 'Expanding triangle' note with arrow to the magenta dotted descending line under the lows",
       "label": "triangle",
       "label_explicit": null,
-      "modifiers": [
-        "expanding"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bear break of the expanding triangle descending edge accelerated the trend",
       "placement": null,
       "price_hint": null,
       "raw_label": "Expanding triangle",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:10",
@@ -61,6 +71,7 @@
       "bar_index_hint": 36,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:50",
         "tz": "America/Los_Angeles"
@@ -68,15 +79,18 @@
       "evidence": "green 'Minor lower low double bottom' text with green arrows at the 09:40 low",
       "label": "lower_low_double_bottom",
       "label_explicit": null,
-      "modifiers": [
-        "minor"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "only a small bounce to 6740; the bear trend resumed immediately",
       "placement": null,
       "price_hint": 6733.0,
       "raw_label": "Minor lower low double bottom",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:30",
@@ -88,6 +102,7 @@
       "bar_index_hint": 40,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:25",
         "tz": "America/Los_Angeles"
@@ -95,13 +110,18 @@
       "evidence": "orange 'Possible measured move down' text with arrow to the small bear range under the 6740 red dotted line",
       "label": "measured_move",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "projected downside target zone broke and price continued to 6700",
       "placement": null,
       "price_hint": 6731.0,
       "raw_label": "Possible measured move down",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:55",
@@ -113,6 +133,7 @@
       "bar_index_hint": 48,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:55",
         "tz": "America/Los_Angeles"
@@ -120,13 +141,18 @@
       "evidence": "orange 'Measured move' text with orange dotted line at 6705 and blue shaded target box",
       "label": "measured_move",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "the 6705 projection was reached at the sell climax and the blue target zone held as the midday range",
       "placement": null,
       "price_hint": 6705.0,
       "raw_label": "Measured move",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:20",
@@ -138,6 +164,7 @@
       "bar_index_hint": 52,
       "confidence": 0.85,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:00",
         "tz": "America/Los_Angeles"
@@ -145,13 +172,18 @@
       "evidence": "orange 'Exhaustive sell climax' text with arrow to the tall dark bear bars in the beige box",
       "label": "exhaustive_climax",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "exhaustive flush into 6700 was followed by chop and a late recovery",
       "placement": null,
       "price_hint": 6700.0,
       "raw_label": "Exhaustive sell climax",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:45",
@@ -163,6 +195,7 @@
       "bar_index_hint": 60,
       "confidence": 0.5,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:00",
         "tz": "America/Los_Angeles"
@@ -170,13 +203,18 @@
       "evidence": "blue shaded box across the late-session bars 60-76",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "range between 6700 and 6715 until the close, resolving up at the end",
       "placement": null,
       "price_hint": 6705.0,
       "raw_label": "blue shaded range box",
-      "role": "day_part",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:00",
@@ -188,6 +226,7 @@
       "bar_index_hint": 60,
       "confidence": 0.5,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:00",
         "tz": "America/Los_Angeles"
@@ -195,13 +234,18 @@
       "evidence": "blue shaded box across the late-session bars 60-76",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "range between 6700 and 6715 until the close, resolving up at the end",
       "placement": null,
       "price_hint": 6705.0,
       "raw_label": "blue shaded range box",
-      "role": "day_part",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:00",
@@ -214,9 +258,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "a4bbf4c605c5",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "CALIBRATION MISMATCH FLAG: the filename says 'Small-PB-Bull-Trend-from-the-Open' but the blue title bar and the chart read 'Small Pullback Bear Trend From The Open' - the filename title is wrong for this image; day_type follows the on-chart title and the trend shape (one-directional bear from 6750 to 6700 with shallow legs). Annotated reading: higher-high double top at the 6758 open (dotted twin-peak boxes), expanding triangle under descending magenta line, minor lower-low double bottom at 09:40, possible measured move down, then a dominant bear spike (beautiful box at bar 48) into an exhaustive sell climax at 6700; measured-move target zone (blue shaded 6705 area) reached late morning and price ranged 6700-6715 until a bull close about 6715. Axis day rolls 9/23 -> 9/24 with hours 07:00-13:00 (offset-style axis again)."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "CALIBRATION MISMATCH FLAG: the filename says 'Small-PB-Bull-Trend-from-the-Open' but the blue title bar and the chart read 'Small Pullback Bear Trend From The Open' - the filename title is wrong for this image; day_type follows the on-chart title and the trend shape (one-directional bear from 6750 to 6700 with shallow legs). Annotated reading: higher-high double top at the 6758 open (dotted twin-peak boxes), expanding triangle under descending magenta line, minor lower-low double bottom at 09:40, possible measured move down, then a dominant bear spike (beautiful box at bar 48) into an exhaustive sell climax at 6700; measured-move target zone (blue shaded 6705 area) reached late morning and price ranged 6700-6715 until a bull close about 6715. Axis day rolls 9/23 -> 9/24 with hours 07:00-13:00 (offset-style axis again).",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

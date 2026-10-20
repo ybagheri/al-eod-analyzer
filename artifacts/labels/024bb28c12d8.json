@@ -1,312 +1,254 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2026-07-07",
-  "day_type": "trading_range_bear_breakout",
-  "day_type_confidence": 0.6,
+  "day_type": "bear_trend_from_open",
+  "day_type_confidence": 0.75,
   "events": [
     {
-      "bar_index_hint": 1,
-      "confidence": 0.6,
+      "bar_index_hint": null,
+      "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "10:05",
+        "time": "11:15",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "red text at the top-left with shaded opening-range boxes and red arrows",
-      "label": "gap",
+      "evidence": "brown/red boxed 09:55-10:30 bear bars with red arrows and dotted 2R opening range lines",
+      "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "gap-down open flowed into the bear micro-channel",
+      "outcome_reason": "3-bar bear micro channel after the gap down dropped the market to 7540",
       "placement": null,
-      "price_hint": 7578.0,
-      "raw_label": "Gap down and Bear continuation",
+      "price_hint": 7540.0,
+      "raw_label": "Gap down and bear continuation; 3 bar Bear Micro-channel becomes Bear Trend from the open",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "09:50",
+        "time": "09:55",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 12,
-      "confidence": 0.7,
-      "direction": "bear",
-      "end_time": {
-        "time": "10:40",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red text over the descending open with red down arrows",
-      "label": "spike",
-      "label_explicit": null,
-      "modifiers": [
-        "micro_channel"
-      ],
-      "outcome": "success",
-      "outcome_reason": "three-bar bear micro-channel sold to the morning lows",
-      "placement": null,
-      "price_hint": 7538.0,
-      "raw_label": "3 bar Bear Micro-channel becomes Bear Trend from the open",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "09:50",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 24,
+      "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:30",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "green 'Double Bottom' text with brown dotted line under the morning lows",
+      "evidence": "green Double Bottom text and green arrows under the 10:50-11:30 boxed range",
       "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "double bottom at the lows launched the 50% retracement bull trend",
+      "outcome_reason": "double bottom at 7533 lifted the market into the tight limit order trading range",
       "placement": null,
-      "price_hint": 7534.0,
-      "raw_label": "Double Bottom",
+      "price_hint": 7533.0,
+      "raw_label": "Double Bottom (11:00) at 7535",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "10:30",
+        "time": "10:50",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 30,
+      "bar_index_hint": null,
       "confidence": 0.6,
-      "direction": "bull",
-      "end_time": {
-        "time": "12:20",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "black note beside the 12:00 rally",
-      "label": "pullback_50pct",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "bull trend from the double bottom retested the 50% zone",
-      "placement": null,
-      "price_hint": 7540.0,
-      "raw_label": "50% Retracement Bull Trend Beginning Thursday 2nd July",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "11:45",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 36,
-      "confidence": 0.65,
-      "direction": "bull",
-      "end_time": {
-        "time": "13:00",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "brown 'Bull Breakout' text with dotted level 7547",
-      "label": "breakout",
-      "label_explicit": null,
-      "modifiers": [
-        "buy"
-      ],
-      "outcome": "success",
-      "outcome_reason": "bull breakout ran above the 7547 dotted line into the range",
-      "placement": null,
-      "price_hint": 7547.0,
-      "raw_label": "Bull Breakout",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "12:00",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 48,
-      "confidence": 0.6,
-      "direction": "bull",
+      "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "14:10",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "brown 'MM Bull Breakout' text over the shaded midday range",
-      "label": "measured_move",
-      "label_explicit": null,
-      "modifiers": [],
-      "outcome": "success",
-      "outcome_reason": "MM projected the bull breakout to the 7570 range top",
-      "placement": null,
-      "price_hint": 7570.0,
-      "raw_label": "MM Bull Breakout",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "12:30",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 48,
-      "confidence": 0.65,
-      "direction": "neutral",
-      "end_time": {
-        "time": "12:40",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "blue shaded boxes 12:30-14:00 and orange text 'Tight Trading Range Limit Order Trading'",
+      "evidence": "blue shaded boxes 11:20-14:10 with orange dotted tops at 7545 and 7568",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
-      "outcome": "unclear",
-      "outcome_reason": "shaded range resolved bearish after the double tops (begin of pair)",
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "50% retrace bull trend and tight limit order range ground the market up to 7568",
       "placement": null,
       "price_hint": 7560.0,
-      "raw_label": "Tight Trading Range Limit Order Trading",
-      "role": "day_part",
+      "raw_label": "Tight Trading Range Limit Order Trading with 50% Retracement Bull Trend",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "12:30",
+        "time": "11:20",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 72,
-      "confidence": 0.65,
+      "bar_index_hint": null,
+      "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "15:30",
+        "time": "14:10",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "second shaded blue box under the 15:00-15:30 lows",
+      "evidence": "blue shaded boxes 11:20-14:10 with orange dotted tops at 7545 and 7568",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
-      "outcome": "unclear",
-      "outcome_reason": "shaded range resolved bearish after the double tops (end of pair)",
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "50% retrace bull trend and tight limit order range ground the market up to 7568",
       "placement": null,
-      "price_hint": 7543.0,
-      "raw_label": "Tight Trading Range Limit Order Trading",
-      "role": "day_part",
+      "price_hint": 7560.0,
+      "raw_label": "Tight Trading Range Limit Order Trading with 50% Retracement Bull Trend",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "15:20",
+        "time": "11:20",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 60,
-      "confidence": 0.7,
-      "direction": "bear",
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "15:00",
+        "time": "13:20",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "red 'Double Tops' text above the 14:20-15:00 highs",
-      "label": "double_top",
+      "evidence": "black dotted MM Bull Breakout line at 7568 rising through 13:00",
+      "label": "measured_move",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "successive double tops at 7568 rolled into the bear breakout",
+      "outcome_reason": "measured move bull breakout reached 7568",
       "placement": null,
       "price_hint": 7568.0,
-      "raw_label": "Double Tops",
+      "raw_label": "MM Bull Breakout",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "14:15",
+        "time": "12:20",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 66,
+      "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "14:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Double Tops text with red dotted line at 7568 and red arrows after bar 60",
+      "label": "double_top",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "double tops at 7568 rolled into the bear breakout",
+      "placement": null,
+      "price_hint": 7568.0,
+      "raw_label": "Double Tops (14:10-14:20)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "13:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "15:10",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "brown 'Bear Breakout' text below the red arrow cluster",
-      "label": "breakout",
-      "label_explicit": null,
-      "modifiers": [
-        "sell"
-      ],
-      "outcome": "success",
-      "outcome_reason": "bear breakout through 7545 broke the midday range",
-      "placement": null,
-      "price_hint": 7545.0,
-      "raw_label": "Bear Breakout",
-      "role": "pattern",
-      "source": "vision",
-      "start_time": {
-        "time": "14:40",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": 72,
-      "confidence": 0.6,
-      "direction": "bear",
-      "end_time": {
-        "time": "15:50",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red text at 15:10 with the shaded box around the selloff",
+      "evidence": "red arrows descending from bar 60 to bar 72 below the 7545 black dotted line",
       "label": "channel",
       "label_explicit": null,
-      "modifiers": [
-        "tight"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "tight bear channel vacuum selloff tested support then stopped",
+      "outcome_reason": "bear breakout through 7545 doubled down the micro channel to 7538",
       "placement": null,
-      "price_hint": 7535.0,
-      "raw_label": "Tight Bear Channel Vacuum Selloff into support",
+      "price_hint": 7538.0,
+      "raw_label": "3 bar Bear Micro-channel x 2 and Bear Breakout",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "15:05",
+        "time": "14:25",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
     },
     {
-      "bar_index_hint": 78,
-      "confidence": 0.5,
-      "direction": "bull",
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
-        "time": "16:10",
+        "time": "15:45",
         "tz": "America/Los_Angeles"
       },
-      "evidence": "green shaded box on the final bars before the Wed edge marker",
-      "label": "bull_flag",
+      "evidence": "red/white boxed 15:00-15:45 bars with red bear channel note and close bounce bar 78",
+      "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
-      "outcome": "unclear",
-      "outcome_reason": "small green shaded bull flag lifted the close to 7552",
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "MM bear breakout vacuum selloff bottomed at support 7530 and closed 7552",
       "placement": null,
-      "price_hint": 7552.0,
-      "raw_label": "late bull flag close",
+      "price_hint": 7530.0,
+      "raw_label": "Tight Bear Channel Vacuum Selloff into support",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
-        "time": "15:55",
+        "time": "15:00",
         "tz": "America/Los_Angeles"
       },
       "x_px": null
@@ -316,9 +258,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "024bb28c12d8",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bear Trend from the Open to Trading Range'. Reading: gap-down open with a 3-bar bear micro-channel (bear trend from the open) into 7534; double bottom at the lows started a 50%-retracement bull trend (axis note: beginning Thursday 2nd July) that bull-breakout ran into a large shaded midday range 7550-7570 (tight range limit-order trading) with MM bull breakout at 7570 and successive double tops; afternoon bear breakout / MM bear breakout broke the range, a tight bear channel vacuum selloff tested support 7535-7540, and a small late bull close recovered to 7552. trading_range_bear_breakout (v1.3): most of the session is the shaded range and the afternoon resolves it downward. Axis: Tue leg printed 10:00-15:30 then a Wed day-roll marker with 9:50 edge bar; day = 2026-07-07 (Tuesday); times read as printed."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Trend from the Open to Trading Range'. A overnight chart: a gap down with bear continuation drives the 3-bar bear micro-channel trend down to a double bottom; a 50% retrace bull trend lifts into a MM bull breakout, makes double tops at 7568, then bear breakout and MM bear breakout into a tight bear channel vacuum selloff into support closing 7552.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2022-01-19",
   "day_type": "broad_bear_channel",
   "day_type_confidence": 0.6,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:25",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "red text top left",
       "label": "lower_high_double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red dotted fringe at the 4600 high with the LH DT red text starting the bear trend",
       "placement": null,
       "price_hint": 4600.0,
       "raw_label": "LH DT at the 4600 open high (07:05-07:25 high 4600)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:05",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:35",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "magenta dotted line and text",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta dotted falling wedge through the red boxes with the magenta Wedge text at the low",
       "placement": null,
       "price_hint": 4554.0,
       "raw_label": "Falling wedge bear trend into the 4554 low (07:15-08:35 low 4554)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:15",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:45",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "magenta Wedge text top center",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green bull boxes climbing the magenta dotted rising wedge into the red dotted 4590 line with the Wedge text at the top",
       "placement": null,
       "price_hint": 4590.0,
       "raw_label": "Bull wedge rally to the 4590 wedge top (08:40-09:45 high 4590)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:40",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.55,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:45",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "blue text with dotted lines",
       "label": "triangle",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "blue dotted triangle lines converging under the Triangle Top text before the breakdown",
       "placement": null,
       "price_hint": 4585.0,
       "raw_label": "Triangle top at 4585 (09:45-10:45 high 4585)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:45",
@@ -107,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.55,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:25",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "blue text and orange ii",
       "label": "lower_low_double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "blue LL MTR text with the orange ii label and the magenta wedge at EMA bounce; the bounce failed and the iii leg collapsed",
       "placement": null,
       "price_hint": 4554.0,
       "raw_label": "LL MTR lower-low major trend reversal and wedge at EMA bounce (11:25-12:25 low 4554)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:25",
@@ -132,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.55,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:25",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "magenta text right of center",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta Wedge at EMA text over the rising wedge of green bars into the EMA; the wedge broke down into the iii leg",
       "placement": null,
       "price_hint": 4565.0,
       "raw_label": "Wedge at EMA bear flag then breakdown (11:55-12:25 high 4565)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:55",
@@ -157,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.55,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:20",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "orange iii text in the shaded box",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "orange iii label in the shaded box as the bear bars broke the green dotted floor toward the blue dotted Dec 20 low line",
       "placement": null,
       "price_hint": 4525.0,
       "raw_label": "iii final leg sell-off past Dec 20 low (12:25-13:20 low 4525)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:25",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "821d0444dddf",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Broad Bear Channel'. LH double top at the 4600 open high, bear trend through the falling wedge into the 4554 green dotted floor, a bull wedge rally to the 4590 wedge top and triangle top, a decline back to the lower low (LL MTR) with the wedge at EMA and ii bounce, then the iii leg sell-off to 4525 testing the Dec 20 low dotted line into the close."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Broad Bear Channel'. LH double top at the 4600 open high, bear trend through the falling wedge into the 4554 green dotted floor, a bull wedge rally to the 4590 wedge top and triangle top, a decline back to the lower low (LL MTR) with the wedge at EMA and ii bounce, then the iii leg sell-off to 4525 testing the Dec 20 low dotted line into the close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

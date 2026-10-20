@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-10-27",
   "day_type": "bull_trend_resumption",
   "day_type_confidence": 0.65,
@@ -7,6 +9,7 @@
       "bar_index_hint": 12,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:20",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue text left side",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue shaded box with orange dotted contracting triangle rails and Buying pressure (long lower tails) text",
       "placement": null,
       "price_hint": 6886.0,
       "raw_label": "Opening trading range and contracting triangle (22:00-23:20)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": 24,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:40",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "green text with arrow",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Triangle breakout text with green arrow up through the box high",
       "placement": null,
       "price_hint": 6890.0,
       "raw_label": "Triangle breakout (23:15-23:40 high 6893)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:15",
@@ -57,6 +71,7 @@
       "bar_index_hint": 36,
       "confidence": 0.55,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "00:50",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "green arrows at 24-36",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "rally to the lower high around 6892 with red arrows on the pullback legs",
       "placement": null,
       "price_hint": 6891.0,
       "raw_label": "Bull run and pullback low highs (23:30-00:50)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:30",
@@ -82,6 +102,7 @@
       "bar_index_hint": 48,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:20",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "magenta Truncated wedge text",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta dotted rising wedge under the run with the red arrows at the lower highs and the green Double bottom text",
       "placement": null,
       "price_hint": 6886.0,
       "raw_label": "Truncated wedge into 6885 (00:00-01:20)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "00:00",
@@ -107,6 +133,7 @@
       "bar_index_hint": 48,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:45",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "green text bottom center",
       "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Wedge bottom Double bottom text with green arrows at the 6885 lows before the resumption rally",
       "placement": null,
       "price_hint": 6885.0,
       "raw_label": "Wedge bottom double bottom at 6885 (01:10-01:45)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:10",
@@ -132,6 +164,7 @@
       "bar_index_hint": 60,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:25",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "shaded tight boxes",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "shaded boxes at bars 60-72 with the black Tight trading ranges Limit order market arrow texts",
       "placement": null,
       "price_hint": 6897.0,
       "raw_label": "Tight trading ranges, limit order market boxes (02:00-03:25)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "02:00",
@@ -157,6 +195,7 @@
       "bar_index_hint": 72,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "04:00",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "green text top right",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Breakout and rally into close text with green arrows on the strong close bars",
       "placement": null,
       "price_hint": 6905.0,
       "raw_label": "Breakout and rally into the close (03:15-04:00 high 6912)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "03:15",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "effe716ec77e",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Big Gap Up, Contracting Triangle Then Bull Trend Resumption' (ET+12 hrs, Oct 27-28; inset Consecutive All-time Highs). Buying pressure with long lower tails into the opening trading range triangle breakout, the rally with the truncated wedge and wedge-bottom double bottom at 6885, then tight trading ranges limit order market and the breakout and rally into the close to 6912."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Big Gap Up, Contracting Triangle Then Bull Trend Resumption' (ET+12 hrs, Oct 27-28; inset Consecutive All-time Highs). Buying pressure with long lower tails into the opening trading range triangle breakout, the rally with the truncated wedge and wedge-bottom double bottom at 6885, then tight trading ranges limit order market and the breakout and rally into the close to 6912.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }
