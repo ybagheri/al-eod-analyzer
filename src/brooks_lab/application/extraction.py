@@ -343,3 +343,108 @@ class ExtractionService:
 
 def _mean(values: list[float]) -> float:
     return sum(values) / len(values) if values else 0.0
+
+
+@dataclass(frozen=True, slots=True)
+class BatchRequest:
+    """A printable column prompt for one candidate chart of an extraction wave."""
+
+    image_id: str
+    filename: str
+    date_iso: str
+    prompt: str
+
+
+@dataclass
+class BatchService:
+    """Pick the next N charts for the agent to label in one turn (S2.4).
+
+    Order comes from the tier sample file (stratified, when present: a `.txt`
+    of ids or a `.json` with an ``items``/``records`` list carrying
+    ``image_id``); otherwise manifest order. Charts with an existing valid
+    label, review history, or an already-filled response are never re-printed.
+    """
+
+    manifest: Manifest
+    labels_dir: Path
+    queue_dir: Path
+    history_dir: Path | None = None
+    sample_file: Path | None = None
+    prompt_builder: ExtractionPromptBuilder | None = None
+    provider: str = "file"
+    model_id: str = "manual"
+
+    def _sample_order(self) -> list[str] | None:
+        if self.sample_file is None or not self.sample_file.is_file():
+            return None
+        text = self.sample_file.read_text(encoding="utf-8")
+        if self.sample_file.suffix == ".json":
+            payload = json.loads(text)
+            entries: Any
+            if isinstance(payload, dict):
+                entries = payload.get("items", payload.get("records", []))
+            else:
+                entries = payload
+            ids: list[str] = []
+            for entry in entries:
+                if isinstance(entry, dict) and entry.get("image_id"):
+                    ids.append(str(entry["image_id"]))
+                elif isinstance(entry, str):
+                    ids.append(entry)
+            return ids if ids else None
+        ids = [line.strip() for line in text.splitlines() if line.strip()]
+        return ids if ids else None
+
+    def _has_label_skip(self, image_id: str) -> bool:
+        path = self.labels_dir / f"{image_id}.json"
+        return path.is_file()
+
+    def _has_history(self, image_id: str) -> bool:
+        if self.history_dir is None:
+            return False
+        return any(self.history_dir.glob(f"{image_id}.rev*.json"))
+
+    def candidates(self) -> list[BatchRequest]:
+        """All charts that still need a response, in wave order."""
+        records = {r.image_id: r for r in self.manifest.records}
+        order = self._sample_order()
+        ordered_ids: list[str] = []
+        if order is not None:
+            known = [i for i in order if i in records]
+            ordered_ids = known
+        else:
+            ordered_ids = [r.image_id for r in sorted(records.values(), key=lambda r: r.filename)]
+        requests: list[BatchRequest] = []
+        if self.prompt_builder is None:
+            return requests
+        for image_id in ordered_ids:
+            record = records[image_id]
+            if self._has_label_skip(image_id) or self._has_history(image_id):
+                continue
+            response_path = self.queue_dir / f"{image_id}.response.json"
+            if response_path.is_file():
+                continue  # filled; conversion is `brooks extract`'s job
+            date_iso = record.date.isoformat() if record.date else "unknown"
+            requests.append(
+                BatchRequest(
+                    image_id=image_id,
+                    filename=record.filename,
+                    date_iso=date_iso,
+                    prompt=self.prompt_builder.build(
+                        image_id, date_iso, self.provider, self.model_id
+                    ),
+                )
+            )
+        return requests
+
+    def pending_responses(self) -> list[str]:
+        """Ids with a request file but no label yet."""
+        ids: list[str] = []
+        for request_path in sorted(self.queue_dir.glob("*.request.json")):
+            image_id = request_path.name.replace(".request.json", "")
+            if (
+                not (self.queue_dir / f"{image_id}.response.json").is_file()
+                and not (self.labels_dir / f"{image_id}.json").is_file()
+            ):
+                ids.append(image_id)
+        return ids

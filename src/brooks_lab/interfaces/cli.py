@@ -335,6 +335,75 @@ def extract(
     typer.echo(f"report -> {report_path}")
 
 
+@app.command(name="extract-batch")
+def extract_batch(
+    tier: str = typer.Argument(..., help="Label tier, e.g. silver-dev."),
+    n: int = typer.Option(6, "--n", min=1, max=12, help="Charts per turn (4-6 recommended)."),
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    sample_file: Path | None = typer.Option(
+        None,
+        "--sample-file",
+        help="Tier sample file (stratified order); default artifacts/samples/<tier>.json|txt.",
+    ),
+    queue_dir: Path = typer.Option(
+        Path("artifacts/extraction_queue"), "--queue-dir", help="File-exchange queue."
+    ),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    history_dir: Path = typer.Option(
+        Path("artifacts/labels_history"), "--history-dir", help="Review history dir."
+    ),
+    prompt_file: Path = typer.Option(
+        Path("config/prompts/extract_v3.md"), "--prompt-file", help="Prompt template."
+    ),
+    taxonomy_file: Path = typer.Option(
+        Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
+    ),
+    model_id: str = typer.Option("manual", "--model-id", help="Model id for requests."),
+) -> None:
+    """Print the next N request prompts for one labeling turn (compact v3)."""
+    from brooks_lab.application.extraction import BatchService
+    from brooks_lab.infrastructure.vision import FileExchangeVisionClient
+
+    if sample_file is None:
+        for candidate in (
+            Path("artifacts/samples") / f"{tier}.json",
+            Path("artifacts/samples") / f"{tier}.txt",
+        ):
+            if candidate.is_file():
+                sample_file = candidate
+                break
+    builder = ExtractionPromptBuilder(prompt_file, load_taxonomy(taxonomy_file))
+    service = BatchService(
+        manifest=ImageIngestionService.read_manifest(manifest),
+        labels_dir=labels_dir,
+        queue_dir=queue_dir,
+        history_dir=history_dir,
+        sample_file=sample_file,
+        prompt_builder=builder,
+        model_id=model_id,
+    )
+    batch = service.candidates()[:n]
+    pending = service.pending_responses()
+    typer.echo(
+        f"tier={tier} sample={'yes' if sample_file else 'manifest-fallback'} "
+        f"pending_responses={len(pending)}"
+    )
+    if pending:
+        typer.echo(f"awaiting responses: {pending}")
+    client = FileExchangeVisionClient(queue_dir=queue_dir, model_id=model_id)
+    for request in batch:
+        client.write_request(request.image_id, request.prompt)
+        typer.echo(f"===== PROMPT {request.image_id} ({request.filename} {request.date_iso}) =====")
+        typer.echo(request.prompt)
+    typer.echo(
+        f"batch: {len(batch)} request(s) written -> {queue_dir}. "
+        "Label each in one turn, submit with 'brooks write-response <id> --file <f>', "
+        "then convert with 'brooks extract'."
+    )
+
+
 @app.command(name="extract-status")
 def extract_status(
     manifest: Path = typer.Option(

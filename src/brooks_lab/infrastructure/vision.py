@@ -75,11 +75,10 @@ class FileExchangeVisionClient:
     queue_dir: Path
     model_id: str = "manual"
 
-    def extract(self, image_bytes: bytes, prompt: str, *, image_id: str = "") -> dict[str, Any]:
-        """Write the request file, then load the response or raise pending."""
-        _ = image_bytes
+    def write_request(self, image_id: str, prompt: str) -> Path:
+        """Persist ``<image_id>.request.json`` (idempotent). Returns its path."""
         if not image_id:
-            raise VisionError("FileExchangeVisionClient.extract needs image_id=")
+            raise VisionError("FileExchangeVisionClient needs image_id=")
         self.queue_dir.mkdir(parents=True, exist_ok=True)
         request_path = self.queue_dir / f"{image_id}.request.json"
         request_path.write_text(
@@ -91,6 +90,14 @@ class FileExchangeVisionClient:
             + "\n",
             encoding="utf-8",
         )
+        return request_path
+
+    def extract(self, image_bytes: bytes, prompt: str, *, image_id: str = "") -> dict[str, Any]:
+        """Write the request file, then load the response or raise pending."""
+        _ = image_bytes
+        if not image_id:
+            raise VisionError("FileExchangeVisionClient.extract needs image_id=")
+        self.write_request(image_id, prompt)
         response_path = self.queue_dir / f"{image_id}.response.json"
         if not response_path.is_file():
             raise MissingResponseError(f"awaiting response for {image_id}")
