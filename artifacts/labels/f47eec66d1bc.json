@@ -1,0 +1,211 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-05-30",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 5917 red text with red arrows 23:20-00:05",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "higher high double top at 5917 sold the market down into the blue shaded range to 5895",
+      "placement": null,
+      "price_hint": 5917.0,
+      "raw_label": "Higher high double top (23:25)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted 5885 support with green arrows that failed into the 00:55 sell climax",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "unclear",
+      "outcome_reason": "higher low double bottom at 5885 failed and the sell climax broke the range down to 5858",
+      "placement": null,
+      "price_hint": 5885.0,
+      "raw_label": "Higher low double bottom (23:30-00:05 range lows)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted MM down to 5858 and tall red climax bar at 01:00 with green arrow reversal bar 5860",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "sell climax in the tight channel reached the measured move down target at 5858 then reversed",
+      "placement": null,
+      "price_hint": 5858.0,
+      "raw_label": "Sell climax, tight channel, then midday reversal with measured move down",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines in the blue shaded 01:10-02:05 box",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge of higher lows in the 5880 range lifted into the breakout",
+      "placement": null,
+      "price_hint": 5876.0,
+      "raw_label": "Wedge of higher lows (01:15-02:05 blue shaded)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green arrow and blue Breakout above trading range text above the 02:10 bars crossing 5890",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "breakout above the trading range at 5890 launched the late bull leg",
+      "placement": null,
+      "price_hint": 5890.0,
+      "raw_label": "Breakout above trading range (02:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted MM up line to the 03:30 high 5927",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "measured move up from the breakout range reached 5927",
+      "placement": null,
+      "price_hint": 5927.0,
+      "raw_label": "Measured move up (03:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "03:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Buy climax text above the 03:30 spike bar and red arrows into the close",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "buy climax spike to 5931 reversed the close back down to 5913",
+      "placement": null,
+      "price_hint": 5931.0,
+      "raw_label": "Buy climax (03:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "f47eec66d1bc",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Higher High Double Top Then Higher Low Double Bottom'. Overnight ET+12 chart: a higher high double top at 5917 sells into the 5895 range until the higher low double bottom fails; a sell climax tight channel reaches the measured move down low at 5858, then a wedge reversal breakout above the trading range drives a measured move up to the buy climax at 5931 before the market closes at 5913."
+}

@@ -1,0 +1,1169 @@
+{
+  "rules": [
+    {
+      "category": "event",
+      "count": 59,
+      "examples": [
+        "024bb28c12d8",
+        "1482a480053f",
+        "1796f3637732",
+        "18eaa2450f1e",
+        "19e2550acb18",
+        "1a623b2555bc",
+        "1b14c0bc7ca7",
+        "1bdccea34fd6",
+        "1d770d5146d1",
+        "1e69cd24551a"
+      ],
+      "from": "trading_range",
+      "to": "trading_range_begin"
+    },
+    {
+      "category": "event",
+      "count": 22,
+      "examples": [
+        "3836e286d67e",
+        "3fe93407e2d4",
+        "42c4c9a36418",
+        "44b28b35c386",
+        "47ac3f7c4cbb",
+        "4bd827c6542d",
+        "5b4c1b49e2fc",
+        "6746988c0093",
+        "67ef16ac5f12",
+        "701418db2a3e"
+      ],
+      "from": "trend_reversal",
+      "to": "major_trend_reversal"
+    },
+    {
+      "category": "event",
+      "count": 19,
+      "examples": [
+        "0d7fc201750d",
+        "1482a480053f",
+        "1b14c0bc7ca7",
+        "1d770d5146d1",
+        "1e69cd24551a",
+        "225420eb92a0",
+        "379e966dea88",
+        "3836e286d67e",
+        "44b28b35c386",
+        "554a72595e08"
+      ],
+      "from": "trading_range_breakout",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 18,
+      "examples": [
+        "024bb28c12d8",
+        "0d7fc201750d",
+        "1482a480053f",
+        "18eaa2450f1e",
+        "19a7df4457a3",
+        "1a623b2555bc",
+        "21edfd770734",
+        "2dbe1486bd67",
+        "379e966dea88",
+        "42c4c9a36418"
+      ],
+      "from": "bear_trend",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 18,
+      "examples": [
+        "0c3c16440e61",
+        "19a7df4457a3",
+        "19e2550acb18",
+        "1a623b2555bc",
+        "1bdccea34fd6",
+        "1e69cd24551a",
+        "2b9f7f7fdc83",
+        "2dbe1486bd67",
+        "3836e286d67e",
+        "47ac3f7c4cbb"
+      ],
+      "from": "bull_trend",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 11,
+      "examples": [
+        "44b28b35c386",
+        "5e1afacf36c2",
+        "5ed5b1dc9aef",
+        "7b0e3b9fc855",
+        "8a30f46fe52d",
+        "a1efef9ab7eb",
+        "a8803e366fd6",
+        "b630dd1fa81f",
+        "c56472557dcd",
+        "f7e64373be98"
+      ],
+      "from": "bull_channel",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 11,
+      "examples": [
+        "09bb32c388fa",
+        "3bf8d1294aea",
+        "3fe93407e2d4",
+        "4bd827c6542d",
+        "5e1afacf36c2",
+        "60f87d9752a7",
+        "67ef16ac5f12",
+        "701418db2a3e",
+        "77cb84c8850e",
+        "849e9f506225"
+      ],
+      "from": "spike_and_channel_bull",
+      "to": "spike"
+    },
+    {
+      "category": "event",
+      "count": 8,
+      "examples": [
+        "305f30d1ff7c",
+        "3bf8d1294aea",
+        "540c06f0cd35",
+        "7ed831bffc16",
+        "9b547f48222c",
+        "9cf1da90cd92",
+        "a1efef9ab7eb",
+        "ebd6728cac60"
+      ],
+      "from": "trading_range_breakout",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 7,
+      "examples": [
+        "ae49bd8a0143",
+        "b2653c66ffb4",
+        "b6e6ff2a0d38",
+        "c4ae577f96c4",
+        "c56472557dcd",
+        "c6fb77295c28"
+      ],
+      "from": "double_top_bear_flag",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 6,
+      "examples": [
+        "44b28b35c386",
+        "47948c91a719",
+        "9cf1da90cd92",
+        "9eba76f83dbf",
+        "a34cd2db6136"
+      ],
+      "from": "bull_trend_resumption",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 6,
+      "examples": [
+        "1b14c0bc7ca7",
+        "1e69cd24551a",
+        "77cb84c8850e",
+        "8de35fda4679",
+        "a36253c4a67f",
+        "a93bb81e9c51"
+      ],
+      "from": "failed_breakout",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 6,
+      "examples": [
+        "430055a59e82",
+        "47948c91a719",
+        "9eba76f83dbf",
+        "a34cd2db6136"
+      ],
+      "from": "spike_and_channel_bear",
+      "to": "spike"
+    },
+    {
+      "category": "event",
+      "count": 6,
+      "examples": [
+        "ab4c5e99a89d",
+        "ac2e2c657f85",
+        "b630dd1fa81f",
+        "c56472557dcd",
+        "ce8abe2aad5c"
+      ],
+      "from": "wedge_bear_flag",
+      "to": "bear_flag"
+    },
+    {
+      "category": "event",
+      "count": 5,
+      "examples": [
+        "a88d9bebe37c",
+        "ab4c5e99a89d",
+        "ae49bd8a0143",
+        "b2653c66ffb4"
+      ],
+      "from": "trend_resumption",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 4,
+      "examples": [
+        "5b4c1b49e2fc",
+        "9a42bff26fe1",
+        "ac2e2c657f85"
+      ],
+      "from": "broad_bull_channel",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 4,
+      "examples": [
+        "ab4c5e99a89d",
+        "b630dd1fa81f",
+        "ce8abe2aad5c"
+      ],
+      "from": "gap_bar",
+      "to": "gap"
+    },
+    {
+      "category": "event",
+      "count": 4,
+      "examples": [
+        "77cb84c8850e",
+        "7b0e3b9fc855",
+        "7ed831bffc16",
+        "8c52503d75ae"
+      ],
+      "from": "trading_range",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 4,
+      "examples": [
+        "5abd8ab3baba",
+        "81e922f904c0",
+        "8de35fda4679",
+        "a36253c4a67f"
+      ],
+      "from": "trading_range_breakout",
+      "to": "major_trend_reversal"
+    },
+    {
+      "category": "event",
+      "count": 4,
+      "examples": [
+        "18eaa2450f1e",
+        "1a623b2555bc",
+        "8c52503d75ae",
+        "a1893734d8b2"
+      ],
+      "from": "wedge",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "5ed5b1dc9aef",
+        "6746988c0093",
+        "a34cd2db6136"
+      ],
+      "from": "broad_bear_channel",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "5ed5b1dc9aef",
+        "ae49bd8a0143",
+        "c4ae577f96c4"
+      ],
+      "from": "bull_trend_from_open",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "77cb84c8850e",
+        "7b0e3b9fc855",
+        "849e9f506225"
+      ],
+      "from": "bull_trend_resumption",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "b949fb25e270",
+        "bb12359b02fb",
+        "ce8abe2aad5c"
+      ],
+      "from": "sell_climax",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "7029d28ff770",
+        "b949fb25e270",
+        "bb12359b02fb"
+      ],
+      "from": "trading_range",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "5abd8ab3baba",
+        "74b07ffbe6c9",
+        "7ed831bffc16"
+      ],
+      "from": "trading_range",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "47ac3f7c4cbb",
+        "4bd827c6542d",
+        "81e922f904c0"
+      ],
+      "from": "trend_reversal",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 3,
+      "examples": [
+        "ac2e2c657f85",
+        "ae49bd8a0143",
+        "c56472557dcd"
+      ],
+      "from": "wedge_bull_flag",
+      "to": "bull_flag"
+    },
+    {
+      "category": "day_type",
+      "count": 2,
+      "examples": [
+        "74b07ffbe6c9",
+        "bc0369fabaac"
+      ],
+      "from": "bear_trend_resumption",
+      "to": "trend_reversal_to_bear"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "c6fb77295c28",
+        "ce8abe2aad5c"
+      ],
+      "from": "bear_leg",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "bc0369fabaac",
+        "c4ae577f96c4"
+      ],
+      "from": "bear_leg",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "ac2e2c657f85",
+        "cfed26308aee"
+      ],
+      "from": "bear_trap",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "b949fb25e270",
+        "bb12359b02fb"
+      ],
+      "from": "breakout_test",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "46a4b17701fd",
+        "7029d28ff770"
+      ],
+      "from": "bull_channel",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "c6fb77295c28",
+        "ce8abe2aad5c"
+      ],
+      "from": "double_bottom_bull_flag",
+      "to": "double_bottom"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "5abd8ab3baba",
+        "8989d6c3da0b"
+      ],
+      "from": "double_top",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "a93bb81e9c51",
+        "b6e6ff2a0d38"
+      ],
+      "from": "double_top_bear_flag",
+      "to": "double_bottom"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "6746988c0093",
+        "8a30f46fe52d"
+      ],
+      "from": "gap_down",
+      "to": "gap"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "8de35fda4679",
+        "a36253c4a67f"
+      ],
+      "from": "inside_outside",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "305f30d1ff7c",
+        "74b07ffbe6c9"
+      ],
+      "from": "measured_move",
+      "to": "trading_range_begin"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "5abd8ab3baba",
+        "a93bb81e9c51"
+      ],
+      "from": "trading_range",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "b630dd1fa81f",
+        "c6fb77295c28"
+      ],
+      "from": "trend_bars",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "540c06f0cd35",
+        "8b4d950a1da5"
+      ],
+      "from": "trend_reversal",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 2,
+      "examples": [
+        "bc0369fabaac",
+        "bf08e3aa1e85"
+      ],
+      "from": "wedge_bear_flag",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bf08e3aa1e85"
+      ],
+      "from": "bear_channel_breakout",
+      "to": "bear_flag"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bf08e3aa1e85"
+      ],
+      "from": "bear_leg",
+      "to": "bear_flag"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "b6e6ff2a0d38"
+      ],
+      "from": "bear_leg",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "18eaa2450f1e"
+      ],
+      "from": "bear_trend",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8b4d950a1da5"
+      ],
+      "from": "bear_trend",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "ce8abe2aad5c"
+      ],
+      "from": "bear_trend_from_open",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "74b07ffbe6c9"
+      ],
+      "from": "bear_trend_resumption",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "cfed26308aee"
+      ],
+      "from": "breakout",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "b6e6ff2a0d38"
+      ],
+      "from": "breakout",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8a30f46fe52d"
+      ],
+      "from": "broad_bear_channel",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "540c06f0cd35"
+      ],
+      "from": "bull_channel",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bf08e3aa1e85"
+      ],
+      "from": "bull_spike",
+      "to": "spike"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "3bf8d1294aea"
+      ],
+      "from": "bull_trend",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "47ac3f7c4cbb"
+      ],
+      "from": "bull_trend",
+      "to": "major_trend_reversal"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "46a4b17701fd"
+      ],
+      "from": "bull_trend_resumption",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8b4d950a1da5"
+      ],
+      "from": "bull_trend_resumption",
+      "to": "double_bottom"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8a30f46fe52d"
+      ],
+      "from": "bull_trend_resumption",
+      "to": "measured_move"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "849e9f506225"
+      ],
+      "from": "bull_trend_resumption",
+      "to": "triangle"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "5ed5b1dc9aef"
+      ],
+      "from": "buy_climax",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "77cb84c8850e"
+      ],
+      "from": "buy_climax",
+      "to": "trading_range_begin"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "024bb28c12d8"
+      ],
+      "from": "channel",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a1efef9ab7eb"
+      ],
+      "from": "climax",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "3bf8d1294aea"
+      ],
+      "from": "climax",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8989d6c3da0b"
+      ],
+      "from": "climax",
+      "to": "small_pullback_bear_trend"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bc0369fabaac"
+      ],
+      "from": "double_bottom",
+      "to": "bear_flag"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "b6e6ff2a0d38"
+      ],
+      "from": "double_bottom",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "cfed26308aee"
+      ],
+      "from": "double_bottom",
+      "to": "bull_flag"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a93bb81e9c51"
+      ],
+      "from": "double_bottom",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8b4d950a1da5"
+      ],
+      "from": "double_bottom",
+      "to": "major_trend_reversal"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "1a623b2555bc"
+      ],
+      "from": "double_bottom",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bc0369fabaac"
+      ],
+      "from": "double_bottom_bear_flag",
+      "to": "major_trend_reversal"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a88d9bebe37c"
+      ],
+      "from": "double_bottom_bull_flag",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8de35fda4679"
+      ],
+      "from": "double_top",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "024bb28c12d8"
+      ],
+      "from": "double_top",
+      "to": "measured_move"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a1893734d8b2"
+      ],
+      "from": "double_top",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "cfed26308aee"
+      ],
+      "from": "double_top_bear_flag",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a88d9bebe37c"
+      ],
+      "from": "double_top_bear_flag",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "7029d28ff770"
+      ],
+      "from": "failed_breakout",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "7ed831bffc16"
+      ],
+      "from": "failed_breakout",
+      "to": "trading_range_begin"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "18eaa2450f1e"
+      ],
+      "from": "failed_breakout",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8a30f46fe52d"
+      ],
+      "from": "measured_move",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a1efef9ab7eb"
+      ],
+      "from": "measured_move",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "cfed26308aee"
+      ],
+      "from": "measured_move",
+      "to": "double_bottom"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a8803e366fd6"
+      ],
+      "from": "measured_move",
+      "to": "small_pullback_bull_trend"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "024bb28c12d8"
+      ],
+      "from": "measured_move",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "c6fb77295c28"
+      ],
+      "from": "minor_wedge",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a93bb81e9c51"
+      ],
+      "from": "parabolic_wedge_bottom",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "c6fb77295c28"
+      ],
+      "from": "parabolic_wedge_bull_climax",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "b6e6ff2a0d38"
+      ],
+      "from": "parabolic_wedge_top",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bc0369fabaac"
+      ],
+      "from": "sell_climax",
+      "to": "bear_flag"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8989d6c3da0b"
+      ],
+      "from": "small_pullback_bear_trend",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "7ed831bffc16"
+      ],
+      "from": "small_pullback_bull_trend",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a8803e366fd6"
+      ],
+      "from": "small_pullback_bull_trend",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "9b547f48222c"
+      ],
+      "from": "spike_and_channel_bull",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "c4ae577f96c4"
+      ],
+      "from": "spike_to_range",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "42c4c9a36418"
+      ],
+      "from": "swing_and_channel_bull",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8989d6c3da0b"
+      ],
+      "from": "trading_range",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "9b547f48222c"
+      ],
+      "from": "trading_range",
+      "to": "spike"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "305f30d1ff7c"
+      ],
+      "from": "trading_range",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8c52503d75ae"
+      ],
+      "from": "trading_range_breakout",
+      "to": "wedge"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "c4ae577f96c4"
+      ],
+      "from": "trading_range_close",
+      "to": "channel"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "ac2e2c657f85"
+      ],
+      "from": "trend_resumption",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bc0369fabaac"
+      ],
+      "from": "trend_reversal",
+      "to": "climax"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "8de35fda4679"
+      ],
+      "from": "trend_reversal",
+      "to": "double_top"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "a36253c4a67f"
+      ],
+      "from": "trend_reversal",
+      "to": "failed_breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "5abd8ab3baba"
+      ],
+      "from": "trend_reversal",
+      "to": "trading_range_begin"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "849e9f506225"
+      ],
+      "from": "triangle",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "305f30d1ff7c"
+      ],
+      "from": "wedge",
+      "to": "breakout"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bc0369fabaac"
+      ],
+      "from": "wedge_bear_flag",
+      "to": "double_bottom"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "bf08e3aa1e85"
+      ],
+      "from": "wedge_bear_flag",
+      "to": "trading_range_end"
+    },
+    {
+      "category": "event",
+      "count": 1,
+      "examples": [
+        "cfed26308aee"
+      ],
+      "from": "wedge_bull_flag",
+      "to": "double_top"
+    }
+  ]
+}

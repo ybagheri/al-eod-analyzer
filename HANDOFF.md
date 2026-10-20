@@ -5,8 +5,8 @@ _Last updated: 2026-10-19 by Muse Spark (opencode) — wave-2 fill-out complete 
 
 Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd71…, method vv2.6)
 Current step: S2; STATUS.yaml updated: 2026-10-19
-Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (208 collected) / coverage 91.46%
-Counts: queue pairs 244/244, labels 162, quarantined 0, gold 32, gold open items 1, calibration sample 38
+Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (233 collected) / coverage ~91%
+Counts: queue pairs 244/245, labels 243, quarantined 0, gold 32, gold open items 1, calibration sample 38
 
 <!-- STATUS:END -->
 

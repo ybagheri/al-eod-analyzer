@@ -1,0 +1,211 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-03-09",
+  "day_type": "small_pullback_bear_trend",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Trading Range open usually has both a DT and DB text with blue shaded 07:00-08:10 box, LH DT text and green shaded boxes",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "blue shaded opening range with HL DB and LH DT box, reason: failed green setups and breakout below DB",
+      "placement": null,
+      "price_hint": 4010.0,
+      "raw_label": "Range open with DT and DB (07:00-08:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Trading Range open usually has both a DT and DB text with blue shaded 07:00-08:10 box, LH DT text and green shaded boxes",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "blue shaded opening range with HL DB and LH DT box, reason: failed green setups and breakout below DB",
+      "placement": null,
+      "price_hint": 4010.0,
+      "raw_label": "Range open with DT and DB (07:00-08:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Breakout below DB and neckline of DT text with red arrow, red boxes 08:55 and 09:25 (shaded box)",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted DB neckline and red LH DT box near 09:05, consecutive bear bars closing below EMA sell the close MM down",
+      "placement": null,
+      "price_hint": 3992.0,
+      "raw_label": "Breakout below DB and neckline of DT (08:35-09:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Small Pullback Bear trends always form Wedge bottom but most quickly become bear flags text with pink dotted channel at 11:20 lows",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": true,
+      "outcome": "success",
+      "outcome_reason": "wedge bear flags with Series of pink and red setup boxes at 09:35, 10:20, 10:55 sold to bars 12:15",
+      "placement": null,
+      "price_hint": 3940.0,
+      "raw_label": "Small pullback bear trend (09:30-12:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Big bear bar after 6 bear bars text with beige box 12:35-12:45, green underlines at the 12:55-13:05 lows and green arrow high turnaround",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "only buy reversal up from sell climax in strong bear trend if everything is perfect; otherwise no green bull bar to close",
+      "placement": null,
+      "price_hint": 3908.0,
+      "raw_label": "Big bear bar after 6 bear bars sold the close (12:45/13:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "dark bear bar 13:05 and close area near 3918 below the orange text",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "chop below the EMA into the clear pulses below",
+      "placement": null,
+      "price_hint": 3918.0,
+      "raw_label": "Late chop retest 3918 (13:05-13:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.5,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "dark bear bar 13:05 and close area near 3918 below the orange text",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "chop below the EMA into the clear pulses below",
+      "placement": null,
+      "price_hint": 3918.0,
+      "raw_label": "Late chop retest 3918 (13:05-13:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "8989d6c3da0b",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'LH DT, Small Pullback Bear Trend'. Trading range open with HL DB; breakout below DB and neckline (08:45), a LH DT below EMA after breakout below DB and sell the close MM down through small pullback bear trend to sell climax low 12:45-13:00 (Concat), close 3918."
+}

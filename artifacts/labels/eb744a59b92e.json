@@ -1,0 +1,211 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-11-10",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted double top lines at 6040 right corner with red arrows below",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "micro double top then double top at 6040 sold the market into overnight highs to lows rotation",
+      "placement": null,
+      "price_hint": 6040.0,
+      "raw_label": "Micro Double Top then Double Top (23:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 6042 red text and arrows down through 01:15",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "double top at 6042 with blue dotted trendline end completed the upper range reversal",
+      "placement": null,
+      "price_hint": 6042.0,
+      "raw_label": "Double Top (12 Nov 00:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green dotted bottom line at 6030 under bar 16 with green arrows",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "unclear",
+      "outcome_reason": "double bottom attempt at 6030 failed and only bought a small bounce back to 6035",
+      "placement": null,
+      "price_hint": 6030.0,
+      "raw_label": "High 2 / Double Bottom but failed (00:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue arrow down into the 01:35 tall bear bar inside the shaded tightening triangle",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "breakout from the triangle went down and extended the selloff to the 6013 low",
+      "placement": null,
+      "price_hint": 6035.0,
+      "raw_label": "Triangle breakout (01:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted MM line down to bar 48 at 6013 with big climax sell bars",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "consecutive sell climaxes reached the measured move target at 6013",
+      "placement": null,
+      "price_hint": 6013.0,
+      "raw_label": "Consecutive sell climaxes with measured move from opening range",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded tight range 03:05-04:55 with blue text and final green dot bull bars to 6033",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "tight trading range with limit order fills reversed the market up to 6033 into the close",
+      "placement": null,
+      "price_hint": 6033.0,
+      "raw_label": "Tight trading range reversal trades with limit orders no stop orders / Low 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded tight range 03:05-04:55 with blue text and final green dot bull bars to 6033",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "tight trading range with limit order fills reversed the market up to 6033 into the close",
+      "placement": null,
+      "price_hint": 6033.0,
+      "raw_label": "Tight trading range reversal trades with limit orders no stop orders / Low 2",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "eb744a59b92e",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Gap Up to Low 2 Then Upper and Lower Trading Ranges'. Overnight gap up to a low 2 high at 6040 forms double tops; a failed double bottom and triangle breakout sell down through consecutive sell climaxes to the opening-range measured move low at 6013, then a tight limit-order trading range reverses the close back up to 6033. Chart is on a 13 hr offset (ET+13) so printed times map to PT by subtracting 13 hours."
+}

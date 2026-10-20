@@ -1,0 +1,211 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-04-24",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge text with pink dotted wedge lines under the shaded blue range 07:40 lows and red arrows 07:05-07:55",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted channel into bar 12 shaded 07:40 lows with red and green arrows",
+      "placement": null,
+      "price_hint": 5478.0,
+      "raw_label": "Wedge bottom (07:40 low 5478)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Higher low double bottom text with green underline under bars 18-24 lows and blue dots at 5518; red arrows 07:15, 07:55, 08:55 and green arrows 07:45, 08:05, 08:20, 08:40",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green Higher low double bottom text with green dotted line under bars 18-24 lows and orange we move blue box",
+      "placement": null,
+      "price_hint": 5508.0,
+      "raw_label": "Higher low double bottom and blue range (07:50-09:55 highs)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Higher low double bottom text with green underline under bars 18-24 lows and blue dots at 5518; red arrows 07:15, 07:55, 08:55 and green arrows 07:45, 08:05, 08:20, 08:40",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green Higher low double bottom text with green dotted line under bars 18-24 lows and orange we move blue box",
+      "placement": null,
+      "price_hint": 5508.0,
+      "raw_label": "Higher low double bottom and blue range (07:50-09:55 highs)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted 5524 line and beige bull bars 10:35-10:45 with bar 48 label and magenta dotted wedge ramp",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bull spike bar 36-48 lifted above the red dotted 5524 range top",
+      "placement": null,
+      "price_hint": 5524.0,
+      "raw_label": "Breakout above 5524 (10:35-10:50)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Minor parabolic wedge text with pink dotted lines into the 10:55 top and green shaded bars 10:45-10:55",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "minor parabolic wedge label and pink dotted wedge channel break above the blue shaded box",
+      "placement": null,
+      "price_hint": 5552.0,
+      "raw_label": "Minor parabolic wedge spike to 5552 (10:55)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box with Trending trading range day green arrows near 11:20 and 12:45 lows and red arrows 12:55-13:05",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "blue Breakout test green Sell climax text with bars 60 and 72 shaded chop and double top 5550s",
+      "placement": null,
+      "price_hint": 5545.0,
+      "raw_label": "Blue shaded breakout test and chop (11:00-13:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box with Trending trading range day green arrows near 11:20 and 12:45 lows and red arrows 12:55-13:05",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "blue Breakout test green Sell climax text with bars 60 and 72 shaded chop and double top 5550s",
+      "placement": null,
+      "price_hint": 5545.0,
+      "raw_label": "Blue shaded breakout test and chop (11:00-13:10)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "9b547f48222c",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Wedge Bottom, Then Bull Trending Trading Range Day'. Wedge low 5478 (07:40), higher low double bottom 5497 (08:40), breakout above the red dotted 5524 top (10:40), minor parabolic wedge 10:55 (5552), sell climax on breakout test 11:15 (5535), blue trend range to close 5552 in chop."
+}

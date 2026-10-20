@@ -12,6 +12,7 @@ from brooks_lab.application.extraction import (
     ExtractionService,
 )
 from brooks_lab.domain.imaging import ImageRecord, Manifest
+from brooks_lab.infrastructure.label_store import load_migrations
 from brooks_lab.infrastructure.taxonomy import Taxonomy, load_taxonomy
 from brooks_lab.infrastructure.vision import FakeVisionClient, FileExchangeVisionClient
 
@@ -120,6 +121,39 @@ def test_invalid_responses_quarantined_with_reason(tmp_path: Path) -> None:
     assert report.quarantined_files == ["id-1"]
     error = json.loads((tmp_path / "failed" / "id-1.error.json").read_text(encoding="utf-8"))
     assert "schema validation failed" in error["reason"]
+
+
+def test_legacy_transition_ids_migrated_during_extraction(tmp_path: Path) -> None:
+    manifest = _manifest(("id-1", "a.jpg", None))
+    response = _label_dict("id-1")
+    response["day_type"] = "trending_trading_range"
+    migrations_file = tmp_path / "migrations.yaml"
+    migrations_file.write_text(
+        'schema_version: 1\ntaxonomy_version: "1.3"\n'
+        "day_types:\n  trending_trading_range: {to: null, quality: lossy}\nevents: {}\n",
+        encoding="utf-8",
+    )
+    migrations = load_migrations(migrations_file)
+    (tmp_path / "data").mkdir(exist_ok=True)
+    (tmp_path / "data" / "a.jpg").write_bytes(b"x")
+    service = ExtractionService(
+        manifest=manifest,
+        data_dir=tmp_path / "data",
+        labels_dir=tmp_path / "labels",
+        failed_dir=tmp_path / "failed",
+        client=FakeVisionClient(default_response=response),
+        prompt_builder=_builder(tmp_path),
+        provider="fake",
+        backoff_base_s=0.0,
+        migrations=migrations,
+        taxonomy_version="1.3",
+    )
+    report = service.run()
+    assert report.labeled == 1 and report.quarantined == 0
+    label = json.loads((tmp_path / "labels" / "id-1.json").read_text(encoding="utf-8"))
+    assert label["day_type"] == "other"
+    assert label["needs_review"] is True
+    assert label["extraction_meta"]["taxonomy_version"] == "1.3"
 
 
 def test_image_id_mismatch_quarantined(tmp_path: Path) -> None:

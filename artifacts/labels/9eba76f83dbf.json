@@ -1,0 +1,184 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-03-14",
+  "day_type": "spike_and_channel_bear",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Major bear breakout text with brown shaded 06:55-07:10 box and red arrow 07:05 under the 5238 area",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "brown shaded opening box with tall dark bear bars sold into 5185",
+      "placement": null,
+      "price_hint": 5238.0,
+      "raw_label": "Major bear breakout (07:00-07:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Sell climax text with green Minor reversal text under the 07:20-07:25 lows and green shaded bull bars 07:20-07:25",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "sell climax arch flagged low near 5205 lows with green arrow 07:25 lows",
+      "placement": null,
+      "price_hint": 5205.0,
+      "raw_label": "Sell climax and minor reversal (07:20 lows 5205)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines around the 07:40 bear bars under pink dotted wedges and red arrows 07:40-07:45",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge rally to 5225 gave the LH DT at the red dotted 5226 top",
+      "placement": null,
+      "price_hint": 5225.0,
+      "raw_label": "Lower high double top buy climax wedge (07:45 high 5225)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Nested wedge, Spike and channel bear trend text with pink dotted channel lows and green shaded bear bar 12:40-12:55",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge flags under magenta channel low 12:45 broke out through nested wedge low 12:55 to 5190",
+      "placement": null,
+      "price_hint": 5190.0,
+      "raw_label": "Nested wedge, spike and channel bear trend (10:35-12:55 low 5190)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue High 2 text near the 10:00 highs with green shaded bull bars 10:10-10:20 and red arrows 10:05-10:15",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green High 2 push and green shaded bull bars at the beige box 10:40 lows above lows 5205 star",
+      "placement": null,
+      "price_hint": 5216.0,
+      "raw_label": "High 2 (10:00-10:25 push 5216)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange End of day profit taking text with beige shaded box 12:55-13:05 and green shaded bull bull bars 13:15",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "orange End of day profit taking text over the beige box 12:55-13:05 rally",
+      "placement": null,
+      "price_hint": 5222.0,
+      "raw_label": "End of day profit taking (13:00-13:20 close 5218)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "9eba76f83dbf",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Spike and Channel Bear Trend From The Open'. Major bear breakout at 07:00; sell climax and minor reversal gave a lower high double top push to 5225 at 07:45; nested wedge spike and channel bear trend sold to 5190 (12:55); end of day profit taking rallied to 5222 at 13:15 and closed 5218."
+}

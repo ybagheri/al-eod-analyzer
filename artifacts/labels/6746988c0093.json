@@ -1,0 +1,184 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-04-04",
+  "day_type": "broad_bear_channel",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 142 point overnight gap down text with red dotted channel to the 22:05 highs and red arrows",
+      "label": "gap",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "gap down opened the European session with strong bear bars",
+      "placement": null,
+      "price_hint": 5295.0,
+      "raw_label": "142 point overnight gap down (22:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Parabolic wedge Sell climax text under the 5177 area lows between magenta channel and bar 18 lows",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge selloff low 2 pullback into 23:00 bottom",
+      "placement": null,
+      "price_hint": 5177.0,
+      "raw_label": "Parabolic wedge sell climax (22:40-23:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Triangle breakout mode text with blue shaded range 23:35-23:55 and green arrow 23:45",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bull leg from bar 24 to 5290 failed below the low 2 red dotted line",
+      "placement": null,
+      "price_hint": 5290.0,
+      "raw_label": "Triangle breakout mode bull leg (23:35-23:55 high 5290)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Broad bear channel text, red arrows at bar 36, 48, 60, shaded blue ranges at 00:45 and blue channel bottom, green dotted 5141 lows",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "wedge, followed by failed breakout at bar 36 then bear bar wedge breakouts and wedge leg down to bar 60 lows 5135",
+      "placement": null,
+      "price_hint": 5180.0,
+      "raw_label": "Broad bear channel - sell pullbacks and breakouts (00:30-02:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge followed by higher low double bottom text at 03:05 lows and green shaded bull bars 03:10-03:25 (bar 70 dip)",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green Wedge, followed by higher low double bottom text with green arrow and green dotted 5130 line",
+      "placement": null,
+      "price_hint": 5130.0,
+      "raw_label": "Wedge higher low double bottom 5130 (03:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "02:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Double top lower high text, orange dotted line near 03:45 packed dark bar, then close with 5105 chip",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "double top lower high at orange dotted 5150 line then bear channel selloff to close 5105",
+      "placement": null,
+      "price_hint": 5145.0,
+      "raw_label": "Double top lower high and wedge pullback selloff (03:45 high 5150 majd? 5145)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "6746988c0093",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Big Gap Down Followed by Broad Bear Channel' (overnight ET+12 hrs, Apr 4 22:00-04:00). 142 point overnight gap down, sell climax low 2 pullback; parabolic wedge sell climax at 23:05 (5177); triangle breakout mode bull leg to 5290 (23:45) but Friedrich stayed in bear channel with wedges pulling buyers out and trading lowered each leg; wedge top lower highs and bull bull buy bar 72, wedge oh reversal settled 5110 close."
+}

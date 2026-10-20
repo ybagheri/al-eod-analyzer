@@ -16,9 +16,50 @@ day_types:
     to: null
     quality: lossy
     note: "invalid id; direction-specific resumption representation pending user decision."
+  trending_trading_range:
+    to: null
+    quality: lossy
+    note: "deprecated by v1.3 ADR-011; direction-specific ids exist, direction is unknowable from the id."
+  reversal_day:
+    to: null
+    quality: lossy
+    note: "deprecated by v1.3; maps to trend_reversal_to_bull/bear by PM regime - needs chart context."
+  bull_channel:
+    to: broad_bull_channel
+    quality: lossy
+    note: "legacy id ambiguous between broad_bull_channel and bull_trending_trading_range."
+  small_pullback_bull_trend_from_open:
+    to: small_pullback_bull_trend
+    quality: lossy
+    note: "from_open qualifier dropped; record in session_summary if chart re-read."
+  small_pullback_bear_trend_from_open:
+    to: small_pullback_bear_trend
+    quality: lossy
+    note: "from_open qualifier dropped; record in session_summary if chart re-read."
 events:
   low_2:
     to: l2
+    quality: exact
+  high_2:
+    to: h2
+    quality: exact
+  ii:
+    to: inside_inside
+    quality: exact
+  ooo:
+    to: outside_outside
+    quality: exact
+  expanding_triangle:
+    to: triangle
+    quality: exact
+  gap_up:
+    to: gap
+    quality: exact
+  gap_down:
+    to: gap
+    quality: exact
+  bull_gap:
+    to: gap
     quality: exact
   mm:
     to: measured_move
@@ -33,3 +74,43 @@ events:
     to: tight_trading_range
     quality: lossy
     note: "bare range is not necessarily tight; day-part ranges belong to begin/end pairs."
+  low_2_top:
+    to: null
+    quality: lossy
+    note: "conflated day-type/event id; meaning undecodable without chart context."
+  wedge_bull_channel:
+    to: null
+    quality: lossy
+    note: "compound id; structure split pending user decision."
+  triple_top:
+    to: null
+    quality: lossy
+    note: "not in v1.3; micro/triple handling pending user decision."
+  parabolic_wedge:
+    to: null
+    quality: lossy
+    note: "compound id; wedge + parabolic phase pending user decision."
+  spike_and_channel:
+    to: null
+    quality: lossy
+    note: "day-type id used as event; direction missing."
+  small_pullback_bull_trend:
+    to: null
+    quality: lossy
+    note: "day-type id used as event; direction missing."
+  small_pullback_bear_trend:
+    to: null
+    quality: lossy
+    note: "day-type id used as event; direction missing."
+  bull_trending_trading_range:
+    to: null
+    quality: lossy
+    note: "day-type id used as event; direction missing."
+  trend_reversal_to_bull:
+    to: null
+    quality: lossy
+    note: "day-type id used as event; direction missing."
+  bear_trend_resumption:
+    to: null
+    quality: lossy
+    note: "day-type id used as event; direction missing."

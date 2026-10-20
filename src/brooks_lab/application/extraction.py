@@ -197,10 +197,13 @@ class ExtractionService:
     def _validate(self, raw: Any, image_id: str, date: datetime.date | None = None) -> DayLabel:
         if not isinstance(raw, dict):
             raise VisionError("response must be a JSON object")
+        payload: Any = raw
+        if not looks_like_v3(raw) and self.migrations is not None:
+            payload = self.migrations.apply_to_label(raw)
         try:
             if looks_like_v3(raw):
                 label = parse_v3_response(
-                    raw,
+                    payload,
                     image_id=image_id,
                     provider=self.provider,
                     model_id=self.client.model_id,
@@ -208,7 +211,7 @@ class ExtractionService:
                     date=date,
                 )
             else:
-                label = DayLabel.model_validate(raw)
+                label = DayLabel.model_validate(payload)
         except ValueError as exc:
             raise VisionError(f"schema validation failed: {exc}") from exc
         if label.image_id != image_id:

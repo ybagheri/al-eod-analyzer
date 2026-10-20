@@ -71,8 +71,8 @@ Git hooks (plan-compliance) activate with `git config core.hooksPath .githooks`
 - **Current step:** S2 - Extraction v3: compact schema, validator-gated writes, anchors (pending)
 - **Steps done:** S0, S1
 - **Steps in progress:** none
-- **Last gate:** green (2026-10-20): ruff ok / format ok / mypy --strict ok / pytest green (208 collected) / coverage 91.46%
-- **Data:** 1678 unique batch-1 charts; 244 filled queue pairs (0 pending); 162 labels; gold 32
+- **Last gate:** green (2026-10-20): ruff ok / format ok / mypy --strict ok / pytest green (233 collected) / coverage ~91%
+- **Data:** 1678 unique batch-1 charts; 244 filled queue pairs (1 pending); 243 labels; gold 32
 - **Market-data coverage:** none
 - Updated: 2026-10-19
 

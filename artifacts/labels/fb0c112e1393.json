@@ -1,0 +1,184 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-04-12",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted lines at 4158-4160 with red arrow and boxed reversal bars 07:30-07:50",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "lower high double top at 4160 set the bear surprise sell-off",
+      "placement": null,
+      "price_hint": 4160.0,
+      "raw_label": "Lower High Double Top (07:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Bear Surprise text with brown boxed 07:40-07:55 bars",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bear surprise dropped the market from 4158 to 4128",
+      "placement": null,
+      "price_hint": 4128.0,
+      "raw_label": "Bear Surprise sell-off",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta parabolic wedge connecting dotted lines into the 08:20 low with text",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge sell climax reached 4120 and reversed up",
+      "placement": null,
+      "price_hint": 4120.0,
+      "raw_label": "Parabolic Wedge Sell Climax (08:20 low 4120)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green boxed bull bars 08:55-09:10 and 10:20-10:40 up to 4155",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "after the sell climax the market reversed up and rallied to 4155",
+      "placement": null,
+      "price_hint": 4155.0,
+      "raw_label": "Reversal up rally from 4120 to 4155",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted line at 4155 magenta dotted reaction line and OO text at 11:45",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "triple top lower high double top with failed OOO completed the afternoon bear setup",
+      "placement": null,
+      "price_hint": 4155.0,
+      "raw_label": "Triple Top Lower High Double Top Failed OOO (11:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange arrow into the tall brown 11:50 bar with boxes down to 12:30 lows",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "major bear surprise trend resumption down sold into the 4118 close",
+      "placement": null,
+      "price_hint": 4118.0,
+      "raw_label": "Major Bear Surprise Trend Resumption Down",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "fb0c112e1393",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'LH DT Then Parabolic Wedge Sell Climax and Reversal Up'. A lower high double top at 4160 creates a bear surprise selling into a parabolic wedge sell climax at 4120; the reversal up back to 4155 makes a triple top lower high double top with a failed OOO, and a major bear surprise trend resumption sells to the 4118 close."
+}

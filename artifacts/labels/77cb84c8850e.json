@@ -1,0 +1,238 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2026-02-06",
+  "day_type": "bull_trend_resumption",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Strong bull trend from open text with red dotted Yest. high line at 6880 and green arrows 23:00-23:15",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "gap up bull spike through yesterday's high broke out strongly at the open",
+      "placement": null,
+      "price_hint": 6885.0,
+      "raw_label": "Strong bull trend from open (23:00 gap up over yesterday's high 6881)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Buy climax after big gap up and rally then 50% pullback text with green Micro then higher low double bottom text and green dotted 6881 line",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "buy climax chip 6945 orange dotted, then bar 12-14 pullback to micro then higher low double bottom at 6880",
+      "placement": null,
+      "price_hint": 6880.0,
+      "raw_label": "Buy climax after big gap up then 50% pullback (23:10-23:35 low 6880)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Buy climax after big gap up and rally then 50% pullback text with green Micro then higher low double bottom text and green dotted 6881 line",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "buy climax chip 6945 orange dotted, then bar 12-14 pullback to micro then higher low double bottom at 6880",
+      "placement": null,
+      "price_hint": 6880.0,
+      "raw_label": "Buy climax after big gap up then 50% pullback (23:10-23:35 low 6880)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink Consecutive failed wedges Market always in long text with magenta dotted wedge, bars 18, 24, 36 labels, beige boxes 00:10 and blue shaded box 00:35",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "rally off higher low double bottom with consecutive failed wedges bar 18 and 24 driving to small pullback bull trend box bars 36",
+      "placement": null,
+      "price_hint": 6915.0,
+      "raw_label": "Bull trend resumption (23:40-01:05 bar 18-36)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Tight trading ranges Limit order trading mainly Breakout mode text with blue boxes bars 48 and 60 labels and green arrows 01:30, 03:25",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "small pullbacks in shaded tight ranges bars 48 and 60 with red arrow setups at 02:45 and 03:25 failing",
+      "placement": null,
+      "price_hint": 6935.0,
+      "raw_label": "Tight trading ranges in limit order trading, breakout mode (01:10-04:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Tight trading ranges Limit order trading mainly Breakout mode text with blue boxes bars 48 and 60 labels and green arrows 01:30, 03:25",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "small pullbacks in shaded tight ranges bars 48 and 60 with red arrow setups at 02:45 and 03:25 failing",
+      "placement": null,
+      "price_hint": 6935.0,
+      "raw_label": "Tight trading ranges in limit order trading, breakout mode (01:10-04:20)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Buy climax label with orange dotted Measured move from opening rally target line and chip 6950.50 close, bar 72 green arrow",
+      "label": "climax",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bar 72 rally with magenta dotted magenta wedge culminated, green Buy climax text at the 04:55 spike top",
+      "placement": null,
+      "price_hint": 6960.0,
+      "raw_label": "Buy climax measured move from opening rally (04:30-04:55 high 6960)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "black sell climax bars into 05:00 and small boxes around chip 6945.31, green arrow late at 04:45",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "blue Breakout failed with end of day profit taking text ahead of the close bars after the sell climax spike",
+      "placement": null,
+      "price_hint": 6940.0,
+      "raw_label": "Breakout failed with end of day profit taking (05:00-05:15 close 6945)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "77cb84c8850e",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend From Open, 50% Pullback Then Bull Trend Resumption' (overnight ET+13 hrs, Feb 6 23:00-05:00). Strong bull trend from open after big gap up above yesterday's high; buy climax and 50% pullback into micro then higher low double bottom 6880 (23:30); consecutive failed wedges, market always in long; small pullback bull trend with tight trading ranges in limit order trading; buy climax for the measured move at 04:55 (6960), breakout failed at the 04:55 end of day profit taking."
+}

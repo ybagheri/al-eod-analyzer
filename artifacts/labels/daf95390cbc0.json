@@ -1,0 +1,238 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2022-03-08",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "'LH DT' red and orange dotted lines at 4218 over the 07:10 highs",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "lower high double top at 4218 led to a break below the open range",
+      "placement": null,
+      "price_hint": 4218.0,
+      "raw_label": "LH DT",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines into the 07:45 low 4160",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "wedge low at 4160 stopped the early selloff and bounced",
+      "placement": null,
+      "price_hint": 4160.0,
+      "raw_label": "Wedge (magenta) at the 07:45 low",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted expanding triangle lines down to the 08:45 4158 low",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": true,
+      "outcome": "success",
+      "outcome_reason": "expanding triangle bottom at 4158 lifted the market into the bull breakout",
+      "placement": null,
+      "price_hint": 4158.0,
+      "raw_label": "Exp. Triangle with 09:00 low test",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green boxed bull bars and tan breakout leg from 4180 to the 10:15 high 4280",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "minor reversal led to a strong bull trend measuring move up to 4280",
+      "placement": null,
+      "price_hint": 4280.0,
+      "raw_label": "6 bull bars so minor reversal / bull breakout to MM target",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted MM line at 4280 at the spike high",
+      "label": "measured_move",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "measuring move reached its orange dotted target at 4280",
+      "placement": null,
+      "price_hint": 4280.0,
+      "raw_label": "MM target",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines at the 10:15 top with sell bars below",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "breakout above the micro wedge at 4280 failed and the market sold off to 4195",
+      "placement": null,
+      "price_hint": 4280.0,
+      "raw_label": "Failed breakout above micro wedge (10:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green dotted line at 4185 with magenta and blue text at the low",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "tight bear channel failed below the micro wedge at 4185 and bounced back to 4240",
+      "placement": null,
+      "price_hint": 4185.0,
+      "raw_label": "Failed breakout below micro wedge with tight channel minor reversal (11:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 4240 from 11:00 to the 12:15 high with wedge text",
+      "label": "wedge",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "wedge double top at 4240 started the sell-off channel into the close",
+      "placement": null,
+      "price_hint": 4240.0,
+      "raw_label": "Wedge 50% pullback DT with start of channel (12:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "daf95390cbc0",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Expanding Triangle, Bull Breakout, Then TR'. After an early LH DT and wedge lows around 4158, a minor reversal off 6 bull bars becomes a bull breakout to the MM target at 4280; the breakout above the micro wedge fails, a tight bear channel fails below its micro wedge, and the day degrades into a trading range with a 12:15 wedge double top selling the close to 4160."
+}

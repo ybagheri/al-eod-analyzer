@@ -1,0 +1,184 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2026-05-20",
+  "day_type": "spike_and_channel_bull",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted expanding triangle lines under the 22:00 bars with blue shaded range",
+      "label": null,
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": true,
+      "outcome": "success",
+      "outcome_reason": "expanding triangle bottom around 7379 lifted into the spike and channel",
+      "placement": null,
+      "price_hint": 7379.0,
+      "raw_label": "Expanding triangle (22:00 lows)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "21:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Spike and bull channel text with blue shaded small pullbacks and bull trend line",
+      "label": "spike",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "spike and channel bull trend rallied from 7385 to 7448",
+      "placement": null,
+      "price_hint": 7448.0,
+      "raw_label": "Spike and bull channel",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted line at 7460 red text and red arrows 23:35-00:10",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "buy climax spike into a double top with Monday high made a minor reversal pullback",
+      "placement": null,
+      "price_hint": 7460.0,
+      "raw_label": "Double top with Monday high, buy climax, then minor reversal",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrow and green text over descending pullback bars to bar 40",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "tight bear channel pulled back to 7427 then failed to reverse the bull trend",
+      "placement": null,
+      "price_hint": 7427.0,
+      "raw_label": "Tight bear channel and micro channel (00:30 lows)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted bull channel with blue shaded 02:15-03:10 range and bull trend to 7455",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bull trending tight trading range continued the grind up to 7455",
+      "placement": null,
+      "price_hint": 7452.0,
+      "raw_label": "Bull trending tight trading range buy low sell high and scalp limit order market",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "03:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Tight bull channel text with green arrow into bar 72 area and close high 7460",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "tight bull channel lifted the final range to 7460 into the close",
+      "placement": null,
+      "price_hint": 7460.0,
+      "raw_label": "Tight bull channel (03:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "f7e64373be98",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Gap Up then Spike and Channel Bull Trend Day'. Overnight ET+12: expanding triangle bottom near 7379 starts a spike and channel bull trend to 7448, a buy climax double top with Monday high at 7460 only buys a tight bear channel pullback to 7427, and the limit-order bull trending tight trading range grinds to 7460 into the close. Chart closes at 04:00 PT+12 print."
+}

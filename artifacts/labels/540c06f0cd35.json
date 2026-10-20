@@ -1,0 +1,184 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-12-11",
+  "day_type": "spike_and_channel_bull",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Bear trap text under the 23:05 lows with red Low 2 arrows at 22:45-23:05 and bull spike at 23:15",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "gap down and bear trap at Low 2 sold the open low then bulls bought up into the range",
+      "placement": null,
+      "price_hint": 5403.0,
+      "raw_label": "Gap down and bear trap low 5403 (23:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "22:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box with red dotted double tops top, 12/18/24 labels, green Double bottom and higher lows text",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bull spike into trading range then bull channel; double bottom and higher lows bars 12, 18, 24",
+      "placement": null,
+      "price_hint": 6870.0,
+      "raw_label": "Blue shaded trading range (23:30-00:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box with red dotted double tops top, 12/18/24 labels, green Double bottom and higher lows text",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bull spike into trading range then bull channel; double bottom and higher lows bars 12, 18, 24",
+      "placement": null,
+      "price_hint": 6870.0,
+      "raw_label": "Blue shaded trading range (23:30-00:30)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Trading range breakout text with arrow, green arrow at bar 36, red double tops dotted line",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green Trading range breakout text and breakout of double tops over bar 36",
+      "placement": null,
+      "price_hint": 6885.0,
+      "raw_label": "Trading range breakout (00:50 bar 36)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted channel, bar 48 and 60 labels, green arrows 02:10, 03:10 and shaded box 03:35",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge tight bull channel pushed to 6900s with High 2 pullbacks",
+      "placement": null,
+      "price_hint": 6900.0,
+      "raw_label": "Tight bull channel bull trend with consecutive High 2 pullbacks (bars 48, 60)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge top text, red dotted top at 04:35, red arrows at bar 72 and 04:55, last box labelled 7290.75 close and hi chip 6912.75",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "wedge top after bar 72 formed at 6900s red arrows; pullback but minor reversal lifted to 6912.75 close 6904.75",
+      "placement": null,
+      "price_hint": 6905.0,
+      "raw_label": "Wedge top and pullback but minor reversal (04:35 bar 72)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "04:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "540c06f0cd35",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Gap Down, Bear Trap Then Bull Spike and Channel' (overnight ET+13 hrs, Wed Dec 11 session shown 23:00-05:00 for Wed Dec 10 ET). Gap down to 5403, bear trap; bull spike into trading range then double top pullback 6860 into tight bull channel with consecutive High 2 pullbacks; wedge top after bar 72; pullback but minor reversal and rally into 05:00 close 6912, close 6904.75 high 6912.75. Inset daily chart shows Wed trading range breakout."
+}

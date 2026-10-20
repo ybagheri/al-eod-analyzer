@@ -1,0 +1,211 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2026-02-20",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": 1,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Volatile breakout on 10am ET report / Likely too fast to place stop order in time / Set strong bullish sentiment for day' text with green arrow at the spike cluster",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "10am ET report spike at 23:00 with green arrows bars 4-6 from 6850 lows up through 6898 open",
+      "placement": null,
+      "price_hint": 6910.0,
+      "raw_label": "Volatile breakout on 10am ET report; outside up day with 83-point range (23:00-23:15)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 14,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Double top with the week's high' text with red dotted horizontal line near 6929",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "red arrow bar 14-16 test of the red dotted 6925 the week's high",
+      "placement": null,
+      "price_hint": 6929.0,
+      "raw_label": "Double top with the week's high (23:35-23:55 high 6929)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "23:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 28,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Major trend reversal failed Tight bear leg/channel' text with red arrow at bar 30-34 and gray shaded 01:05-01:25",
+      "label": "double_top",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "red dotted second test line 6922 with red arrow at red major trend reversal failed into blue shaded sell-off",
+      "placement": null,
+      "price_hint": 6922.0,
+      "raw_label": "Major trend reversal failed tight bear leg/channel (01:00-01:20 high 6922)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "00:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 33,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Double bottom just below 50% pullback of day's range, Wait on breakout to sell more' text above the green dotted floor at the bar 36 low area",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green dotted 6872 wedge above bar 36 low",
+      "placement": null,
+      "price_hint": 6872.0,
+      "raw_label": "Double bottom just below 50% pullback of day's range (01:10-01:25 low 6872)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 40,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Two legs up then sideways' text with green shaded 01:35-02:35 chain and bar 48 label",
+      "label": "breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "1st green arrow at bar 42 and 2nd green arrow at bar 48 off the range lows into blue shaded retest box",
+      "placement": null,
+      "price_hint": 6905.0,
+      "raw_label": "Two legs up then sideways into the range top (01:30-02:45)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "01:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Trading range into close' text and blue shaded 03:30-05:00 box with bars 60, 72 labels and green arrows 04:45",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "unclear",
+      "outcome_reason": "blue text 'Trading range into close' over the blue shaded bar 60-72 box drifting above the purple/black bars toward the 6919 chip close",
+      "placement": null,
+      "price_hint": 6919.0,
+      "raw_label": "Bull trending trading range into close (03:30-05:00 chip 6919.00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'Trading range into close' text and blue shaded 03:30-05:00 box with bars 60, 72 labels and green arrows 04:45",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "unclear",
+      "outcome_reason": "blue text 'Trading range into close' over the blue shaded bar 60-72 box drifting above the purple/black bars toward the 6919 chip close",
+      "placement": null,
+      "price_hint": 6919.0,
+      "raw_label": "Bull trending trading range into close (03:30-05:00 chip 6919.00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "03:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "b2653c66ffb4",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend from Open and Bull Trending Trading Range Day' (overnight ET+13 abacus chart, Feb 20/21). Volatile 10am ET report breakout and outside up day with 83-point range set strong bullish sentiment; double top with the week's high (23:45 high 6925) and second 01:10 major trend reversal failed tight bear leg/channel, then two legs up bull trending trading range into the close near the week's high (blue shaded box bars 60-72, chip close 6919)."
+}

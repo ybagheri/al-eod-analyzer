@@ -282,9 +282,20 @@ def extract(
         "--allow-dirty",
         help="Run even with uncommitted changes under the extraction queue.",
     ),
+    fill_only: bool = typer.Option(
+        False,
+        "--fill-only",
+        help="Only scan manifest records that already have a queue response "
+        "(R-FINISH conversion pass; never creates new request files).",
+    ),
 ) -> None:
     """Extract DayLabels for manifest images (file-exchange needs two passes)."""
     loaded = ImageIngestionService.read_manifest(manifest)
+    if fill_only:
+        filled = {p.name.replace(".response.json", "") for p in queue_dir.glob("*.response.json")}
+        records = [r for r in loaded.records if r.image_id in filled]
+        loaded = loaded.model_copy(update={"records": records})
+        typer.echo(f"fill-only: {len(records)} record(s) with an existing response")
     taxonomy = load_taxonomy(taxonomy_file)
     migrations = load_migrations(migrations_file)
     if queue_dirty(queue_dir) and not allow_dirty:

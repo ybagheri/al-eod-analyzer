@@ -1,0 +1,211 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-08-08",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Bear trap text under the brown shaded 06:50-07:15 box with red arrows 07:00 and green arrows 07:05-07:20",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "bear trap sold the open down to 5325 then bulls rallied back to the range",
+      "placement": null,
+      "price_hint": 5325.0,
+      "raw_label": "Bear trap low 5325 (07:00)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box, magenta Minor wedge text with pink dotted channel, green Higher low in bull channel text, red arrows 08:10, 08:50, 09:00, green arrows 08:15, 09:45",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "minor wedge higher low in bull channel shaded range with red and green arrows alternating between 5330-5365",
+      "placement": null,
+      "price_hint": 5355.0,
+      "raw_label": "Blue shaded opening range with minor wedge (07:15-10:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box, magenta Minor wedge text with pink dotted channel, green Higher low in bull channel text, red arrows 08:10, 08:50, 09:00, green arrows 08:15, 09:45",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "minor wedge higher low in bull channel shaded range with red and green arrows alternating between 5330-5365",
+      "placement": null,
+      "price_hint": 5355.0,
+      "raw_label": "Blue shaded opening range with minor wedge (07:15-10:35)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "beige boxes 10:20-10:35 and 10:50-11:05 with green arrows bottom, magenta Parabolic Wedge text and shaded pink box",
+      "label": "channel",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "green shaded bull bars pushed the parabolic wedge rally above the pre-breakout range top",
+      "placement": null,
+      "price_hint": 5375.0,
+      "raw_label": "Bull channel breakout (10:35-11:05)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Parabolic Wedge Failed breakout above trading range text with pink dotted wedge lines and red arrows 11:00-11:15",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge failed breakout redded in onto the blue shaded range top",
+      "placement": null,
+      "price_hint": 5385.0,
+      "raw_label": "Failed breakout above trading range (11:05 high 5385)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded chart box from 11:15 to close with magenta dotted wedge at 12:25 and pink channel to 12:45",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "post wedge chop with red boxes 11:30, 12:05 and green arrows 11:20, 12:00, 12:15 bouncing 5360-5370",
+      "placement": null,
+      "price_hint": 5363.0,
+      "raw_label": "Trading range after breakout (11:15-13:05 blue box)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded chart box from 11:15 to close with magenta dotted wedge at 12:25 and pink channel to 12:45",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "modifiers": [],
+      "needs_review": false,
+      "outcome": "success",
+      "outcome_reason": "post wedge chop with red boxes 11:30, 12:05 and green arrows 11:20, 12:00, 12:15 bouncing 5360-5370",
+      "placement": null,
+      "price_hint": 5363.0,
+      "raw_label": "Trading range after breakout (11:15-13:05 blue box)",
+      "role": "pattern",
+      "source": "vision",
+      "start_time": {
+        "time": "11:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "7029d28ff770",
+  "needs_review": false,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trending Trading Range Day' (overnight ET+12 hrs). Bear trap low 5325 opened the bull channel day; minor wedge range with higher low in bull channel and double tops lifted rally into a parabolic wedge failed breakout above trading range at 11:05 (5385), then trading range chop from 11:15 into close 5368."
+}

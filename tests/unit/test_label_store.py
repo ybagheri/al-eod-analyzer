@@ -54,6 +54,33 @@ def test_repo_migrations_load() -> None:
     assert migrations.events["trading_range"].quality == "lossy"
     assert migrations.day_types["trend_reversal_to_bear_attempt"].quality == "lossy"
     assert migrations.day_types["bear_trend_resumption"].to is None
+    # S2.8b R-FINISH rules: legacy ids still present in stored queue data.
+    for event_id, target in [
+        ("high_2", "h2"),
+        ("ii", "inside_inside"),
+        ("ooo", "outside_outside"),
+        ("expanding_triangle", "triangle"),
+        ("gap_up", "gap"),
+        ("bull_gap", "gap"),
+    ]:
+        rule = migrations.events[event_id]
+        assert rule.to == target and rule.quality == "exact"
+    assert migrations.day_types["bull_channel"].to == "broad_bull_channel"
+    assert migrations.day_types["reversal_day"].to is None
+    for event_id in (
+        "low_2_top",
+        "wedge_bull_channel",
+        "triple_top",
+        "parabolic_wedge",
+        "spike_and_channel",
+        "small_pullback_bull_trend",
+        "small_pullback_bear_trend",
+        "bull_trending_trading_range",
+        "trend_reversal_to_bull",
+        "bear_trend_resumption",
+    ):
+        assert migrations.events[event_id].to is None
+        assert migrations.events[event_id].quality == "lossy"
 
 
 @pytest.mark.parametrize(
