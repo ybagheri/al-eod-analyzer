@@ -120,6 +120,9 @@ class ExtractionReport(BaseModel):
     valid_rate: float = 0.0
     mean_day_confidence: float = 0.0
     mean_event_confidence: float = 0.0
+    out_of_scope: int = PydField(
+        default=0, description="Converted labels with scope_ok=False (not in stats)."
+    )
     day_type_counts: dict[str, int] = PydField(default_factory=dict)
     event_counts: dict[str, int] = PydField(default_factory=dict)
     quarantined_files: list[str] = PydField(default_factory=list)
@@ -252,7 +255,7 @@ class ExtractionService:
         records = sorted(self.manifest.records, key=lambda r: r.filename)
         if limit is not None:
             records = records[:limit]
-        labeled = skipped = pending = 0
+        labeled = skipped = pending = out_of_scope = 0
         warnings: list[str] = []
         gold_ids = self._gold_ids()
         day_confs: list[float] = []
@@ -266,7 +269,9 @@ class ExtractionService:
                 and existing.extraction_meta.model_id == self.client.model_id
             ):
                 skipped += 1
-                self._accumulate(existing, day_confs, event_confs, day_counts, event_counts)
+                out_of_scope += self._accumulate(
+                    existing, day_confs, event_confs, day_counts, event_counts
+                )
                 continue
             if (
                 existing is not None
@@ -278,14 +283,18 @@ class ExtractionService:
                     f"{record.image_id}: reviewed label kept "
                     "(history exists; pass clobber_reviewed to re-extract)"
                 )
-                self._accumulate(existing, day_confs, event_confs, day_counts, event_counts)
+                out_of_scope += self._accumulate(
+                    existing, day_confs, event_confs, day_counts, event_counts
+                )
                 continue
             if existing is not None and not self.clobber_reviewed and record.image_id in gold_ids:
                 skipped += 1
                 warnings.append(
                     f"{record.image_id}: gold label kept (pass clobber_reviewed to re-extract)"
                 )
-                self._accumulate(existing, day_confs, event_confs, day_counts, event_counts)
+                out_of_scope += self._accumulate(
+                    existing, day_confs, event_confs, day_counts, event_counts
+                )
                 continue
             date_iso = record.date.isoformat() if record.date else "unknown"
             try:
@@ -306,7 +315,9 @@ class ExtractionService:
                 encoding="utf-8",
             )
             labeled += 1
-            self._accumulate(label, day_confs, event_confs, day_counts, event_counts)
+            out_of_scope += self._accumulate(
+                label, day_confs, event_confs, day_counts, event_counts
+            )
         quarantined = len(self.quarantine_reasons)
         done = labeled + skipped
         return ExtractionReport(
@@ -320,6 +331,7 @@ class ExtractionService:
             valid_rate=(done / len(records)) if records else 0.0,
             mean_day_confidence=_mean(day_confs),
             mean_event_confidence=_mean(event_confs),
+            out_of_scope=out_of_scope,
             day_type_counts=dict(sorted(day_counts.items())),
             event_counts=dict(sorted(event_counts.items())),
             quarantined_files=sorted(self.quarantine_reasons),
@@ -333,12 +345,16 @@ class ExtractionService:
         event_confs: list[float],
         day_counts: Counter[str],
         event_counts: Counter[str],
-    ) -> None:
+    ) -> int:
+        """Accumulate in-scope stats; returns 1 when the label is out-of-scope."""
+        if label.scope_ok is False:
+            return 1
         day_confs.append(label.day_type_confidence)
         day_counts[label.day_type.value] += 1
         for event in label.events:
             event_confs.append(event.confidence)
             event_counts[event.label.value if event.label else "unmapped"] += 1
+        return 0
 
 
 def _mean(values: list[float]) -> float:

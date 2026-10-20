@@ -404,6 +404,40 @@ def extract_batch(
     )
 
 
+@app.command(name="scope-report")
+def scope_report(
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
+    output: Path = typer.Option(
+        Path("artifacts/scope_report.json"), "--output", help="Scope report JSON to write."
+    ),
+) -> None:
+    """Aggregate the P11 scope filter over stored labels."""
+    from brooks_lab.application.review import compute_scope_report, load_labels_for_manifest
+
+    loaded = ImageIngestionService.read_manifest(manifest)
+    labels = load_labels_for_manifest(loaded, labels_dir, load_migrations(migrations_file))
+    report = compute_scope_report(labels)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(
+        json.dumps(report.model_dump(mode="json"), indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    typer.echo(
+        f"total={report.total} in_scope={report.in_scope} "
+        f"out_of_scope={report.out_of_scope} unstamped={report.unstamped} -> {output}"
+    )
+    for image_id in report.out_of_scope_ids:
+        typer.echo(f"out: {image_id} ({report.notes.get(image_id, '')})")
+
+
 @app.command(name="extract-status")
 def extract_status(
     manifest: Path = typer.Option(

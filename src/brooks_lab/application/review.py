@@ -106,14 +106,25 @@ class LabelStats(BaseModel):
     event_counts: dict[str, int] = PydField(default_factory=dict)
     top_pairs: list[dict[str, Any]] = PydField(default_factory=list)
     gold_count: int = 0
+    out_of_scope: int = PydField(default=0, description="Labels with scope_ok=False (P11).")
+
+
+def in_scope(labels: list[DayLabel]) -> list[DayLabel]:
+    """P11: drop labels explicitly marked out-of-scope (``scope_ok=False``)."""
+    return [label for label in labels if label.scope_ok is not False]
 
 
 def compute_label_stats(labels: list[DayLabel], gold_ids: set[str]) -> LabelStats:
-    """Compute frequency/co-occurrence stats (pure function)."""
+    """Compute frequency/co-occurrence stats (pure function).
+
+    Out-of-scope labels (``scope_ok=False``) are excluded from every count.
+    """
+    scoped = in_scope(labels)
+    out_of_scope = len(labels) - len(scoped)
     day_counts: Counter[str] = Counter()
     event_counts: Counter[str] = Counter()
     pair_counts: Counter[tuple[str, str]] = Counter()
-    for label in labels:
+    for label in scoped:
         day_counts[label.day_type.value] += 1
         names = sorted({e.label.value if e.label else f"raw:{e.raw_label}" for e in label.events})
         for name in names:
@@ -121,14 +132,53 @@ def compute_label_stats(labels: list[DayLabel], gold_ids: set[str]) -> LabelStat
         for first, second in itertools.combinations(names, 2):
             pair_counts[(first, second)] += 1
     top_pairs = [{"a": a, "b": b, "count": count} for (a, b), count in pair_counts.most_common(15)]
-    total_events = sum(len(label.events) for label in labels)
+    total_events = sum(len(label.events) for label in scoped)
     return LabelStats(
-        total=len(labels),
+        total=len(scoped),
         day_type_counts=dict(sorted(day_counts.items())),
-        events_per_day_mean=(total_events / len(labels)) if labels else 0.0,
+        events_per_day_mean=(total_events / len(scoped)) if scoped else 0.0,
         event_counts=dict(sorted(event_counts.items())),
         top_pairs=top_pairs,
-        gold_count=len(gold_ids & {label.image_id for label in labels}),
+        gold_count=len(gold_ids & {label.image_id for label in scoped}),
+        out_of_scope=out_of_scope,
+    )
+
+
+class ScopeReport(BaseModel):
+    """Aggregated scope-filter report over a label batch (P11)."""
+
+    model_config = ConfigDict(frozen=True)
+
+    schema_version: int = PydField(default=LABEL_SCHEMA_VERSION, ge=1)
+    total: int = 0
+    in_scope: int = 0
+    out_of_scope: int = 0
+    unstamped: int = PydField(default=0, description="Legacy labels without scope_ok.")
+    out_of_scope_ids: list[str] = PydField(default_factory=list)
+    notes: dict[str, str] = PydField(default_factory=dict)
+
+
+def compute_scope_report(labels: list[DayLabel]) -> ScopeReport:
+    """Count scope stamps and list out-of-scope rows (pure function)."""
+    out_ids: list[str] = []
+    notes: dict[str, str] = {}
+    unstamped = 0
+    scoped = 0
+    for label in labels:
+        if label.scope_ok is None:
+            unstamped += 1
+        elif label.scope_ok:
+            scoped += 1
+        else:
+            out_ids.append(label.image_id)
+            notes[label.image_id] = label.scope_note
+    return ScopeReport(
+        total=len(labels),
+        in_scope=scoped,
+        out_of_scope=len(out_ids),
+        unstamped=unstamped,
+        out_of_scope_ids=sorted(out_ids),
+        notes=notes,
     )
 
 
