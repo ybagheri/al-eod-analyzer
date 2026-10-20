@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import datetime
 import json
 import logging
 import time
@@ -13,6 +14,7 @@ from typing import Any
 from pydantic import BaseModel, ConfigDict
 from pydantic import Field as PydField
 
+from brooks_lab.application.schema_v3 import looks_like_v3, parse_v3_response
 from brooks_lab.domain.imaging import Manifest
 from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel, ExtractionMeta
 from brooks_lab.infrastructure.label_store import TaxonomyMigrations, load_day_label
@@ -37,19 +39,50 @@ class ExtractionPromptBuilder:
         self._taxonomy = taxonomy
         self.prompt_version = template_path.stem
 
-    def build(self, image_id: str, date_iso: str, provider: str, model_id: str) -> str:
-        """Render a deterministic prompt for one image (pure function of inputs)."""
-        taxonomy_section = (
-            "## Taxonomy v1 (canonical ids only)\n\n"
+    @property
+    def taxonomy_version(self) -> str:
+        """Vocabulary version carried by the attached taxonomy."""
+        return self._taxonomy.taxonomy_version
+
+    def _is_v3(self) -> bool:
+        """True for the compact schema prompts (extract_v3, extract_day_v3)."""
+        return self.prompt_version in ("extract_v3", "extract_day_v3")
+
+    def _taxonomy_section(self) -> str:
+        version = self._taxonomy.taxonomy_version or "1"
+        section = (
+            f"## Taxonomy v{version} (canonical ids only)\n\n"
             f"Day types: {', '.join(sorted(self._taxonomy.day_types))}\n\n"
             f"Events: {', '.join(sorted(self._taxonomy.events))}\n\n"
-            "Day-type synonyms: "
+        )
+        if self._is_v3():
+            return section  # v3 responses use enum ids only, never synonyms.
+        return (
+            section
+            + "Day-type synonyms: "
             + ", ".join(f"{k} -> {v}" for k, v in sorted(self._taxonomy.day_type_synonyms.items()))
             + "\n\nEvent synonyms: "
             + ", ".join(f"{k} -> {v}" for k, v in sorted(self._taxonomy.event_synonyms.items()))
             + "\n"
         )
-        schema_section = (
+
+    def _schema_section(self) -> str:
+        if self._is_v3():
+            return (
+                "## Output schema (compact v3, strict)\n\n"
+                "Object: image_id, scope_ok (bool), scope_note, day_type (enum id), "
+                "day_type_conf (0..1), axis {style: pt_0630_1300|et_style_0900_1500|"
+                "other|none, first_label, last_label}, anchors {open_dir_first_hour: "
+                "up|down|flat, day_close_vs_open: above|below|near, "
+                "high_of_day_bar_index_hint: int|null, low_of_day_bar_index_hint: "
+                "int|null, n_bars_visible: int|null}, events[] (omit in the day-only "
+                "pass). Bar indices count from the first bar of the shown session.\n"
+                'Event: kind (enum id, or "unmapped" + non-empty raw_label), '
+                "start_bar_index_hint (int >= 0), end_bar_index_hint (int|null), "
+                "direction (bull|bear|neutral), outcome "
+                "(success|fail|partial|unclear), conf (0..1), raw_label.\n"
+            )
+        return (
             "## Output schema (DayLabel v1, strict)\n\n"
             "Top-level: schema_version=1, image_id, date (YYYY-MM-DD), day_type, "
             "day_type_confidence (0..1), session_summary, events[], extraction_meta.\n"
@@ -59,11 +92,16 @@ class ExtractionPromptBuilder:
             "(success|fail|partial|unclear), outcome_reason, confidence (0..1), "
             "evidence, source (vision|human|engine).\n"
         )
+
+    def build(self, image_id: str, date_iso: str, provider: str, model_id: str) -> str:
+        """Render a deterministic prompt for one image (pure function of inputs)."""
         context = (
             f"## This image\n\nimage_id: {image_id}\ndate: {date_iso}\n"
             f"provider: {provider}\nmodel_id: {model_id}\n"
         )
-        return f"{self._template}\n\n{taxonomy_section}\n{schema_section}\n{context}"
+        return (
+            f"{self._template}\n\n{self._taxonomy_section()}\n{self._schema_section()}\n{context}"
+        )
 
 
 class ExtractionReport(BaseModel):
@@ -153,11 +191,21 @@ class ExtractionService:
         )
         self.quarantine_reasons[image_id] = reason
 
-    def _validate(self, raw: Any, image_id: str) -> DayLabel:
+    def _validate(self, raw: Any, image_id: str, date: datetime.date | None = None) -> DayLabel:
         if not isinstance(raw, dict):
             raise VisionError("response must be a JSON object")
         try:
-            label = DayLabel.model_validate(raw)
+            if looks_like_v3(raw):
+                label = parse_v3_response(
+                    raw,
+                    image_id=image_id,
+                    provider=self.provider,
+                    model_id=self.client.model_id,
+                    taxonomy_version=self.taxonomy_version,
+                    date=date,
+                )
+            else:
+                label = DayLabel.model_validate(raw)
         except ValueError as exc:
             raise VisionError(f"schema validation failed: {exc}") from exc
         if label.image_id != image_id:
@@ -169,7 +217,13 @@ class ExtractionService:
             label = label.model_copy(update={"extraction_meta": meta})
         return label
 
-    def _extract_one(self, image_id: str, filename: str, date_iso: str) -> DayLabel | None:
+    def _extract_one(
+        self,
+        image_id: str,
+        filename: str,
+        date_iso: str,
+        date: datetime.date | None = None,
+    ) -> DayLabel | None:
         """Extract one image; None means pending (file-exchange, response absent)."""
         prompt = self.prompt_builder.build(image_id, date_iso, self.provider, self.client.model_id)
         image_bytes = (self.data_dir / filename).read_bytes()
@@ -185,7 +239,7 @@ class ExtractionService:
                 self._sleep(attempt)
                 continue
             try:
-                return self._validate(raw, image_id)
+                return self._validate(raw, image_id, date)
             except VisionError as exc:
                 last_error = f"{exc} (auto-repair: none available offline)"
                 self._sleep(attempt)
@@ -235,7 +289,7 @@ class ExtractionService:
                 continue
             date_iso = record.date.isoformat() if record.date else "unknown"
             try:
-                label = self._extract_one(record.image_id, record.filename, date_iso)
+                label = self._extract_one(record.image_id, record.filename, date_iso, record.date)
             except OSError as exc:
                 self._quarantine(record.image_id, f"unreadable image file: {exc}", None)
                 continue
