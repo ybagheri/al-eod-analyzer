@@ -1,167 +1,84 @@
 {
-  "schema_version": 1,
-  "image_id": "09bb32c388fa",
-  "date": "2023-06-22",
+  "anchors": {
+    "day_close_vs_open": "above",
+    "high_of_day_bar_index_hint": 78,
+    "low_of_day_bar_index_hint": 2,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "up"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:00",
+    "style": "pt_0630_1300"
+  },
   "day_type": "spike_and_channel_bull",
-  "day_type_confidence": 0.7,
-  "session_summary": "Blue title bar: 'OO Bottom, Spike and Channel Bull Trend'. An outside outside bottom at 4395 and buy climax to 4419 leads back into a triangle; a failed breakout below the triangle with a lower low double bottom launches the spike and channel bull trend, with a bear trap at 4412 and a minor wedge topping the close at 4422.",
+  "day_type_conf": 0.9,
   "events": [
     {
-      "label": "outside_outside",
-      "raw_label": "OO (06:50 bottom)",
+      "conf": 0.85,
       "direction": "bull",
-      "start_time": {
-        "time": "06:45",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4395.0,
+      "end_bar_index_hint": 2,
+      "kind": "outside_outside",
       "outcome": "success",
-      "outcome_reason": "outside outside bottom at 4395 lifted the opening into the buy climax rally",
-      "confidence": 0.65,
-      "evidence": "brown boxed 06:45-07:05 bars with OO orange text under the 4395 low"
+      "raw_label": "OO",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "climax",
-      "raw_label": "Buy Climax (07:20)",
-      "direction": "bull",
-      "start_time": {
-        "time": "07:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:25",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4419.0,
-      "outcome": "success",
-      "outcome_reason": "buy climax spike to 4419 reversed the opening trend back into the triangle",
-      "confidence": 0.65,
-      "evidence": "orange arrow and Buy Climax text above the 07:20 spike bar"
-    },
-    {
-      "label": "triple_top",
-      "raw_label": "Triangle with red dotted resistance 4417 (07:25-10:20)",
+      "conf": 0.75,
       "direction": "neutral",
-      "start_time": {
-        "time": "07:25",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4408.0,
-      "outcome": "success",
-      "outcome_reason": "triangle chopped between 4399 and 4417 through the first half of the day",
-      "confidence": 0.6,
-      "evidence": "blue dotted triangle lines with red dotted 4417 tops and green dotted 4402 bottoms"
+      "end_bar_index_hint": 37,
+      "kind": "triangle",
+      "outcome": "unclear",
+      "raw_label": "Triangle",
+      "start_bar_index_hint": 2
     },
     {
-      "label": "higher_low_major_trend_reversal",
-      "raw_label": "Higher Low Major Trend Reversal (08:15)",
-      "direction": "bull",
-      "start_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "08:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4401.0,
+      "conf": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "kind": "climax",
       "outcome": "success",
-      "outcome_reason": "higher low major trend reversal at 4401 lifted the market into the triangle top",
-      "confidence": 0.65,
-      "evidence": "green text under the 08:00 low with magenta dotted rising lines"
+      "raw_label": "Buy Climax",
+      "start_bar_index_hint": 9
     },
     {
-      "label": "failed_breakout",
-      "raw_label": "Failed breakout below Triangle and Double Bottom (10:20 low 4403)",
+      "conf": 0.75,
       "direction": "bull",
-      "start_time": {
-        "time": "09:45",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4403.0,
+      "end_bar_index_hint": 26,
+      "kind": "major_trend_reversal",
       "outcome": "success",
-      "outcome_reason": "breakout below the triangle with lower low double bottom failed and the broom spike up launched",
-      "confidence": 0.7,
-      "evidence": "orange arrow into the broad brown 10:15-10:25 bull spike bar"
+      "raw_label": "Higher Low Major Trend Reversal",
+      "start_bar_index_hint": 14
     },
     {
-      "label": "spike",
-      "raw_label": "Spike and Channel Bull Trend (10:25-12:35)",
+      "conf": 0.85,
       "direction": "bull",
-      "start_time": {
-        "time": "10:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4422.0,
+      "end_bar_index_hint": 47,
+      "kind": "failed_breakout",
       "outcome": "success",
-      "outcome_reason": "spike and bull channel grinded the trend up to 4422",
-      "confidence": 0.7,
-      "evidence": "magenta dotted rising lines and green boxed bars from 10:30 to 12:35"
+      "raw_label": "Failed breakout below Triangle and Double Bottom",
+      "start_bar_index_hint": 42
     },
     {
-      "label": "failed_breakout",
-      "raw_label": "Bear Trap / Lower Low Double Bottom (12:20 pullback 4411)",
-      "direction": "bull",
-      "start_time": {
-        "time": "12:05",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4411.0,
+      "conf": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": 66,
+      "kind": "wedge",
       "outcome": "success",
-      "outcome_reason": "bear trap into a lower low double bottom kept the bulls in control in the close",
-      "confidence": 0.6,
-      "evidence": "brown shaded 12:10-12:35 trap bars with Bear Trap orange text"
+      "raw_label": "Minor Wedge",
+      "start_bar_index_hint": 57
     },
     {
-      "label": "wedge",
-      "raw_label": "Minor Wedge (13:00 top)",
+      "conf": 0.75,
       "direction": "bull",
-      "start_time": {
-        "time": "12:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4423.0,
+      "end_bar_index_hint": 74,
+      "kind": "failed_breakout",
       "outcome": "success",
-      "outcome_reason": "minor wedge of higher lows completed the trend close at 4423",
-      "confidence": 0.65,
-      "evidence": "magenta Minor Wedge text with dotted lines over the 12:25-13:05 swing"
+      "raw_label": "Bear Trap Lower Low Double Bottom",
+      "start_bar_index_hint": 71
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "09bb32c388fa",
+  "scope_note": "",
+  "scope_ok": true
 }

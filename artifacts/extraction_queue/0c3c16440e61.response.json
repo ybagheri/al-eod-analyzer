@@ -1,110 +1,111 @@
 {
-  "schema_version": 1,
-  "image_id": "0c3c16440e61",
-  "date": "2023-02-13",
+  "anchors": {
+    "day_close_vs_open": "above",
+    "high_of_day_bar_index_hint": 54,
+    "low_of_day_bar_index_hint": 1,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "up"
+  },
+  "axis": {
+    "first_label": "10:05",
+    "last_label": "15:35",
+    "style": "et_style_0900_1500"
+  },
   "day_type": "bull_trend_from_open",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'Bull Trend From The Open, Then Trading Range'. Two gaps from the open hold as a small pullback bull trend with bulls creating bull gaps and a parabolic wedge rally to 4148; a wedge pullback DB at 4130 becomes the first pullback to the EMA after 20 bars and the January High breakout high test at 4149 closes the day back up at 4149.",
+  "day_type_conf": 0.7,
   "events": [
     {
-      "label": "channel",
-      "raw_label": "Two gaps from open small pullback bull trend",
+      "conf": 0.65,
       "direction": "bull",
-      "start_time": {
-        "time": "16:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:35",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4148.0,
+      "end_bar_index_hint": 25,
+      "kind": "channel",
       "outcome": "success",
-      "outcome_reason": "small pullback bull trend from the open rallied through the overnight range to 4148",
-      "confidence": 0.75,
-      "evidence": "black vertical open line 09:55, green boxed pullbacks, blue Small Pullback Bull Trend text"
+      "raw_label": "Two gaps from open Small Pullback Bull Trend",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "bull_gap",
-      "raw_label": "Bulls creating gaps. Don't sell",
-      "direction": "bull",
-      "start_time": {
-        "time": "11:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4130.0,
-      "outcome": "success",
-      "outcome_reason": "bulls created gaps that stayed open all day",
-      "confidence": 0.6,
-      "evidence": "green text with blue boxed gap bars 11:05 and 12:55 and navy dotted breakout line at 4130"
+      "conf": 0.5,
+      "direction": "neutral",
+      "end_bar_index_hint": 66,
+      "kind": "unmapped",
+      "outcome": "unclear",
+      "raw_label": "January High",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "parabolic_wedge",
-      "raw_label": "Strong trends always form Wedges and Parabolic Wedges (13:30 wedge top)",
+      "conf": 0.55,
       "direction": "bull",
-      "start_time": {
-        "time": "09:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4149.0,
-      "outcome": "success",
-      "outcome_reason": "parabolic wedge into the 13:30 highs marked the first climax",
-      "confidence": 0.6,
-      "evidence": "magenta dotted parabolic line to the 13:30 spike with highlighted text"
+      "end_bar_index_hint": 14,
+      "kind": "measured_move",
+      "outcome": "partial",
+      "raw_label": "Possible MM",
+      "start_bar_index_hint": 1
     },
     {
-      "label": "measured_move",
-      "raw_label": "Possible MM - gap stayed open possible MM Up (13:05)",
+      "conf": 0.7,
       "direction": "bull",
-      "start_time": {
-        "time": "12:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4148.0,
+      "end_bar_index_hint": 14,
+      "kind": "gap",
       "outcome": "success",
-      "outcome_reason": "possible measuring move up from the open gap reached the January High line",
-      "confidence": 0.55,
-      "evidence": "orange Possible MM line at 4155 and blue texts with the blue boxed bar 12:55"
+      "raw_label": "Bulls creating gaps Don't sell",
+      "start_bar_index_hint": 4
     },
     {
-      "label": "wedge_db",
-      "raw_label": "Wedge DB (15:00) with first pullback to EMA in 20 bars",
+      "conf": 0.6,
       "direction": "bull",
-      "start_time": {
-        "time": "13:40",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "15:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4133.0,
+      "end_bar_index_hint": 66,
+      "kind": "measuring_gap",
       "outcome": "success",
-      "outcome_reason": "20 gap bar buy at the wedge DB low delivered the high of day test at close",
-      "confidence": 0.65,
-      "evidence": "magenta Wedge DB text under the 15:00-15:20 lows and blue 20-Gap bar buy highlighted text right"
+      "raw_label": "Gap stayed open Possible MM Up",
+      "start_bar_index_hint": 13
+    },
+    {
+      "conf": 0.5,
+      "direction": "bear",
+      "end_bar_index_hint": 55,
+      "kind": "wedge",
+      "outcome": "partial",
+      "raw_label": "Strong trends always form Wedges and Parabolic Wedges",
+      "start_bar_index_hint": 17
+    },
+    {
+      "conf": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": 27,
+      "kind": "ema_gap_bar",
+      "outcome": "success",
+      "raw_label": "1st pullback to EMA in about 20 or more bars is 20-Gap bar buy setup 75% chance of test of high of day Buy above bull bar closing near its high",
+      "start_bar_index_hint": 24
+    },
+    {
+      "conf": 0.45,
+      "direction": "neutral",
+      "end_bar_index_hint": null,
+      "kind": "trading_range_begin",
+      "outcome": "success",
+      "raw_label": "Then Trading Range",
+      "start_bar_index_hint": 26
+    },
+    {
+      "conf": 0.8,
+      "direction": "bull",
+      "end_bar_index_hint": 66,
+      "kind": "wedge",
+      "outcome": "success",
+      "raw_label": "Wedge DB",
+      "start_bar_index_hint": 59
+    },
+    {
+      "conf": 0.45,
+      "direction": "neutral",
+      "end_bar_index_hint": null,
+      "kind": "trading_range_end",
+      "outcome": "success",
+      "raw_label": "Then Trading Range",
+      "start_bar_index_hint": 80
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "0c3c16440e61",
+  "scope_note": "",
+  "scope_ok": true
 }
