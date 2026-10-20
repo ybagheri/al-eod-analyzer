@@ -42,15 +42,6 @@
       "start_bar_index_hint": 2
     },
     {
-      "conf": 0.5,
-      "direction": "bull",
-      "end_bar_index_hint": 61,
-      "kind": "trend_line",
-      "outcome": "unclear",
-      "raw_label": "",
-      "start_bar_index_hint": 25
-    },
-    {
       "conf": 0.4,
       "direction": "neutral",
       "end_bar_index_hint": 34,
