@@ -162,11 +162,12 @@ def test_day_type_used_as_event_unmaps_with_reason() -> None:
 
 
 def _stored_legacy_payloads() -> list[tuple[str, dict[str, Any]]]:
-    """Raw queue responses (unprocessed v1 payloads) carrying legacy ids.
+    """Golden payloads carrying legacy ids.
 
-    The stored labels have already been rewritten through the loader, so the
-    on-chart tests run against the queue responses of the exact charts the
-    rules were designed for (ADR-013: each rule gets a test on its chart).
+    ADR-013: each rule gets a test on the chart it came from. Charts whose
+    queue responses were replaced by the v3 calibration re-baseline keep their
+    golden legacy payload frozen under ``tests/fixtures/migration/``; newly
+    matching live-queue payloads are picked up as well.
     """
     legacy = {
         "bull_channel",
@@ -189,17 +190,31 @@ def _stored_legacy_payloads() -> list[tuple[str, dict[str, Any]]]:
         "bull_gap",
         "higher_low_major_trend_reversal",
     }
-    queue = REPO / "artifacts" / "extraction_queue"
-    found: list[tuple[str, dict[str, Any]]] = []
-    for path in sorted(queue.glob("*.response.json")):
-        try:
-            payload = json.loads(path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            continue
-        if payload.get("day_type") in legacy or any(
+
+    def _matches(payload: dict[str, Any]) -> bool:
+        return payload.get("day_type") in legacy or any(
             e.get("label") in legacy for e in payload.get("events") or []
-        ):
-            found.append((path.name.replace(".response.json", ""), payload))
+        )
+
+    found: list[tuple[str, dict[str, Any]]] = []
+    roots = (
+        REPO / "tests" / "fixtures" / "migration",
+        REPO / "artifacts" / "extraction_queue",
+    )
+    seen: set[str] = set()
+    for root in roots:
+        for path in sorted(root.glob("*.response.json")):
+            image_id = path.name.replace(".response.json", "")
+            if not path.name.endswith(".response.json") or image_id in seen:
+                # queue goldens always win over fixture copies would double-count
+                continue
+            try:
+                payload = json.loads(path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue
+            if _matches(payload):
+                found.append((image_id, payload))
+                seen.add(image_id)
     return found
 
 
