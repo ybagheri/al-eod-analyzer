@@ -1,0 +1,169 @@
+{
+  "charts": [
+    {
+      "day_type_after": "spike_and_channel_bull",
+      "day_type_before": "spike_and_channel_bull",
+      "image_id": "09bb32c388fa",
+      "needs_review_by_reason": {
+        "alternative_mapping": 1
+      },
+      "remapped": {
+        "1.3:higher_low_major_trend_reversal": 1,
+        "1.3:triple_top": 1
+      },
+      "rows": 9
+    },
+    {
+      "day_type_after": "bull_trend_from_open",
+      "day_type_before": "bull_trend_from_open",
+      "image_id": "0c3c16440e61",
+      "needs_review_by_reason": {
+        "unknown_id": 1
+      },
+      "remapped": {
+        "1.3:bull_gap": 1,
+        "1.3:parabolic_wedge": 1,
+        "1.3:unknown_event": 1
+      },
+      "rows": 6
+    },
+    {
+      "day_type_after": "trend_reversal_to_bull",
+      "day_type_before": "trend_reversal_to_bull",
+      "image_id": "1482a480053f",
+      "needs_review_by_reason": {},
+      "remapped": {
+        "1.3:low_2_top": 1
+      },
+      "rows": 9
+    },
+    {
+      "day_type_after": "trend_reversal_to_bear",
+      "day_type_before": "trend_reversal_to_bear",
+      "image_id": "225420eb92a0",
+      "needs_review_by_reason": {},
+      "remapped": {
+        "1.3:expanding_triangle": 1
+      },
+      "rows": 7
+    },
+    {
+      "day_type_after": "other",
+      "day_type_before": "trending_trading_range",
+      "image_id": "29bdc49c41ad",
+      "needs_review_by_reason": {
+        "direction_missing": 1
+      },
+      "remapped": {},
+      "rows": 11
+    },
+    {
+      "day_type_after": "bull_trending_trading_range",
+      "day_type_before": "bull_trending_trading_range",
+      "image_id": "3836e286d67e",
+      "needs_review_by_reason": {},
+      "remapped": {
+        "1.3:wedge_bull_channel": 1
+      },
+      "rows": 7
+    },
+    {
+      "day_type_after": "small_pullback_bull_trend",
+      "day_type_before": "small_pullback_bull_trend",
+      "image_id": "3fe93407e2d4",
+      "needs_review_by_reason": {},
+      "remapped": {
+        "1.3:gap_up": 1
+      },
+      "rows": 8
+    },
+    {
+      "day_type_after": "spike_and_channel_bear",
+      "day_type_before": "spike_and_channel_bear",
+      "image_id": "430055a59e82",
+      "needs_review_by_reason": {
+        "day_type_used_as_event": 1
+      },
+      "remapped": {
+        "1.3:small_pullback_bear_trend": 1
+      },
+      "rows": 8
+    },
+    {
+      "day_type_after": "bull_channel",
+      "day_type_before": "bull_channel",
+      "image_id": "44b28b35c386",
+      "needs_review_by_reason": {
+        "width_unspecified": 1
+      },
+      "remapped": {},
+      "rows": 7
+    },
+    {
+      "day_type_after": "spike_and_channel_bear",
+      "day_type_before": "spike_and_channel_bear",
+      "image_id": "47948c91a719",
+      "needs_review_by_reason": {},
+      "remapped": {
+        "1.3:low_2": 1
+      },
+      "rows": 7
+    },
+    {
+      "day_type_after": "small_pullback_bull_trend",
+      "day_type_before": "small_pullback_bull_trend",
+      "image_id": "51945845dc28",
+      "needs_review_by_reason": {
+        "day_type_used_as_event": 1
+      },
+      "remapped": {
+        "1.3:gap_up": 1,
+        "1.3:small_pullback_bull_trend": 1
+      },
+      "rows": 4
+    },
+    {
+      "day_type_after": "small_pullback_bear_trend",
+      "day_type_before": "small_pullback_bear_trend",
+      "image_id": "554a72595e08",
+      "needs_review_by_reason": {
+        "day_type_used_as_event": 1
+      },
+      "remapped": {
+        "1.3:small_pullback_bear_trend": 1
+      },
+      "rows": 6
+    }
+  ],
+  "guarantees": {
+    "attributes_lost": 0,
+    "direction_outcome_changes": 0
+  },
+  "limit": 12,
+  "schema_version": 1,
+  "totals": {
+    "attributes_lost": 0,
+    "direction_outcome_changes": [],
+    "needs_review_by_reason": {
+      "alternative_mapping": 1,
+      "day_type_used_as_event": 3,
+      "direction_missing": 1,
+      "unknown_id": 1,
+      "width_unspecified": 1
+    },
+    "remapped_by_rule": {
+      "1.3:bull_gap": 1,
+      "1.3:expanding_triangle": 1,
+      "1.3:gap_up": 2,
+      "1.3:higher_low_major_trend_reversal": 1,
+      "1.3:low_2": 1,
+      "1.3:low_2_top": 1,
+      "1.3:parabolic_wedge": 1,
+      "1.3:small_pullback_bear_trend": 2,
+      "1.3:small_pullback_bull_trend": 1,
+      "1.3:triple_top": 1,
+      "1.3:unknown_event": 1,
+      "1.3:wedge_bull_channel": 1
+    }
+  }
+}

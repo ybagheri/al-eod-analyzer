@@ -314,7 +314,7 @@ class TaxonomyMigrations:
         before = {k: event.get(k) for k in PROTECTED_EVENT_ATTRS}
         if rule.handler:
             fn = handlers_by_name[rule.handler]
-            rows = fn(ctx, event)
+            rows = list(fn(ctx, event))
         else:
             event["label"] = rule.to
             if rule.quality == "lossy":

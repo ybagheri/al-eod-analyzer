@@ -54,6 +54,10 @@ events:
   high_2:
     to: h2
     quality: exact
+  higher_low_major_trend_reversal:
+    to: major_trend_reversal
+    quality: exact
+    note: "glossary variant (HL MTR -> major_trend_reversal); ADR-013 D3 pattern."
   ii:
     to: inside_inside
     quality: exact

@@ -62,6 +62,7 @@ def test_repo_migrations_load() -> None:
         ("expanding_triangle", "triangle"),
         ("gap_up", "gap"),
         ("bull_gap", "gap"),
+        ("higher_low_major_trend_reversal", "major_trend_reversal"),
     ]:
         rule = migrations.events[event_id]
         assert rule.to == target and rule.quality == "exact"

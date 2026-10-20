@@ -187,6 +187,7 @@ def _stored_legacy_payloads() -> list[tuple[str, dict[str, Any]]]:
         "gap_up",
         "gap_down",
         "bull_gap",
+        "higher_low_major_trend_reversal",
     }
     queue = REPO / "artifacts" / "extraction_queue"
     found: list[tuple[str, dict[str, Any]]] = []
