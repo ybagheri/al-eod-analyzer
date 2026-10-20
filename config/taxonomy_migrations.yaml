@@ -1,0 +1,35 @@
+# Taxonomy migration table (P6, plan step S2).
+# Every taxonomy id change is recorded here; the label loader auto-migrates
+# legacy ids on read so enum changes never invalidate stored label files.
+#   quality: exact  - meaning fully preserved.
+#   quality: lossy  - information dropped; loader sets needs_review=true.
+#   to: null        - the old id is invalid; keep raw_label, route to review.
+# Any NEW entry requires: ADR + a migration test + calibration report regen.
+schema_version: 1
+taxonomy_version: "1.3"
+day_types:
+  trend_reversal_to_bear_attempt:
+    to: trend_reversal_to_bear
+    quality: lossy
+    note: "_attempt is an attempt, not a completed reversal (audit pending user decision)."
+  bear_trend_resumption:
+    to: null
+    quality: lossy
+    note: "invalid id; direction-specific resumption representation pending user decision."
+events:
+  low_2:
+    to: l2
+    quality: exact
+  mm:
+    to: measured_move
+    quality: exact
+  traps:
+    to: failed_breakout
+    quality: exact
+  trap:
+    to: failed_breakout
+    quality: exact
+  trading_range:
+    to: tight_trading_range
+    quality: lossy
+    note: "bare range is not necessarily tight; day-part ranges belong to begin/end pairs."

@@ -30,6 +30,7 @@ from brooks_lab.domain.labels import (
     EventLabel,
     LabelSource,
 )
+from brooks_lab.infrastructure.label_store import TaxonomyMigrations, load_day_label
 
 logger = logging.getLogger(__name__)
 
@@ -158,6 +159,7 @@ class ReviewService:
     labels_dir: Path
     history_dir: Path
     gold_path: Path
+    migrations: TaxonomyMigrations | None = None
     clock: Clock = field(default_factory=SystemClock)
     reviewer: str = ""
 
@@ -167,7 +169,7 @@ class ReviewService:
 
     def load_label(self, image_id: str) -> DayLabel:
         """Load and validate one label (raises on missing/invalid files)."""
-        return DayLabel.model_validate_json(self.label_path(image_id).read_text(encoding="utf-8"))
+        return load_day_label(self.label_path(image_id), self.migrations)
 
     def load_gold(self) -> GoldSet:
         """Load the gold registry (empty when never created)."""
@@ -197,7 +199,7 @@ class ReviewService:
             return ApplyResult(
                 image_id=corrections.image_id, applied=False, message="label not found"
             )
-        current = DayLabel.model_validate_json(path.read_text(encoding="utf-8"))
+        current = load_day_label(path, self.migrations)
         update: dict[str, Any] = {}
         if "date" in corrections.model_fields_set:
             update["date"] = corrections.date
@@ -275,7 +277,7 @@ class ReviewService:
         path = self.label_path(image_id)
         if not path.is_file():
             return ApplyResult(image_id=image_id, applied=False, message="label not found")
-        current = DayLabel.model_validate_json(path.read_text(encoding="utf-8"))
+        current = load_day_label(path, self.migrations)
         table = {rule.raw_label: rule for rule in remaps}
         changed = 0
         kept: list[EventLabel] = []
@@ -322,7 +324,11 @@ class ReviewService:
         return sorted(numbers)
 
 
-def load_labels_for_manifest(manifest: Manifest, labels_dir: Path) -> list[DayLabel]:
+def load_labels_for_manifest(
+    manifest: Manifest,
+    labels_dir: Path,
+    migrations: TaxonomyMigrations | None = None,
+) -> list[DayLabel]:
     """Load validated labels for every manifest record that has one.
 
     Hash-duplicate charts appear as several manifest rows sharing one image_id;
@@ -336,5 +342,5 @@ def load_labels_for_manifest(manifest: Manifest, labels_dir: Path) -> list[DayLa
         path = labels_dir / f"{record.image_id}.json"
         if path.is_file():
             seen.add(record.image_id)
-            labels.append(DayLabel.model_validate_json(path.read_text(encoding="utf-8")))
+            labels.append(load_day_label(path, migrations))
     return labels

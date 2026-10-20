@@ -25,6 +25,7 @@ def _repo_taxonomy() -> Path:
 def test_repo_taxonomy_loads_v1_3() -> None:
     taxonomy = load_taxonomy(_repo_taxonomy())
     assert taxonomy.schema_version == 1
+    assert taxonomy.taxonomy_version == "1.3"
     assert len(taxonomy.day_types) == 17
     assert len(taxonomy.events) == 50
     assert "other" in taxonomy.day_types

@@ -113,3 +113,47 @@ def test_fake_provider_quarantines_invalid(tmp_path: Path) -> None:
 def test_unknown_provider_rejected(tmp_path: Path) -> None:
     result = CliRunner().invoke(app, ["extract", "--provider", "nope"])
     assert result.exit_code != 0
+
+
+def _init_repo(work: Path) -> None:
+    import subprocess
+
+    identity = ["git", "-c", "user.email=t@t", "-c", "user.name=t"]
+    subprocess.run(["git", "init", "-q"], cwd=work, check=True)
+    subprocess.run(
+        [*identity, "commit", "--allow-empty", "-q", "-m", "init"],
+        cwd=work,
+        check=True,
+    )
+
+
+def test_guard_refuses_dirty_queue(tmp_path: Path) -> None:
+    """Inside a real repo, uncommitted queue changes block extract (S2.4)."""
+    import json as _json
+    import subprocess
+
+    work = tmp_path / "repo"
+    (work / "queue").mkdir(parents=True)
+    _init_repo(work)
+    data = work / "data"
+    data.mkdir()
+    (data / "a.jpg").write_bytes(b"bytes")
+    _manifest(work / "manifest.json", "id-1", "a.jpg")
+    (work / "queue" / "id-1.response.json").write_text(
+        _json.dumps(_label("id-1", "manual")), encoding="utf-8"
+    )
+    args = _base_args(work, data)
+    runner = CliRunner()
+    blocked = runner.invoke(app, ["extract", "--provider", "file", *args])
+    assert blocked.exit_code == 1, blocked.output
+    assert "refusing to run" in blocked.output
+    # --allow-dirty overrides the guard.
+    allowed = runner.invoke(app, ["extract", "--provider", "file", *args, "--allow-dirty"])
+    assert allowed.exit_code == 0, allowed.output
+    # Once committed, the guard opens (resume skips the already-converted label).
+    identity = ["git", "-c", "user.email=t@t", "-c", "user.name=t"]
+    subprocess.run(["git", "add", "-A"], cwd=work, check=True)
+    subprocess.run([*identity, "commit", "-q", "-m", "queue"], cwd=work, check=True)
+    clean = runner.invoke(app, ["extract", "--provider", "file", *args])
+    assert clean.exit_code == 0, clean.output
+    assert "valid_rate=1.00" in clean.output

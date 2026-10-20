@@ -15,6 +15,8 @@ from brooks_lab.application.extraction import ExtractionPromptBuilder, Extractio
 from brooks_lab.application.ingestion import ImageIngestionService, compute_stats
 from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel
 from brooks_lab.domain.title_taxonomy import map_title, parse_filename
+from brooks_lab.infrastructure.label_store import load_migrations
+from brooks_lab.infrastructure.queue_guard import queue_dirty
 from brooks_lab.infrastructure.settings import load_ingestion_settings
 from brooks_lab.infrastructure.taxonomy import load_taxonomy
 from brooks_lab.infrastructure.vision import (
@@ -224,10 +226,27 @@ def extract(
     taxonomy_file: Path = typer.Option(
         Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
     ),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
+    allow_dirty: bool = typer.Option(
+        False,
+        "--allow-dirty",
+        help="Run even with uncommitted changes under the extraction queue.",
+    ),
 ) -> None:
     """Extract DayLabels for manifest images (file-exchange needs two passes)."""
     loaded = ImageIngestionService.read_manifest(manifest)
     taxonomy = load_taxonomy(taxonomy_file)
+    migrations = load_migrations(migrations_file)
+    if queue_dirty(queue_dir) and not allow_dirty:
+        typer.echo(
+            "refusing to run: uncommitted changes under the extraction queue; "
+            "commit them (or pass --allow-dirty)."
+        )
+        raise typer.Exit(code=1)
     builder = ExtractionPromptBuilder(prompt_file, taxonomy)
     if provider == "file":
         client: VisionClient = FileExchangeVisionClient(queue_dir=queue_dir, model_id=model_id)
@@ -248,6 +267,8 @@ def extract(
         history_dir=history_dir,
         gold_path=gold_file,
         clobber_reviewed=clobber_reviewed,
+        migrations=migrations,
+        taxonomy_version=taxonomy.taxonomy_version,
     )
     report = service.run(limit=limit, resume=resume)
     report_path = Path("artifacts/review/extraction_report.json")
@@ -320,6 +341,11 @@ def review_queue(
     taxonomy_file: Path = typer.Option(
         Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
     ),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
     gold_file: Path = typer.Option(
         Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
     ),
@@ -348,11 +374,13 @@ def review_queue(
 
     loaded = ImageIngestionService.read_manifest(manifest)
     by_id: dict[str, ImageRecord] = {r.image_id: r for r in loaded.records}
-    labels = load_labels_for_manifest(loaded, labels_dir)
+    migrations = load_migrations(migrations_file)
+    labels = load_labels_for_manifest(loaded, labels_dir, migrations)
     service = ReviewService(
         labels_dir=labels_dir,
         history_dir=labels_dir.parent / "labels_history",
         gold_path=gold_file,
+        migrations=migrations,
     )
     gold = service.load_gold()
     gold_ids = set(gold.image_ids)
@@ -405,11 +433,21 @@ def review_apply(
     gold_file: Path = typer.Option(
         Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
     ),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
 ) -> None:
     """Apply a corrections file (archives history, marks human source)."""
     from brooks_lab.application.review import CorrectionsFile, ReviewService
 
-    service = ReviewService(labels_dir=labels_dir, history_dir=history_dir, gold_path=gold_file)
+    service = ReviewService(
+        labels_dir=labels_dir,
+        history_dir=history_dir,
+        gold_path=gold_file,
+        migrations=load_migrations(migrations_file),
+    )
     corrections = CorrectionsFile.model_validate_json(corrections_file.read_text(encoding="utf-8"))
     result = service.apply_corrections(corrections)
     typer.echo(

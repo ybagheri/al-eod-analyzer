@@ -163,6 +163,53 @@ class ChartTime(BaseModel):
     tz: str = Field(default=AXIS_TIMEZONE, min_length=1)
 
 
+class AxisStyle(StrEnum):
+    """Chart x-axis style (schema v3; see docs/LABEL_SCHEMA.md)."""
+
+    PT_0630_1300 = "pt_0630_1300"
+    ET_STYLE_0900_1500 = "et_style_0900_1500"
+    OTHER = "other"
+    NONE = "none"
+
+
+class OpenDir(StrEnum):
+    """Direction of the first hour (anchor, schema v3)."""
+
+    UP = "up"
+    DOWN = "down"
+    FLAT = "flat"
+
+
+class CloseVsOpen(StrEnum):
+    """Day close versus open (anchor, schema v3)."""
+
+    ABOVE = "above"
+    BELOW = "below"
+    NEAR = "near"
+
+
+class AxisInfo(BaseModel):
+    """What the x-axis shows (schema v3, optional on legacy labels)."""
+
+    model_config = ConfigDict(frozen=True)
+
+    style: AxisStyle = AxisStyle.OTHER
+    first_label: str = ""
+    last_label: str = ""
+
+
+class Anchors(BaseModel):
+    """Cheap objective anchors used to validate date/time against real bars."""
+
+    model_config = ConfigDict(frozen=True)
+
+    open_dir_first_hour: OpenDir = OpenDir.FLAT
+    day_close_vs_open: CloseVsOpen = CloseVsOpen.NEAR
+    high_of_day_bar_index_hint: int | None = Field(default=None, ge=0)
+    low_of_day_bar_index_hint: int | None = Field(default=None, ge=0)
+    n_bars_visible: int | None = Field(default=None, ge=0)
+
+
 class ExtractionMeta(BaseModel):
     """Provenance of one extraction (which provider/model/prompt produced it)."""
 
@@ -171,6 +218,9 @@ class ExtractionMeta(BaseModel):
     provider: str = Field(min_length=1)
     model_id: str = Field(min_length=1)
     prompt_version: str = Field(min_length=1)
+    taxonomy_version: str = Field(
+        default="", description="Vocabulary version (e.g. 1.3); empty = legacy unstamped."
+    )
     extracted_at: datetime.datetime | None = None
 
 
@@ -215,6 +265,15 @@ class EventLabel(BaseModel):
         default=None,
         description="Pixel span [start, end] for axis-less images; null when unused.",
     )
+    end_bar_index_hint: int | None = Field(
+        default=None,
+        ge=0,
+        description="Optional end bar index (schema v3 compound events).",
+    )
+    needs_review: bool = Field(
+        default=False,
+        description="True when a lossy migration or unmapped id requires human review.",
+    )
     evidence: str = Field(
         default="", description="What text/graphic on THIS image supports this event."
     )
@@ -241,6 +300,17 @@ class DayLabel(BaseModel):
     day_type: DayType = DayType.OTHER
     day_type_confidence: float = Field(default=0.5, ge=0.0, le=1.0)
     session_summary: str = ""
+    scope_ok: bool | None = Field(
+        default=None,
+        description="P11 scope filter: True/False from v3 responses; None = legacy label.",
+    )
+    scope_note: str = ""
+    axis: AxisInfo | None = None
+    anchors: Anchors | None = None
+    needs_review: bool = Field(
+        default=False,
+        description="True when a lossy day_type migration requires human review.",
+    )
     events: list[EventLabel] = Field(default_factory=list)
     extraction_meta: ExtractionMeta
 

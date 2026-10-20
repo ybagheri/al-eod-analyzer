@@ -14,7 +14,8 @@ from pydantic import BaseModel, ConfigDict
 from pydantic import Field as PydField
 
 from brooks_lab.domain.imaging import Manifest
-from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel
+from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel, ExtractionMeta
+from brooks_lab.infrastructure.label_store import TaxonomyMigrations, load_day_label
 from brooks_lab.infrastructure.taxonomy import Taxonomy
 from brooks_lab.infrastructure.vision import (
     MissingResponseError,
@@ -72,6 +73,7 @@ class ExtractionReport(BaseModel):
 
     schema_version: int = PydField(default=LABEL_SCHEMA_VERSION, ge=1)
     prompt_version: str = PROMPT_VERSION
+    taxonomy_version: str = ""
     scanned: int = 0
     labeled: int = 0
     skipped: int = 0
@@ -103,6 +105,8 @@ class ExtractionService:
     history_dir: Path | None = None
     gold_path: Path | None = None
     clobber_reviewed: bool = False
+    migrations: TaxonomyMigrations | None = None
+    taxonomy_version: str = ""
 
     def _label_path(self, image_id: str) -> Path:
         return self.labels_dir / f"{image_id}.json"
@@ -132,7 +136,7 @@ class ExtractionService:
         if not path.is_file():
             return None
         try:
-            return DayLabel.model_validate_json(path.read_text(encoding="utf-8"))
+            return load_day_label(path, self.migrations)
         except ValueError:
             return None
 
@@ -158,6 +162,11 @@ class ExtractionService:
             raise VisionError(f"schema validation failed: {exc}") from exc
         if label.image_id != image_id:
             raise VisionError(f"image_id mismatch: response {label.image_id!r} != {image_id!r}")
+        if not label.extraction_meta.taxonomy_version:
+            meta: ExtractionMeta = label.extraction_meta.model_copy(
+                update={"taxonomy_version": self.taxonomy_version}
+            )
+            label = label.model_copy(update={"extraction_meta": meta})
         return label
 
     def _extract_one(self, image_id: str, filename: str, date_iso: str) -> DayLabel | None:
@@ -248,6 +257,7 @@ class ExtractionService:
         done = labeled + skipped
         return ExtractionReport(
             prompt_version=self.prompt_builder.prompt_version,
+            taxonomy_version=self.taxonomy_version,
             scanned=len(records),
             labeled=labeled,
             skipped=skipped,

@@ -33,8 +33,8 @@ legacy_phases:
   phase5a: {status: superseded_by_S2_S5, commit: 2300fe7}
 last_gate:
   result: green
-  when: "2026-10-19"
-  details: "ruff ok / format ok / mypy --strict ok / pytest green (180 collected) / coverage 92.38%"
+  when: "2026-10-20"
+  details: "ruff ok / format ok / mypy --strict ok / pytest green (208 collected) / coverage 91.46%"
 counts:
   batch1_received: 2044
   batch1_usable: 2042
@@ -48,6 +48,15 @@ counts:
   gold_open_items: 1  # 10401c705b30 pending user gold yes/no
   calibration_sample: 38
   day_type_agreement: 0.706  # 34 comparable, taxonomy v1.3, prompt v2
+s2_progress:
+  item1_tax_freeze_migrations: done  # v1.3 stamped; config/taxonomy_migrations.yaml; loader auto-migrates (label_store.py); version stamps
+  item2_schema_v3: pending
+  item3_write_response: pending
+  item4_extract_batch_guards: partial  # dirty-tree guard done; extract-batch pending
+  item5_checkpoint_commits: pending
+  item6_day_only: pending
+  item7_scope_filter: pending
+  item8_rfinish_audit: pending
 checks:
   public_safety: worktree_clean_hist_accepted  # full history: 1 finding (old MASTER_PROMPT.md blob); user decision 2026-10-19: ACCEPTED (no rewrite)
   plan_hash_guard: enforced_and_demonstrated
