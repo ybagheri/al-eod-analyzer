@@ -1,0 +1,75 @@
+{
+  "anchors": {
+    "day_close_vs_open": "above",
+    "high_of_day_bar_index_hint": 61,
+    "low_of_day_bar_index_hint": 11,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "down"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:00",
+    "style": "pt_0630_1300"
+  },
+  "day_type": "broad_bull_channel",
+  "day_type_conf": 0.5,
+  "events": [
+    {
+      "conf": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": 7,
+      "kind": "double_top",
+      "outcome": "success",
+      "raw_label": "HH DT",
+      "start_bar_index_hint": 0
+    },
+    {
+      "conf": 0.35,
+      "direction": "neutral",
+      "end_bar_index_hint": 16,
+      "kind": "unmapped",
+      "outcome": "unclear",
+      "raw_label": "ET but 4 bull bars",
+      "start_bar_index_hint": 0
+    },
+    {
+      "conf": 0.85,
+      "direction": "bull",
+      "end_bar_index_hint": 11,
+      "kind": "lower_low_double_bottom",
+      "outcome": "success",
+      "raw_label": "LL DB",
+      "start_bar_index_hint": 2
+    },
+    {
+      "conf": 0.5,
+      "direction": "bull",
+      "end_bar_index_hint": 61,
+      "kind": "trend_line",
+      "outcome": "unclear",
+      "raw_label": "",
+      "start_bar_index_hint": 25
+    },
+    {
+      "conf": 0.4,
+      "direction": "neutral",
+      "end_bar_index_hint": 34,
+      "kind": "unmapped",
+      "outcome": "unclear",
+      "raw_label": "iiii, small bars Wait",
+      "start_bar_index_hint": 29
+    },
+    {
+      "conf": 0.8,
+      "direction": "bull",
+      "end_bar_index_hint": 37,
+      "kind": "failed_breakout",
+      "outcome": "success",
+      "raw_label": "BO and MA test Bear Trap",
+      "start_bar_index_hint": 35
+    }
+  ],
+  "image_id": "bb12359b02fb",
+  "scope_note": "",
+  "scope_ok": true
+}
