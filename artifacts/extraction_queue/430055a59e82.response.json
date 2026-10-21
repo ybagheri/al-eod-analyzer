@@ -1,148 +1,84 @@
 {
-  "schema_version": 1,
-  "image_id": "430055a59e82",
-  "date": "2023-10-25",
+  "anchors": {
+    "day_close_vs_open": "below",
+    "high_of_day_bar_index_hint": 0,
+    "low_of_day_bar_index_hint": 51,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "down"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:00",
+    "style": "pt_0630_1300"
+  },
   "day_type": "spike_and_channel_bear",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'Spike and Channel Bear Trend'. Open is high and a bear spike sells off from 4250 with Sell Climax/High 2 buys only giving今天就 back; the market channels down in a beige bear channel through iri bear flag bars to 4215 low before the close.",
+  "day_type_conf": 0.9,
   "events": [
     {
-      "label": "spike",
-      "raw_label": "Bear spike from open (06:55 high 4250)",
+      "conf": 0.7,
       "direction": "bear",
-      "start_time": {
-        "time": "06:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4250.0,
+      "end_bar_index_hint": null,
+      "kind": "unmapped",
       "outcome": "success",
-      "outcome_reason": "open is high and the spike sold from 4250 to 4217",
-      "confidence": 0.75,
-      "evidence": "orange Open=high arrow into the brown shaded 07:05-07:15 spike box with red sell arrows"
+      "raw_label": "Open = high",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "spike",
-      "raw_label": "Sell Climax, High 2 buys failed (07:45 low 4217)",
+      "conf": 0.8,
       "direction": "bear",
-      "start_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "08:00",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4217.0,
+      "end_bar_index_hint": 3,
+      "kind": "spike",
       "outcome": "success",
-      "outcome_reason": "sell climax rally only gave a low 2 that sold out to a 2nd leg down",
-      "confidence": 0.65,
-      "evidence": "green arrows at 07:40 and green Sell Climax High 2 text below the magenta candle channel and maru channel"
+      "raw_label": "Spike in Spike and Channel Bear Trend",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "wedge",
-      "raw_label": "Wedge rally into 08:15 (high 4247)",
+      "conf": 0.7,
       "direction": "bear",
-      "start_time": {
-        "time": "07:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "08:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4247.0,
+      "end_bar_index_hint": 22,
+      "kind": "wedge",
       "outcome": "success",
-      "outcome_reason": "wedge body gap 08:15 high held and the selloff resumed",
-      "confidence": 0.65,
-      "evidence": "orange Body Gap label with beige channel and red sell arrows from the 08:15 tops and orange dotted 4230 gap"
+      "raw_label": "Wedge Body Gap Low 2",
+      "start_bar_index_hint": 6
     },
     {
-      "label": "small_pullback_bear_trend",
-      "raw_label": "ioi bear flag after OO channel (09:55-10:35 brown box)",
-      "direction": "bear",
-      "start_time": {
-        "time": "09:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4215.0,
+      "conf": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": 12,
+      "kind": "climax",
       "outcome": "success",
-      "outcome_reason": "ioi bear flag after OO continued the channel down to 4215",
-      "confidence": 0.6,
-      "evidence": "blue ioi Bear Flag after OO text over the beige channel with magenta minor wedge and red/oxford arrows at 10:25"
+      "raw_label": "Sell Climax High 2",
+      "start_bar_index_hint": 8
     },
     {
-      "label": "spike",
-      "raw_label": "Minor wedge low 4204 (10:55)",
-      "direction": "bear",
-      "start_time": {
-        "time": "10:40",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "11:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4204.0,
+      "conf": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": 51,
+      "kind": "wedge",
       "outcome": "success",
-      "outcome_reason": "possible end of spike and channel bear trend at the 4204 low",
-      "confidence": 0.65,
-      "evidence": "magenta Minor Wedge text and orange Minor Wedge Possible end of Spike and Channel Bear Trend under the 10:45-11:05 lows"
+      "raw_label": "Minor Wedge",
+      "start_bar_index_hint": 32
     },
     {
-      "label": "trading_range_begin",
-      "raw_label": "Late trading range (11:10-13:10 4208-4220)",
+      "conf": 0.6,
       "direction": "bear",
-      "start_time": {
-        "time": "11:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4214.0,
+      "end_bar_index_hint": 46,
+      "kind": "unmapped",
       "outcome": "success",
-      "outcome_reason": "beige trading range 4206-4220 with red boxes and green dip at 12:15",
-      "confidence": 0.6,
-      "evidence": "blue/red channel lines around the 11:15-13:05 spikes with 12:05 green shaded bear wedge and 12:15 green arrow"
+      "raw_label": "ioi Bear Flag after OO",
+      "start_bar_index_hint": 40
     },
     {
-      "label": "trading_range_end",
-      "raw_label": "Late trading range (11:10-13:10 4208-4220)",
-      "direction": "bear",
-      "start_time": {
-        "time": "11:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4214.0,
+      "conf": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": 53,
+      "kind": "wedge",
       "outcome": "success",
-      "outcome_reason": "beige trading range 4206-4220 with red boxes and green dip at 12:15",
-      "confidence": 0.6,
-      "evidence": "blue/red channel lines around the 11:15-13:05 spikes with 12:05 green shaded bear wedge and 12:15 green arrow"
+      "raw_label": "Minor Wedge Possible end of Spike and Channel Bear Trend",
+      "start_bar_index_hint": 49
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "430055a59e82",
+  "scope_note": "",
+  "scope_ok": true
 }
