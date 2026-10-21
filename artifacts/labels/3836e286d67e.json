@@ -1,20 +1,27 @@
 {
-  "anchors": null,
-  "axis": null,
+  "anchors": {
+    "day_close_vs_open": "above",
+    "high_of_day_bar_index_hint": 37,
+    "low_of_day_bar_index_hint": 0,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "up"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:00",
+    "style": "pt_0630_1300"
+  },
   "date": "2020-01-21",
   "day_type": "bull_trending_trading_range",
-  "day_type_confidence": 0.7,
+  "day_type_confidence": 0.65,
   "events": [
     {
-      "bar_index_hint": null,
-      "confidence": 0.65,
+      "bar_index_hint": 0,
+      "confidence": 0.75,
       "direction": "bull",
-      "end_bar_index_hint": null,
-      "end_time": {
-        "time": "07:10",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "orange DB HL MTR text with blue triangle lines from the open bars to the green underlined low",
+      "end_bar_index_hint": 9,
+      "end_time": null,
+      "evidence": "",
       "label": "major_trend_reversal",
       "label_explicit": null,
       "linked_to": null,
@@ -23,60 +30,23 @@
       "needs_review": false,
       "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "double bottom higher low major trend reversal at 3316 started the bull day",
+      "outcome_reason": "",
       "placement": null,
-      "price_hint": 3316.0,
-      "raw_label": "DB HL MTR (07:00 bottom 3316)",
+      "price_hint": null,
+      "raw_label": "DB HL MTR",
       "role": "pattern",
       "rule_id": null,
       "source": "vision",
-      "start_time": {
-        "time": "06:20",
-        "tz": "America/Los_Angeles"
-      },
+      "start_time": null,
       "x_px": null
     },
     {
-      "bar_index_hint": null,
-      "confidence": 0.7,
-      "direction": "bull",
-      "end_bar_index_hint": null,
-      "end_time": {
-        "time": "09:55",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "pink wedge lines around the sequence of green shaded bull legs with small red corrections into 09:20",
-      "label": "channel",
-      "label_explicit": null,
-      "linked_to": null,
-      "mapped_from": null,
-      "modifiers": [],
-      "needs_review": false,
-      "needs_review_reason": null,
-      "outcome": "success",
-      "outcome_reason": "magenta wedge bull channel drove the trending trading range to 3330",
-      "placement": null,
-      "price_hint": 3330.0,
-      "raw_label": "Bull spike and channel (07:40-09:50 green bars)",
-      "role": "pattern",
-      "rule_id": null,
-      "source": "vision",
-      "start_time": {
-        "time": "07:35",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.7,
+      "bar_index_hint": 45,
+      "confidence": 0.8,
       "direction": "bear",
-      "end_bar_index_hint": null,
-      "end_time": {
-        "time": "10:45",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "red BO below upper TR text with red arrow into the 10:25 tall bear bar along the magenta channel",
+      "end_bar_index_hint": 54,
+      "end_time": null,
+      "evidence": "",
       "label": "breakout",
       "label_explicit": null,
       "linked_to": null,
@@ -85,119 +55,21 @@
       "needs_review": false,
       "needs_review_reason": null,
       "outcome": "success",
-      "outcome_reason": "breakout below the upper range traded back to the lower blue line",
+      "outcome_reason": "",
       "placement": null,
-      "price_hint": 3327.0,
-      "raw_label": "BO below upper TR (10:30)",
+      "price_hint": null,
+      "raw_label": "BO below upper TR Might re-enter lower TR",
       "role": "pattern",
       "rule_id": null,
       "source": "vision",
-      "start_time": {
-        "time": "10:05",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bull",
-      "end_bar_index_hint": null,
-      "end_time": {
-        "time": "11:15",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "green underline below the 10:55-11:05 lows inside the blue lower channel line",
-      "label": "channel",
-      "label_explicit": null,
-      "linked_to": null,
-      "mapped_from": "wedge_bull_channel",
-      "modifiers": [
-        "with_wedges"
-      ],
-      "needs_review": false,
-      "needs_review_reason": null,
-      "outcome": "success",
-      "outcome_reason": "wedge low at 3316 bought back to 3320",
-      "placement": null,
-      "price_hint": 3316.0,
-      "raw_label": "Wedge low and green underline (11:00 low 3316)",
-      "role": "pattern",
-      "rule_id": "1.3:wedge_bull_channel",
-      "source": "vision",
-      "start_time": {
-        "time": "10:40",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bull",
-      "end_bar_index_hint": null,
-      "end_time": {
-        "time": "12:20",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "pink trendline rally with green shaded bull bars at 11:35 and 11:55 into 12:10 red box",
-      "label": "channel",
-      "label_explicit": null,
-      "linked_to": null,
-      "mapped_from": null,
-      "modifiers": [],
-      "needs_review": false,
-      "needs_review_reason": null,
-      "outcome": "success",
-      "outcome_reason": "rally retested the upper band at 3325 into a third buy dip",
-      "placement": null,
-      "price_hint": 3325.5,
-      "raw_label": "Rally to 3325 (12:15)",
-      "role": "pattern",
-      "rule_id": null,
-      "source": "vision",
-      "start_time": {
-        "time": "11:20",
-        "tz": "America/Los_Angeles"
-      },
-      "x_px": null
-    },
-    {
-      "bar_index_hint": null,
-      "confidence": 0.55,
-      "direction": "bear",
-      "end_bar_index_hint": null,
-      "end_time": {
-        "time": "13:05",
-        "tz": "America/Los_Angeles"
-      },
-      "evidence": "third red shaded setup at 12:25-12:40 with the drop into 12:55 and close near 3320",
-      "label": "major_trend_reversal",
-      "label_explicit": null,
-      "linked_to": null,
-      "mapped_from": null,
-      "modifiers": [],
-      "needs_review": false,
-      "needs_review_reason": null,
-      "outcome": "success",
-      "outcome_reason": "failed rally and sell setup closed the day down at 3320",
-      "placement": null,
-      "price_hint": 3320.0,
-      "raw_label": "Late reversal down (12:35 close 3320)",
-      "role": "pattern",
-      "rule_id": null,
-      "source": "vision",
-      "start_time": {
-        "time": "12:25",
-        "tz": "America/Los_Angeles"
-      },
+      "start_time": null,
       "x_px": null
     }
   ],
   "extraction_meta": {
     "extracted_at": null,
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2",
+    "model_id": "manual",
+    "prompt_version": "extract_v3",
     "provider": "file",
     "taxonomy_version": "1.3"
   },
@@ -209,8 +81,8 @@
   "rule_id": null,
   "schema_version": 1,
   "scope_note": "",
-  "scope_ok": null,
-  "session_summary": "Title bar: 'Bull Trending TR Day, But Reversed Down'. A triangle opening range sets a double bottom higher low major trend reversal at 3316; the market trends up in green shaded legs with a bull spike to 3330 before bears break out below the upper trading range at 10:30, a wedge low retest of 3316 at 11:00, and a rally to 3325 reverses back down after a third sell setup near the close.",
+  "scope_ok": true,
+  "session_summary": "",
   "starts_at_session_open": null,
   "starts_at_session_open_source": null
 }

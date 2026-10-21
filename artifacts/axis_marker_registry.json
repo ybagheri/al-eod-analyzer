@@ -1,0 +1,14 @@
+{
+  "comment": "Reviewer-read first axis month/day markers. Auto-checked against pipeline dates by scripts/check_axis_markers.py (class of error: bb12359b02fb / 3fe93407e2d4).",
+  "markers": {
+    "bb12359b02fb": {"first_marker": "11/18", "second_marker": "11/19", "source": "reviewer 2026-10-21"},
+    "09bb32c388fa": {"first_marker": "6/22", "source": "reviewer 2026-10-21"},
+    "0c3c16440e61": {"first_marker": "13", "source": "reviewer 2026-10-21"},
+    "1482a480053f": {"first_marker": "3/4", "source": "reviewer 2026-10-21"},
+    "225420eb92a0": {"first_marker": "8/20", "source": "reviewer 2026-10-21"},
+    "29bdc49c41ad": {"first_marker": "10/19", "source": "reviewer 2026-10-21"},
+    "3836e286d67e": {"first_marker": "1/21", "source": "reviewer 2026-10-21"},
+    "3fe93407e2d4": {"first_marker": "2/9", "source": "reviewer 2026-10-21 (corrects 2024-02-12 dup-row)"},
+    "430055a59e82": {"first_marker": "10/25", "source": "reviewer 2026-10-21"}
+  }
+}

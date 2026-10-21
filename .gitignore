@@ -36,6 +36,7 @@ data/raw_batch1/**
 
 # Generated artifacts (large/intermediate outputs stay local)
 artifacts/crops/
+artifacts/overlays/
 artifacts/review*/
 artifacts/eval/backtests/
 *.log
