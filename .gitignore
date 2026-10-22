@@ -41,6 +41,11 @@ artifacts/review*/
 artifacts/eval/backtests/
 *.log
 
+# Batch-3 calibration support files (image-derived OCR: contains price-axis
+# levels -> market data; and cross-session handoff scratch). Local only.
+tests/fixtures/batch3/
+BATCH3_HANDOFF.md
+
 # Market data and MT5 exports are NEVER committed (plan v2.6 S0 / rule 11)
 data/market/
 *.csv

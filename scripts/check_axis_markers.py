@@ -34,6 +34,7 @@ def main() -> int:
             by_id.setdefault(record["image_id"], record)
     mismatches: list[str] = []
     missing: list[str] = []
+    uncheckable: list[str] = []
     checked = 0
     for image_id, record in by_id.items():
         if watched is not None and image_id not in watched:
@@ -42,8 +43,14 @@ def main() -> int:
         if entry is None:
             missing.append(image_id)
             continue
-        marker = str(entry["first_marker"])
+        marker = entry.get("first_marker")
+        if marker is None:
+            uncheckable.append(f"{image_id}: no date marker on chart")
+            continue
+        marker = str(marker)
         date = _dt.date.fromisoformat(record["date"])
+        if entry.get("semantics") == "next_session":
+            date = date + _dt.timedelta(days=1)
         parts = marker.split("/")
         if len(parts) == 2:
             ok = (int(parts[0]), int(parts[1])) == (date.month, date.day)
@@ -53,8 +60,13 @@ def main() -> int:
         flag = "OK" if ok else "MISMATCH"
         if not ok:
             mismatches.append(f"{image_id}: marker {marker} vs date {date}")
-        print(f"{flag:9} {image_id} marker={marker} date={date}")
-    print(f"\nchecked={checked} mismatches={len(mismatches)} no-marker-recorded={len(missing)}")
+        print(f"{flag:9} {image_id} marker={marker} session_date={record['date']}")
+    print(
+        f"\nchecked={checked} mismatches={len(mismatches)} "
+        f"no-marker-recorded={len(missing)} no-marker-on-chart={len(uncheckable)}"
+    )
+    for row in uncheckable:
+        print("  uncheckable", row)
     if mismatches:
         print("MISMATCHES:")
         for row in mismatches:
