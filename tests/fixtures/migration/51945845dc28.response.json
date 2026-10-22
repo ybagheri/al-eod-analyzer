@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "image_id": "51945845dc28",
+  "date": "2024-09-11",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.75,
+  "session_summary": "Blue title bar: 'Sell Climax, Then Small Pullback Bull Trend'. Magna sell climax becomes V-bottom at 07:50 low 5398; consecutive parabolic wedges and gaps drive a very strong small pullback bull trend through bar 72 and the close at 5560.",
+  "events": [
+    {
+      "label": "climax",
+      "raw_label": "Sell climax and V-bottom (07:50 low 5398)",
+      "direction": "bull",
+      "start_time": {"time": "07:00", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "08:00", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5398.0,
+      "outcome": "success",
+      "outcome_reason": "sell climax bar 12 became V-bottom with bar 18, consecutive parabolic wedges and low 2 after",
+      "confidence": 0.75,
+      "evidence": "magenta Consecutive parabolic wedges Sell climax became V-bottom text under bar 12 and 18 with red shaded box 07:15-08:15"
+    },
+    {
+      "label": "small_pullback_bull_trend",
+      "raw_label": "Small pullback bull trend with gaps (09:35 bar 24 onward)",
+      "direction": "bull",
+      "start_time": {"time": "09:10", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "13:05", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5460.0,
+      "outcome": "success",
+      "outcome_reason": "orange Many gaps text so very strong small pullback bull trend to keep breaking through the triple blue dotted 5500 line",
+      "confidence": 0.7,
+      "evidence": "magenta Small pullback bull trend always forms minor parabolic wedge tops with orange Many gaps text and beige boxes at 09:05-09:35 and 10:00"
+    },
+    {
+      "label": "gap_up",
+      "raw_label": "Body gap and micro wedge (11:05 red sell setup at 5525)",
+      "direction": "bull",
+      "start_time": {"time": "10:50", "tz": "America/Los_Angeles"},
+      "end_time": {"time": "11:20", "tz": "America/Los_Angeles"},
+      "bar_index_hint": null,
+      "price_hint": 5525.0,
+      "outcome": "success",
+      "outcome_reason": "1st leg high and above red dotted 5525 buyers trapped; green bars 36, 48, 60, 72 waist to 5550s by 12:45",
+      "confidence": 0.65,
+      "evidence": "red sell arrows at 11:05, 12:15, 10:55 and green arrow 11:20 with orange dotted 5500 and 5525 body gap lines, 60 label at 11:10 high, red box 12:25"
+    }
+  ],
+  "extraction_meta": {"provider": "file", "model_id": "muse-spark-opencode", "prompt_version": "extract_v2"}
+}

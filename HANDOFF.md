@@ -1,5 +1,5 @@
 # HANDOFF
-_Last updated: 2026-10-22 by Muse Spark (opencode) - S2 batch-3 prep: batch-3 entries in axis_marker_registry.json (44b right-edge next_session semantics, 519/554a no-marker), scripts/check_axis_markers.py next_session/null handling, tests/fixtures/batch3 + BATCH3_HANDOFF.md git-ignored (image-derived market data), docs/evidence/S2.md batch-3 status section; batch-3 reviewer v3 payloads still pending (9/13 applied).
+_Last updated: 2026-10-22 by Muse Spark (opencode) - S2 batch-3 prep: batch-3 entries in axis_marker_registry.json (44b right-edge next_session semantics, 519/554a no-marker), scripts/check_axis_markers.py next_session/null handling, tests/fixtures/batch3 + BATCH3_HANDOFF.md git-ignored (image-derived market data), docs/evidence/S2.md batch-3 status section; batch-3 reviewer v3 payloads APPLIED (13/13 calibration payloads; scope_ok+alias normalizations logged in S2.md; 2 more golden fixtures frozen; pytest 276; user spot-check pending before tag).
 <!-- previous: 2026-10-19 wave-2 fill-out complete (extraction_queue 244/244, 162 labels) -->
 
 <!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
