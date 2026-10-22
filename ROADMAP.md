@@ -10,7 +10,7 @@ history. Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ b
 
 | S0 | Re-plan, doc sync, safety rails, privacy | ✅ done | `0dc902f` |
 | S1 | Dependency and environment repair | ✅ done | `3fd83a8` |
-| S2 | Extraction v3: compact schema, validator-gated writes, anchors | ⬜ pending | `—` |
+| S2 | Extraction v3: compact schema, validator-gated writes, anchors | ✅ done | `SET_AFTER_TAG` |
 | S3 | Phase 5b: market data layer + session calendar + axis resolution | ⬜ pending | `—` |
 | S4 | Phase 5c: date alignment and label->bar attachment | ⬜ pending | `—` |
 | S5 | Phase 5a-reduced: Silver-Dev and Gold-Test labeling | ⬜ pending | `—` |

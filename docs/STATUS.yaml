@@ -11,7 +11,7 @@ current_step: S2
 steps:
   S0: {name: "Re-plan, doc sync, safety rails, privacy", status: done, commit: 0dc902f}  # 0dc902f..5ef5d9e, tag S0-done
   S1: {name: "Dependency and environment repair", status: done, commit: 3fd83a8}  # 3fd83a8 + 0c776a4 + step-final; wheelhouse workflow offline-install demonstrated
-  S2: {name: "Extraction v3: compact schema, validator-gated writes, anchors", status: pending, commit: null}
+  S2: {name: "Extraction v3: compact schema, validator-gated writes, anchors", status: done, commit: SET_AFTER_TAG}
   S3: {name: "Phase 5b: market data layer + session calendar + axis resolution", status: pending, commit: null}
   S4: {name: "Phase 5c: date alignment and label->bar attachment", status: pending, commit: null}
   S5: {name: "Phase 5a-reduced: Silver-Dev and Gold-Test labeling", status: pending, commit: null}
@@ -56,7 +56,7 @@ s2_progress:
   item5_checkpoint_commits: done  # backup artifacts_20261020_064109.zip + checkpoint a8e8601 before dry-run
   item6_day_only: done  # extract_day_v3.md prompt + parser accepts events-less payload
   item7_scope_filter: done  # compute_scope_report + brooks scope-report; P11 exclusion in stats + extraction reports
-  item8_rfinish_audit: done  # ADR-013 decisions implemented (handler-backed rules, on-chart tests); dry-run 12 charts: attributes_lost=0, dir/outcome_changes=0; 1 S5 remainder (wedge_db unknown_id); bb12359b02fb needs fresh response; v3 calibration re-baseline: 13/13 reviewer payloads applied (bb + batch1 + batch2 + batch3); normalizations logged (scope_ok x3 user-approved, low_2->l2 alias); 44b day_type enum defect fixed; all 13 dates marker-checked; manual spot-check >=3 charts pending before S2 tag
+  item8_rfinish_audit: done  # ADR-013 decisions implemented (handler-backed rules, on-chart tests); dry-run 12 charts: attributes_lost=0, dir/outcome_changes=0; 1 S5 remainder (wedge_db unknown_id); bb12359b02fb needs fresh response; v3 calibration re-baseline: 13/13 reviewer payloads applied (bb + batch1 + batch2 + batch3); normalizations logged (scope_ok x3 user-approved, low_2->l2 alias); 44b day_type enum defect fixed; all 13 dates marker-checked; manual spot-check 4/4 pages ok; S2 tagged done
 checks:
   public_safety: worktree_clean_hist_accepted  # full history: 1 finding (old MASTER_PROMPT.md blob); user decision 2026-10-19: ACCEPTED (no rewrite)
   plan_hash_guard: enforced_and_demonstrated
