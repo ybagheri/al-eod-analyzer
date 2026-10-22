@@ -1,110 +1,66 @@
 {
-  "schema_version": 1,
-  "image_id": "554a72595e08",
-  "date": "2024-07-24",
+  "anchors": {
+    "day_close_vs_open": "below",
+    "high_of_day_bar_index_hint": null,
+    "low_of_day_bar_index_hint": null,
+    "n_bars_visible": null,
+    "open_dir_first_hour": "down"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:00",
+    "style": "other"
+  },
   "day_type": "small_pullback_bear_trend",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'Small Pullback Bear Trend From The Open'. Strong bear breakout at the open (5545) was a sell climax that led to a small pullback bear trend all day to consecutively break to 5460 (12:40) with minor wedge ii lows, a 20-gap bar sell and exhaustion at the measured move close of 5547 (13:05 low 5460).",
+  "day_type_conf": 0.8,
   "events": [
     {
-      "label": "climax",
+      "conf": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "kind": "climax",
+      "outcome": "success",
       "raw_label": "Strong bear breakout but sell climax (07:10)",
-      "direction": "bear",
-      "start_time": {
-        "time": "06:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5545.0,
-      "outcome": "success",
-      "outcome_reason": "strong bear breakout opened the day as sell climax with consecutive red arrows",
-      "confidence": 0.7,
-      "evidence": "brown shaded spike box 06:55-07:25 with red arrows and green/orange Strong bear breakout but sell climax text"
+      "start_bar_index_hint": 2
     },
     {
-      "label": "small_pullback_bear_trend",
+      "conf": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "kind": "unmapped",
+      "outcome": "success",
       "raw_label": "Small pullback bear trend (08:05-10:45)",
-      "direction": "bear",
-      "start_time": {
-        "time": "08:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:50",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5511.0,
-      "outcome": "success",
-      "outcome_reason": "tight bear trend with magenta wedge pullbacks and red arrows kept pushing to 11:30",
-      "confidence": 0.75,
-      "evidence": "red Small pullback bear trend text under the pink channel selloff from 5501 to 09:35 blue dot bottom and break line"
+      "start_bar_index_hint": 13
     },
     {
-      "label": "inside_inside",
-      "raw_label": "Minor wedge ii bull retest (10:15)",
+      "conf": 0.55,
       "direction": "bull",
-      "start_time": {
-        "time": "10:05",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5500.0,
+      "end_bar_index_hint": null,
+      "kind": "inside_inside",
       "outcome": "success",
-      "outcome_reason": "minor wedge ii blue shaded bull bar at 10:15 gave only a retest before continuing down",
-      "confidence": 0.55,
-      "evidence": "pink Minor wedge ii text with blue shaded 10:10-10:20 bars, green arrow at 10:35 and magenta dotted wedge line"
+      "raw_label": "Minor wedge ii bull retest (10:15)",
+      "start_bar_index_hint": 33
     },
     {
-      "label": "breakout",
+      "conf": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "kind": "breakout",
+      "outcome": "success",
       "raw_label": "20-gap bar sell (10:45 high 5505)",
-      "direction": "bear",
-      "start_time": {
-        "time": "10:35",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "11:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5505.0,
-      "outcome": "success",
-      "outcome_reason": "20-gap bar sell broke below the 5500 gap line and sold to the downtrend low",
-      "confidence": 0.65,
-      "evidence": "blue 20-gap bar sell text and blue dotted line from the red 10:35 setup under the magenta channel lows"
+      "start_bar_index_hint": 39
     },
     {
-      "label": "measured_move",
-      "raw_label": "Exhaustion at measured move (12:45 low 5460)",
+      "conf": 0.6,
       "direction": "bear",
-      "start_time": {
-        "time": "11:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:55",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5460.0,
+      "end_bar_index_hint": null,
+      "kind": "measured_move",
       "outcome": "success",
-      "outcome_reason": "orange Exhaustion at measured move at lows, no show close 5547",
-      "confidence": 0.6,
-      "evidence": "orange Exhaustion at measured move text over the 12:30-12:50 brown bars near the orange dotted 5487 lows and dotted blue channel at 13:00"
+      "raw_label": "Exhaustion at measured move (12:45 low 5460)",
+      "start_bar_index_hint": 69
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "554a72595e08",
+  "scope_note": "",
+  "scope_ok": true
 }

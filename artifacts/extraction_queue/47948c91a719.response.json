@@ -1,129 +1,75 @@
 {
-  "schema_version": 1,
-  "image_id": "47948c91a719",
-  "date": "2023-03-30",
+  "anchors": {
+    "day_close_vs_open": "below",
+    "high_of_day_bar_index_hint": null,
+    "low_of_day_bar_index_hint": null,
+    "n_bars_visible": 26,
+    "open_dir_first_hour": "down"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:00",
+    "style": "other"
+  },
   "day_type": "spike_and_channel_bear",
-  "day_type_confidence": 0.8,
-  "session_summary": "Blue title bar: 'HH DT, Then LH DT & Spike and Channel Bear Trend'. Higher high double top and Low 2 top at 07:15, higher low double top sellers set a lower high double top at 08:30, break below the wedge bull flag starts a spike and channel bear trend down to a measured move wedge micro double bottom at 11:15 low 4060 which rallied back to 4083.",
+  "day_type_conf": 0.8,
   "events": [
     {
-      "label": "low_2",
-      "raw_label": "Higher high double top, Low 2 top (07:15)",
+      "conf": 0.65,
       "direction": "bear",
-      "start_time": {
-        "time": "06:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:25",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4086.0,
+      "end_bar_index_hint": null,
+      "kind": "l2",
       "outcome": "success",
-      "outcome_reason": "higher high double top with Low 2 top sold the open down to 4072",
-      "confidence": 0.65,
-      "evidence": "red Higher High Double Top and blue Low 2 Top arrows over the brown shaded 07:10-07:20 box with red and green boxes"
+      "raw_label": "Higher High Double Top, Low 2 Top (07:15)",
+      "start_bar_index_hint": 3
     },
     {
-      "label": "double_top",
-      "raw_label": "Lower high double top (08:30 top 4085)",
+      "conf": 0.65,
       "direction": "bear",
-      "start_time": {
-        "time": "07:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "08:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4085.0,
+      "end_bar_index_hint": null,
+      "kind": "double_top",
       "outcome": "success",
-      "outcome_reason": "lower high double top at the red dotted 4086 line led to the trend channel down",
-      "confidence": 0.65,
-      "evidence": "red Lower High Double Top arrow to the red dotted line and consecutive red boxes at 08:15"
+      "raw_label": "Lower High Double Top (08:30 top 4085)",
+      "start_bar_index_hint": 9
     },
     {
-      "label": "spike",
-      "raw_label": "Break below wedge bull flag, spike and channel bear trend (08:55)",
+      "conf": 0.75,
       "direction": "bear",
-      "start_time": {
-        "time": "08:45",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4065.0,
+      "end_bar_index_hint": null,
+      "kind": "spike",
       "outcome": "success",
-      "outcome_reason": "orange Break below Wedge Bull Flag began the spike and channel bear trend; magenta channel down to 4065",
-      "confidence": 0.75,
-      "evidence": "orange text and arrow into the beige 08:50 bar, magenta dotted trend channel, red boxes at 09:20 and 10:30 with blue boxes"
+      "raw_label": "Break below Wedge Bull Flag, spike and channel bear trend (08:55)",
+      "start_bar_index_hint": 11
     },
     {
-      "label": "measured_move",
+      "conf": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "kind": "measured_move",
+      "outcome": "success",
       "raw_label": "Measured move target (10:50 low 4062)",
-      "direction": "bear",
-      "start_time": {
-        "time": "10:35",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "11:05",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4062.0,
-      "outcome": "success",
-      "outcome_reason": "blue dotted measured move level at 4066 was hit before the final wedge low",
-      "confidence": 0.6,
-      "evidence": "blue Measured Move text and blue dotted 4067 line under the green shaded 10:50 bar"
+      "start_bar_index_hint": 22
     },
     {
-      "label": "wedge",
+      "conf": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "kind": "wedge",
+      "outcome": "success",
       "raw_label": "Wedge micro double bottom low 4060 (11:15)",
-      "direction": "bull",
-      "start_time": {
-        "time": "10:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "11:25",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4060.0,
-      "outcome": "success",
-      "outcome_reason": "wedge and micro double bottom at 4060 started the late rally",
-      "confidence": 0.65,
-      "evidence": "magenta Wedge, blue Measured Move and green Micro Double Bottom labels under the 11:05-11:15 lapse lows and beige 11:15 box"
+      "start_bar_index_hint": 25
     },
     {
-      "label": "breakout",
-      "raw_label": "Rally to 4083 close (11:20-13:05)",
+      "conf": 0.55,
       "direction": "bull",
-      "start_time": {
-        "time": "11:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 4083.0,
+      "end_bar_index_hint": null,
+      "kind": "breakout",
       "outcome": "success",
-      "outcome_reason": "bull rally retested the start of bear channel blue dotted line at 4087",
-      "confidence": 0.55,
-      "evidence": "blue dotted Start of bear channel line, beige 11:20 breakout box, bull bars to 12:45 with green 12:10 bar and late pullback green dotted 4072 line"
+      "raw_label": "Rally to 4083 close (11:20-13:05)",
+      "start_bar_index_hint": 26
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "47948c91a719",
+  "scope_note": "",
+  "scope_ok": true
 }

@@ -10,9 +10,9 @@
     "3836e286d67e": {"first_marker": "1/21", "source": "reviewer 2026-10-21"},
     "3fe93407e2d4": {"first_marker": "2/9", "source": "reviewer 2026-10-21 (corrects 2024-02-12 dup-row)"},
     "430055a59e82": {"first_marker": "10/25", "source": "reviewer 2026-10-21"},
-    "44b28b35c386": {"first_marker": "9/2", "semantics": "next_session", "source": "batch3 axis OCR (tests/fixtures/batch3/44b_axis.txt) 2026-10-22; only date tick is right-edge next-session marker after 13:00 close"},
-    "47948c91a719": {"first_marker": "3/30", "source": "batch3 axis OCR (tests/fixtures/batch3/479_axis.txt) 2026-10-22"},
-    "51945845dc28": {"first_marker": null, "source": "batch3 axis OCR (tests/fixtures/batch3/519_axis.txt) 2026-10-22; no date marker on chart (axis.style=none)"},
-    "554a72595e08": {"first_marker": null, "source": "batch3 axis OCR (tests/fixtures/batch3/554a_axis.txt) 2026-10-22; no date marker on chart (axis.style=none)"}
+    "44b28b35c386": {"first_marker": "9/2", "semantics": "next_session", "source": "reviewer 2026-10-22 (axis right edge; matches batch3 axis OCR fixture); only date tick is right-edge next-session marker after 13:00 close"},
+    "47948c91a719": {"first_marker": "3/30", "source": "reviewer 2026-10-22 (axis left edge; matches batch3 axis OCR fixture); 3/31 next-session marker on right edge"},
+    "51945845dc28": {"first_marker": "9/11", "source": "reviewer 2026-10-22 (axis left edge); batch3 axis OCR fixture missed it ('none') - edge markers outside axis OCR band; reviewer has final say; 9/12 next-session marker on right edge"},
+    "554a72595e08": {"first_marker": "7/24", "source": "reviewer 2026-10-22 (axis left edge; received as '7r24', '/' transcription artifact); batch3 axis OCR fixture missed it ('none') - reviewer has final say; 7/25 next-session marker on right edge"}
   }
 }
