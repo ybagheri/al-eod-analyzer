@@ -1,18 +1,31 @@
 # HANDOFF
-_Last updated: 2026-10-19 by Muse Spark (opencode) — wave-2 fill-out complete (extraction_queue 244/244, 162 labels; see §3)_
+_Last updated: 2026-10-22 by Muse Spark (opencode) - S2 batch-3 prep: batch-3 entries in axis_marker_registry.json (44b right-edge next_session semantics, 519/554a no-marker), scripts/check_axis_markers.py next_session/null handling, tests/fixtures/batch3 + BATCH3_HANDOFF.md git-ignored (image-derived market data), docs/evidence/S2.md batch-3 status section; batch-3 reviewer v3 payloads APPLIED (13/13 calibration payloads; scope_ok+alias normalizations logged in S2.md; 2 more golden fixtures frozen; pytest 276; user spot-check pending before tag).
+<!-- previous: 2026-10-19 wave-2 fill-out complete (extraction_queue 244/244, 162 labels) -->
+
+<!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
+
+Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd71…, method vv2.6)
+Current step: S2; STATUS.yaml updated: 2026-10-22
+Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (273 collected) / coverage ~91%
+Counts: queue pairs 244/245, labels 243, quarantined 0, gold 32, gold open items 1, calibration sample 38
+
+<!-- STATUS:END -->
 
 ## 1. Project in one paragraph
 
 al-eod-analyzer extracts Brooks-style structure from EOD review charts (ES M5
-screenshots in `data/`), distils it into a playbook, and reproduces the reading with
-a deterministic streaming engine (Python reference + later MQL5 port). Phase 0 builds
-the skeleton only; no extraction, engine, or trading logic exists yet.
+screenshots, batch of 2042 files in `data/raw_batch1/`), attaches it to real M5
+market bars from the user's broker (Phase 5b), distils it into a tiered label
+set (Bronze/Silver-Dev/Gold-Test), and reproduces the reading with a
+deterministic streaming engine (Python reference + MQL5 port). Plan of record:
+`docs/PLAN_V2.md` (master re-plan v2.6, ADR-012).
 
 ## 2. Current status
 
-- Current phase: 5a — Batch-1 dataset expansion (2042 new ES/M5 charts, title-as-label)
-- Phase status: intake + title mapping + calibration waves 0&1 + FULL user review DONE (2026-10-17); taxonomy v1.3 live; bulk extraction pending user green light
-- Last green quality gate: 2026-10-17 post-v1.3 (ruff ✓ / format ✓ 55 files / mypy --strict ✓ 22 files / pytest 160 passed / coverage 92.38%)
+- Current step: S2 next (S0 done: `docs/evidence/S0.md`; S1 done: `docs/evidence/S1.md`) — see `docs/STATUS.yaml`
+- Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd717d4c…, method v2.6, ADR-012); `docs/MASTER_PROMPT.md` superseded for phase order/sizing/process
+- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 done (status sync, public-safety scanner+history scan: 1 finding ACCEPTED by user, backups, hooks/CI plan-compliance); S1 done (core deps typer/pydantic/PyYAML/Pillow, extras restructured, wheelhouse offline-install proven in a fresh clone, engine stdlib-only guard)
+- Last green quality gate: 2026-10-19 (ruff ✓ / format ✓ / mypy --strict ✓ / pytest green, 180 collected / coverage 92.38% ≥85)
 
 ## 3. What was done in this session
 

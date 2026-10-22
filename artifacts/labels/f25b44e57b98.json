@@ -1,0 +1,245 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-12-11",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines in the early blue shaded range",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "minor wedge of higher lows lifted the opening range into a spike to 4668",
+      "placement": null,
+      "price_hint": 4668.0,
+      "raw_label": "Minor wedge (07:30-08:05 highs)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Failed breakout text with red arrow at the 08:05 spike top",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "breakout to 4668 failed and the market sold off to 4657",
+      "placement": null,
+      "price_hint": 4668.0,
+      "raw_label": "Failed breakout at 4668 (08:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta wedge lines into the 08:55 low 4657 with green dotted double bottom line",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom wedge at 4657 formed a major trend reversal bottom",
+      "placement": null,
+      "price_hint": 4657.0,
+      "raw_label": "Wedge / Higher low double bottom (09:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange shaded 10:15-10:25 bull bars with orange arrow and text",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "breakout above the wedge lower high at 4668 launched the bull trend",
+      "placement": null,
+      "price_hint": 4668.0,
+      "raw_label": "Breakout above wedge lower high (10:20)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted bull trend line and green arrows up the day",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "small pullback bull trend ground up from 4657 to 4680 all day",
+      "placement": null,
+      "price_hint": 4680.0,
+      "raw_label": "Small pullback bull trend",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted line from the 12:20 range to the 12:55 spike high 4683",
+      "label": "measured_move",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "measured move up from the midday range reached the blue dotted target at 4683",
+      "placement": null,
+      "price_hint": 4683.0,
+      "raw_label": "Measured move up",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded range box 10:50-13:00 with Bull trending trading range day text",
+      "label": null,
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "bull_trending_trading_range",
+      "modifiers": [],
+      "needs_review": true,
+      "needs_review_reason": "day_type_used_as_event",
+      "outcome": "success",
+      "outcome_reason": "blue shaded upper range with trend up to the MM high kept the bullish grind",
+      "placement": null,
+      "price_hint": 4672.0,
+      "raw_label": "Bull trending trading range day (blue shaded 11:00-13:00)",
+      "role": "pattern",
+      "rule_id": "1.3:bull_trending_trading_range",
+      "source": "vision",
+      "start_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "f25b44e57b98",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Higher Low Double Bottom, Then Small Pullback Bull Trend'. A minor wedge spike to 4668 fails, then a higher low double bottom wedge at 4657 reverses the market; a breakout above the wedge lower high at 4668 starts a small pullback bull trend that becomes a bull trending trading range and closes with a measured move up at 4680.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

@@ -1,0 +1,214 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-05-27",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Bear trap text with red arrow at 06:55 and green arrow 07:05 with 3 big bull bars 07:10-07:20",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "bear trap spike sold the open low then bulls bought up strongly",
+      "placement": null,
+      "price_hint": 5872.0,
+      "raw_label": "Bear trap open low 5872 (06:55)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text under bar 24-30 lows, orange dotted 5902 line between bars 12 and 24, bar labels 12, 18, 24, 36",
+      "label": null,
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "small_pullback_bull_trend",
+      "modifiers": [],
+      "needs_review": true,
+      "needs_review_reason": "day_type_used_as_event",
+      "outcome": "success",
+      "outcome_reason": "green Small pullback bull trend text with green shaded bull bars and magenta Minor wedges dotted lines to bar 36 breakouts",
+      "placement": null,
+      "price_hint": 5915.0,
+      "raw_label": "Small pullback bull trend from open (07:15-09:40)",
+      "role": "pattern",
+      "rule_id": "1.3:small_pullback_bull_trend",
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Breakout label with red arrow and beige box 09:20-09:30, green arrows 09:30, 09:40, bars 36 and 48 labels",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange Breakout text and red/shaded setup boxes above magenta - dotted 5930 line between bar 36 and 48 highs",
+      "placement": null,
+      "price_hint": 5931.0,
+      "raw_label": "Breakout above 5924-5929 (09:20-09:45)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded bull bars 10:50-11:20 with orange dotted line 5930 between bar 48 and bar 72 highs and green arrows 12:45-13:00",
+      "label": null,
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "small_pullback_bull_trend",
+      "modifiers": [],
+      "needs_review": true,
+      "needs_review_reason": "day_type_used_as_event",
+      "outcome": "success",
+      "outcome_reason": "bar 60-72 chop with green shaded bars 10:50-11:20 above orange dotted 5930 lower top, magenta wedge pullbacks bar 72 lows",
+      "placement": null,
+      "price_hint": 5931.0,
+      "raw_label": "Post-breakout pullback trend to minor wedge (10:00-12:45)",
+      "role": "pattern",
+      "rule_id": "1.3:small_pullback_bull_trend",
+      "source": "vision",
+      "start_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines near 12:45 bars and orange dotted 5940 top at close bars",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "close 5942 above the orange dotted 5940 range top with green arrows",
+      "placement": null,
+      "price_hint": 5942.0,
+      "raw_label": "Late range breakout to close 5942 (13:05-13:20)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge lines near 12:45 bars and orange dotted 5940 top at close bars",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "close 5942 above the orange dotted 5940 range top with green arrows",
+      "placement": null,
+      "price_hint": 5942.0,
+      "raw_label": "Late range breakout to close 5942 (13:05-13:20)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "13:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "9225224d8379",
+  "mapped_from": "small_pullback_bull_trend_from_open",
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": "1.3:small_pullback_bull_trend_from_open",
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Small Pullback Bull Trend From The Open'. Bear trap at 06:55 (5872), small pullback bull trend with minor wedges bar 12-36 lifting to the breakout at 5931 (09:20), dotted 5940 range top, breakout (09:20) failed 11:15-60 lows 5931 smaller pullback bull trend with minor wedge dip at 12:45 then tight bear trend into close 5942.",
+  "starts_at_session_open": true,
+  "starts_at_session_open_source": "title"
+}

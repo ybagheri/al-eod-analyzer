@@ -13,12 +13,8 @@ authors = [{ name = "al-eod-analyzer contributors" }]
 dependencies = [
   "pydantic>=2.0",
   "typer>=0.9",
-  "rich>=13.0",
   "pyyaml>=6.0",
-  "pandas>=2.0",
-  "numpy>=1.24",
   "pillow>=10.0",
-  "httpx>=0.25",
 ]
 
 [project.optional-dependencies]
@@ -28,15 +24,27 @@ dev = [
   "types-PyYAML>=6.0",
   "pytest>=7.0",
   "pytest-cov>=4.0",
-  "hypothesis>=6.0",
-  "opencv-python>=4.8",
-  "pytesseract>=0.3",
   "pre-commit>=3.0",
 ]
 test = [
   "pytest>=7.0",
   "pytest-cov>=4.0",
   "hypothesis>=6.0",
+]
+# Network vision providers (optional; offline file-exchange is the default)
+vision = [
+  "httpx>=0.25",
+]
+# Local OCR/axis vision helpers (optional, currently unused by the pipeline)
+vision-local = [
+  "opencv-python>=4.8",
+  "pytesseract>=0.3",
+]
+# Analysis/report notebooks and statistics only; NEVER imported by the
+# engine or the CLI core (MQL5-parity rule, plan v2.6 S1)
+data = [
+  "pandas>=2.0",
+  "numpy>=1.24",
 ]
 
 [project.scripts]
@@ -65,6 +73,13 @@ ignore_missing_imports = false
 [[tool.mypy.overrides]]
 module = "tests.*"
 disallow_untyped_defs = false
+
+# Optional vision-network extra: httpx is deliberately not installed with the
+# core/dev extras (offline-first). The lazy import in vision.py raises a
+# VisionError when absent; mypy just needs the missing-module warning off.
+[[tool.mypy.overrides]]
+module = "httpx.*"
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

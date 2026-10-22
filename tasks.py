@@ -12,6 +12,9 @@ from __future__ import annotations
 
 import subprocess
 import sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parent
 
 
 def _run(cmd: list[str]) -> int:
@@ -23,10 +26,11 @@ def _run(cmd: list[str]) -> int:
 def check() -> int:
     """Run the full quality gate. Returns the process exit code."""
     steps: list[list[str]] = [
-        ["ruff", "check", "."],
-        ["ruff", "format", "--check", "."],
-        ["mypy", "--strict", "src"],
-        ["pytest", "-q", "--cov=src", "--cov-fail-under=85"],
+        [sys.executable, "-m", "ruff", "check", "."],
+        [sys.executable, "-m", "ruff", "format", "--check", "."],
+        [sys.executable, "-m", "mypy", "--strict", "src"],
+        [sys.executable, "-m", "pytest", "-q", "--cov=src", "--cov-fail-under=85"],
+        [sys.executable, "scripts/plan_compliance.py"],
     ]
     for cmd in steps:
         code = _run(cmd)
@@ -37,15 +41,24 @@ def check() -> int:
     return 0
 
 
+def backup() -> int:
+    """Zip artifacts/ outside the repo (P5; plan v2.6 S0 item 4)."""
+    code = _run([sys.executable, str(REPO / "scripts" / "backup.py")])
+    print("BACKUP FAILED" if code else "BACKUP DONE")
+    return code
+
+
 def main(argv: list[str] | None = None) -> None:
     """CLI entry point for `python -m tasks <command>`."""
     args = argv if argv is not None else sys.argv[1:]
     if not args or args[0] in {"-h", "--help", "help"}:
-        print("Usage: python -m tasks check")
+        print("Usage: python -m tasks check|backup")
         raise SystemExit(0)
     if args[0] == "check":
         raise SystemExit(check())
-    print(f"Unknown task: {args[0]!r}. Available: check")
+    if args[0] == "backup":
+        raise SystemExit(backup())
+    print(f"Unknown task: {args[0]!r}. Available: check, backup")
     raise SystemExit(2)
 
 

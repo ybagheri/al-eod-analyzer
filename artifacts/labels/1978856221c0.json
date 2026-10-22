@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2023-05-02",
   "day_type": "trend_reversal_to_bull",
   "day_type_confidence": 0.65,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:45",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "orange text top left with orange arrow to the boxed bars at 07:15",
       "label": "sell_the_close",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "orange boxed sell-the-close bars with the orange Sell The Close Bear Trend text and arrow",
       "placement": null,
       "price_hint": 4164.0,
       "raw_label": "Sell the close bear trend (06:45-08:45)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "06:45",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:45",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "blue curved trendline above the sell-off bars to 08:45",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue descending trendline channel carried the sell-off from 4172 to the 4107.5 low",
       "placement": null,
       "price_hint": 4108.0,
       "raw_label": "Bear channel from the open (06:55-08:40 low 4108)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "06:55",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:50",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "red texts bottom left and red Streak of 25 consecutive bars without bull body is 1st time in many years so unusual, unsustainable, climactic text",
       "label": "exhaustive_climax",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red Break below bear channel so profit taking soon text with arrows to the 4107.5 long-tailed low and the climactic 25-bar no-bull-body streak",
       "placement": null,
       "price_hint": 4107.5,
       "raw_label": "Break below bear channel so profit taking soon, streak of 25 consecutive bars without bull body (08:15-08:50 low 4107.5)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:15",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:25",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "blue text above the blue shaded box and green shaded bull leg boxes 09:50-10:05",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue boxed higher lows with stacked green bull bars and the blue Higher Lows so Buying Pressure text",
       "placement": null,
       "price_hint": 4118.0,
       "raw_label": "Bottom formation, higher lows so buying pressure (08:50-10:20)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:50",
@@ -107,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:05",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "orange text below the rally with magenta dotted magnetic trendline and orange dotted micro trendlines",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "orange Small Pullback Bull Trend text with magenta dotted trendline and stacked green bull legs to the 4138 breakout",
       "placement": null,
       "price_hint": 4131.0,
       "raw_label": "Small pullback bull trend breakout (10:20-11:00)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:20",
@@ -132,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:20",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "beige box at 10:45-11:00 with green and red shaded bars and orange arrow down",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "orange Breakout above bull channel so expect it to fail text with orange arrow to the boxed bars before the pullback",
       "placement": null,
       "price_hint": 4138.0,
       "raw_label": "Breakout above bull channel so expect it to fail (10:45-11:15 high 4138)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:45",
@@ -157,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:15",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "blue text with orange arrow above the EMA touch, then sideways-high close at 4135",
       "label": "pullback_50pct",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue 50% Pullback text with orange arrow and the shaded pullback near the rising EMA holding as support",
       "placement": null,
       "price_hint": 4127.5,
       "raw_label": "50% pullback to the EMA (11:05-12:10 low 4127.5)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:05",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "1978856221c0",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bear Trend From The Open Then Reversal Up'. Sell the bear trend from the open (4172) down to a streak of 25 consecutive bars without a bull body, climactic and unsustainable; break below the bear channel so profit taking soon at the 4108 low (08:45). Higher lows brought buying pressure from 09:00 through a mid-morning trading range (blue box), then a small pullback bull trend off a trendline break; breakout above the bull channel at 4138 was expected to fail, followed by a 50% pullback to the EMA (4128) and sideways-high day into the 13:00 close 4135. Footer 5/3."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open Then Reversal Up'. Sell the bear trend from the open (4172) down to a streak of 25 consecutive bars without a bull body, climactic and unsustainable; break below the bear channel so profit taking soon at the 4108 low (08:45). Higher lows brought buying pressure from 09:00 through a mid-morning trading range (blue box), then a small pullback bull trend off a trendline break; breakout above the bull channel at 4138 was expected to fail, followed by a 50% pullback to the EMA (4128) and sideways-high day into the 13:00 close 4135. Footer 5/3.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

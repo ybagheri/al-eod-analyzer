@@ -1,0 +1,214 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-01-11",
+  "day_type": "spike_and_channel_bull",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue text The Gap up was the Spike with sideways to the moving average and the first high red shaded setup 09:10-09:20",
+      "label": "spike",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue The Gap up was the Spike: sidewars to the moving average as likely",
+      "placement": null,
+      "price_hint": 3960.0,
+      "raw_label": "Gap up spike (09:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text Not enough to make market Always In short below the blue boxed bar 10:10 and green dotted 3952 lows",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "shaded range with red shaded setup 09:40 breaking down, dark bear bar 10:02, not enough to make market Always In short (blue box 10:15)",
+      "placement": null,
+      "price_hint": 3955.0,
+      "raw_label": "Sideways to the moving average (09:10-10:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red text Not enough to make market Always In short below the blue boxed bar 10:10 and green dotted 3952 lows",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "shaded range with red shaded setup 09:40 breaking down, dark bear bar 10:02, not enough to make market Always In short (blue box 10:15)",
+      "placement": null,
+      "price_hint": 3955.0,
+      "raw_label": "Sideways to the moving average (09:10-10:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded bars with dark bar pullback at 11:05 and blue dotted trend channel up to 12:05 pattern box",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green Small PB Bull Trend text with green bars 10:20-11:35 and blue dotted breakout lines",
+      "placement": null,
+      "price_hint": 3970.0,
+      "raw_label": "Small PB bull trend breakout (10:15-11:30)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted triangle channel lines and blue Bull Breakout of Triangle text with arrow, high shaded bearish bars 12:25-12:35",
+      "label": "triangle",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "dark bear bar pullback at 12:30 in blue dotted triangle and single bull breakout no retest",
+      "placement": null,
+      "price_hint": 3978.0,
+      "raw_label": "Bull breakout of triangle (12:30-12:45)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "14:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue BTC rally but late in day must be quick to exit text with green shaded late bars 14:35-14:55 and magenta dotted wedge channel 14:10-14:20",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "rally retested the bull trend magenta wedge channel into 14:15 top with green shaded box BTC rally",
+      "placement": null,
+      "price_hint": 3990.0,
+      "raw_label": "Bull trend resumption to 3990 (12:50-14:20 high 3990)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "849e9f506225",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Spike and Channel Bull Trend' (9:00-15:00 RTH). Gap up spike from the open; sideways to the moving average pullback at 09:30 to 14:00 formed not-enough-delay-bars Always In long (10:00 blue box); small pullback bull trend from 10:00 to the bull triangle breakout, bull trend continued with a late day magenta pullback wedge at 14:15 top (3990), green shaded box BTC rally but late in day quick to exit (14:45).",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

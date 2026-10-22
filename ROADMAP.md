@@ -1,39 +1,70 @@
 # ROADMAP
 
-Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
+Plan of record: `docs/PLAN_V2.md` (master re-plan v2.6, ADR-012) — supersedes the
+old phase table for the remaining work; finished predecessor phases are kept for
+history. Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ blocked.
+
+## Status (auto-generated from docs/STATUS.yaml)
+
+<!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
+
+| S0 | Re-plan, doc sync, safety rails, privacy | ✅ done | `0dc902f` |
+| S1 | Dependency and environment repair | ✅ done | `3fd83a8` |
+| S2 | Extraction v3: compact schema, validator-gated writes, anchors | ✅ done | `30c2ab1` |
+| S3 | Phase 5b: market data layer + session calendar + axis resolution | ⬜ pending | `—` |
+| S4 | Phase 5c: date alignment and label->bar attachment | ⬜ pending | `—` |
+| S5 | Phase 5a-reduced: Silver-Dev and Gold-Test labeling | ⬜ pending | `—` |
+| S6 | Phase 6: Python streaming engine v0 | ⬜ pending | `—` |
+| S7 | Phase 7: evaluation framework + first baseline report | ⬜ pending | `—` |
+| S8 | Active-learning Hard set + engine iteration | ⬜ pending | `—` |
+| S9 | Phase 8: playbook (stats with n and CIs) | ⬜ pending | `—` |
+| S10 | Phase 9: MQL5 indicator with parity >= 98% | ⬜ pending | `—` |
+| S11 | Phase 10: signals + EA + walk-forward | ⬜ pending | `—` |
+| S12 | Phase 11 (optional) LLM commentary bridge | ⬜ pending | `—` |
+| S13 | Phase 12: hardening and v1.0.0 | ⬜ pending | `—` |
+
+<!-- STATUS:END -->
+
+| Step | Name | Replaces | Parallel? |
+|------|------|----------|-----------|
+| S0 | Re-plan, doc sync, safety rails, privacy | new | no |
+| S1 | Dependency and environment repair | new | with S0 |
+| S2 | Extraction v3: compact schema, validator-gated writes, anchors | part of 5a | no |
+| S3 | Phase 5b: market data layer + session calendar + axis resolution | 5b | no |
+| S4 | Phase 5c: date alignment and label→bar attachment (bronze sanity checks) | 5b/5c | no |
+| S5 | Phase 5a-reduced: Silver-Dev and Gold-Test labeling | 5a | parallel with S6 after S4 |
+| S6 | Phase 6: Python streaming engine v0 (+ `PATTERN_SPEC.md`) | 6 | parallel with S5 after S4 |
+| S7 | Phase 7: evaluation framework + first baseline report | 7 | no |
+| S8 | Active-learning Hard set + engine iteration | new | no |
+| S9 | Phase 8: playbook (stats with n and CIs) | 8 | no |
+| S10 | Phase 9: MQL5 indicator with parity ≥ 98% | 9 | no |
+| S11 | Phase 10: signals + EA + walk-forward | 10 | no |
+| S12 | Phase 11 (optional) LLM commentary bridge | 11 | optional |
+| S13 | Phase 12: hardening and `v1.0.0` | 12 | no |
+
+## S0 — Definition of Done
+
+- [x] Prompt saved (verbatim modulo personal-path redaction) as `docs/PLAN_V2.md`; SHA-256 in `docs/PLAN_V2.sha256`; ADR-012 written
+- [x] `docs/STATUS.yaml` single source of truth + `scripts/sync_status.py` + drift test
+- [x] Stale text fixed (README status/legal, ROADMAP Phase-0 checkbox, HANDOFF §1/§8)
+- [x] `scripts/public_safety_scan.py` implemented; full-history scan run (1 finding — old MASTER_PROMPT.md blob with local MT5 paths; user chose to ACCEPT, no history rewrite); `docs/PUBLIC_SAFETY.md`; `.gitignore` hardened
+- [x] `scripts/backup.py` + `python -m tasks backup` works (last 10 zips, outside repo, verified with a real run)
+- [x] §8 enforcement: `.githooks/` (pre-commit/commit-msg/pre-push, `core.hooksPath .githooks`), CI `.github/workflows/gate.yml`, plan-compliance in `python -m tasks check`, plan-hash guard, evidence file `docs/evidence/S0.md`
+- [x] Gate demonstrated FAILING on a modified `docs/PLAN_V2.md` (plan-hash guard message), then reverted
+
+## Predecessor phases (pre-re-plan; DoD evidence in HANDOFF/CHANGELOG)
 
 | Phase | Goal | Status | Commit |
 |---|---|---|---|
-| 0 — Bootstrap & governance | Clean working skeleton, tooling, `brooks --version`, gate green | ✅ done | `4338faa` (pushed origin/main) |
-| 1 — Image inventory & ingestion | Manifest of all images, contact sheet | ✅ done | `917beb1` (pushed origin/main) |
-| 2 — Taxonomy, label schema, glossary | Controlled vocabulary + strict `DayLabel` schema v1, glossary draft | ✅ done | `04e4d97` (pushed origin/main) |
-| 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | ✅ done | `0c3ac41` (pushed origin/main) |
-| 4 — Human review & gold set | Trusted ground truth (gold 32/33, taxonomy v1.2) | ✅ done | `c57967c` (pushed origin/main) |
-| 5 — Market data layer | Real M5 bars, session calendar, label→bar attachment | ⬜ not started | — |
-| 6 — Python pattern engine | Deterministic streaming engine + `PATTERN_SPEC.md` | ⬜ not started | — |
-| 7 — Evaluation framework | Honest engine-vs-labels metrics, date-split, tuning harness | ⬜ not started | — |
-| 8 — Playbook | Pattern statistics with n + CIs, `playbook.json` + `PLAYBOOK.md` | ⬜ not started | — |
-| 9 — MQL5 indicator | Live chart product, parity ≥98% on golden vectors | ⬜ not started | — |
-| 10 — Signals & EA | Strategies, risk-managed EA, walk-forward + honest report | ⬜ not started | — |
-| 11 — Live AI commentary bridge (optional) | `state.json` → LLM commentary service | ⬜ not started | — |
-| 12 — Hardening & release | Docs pass, `v1.0.0`, final metrics | ⬜ not started | — |
-
-## Phase 0 — Definition of Done
-
-- [x] Repo layout per spec (§2.4) created
-- [x] `pyproject.toml`, tooling config, pre-commit, `.gitignore`, `.gitattributes` created
-- [x] `README.md`, `ROADMAP.md`, `HANDOFF.md`, `CHANGELOG.md`, `docs/DECISIONS.md` created; prompt saved as `docs/MASTER_PROMPT.md`
-- [x] `brooks --version` CLI + smoke test
-- [x] `make check` / `python -m tasks check` passes on a fresh clone (verified 2026-10-11 in `.venv`; gate must run with venv on PATH)
-- [ ] First commit made (BLOCKED: `git` not installed on this machine)
-
-## Phase 1 — Definition of Done
-
-- [x] Manifest covers 100% of images (5/5, all ok)
-- [x] Stats report (count, date range, missing dates, sizes, duplicates) printed and saved
+| 0 — Bootstrap & governance | Clean working skeleton, tooling, `brooks --version`, gate green | ✅ done | `4338faa` |
+| 1 — Image inventory & ingestion | Manifest of all images, contact sheet | ✅ done | `917beb1` |
+| 2 — Taxonomy, label schema, glossary | Controlled vocabulary + strict `DayLabel` schema v1, glossary draft | ✅ done | `04e4d97` |
+| 3 — Vision extraction pipeline | One validated `DayLabel` JSON per image (5-image pilot first) | ✅ done | `0c3ac41` |
+| 4 — Human review & gold set | Trusted ground truth (gold 32/33, taxonomy v1.2) | ✅ done | `c57967c` |
+| 5a — Batch-1 intake + title mapping + calibration waves 0&1 + bulk wave 2 | Superseded by S2/S5 after the v2.6 re-plan | ✅ done | `2300fe7` |
 
 ## Backlog / Ideas
 
-- Local-vision benchmark (small Ollama model) — only after Phase 3 pilot.
+- Local-vision benchmark (small Ollama model) — only after S2 (never part of the default path).
 - Fine-tuning revisit — only if measured errors + dataset size justify it (separate ADR).
 - (Add ideas here; never implement without promoting to a phase.)

@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2023-04-18",
   "day_type": "bear_trend_from_open",
   "day_type_confidence": 0.6,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:20",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "orange text top left",
       "label": "sell_the_close",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "orange text with down arrow over the beige box and sell-the-close bars",
       "placement": null,
       "price_hint": 4190.0,
       "raw_label": "Sell the close, bear trend (07:00-07:20 high 4195)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:55",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "orange text at the low",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "orange dotted falling wedge lines with the Parabolic Wedge text under the steep sell bars",
       "placement": null,
       "price_hint": 4170.0,
       "raw_label": "Parabolic wedge down to 4165 (07:15-07:55)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:15",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:05",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "blue text bottom right",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue shaded box across the day with the red and blue texts and orange dotted 4182 ceiling",
       "placement": null,
       "price_hint": 4175.0,
       "raw_label": "Trading range began before the bear trend ended, blue shaded box (07:45-13:05)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:45",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:05",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "magenta text bottom center",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta Wedge text with the magenta dotted falling wedge and blue dotted channel into the low",
       "placement": null,
       "price_hint": 4168.0,
       "raw_label": "Mid-morning wedge corridors to 4166 (08:00-09:05)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:00",
@@ -107,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:10",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "green dotted floor",
       "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green dotted 4173 floor under the double bottom bars before the rally to 4182",
       "placement": null,
       "price_hint": 4175.0,
       "raw_label": "Wedge low double bottom (10:40-11:10 low 4173)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:40",
@@ -132,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:45",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "red and magenta texts",
       "label": "double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red HH DT with ii and magenta Wedge texts at the ceiling test before the fade",
       "placement": null,
       "price_hint": 4182.0,
       "raw_label": "HH double top with ii bars at the TR top (11:10-11:45 high 4182)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:10",
@@ -158,9 +196,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "fb6298aabe31",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "White title bar: 'Bear Trend From The Open Then Trading Range' (Apr 18, 07:00-13:00 into 4/19). Sell-the-close open into the bear trend with the parabolic wedge down to 4165, the trading range that began before the bear trend ended, mid-morning wedge lows with the 4173 double bottom and the HH double top with ii bars at the 4182 TR top."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "White title bar: 'Bear Trend From The Open Then Trading Range' (Apr 18, 07:00-13:00 into 4/19). Sell-the-close open into the bear trend with the parabolic wedge down to 4165, the trading range that began before the bear trend ended, mid-morning wedge lows with the 4173 double bottom and the HH double top with ii bars at the 4182 TR top.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

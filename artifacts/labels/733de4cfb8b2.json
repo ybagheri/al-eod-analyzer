@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2023-05-30",
   "day_type": "broad_bear_channel",
   "day_type_confidence": 0.75,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "06:50",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "orange 'Sell The Close' note over the beige-boxed opening drop",
       "label": "sell_the_close",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "opening sell-off followed into the bear channel",
       "placement": null,
       "price_hint": 4231.0,
       "raw_label": "Sell The Close",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "06:35",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "06:50",
         "tz": "America/Los_Angeles"
@@ -39,16 +48,18 @@
       "evidence": "pink 'Minor Parabolic Wedge' text with up arrow at the opening top and pink dotted falling line",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "parabolic",
-        "minor"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "pullback followed but became the bear channel's first leg rather than a reversal",
       "placement": null,
       "price_hint": 4231.0,
       "raw_label": "Minor Parabolic Wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "06:35",
@@ -60,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:15",
         "tz": "America/Los_Angeles"
@@ -67,13 +79,18 @@
       "evidence": "red 'LH DT' text with red dotted line at the 07:00 lower high",
       "label": "lower_high_double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "second leg down to 4210 followed",
       "placement": null,
       "price_hint": 4228.0,
       "raw_label": "LH DT",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -85,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:30",
         "tz": "America/Los_Angeles"
@@ -92,15 +110,18 @@
       "evidence": "red note plus blue dotted channel lines bracketing the mid-session decline",
       "label": "channel",
       "label_explicit": null,
-      "modifiers": [
-        "broad"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "channel of lower highs and lows into the 4210 wedge bounce and on to 4200",
       "placement": null,
       "price_hint": null,
       "raw_label": "Series of Lower Highs so Bear Channel",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -112,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:00",
         "tz": "America/Los_Angeles"
@@ -119,16 +141,18 @@
       "evidence": "pink 'Minor Wedge' text under the pink dotted 4212-4210 lows",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "minor",
-        "bottom"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "one bounce leg to 4221 (LH DT) before the channel resumed",
       "placement": null,
       "price_hint": 4210.0,
       "raw_label": "Minor Wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:40",
@@ -140,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:10",
         "tz": "America/Los_Angeles"
@@ -147,13 +172,18 @@
       "evidence": "red 'LH DT' text with red dotted line at the 09:00 lower high",
       "label": "lower_high_double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "third leg down followed",
       "placement": null,
       "price_hint": 4223.0,
       "raw_label": "LH DT",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:55",
@@ -165,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:10",
         "tz": "America/Los_Angeles"
@@ -172,13 +203,18 @@
       "evidence": "red 'LH DT' text with red dotted line at the 10:00 lower high",
       "label": "lower_high_double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "continued to the 4200 lows",
       "placement": null,
       "price_hint": 4218.0,
       "raw_label": "LH DT",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:55",
@@ -190,6 +226,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:00",
         "tz": "America/Los_Angeles"
@@ -197,13 +234,18 @@
       "evidence": "blue 'OOO' text with arrow to the gray-boxed 10:45 bars",
       "label": "outside_outside",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "outside bar series at the lows just before the wedges completed",
       "placement": null,
       "price_hint": 4208.0,
       "raw_label": "OOO",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:40",
@@ -215,6 +257,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:10",
         "tz": "America/Los_Angeles"
@@ -222,16 +265,18 @@
       "evidence": "pink 'Consecutive Wedges' note over the pink dotted falling wedge into the 4200 low",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "consecutive",
-        "bottom"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "two legs of sideways-to-up followed, rallying to 4222",
       "placement": null,
       "price_hint": 4200.0,
       "raw_label": "Consecutive Wedges, expect 2 legs sideways to up",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:15",
@@ -243,6 +288,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:15",
         "tz": "America/Los_Angeles"
@@ -250,13 +296,18 @@
       "evidence": "red 'Minor Lower High Double Top (LH DT)' text at the nominal-time top over the red-dotted 4228 line",
       "label": "lower_high_double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "the big reversal candle stalled at the LH DT and price chopped into the close",
       "placement": null,
       "price_hint": 4222.0,
       "raw_label": "Minor Lower High Double Top (LH DT)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:55",
@@ -269,9 +320,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "733de4cfb8b2",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bear Channel, Late Reversal Up'; note 'Series of Lower Highs so Bear Channel'. Reading: opening pullback top with a minor parabolic wedge (sell-the-close bears from yesterday's close), a series of LH DTs at 4228/4223/4218 stretching the broad bear channel down to a 4200 low, a (minor wedge) bounce at 4210 failing at the LH DT, an OOO outside bar at 4208, then consecutive falling wedges into the 4200 low expecting two legs sideways-to-up: late reversal up to 4222 (itself a minor LH DT) and sideways into the close. Axis styles as printed 5/30 06:45-13:00 with 5/31 edge marker (plain-PT style)."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Channel, Late Reversal Up'; note 'Series of Lower Highs so Bear Channel'. Reading: opening pullback top with a minor parabolic wedge (sell-the-close bears from yesterday's close), a series of LH DTs at 4228/4223/4218 stretching the broad bear channel down to a 4200 low, a (minor wedge) bounce at 4210 failing at the LH DT, an OOO outside bar at 4208, then consecutive falling wedges into the 4200 low expecting two legs sideways-to-up: late reversal up to 4222 (itself a minor LH DT) and sideways into the close. Axis styles as printed 5/30 06:45-13:00 with 5/31 edge marker (plain-PT style).",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

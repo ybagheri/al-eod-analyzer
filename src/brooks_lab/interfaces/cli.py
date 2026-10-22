@@ -15,6 +15,8 @@ from brooks_lab.application.extraction import ExtractionPromptBuilder, Extractio
 from brooks_lab.application.ingestion import ImageIngestionService, compute_stats
 from brooks_lab.domain.labels import LABEL_SCHEMA_VERSION, DayLabel
 from brooks_lab.domain.title_taxonomy import map_title, parse_filename
+from brooks_lab.infrastructure.label_store import load_migrations
+from brooks_lab.infrastructure.queue_guard import queue_dirty
 from brooks_lab.infrastructure.settings import load_ingestion_settings
 from brooks_lab.infrastructure.taxonomy import load_taxonomy
 from brooks_lab.infrastructure.vision import (
@@ -60,6 +62,52 @@ def _callback(
 def version() -> None:
     """Show the version and exit."""
     _print_version()
+
+
+@app.command(name="write-response")
+def write_response(
+    image_id: str = typer.Argument(..., help="Target image id (must be in the manifest)."),
+    file: Path | None = typer.Option(
+        None,
+        "--file",
+        help="Response JSON file to validate and write; omit to read stdin.",
+    ),
+    queue_dir: Path = typer.Option(
+        Path("artifacts/extraction_queue"), "--queue-dir", help="File-exchange queue."
+    ),
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    labels_dir: Path = typer.Option(
+        Path("artifacts/labels"), "--labels-dir", help="Labels dir (review check)."
+    ),
+    taxonomy_file: Path = typer.Option(
+        Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
+    ),
+    replace: bool = typer.Option(
+        False, "--replace", help="Allow overwriting an existing response."
+    ),
+) -> None:
+    """Validate one compact v3 response and write it into the queue (gated)."""
+    import sys
+
+    from brooks_lab.application.response_writer import ResponseWriteError, ResponseWriter
+
+    text = file.read_text(encoding="utf-8-sig") if file is not None else sys.stdin.read()
+    loaded = ImageIngestionService.read_manifest(manifest)
+    writer = ResponseWriter(
+        queue_dir=queue_dir,
+        manifest=loaded,
+        taxonomy=load_taxonomy(taxonomy_file),
+        labels_dir=labels_dir,
+    )
+    try:
+        result = writer.write(text, image_id, replace=replace)
+    except ResponseWriteError as exc:
+        typer.echo(f"REJECTED: {exc}")
+        raise typer.Exit(code=1) from exc
+    suffix = " (replaced)" if result.replaced else ""
+    typer.echo(f"wrote {result.path}{suffix}")
 
 
 @app.command()
@@ -224,10 +272,38 @@ def extract(
     taxonomy_file: Path = typer.Option(
         Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
     ),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
+    allow_dirty: bool = typer.Option(
+        False,
+        "--allow-dirty",
+        help="Run even with uncommitted changes under the extraction queue.",
+    ),
+    fill_only: bool = typer.Option(
+        False,
+        "--fill-only",
+        help="Only scan manifest records that already have a queue response "
+        "(R-FINISH conversion pass; never creates new request files).",
+    ),
 ) -> None:
     """Extract DayLabels for manifest images (file-exchange needs two passes)."""
     loaded = ImageIngestionService.read_manifest(manifest)
+    if fill_only:
+        filled = {p.name.replace(".response.json", "") for p in queue_dir.glob("*.response.json")}
+        records = [r for r in loaded.records if r.image_id in filled]
+        loaded = loaded.model_copy(update={"records": records})
+        typer.echo(f"fill-only: {len(records)} record(s) with an existing response")
     taxonomy = load_taxonomy(taxonomy_file)
+    migrations = load_migrations(migrations_file)
+    if queue_dirty(queue_dir) and not allow_dirty:
+        typer.echo(
+            "refusing to run: uncommitted changes under the extraction queue; "
+            "commit them (or pass --allow-dirty)."
+        )
+        raise typer.Exit(code=1)
     builder = ExtractionPromptBuilder(prompt_file, taxonomy)
     if provider == "file":
         client: VisionClient = FileExchangeVisionClient(queue_dir=queue_dir, model_id=model_id)
@@ -248,6 +324,8 @@ def extract(
         history_dir=history_dir,
         gold_path=gold_file,
         clobber_reviewed=clobber_reviewed,
+        migrations=migrations,
+        taxonomy_version=taxonomy.taxonomy_version,
     )
     report = service.run(limit=limit, resume=resume)
     report_path = Path("artifacts/review/extraction_report.json")
@@ -266,6 +344,109 @@ def extract(
     if report.warnings:
         typer.echo(f"warnings: {report.warnings}")
     typer.echo(f"report -> {report_path}")
+
+
+@app.command(name="extract-batch")
+def extract_batch(
+    tier: str = typer.Argument(..., help="Label tier, e.g. silver-dev."),
+    n: int = typer.Option(6, "--n", min=1, max=12, help="Charts per turn (4-6 recommended)."),
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    sample_file: Path | None = typer.Option(
+        None,
+        "--sample-file",
+        help="Tier sample file (stratified order); default artifacts/samples/<tier>.json|txt.",
+    ),
+    queue_dir: Path = typer.Option(
+        Path("artifacts/extraction_queue"), "--queue-dir", help="File-exchange queue."
+    ),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    history_dir: Path = typer.Option(
+        Path("artifacts/labels_history"), "--history-dir", help="Review history dir."
+    ),
+    prompt_file: Path = typer.Option(
+        Path("config/prompts/extract_v3.md"), "--prompt-file", help="Prompt template."
+    ),
+    taxonomy_file: Path = typer.Option(
+        Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
+    ),
+    model_id: str = typer.Option("manual", "--model-id", help="Model id for requests."),
+) -> None:
+    """Print the next N request prompts for one labeling turn (compact v3)."""
+    from brooks_lab.application.extraction import BatchService
+    from brooks_lab.infrastructure.vision import FileExchangeVisionClient
+
+    if sample_file is None:
+        for candidate in (
+            Path("artifacts/samples") / f"{tier}.json",
+            Path("artifacts/samples") / f"{tier}.txt",
+        ):
+            if candidate.is_file():
+                sample_file = candidate
+                break
+    builder = ExtractionPromptBuilder(prompt_file, load_taxonomy(taxonomy_file))
+    service = BatchService(
+        manifest=ImageIngestionService.read_manifest(manifest),
+        labels_dir=labels_dir,
+        queue_dir=queue_dir,
+        history_dir=history_dir,
+        sample_file=sample_file,
+        prompt_builder=builder,
+        model_id=model_id,
+    )
+    batch = service.candidates()[:n]
+    pending = service.pending_responses()
+    typer.echo(
+        f"tier={tier} sample={'yes' if sample_file else 'manifest-fallback'} "
+        f"pending_responses={len(pending)}"
+    )
+    if pending:
+        typer.echo(f"awaiting responses: {pending}")
+    client = FileExchangeVisionClient(queue_dir=queue_dir, model_id=model_id)
+    for request in batch:
+        client.write_request(request.image_id, request.prompt)
+        typer.echo(f"===== PROMPT {request.image_id} ({request.filename} {request.date_iso}) =====")
+        typer.echo(request.prompt)
+    typer.echo(
+        f"batch: {len(batch)} request(s) written -> {queue_dir}. "
+        "Label each in one turn, submit with 'brooks write-response <id> --file <f>', "
+        "then convert with 'brooks extract'."
+    )
+
+
+@app.command(name="scope-report")
+def scope_report(
+    manifest: Path = typer.Option(
+        Path("artifacts/manifest.json"), "--manifest", help="Manifest to read."
+    ),
+    labels_dir: Path = typer.Option(Path("artifacts/labels"), "--labels-dir", help="Labels dir."),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
+    output: Path = typer.Option(
+        Path("artifacts/scope_report.json"), "--output", help="Scope report JSON to write."
+    ),
+) -> None:
+    """Aggregate the P11 scope filter over stored labels."""
+    from brooks_lab.application.review import compute_scope_report, load_labels_for_manifest
+
+    loaded = ImageIngestionService.read_manifest(manifest)
+    labels = load_labels_for_manifest(loaded, labels_dir, load_migrations(migrations_file))
+    report = compute_scope_report(labels)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(
+        json.dumps(report.model_dump(mode="json"), indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    typer.echo(
+        f"total={report.total} in_scope={report.in_scope} "
+        f"out_of_scope={report.out_of_scope} unstamped={report.unstamped} -> {output}"
+    )
+    for image_id in report.out_of_scope_ids:
+        typer.echo(f"out: {image_id} ({report.notes.get(image_id, '')})")
 
 
 @app.command(name="extract-status")
@@ -320,6 +501,11 @@ def review_queue(
     taxonomy_file: Path = typer.Option(
         Path("config/taxonomy.yaml"), "--taxonomy-file", help="Frozen taxonomy."
     ),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
     gold_file: Path = typer.Option(
         Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
     ),
@@ -348,11 +534,13 @@ def review_queue(
 
     loaded = ImageIngestionService.read_manifest(manifest)
     by_id: dict[str, ImageRecord] = {r.image_id: r for r in loaded.records}
-    labels = load_labels_for_manifest(loaded, labels_dir)
+    migrations = load_migrations(migrations_file)
+    labels = load_labels_for_manifest(loaded, labels_dir, migrations)
     service = ReviewService(
         labels_dir=labels_dir,
         history_dir=labels_dir.parent / "labels_history",
         gold_path=gold_file,
+        migrations=migrations,
     )
     gold = service.load_gold()
     gold_ids = set(gold.image_ids)
@@ -405,11 +593,21 @@ def review_apply(
     gold_file: Path = typer.Option(
         Path("artifacts/gold_set.json"), "--gold-file", help="Gold registry."
     ),
+    migrations_file: Path = typer.Option(
+        Path("config/taxonomy_migrations.yaml"),
+        "--migrations-file",
+        help="Legacy id migration table.",
+    ),
 ) -> None:
     """Apply a corrections file (archives history, marks human source)."""
     from brooks_lab.application.review import CorrectionsFile, ReviewService
 
-    service = ReviewService(labels_dir=labels_dir, history_dir=history_dir, gold_path=gold_file)
+    service = ReviewService(
+        labels_dir=labels_dir,
+        history_dir=history_dir,
+        gold_path=gold_file,
+        migrations=load_migrations(migrations_file),
+    )
     corrections = CorrectionsFile.model_validate_json(corrections_file.read_text(encoding="utf-8"))
     result = service.apply_corrections(corrections)
     typer.echo(

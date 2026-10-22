@@ -27,7 +27,7 @@ Layered Python package (`src/brooks_lab`): `domain` (pure models/rules) →
 
 ## Install
 
-Requires Python 3.11+.
+Requires Python 3.11+. Core deps: `typer`, `pydantic`, `PyYAML`, `Pillow` only.
 
 ```powershell
 python -m venv .venv
@@ -35,30 +35,77 @@ python -m venv .venv
 pip install -e ".[dev]"
 ```
 
-## Quick start (Phase 0)
+Offline install (restricted network): `wheelhouse/` (git-ignored) holds every
+wheel pinned in `requirements-lock.txt`:
+
+```powershell
+# (one-time, on an online machine)
+python -m pip download -d wheelhouse --timeout 120 --retries 10 -r requirements-lock.txt
+# (offline machine, fresh clone)
+python -m pip install --no-index --find-links wheelhouse setuptools wheel
+python -m pip install --no-index --find-links wheelhouse --no-build-isolation -e ".[dev]"
+```
+
+Never run a non-editable `pip install file:///...` inside the repo path
+(shadow-import hazard; guarded by `tests/test_smoke.py`).
+
+Extras: `vision` (httpx network providers), `vision-local` (opencv/pytesseract,
+optional, unused by the pipeline), `data` (pandas/numpy, analysis only — never
+imported by the engine). The engine package is enforced stdlib-only by
+`tests/test_engine_purity.py` (MQL5 parity).
+
+## Quick start
 
 ```powershell
 brooks --version
 python -m tasks check   # canonical quality gate (use instead of `make` on Windows)
 ```
 
-`make check` runs the same gate on systems with `make`.
+Git hooks (plan-compliance) activate with `git config core.hooksPath .githooks`
+(activated in this checkout); never bypass with `--no-verify`.
+
+<!-- STATUS:BEGIN (generated from docs/STATUS.yaml; do not edit) -->
+
+### Status (auto-generated from docs/STATUS.yaml)
+
+- **Current step:** S2 - Extraction v3: compact schema, validator-gated writes, anchors (done)
+- **Steps done:** S0, S1, S2
+- **Steps in progress:** none
+- **Last gate:** green (2026-10-22): ruff ok / format ok / mypy --strict ok / pytest green (273 collected) / coverage ~91%
+- **Data:** 1678 unique batch-1 charts; 244 filled queue pairs (1 pending); 243 labels; gold 32
+- **Market-data coverage:** none
+- Updated: 2026-10-22
+
+<!-- STATUS:END -->
 
 ## CLI reference (so far)
 
 | Command | Description |
 |---|---|
 | `brooks --version` / `brooks version` | Show version |
+| `brooks ingest` / `brooks manifest-stats` | Image inventory + stats |
+| `brooks schema-export` | Dump the label JSON schema |
+| `brooks extract` / `brooks extract-status` | File-exchange vision extraction |
+| `brooks title-map` | Map batch-1 filename titles to provisional day types |
+| `brooks review-queue` / `brooks review-apply` | Human review pages + apply corrections |
 
-Later phases add: `ingest`, `manifest-stats`, `schema-export`, `extract`,
-`extract-status`, `review-queue`, `review-apply`, `data-check`, `attach-labels`,
-`evaluate`, `tune`, `live`.
+Later phases add: `data-check`, `attach-labels`, `coverage-probe`,
+`write-response`, `extract-batch`, `evaluate`, `tune`, `live`.
+
+## Plan of record
+
+The project follows `docs/PLAN_V2.md` (master re-plan v2.6): tiered labels
+(Bronze/Silver-Dev/Gold-Test), market-data-first scope driven by broker-feed
+coverage, validator-gated label writes, and a public-repo safety policy
+(`docs/PUBLIC_SAFETY.md`). `docs/MASTER_PROMPT.md` remains the architecture
+reference; on conflicts `docs/PLAN_V2.md` wins (ADR-012).
 
 ## Config
 
 - `config/default.yaml` — engine thresholds, session times, paths (single source
   for named parameters; no magic constants in code).
-- `config/taxonomy.yaml` — label vocabulary (DRAFT stub; frozen as v1 in Phase 2).
+- `config/taxonomy.yaml` — label vocabulary, frozen v1.3 for bulk labeling
+  (future ids only through ADR + `config/taxonomy_migrations.yaml`).
 - `.env` (git-ignored; see `.env.example`) — optional API keys. Core flow works
   offline via file-exchange vision mode.
 
@@ -79,7 +126,7 @@ Tests never call paid/online APIs (fakes/recorded fixtures only).
 
 `mql5/` holds the later indicator/EA port. Install: copy `mql5/` contents into the
 MT5 data-folder `MQL5/` tree, compile in MetaEditor (see `docs/MT5_SETUP.md` once
-Phase 9 lands). Nothing tradable exists yet — Phase 0 is skeleton only.
+Phase 9 lands).
 
 ## FAQ
 
@@ -91,5 +138,9 @@ Phase 9 lands). Nothing tradable exists yet — Phase 0 is skeleton only.
 
 ## License / legal
 
-Code: MIT (see `pyproject.toml`). Chart images in `data/` are third-party
-copyrighted — personal research use only; keep this repo **private**.
+Code: MIT (see `pyproject.toml`). The Brooks-style chart images are third-party
+material that is NOT distributed in this repository and is kept locally for
+personal research only; broker market data is not redistributed; labels and the
+playbook are the author's own derived annotations and statistics; the repo is
+public by design and must stay public-safe (see `docs/PUBLIC_SAFETY.md`).
+Contact for take-down requests.

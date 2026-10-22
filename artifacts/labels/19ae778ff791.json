@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-07-16",
   "day_type": "trend_reversal_to_bull",
   "day_type_confidence": 0.7,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:25",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "red Surprise Bear Breakout 2nd Leg down Likely text with red box 09:00-09:15 and red arrows",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "red boxed bear spike into the open failed and price held the 6277-6295 early range instead of a 2nd leg down",
       "placement": null,
       "price_hint": 6303.0,
       "raw_label": "Surprise bear breakout, 2nd leg down likely (08:55-09:20 high 6303)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:55",
@@ -32,6 +40,7 @@
       "bar_index_hint": 12,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:25",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "blue dotted horizontal at the lows with bar numbers 12 and 18",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "tight sideways bars 09:20-10:15 with blue dotted range bottom into bar 18 before the large bear breakout",
       "placement": null,
       "price_hint": 6277.0,
       "raw_label": "Early trading range after the bear spike (09:20-10:20 low 6277)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:20",
@@ -57,6 +71,7 @@
       "bar_index_hint": 24,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:00",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "orange Large Bear Breakout Possible Exhaustion text, blue Consecutive Sell Climaxes text, bars 24 and 36 labels",
       "label": "climax",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "brown tall breakout bar at 10:20 then the accelerating bear leg with consecutive sell climaxes to the 6240.5 low",
       "placement": null,
       "price_hint": 6240.0,
       "raw_label": "Large bear breakout, consecutive sell climaxes, possible exhaustion (10:20-11:55 low 6240)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:20",
@@ -82,6 +102,7 @@
       "bar_index_hint": 36,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:40",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "green text bottom center with green arrow 11:35 and stacked green arrows on the rally",
       "label": "major_bull_surprise",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Strong Reversal Up After Sell Climax Possible Low of Day text with the strong bull bar off the low leading the tight bull channel",
       "placement": null,
       "price_hint": 6240.0,
       "raw_label": "Strong reversal up after sell climax, possible low of day (11:40-12:35 low 6240)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:40",
@@ -107,6 +133,7 @@
       "bar_index_hint": 48,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:40",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "red text upper center with red arrow to bar 48 and red dotted line from 10:00",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "red Test of Top of Bear Breakout Bar text with red arrow and red dotted 6295 overhead test that did not break the recovery",
       "placement": null,
       "price_hint": 6295.0,
       "raw_label": "Test of top of bear breakout bar (12:10-12:35 high 6295)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:10",
@@ -132,6 +164,7 @@
       "bar_index_hint": 48,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "14:55",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "green text, blue dotted rising line, magenta dotted support line, bar 48/60/72 labels, red Minor Reversal text and arrow at 13:15",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Tight Bull channel text with blue dotted channel top rising to 6309; magenta dotted 6288 support held through the 13:15 minor reversal",
       "placement": null,
       "price_hint": 6288.0,
       "raw_label": "Tight bull channel, minor reversal at EMA support (12:20-14:50 high 6309)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:20",
@@ -157,6 +195,7 @@
       "bar_index_hint": 72,
       "confidence": 0.55,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "15:10",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "tall candles at 14:40 high near the blue dotted line with the final down bars into 15:00, footer 7/17",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "black-white-red climax bars at the top of the blue dotted channel gave way to the closing pullback at 6299",
       "placement": null,
       "price_hint": 6309.0,
       "raw_label": "Late push above 6309 closes back down (14:30-15:05 high 6309)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "14:30",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "19ae778ff791",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bear Trend, Mid-day Reversal'. Surprise bear breakout at the open (09:00) with 2nd leg down likely, a tight early trading range 6277-6295, then a large bear breakout with consecutive sell climaxes (10:15-11:50, low 6240) and possible exhaustion. Strong reversal up after the sell climax marked a possible low of day, bulls tested the top of the bear breakout bar at 12:15 (minor reversal at 13:15 on the magenta dotted 6288 support), then a tight bull channel carried price to 6309 (14:40) before a late pullback closed at 6299. Footer 7/17."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Trend, Mid-day Reversal'. Surprise bear breakout at the open (09:00) with 2nd leg down likely, a tight early trading range 6277-6295, then a large bear breakout with consecutive sell climaxes (10:15-11:50, low 6240) and possible exhaustion. Strong reversal up after the sell climax marked a possible low of day, bulls tested the top of the bear breakout bar at 12:15 (minor reversal at 13:15 on the magenta dotted 6288 support), then a tight bull channel carried price to 6309 (14:40) before a late pullback closed at 6299. Footer 7/17.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

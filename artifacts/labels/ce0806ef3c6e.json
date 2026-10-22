@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2021-12-01",
   "day_type": "small_pullback_bear_trend",
   "day_type_confidence": 0.8,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:05",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "red 'Big gap up' note over the shaded opening box",
       "label": "gap",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "gap up immediately reversed down with the opening bear bar",
       "placement": null,
       "price_hint": null,
       "raw_label": "Big gap up",
-      "role": "context",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:20",
         "tz": "America/Los_Angeles"
@@ -39,15 +48,18 @@
       "evidence": "orange 'Bear bar and follow-through' note with arrow to the shaded bear bar",
       "label": "breakout",
       "label_explicit": null,
-      "modifiers": [
-        "sell"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "large opening bear bar with follow-through began the day-long bear theme",
       "placement": null,
       "price_hint": 4615.0,
       "raw_label": "Bear bar and follow-through",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -59,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:45",
         "tz": "America/Los_Angeles"
@@ -66,13 +79,18 @@
       "evidence": "orange 'HL but 3rd leg up' note under the green dotted base line",
       "label": "higher_low_double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "higher-low buy supported the 3rd leg up, but the advance stalled into the wedge top",
       "placement": null,
       "price_hint": 4610.0,
       "raw_label": "HL but 3rd leg up",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:25",
@@ -84,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:50",
         "tz": "America/Los_Angeles"
@@ -91,15 +110,18 @@
       "evidence": "blue 'Wedge' text with rising wedge lines into the 08:45 top",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "top"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue dotted wedge top at 4647 rolled the day into the bear trend",
       "placement": null,
       "price_hint": 4647.0,
       "raw_label": "Wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:45",
@@ -111,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:50",
         "tz": "America/Los_Angeles"
@@ -118,13 +141,18 @@
       "evidence": "blue 'ii' text at the 08:45 bars",
       "label": "inside_inside",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "ii compression at the top was part of the final flag format",
       "placement": null,
       "price_hint": 4645.0,
       "raw_label": "ii",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:35",
@@ -136,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:00",
         "tz": "America/Los_Angeles"
@@ -143,13 +172,18 @@
       "evidence": "orange 'ii Final Flag' text over the champagne-boxed top",
       "label": "final_flag",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "ii final flag at the wedge top resolved down into the bear trend",
       "placement": null,
       "price_hint": 4647.0,
       "raw_label": "ii Final Flag",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:40",
@@ -161,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:20",
         "tz": "America/Los_Angeles"
@@ -168,13 +203,18 @@
       "evidence": "green '20-Gap Bar / Buy, but 7 bear bars' text over the red boxed bars",
       "label": "body_gap",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "20-gap-bar buy signal failed after seven consecutive bear bars",
       "placement": null,
       "price_hint": 4606.0,
-      "raw_label": "20-Gap Bar \u2014 Buy, but 7 bear bars",
+      "raw_label": "20-Gap Bar \u00e2\u20ac\u201d Buy, but 7 bear bars",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:00",
@@ -186,6 +226,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:25",
         "tz": "America/Los_Angeles"
@@ -193,15 +234,18 @@
       "evidence": "red 'DT bear flag' text at the 09:15 retest",
       "label": "double_top",
       "label_explicit": null,
-      "modifiers": [
-        "DT"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "DT bear flag under the red dotted line sold into the base breakout",
       "placement": null,
       "price_hint": 4642.0,
       "raw_label": "DT bear flag",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:05",
@@ -213,6 +257,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:10",
         "tz": "America/Los_Angeles"
@@ -220,15 +265,18 @@
       "evidence": "orange 'Breakout and follow-through' note with arrow to the 10:00 legs",
       "label": "breakout",
       "label_explicit": null,
-      "modifiers": [
-        "sell"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "breakout below the HL base with follow-through opened the small pullback bear trend",
       "placement": null,
       "price_hint": 4603.0,
       "raw_label": "Breakout and follow-through",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:45",
@@ -240,6 +288,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:15",
         "tz": "America/Los_Angeles"
@@ -247,13 +296,18 @@
       "evidence": "blue 'High 2' text with magenta up arrow at the beige-boxed 11:00 bars",
       "label": "h2",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "High 2 pullback buy failed as the bear trend resumed",
       "placement": null,
       "price_hint": 4590.0,
       "raw_label": "High 2",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:50",
@@ -265,6 +319,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:15",
         "tz": "America/Los_Angeles"
@@ -272,15 +327,18 @@
       "evidence": "pink 'Wedge but tight channel' text with dotted wedge lines",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "bottom"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "wedge bottom claimed but the tight channel kept selling",
       "placement": null,
       "price_hint": 4588.0,
       "raw_label": "Wedge but tight channel",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:45",
@@ -292,6 +350,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:35",
         "tz": "America/Los_Angeles"
@@ -299,15 +358,18 @@
       "evidence": "red 'DT bear flag' text at the 11:25 retest",
       "label": "bear_flag",
       "label_explicit": null,
-      "modifiers": [
-        "DT"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "second DT bear flag under the red dotted line led the leg down to 4555",
       "placement": null,
       "price_hint": 4605.0,
       "raw_label": "DT bear flag",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:15",
@@ -319,6 +381,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:40",
         "tz": "America/Los_Angeles"
@@ -326,15 +389,18 @@
       "evidence": "red 'DT bear flag' text at the 12:25 retest with red dotted line",
       "label": "bear_flag",
       "label_explicit": null,
-      "modifiers": [
-        "DT"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "third DT bear flag set up the final decline into the 4505 low",
       "placement": null,
       "price_hint": 4568.0,
       "raw_label": "DT bear flag",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:15",
@@ -347,9 +413,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "ce0806ef3c6e",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Wedge Top, Then Bear Trend' (filename adds monthly sell signal context). Plain-PT axis 12/1 to 12/2 edge marker. Reading: big gap up sold off immediately (bear bar and follow-through), HL buy into the 3rd leg up climbed to a wedge ii-final-flag top at 4647, the DT bear flag sold and the 20-gap-bar buy failed after 7 bear bars, the breakout and follow-through below the HL base (4603) opened the small pullback bear trend \u2014 afternoon High 2 / wedge-tight-channel buys failed, DT bear flags at 4605 and 4568 stacked lower highs, and the final leg ran to the 4505 low into the close."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Wedge Top, Then Bear Trend' (filename adds monthly sell signal context). Plain-PT axis 12/1 to 12/2 edge marker. Reading: big gap up sold off immediately (bear bar and follow-through), HL buy into the 3rd leg up climbed to a wedge ii-final-flag top at 4647, the DT bear flag sold and the 20-gap-bar buy failed after 7 bear bars, the breakout and follow-through below the HL base (4603) opened the small pullback bear trend \u00e2\u20ac\u201d afternoon High 2 / wedge-tight-channel buys failed, DT bear flags at 4605 and 4568 stacked lower highs, and the final leg ran to the 4505 low into the close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

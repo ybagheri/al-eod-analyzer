@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2020-04-02",
   "day_type": "bull_trend_resumption",
   "day_type_confidence": 0.75,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:25",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue 'DB HL MTR' text with blue dotted low markers on the left-edge 4/1 bars",
       "label": "higher_low_double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "double-bottom/higher-low major trend reversal at the 4/1 close initiated the bull phase",
       "placement": null,
       "price_hint": 2436.0,
       "raw_label": "DB HL MTR",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "13:05",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:20",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "red '2nd Leg Bear trap' text over the 07:00-07:15 lows",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "the 2nd leg down was a bear trap that launched the bull run",
       "placement": null,
       "price_hint": 2440.0,
       "raw_label": "2nd Leg Bear trap",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:45",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "orange 'Bull Major Surprise BO' text over the 07:25-07:45 breakout bars",
       "label": "major_bull_surprise",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "major surprise breakout above the open drove the spike toward 2531",
       "placement": null,
       "price_hint": 2490.0,
       "raw_label": "Bull Major Surprise BO",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:25",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:05",
         "tz": "America/Los_Angeles"
@@ -89,15 +110,18 @@
       "evidence": "blue 'Exp Tri' text beside the green shaded 07:40-08:05 box",
       "label": "triangle",
       "label_explicit": null,
-      "modifiers": [
-        "expanding"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "expanding triangle in the early push foreshadowed the 1-leg pullback",
       "placement": null,
       "price_hint": 2490.0,
       "raw_label": "Exp Tri",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:40",
@@ -109,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:00",
         "tz": "America/Los_Angeles"
@@ -116,13 +141,18 @@
       "evidence": "orange 'LH MTR' text with red horizontal line at the 09:30 lower high",
       "label": "major_trend_reversal",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "lower-high major trend reversal under the red line began the mid-day bear leg to 2460",
       "placement": null,
       "price_hint": 2516.0,
       "raw_label": "LH MTR",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:15",
@@ -134,6 +164,7 @@
       "bar_index_hint": 2,
       "confidence": 0.75,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:45",
         "tz": "America/Los_Angeles"
@@ -141,15 +172,18 @@
       "evidence": "pink 'Wedge' text below the 11:35 low marked 2",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "bottom"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "wedge low (2) ended the bear leg and started the bull trend resumption",
       "placement": null,
       "price_hint": 2460.0,
       "raw_label": "Wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:25",
@@ -161,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:00",
         "tz": "America/Los_Angeles"
@@ -168,13 +203,18 @@
       "evidence": "blue 'Big High 2 PB in bull trend' text under the 11:45-12:00 bars",
       "label": "h2",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "big high 2 pullback in the bull trend led to the afternoon resumption rally to 2525",
       "placement": null,
       "price_hint": 2465.0,
       "raw_label": "Big High 2 PB in bull trend",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:35",
@@ -187,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "9129b6777564",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bull Trend Resumption' (filename: 2nd-leg bull trap and then bull trend resumption; agreement). Spans 4/1 13:00 through 4/2 13:40 (plain-PT style with day-roll edge markers). Reading: DB/HL MTR at the 4/1 2436 low turned the tape up, the 2nd leg down at 4/2 07:00 to 2440 was a bear trap, a bull major surprise breakout swept the open to 2531, an Exp Tri formed in the 07:40-08:00 push, a pullback to 1 (2485) preceded the LH MTR down at 2515 (red line), and the bear trend into the 2 wedge low (2460) grew a Big High 2 pullback in bull trend that resumed the bull trend into the 4/2 close at ~2525."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend Resumption' (filename: 2nd-leg bull trap and then bull trend resumption; agreement). Spans 4/1 13:00 through 4/2 13:40 (plain-PT style with day-roll edge markers). Reading: DB/HL MTR at the 4/1 2436 low turned the tape up, the 2nd leg down at 4/2 07:00 to 2440 was a bear trap, a bull major surprise breakout swept the open to 2531, an Exp Tri formed in the 07:40-08:00 push, a pullback to 1 (2485) preceded the LH MTR down at 2515 (red line), and the bear trend into the 2 wedge low (2460) grew a Big High 2 pullback in bull trend that resumed the bull trend into the 4/2 close at ~2525.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

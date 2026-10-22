@@ -1,0 +1,214 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-02-24",
+  "day_type": "broad_bull_channel",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Reasonable Buy The Close Bull Trend text with green shaded boxes 07:35 and 07:45 highs and red shaded boxes 07:25 lows",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "reasonable buy the close bull trend with green and red paperwork to buy; instead got bear bar",
+      "placement": null,
+      "price_hint": 3975.0,
+      "raw_label": "Buy the close bull trend from open (06:55)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:52",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Bear Surprise Outside Down bar text with arrow to the tall black bar near 07:05 and pink dotted wedge to the 07:50 lows",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue arrow into tall black bar 07:05 from the bull spike top and the drop to shaded lows 07:15-07:45",
+      "placement": null,
+      "price_hint": 3959.0,
+      "raw_label": "Bear surprise outside down bar (07:05 bear spike)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange MM down text, magenta Wedge text under the 08:10 lows and pink dotted channel to 08:20 lows",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange dotted MM down at 08:15 lows with blue dotted line and wedge signal into green shaded bounce at 08:25",
+      "placement": null,
+      "price_hint": 3948.0,
+      "raw_label": "MM down wedge low 3948 (08:15)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded bull bars with red pop at 08:35 lows, pink wedges, red shaded box 10:05 lows and 10:25 highs",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "wedge/magenta rally push to 10:30 high 3968 with minibars in 09:20 lows (orange dotted lines)",
+      "placement": null,
+      "price_hint": 3968.0,
+      "raw_label": "Broad bull channel bounce (08:25-10:35 high 3968)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red shaded box at 10:05-10:15 lows below pink lines and black bullish sell setups",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red shaded setup near 10:05 lows with magenta dotted wedge lines to the 10:05 lows",
+      "placement": null,
+      "price_hint": 3959.0,
+      "raw_label": "Insert bear bars at 10:05 wedge low (10:05 low 3959)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green shaded boxes 12:50-13:05 and green shaded bars 11:15-12:10 with red shaded boxes at 12:10-12:25 lows and close dots near 3975",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge pink dotted channel to 11:45 top 3975 and green shaded bars 12:45 into late chop close 3975",
+      "placement": null,
+      "price_hint": 3978.0,
+      "raw_label": "Second leg wedge rally to 3978 (11:00-13:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "9a42bff26fe1",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Broad Bull Channel so Trade like Trading Range'. Higher highs and lows so bull trend, deep selloffs so broad bull channel; buy the close bull trend from Feb 24 spike, inside bear surprise outside down bar (07:00); MM down wedge low 3948 (08:15); wedge bounce up on the pink channel to 10:30 high 3968; wedge rally 12:30-13:00 to 3978 traded into late chop closing 3975.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

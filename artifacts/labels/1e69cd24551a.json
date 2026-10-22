@@ -1,0 +1,245 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-08-10",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Buy The Close text below the shaded opening box and green boxed bars to 07:35",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "buy the close ran a wedge rally up to 4545 into the reversal",
+      "placement": null,
+      "price_hint": 4545.0,
+      "raw_label": "Buy the close minor parabolic wedge (06:45-07:45)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Minor Parabolic Wedge text with reversal became major and red arrows 07:45",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "minor parabolic wedge top at 4545 became a major trend reversal down",
+      "placement": null,
+      "price_hint": 4545.0,
+      "raw_label": "Minor parabolic wedge top reversal became major (07:45)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Breakout arrow into the brown shaded 08:00-08:20 bear bars",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "breakout under the brown shaded morning box extended the sell-off",
+      "placement": null,
+      "price_hint": 4510.0,
+      "raw_label": "Breakout below the 4510 morning range (08:15)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "neutral",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue ii text at the 10:30 bars with blue dotted 4504 line",
+      "label": "inside_inside",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "ii bars led to a breakout test of the 4504 morning line",
+      "placement": null,
+      "price_hint": 4500.0,
+      "raw_label": "ii (10:30)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "large blue shaded box with pink wedges and Limit order bulls have been making money text",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded limit order trading range chopped 4476-4505 into the close",
+      "placement": null,
+      "price_hint": 4487.0,
+      "raw_label": "Trading range likely with limit order bulls making money (11:15-13:15)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "neutral",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "large blue shaded box with pink wedges and Limit order bulls have been making money text",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded limit order trading range chopped 4476-4505 into the close",
+      "placement": null,
+      "price_hint": 4487.0,
+      "raw_label": "Trading range likely with limit order bulls making money (11:15-13:15)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Breakout Test text at 12:55 with red shaded boxes around 12:55-13:10 lows",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "the breakout test at 4504 failed and red shaded bars sold to 4486",
+      "placement": null,
+      "price_hint": 4504.0,
+      "raw_label": "Breakout test (13:05 test of 4504)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "1e69cd24551a",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Parabolic Wedge Top and Major Reversal Down'. A minor parabolic wedge top reversal at 4545 becomes major; the breakout below the morning range sells to a 09:15 low 4488, then a limit-order trading range chopping 4480-4505 ends the bear trend with limit order bulls making money.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

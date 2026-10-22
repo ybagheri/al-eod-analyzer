@@ -1,0 +1,245 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-06-11",
+  "day_type": "trend_reversal_to_bull",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Sell climax text under the beige 06:45-07:30 box with red arrows 06:55-07:05 and blue shaded retest bars 07:30-07:45",
+      "label": "climax",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "sell climax sold the open from 5355 to 5335 in the brown shaded box",
+      "placement": null,
+      "price_hint": 5335.0,
+      "raw_label": "Sell climax (06:55 low 5335)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 15-bar bull micro channel text with green arrows 07:15-08:05 and minor buy climax label at the 08:10 highs",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green arrows up the micro channel to the blue shaded retest of the open high",
+      "placement": null,
+      "price_hint": 5358.0,
+      "raw_label": "15-bar bull micro channel (07:10-08:10 back to 5358)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Cup and handle text with green curve, red dotted double top side boxes 08:20-10:15, red arrow 08:25 and 10:20",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "cup and handle with green curved line and green arrows at 09:45 lows forming a high 2 bull flag",
+      "placement": null,
+      "price_hint": 5350.0,
+      "raw_label": "Cup and handle range (08:15-10:15 lows 5350)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Cup and handle text with green curve, red dotted double top side boxes 08:20-10:15, red arrow 08:25 and 10:20",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "cup and handle with green curved line and green arrows at 09:45 lows forming a high 2 bull flag",
+      "placement": null,
+      "price_hint": 5350.0,
+      "raw_label": "Cup and handle range (08:15-10:15 lows 5350)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge channel with green shaded bull bars 10:50-11:30 and pink minor wedge label at 12:15",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "rally from the range top through the pink dotted wedge lines to 5383",
+      "placement": null,
+      "price_hint": 5380.0,
+      "raw_label": "Trend resumption breakout (10:45-11:35)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Minor wedge label at 12:15, red arrow 12:20 sell bar, green dotted 5369.5 lows and green shaded bull bars 13:00-13:10",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red dotted minor wedge 5383 top failed retest, green dotted 5370 lows and double bottom green arrows 12:35 and 13:10",
+      "placement": null,
+      "price_hint": 5375.0,
+      "raw_label": "Minor pullback range (11:40-13:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Minor wedge label at 12:15, red arrow 12:20 sell bar, green dotted 5369.5 lows and green shaded bull bars 13:00-13:10",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red dotted minor wedge 5383 top failed retest, green dotted 5370 lows and double bottom green arrows 12:35 and 13:10",
+      "placement": null,
+      "price_hint": 5375.0,
+      "raw_label": "Minor pullback range (11:40-13:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "7b0e3b9fc855",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Sell Climax, Reversal Up'. Sell climax at 06:55 (5335), 15-bar bull micro channel back to a trading range; cup and handle double bottoms at 09:45, minor wedge rally to 11:40 high 5383, minor pullback range, red box sell setup, late spike closes 5384.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

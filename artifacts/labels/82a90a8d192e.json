@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-09-19",
   "day_type": "small_pullback_bull_trend",
   "day_type_confidence": 0.6,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "green text top left",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Bull Trap text behind the red dotted fringe at the open high",
       "placement": null,
       "price_hint": 6711.0,
       "raw_label": "Bull trap at the open (07:10-07:30 high 6711)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:10",
@@ -32,6 +40,7 @@
       "bar_index_hint": 24,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:50",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "magenta dotted line, Wedge text below",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta dotted falling wedge with red dotted fringes into the shaded wedge bottom",
       "placement": null,
       "price_hint": 6690.0,
       "raw_label": "Falling wedge bear trend into the wedge bottom (07:30-08:50 low 6690)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:30",
@@ -57,6 +71,7 @@
       "bar_index_hint": 36,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:50",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "shaded box and green W3 text",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "shaded tan box with the green arrow staircase out of the wedge bottom",
       "placement": null,
       "price_hint": 6712.0,
       "raw_label": "Wedge bottom rally to 6712 (08:45-09:50 high 6712)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:45",
@@ -82,6 +102,7 @@
       "bar_index_hint": 48,
       "confidence": 0.5,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:15",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "red dotted fringes and bar numbers 36-60",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "chopping bars around the EMA with red arrows down and green arrows up at bars 48-60",
       "placement": null,
       "price_hint": 6710.0,
       "raw_label": "Midday chop at 6705-6713 (10:00-12:15)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:00",
@@ -107,6 +133,7 @@
       "bar_index_hint": 72,
       "confidence": 0.55,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:05",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "magenta dotted line into bar 72",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta dotted rising wedge into the high 6731 area followed by the red arrow sell-off close",
       "placement": null,
       "price_hint": 6731.0,
       "raw_label": "Final rising wedge to 6731 (12:15-13:05 high 6731)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:15",
@@ -133,9 +165,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "82a90a8d192e",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bull Trap, Then Wedge Bottom' (RTH 07:00-13:15, bar numbers 12-72). Bull trap at the open (red dotted 6711 fringe), bear trend down the magenta falling wedge into the shaded wedge bottom at 6690 (bar 24), then the small pullback bull trend staircase up the wedge bottom to 6712 and the final rising wedge to 6731 at 12:50 with a sell-off into the 6720 close."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trap, Then Wedge Bottom' (RTH 07:00-13:15, bar numbers 12-72). Bull trap at the open (red dotted 6711 fringe), bear trend down the magenta falling wedge into the shaded wedge bottom at 6690 (bar 24), then the small pullback bull trend staircase up the wedge bottom to 6712 and the final rising wedge to 6731 at 12:50 with a sell-off into the 6720 close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

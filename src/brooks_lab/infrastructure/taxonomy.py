@@ -27,6 +27,7 @@ class Taxonomy:
     """Frozen label vocabulary with synonym maps."""
 
     schema_version: int = LABEL_SCHEMA_VERSION
+    taxonomy_version: str = ""
     day_types: frozenset[str] = field(default_factory=frozenset)
     events: frozenset[str] = field(default_factory=frozenset)
     day_type_synonyms: dict[str, str] = field(default_factory=dict)
@@ -82,6 +83,7 @@ def load_taxonomy(path: Path) -> Taxonomy:
         raise ValueError(f"taxonomy {path} schema_version {version} != {LABEL_SCHEMA_VERSION}")
     return Taxonomy(
         schema_version=version,
+        taxonomy_version=str(raw.get("taxonomy_version", "")),
         day_types=_string_set(raw.get("day_types"), "day_types"),
         events=_string_set(raw.get("events"), "events"),
         day_type_synonyms=_string_map(raw.get("day_type_synonyms", {}), "day_type_synonyms"),

@@ -46,6 +46,10 @@ class DayType(StrEnum):
     TRADING_RANGE_BEAR_BREAKOUT = "trading_range_bear_breakout"
     BROAD_BULL_CHANNEL = "broad_bull_channel"
     BROAD_BEAR_CHANNEL = "broad_bear_channel"
+    # ADR-013 (R-FINISH 8b): bare bull_channel re-admitted as its own day type;
+    # width (broad/tight/unspecified) is resolved by on-chart qualifier, else a
+    # width_unspecified modifier + review.
+    BULL_CHANNEL = "bull_channel"
     # v1.3 (ADR-011): reversal_day REMOVED - use direction-specific ids below.
     TREND_REVERSAL_TO_BULL = "trend_reversal_to_bull"
     TREND_REVERSAL_TO_BEAR = "trend_reversal_to_bear"
@@ -139,6 +143,30 @@ class LabelSource(StrEnum):
     ENGINE = "engine"
 
 
+class SessionStartSource(StrEnum):
+    """Evidence source for ``starts_at_session_open`` (ADR-013)."""
+
+    TITLE = "title"
+    NOTE = "note"
+    MARKER = "marker"
+    NONE = "none"
+
+
+class NeedsReviewReason(StrEnum):
+    """Enumerated reason a migrated/unmapped row needs human review (ADR-013)."""
+
+    LOSSY_MIGRATION = "lossy_migration"
+    UNKNOWN_ID = "unknown_id"
+    MISSING_EVIDENCE = "missing_evidence"
+    AMBIGUOUS_BOUNDARY = "ambiguous_boundary"
+    AMBIGUOUS_DIRECTION = "ambiguous_direction"
+    DIRECTION_MISSING = "direction_missing"
+    REGIME_DIRECTION_MISSING = "regime_direction_missing"
+    DAY_TYPE_USED_AS_EVENT = "day_type_used_as_event"
+    WIDTH_UNSPECIFIED = "width_unspecified"
+    ALTERNATIVE_MAPPING = "alternative_mapping"
+
+
 class EventRole(StrEnum):
     """What the event row IS (reviewer `kind` axis, see ADR-007/ADR-008)."""
 
@@ -163,6 +191,53 @@ class ChartTime(BaseModel):
     tz: str = Field(default=AXIS_TIMEZONE, min_length=1)
 
 
+class AxisStyle(StrEnum):
+    """Chart x-axis style (schema v3; see docs/LABEL_SCHEMA.md)."""
+
+    PT_0630_1300 = "pt_0630_1300"
+    ET_STYLE_0900_1500 = "et_style_0900_1500"
+    OTHER = "other"
+    NONE = "none"
+
+
+class OpenDir(StrEnum):
+    """Direction of the first hour (anchor, schema v3)."""
+
+    UP = "up"
+    DOWN = "down"
+    FLAT = "flat"
+
+
+class CloseVsOpen(StrEnum):
+    """Day close versus open (anchor, schema v3)."""
+
+    ABOVE = "above"
+    BELOW = "below"
+    NEAR = "near"
+
+
+class AxisInfo(BaseModel):
+    """What the x-axis shows (schema v3, optional on legacy labels)."""
+
+    model_config = ConfigDict(frozen=True)
+
+    style: AxisStyle = AxisStyle.OTHER
+    first_label: str = ""
+    last_label: str = ""
+
+
+class Anchors(BaseModel):
+    """Cheap objective anchors used to validate date/time against real bars."""
+
+    model_config = ConfigDict(frozen=True)
+
+    open_dir_first_hour: OpenDir = OpenDir.FLAT
+    day_close_vs_open: CloseVsOpen = CloseVsOpen.NEAR
+    high_of_day_bar_index_hint: int | None = Field(default=None, ge=0)
+    low_of_day_bar_index_hint: int | None = Field(default=None, ge=0)
+    n_bars_visible: int | None = Field(default=None, ge=0)
+
+
 class ExtractionMeta(BaseModel):
     """Provenance of one extraction (which provider/model/prompt produced it)."""
 
@@ -171,6 +246,9 @@ class ExtractionMeta(BaseModel):
     provider: str = Field(min_length=1)
     model_id: str = Field(min_length=1)
     prompt_version: str = Field(min_length=1)
+    taxonomy_version: str = Field(
+        default="", description="Vocabulary version (e.g. 1.3); empty = legacy unstamped."
+    )
     extracted_at: datetime.datetime | None = None
 
 
@@ -215,6 +293,31 @@ class EventLabel(BaseModel):
         default=None,
         description="Pixel span [start, end] for axis-less images; null when unused.",
     )
+    end_bar_index_hint: int | None = Field(
+        default=None,
+        ge=0,
+        description="Optional end bar index (schema v3 compound events).",
+    )
+    needs_review: bool = Field(
+        default=False,
+        description="True when a lossy migration or unmapped id requires human review.",
+    )
+    mapped_from: str | None = Field(
+        default=None,
+        description="Legacy id this row was read from during migration (ADR-013).",
+    )
+    rule_id: str | None = Field(
+        default=None,
+        description="Migration-table rule id applied to this row (ADR-013).",
+    )
+    linked_to: str | None = Field(
+        default=None,
+        description="Opaque id of a linked counterpart row (e.g. spike<->channel split).",
+    )
+    needs_review_reason: NeedsReviewReason | None = Field(
+        default=None,
+        description="Enumerated review reason; null when needs_review is False.",
+    )
     evidence: str = Field(
         default="", description="What text/graphic on THIS image supports this event."
     )
@@ -241,6 +344,41 @@ class DayLabel(BaseModel):
     day_type: DayType = DayType.OTHER
     day_type_confidence: float = Field(default=0.5, ge=0.0, le=1.0)
     session_summary: str = ""
+    scope_ok: bool | None = Field(
+        default=None,
+        description="P11 scope filter: True/False from v3 responses; None = legacy label.",
+    )
+    scope_note: str = ""
+    axis: AxisInfo | None = None
+    anchors: Anchors | None = None
+    needs_review: bool = Field(
+        default=False,
+        description="True when a lossy day_type migration requires human review.",
+    )
+    mapped_from: str | None = Field(
+        default=None,
+        description="Legacy id this day-type was read from during migration (ADR-013).",
+    )
+    rule_id: str | None = Field(
+        default=None,
+        description="Migration-table rule id applied to this day (ADR-013).",
+    )
+    needs_review_reason: NeedsReviewReason | None = Field(
+        default=None,
+        description="Enumerated review reason; null when needs_review is False.",
+    )
+    starts_at_session_open: bool | None = Field(
+        default=None,
+        description="True/False from title/note/marker evidence; None = unknown (ADR-013).",
+    )
+    starts_at_session_open_source: SessionStartSource | None = Field(
+        default=None,
+        description="Evidence source for starts_at_session_open (title|note|marker|none).",
+    )
+    modifiers: list[str] = Field(
+        default_factory=list,
+        description="Day-level modifiers (e.g. width qualifiers); see ADR-013.",
+    )
     events: list[EventLabel] = Field(default_factory=list)
     extraction_meta: ExtractionMeta
 

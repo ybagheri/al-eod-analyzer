@@ -1,180 +1,122 @@
-# DECISIONS (ADR log)
 
-## ADR-001 — Tech stack and quality gate (2026-10-11, accepted)
+## ADR-012 - Master re-plan v2.6: tiered labels, market-data-first, validator-gated writes (2026-10-19, accepted)
 
-- Context: Phase 0 must fix the stack so later phases (extraction → engine → MQL5)
-  share one toolchain on Windows with restricted internet.
-- Decision: Python 3.11+ (PEP 621 `pyproject.toml`, `src` layout, `brooks` console
-  script); domain-driven layers; Pydantic v2 schemas; Typer CLI + Rich output;
-  ruff (lint+format), mypy `--strict`, pytest + coverage (fail-under 85) +
-  Hypothesis; `python -m tasks check` as the canonical gate on Windows
-  (`make check` delegates to it); offline-first, network optional/pluggable.
-- Alternatives: Poetry (rejected: extra installer, restricted net); Click (rejected:
-  Typer gives types + docs with less code); flake8/black split (rejected: ruff does
-  both, faster, offline wheel).
-- Consequences: every commit must pass the gate; tests never touch paid/online APIs;
-  all thresholds live in `config/*.yaml`.
+- Context: the 2026-10-19 wave finished R-FINISH (extraction_queue 244/244
+  filled, 0 pending, 162 batch-1 labels, 0 quarantines, pytest 166 green),
+  but the roadmap to Phases 6-12 was unworkable: the old plan implied
+  vision-labeling all 1678 unique charts by file exchange (~800+ agent
+  turns; P1), market data (Phase 5b) was not started while being the
+  critical path (P2), axis/time ambiguity was unresolved (P3), dataset
+  size was never tied to statistical need (P12/P13), and several process
+  failures (hand-written JSON, BOM, copy-slip, stale-prompt overwrite)
+  kept recurring (P5). The user supplied a master re-plan prompt (v2.6,
+  now saved verbatim as `docs/PLAN_V2.md`, SHA-256 in
+  `docs/PLAN_V2.sha256`). This ADR records the adoption and the decisions
+  that follow from it. `docs/MASTER_PROMPT.md` remains the reference for
+  architecture/principles but is superseded by `docs/PLAN_V2.md` for
+  phase order, dataset sizing and process.
+- Decision (summary; normative text is PLAN_V2 itself):
+  1. Images are ground truth for EVALUATION, not the product; the product
+     is a deterministic engine on real M5 bars. Phase 5b (market data)
+     jumps ahead of further extraction.
+  2. Scope is data-driven and newest-first: coverage C comes from the
+     broker feed (`US500` CFD and/or stitched futures contracts), N_cov
+     decides Case A/B/C sizing (ADR-012 sizing table in PLAN_V2 §3), and
+     the chronological split freezes the newest block as Gold-Test
+     (`splits.test_start_date`; boundary never moves).
+  3. Tiered labels: Bronze (title-map day_type + bronze sanity), Silver-Dev
+     (vision, compact schema v3), Gold-Test (human-reviewed, frozen,
+     newest block), Hard set (active learning, dev only). Label-only pool
+     outside coverage. R-FINISH: in-progress work is finished (now
+     complete); R-NEW: every NEW chart sent to vision must be inside
+     coverage, newest block first. Charts used to design the
+     taxonomy/prompt (the 33 originals + 38 calibration charts) are
+     contaminated by image_id AND session date; contaminated dates never
+     enter Gold-Test.
+  4. Extraction v3: compact schema with `anchors` (bar-index hints),
+     validator-gated `brooks write-response` (atomic, BOM-less, strict),
+     dirty-tree guard, migration table `config/taxonomy_migrations.yaml`
+     with quality: exact|lossy so future enum changes never invalidate
+     stored labels; taxonomy v1.3 is frozen for bulk labeling (P6).
+  5. Public-safety policy (P9): the repo stays PUBLIC (user decision;
+     old checkpoint A retired). `scripts/public_safety_scan.py` scans the
+     working tree and full git history; images, `data/`, market data,
+     `config/local.yaml`, secrets, personal paths and >1 MB blobs must
+     never be tracked; a flagged item is a USER CHECKPOINT.
+  6. Process (P5, P8): `docs/STATUS.yaml` is the single source of status
+     (synced to README/ROADMAP/HANDOFF by `scripts/sync_status.py` with a
+     failing test); `scripts/backup.py` zips `artifacts/` before bulk
+     steps; `python -m tasks check` gains a plan-compliance check
+     (STATUS schema, one in_progress step, evidence files, Gold-Test
+     frozen hash, public-safety, human-label history, `S<k>:` commit
+     format); git hooks (`.githooks/`, `core.hooksPath`) and CI
+     (`.github/workflows/gate.yml`) enforce the same gate; steps run on
+     `step/S<k>-<name>` branches, merged to main only after user
+     approval, tagged `S<k>-done`.
+- Consequences: ROADMAP.md is rewritten to the S0..S13 table with the
+  statuses at adoption (Phases 0-4 done; S0 just starting; S1..S13
+  pending); no further chart labeling under the old workflow (R-NEW
+  governs everything); similarity gate (S3) decides evaluation tolerance
+  (GO-FINE / GO-STRUCTURAL / STOP); docs stale text is fixed in S0; any
+  deviation from PLAN_V2 requires an ADR and explicit user approval.
 
-## ADR-002 — Implementation strategy: file-exchange vision first (2026-10-11, accepted)
+## ADR-013 - Legacy-id migration decisions (R-FINISH 8b, 2026-10-20, accepted)
 
-- Context: coding-agent hosts are not guaranteed free vision models; laptop GPU is
-  weak (MX 355 2 GB); no API keys on this machine.
-- Decision: Phase 3 starts with `FileExchangeVisionClient` (request/response JSON
-  files, agent-in-the-loop), pluggable provider interface, model id recorded per
-  extraction; 5-image pilot reviewed before full run; no training/fine-tuning in the
-  initial plan; local vision only as a later benchmarked experiment.
-- Consequences: extraction works with zero keys; provider/model must be verified at
-  use time, never assumed.
-
-## ADR-003 — HANDOFF self-reference convention (2026-10-12, accepted)
-
-- Context: the protocol demands a truthful, current `HANDOFF.md` in every commit,
-  but updating HANDOFF itself changes the repo, risking an endless commit loop.
-- Decision: `HANDOFF.md` names the phase commit hash and the docs-sync commit hash
-  (both already pushed); docs-sync commits are self-describing (`docs: ...`) and need
-  no further follow-up. A one-behind header that names pushed commits is valid.
-- Consequences: max one docs-sync commit per phase; headers stay truthful without
-  regress.
-
-## ADR-004 — Taxonomy v1 frozen; Pacific axis time; review-queue design (2026-10-12, accepted)
-
-- Context: extraction (Phase 3) needs a controlled vocabulary and strict schema
-  before any label is produced; Brooks chart axes show US Pacific time.
-- Decision: freeze `config/taxonomy.yaml` as v1 (14 day types incl. `other`,
-  38 event kinds, 4 outcomes, 3 directions, curated synonym maps). Times are stored
-  as `HH:MM` plus `tz`, default `America/Los_Angeles`. Unmapped wording is kept in
-  `raw_label` with `label=None` (validated: unmapped events require a raw label)
-  and surfaced via a counted review queue with difflib merge suggestions.
-- Alternatives: free-text labels (rejected: unmeasurable); forcing every wording
-  into a canonical id (rejected: silent information loss).
-- Consequences: taxonomy changes need a new schema version + ADR; `migrate_day_label`
-  handles the pre-v1 camelCase stub shape only.
-
-## ADR-005 — Pilot extraction by the coding agent via file exchange (2026-10-12, accepted)
-
-- Context: no paid vision API is configured; the coding agent (Muse Spark via
-  opencode) can view images directly, so it acted as the file-exchange reader for
-  the 5-image pilot (model id `muse-spark-opencode`, prompt `extract_v1`).
-- Decision: pilot labels are first-pass extractions by the agent, recorded with
-  full provenance in `extraction_meta`; they are NOT yet human-reviewed ground
-  truth (review + gold set are Phase 4). Standalone "Bear Surprise" with large
-  bars was mapped to `major_bear_surprise` with moderated confidence (judgment
-  call, raw wording preserved); genuinely novel wording (Triangle, HST, MTR, …)
-  went to the review queue unmapped.
-- Consequences: Phase 4 must independently review all 5 pilot labels; future
-  extractions record their own provider/model ids for comparability.
-
-## ADR-006 — Taxonomy v1.1: user-approved patterns (2026-10-12, accepted)
-
-- Context: the 45-item review queue held real Brooks vocabulary (OO, ii, Triangle,
-  TTR, HST, MTR, LLDB, traps). The user supplied definitions and approved merges.
-- Decision: add 8 canonical ids (`outside_outside`, `inside_inside`, `triangle`,
-  `tight_trading_range`, `head_and_shoulders_top`, `major_trend_reversal`,
-  `lower_low_double_bottom`, `midday_reversal`) + synonyms; map traps to
-  `failed_breakout` and trend-resumption to `breakout` (direction set by labeller:
-  bear/bull from the wording); keep TBTL, Minor reversal, Midpoint of day,
-  Measuring Gap, Minor LL/HL, H4/L4, Failed High 2, Late-test-of-Open unmapped.
-  `HH DT` confirmed as Higher-High DT → interim parent `double_top`
-  (dedicated id deferred to v1.2). Label schema stays v1 (additive, compatible);
-  vocabulary tracked as `taxonomy_version: "1.1"`. Existing labels remapped via
-  `review-apply` with reviewer "ybagheri (taxonomy v1.1)" — source=human is
-  accurate because the canonical assignments are human decisions.
-- Consequences: normaliser now also strips dots/parens (`Ext. Triangle` matches);
-  engine Phase 6 must cover the new ids (esp. ii/oo/triangle/MTR detection).
-
-## ADR-007 — Reviewer-driven schema extension + conventions (2026-10-12, accepted)
-
-- Context: deep human review of 10 labels exposed systematic needs: text-vs-position
-  certainty split, base+modifier composition (instead of id explosion), claim-based
-  outcomes, result-direction, per-image clock incomparability, dateless images.
-- Decision: (1) additive optional fields only — `modifiers`, `role` (EventRole:
-  pattern/entry_signal/expectation/day_part/structure/exit_signal/day_phase),
-  `label_explicit`, `placement`, `x_px`; `date` becomes optional (null = unverified
-  on-chart). Label schema stays v1 (backward compatible both directions).
-  (2) Conventions: outcome = did the label's claim happen; direction = result
-  direction; evidence from current image only; stacked notes = one row;
-  position from structure never text; qualified notes scored per claim.
-  (3) Feed-timezone theory (PT vs Central feeds) recorded but NOT applied:
-  times stay as-printed with PT default + note; Phase 5 resolves per feed.
-  (4) Prompt `extract_v2.md` carries the five reviewer rules; CLI default moved
-  to v2 (v1 labels keep their provenance; resume distinguishes by version).
-- Consequences: engine/eval phases must use the split confidences and modifiers;
-  price-anchors beyond `price_hint` deferred to Phase 5; support/resistance ids
-  deferred to v1.2.
-
-## ADR-008 — Review round 2: roles, bare surprise, prompt rules (2026-10-12, accepted)
-
-- Context: round-2 review fixed directions/outcomes across 7 labels, demanded the
-  reviewer `kind` axis (pattern/entry/advice/context/...) and exposed model-added
-  words ("major", template-placement evidence).
-- Decision: add EventRoles CONTEXT/ADVICE/BAR_PATTERN and EventKinds
-  `bear_surprise` (bare text only; "Major" stays major) + `trend_line`; remap the
-  bare cases (08-03, 08-09). Day types stay canonical (broad_bull_channel and
-  reversal_day already exist — no free strings needed). Prompt v2 gains 13 rules
-  (compound-note replaces context-clause; + identity/UI/marker/abbreviation/target/
-  outcome/day-quality/advice/scale/reuse/level-check/numbers) plus the approved
-  pattern glossary; v2 unused by any extraction yet, so no version bump.
-  `outcome: null` for advice rows REJECTED (breaks rate math): use unclear +
-  "no testable claim" reason. session_bar_no/label_tz_group/linked_to deferred.
-- Consequences: extract now also skips gold labels without --clobber-reviewed;
-  engine must treat direction as result-direction and outcome as claim-based.
-
-## ADR-009 — Review round 3: resumption regime, new ids, observed mapping (2026-10-12, accepted)
-
-- Context: round-3 review reworked 8 labels, fixed numbers throughout, and vetoed
-  the Measuring-Gap demotion (drawn levels must stay as structures).
-- Decision: add DayType `bull_trend_resumption` (TR open -> breakout -> resumption)
-  and EventKinds `low_4` (fourth-entry signal) + `measuring_gap` (breakout gap
-  with MM marker); taxonomy v1.2 (still schema v1, additive). Reviewer outcome
-  words map as: observed/confirmed -> success (structure seen, NOT profitability),
-  unverified -> unclear + reason, failed -> fail, partial -> partial. Bare
-  "Bear Surprise" demotions stand except where drawn target lines exist (aa65
-  veto: keep as structures). HST stays parent-mapped (double_top + alt note).
-  Support/resistance/open-of-day/session_bar_no/linked_to/breakout_dir/H3 ids
-  deferred again.
-- Consequences: success rates measure annotation-claim fulfilment, never edge;
-  Phase 7 must state this; engine needs the new regime/id coverage.
-
-## ADR-010 — Batch-1 intake: filenames carry free labels (2026-10-12, accepted)
-
-- Context: user supplied a 2044-file batch (`data/raw_batch1/`, same ES/M5 source,
-  2018-11-18..2026-10-14) whose filenames embed the source author's day reading as
-  a title plus a date (`SP500-Emini-M5-<Title>_YYYY_MM_DD.jpg`). Two files were
-  unusable (corrupt jpg 2023-07-10; tiny png 2026-10-14) and were deleted on user
-  instruction; re-ingest totals 2042 (ok=1678, hash-duplicates=364).
-- Decision: treat titles as PROVISIONAL human hints, never gold. New domain module
-  `title_taxonomy.py` plus `brooks title-map` CLI produce
-  `artifacts/title_map_batch1.json` from deterministic regex rule tables (no
-  taxonomy change, no schema change). Imperfect coverage is accepted — 1820/2042
-  records get a canonical day_type, 184 unique unmapped titles remain for review
-  context; events map independently. Batch manifest/stats/title-map are separate
-  artifacts; the gold-33 manifest stays untouched. Images remain untracked
-  (`data/raw_batch*/` in .gitignore).
-- Consequences: extraction calibration compares vision day_type against the title
-  day_type to score the free labels before wave scaling; title rule extensions are
-  additive and logged in HANDOFF; Phase 5b calendar pass must normalise the
-  weekend-dated (29) and undated (1) filenames; market-data attach and gold logic
-  must not consume title ids directly.
-
-## ADR-011 ?? Taxonomy v1.3: direction-specific TTR, compound TR-breakout, no bare reversal day (2026-10-17, accepted)
-
-- Context: round-5 user review of all calibration pages found (a) every
-  trending trading range sample resolved one direction, (b) `"Reversal Day"`
-  adds nothing over the direction-specific `trend_reversal_to_bull/bear`
-  ids, and (c) end-of-day breakouts out of a mostly-range session need a
-  compound day type (`10401c705b30` ~66% TR + late bear breakout).
-- Decision: taxonomy v1.3 - ADD `bull_trending_trading_range`,
-  `bear_trending_trading_range`, `trading_range_bull_breakout`,
-  `trading_range_bear_breakout`; REMOVE `trending_trading_range` and
-  `reversal_day` from the vocabulary (legacy strings may appear only in
-  history archives/queue responses, never in new output). Title rules map
-  `Trending-TR-Bear/Bull` to the direction-specific ids; bare `Reversal`
-  titles fall to the unmapped bucket for vision resolution. Prompt v2
-  gains the direction/compound rules. 10 labels remapped via review-apply
-  (6 TTR all bear-trending; 61527045af90 -> trend_reversal_to_bear;
-  a9d707ed92f6 -> trend_reversal_to_bull; 10401c705b30 and
-  60c97519d0a5 -> trading_range_bear_breakout).
-- Consequences: filename-title coverage drops 1820/2042 -> 1768/2042 (90
-  previously-generic titles now resolve via vision during wave scaling);
-  v1.3 day strata are direction-aware for the playbook and engine; old
-  report/agreement numbers are not comparable across the vocab change.
+- Context: after the R-FINISH conversion pass (243/244 queue responses
+  mapped, 0 quarantines), stored labels still carried legacy taxonomy ids
+  (bull_channel, trending_trading_range, reversal_day,
+  small_pullback_bull/bear_trend_from_open as day types; low_2_top,
+  wedge_bull_channel, triple_top, parabolic_wedge, spike_and_channel and
+  day-type ids used as events inside `events`). A first migration table
+  demoted these to `other`/`null` + bare needs_review, which loses
+  attributes. The user ruled on every mapping (decisions verbatim below).
+  Taxonomy stays v1.3: no new event ids, no version bump; only a
+  day-type enum re-admission (`bull_channel`), a day-level modifier list,
+  a session-open-provenance field and an enumerated
+  `needs_review_reason` are added (schema-additive, see the ADR).
+- Decisions:
+  1. `bull_channel` (day type) is NOT renamed by id. Mapping is decided by
+     the on-chart qualifier in the title/note text: "tight"/"small
+     pullback" -> `small_pullback_bull_trend`; "broad" ->
+     `broad_bull_channel`; bare "channel" -> `bull_channel` stays canonical
+     with width=unspecified. `bull_trending_trading_range` is a separate
+     day-type symbol still; do not merge it with `broad_bull_channel`.
+  2. Dropping "from_open" from an id is allowed ONLY if the information is
+     kept: new field `starts_at_session_open` (true/false/unknown) plus
+     `starts_at_session_open_source` (title|note|marker|none). Evidence
+     must come from the title/note wording or a session-start marker
+     (dotted vertical line / date label) directly before the first bar of
+     the move; the id itself is NOT evidence and the first visible bar is
+     NOT the session open (prior-session bars may be visible). Without
+     image evidence: unknown + needs_review (reason missing_evidence).
+  3. Compound legacy ids map structurally, never blindly to null:
+     `low_2_top` -> `l2` + modifier `at_top` (+ expectation recorded);
+     `wedge_bull_channel` -> event `channel` + modifier `with_wedges`
+     (width qualifier stays a modifier; none -> width unspecified);
+     `triple_top` -> `double_top` + touches=3 (alternative reading
+     `range_resistance` kept in review); `parabolic_wedge` -> `wedge` +
+     modifier `parabolic` + `at_top`/`at_bottom` implied by direction
+     (title first, then dotted-line slope; undecided -> needs_review
+     reason ambiguous_direction); `spike_and_channel` -> split into two
+     phase rows (`spike` + `channel`, linked, direction from the move)
+     when the title evidences it, else needs_review (missing_evidence).
+     Remaining unmappable legacy ids go to the S5 review pass as
+     `label: null` + `raw_label` + an enumerated
+     `needs_review_reason` (never a bare null).
+- Conditions common to every lossy rule (hard guarantees):
+  - `raw_label` is always kept verbatim.
+  - Every migrated row records `mapped_from` (old id) and `rule_id`
+    (rule name in `config/taxonomy_migrations.yaml`) and emits a log line.
+  - No rule may change `direction` or `outcome` of a row (verified by
+    charts-own-image tests).
+  - Each rule has a test against the stored label of the chart(s) it came
+    from (tests/integration/test_migration_rules.py).
+  - The dry run (12 charts, migration replay on stored labels, run on a
+    branch/copy after checkpoint commit + backup) reports: rows per
+    chart, remapped count by rule_id, needs_review count by reason,
+    attributes lost (must be 0) and any row whose direction or outcome
+    changed (must be empty).
+- Consequences: `config/taxonomy_migrations.yaml` gains handler-backed
+  rules (`taxonomy_migrations` + rule_id); loader emits `mapped_from`,
+  `rule_id` and `needs_review_reason`; `scripts/migration_dryrun.py`
+  produces `artifacts/migration_dryrun.json` on request.

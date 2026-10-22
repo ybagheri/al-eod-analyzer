@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2026-01-05",
   "day_type": "trend_reversal_to_bear",
   "day_type_confidence": 0.7,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:40",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue Opening trading range with buying pressure text at bottom left with chips 6947.23/6944.50",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "dark opening bars 6933-6945 with green arrows 23:20-23:30",
       "placement": null,
       "price_hint": 6933.0,
       "raw_label": "Opening trading range with buying pressure (23:00-23:40 low 6933)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": 12,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "00:55",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "green Bull channel text along the rising run with magenta dotted truncated wedge above",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Bull channel text with magenta dotted channel top rising through bars 12/18/24 to the wedge top",
       "placement": null,
       "price_hint": 6961.0,
       "raw_label": "Bull channel from the open (23:05-00:50 high 6961)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:05",
@@ -57,6 +71,7 @@
       "bar_index_hint": 26,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:25",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "magenta Truncated wedge text above the magenta dotted wedge into the 6960s top with red arrow cluster at 01:20",
       "label": "truncated_wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta Truncated wedge text with dotted apex at 01:05 and red arrows 01:20-01:35 selling off",
       "placement": null,
       "price_hint": 6963.75,
       "raw_label": "Truncated wedge top reversal (00:20-01:20 high 6963.75)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "00:20",
@@ -82,6 +102,7 @@
       "bar_index_hint": 36,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:00",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "blue Support and blue Minor reversal texts with green dotted 6948 line, red Double top in bear channel text with red dotted line and red arrows at 02:55",
       "label": "double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Support Minor reversal texts at the bar 36 lows 6948 floor with green arrows 02:40 then red dotted 6956.5 double top and red arrows 02:55",
       "placement": null,
       "price_hint": 6956.5,
       "raw_label": "Support minor reversal then double top in bear channel (01:40-02:55 high 6956.5)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:40",
@@ -107,6 +133,7 @@
       "bar_index_hint": 60,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "05:05",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "green Failed double bottoms in bear channel text at the green dotted 6938 floor and bars 60, 72 labels with red arrows 04:40 and 05:00",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "magenta dotted bear channel to the green dotted 6938 double-bottom floor with stacked red arrows 03:25-05:00",
       "placement": null,
       "price_hint": 6938.0,
       "raw_label": "Bear channel down the afternoon (02:55-05:00 low 6938)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "02:55",
@@ -133,9 +165,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "13a75f921985",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bull Channel from Open, Wedge Top Reversal into Bear Channel' (overnight ET+13 hrs, Jan 5/6). Opening trading range with buying pressure, bull channel rally to a truncated wedge top (01:05 high 6963.75), support minor reversal pig mounts at 6948 (bar 36), double top in bear channel (red dotted 6956.5) and bear channel down all afternoon with failed double bottoms in bear channel, closing 6944.5. Inset: Back Inside Trading Range."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Channel from Open, Wedge Top Reversal into Bear Channel' (overnight ET+13 hrs, Jan 5/6). Opening trading range with buying pressure, bull channel rally to a truncated wedge top (01:05 high 6963.75), support minor reversal pig mounts at 6948 (bar 36), double top in bear channel (red dotted 6956.5) and bear channel down all afternoon with failed double bottoms in bear channel, closing 6944.5. Inset: Back Inside Trading Range.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

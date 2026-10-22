@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-10-24",
   "day_type": "trading_range",
   "day_type_confidence": 0.6,
@@ -7,6 +9,7 @@
       "bar_index_hint": 12,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:15",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue text and shaded box left",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue shaded box with the Trading range reversal trades text, green dotted floor and bars 12-18",
       "placement": null,
       "price_hint": 6824.0,
       "raw_label": "Trading range reversal trades, first shaded box (22:00-23:15)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": 18,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:15",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "green text",
       "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Double bottom text with green arrows at the range lows before the breakout",
       "placement": null,
       "price_hint": 6816.0,
       "raw_label": "Double bottom in the first box (22:55-23:15 low 6816)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:55",
@@ -57,6 +71,7 @@
       "bar_index_hint": 24,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:45",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "tall bull bars above the shaded box",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "strong bull bars breaking above the box to the 6848 high",
       "placement": null,
       "price_hint": 6840.0,
       "raw_label": "Breakout to new all-time high (23:15-23:45 high 6848)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:15",
@@ -82,6 +102,7 @@
       "bar_index_hint": 36,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "00:50",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "red text and dotted line",
       "label": "double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red dotted ceiling with the first Double top red text and red arrows starting the pullback",
       "placement": null,
       "price_hint": 6848.0,
       "raw_label": "Double top at the all-time high (23:30-00:50 high 6848)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:30",
@@ -107,6 +133,7 @@
       "bar_index_hint": 60,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:20",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "blue shaded box right",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue shaded box with the Tight trading range and Trading range day consolidation at new all-time high texts, bars 36-72",
       "placement": null,
       "price_hint": 6834.0,
       "raw_label": "Tight trading range, consolidation at new all-time high (01:00-03:20)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:00",
@@ -132,6 +164,7 @@
       "bar_index_hint": 72,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "03:35",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "red text top right",
       "label": "double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "second red Double top text over the red dotted ceiling with red arrows before the final break",
       "placement": null,
       "price_hint": 6840.0,
       "raw_label": "Second double top attempt (02:50-03:35 high 6840)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "02:50",
@@ -158,9 +196,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "d2bed493ddf8",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Breakout to New All-time High Then Trading Range Day' (ET+12 hrs, Oct 24-25; inset dailies Wed Fri with big gap up and breakout). Trading range reversal trades in the first shaded box with a double bottom, the breakout spike to the new all-time high 6848 followed by the double top, then the tight trading range consolidation at the all-time high with repeated double top attempts."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Breakout to New All-time High Then Trading Range Day' (ET+12 hrs, Oct 24-25; inset dailies Wed Fri with big gap up and breakout). Trading range reversal trades in the first shaded box with a double bottom, the breakout spike to the new all-time high 6848 followed by the double top, then the tight trading range consolidation at the all-time high with repeated double top attempts.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

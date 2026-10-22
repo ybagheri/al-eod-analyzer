@@ -36,9 +36,26 @@ data/raw_batch1/**
 
 # Generated artifacts (large/intermediate outputs stay local)
 artifacts/crops/
+artifacts/overlays/
 artifacts/review*/
 artifacts/eval/backtests/
 *.log
+
+# Batch-3 calibration support files (image-derived OCR: contains price-axis
+# levels -> market data; and cross-session handoff scratch). Local only.
+tests/fixtures/batch3/
+BATCH3_HANDOFF.md
+
+# Market data and MT5 exports are NEVER committed (plan v2.6 S0 / rule 11)
+data/market/
+*.csv
+!data/README.md
+config/local.yaml
+wheelhouse/
+_backups/
+
+# MT5 terminal output folders (project files under mql5/ are tracked, exports are not)
+MQL5/Files/
 
 # OS / editor
 Thumbs.db
@@ -46,3 +63,5 @@ Desktop.ini
 .DS_Store
 .vscode/
 .idea/
+
+docs/AL_EOD_REPLAN_PROMPT_v2.6.md

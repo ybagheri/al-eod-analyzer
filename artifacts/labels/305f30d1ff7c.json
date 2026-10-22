@@ -1,0 +1,276 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-05-16",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Parabolic Wedge text over shaded top box and tan climax bars 07:35-08:05",
+      "label": "climax",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "parabolic wedge buy climax at 5352 marked the top",
+      "placement": null,
+      "price_hint": 5352.0,
+      "raw_label": "Parabolic Wedge buy climax (08:00 top 5352)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "top blue shaded box with red dotted 5340 and orange arrows down to 10:25",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range chopped down toward the orange dotted breakout",
+      "placement": null,
+      "price_hint": 5337.0,
+      "raw_label": "Bear trending trading range day (08:10-10:20 blue box)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "top blue shaded box with red dotted 5340 and orange arrows down to 10:25",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range chopped down toward the orange dotted breakout",
+      "placement": null,
+      "price_hint": 5337.0,
+      "raw_label": "Bear trending trading range day (08:10-10:20 blue box)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Breakout below trading range arrow into the 10:30 tall bear bar and second shaded box",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "breakout below the range started the afternoon bear wedges",
+      "placement": null,
+      "price_hint": 5330.0,
+      "raw_label": "Breakout below trading range (10:30)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Wedge Measured move text with magenta dotted lines under the 11:05 lows",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "wedge low 5325 lifted into the red dotted 5336 test that failed",
+      "placement": null,
+      "price_hint": 5325.0,
+      "raw_label": "Wedge measured move (11:10 low 5325)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted 5336 line with red arrows before 12:40 and blue shaded second box",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "second blue shaded range 5324-5336 rolled sideways-down LH DT red arrows",
+      "placement": null,
+      "price_hint": 5336.0,
+      "raw_label": "Red dotted 5336 second range 11:20-12:20",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted 5336 line with red arrows before 12:40 and blue shaded second box",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "second blue shaded range 5324-5336 rolled sideways-down LH DT red arrows",
+      "placement": null,
+      "price_hint": 5336.0,
+      "raw_label": "Red dotted 5336 second range 11:20-12:20",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Measured move text at bottom right and blue shaded 12:45-13:00 box with close wedge down bar",
+      "label": "measured_move",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "final measured move at close 5321",
+      "placement": null,
+      "price_hint": 5321.0,
+      "raw_label": "Measured move (13:10 close 5321)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "305f30d1ff7c",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Buy Climax, Then Bear Trending Trading Range Day'. A parabolic wedge buy climax at 5352 turns into a bear trending trading range; a breakout below the trading range at 10:30 and wedge lower lows wind to a measured move 5321 near the close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

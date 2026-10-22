@@ -1,0 +1,307 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-01-03",
+  "day_type": "bull_trend_resumption",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded 23:00-00:30 box, red Double tops text with red arrow bar 10, bars 2, 4, 6, 8, 10, 12 labels",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "double tops at red dotted 5965 with bars 2, 4, 8 and opening range trading range reversals",
+      "placement": null,
+      "price_hint": 5965.0,
+      "raw_label": "Opening range double tops (23:10 top 5965)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded 23:00-00:30 box, red Double tops text with red arrow bar 10, bars 2, 4, 6, 8, 10, 12 labels",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "double tops at red dotted 5965 with bars 2, 4, 8 and opening range trading range reversals",
+      "placement": null,
+      "price_hint": 5965.0,
+      "raw_label": "Opening range double tops (23:10 top 5965)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Double bottoms text with green underline near bar 10 lows and green arrows bar 14, 18",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green dotted double bottom lows with bars 6, 10, 12 and higher lows into the breakout at bar 20",
+      "placement": null,
+      "price_hint": 5936.0,
+      "raw_label": "Double bottoms opening range (23:55 low 5936)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Double bottoms text with green underline near bar 10 lows and green arrows bar 14, 18",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green dotted double bottom lows with bars 6, 10, 12 and higher lows into the breakout at bar 20",
+      "placement": null,
+      "price_hint": 5936.0,
+      "raw_label": "Double bottoms opening range (23:55 low 5936)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Breakout failed text with orange dotted line, bars 20, 22 labels and the black bear bar 00:10",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "bar 22 breakout failed at the orange dotted 5968 line",
+      "placement": null,
+      "price_hint": 5968.0,
+      "raw_label": "Breakout failed (00:05-00:15, orange dotted 5968)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "bar 26, 28, 30 labels and green arrow 00:30 near the magenta dotted wedge start",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green Breakout and breakout test then trend resumption text with green bars 26, 28 in the blue shaded opening range box",
+      "placement": null,
+      "price_hint": 5976.0,
+      "raw_label": "Breakout and breakout test then trend resumption (00:15-00:40 bar 34)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Small pullback bull trend text with bar numbers 36, 40, 44, 48, 50, 52, 54, 56, 58, 60, 62 and High 2 Then wedge (High 3) text",
+      "label": null,
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "small_pullback_bull_trend",
+      "modifiers": [],
+      "needs_review": true,
+      "needs_review_reason": "day_type_used_as_event",
+      "outcome": "success",
+      "outcome_reason": "small pullback bull trend with bars 36-62 labels and magenta dotted wedge flag up to the truncated wedge highs",
+      "placement": null,
+      "price_hint": 5996.0,
+      "raw_label": "Small pullback bull trend (bars 36-62, 01:00-04:15)",
+      "role": "pattern",
+      "rule_id": "1.3:small_pullback_bull_trend",
+      "source": "vision",
+      "start_time": {
+        "time": "00:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Truncated wedge and Wedge labels, blue shaded 04:30-05:20 boxes with bars 66, 68, 70, 72, 74, 76, 78, 80",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta Truncated wedge label at bar 62 top, then falling wedge (High 3) and blue shaded late range boxes into 5957",
+      "placement": null,
+      "price_hint": 5957.0,
+      "raw_label": "Truncated wedge top then shaded range (04:05-05:20, close 5957)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "05:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Truncated wedge and Wedge labels, blue shaded 04:30-05:20 boxes with bars 66, 68, 70, 72, 74, 76, 78, 80",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta Truncated wedge label at bar 62 top, then falling wedge (High 3) and blue shaded late range boxes into 5957",
+      "placement": null,
+      "price_hint": 5957.0,
+      "raw_label": "Truncated wedge top then shaded range (04:05-05:20, close 5957)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "7ed831bffc16",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Opening Trading Range Reversals Then Bull Trend Resumption' (overnight ET+13 hrs, Jan 3 session shown 23:00-05:00). Double tops and double bottoms in the opening range with trading range reversals, High 2 breakout and breakout test, then small pullback bull trend to a truncated wedge top after bar 62 (04:15 high 5996), falling wedge, failed selloff and range into close 5957.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

@@ -1,0 +1,245 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-03-20",
+  "day_type": "trend_reversal_to_bear",
+  "day_type_confidence": 0.65,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "22:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Bull trend from the open Buy the close text with green bars 22:10-22:30 and bar 12 label",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green bull bars from open spike lifted to 5740 buy climax 12",
+      "placement": null,
+      "price_hint": 5740.0,
+      "raw_label": "Bull trend from the open (22:00 spike 5740)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "21:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Buy climax text, magenta Wedge Top Possible exhaustion text with pink dotted wedge, red arrows 23:05-23:30 (bar 18)",
+      "label": "climax",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "buy climax at wedge top with orange dotted 5766 line and pink wedge lines; bull trap after",
+      "placement": null,
+      "price_hint": 5765.0,
+      "raw_label": "Buy climax wedge top, possible exhaustion (23:05 high 5765)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Bull trap text with red arrow into 00:05-00:15 bear bars, orange dotted 5735 line",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red Bull trap arrows at 00:05 after bar 24 and 00:15 set the sales setup before bear channel",
+      "placement": null,
+      "price_hint": 5745.0,
+      "raw_label": "Bull trap and sell modes (23:35-00:15 highs 5752)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Bear channel Sell lower highs and breakouts text, magenta dotted wedge channel to bar 48, shaded range with red dotted 5731 top",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "wedge selloff stacked 36 and 48 along the pink channel to 5716 (01:35 low)",
+      "placement": null,
+      "price_hint": 5720.0,
+      "raw_label": "Bear channel sell lower highs and breakouts (00:25-01:35)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Measured move text with dotted line to 01:40 lows and pink wedge label at 01:50",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange dotted measured move through bar 48 lows",
+      "placement": null,
+      "price_hint": 5710.0,
+      "raw_label": "Wedge and measured move (01:35 low 5710 bar 48)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Trading range into close Limit order market text, blue shaded 02:00-04:00 box with wedge label, bars 60 and 72, close 5716.50 chip",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range with wedge dip bar 60 (02:35 low 5711), then rally to red dotted 5720 close line and chop bars 72 to close 5716.50",
+      "placement": null,
+      "price_hint": 5716.0,
+      "raw_label": "Trading range into close, limit order market (02:15-04:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "02:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Trading range into close Limit order market text, blue shaded 02:00-04:00 box with wedge label, bars 60 and 72, close 5716.50 chip",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range with wedge dip bar 60 (02:35 low 5711), then rally to red dotted 5720 close line and chop bars 72 to close 5716.50",
+      "placement": null,
+      "price_hint": 5716.0,
+      "raw_label": "Trading range into close, limit order market (02:15-04:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "02:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "5ed5b1dc9aef",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend from Open, Wedge Top Then Bear Channel' (overnight ET+12 hrs, Mar 20 22:00-04:00). Bull trend from open with buy the close, buy climax wedge top exhaustion at 5765 (23:00), bull trap, wedged bear channel selling lower highs/breakouts down to measured move then tight trading range into close at 5716.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

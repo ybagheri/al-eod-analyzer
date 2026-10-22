@@ -1,0 +1,338 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-04-02",
+  "day_type": "broad_bull_channel",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "22:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Big gap down text with magenta channel to wedge bottom text over the 22:15 lows",
+      "label": "gap",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "gap_up",
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "gap down selloff found support at wedge bottom 5234 in the broad bull channel",
+      "placement": null,
+      "price_hint": 5234.0,
+      "raw_label": "Big gap down and wedge bottom (22:15 low 5234)",
+      "role": "pattern",
+      "rule_id": "1.3:gap_up",
+      "source": "vision",
+      "start_time": {
+        "time": "21:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Higher low Double bottom text with green dotted 5238 bottom and shaded blue range into 23:05",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom selloff reversal",
+      "placement": null,
+      "price_hint": 5241.0,
+      "raw_label": "Shaded range 5238-5245 (22:25-23:10)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Higher low Double bottom text with green dotted 5238 bottom and shaded blue range into 23:05",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "higher low double bottom selloff reversal",
+      "placement": null,
+      "price_hint": 5241.0,
+      "raw_label": "Shaded range 5238-5245 (22:25-23:10)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "22:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Double top & trading range reversal text with red arrow and red dotted line below the blue channel top",
+      "label": "double_top",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "double top at red dotted 5250 line and trading range reversal at 23:25 failed below the EMA",
+      "placement": null,
+      "price_hint": 5250.0,
+      "raw_label": "Double top and trading range reversal at 5250 (23:25)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded 23:50-00:10 box with green arrows 00:10 and 00:15 under green dotted bottom",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green shaded bull bars lifted the range up to the channel",
+      "placement": null,
+      "price_hint": 5240.0,
+      "raw_label": "Higher low double bottom 5240 (00:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded 23:50-00:10 box with green arrows 00:10 and 00:15 under green dotted bottom",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green shaded bull bars lifted the range up to the channel",
+      "placement": null,
+      "price_hint": 5240.0,
+      "raw_label": "Higher low double bottom 5240 (00:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge top Trading range reversal text and arrows near the MAG dot line and red boxes 01:05",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge top with red arrows 01:00 at the red shaded setup",
+      "placement": null,
+      "price_hint": 5252.0,
+      "raw_label": "Wedge top and trading range reversal at 5252 (01:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Double bottom text, green dotted 5248, blue shaded box 01:55-02:50 with the green 02:40 arrow",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "shaded blue range with double bottom at 02:00 and 02:35 lows before the breakout",
+      "placement": null,
+      "price_hint": 5248.0,
+      "raw_label": "Double bottom range 02:00-02:45 (5246.75-5251)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Double bottom text, green dotted 5248, blue shaded box 01:55-02:50 with the green 02:40 arrow",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "shaded blue range with double bottom at 02:00 and 02:35 lows before the breakout",
+      "placement": null,
+      "price_hint": 5248.0,
+      "raw_label": "Double bottom range 02:00-02:45 (5246.75-5251)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue Breakout text with green arrows 03:15, 04:00 and close bar at 5262 top",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "bull breakout above the broad bull channel top with 5262.75 chip",
+      "placement": null,
+      "price_hint": 5263.0,
+      "raw_label": "Breakout to 5263 close (03:00-04:00)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "02:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "5abd8ab3baba",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Wedge Bottom, Broad Bull Channel, Trading Range Reversals'. Big gap down (5252), wedge bottom selloff to 5234; double top and trading range reversal up to a broad bull channel trending trading range with doubled bottoms; wedge top and trading range reversal at 01:00; final breakout to 5263 close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

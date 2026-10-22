@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2024-07-17",
   "day_type": "bear_trend_from_open",
   "day_type_confidence": 0.8,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.8,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:30",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue 'Low 2 Top' text above the shaded opening box",
       "label": "l2",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "low 2 top at the opening spike ended the rally and the bear trend began",
       "placement": null,
       "price_hint": 5671.5,
       "raw_label": "Low 2 Top",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:10",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:00",
         "tz": "America/Los_Angeles"
@@ -39,15 +48,18 @@
       "evidence": "orange 'Major bear breakout' text with magenta dotted trendlines breaking the 07:30 lows",
       "label": "breakout",
       "label_explicit": null,
-      "modifiers": [
-        "sell"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "major bear breakout below the opening low drove the trend down",
       "placement": null,
       "price_hint": 5655.0,
       "raw_label": "Major bear breakout",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:45",
@@ -59,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:15",
         "tz": "America/Los_Angeles"
@@ -66,15 +79,18 @@
       "evidence": "two magenta dotted falling lines from the opening box lows to 09:15",
       "label": "wedge",
       "label_explicit": null,
-      "modifiers": [
-        "minor"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "converging falling trendlines rode the first bear leg into the climax zone",
       "placement": null,
       "price_hint": null,
       "raw_label": "double falling trendline wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:45",
@@ -86,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:30",
         "tz": "America/Los_Angeles"
@@ -93,13 +110,18 @@
       "evidence": "orange note line 1 with red dotted LH retest lines 09:00 and 10:15",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "breakout and channel bear trend extended to the exhaustive sell climax low",
       "placement": null,
       "price_hint": null,
       "raw_label": "Breakout and channel bear trend",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:00",
@@ -111,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:45",
         "tz": "America/Los_Angeles"
@@ -118,13 +141,18 @@
       "evidence": "orange 'Exhaustive sell climax' text under the beige-boxed 10:30-10:45 bars",
       "label": "exhaustive_climax",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "exhaustive sell climax low ended the trend and flipped the tape into the trading range",
       "placement": null,
       "price_hint": 5634.5,
       "raw_label": "Exhaustive sell climax",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:25",
@@ -136,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:50",
         "tz": "America/Los_Angeles"
@@ -143,13 +172,18 @@
       "evidence": "orange note line 2 with blue shaded range area from ~10:45",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue shaded trading range zone began after the climax low",
       "placement": null,
       "price_hint": null,
       "raw_label": "Then trading range",
-      "role": "context",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:45",
@@ -161,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:15",
         "tz": "America/Los_Angeles"
@@ -168,13 +203,18 @@
       "evidence": "right edge of the blue shaded zone at the 13:15 close",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "range held through the LH tests (red dotted 5652) and closed inside it",
       "placement": null,
       "price_hint": 5637.0,
       "raw_label": "trading range close",
-      "role": "context",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "13:10",
@@ -186,6 +226,7 @@
       "bar_index_hint": null,
       "confidence": 0.55,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:20",
         "tz": "America/Los_Angeles"
@@ -193,13 +234,18 @@
       "evidence": "red dotted line 11:35-12:15 with sell arrows, magenta dotted falling wedge under it",
       "label": "l2",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "fail",
       "outcome_reason": "sell signals at the range top failed; price stayed in the range",
       "placement": null,
       "price_hint": 5652.0,
       "raw_label": "red dotted LH test in range",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:55",
@@ -212,9 +258,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "b6af63510324",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Low 2 Top, Then Bear Trend'. Reading: opening two-bar bullish spike failed as a Low 2 top at 5671.5 (beige box), the major bear breakout sent the channel down through the double falling pink trendlines with red dotted LH retests (5652.5, 5647.5), the leg ended in an exhaustive sell climax low at 5634.5 (10:35), and the rest of the day printed a trading range (blue shaded zone) with orange/red dotted LH tests (5652) and green buy arrows before closing ~5637. bear_trend_from_open (title map agrees)."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Low 2 Top, Then Bear Trend'. Reading: opening two-bar bullish spike failed as a Low 2 top at 5671.5 (beige box), the major bear breakout sent the channel down through the double falling pink trendlines with red dotted LH retests (5652.5, 5647.5), the leg ended in an exhaustive sell climax low at 5634.5 (10:35), and the rest of the day printed a trading range (blue shaded zone) with orange/red dotted LH tests (5652) and green buy arrows before closing ~5637. bear_trend_from_open (title map agrees).",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

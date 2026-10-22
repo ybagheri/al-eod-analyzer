@@ -1,129 +1,66 @@
 {
-  "schema_version": 1,
-  "image_id": "225420eb92a0",
-  "date": "2024-08-20",
+  "anchors": {
+    "day_close_vs_open": "near",
+    "high_of_day_bar_index_hint": 5,
+    "low_of_day_bar_index_hint": 42,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "flat"
+  },
+  "axis": {
+    "first_label": "07:00",
+    "last_label": "13:15",
+    "style": "pt_0630_1300"
+  },
   "day_type": "trend_reversal_to_bear",
-  "day_type_confidence": 0.7,
-  "session_summary": "Blue title bar: 'Parabolic Wedge, Reversal Down'. A parabolic wedge top at 5643 fails above the open; the wedge measured move and a higher high double top test of open at 09:50 break the nested wedge down to the measured move low 5608, and an expanding triangle afternoon chop closes near 5623.",
+  "day_type_conf": 0.7,
   "events": [
     {
-      "label": "wedge",
-      "raw_label": "Parabolic Wedge top (07:20 at 5643)",
+      "conf": 0.85,
       "direction": "bear",
-      "start_time": {
-        "time": "06:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5643.0,
+      "end_bar_index_hint": 5,
+      "kind": "wedge",
       "outcome": "success",
-      "outcome_reason": "parabolic wedge top at 5643 reversed the market down",
-      "confidence": 0.7,
-      "evidence": "magenta Parabolic Wedge text with dotted lines into the 07:15 spike and orange MM lines"
+      "raw_label": "Parabolic Wedge",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "wedge",
-      "raw_label": "Wedge measured move from high to open (08:10 low 5614)",
+      "conf": 0.75,
       "direction": "bear",
-      "start_time": {
-        "time": "07:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "08:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5614.0,
+      "end_bar_index_hint": 42,
+      "kind": "measured_move",
       "outcome": "success",
-      "outcome_reason": "wedge with measured move from high to open dropped the market to 5614",
-      "confidence": 0.65,
-      "evidence": "magenta dotted wedge into the 08:15 lows with orange Measured move from high to open text"
+      "raw_label": "Measured move from high to open",
+      "start_bar_index_hint": 5
     },
     {
-      "label": "double_top",
-      "raw_label": "Test of open higher high double top (09:00)",
+      "conf": 0.7,
       "direction": "bear",
-      "start_time": {
-        "time": "08:40",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "09:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5627.0,
+      "end_bar_index_hint": 30,
+      "kind": "double_top",
       "outcome": "success",
-      "outcome_reason": "test of open HH double top at 5627 lifted and failed back into the wedge line",
-      "confidence": 0.65,
-      "evidence": "red Test of open text with blue dotted level at 5627 and red arrows 09:05-09:20"
+      "raw_label": "Test of open Higher high double top",
+      "start_bar_index_hint": 11
     },
     {
-      "label": "breakout",
-      "raw_label": "Breakout below nested wedge (09:55 low 5608)",
-      "direction": "bear",
-      "start_time": {
-        "time": "09:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:10",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5608.0,
-      "outcome": "success",
-      "outcome_reason": "breakout below the nested wedge took the day low at 5608",
-      "confidence": 0.65,
-      "evidence": "pink wedge text at bottom with blue dotted nested lines into the 09:55 low"
-    },
-    {
-      "label": "double_bottom",
-      "raw_label": "Higher low double bottom (10:40-11:10)",
-      "direction": "bull",
-      "start_time": {
-        "time": "10:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "11:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5610.0,
-      "outcome": "success",
-      "outcome_reason": "higher low double bottom lifted the market to the expanding triangle",
-      "confidence": 0.6,
-      "evidence": "green arrows at the 10:30-11:10 lows before the 11:20 rally"
-    },
-    {
-      "label": "expanding_triangle",
-      "raw_label": "Expanding triangle (11:20-13:15 chop 5610-5633)",
+      "conf": 0.65,
       "direction": "neutral",
-      "start_time": {
-        "time": "11:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5623.0,
+      "end_bar_index_hint": 58,
+      "kind": "unmapped",
+      "outcome": "unclear",
+      "raw_label": "Expanding triangle",
+      "start_bar_index_hint": 14
+    },
+    {
+      "conf": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": 42,
+      "kind": "wedge",
       "outcome": "success",
-      "outcome_reason": "afternoon expanding triangle chopped between 5610 and 5633",
-      "confidence": 0.6,
-      "evidence": "blue Expanding triangle text with dotted expanding highs at bar 72 and red arrows into 12:45"
+      "raw_label": "Wedge",
+      "start_bar_index_hint": 14
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "225420eb92a0",
+  "scope_note": "",
+  "scope_ok": true
 }

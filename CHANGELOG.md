@@ -8,6 +8,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **S0 (Re-plan, doc sync, safety rails, privacy)**: PLAN v2.6 re-plan
+  (docs/PLAN_V2.md, ADR-012), public-safety scanner (worktree + full-history,
+  1 user-accepted finding), backups, hooks/CI plan-compliance, status sync + tag
+  S0-done.
+- **S1 (Dependency and environment repair)**: core deps
+  (typer/pydantic/PyYAML/Pillow) restructured extras, offline wheelhouse
+  workflow proven in a fresh clone, engine stdlib-only guard; gate green in
+  real CI; tag S1-done.
+- **S2 (Extraction v3: compact schema, validator-gated writes, anchors)**:
+  frozen v3 prompt/taxonomy (template hash f13a1f272d6f), strict
+  `brooks write-response` gate (key whitelist, --replace reviewed-label guard),
+  `brooks extract-batch` tier/sample order + dirty-tree guard, scope report
+  (P11 exclusion), chart-time/anchors; ADR-013 taxonomy migrations with
+  on-chart tests (9 golden fixtures frozen from history; live-queue union);
+  axis-marker registry + auto date check (checked=13 mismatches=0; repaired
+  bb12359b02fb and 3fe93407e2d4 dates); 13/13 calibration re-baselines applied
+  (bb + batch1 + batch2 + batch3): events=79, needs_review=0/79, unmapped=13%,
+  conf<0.5=6%; normalizations disclosed (24:00->00:00, user-approved scope_ok
+  x3, low_2->l2 alias); 44b28b35c386 day_type enum defect fixed to
+  broad_bull_channel; user spot-check 4/4 "ok"; pytest 276 passed; tag S2-done.
+
+### Changed
+
+- Extraction queue is v3-first: 245 request/response pairs now carry compact
+  bar-index-first v3 payloads; labels rebuild deterministically from responses
+  with quarantine semantics (0 quarantines).
+- `expanding_triangle` and other non-enum readings stay as raw unmapped rows
+  (v1.4 enum candidate logged, pending ADR).
+
 - Wave-2 fill-out complete: all remaining 38 wave-2 request-only files answered
   by agent chart re-inspection (2 images per turn) -> extraction_queue now 244
   filled request/response pairs, 0 pending; 113 new labels converted in three

@@ -1,0 +1,245 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-06-13",
+  "day_type": "bear_trending_trading_range",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "23:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrows descending from 22:00 to the 22:45 low with green High 2 lift bar 12",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "two red arrows sold the market down to 5978 and a high 2 lifted it",
+      "placement": null,
+      "price_hint": 5978.0,
+      "raw_label": "Two legs down to High 2 (22:30)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "21:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "00:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green boxed tight bull bars rising 23:15-00:30 with orange dotted top at 6030",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "tight bull micro channel rallied to 6030 overnight",
+      "placement": null,
+      "price_hint": 6030.0,
+      "raw_label": "Strong pullback but tight bull micro channel leg into 00:30 top 6030",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "23:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red arrows at the 00:35 bars with red Lower high major trend reversal text",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "lower high major trend reversal resumed the bear trend from the 6030 top",
+      "placement": null,
+      "price_hint": 6030.0,
+      "raw_label": "Lower high major trend reversal bear trend resumes, do not buy (00:40)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box near the EMA with red dotted 6015 top and orange dotted 6000 bottom",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range grinded sideways-down below the EMA",
+      "placement": null,
+      "price_hint": 6010.0,
+      "raw_label": "Blue shaded bear-trending range 00:50-01:45 near EMA",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "01:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box near the EMA with red dotted 6015 top and orange dotted 6000 bottom",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue shaded range grinded sideways-down below the EMA",
+      "placement": null,
+      "price_hint": 6010.0,
+      "raw_label": "Blue shaded bear-trending range 00:50-01:45 near EMA",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "00:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "02:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted descending wedge with Wedge Measured move orange text at bar 60",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "wedge measured move reached 5976 at the day low",
+      "placement": null,
+      "price_hint": 5976.0,
+      "raw_label": "Wedge measured move down (02:30 low 5976)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "01:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "04:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded late range with green Double bottom Too late to trade text and close bar 80",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "late double bottom lifted the close back to 5985",
+      "placement": null,
+      "price_hint": 5976.0,
+      "raw_label": "Double bottom too late to trade (03:45)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "03:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "1a623b2555bc",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Trending Trading Range Day'. Overnight ET+12: two legs down to a high 2, a tight bull micro channel leg into the 00:30 top, then a lower high major trend reversal resumes the bear trend; wedge measured move down to 5976 ends with a too-late double bottom close near 5985.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

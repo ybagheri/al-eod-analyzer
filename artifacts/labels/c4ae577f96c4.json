@@ -1,0 +1,276 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2023-05-01",
+  "day_type": "bull_trend_resumption",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange 'Weak Buy The Close' text with orange arrow near the shaded opening boxes 4184-4196 and green arrow bars 07:10-07:25",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange Weak Buy The Close text with orange arrow at the opening shaded boxes rally to 4196 then squeeze trend line",
+      "placement": null,
+      "price_hint": 4183.5,
+      "raw_label": "Weak buy the close bull trend from the open (06:45-07:35 low 4183.5)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted starts and tops with red shaded push push flags around 08:00-08:12 highs and red arrows at 08:15",
+      "label": "double_top",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge tops push lift to 4200 with double top and repair boxes at 07:35-08:10 highs",
+      "placement": null,
+      "price_hint": 4201.0,
+      "raw_label": "Push upward reversal wedge with bear push flags (07:40-08:10 high 4201)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green text with green dotted 4184 line and green shaded upside bar boxes 08:25-08:45 with green arrow at 08:40",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green Higher Low Double Bottom text at the green dotted 4184 line with green shaded flag box 08:35-08:45 and green arrows",
+      "placement": null,
+      "price_hint": 4186.0,
+      "raw_label": "Higher low double bottom bull flag (08:20-08:45 low 4186)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 36,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Parabolic Wedge Buy Climax and red Bar 38 Midday Reversal texts with inverted pink dotted wedge trend and bull bars 09:40-09:45",
+      "label": "climax",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta pullback wedges and pink shaded bar 38 reversal of the spy wedges 4200 single highs with a red shaded bar 40-42 at 10:00",
+      "placement": null,
+      "price_hint": 4206.0,
+      "raw_label": "Parabolic wedge buy climax then Bar 38 midday reversal (09:35-10:00 high 4206)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 40,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue dotted channel line and dark shaded bar 10:40-11:10 green shaded, small box then brown shaded 11:10-11:25",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded channel box with red dotted ceiling 4203 and pink dotted wedge into brown shaded 10:45-11:00 shaded bars, red EMA \u0630\u00b2\u0630\u00b5\u0630\u00b4\u0630\u00b5\u0631\u201a bars 11:15-11:25",
+      "placement": null,
+      "price_hint": 4200.0,
+      "raw_label": "Blue channel pullback good buy signal bars but bad context (10:00-11:30)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 40,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:30",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "Blue dotted channel line and dark shaded bar 10:40-11:10 green shaded, small box then brown shaded 11:10-11:25",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "blue shaded channel box with red dotted ceiling 4203 and pink dotted wedge into brown shaded 10:45-11:00 shaded bars, red EMA \u0630\u00b2\u0630\u00b5\u0630\u00b4\u0630\u00b5\u0631\u201a bars 11:15-11:25",
+      "placement": null,
+      "price_hint": 4200.0,
+      "raw_label": "Blue channel pullback good buy signal bars but bad context (10:00-11:30)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 54,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text 'Endless Pullback with bear breakout below Bull Flag' and brown shaded wedge to 4183 with tall red 11:30 bar",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange arrow endless pullback with bear breakout below Bull Flag text and the tall divergent red 11:30 bar to 4184",
+      "placement": null,
+      "price_hint": 4183.5,
+      "raw_label": "Endless pullback with bear breakout below bull flag (11:30-12:15 low 4183.5)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 62,
+      "confidence": 0.55,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green dotted 4184 line with red shaded boxes 12:25-12:45 and low chips near 4185-4188 close bars",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "sideways black/red bars into the green dotted 4184 wedge past close chip",
+      "placement": null,
+      "price_hint": 4187.0,
+      "raw_label": "Lower trading range into close 4187 (12:15-13:05)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "c4ae577f96c4",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend From The Open, Bar 38 Midday Reversal Down'. Weak buy the close bull trend from the open (o'clock gaps in orange boxes) to a 'Hard orange 07:45'd breakouts, then higher low double bottom (green dotted 4184), trend bars up to a parabolic wedge buy climax with bar 38 midday reversal (09:50 high 4206) after a bull channel day with early double top pullback and bull flag, then rally down and later pullback with bear breakout below bull flag (endless pullback) into the 4187 close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

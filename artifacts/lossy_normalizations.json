@@ -1,0 +1,569 @@
+{
+  "rules": [
+    {
+      "category": "day_type",
+      "from": "bear_trend_resumption",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "trend_reversal_to_bear": 2
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "bear_channel_breakout",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "bear_flag": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "bear_leg",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "bear_flag": 1,
+        "channel": 2,
+        "double_top": 1,
+        "trading_range_end": 2
+      },
+      "total": 6
+    },
+    {
+      "category": "event",
+      "from": "bear_trap",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "trading_range_end": 2
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "bear_trend",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 18,
+        "failed_breakout": 1,
+        "trading_range_end": 1
+      },
+      "total": 20
+    },
+    {
+      "category": "event",
+      "from": "bear_trend_from_open",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "bear_trend_resumption",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "trading_range_end": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "breakout",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "failed_breakout": 1,
+        "trading_range_end": 1
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "breakout_test",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "trading_range_end": 2
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "broad_bear_channel",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 3,
+        "trading_range_end": 1
+      },
+      "total": 4
+    },
+    {
+      "category": "event",
+      "from": "broad_bull_channel",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 4
+      },
+      "total": 4
+    },
+    {
+      "category": "event",
+      "from": "bull_channel",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1,
+        "channel": 11,
+        "trading_range_end": 2
+      },
+      "total": 14
+    },
+    {
+      "category": "event",
+      "from": "bull_spike",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "spike": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "bull_trend",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1,
+        "channel": 18,
+        "major_trend_reversal": 1
+      },
+      "total": 20
+    },
+    {
+      "category": "event",
+      "from": "bull_trend_from_open",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 3
+      },
+      "total": 3
+    },
+    {
+      "category": "event",
+      "from": "bull_trend_resumption",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 6,
+        "channel": 1,
+        "double_bottom": 1,
+        "measured_move": 1,
+        "trading_range_end": 3,
+        "triangle": 1
+      },
+      "total": 13
+    },
+    {
+      "category": "event",
+      "from": "buy_climax",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "climax": 1,
+        "trading_range_begin": 1
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "channel",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "double_top": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "climax",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1,
+        "channel": 1,
+        "small_pullback_bear_trend": 1
+      },
+      "total": 3
+    },
+    {
+      "category": "event",
+      "from": "double_bottom",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "bear_flag": 1,
+        "breakout": 1,
+        "bull_flag": 1,
+        "failed_breakout": 1,
+        "major_trend_reversal": 1,
+        "wedge": 1
+      },
+      "total": 6
+    },
+    {
+      "category": "event",
+      "from": "double_bottom_bear_flag",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "major_trend_reversal": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "double_bottom_bull_flag",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "double_bottom": 2,
+        "double_top": 1
+      },
+      "total": 3
+    },
+    {
+      "category": "event",
+      "from": "double_top",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "failed_breakout": 1,
+        "measured_move": 1,
+        "trading_range_end": 2,
+        "wedge": 1
+      },
+      "total": 5
+    },
+    {
+      "category": "event",
+      "from": "double_top_bear_flag",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1,
+        "double_bottom": 2,
+        "double_top": 7,
+        "trading_range_end": 1
+      },
+      "total": 11
+    },
+    {
+      "category": "event",
+      "from": "failed_breakout",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 1,
+        "trading_range_begin": 1,
+        "trading_range_end": 6,
+        "wedge": 1
+      },
+      "total": 9
+    },
+    {
+      "category": "event",
+      "from": "gap_bar",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "gap": 4
+      },
+      "total": 4
+    },
+    {
+      "category": "event",
+      "from": "gap_down",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "gap": 2
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "inside_outside",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "failed_breakout": 2
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "measured_move",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 1,
+        "climax": 1,
+        "double_bottom": 1,
+        "small_pullback_bull_trend": 1,
+        "trading_range_begin": 2,
+        "trading_range_end": 1
+      },
+      "total": 7
+    },
+    {
+      "category": "event",
+      "from": "minor_wedge",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "wedge": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "parabolic_wedge_bottom",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "wedge": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "parabolic_wedge_bull_climax",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "climax": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "parabolic_wedge_top",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "wedge": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "sell_climax",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "bear_flag": 1,
+        "climax": 3
+      },
+      "total": 4
+    },
+    {
+      "category": "event",
+      "from": "small_pullback_bear_trend",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "double_top": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "small_pullback_bull_trend",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "failed_breakout": 1,
+        "trading_range_end": 1
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "spike_and_channel_bear",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "spike": 6
+      },
+      "total": 6
+    },
+    {
+      "category": "event",
+      "from": "spike_and_channel_bull",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1,
+        "spike": 11
+      },
+      "total": 12
+    },
+    {
+      "category": "event",
+      "from": "spike_to_range",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "climax": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "swing_and_channel_bull",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "trading_range",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 4,
+        "climax": 1,
+        "double_top": 2,
+        "failed_breakout": 3,
+        "spike": 1,
+        "trading_range_begin": 59,
+        "trading_range_end": 3,
+        "wedge": 1
+      },
+      "total": 74
+    },
+    {
+      "category": "event",
+      "from": "trading_range_breakout",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 19,
+        "major_trend_reversal": 4,
+        "trading_range_end": 8,
+        "wedge": 1
+      },
+      "total": 32
+    },
+    {
+      "category": "event",
+      "from": "trading_range_close",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "trend_bars",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 2
+      },
+      "total": 2
+    },
+    {
+      "category": "event",
+      "from": "trend_resumption",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 5,
+        "failed_breakout": 1
+      },
+      "total": 6
+    },
+    {
+      "category": "event",
+      "from": "trend_reversal",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "channel": 2,
+        "climax": 1,
+        "double_top": 1,
+        "failed_breakout": 1,
+        "major_trend_reversal": 22,
+        "trading_range_begin": 1,
+        "trading_range_end": 3
+      },
+      "total": 31
+    },
+    {
+      "category": "event",
+      "from": "triangle",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1
+      },
+      "total": 1
+    },
+    {
+      "category": "event",
+      "from": "wedge",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "breakout": 1,
+        "trading_range_end": 4
+      },
+      "total": 5
+    },
+    {
+      "category": "event",
+      "from": "wedge_bear_flag",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "bear_flag": 6,
+        "channel": 2,
+        "double_bottom": 1,
+        "trading_range_end": 1
+      },
+      "total": 10
+    },
+    {
+      "category": "event",
+      "from": "wedge_bull_flag",
+      "note": "review group: target must come from chart context or a new ADR",
+      "quality": "lossy",
+      "targets": {
+        "bull_flag": 3,
+        "double_top": 1
+      },
+      "total": 4
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,214 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2025-04-24",
+  "day_type": "small_pullback_bull_trend",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown shaded 07:00-07:45 boxes and green arrows through 5405-5480 open stair-step",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "brown shaded open spike of consecutive trend bars up with green arrows to 5480 area",
+      "placement": null,
+      "price_hint": 5405.0,
+      "raw_label": "Bull trend bars from the open (06:55-07:45 low 5398)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta dotted wedge with 20-gap bar buy text nearby and red arrows at the 08:30 and 08:45 downs",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta dotted wedge top around 08:00-08:25 with red arrows 08:30-08:45 and bar 18, 24 dips",
+      "placement": null,
+      "price_hint": 5480.0,
+      "raw_label": "First Minor wedge top red flag (07:35-08:45 high 5480)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 28,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue '20-gap bar buy' text with green arrows under the 09:25-09:45 shaded box",
+      "label": "gap",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue '20-gap bar buy' text under bar 28-36 pullback green arrows",
+      "placement": null,
+      "price_hint": 5468.0,
+      "raw_label": "20-gap bar buy (09:20-09:50 low 5468)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 30,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta 'Minor wedge tops in small pullback bull trend' text with dotted wedges and bar 36, 48, 60 labels",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "magenta dotted rising wedge tops above bars 30-64 with red arrows at 10:45 pullback and 12:45 EMA tests",
+      "placement": null,
+      "price_hint": 5511.0,
+      "raw_label": "Minor wedge tops in small pullback bull trend; bull channel (09:30-12:45)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 58,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:50",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue 'EMA gap bar buy' text with green arrows 12:25-12:50 and red arrows 12:45",
+      "label": "gap",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "blue 'EMA gap bar buy' text at the 12:20 bar 60-62 pullback to the EMA followed by rally to 5515 highs",
+      "placement": null,
+      "price_hint": 5495.0,
+      "raw_label": "EMA gap bar buy (12:10-12:45 low 5495)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 66,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "tall final bull bar 13:10 high 5538 with green arrows 12:55-13:10 close cluster",
+      "label": null,
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "spike_and_channel",
+      "modifiers": [],
+      "needs_review": true,
+      "needs_review_reason": "missing_evidence",
+      "outcome": "unclear",
+      "outcome_reason": "final bars 12:55-13:10 reaching 5538 high with pullback-on-open bars into the close chip",
+      "placement": null,
+      "price_hint": 5538.0,
+      "raw_label": "Bull spike to 5538 high at the close (12:50-13:15 close 5519)",
+      "role": "pattern",
+      "rule_id": "1.3:spike_and_channel",
+      "source": "vision",
+      "start_time": {
+        "time": "12:55",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "b630dd1fa81f",
+  "mapped_from": "small_pullback_bull_trend_from_open",
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": "1.3:small_pullback_bull_trend_from_open",
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Small Pullback Bull Trend From The Open'. Trend bars up from the 5405 open drove a small pullback bull trend from the open all day (brown shaded opening spike); series of minor wedge tops and 50% retrace bear flags (red arrows 08:30, 11:20, 12:45) with 20-gap bar buy 09:35 and EMA gap bar buy 12:20, closing on a bull spike 5519 after the 5538 high.",
+  "starts_at_session_open": true,
+  "starts_at_session_open_source": "title"
+}

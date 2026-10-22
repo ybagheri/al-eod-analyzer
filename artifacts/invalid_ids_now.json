@@ -1,0 +1,111 @@
+{
+  "day_types": {
+    "bull_channel": [
+      "44b28b35c386.response.json",
+      "c56472557dcd.response.json",
+      "ebd6728cac60.response.json"
+    ],
+    "reversal_day": [
+      "61527045af90.response.json",
+      "a9d707ed92f6.response.json",
+      "a9d707ed92f6.rev1.json",
+      "a9d707ed92f6.rev2.json",
+      "a9d707ed92f6.rev3.json",
+      "a9d707ed92f6.rev4.json",
+      "e0d28242bd89.response.json",
+      "e0d28242bd89.rev1.json"
+    ],
+    "small_pullback_bear_trend_from_open": [
+      "ce8abe2aad5c.response.json"
+    ],
+    "small_pullback_bull_trend_from_open": [
+      "9225224d8379.response.json",
+      "b630dd1fa81f.response.json"
+    ],
+    "trending_trading_range": [
+      "29bdc49c41ad.response.json",
+      "7cc6cf98f425.response.json",
+      "b0e7dcb266e3.response.json",
+      "c2ac5b23a509.response.json",
+      "cf677e42a1bd.response.json",
+      "e092e64606eb.response.json",
+      "e092e64606eb.rev1.json",
+      "e092e64606eb.rev2.json",
+      "e092e64606eb.rev3.json",
+      "e092e64606eb.rev4.json"
+    ]
+  },
+  "events": {
+    "bear_trend_resumption": [
+      "74b07ffbe6c9.response.json"
+    ],
+    "bull_gap": [
+      "0c3c16440e61.response.json"
+    ],
+    "bull_trending_trading_range": [
+      "f25b44e57b98.response.json"
+    ],
+    "expanding_triangle": [
+      "225420eb92a0.response.json",
+      "d1e02c7086db.response.json",
+      "daf95390cbc0.response.json",
+      "ec4738f8fb31.response.json",
+      "f7e64373be98.response.json"
+    ],
+    "gap_up": [
+      "3fe93407e2d4.response.json",
+      "51945845dc28.response.json",
+      "5abd8ab3baba.response.json"
+    ],
+    "high_2": [
+      "a36253c4a67f.response.json"
+    ],
+    "higher_low_major_trend_reversal": [
+      "09bb32c388fa.response.json"
+    ],
+    "ii": [
+      "ab4c5e99a89d.response.json"
+    ],
+    "low_2": [
+      "47948c91a719.response.json",
+      "81e922f904c0.response.json"
+    ],
+    "low_2_top": [
+      "1482a480053f.response.json"
+    ],
+    "ooo": [
+      "5e1afacf36c2.response.json"
+    ],
+    "parabolic_wedge": [
+      "0c3c16440e61.response.json"
+    ],
+    "small_pullback_bear_trend": [
+      "430055a59e82.response.json",
+      "554a72595e08.response.json",
+      "8989d6c3da0b.response.json"
+    ],
+    "small_pullback_bull_trend": [
+      "51945845dc28.response.json",
+      "701418db2a3e.response.json",
+      "7ed831bffc16.response.json",
+      "9225224d8379.response.json",
+      "a8803e366fd6.response.json"
+    ],
+    "spike_and_channel": [
+      "b630dd1fa81f.response.json"
+    ],
+    "trend_reversal_to_bull": [
+      "5e1afacf36c2.response.json",
+      "60f87d9752a7.response.json"
+    ],
+    "triple_top": [
+      "09bb32c388fa.response.json"
+    ],
+    "wedge_bull_channel": [
+      "3836e286d67e.response.json"
+    ],
+    "wedge_db": [
+      "0c3c16440e61.response.json"
+    ]
+  }
+}

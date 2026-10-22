@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "image_id": "3836e286d67e",
+  "date": "2020-01-21",
+  "day_type": "bull_trending_trading_range",
+  "day_type_confidence": 0.7,
+  "session_summary": "Title bar: 'Bull Trending TR Day, But Reversed Down'. A triangle opening range sets a double bottom higher low major trend reversal at 3316; the market trends up in green shaded legs with a bull spike to 3330 before bears break out below the upper trading range at 10:30, a wedge low retest of 3316 at 11:00, and a rally to 3325 reverses back down after a third sell setup near the close.",
+  "events": [
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "DB HL MTR (07:00 bottom 3316)",
+      "direction": "bull",
+      "start_time": {
+        "time": "06:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "07:10",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 3316.0,
+      "outcome": "success",
+      "outcome_reason": "double bottom higher low major trend reversal at 3316 started the bull day",
+      "confidence": 0.65,
+      "evidence": "orange DB HL MTR text with blue triangle lines from the open bars to the green underlined low"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Bull spike and channel (07:40-09:50 green bars)",
+      "direction": "bull",
+      "start_time": {
+        "time": "07:35",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "09:55",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 3330.0,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge bull channel drove the trending trading range to 3330",
+      "confidence": 0.7,
+      "evidence": "pink wedge lines around the sequence of green shaded bull legs with small red corrections into 09:20"
+    },
+    {
+      "label": "breakout",
+      "raw_label": "BO below upper TR (10:30)",
+      "direction": "bear",
+      "start_time": {
+        "time": "10:05",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 3327.0,
+      "outcome": "success",
+      "outcome_reason": "breakout below the upper range traded back to the lower blue line",
+      "confidence": 0.7,
+      "evidence": "red BO below upper TR text with red arrow into the 10:25 tall bear bar along the magenta channel"
+    },
+    {
+      "label": "wedge_bull_channel",
+      "raw_label": "Wedge low and green underline (11:00 low 3316)",
+      "direction": "bull",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 3316.0,
+      "outcome": "success",
+      "outcome_reason": "wedge low at 3316 bought back to 3320",
+      "confidence": 0.55,
+      "evidence": "green underline below the 10:55-11:05 lows inside the blue lower channel line"
+    },
+    {
+      "label": "channel",
+      "raw_label": "Rally to 3325 (12:15)",
+      "direction": "bull",
+      "start_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "12:20",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 3325.5,
+      "outcome": "success",
+      "outcome_reason": "rally retested the upper band at 3325 into a third buy dip",
+      "confidence": 0.55,
+      "evidence": "pink trendline rally with green shaded bull bars at 11:35 and 11:55 into 12:10 red box"
+    },
+    {
+      "label": "major_trend_reversal",
+      "raw_label": "Late reversal down (12:35 close 3320)",
+      "direction": "bear",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "bar_index_hint": null,
+      "price_hint": 3320.0,
+      "outcome": "success",
+      "outcome_reason": "failed rally and sell setup closed the day down at 3320",
+      "confidence": 0.55,
+      "evidence": "third red shaded setup at 12:25-12:40 with the drop into 12:55 and close near 3320"
+    }
+  ],
+  "extraction_meta": {
+    "provider": "file",
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2"
+  }
+}

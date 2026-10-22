@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2025-08-01",
   "day_type": "trading_range",
   "day_type_confidence": 0.6,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "22:20",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "red and green texts bottom left beside the tall open bars",
       "label": "exhaustive_climax",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "huge dark gap bar 6310 to 6260 with the red Sell climax and green Strong buying pressure texts at the green dotted floor",
       "placement": null,
       "price_hint": 6240.0,
       "raw_label": "Sell climax on the gap down with strong buying pressure (22:00-22:15 low 6240)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": 12,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "22:50",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "green text and green arrows 22:15-22:35",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green Micro channel text with arrow along the stair-step bars 12-18",
       "placement": null,
       "price_hint": 6295.0,
       "raw_label": "Micro channel bull leg off the climax (22:05-22:45 high 6295)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:05",
@@ -57,6 +71,7 @@
       "bar_index_hint": 24,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:40",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "red text below the boxed bar 24 lows and green arrows 23:30",
       "label": "double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red Bear trap text at the bar 24 lows with green dotted support preceding the bull push to the second leg top",
       "placement": null,
       "price_hint": 6255.0,
       "raw_label": "Bear trap higher low at 6255 (22:55-23:35 low 6255)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:55",
@@ -82,6 +102,7 @@
       "bar_index_hint": 36,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "00:20",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "green Bull trap / Second leg texts above the blue shaded box, bar 36 label",
       "label": "double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue boxed second leg into the 6295-6299 tops failed with red arrows 00:10 onward",
       "placement": null,
       "price_hint": 6295.0,
       "raw_label": "Bull trap second leg top 6295 (23:50-00:15 high 6295)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:50",
@@ -107,6 +133,7 @@
       "bar_index_hint": 48,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:20",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "magenta dotted pair of falling lines beneath the bear bars",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "pink dotted falling wedge lines under the bar 48 bear leg toward the green dotted floor",
       "placement": null,
       "price_hint": 6245.0,
       "raw_label": "Falling wedge bottoms into the lows (00:40-01:15 low 6245)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "00:35",
@@ -132,6 +164,7 @@
       "bar_index_hint": 60,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "02:20",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "green Lower low double bottom text with green arrows at bar 60",
       "label": "lower_low_double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green text below the session lows followed by stacked green arrows 02:15 lifting to 6275",
       "placement": null,
       "price_hint": 6238.0,
       "raw_label": "Lower low double bottom at 6238 (01:50-02:15 low 6238)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "01:50",
@@ -157,6 +195,7 @@
       "bar_index_hint": 72,
       "confidence": 0.55,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "04:10",
         "tz": "America/Los_Angeles"
@@ -164,13 +203,18 @@
       "evidence": "red arrow at the 02:40 top and the boxed bars 62-74 near the red dotted line, footer Aug 2",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "red dotted 6275 ceiling with boxed late pullback bars 72 and the shaded close under the EMA",
       "placement": null,
       "price_hint": 6275.0,
       "raw_label": "Closing bounce under the 6275 ceiling (02:50-04:05)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "02:50",
@@ -183,9 +227,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "4f2fe626015a",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Big Gap Down, Sell Climax Then Trading Range Day' (ET+12 hrs, Aug 1/2; inset Big gap down below trading ranges). Opening sell climax on the gap dump to 6240 with strong buying pressure, a micro channel bull leg to 6295 (bar 12-18), bear trap at 6255 (bar 24), bull trap second leg top 6295 (00:05 bar 36 boxed), bear trend with falling wedge bottoms to the lower low double bottom 6238 (02:05 bar 60), rebound rally to the red dotted 6275 ceiling and a boxed closing bounce near 6265."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Big Gap Down, Sell Climax Then Trading Range Day' (ET+12 hrs, Aug 1/2; inset Big gap down below trading ranges). Opening sell climax on the gap dump to 6240 with strong buying pressure, a micro channel bull leg to 6295 (bar 12-18), bear trap at 6255 (bar 24), bull trap second leg top 6295 (00:05 bar 36 boxed), bear trend with falling wedge bottoms to the lower low double bottom 6238 (02:05 bar 60), rebound rally to the red dotted 6275 ceiling and a boxed closing bounce near 6265.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

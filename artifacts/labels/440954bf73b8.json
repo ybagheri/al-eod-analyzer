@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2026-01-20",
   "day_type": "broad_bear_channel",
   "day_type_confidence": 0.8,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.5,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "22:45",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue title bar 'Gap Down' plus the thin descending drawn line from the open",
       "label": "gap",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "prior-session bars are not visible on this chart; only the title names the gap",
       "placement": null,
       "price_hint": 6873.0,
       "raw_label": "Gap Down",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:30",
@@ -32,6 +40,7 @@
       "bar_index_hint": 12,
       "confidence": 0.75,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:25",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "green 'Lower low double bottom' text with green dotted line at 6851 and green arrows at the lows",
       "label": "lower_low_double_bottom",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "rally from 6862 to 6901 followed",
       "placement": null,
       "price_hint": 6862.0,
       "raw_label": "Lower low double bottom",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "22:40",
@@ -57,6 +71,7 @@
       "bar_index_hint": 12,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:25",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "green 'Bear trap (weak bears)' text beside the double-bottom lows",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "failed bear breakdown trapped bears and price rallied to 6901",
       "placement": null,
       "price_hint": 6862.0,
       "raw_label": "Bear trap (weak bears)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:00",
@@ -82,6 +102,7 @@
       "bar_index_hint": 18,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "23:50",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "red 'Micro then consecutive double tops' text with red arrow at the 23:40 top",
       "label": "micro_double_top",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "micro dip followed; bear channel resumed",
       "placement": null,
       "price_hint": 6901.0,
       "raw_label": "Micro then consecutive double tops",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:35",
@@ -107,6 +133,7 @@
       "bar_index_hint": 36,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:05",
         "tz": "America/Los_Angeles"
@@ -114,15 +141,18 @@
       "evidence": "red dotted line segments across successive peaks at 6901-6899 with red down arrows",
       "label": "double_top",
       "label_explicit": null,
-      "modifiers": [
-        "consecutive"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "series of double tops under the shaded box preceded the breakdown into the bear channel",
       "placement": null,
       "price_hint": 6901.0,
       "raw_label": "Micro then consecutive double tops",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "23:40",
@@ -134,6 +164,7 @@
       "bar_index_hint": 36,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "01:10",
         "tz": "America/Los_Angeles"
@@ -141,13 +172,18 @@
       "evidence": "magenta and green dotted converging lines with pink 'Wedge' text at 00:40",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "wedge low broke down after 01:15 as the bear channel took over",
       "placement": null,
       "price_hint": 6868.0,
       "raw_label": "Wedge",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "00:25",
@@ -159,6 +195,7 @@
       "bar_index_hint": 48,
       "confidence": 0.75,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "02:45",
         "tz": "America/Los_Angeles"
@@ -166,13 +203,18 @@
       "evidence": "red 'Breakout then tight bear channel' text with arrow to the bar-48 breakout leg",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bear breakout extended to 6820 by 04:00",
       "placement": null,
       "price_hint": 6863.0,
       "raw_label": "Breakout then tight bear channel",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "02:25",
@@ -184,6 +226,7 @@
       "bar_index_hint": 52,
       "confidence": 0.55,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "04:30",
         "tz": "America/Los_Angeles"
@@ -191,15 +234,18 @@
       "evidence": "red note 'Breakout then tight bear channel'; shallow stepped decline with red arrows",
       "label": "channel",
       "label_explicit": null,
-      "modifiers": [
-        "tight"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "tight bear channel of lower highs and lows to about 6820",
       "placement": null,
       "price_hint": null,
       "raw_label": "Breakout then tight bear channel",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "02:45",
@@ -211,6 +257,7 @@
       "bar_index_hint": 72,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "05:00",
         "tz": "America/Los_Angeles"
@@ -218,13 +265,18 @@
       "evidence": "black 'Limit order trading into close' text over the last shaded range box",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "close-time range with limit-order chop; resolution beyond the day unknown",
       "placement": null,
       "price_hint": 6825.0,
       "raw_label": "Limit order trading into close",
-      "role": "day_part",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "04:15",
@@ -236,6 +288,7 @@
       "bar_index_hint": 72,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "05:00",
         "tz": "America/Los_Angeles"
@@ -243,13 +296,18 @@
       "evidence": "black 'Limit order trading into close' text over the last shaded range box",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "close-time range with limit-order chop; resolution beyond the day unknown",
       "placement": null,
       "price_hint": 6825.0,
       "raw_label": "Limit order trading into close",
-      "role": "day_part",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "04:15",
@@ -261,6 +319,7 @@
       "bar_index_hint": 76,
       "confidence": 0.7,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "05:05",
         "tz": "America/Los_Angeles"
@@ -268,13 +327,18 @@
       "evidence": "large red 'Sell The Close, Do not buy' note at the bottom centre of this image",
       "label": "sell_the_close",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "unclear",
       "outcome_reason": "close approaching; final print 6833 in the last bars",
       "placement": null,
       "price_hint": 6826.0,
       "raw_label": "Sell The Close, Do not buy",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "04:55",
@@ -287,9 +351,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "440954bf73b8",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Gap Down, Double Bottom, Double Top Then Bear Channel'. Session = MLK-holiday Tuesday Jan 20, 2026 (note: 'Moving average calculation includes US holiday Monday trading early close', so the EMA carries Monday's early-close bars). Gap-down open about 6873, lower-low double bottom / bear trap (weak bears) around 6862 rallies to 6901, micro then consecutive double tops all through the morning (red dotted peaks), a Wedge off the 23:45-01:10 recovery, then a broad bear channel of lower highs and lower lows; breakout into a tight bear channel after 02:25 down to 6820, limit-order trading into the close with a 'Sell The Close, Do not buy' note. Axis reads ET+13 hrs (22:30-05:00 = PT 06:30-13:00 shifted); day-change marker prints Jan 21 mid-axis; keep tz suspicion flagged. Inset daily panel: 'Trading Range Breakout'."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Gap Down, Double Bottom, Double Top Then Bear Channel'. Session = MLK-holiday Tuesday Jan 20, 2026 (note: 'Moving average calculation includes US holiday Monday trading early close', so the EMA carries Monday's early-close bars). Gap-down open about 6873, lower-low double bottom / bear trap (weak bears) around 6862 rallies to 6901, micro then consecutive double tops all through the morning (red dotted peaks), a Wedge off the 23:45-01:10 recovery, then a broad bear channel of lower highs and lower lows; breakout into a tight bear channel after 02:25 down to 6820, limit-order trading into the close with a 'Sell The Close, Do not buy' note. Axis reads ET+13 hrs (22:30-05:00 = PT 06:30-13:00 shifted); day-change marker prints Jan 21 mid-axis; keep tz suspicion flagged. Inset daily panel: 'Trading Range Breakout'.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

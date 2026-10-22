@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2019-08-29",
   "day_type": "trend_reversal_to_bull",
   "day_type_confidence": 0.75,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:50",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "pink 'Wedge bull flag' text with magenta falling flag lines into the 07:45 low",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "wedge bull flag at the low reversed the early sell-off into the bull trend",
       "placement": null,
       "price_hint": 2905.5,
       "raw_label": "Wedge bull flag",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:20",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:50",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "blue '50% PB to MA' text below the same magenta lines",
       "label": "pullback_50pct",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "50% pullback to the MA provided the reversal zone for the trend change",
       "placement": null,
       "price_hint": 2911.0,
       "raw_label": "50% PB to MA",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:25",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.7,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "09:10",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "green 'Bull micro channel' text along the rising magenta lines 08:05-09:10",
       "label": "channel",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "bull micro channel steered the impulsive push from 2917 to 2926.5",
       "placement": null,
       "price_hint": null,
       "raw_label": "Bull micro channel",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:05",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:40",
         "tz": "America/Los_Angeles"
@@ -89,15 +110,18 @@
       "evidence": "red 'After big early selloff, unlikely to get far above H of open' note plus the breakout bars",
       "label": "breakout",
       "label_explicit": null,
-      "modifiers": [
-        "buy"
-      ],
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "price exceeded the area the red caution note doubted ('unlikely to get far above H of open')",
       "placement": null,
       "price_hint": 2923.5,
       "raw_label": "broke above H of open (~2923.5)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:20",
@@ -109,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:25",
         "tz": "America/Los_Angeles"
@@ -116,13 +141,18 @@
       "evidence": "rising solid pink line from the 07:45 base to the 11:20 high",
       "label": "trend_line",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "solid pink channel line supported the trend all the way to the day top",
       "placement": null,
       "price_hint": null,
       "raw_label": "pink bull channel line to the 2930 top",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "08:05",
@@ -134,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:35",
         "tz": "America/Los_Angeles"
@@ -141,13 +172,18 @@
       "evidence": "title 'then TR' plus the rounded post-11:30 chop",
       "label": "trading_range_begin",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "trading range began after the 2930 top (2917-2928)",
       "placement": null,
       "price_hint": null,
       "raw_label": "EOD trading range",
-      "role": "context",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:30",
@@ -159,6 +195,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:05",
         "tz": "America/Los_Angeles"
@@ -166,13 +203,18 @@
       "evidence": "trailing right-of-axis chop to the 8/30 marker",
       "label": "trading_range_end",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "close inside the range at 2922",
       "placement": null,
       "price_hint": 2922.0,
       "raw_label": "trading range close",
-      "role": "context",
+      "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:55",
@@ -184,6 +226,7 @@
       "bar_index_hint": null,
       "confidence": 0.55,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "12:45",
         "tz": "America/Los_Angeles"
@@ -191,13 +234,18 @@
       "evidence": "magenta solid falling trendline 11:25-12:40",
       "label": "bear_flag",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "partial",
       "outcome_reason": "falling wedge formed a bear flag inside the range; rallies retested the top",
       "placement": null,
       "price_hint": 2921.0,
       "raw_label": "magenta falling wedge chop",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "12:05",
@@ -210,9 +258,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "fb0c92713176",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bull Trend Reversal, then TR' (filename: big gap up and wedge opening reversal up from EMA). Spans 8/28 13:00 through the 8/30 edge marker (plain-PT). Reading: big gap up open (~2923) reversed down in an early sell-off to the 2905.5 low (07:45), where the wedge bull flag / 50% PB to MA setup flipped the day up; a bull micro channel and streaking breakout above the open high drove to 2926.5 by 09:10, the pink bull channel line ran to the 2930 top at 11:20 despite the caution note 'After big early selloff, unlikely to get far above H of open', and the rest of the day printed a trading range (2917-2928) with a magenta bear flag chop into the 2922 close."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bull Trend Reversal, then TR' (filename: big gap up and wedge opening reversal up from EMA). Spans 8/28 13:00 through the 8/30 edge marker (plain-PT). Reading: big gap up open (~2923) reversed down in an early sell-off to the 2905.5 low (07:45), where the wedge bull flag / 50% PB to MA setup flipped the day up; a bull micro channel and streaking breakout above the open high drove to 2926.5 by 09:10, the pink bull channel line ran to the 2930 top at 11:20 despite the caution note 'After big early selloff, unlikely to get far above H of open', and the rest of the day printed a trading range (2917-2928) with a magenta bear flag chop into the 2922 close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

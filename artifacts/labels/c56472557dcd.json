@@ -1,0 +1,216 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-12-03",
+  "day_type": "bull_channel",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "gray shaded 07:00-07:20 shaded boxes with white and black inside round-trip bars at 07:05",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "gray shaded boxes with sideways after first rally and dumbbell quot at 07:05",
+      "placement": null,
+      "price_hint": 6052.0,
+      "raw_label": "Opening ii wedge and sell-off (06:45-07:20 gray shaded boxes)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:55",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge and green text 'Higher low double bottom, Sell climax' with green dots and red arrows 07:45; bars 12, 18 lows",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge dotted wedge bottoms with green Higher low double bottom Sell climax text and green arrows at 07:30-07:45",
+      "placement": null,
+      "price_hint": 6047.75,
+      "raw_label": "Higher low double bottom, sell climax reversal (07:25-08:50 low 6047.75)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red dotted horizontal line and red arrows at the 09:00 highs with red shaded box 09:00",
+      "label": "double_top",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red arrow at 08:55 and second red arrow 09:00-09:05 into the 6060 red dotted line with red bars 09:00-09:10",
+      "placement": null,
+      "price_hint": 6059.75,
+      "raw_label": "Rally double top at red dotted 6060 line (08:50-09:05 high 6059.75)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Bull channel text with blue dotted channel and green shaded pullbacks and boxes around 09:35-10:15",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green Bull channel text at the rising blue-dotted moderate legs with bars 24-40, wedge flags at bar 28",
+      "placement": null,
+      "price_hint": 6060.0,
+      "raw_label": "Bull channel two legs up from ii wedge (09:10-10:40)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 46,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "stacked red arrows near bar 48 area with orange shaded 11:05-11:20 boxes and orange bars at 11:00 wedge correction cluster",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red arrows at 10:40 bar 48 and 11:00 with descending wedge wedgebars to blue green wedges",
+      "placement": null,
+      "price_hint": 6058.0,
+      "raw_label": "Wedge pullback to EMA (10:40-11:10 bar 48)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 68,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:40",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Wedge text with dotted rising wedge from 6050 lows to 6065 and red arrow at 12:05 6060 bar",
+      "label": "bull_flag",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta Wedge at top with red arrow 12:05 at bar 70 small pullback to bar 74 area 72",
+      "placement": null,
+      "price_hint": 6061.0,
+      "raw_label": "Wedge bull flag pullback then leg up (12:00-12:35 high 6061 chip)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "c56472557dcd",
+  "mapped_from": "bull_channel",
+  "modifiers": [
+    "width_unspecified"
+  ],
+  "needs_review": true,
+  "needs_review_reason": "width_unspecified",
+  "rule_id": "1.3:bull_channel",
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Double Bottom, Then Bull Channel'. Overnight wedge down sold to a higher low double bottom sell climax (08:35 low 6047.75), rally to double top 6059.75 at 09:00, then a bull channel with running wedges past bar 48 (10:45) and wedge bull flags to a late wedge spike high 6068 into the close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

@@ -1,0 +1,214 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-09-03",
+  "day_type": "small_pullback_bear_trend",
+  "day_type_confidence": 0.8,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Sell the close text with brown shaded 5635 opening bars and red arrows on bars 2-10 and black push pull 07:15",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "brown shaded open spike with red arrows down through 5620 to 5590 versch",
+      "placement": null,
+      "price_hint": 5590.0,
+      "raw_label": "Sell the close bear trend from the open (06:45-07:15 low 5590)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:45",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue '20-Gap bar sell' text, magenta minor parabolic wedge with small pullback bear trend text and magenta arrow up at the 07:40 lows",
+      "label": "gap",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red dotted 5590 ceiling, blue dotted 5575 baseline and magenta dotted wedge (tagged 08:15) at the 07:30-08:12 sideways after slide sales",
+      "placement": null,
+      "price_hint": 5573.0,
+      "raw_label": "20-gap bar sell signal with minor parabolic wedge (07:20-08:15 low 5573)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "09:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green 'Minor higher low double bottom' text with dotted rising wedge 08:30 into EMA bars",
+      "label": "double_bottom",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green higher low double bottom text with green arrows 09:45, small box then wedge tops to 10:00",
+      "placement": null,
+      "price_hint": 5575.0,
+      "raw_label": "Minor higher low double bottom (08:35-09:15 low 5575)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 30,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta wedge text and arrow over the red dotted 5585 line with the brown shaded 10:00-10:15 boxes and stacked red arrows 10:20-10:45",
+      "label": "bear_flag",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta arrow 'Wedge bear flag at EMA' and red dotted 5585 ceiling with red arrows bars 32-40 driving to 5560",
+      "placement": null,
+      "price_hint": 5585.0,
+      "raw_label": "Wedge bear flag at EMA sell cluster (10:20-10:55 high 5585)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red 'Leg 1 = Leg 2' text with red dotted 5542 line under the gray shaded 10:50-11:10 into wedge of black bars 12:00-12:20",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "red Lego Leg 1 = Leg 2 text almost 56-64 decline bars below the dotted red 5542 baseline at the 12:15 ish lows",
+      "placement": null,
+      "price_hint": 5542.0,
+      "raw_label": "Leg 1 = Leg 2 bear channel (10:55-12:20 low 5542)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": 60,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text with brown shaded 12:45-13:05 significance boxes below the red dotted leg at the 5530s lows and green arrow 13:05",
+      "label": "climax",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "unclear",
+      "outcome_reason": "orange arrow 'Likely exhaustive sell climax' text at the brown shaded 12:45-13:00 inverted diving bars with green arrow bounce 13:00",
+      "placement": null,
+      "price_hint": 5519.0,
+      "raw_label": "Likely exhaustive sell climax late low 5519 then pullback (12:25-13:05 low 5519)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:25",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "ce8abe2aad5c",
+  "mapped_from": "small_pullback_bear_trend_from_open",
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": "1.3:small_pullback_bear_trend_from_open",
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Small Pullback Bear Trend From The Open'. Sell the close bear trend bars from the open (brown shaded boxes, 5633 open to 5590 lows), 20-gap bar sell with minor parabolic wedge and small pullback bear trend (08:00, blue dotted 5460 baseline), minor higher low double bottom (09:10), wedge bear flag at EMA rejections (10:25-10:50, then second 11:30), leg1 = leg2 bear channel into a likely exhaustive sell climax (12:45 low 5519, green arrows), close 5546.",
+  "starts_at_session_open": true,
+  "starts_at_session_open_source": "title"
+}

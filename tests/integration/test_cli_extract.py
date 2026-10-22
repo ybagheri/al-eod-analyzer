@@ -113,3 +113,112 @@ def test_fake_provider_quarantines_invalid(tmp_path: Path) -> None:
 def test_unknown_provider_rejected(tmp_path: Path) -> None:
     result = CliRunner().invoke(app, ["extract", "--provider", "nope"])
     assert result.exit_code != 0
+
+
+def _init_repo(work: Path) -> None:
+    import subprocess
+
+    identity = ["git", "-c", "user.email=t@t", "-c", "user.name=t"]
+    subprocess.run(["git", "init", "-q"], cwd=work, check=True)
+    subprocess.run(
+        [*identity, "commit", "--allow-empty", "-q", "-m", "init"],
+        cwd=work,
+        check=True,
+    )
+
+
+def test_guard_refuses_dirty_queue(tmp_path: Path) -> None:
+    """Inside a real repo, uncommitted queue changes block extract (S2.4)."""
+    import json as _json
+    import subprocess
+
+    work = tmp_path / "repo"
+    (work / "queue").mkdir(parents=True)
+    _init_repo(work)
+    data = work / "data"
+    data.mkdir()
+    (data / "a.jpg").write_bytes(b"bytes")
+    _manifest(work / "manifest.json", "id-1", "a.jpg")
+    (work / "queue" / "id-1.response.json").write_text(
+        _json.dumps(_label("id-1", "manual")), encoding="utf-8"
+    )
+    args = _base_args(work, data)
+    runner = CliRunner()
+    blocked = runner.invoke(app, ["extract", "--provider", "file", *args])
+    assert blocked.exit_code == 1, blocked.output
+    assert "refusing to run" in blocked.output
+    # --allow-dirty overrides the guard.
+    allowed = runner.invoke(app, ["extract", "--provider", "file", *args, "--allow-dirty"])
+    assert allowed.exit_code == 0, allowed.output
+    # Once committed, the guard opens (resume skips the already-converted label).
+    identity = ["git", "-c", "user.email=t@t", "-c", "user.name=t"]
+    subprocess.run(["git", "add", "-A"], cwd=work, check=True)
+    subprocess.run([*identity, "commit", "-q", "-m", "queue"], cwd=work, check=True)
+    clean = runner.invoke(app, ["extract", "--provider", "file", *args])
+    assert clean.exit_code == 0, clean.output
+    assert "valid_rate=1.00" in clean.output
+
+
+def _v3_response(image_id: str) -> dict[str, Any]:
+    return {
+        "image_id": image_id,
+        "scope_ok": True,
+        "scope_note": "",
+        "day_type": "trading_range",
+        "day_type_conf": 0.6,
+        "axis": {"style": "none", "first_label": "", "last_label": ""},
+        "anchors": {
+            "open_dir_first_hour": "flat",
+            "day_close_vs_open": "near",
+            "high_of_day_bar_index_hint": None,
+            "low_of_day_bar_index_hint": None,
+            "n_bars_visible": 78,
+        },
+        "events": [],
+    }
+
+
+def test_write_response_cli(tmp_path: Path) -> None:
+    """The gated writer CLI persists a manifest-backed response (S2.3)."""
+    work = tmp_path / "repo"
+    (work / "queue").mkdir(parents=True)
+    data = work / "data"
+    data.mkdir()
+    (data / "a.jpg").write_bytes(b"bytes")
+    _manifest(work / "manifest.json", "id-1", "a.jpg")
+    response = work / "spill.json"
+    response.write_text(json.dumps(_v3_response("id-1")), encoding="utf-8")
+    runner = CliRunner()
+    result = runner.invoke(
+        app,
+        [
+            "write-response",
+            "id-1",
+            "--file",
+            str(response),
+            "--queue-dir",
+            str(work / "queue"),
+            "--manifest",
+            str(work / "manifest.json"),
+            "--labels-dir",
+            str(work / "labels"),
+        ],
+    )
+    assert result.exit_code == 0, result.output
+    assert (work / "queue" / "id-1.response.json").is_file()
+    # overwrite requires --replace
+    again = runner.invoke(
+        app,
+        [
+            "write-response",
+            "id-1",
+            "--file",
+            str(response),
+            "--queue-dir",
+            str(work / "queue"),
+            "--manifest",
+            str(work / "manifest.json"),
+        ],
+    )
+    assert again.exit_code == 1, again.output
+    assert "--replace" in again.output

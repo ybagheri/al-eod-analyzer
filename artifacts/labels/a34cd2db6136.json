@@ -1,0 +1,183 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-02-27",
+  "day_type": "spike_and_channel_bear",
+  "day_type_confidence": 0.75,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "07:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange Sell the close text with red Sell the close Spike in spike and channel bear trend text under the beige box lows and red dotted 5085 line",
+      "label": "spike",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "brown box 06:45-07:05 sold into the beige channel",
+      "placement": null,
+      "price_hint": 5080.0,
+      "raw_label": "Sell the close spike in spike and channel bear trend (06:45-07:15)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "06:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "pink shaded box 07:15-10:20 with magenta Nested wedge text and red arrows 07:35-09:30 and green arrows 10:15-10:40",
+      "label": "channel",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "pink shaded bear channel with blue dotted triangle top to the nested wedge lows 10:05-10:15",
+      "placement": null,
+      "price_hint": 5070.0,
+      "raw_label": "Pink channel bear trend wedge bear flags (07:20-10:10 lows 5070)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "07:15",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "10:25",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "magenta Nested wedge text with dotted line orange bottom around 10:05-10:20 lows and green arrows",
+      "label": "wedge",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange dotted lower lows at 10:10 lows formed wedge bottom",
+      "placement": null,
+      "price_hint": 5070.0,
+      "raw_label": "Nested wedge bottom (09:55 low 5070)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "09:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:20",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange text with arrow to beige box 11:05-11:15 and orange dotted line at 5078 lows and 11:10 highs",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange Breakout above wedge and double top text with arrow into the beige box at 11:05",
+      "placement": null,
+      "price_hint": 5086.0,
+      "raw_label": "Breakout above wedge and double top (11:05 high 5086)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:50",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "orange dotted Measured move line at the close highs with orange dotted rising line and chop bars with tall dark bar 10:50 lows and green arrows 12:25-12:45",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "rally through orange dotted measured move target near close highs 5094",
+      "placement": null,
+      "price_hint": 5094.0,
+      "raw_label": "Measured move rally to close 5094 (11:15-13:20)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "a34cd2db6136",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Spike and Channel Bear Trend, Then Wedge Bottom'. Sell the close spike in spike and channel bear trend from the open (06:45); pink channel bear trend to nested wedge low 5070 (10:10); breakout above wedge and double top at 11:10 (5079); measured move bull spike to 5094 close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

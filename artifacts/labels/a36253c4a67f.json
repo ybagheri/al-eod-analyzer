@@ -1,0 +1,245 @@
+{
+  "anchors": null,
+  "axis": null,
+  "date": "2024-01-17",
+  "day_type": "trading_range",
+  "day_type_confidence": 0.7,
+  "events": [
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue High 2 label at the 07:25 lows with magenta Wedge Low 2 pink dotted channel buying up to the highest green arrows stacked pink push push peaks 08:10 top",
+      "label": "h2",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": "high_2",
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "High 2 green arrows bought the open wedge low push to ledge top high 4775",
+      "placement": null,
+      "price_hint": 4757.0,
+      "raw_label": "High 2 bottom and wedge Low 2 buy (07:15-08:00 low 4757)",
+      "role": "pattern",
+      "rule_id": "1.3:high_2",
+      "source": "vision",
+      "start_time": {
+        "time": "07:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.6,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "08:45",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "red Ledge top text and Failed breakout above wedge text with brown shaded 08:25-08:35 bear bars and red arrows 08:30-09:00",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "orange dotted ledge top 4775 and red arrow 08:25 shaded setup box sold the breakouts",
+      "placement": null,
+      "price_hint": 4775.0,
+      "raw_label": "Ledge top, failed breakout above wedge (08:15-08:40 high 4775)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:10",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box 07:15-10:35 with Small pullback bull trend green arrows under the 08:20 lows and green dotted 4760 bottom; red arrows 09:00-10:40",
+      "label": "trading_range_begin",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red dotted LH DT white zone with small PB BT blue box sold down to 10:50 lows",
+      "placement": null,
+      "price_hint": 4757.0,
+      "raw_label": "Small pullback bull trend then lower high double top (08:40-10:55)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bear",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:00",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue shaded box 07:15-10:35 with Small pullback bull trend green arrows under the 08:20 lows and green dotted 4760 bottom; red arrows 09:00-10:40",
+      "label": "trading_range_end",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "red dotted LH DT white zone with small PB BT blue box sold down to 10:50 lows",
+      "placement": null,
+      "price_hint": 4757.0,
+      "raw_label": "Small pullback bull trend then lower high double top (08:40-10:55)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "08:35",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "11:05",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "brown shaded wedge lows 10:45-10:55 with beige box and blue Failed breakout below trading range text and pink dotted channel to lows",
+      "label": "failed_breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "magenta wedge channel to 10:50 low at the dotted green bottom led to buy reversal",
+      "placement": null,
+      "price_hint": 4744.0,
+      "raw_label": "Failed breakout below trading range (10:55 low 4744)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "10:40",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.65,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "12:35",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "green Higher low Major trend reversal text with green dotted lows line and red arrows 12:00-12:30 setup box",
+      "label": "major_trend_reversal",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "green Higher low Major trend reversal text under the green dotted lows and pink magnetic channel highs",
+      "placement": null,
+      "price_hint": 4751.0,
+      "raw_label": "Higher low major trend reversal at 4751 (12:15-12:25 lows)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:05",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    },
+    {
+      "bar_index_hint": null,
+      "confidence": 0.55,
+      "direction": "bull",
+      "end_bar_index_hint": null,
+      "end_time": {
+        "time": "13:15",
+        "tz": "America/Los_Angeles"
+      },
+      "evidence": "blue dotted Open line at 4765.25 near 12:45 highs and red dotted gold up trend bars 13:05 close cluster",
+      "label": "breakout",
+      "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
+      "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
+      "outcome": "success",
+      "outcome_reason": "bull rally from MTR low after failed breakout drive into close 4768",
+      "placement": null,
+      "price_hint": 4768.0,
+      "raw_label": "Rally to close 4768 (12:35-13:15)",
+      "role": "pattern",
+      "rule_id": null,
+      "source": "vision",
+      "start_time": {
+        "time": "12:30",
+        "tz": "America/Los_Angeles"
+      },
+      "x_px": null
+    }
+  ],
+  "extraction_meta": {
+    "extracted_at": null,
+    "model_id": "muse-spark-opencode",
+    "prompt_version": "extract_v2",
+    "provider": "file",
+    "taxonomy_version": "1.3"
+  },
+  "image_id": "a36253c4a67f",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
+  "schema_version": 1,
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'High 2 Bottom, Then Trading Range'. High 2 with wedge Low 2 (07:50 low 4757) pushed to a ledge top high 4775 failed breakout above wedge (08:25); lower high double top sell flags sold to 10:50 low 4744; failed breakout below trading range 10:55 low up through the higher low major trend reversal 12:20 lows (4751) and rallied back to close 4768.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
+}

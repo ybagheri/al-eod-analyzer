@@ -1,4 +1,6 @@
 {
+  "anchors": null,
+  "axis": null,
   "date": "2023-02-21",
   "day_type": "small_pullback_bear_trend",
   "day_type_confidence": 0.65,
@@ -7,6 +9,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "07:20",
         "tz": "America/Los_Angeles"
@@ -14,13 +17,18 @@
       "evidence": "blue Bull Trap text and shaded green bull box at the open",
       "label": "failed_breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue arrow from the Bull Trap text with the follow-through bear entry bar disappointing and bulls exiting around breakeven comment",
       "placement": null,
       "price_hint": 4055.0,
       "raw_label": "Bull trap at the open (07:00-07:20 high 4057)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:00",
@@ -32,6 +40,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:25",
         "tz": "America/Los_Angeles"
@@ -39,13 +48,18 @@
       "evidence": "magenta dotted line and red dotted lines",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "magenta dotted falling wedge with successive red dotted ceilings at 4040, 4030 and 4022",
       "placement": null,
       "price_hint": 4028.0,
       "raw_label": "Bear trend from the open down the falling wedge (07:15-08:25 low 4028)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:15",
@@ -57,6 +71,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "08:15",
         "tz": "America/Los_Angeles"
@@ -64,13 +79,18 @@
       "evidence": "red Body Gaps text with arrows",
       "label": "body_gap",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red Body Gaps arrow at the stacked red bear boxes off the lows",
       "placement": null,
       "price_hint": 4035.0,
       "raw_label": "Body gaps in the open bear trend (07:30-08:15)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "07:30",
@@ -82,6 +102,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "bull",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "10:20",
         "tz": "America/Los_Angeles"
@@ -89,13 +110,18 @@
       "evidence": "green text bottom left and shaded box",
       "label": "wedge",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "green shaded bull boxes and the Small Pullback Bear Trend so minor reversal, 99.9% chance of rally to EMA texts with the magenta wedge",
       "placement": null,
       "price_hint": 4022.0,
       "raw_label": "Minor reversal rally to the EMA off 4015 (09:20-10:20 high 4022)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "09:20",
@@ -107,6 +133,7 @@
       "bar_index_hint": null,
       "confidence": 0.65,
       "direction": "bear",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "11:30",
         "tz": "America/Los_Angeles"
@@ -114,13 +141,18 @@
       "evidence": "magenta dotted line at the lows",
       "label": "breakout",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "red dotted 4022 line then stacked red bear boxes down the magenta dotted falling wedge into the lows",
       "placement": null,
       "price_hint": 4003.0,
       "raw_label": "Bear breakout off the 4022 EMA test (10:20-11:30 low 4003)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "10:20",
@@ -132,6 +164,7 @@
       "bar_index_hint": null,
       "confidence": 0.6,
       "direction": "neutral",
+      "end_bar_index_hint": null,
       "end_time": {
         "time": "13:15",
         "tz": "America/Los_Angeles"
@@ -139,13 +172,18 @@
       "evidence": "blue dotted lines bottom right",
       "label": "tight_trading_range",
       "label_explicit": null,
+      "linked_to": null,
+      "mapped_from": null,
       "modifiers": [],
+      "needs_review": false,
+      "needs_review_reason": null,
       "outcome": "success",
       "outcome_reason": "blue dotted rising wedge around the chopping afternoon bars between 4006-4015 into the close",
       "placement": null,
       "price_hint": 4010.0,
       "raw_label": "EOD trading range, blue dotted converging lines (11:10-13:15)",
       "role": "pattern",
+      "rule_id": null,
       "source": "vision",
       "start_time": {
         "time": "11:10",
@@ -158,9 +196,19 @@
     "extracted_at": null,
     "model_id": "muse-spark-opencode",
     "prompt_version": "extract_v2",
-    "provider": "file"
+    "provider": "file",
+    "taxonomy_version": "1.3"
   },
   "image_id": "83e277f4b384",
+  "mapped_from": null,
+  "modifiers": [],
+  "needs_review": false,
+  "needs_review_reason": null,
+  "rule_id": null,
   "schema_version": 1,
-  "session_summary": "Blue title bar: 'Bear Trend From The Open, EOD Trading Range'. Bull trap at the open (follow-through bear entry bar disappointing so bulls exited around breakeven), a small pullback bear trend with body gaps and many weak sell signal bars (sell on a stop below any bar closing near its low), the midday minor reversal rally to the EMA off the 4015 low (99.9% chance of rally to EMA), the bear breakdown off the 4022 double top into the 4003 low, and the blue dotted converging EOD trading range into the close."
+  "scope_note": "",
+  "scope_ok": null,
+  "session_summary": "Blue title bar: 'Bear Trend From The Open, EOD Trading Range'. Bull trap at the open (follow-through bear entry bar disappointing so bulls exited around breakeven), a small pullback bear trend with body gaps and many weak sell signal bars (sell on a stop below any bar closing near its low), the midday minor reversal rally to the EMA off the 4015 low (99.9% chance of rally to EMA), the bear breakdown off the 4022 double top into the 4003 low, and the blue dotted converging EOD trading range into the close.",
+  "starts_at_session_open": null,
+  "starts_at_session_open_source": null
 }

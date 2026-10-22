@@ -1,167 +1,102 @@
 {
-  "schema_version": 1,
-  "image_id": "1482a480053f",
-  "date": "2025-03-04",
+  "anchors": {
+    "day_close_vs_open": "near",
+    "high_of_day_bar_index_hint": 71,
+    "low_of_day_bar_index_hint": 11,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "down"
+  },
+  "axis": {
+    "first_label": "06:45",
+    "last_label": "13:15",
+    "style": "pt_0630_1300"
+  },
   "day_type": "trend_reversal_to_bull",
-  "day_type_confidence": 0.75,
-  "session_summary": "Blue title bar: 'Bear Trend From The Open, Then Reversal Up'. A low 2 top at 5822 sell-the-close and minor parabolic wedge drop forms the day low 5745; higher low major trend reversal and breakout above the wedge launch a measuring move up with consecutive wedge tops to 5873, then the close sells back to the open for a doji day near 5810.",
+  "day_type_conf": 0.75,
   "events": [
     {
-      "label": "low_2_top",
-      "raw_label": "Low 2 top (06:50)",
+      "conf": 0.6,
       "direction": "bear",
-      "start_time": {
-        "time": "06:40",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:15",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5822.0,
+      "end_bar_index_hint": 5,
+      "kind": "l2",
       "outcome": "success",
-      "outcome_reason": "low 2 top at 5822 set the bear open sell the close down to 5745",
-      "confidence": 0.7,
-      "evidence": "green Low 2 top text with red dotted line at 5822 and brown boxed opening sell bars"
+      "raw_label": "Low 2 top",
+      "start_bar_index_hint": 2
     },
     {
-      "label": "channel",
-      "raw_label": "Sell the close minor parabolic wedge to day low 5745 (08:30)",
+      "conf": 0.6,
+      "direction": "bull",
+      "end_bar_index_hint": 11,
+      "kind": "wedge",
+      "outcome": "success",
+      "raw_label": "Minor parabolic wedge",
+      "start_bar_index_hint": 2
+    },
+    {
+      "conf": 0.45,
       "direction": "bear",
-      "start_time": {
-        "time": "07:05",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "09:00",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5745.0,
+      "end_bar_index_hint": 8,
+      "kind": "sell_the_close",
       "outcome": "success",
-      "outcome_reason": "minor parabolic wedge sold the open down to 5745",
-      "confidence": 0.65,
-      "evidence": "orange Sell the close text and magenta Minor parabolic wedge dotted lines to 08:30 low"
+      "raw_label": "Sell the close",
+      "start_bar_index_hint": 5
     },
     {
-      "label": "major_trend_reversal",
-      "raw_label": "Higher low major trend reversal (08:45)",
+      "conf": 0.8,
       "direction": "bull",
-      "start_time": {
-        "time": "08:15",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "09:00",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5745.0,
+      "end_bar_index_hint": 23,
+      "kind": "major_trend_reversal",
       "outcome": "success",
-      "outcome_reason": "higher low major trend reversal lifted the market back to the wedge",
-      "confidence": 0.65,
-      "evidence": "green arrow under the 08:35 double bottom 5745"
+      "raw_label": "Higher low major trend reversal",
+      "start_bar_index_hint": 11
     },
     {
-      "label": "breakout",
-      "raw_label": "Breakout above wedge with possible measured move up (10:15)",
-      "direction": "bull",
-      "start_time": {
-        "time": "08:45",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5812.0,
-      "outcome": "success",
-      "outcome_reason": "breakout above the green dotted wedge level at 5812 started the bull trend to 5873",
-      "confidence": 0.65,
-      "evidence": "green dotted line 5812 upside cross at 10:15 with orange Breakout above wedge text"
-    },
-    {
-      "label": "measured_move",
-      "raw_label": "Measured move to consecutive wedge tops 5873 (12:00)",
-      "direction": "bull",
-      "start_time": {
-        "time": "10:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:15",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5873.0,
-      "outcome": "success",
-      "outcome_reason": "measuring move up reached consecutive wedge tops at 5873",
-      "confidence": 0.6,
-      "evidence": "green Measured move text with magenta dotted rising wedge lines to the 12:00 top"
-    },
-    {
-      "label": "wedge",
-      "raw_label": "Consecutive wedge tops (12:05-12:15)",
+      "conf": 0.5,
       "direction": "bear",
-      "start_time": {
-        "time": "11:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:20",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5873.0,
-      "outcome": "success",
-      "outcome_reason": "consecutive wedge tops at 5873 sold the close down to the open 5810",
-      "confidence": 0.65,
-      "evidence": "magenta dotted wedge into the 12:10 top and brown boxed 12:15-12:45 sell bars"
+      "end_bar_index_hint": 35,
+      "kind": "wedge",
+      "outcome": "partial",
+      "raw_label": "Wedge",
+      "start_bar_index_hint": 23
     },
     {
-      "label": "trading_range_begin",
-      "raw_label": "Close near open so doji day",
+      "conf": 0.75,
+      "direction": "bull",
+      "end_bar_index_hint": 45,
+      "kind": "breakout",
+      "outcome": "success",
+      "raw_label": "Breakout above wedge Possible measured move up",
+      "start_bar_index_hint": 43
+    },
+    {
+      "conf": 0.75,
+      "direction": "bear",
+      "end_bar_index_hint": 71,
+      "kind": "wedge",
+      "outcome": "success",
+      "raw_label": "Consecutive wedge tops",
+      "start_bar_index_hint": 44
+    },
+    {
+      "conf": 0.7,
+      "direction": "bull",
+      "end_bar_index_hint": 71,
+      "kind": "measured_move",
+      "outcome": "success",
+      "raw_label": "Measured move",
+      "start_bar_index_hint": 53
+    },
+    {
+      "conf": 0.6,
       "direction": "neutral",
-      "start_time": {
-        "time": "12:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:15",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5810.0,
+      "end_bar_index_hint": null,
+      "kind": "unmapped",
       "outcome": "success",
-      "outcome_reason": "market closed near the open making a doji day",
-      "confidence": 0.6,
-      "evidence": "doji day doji note blue text and blue arrow near 13:00 close 5811"
-    },
-    {
-      "label": "trading_range_end",
       "raw_label": "Close near open so doji day",
-      "direction": "neutral",
-      "start_time": {
-        "time": "12:20",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:15",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5810.0,
-      "outcome": "success",
-      "outcome_reason": "market closed near the open making a doji day",
-      "confidence": 0.6,
-      "evidence": "doji day doji note blue text and blue arrow near 13:00 close 5811"
+      "start_bar_index_hint": 80
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "1482a480053f",
+  "scope_note": "",
+  "scope_ok": true
 }

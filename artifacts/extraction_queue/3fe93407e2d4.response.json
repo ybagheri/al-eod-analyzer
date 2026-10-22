@@ -1,148 +1,75 @@
 {
-  "schema_version": 1,
-  "image_id": "3fe93407e2d4",
-  "date": "2024-02-09",
+  "anchors": {
+    "day_close_vs_open": "above",
+    "high_of_day_bar_index_hint": 62,
+    "low_of_day_bar_index_hint": 0,
+    "n_bars_visible": 81,
+    "open_dir_first_hour": "up"
+  },
+  "axis": {
+    "first_label": "06:45",
+    "last_label": "13:00",
+    "style": "pt_0630_1300"
+  },
   "day_type": "small_pullback_bull_trend",
-  "day_type_confidence": 0.75,
-  "session_summary": "Blue title bar: 'High 2, Then Small Pullback Bull Trend'. Higher low double bottom at 5014 leads to High 2 buys and a minor wedge small pullback bull trend from the open; a close of body gap around 09:35, a 10 gap bar push to 5033 and a gap up to 5037 drive a buy climax at 5045 before late profit taking chops to 5042.",
+  "day_type_conf": 0.75,
   "events": [
     {
-      "label": "spike",
-      "raw_label": "Open bull gap and spike (07:10 high 5027)",
+      "conf": 0.75,
       "direction": "bull",
-      "start_time": {
-        "time": "06:50",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "07:30",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5027.0,
+      "end_bar_index_hint": 6,
+      "kind": "higher_low_double_bottom",
       "outcome": "success",
-      "outcome_reason": "gap up open then green shaded spike to 5027",
-      "confidence": 0.65,
-      "evidence": "green shaded spike bars at 07:15-07:25 with orange dotted 5024 gap line and green underline below the higher low double bottom"
+      "raw_label": "Higher low double bottom High 2",
+      "start_bar_index_hint": 0
     },
     {
-      "label": "inside_inside",
-      "raw_label": "Higher low double bottom and High 2 buys (08:20)",
+      "conf": 0.5,
       "direction": "bull",
-      "start_time": {
-        "time": "07:35",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "08:25",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5014.0,
+      "end_bar_index_hint": 25,
+      "kind": "gap",
       "outcome": "success",
-      "outcome_reason": "higher low double bottom and High 2 buys from the blue dotted 5027.5 line",
-      "confidence": 0.7,
-      "evidence": "green Higher low double bottom text with High 2 label under the 08:10-08:20 lows and green dotted swing line"
+      "raw_label": "Gap",
+      "start_bar_index_hint": 3
     },
     {
-      "label": "major_trend_reversal",
-      "raw_label": "Major trend reversal wedge pullback failed (09:30 low 5027)",
+      "conf": 0.65,
       "direction": "bear",
-      "start_time": {
-        "time": "08:49",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "09:50",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5027.0,
-      "outcome": "fail",
-      "outcome_reason": "magenta pullback wedge red X failed and bulls resumed",
-      "confidence": 0.55,
-      "evidence": "magenta dotted wedge lines with red X and blue close of body gap arrow under the pink 5033 dotted line"
+      "end_bar_index_hint": 19,
+      "kind": "wedge",
+      "outcome": "success",
+      "raw_label": "Minor wedge since small pullback bull trend",
+      "start_bar_index_hint": 6
     },
     {
-      "label": "gap_up",
-      "raw_label": "Gap up 10 gap bar (10:05 high 5037)",
+      "conf": 0.5,
       "direction": "bull",
-      "start_time": {
-        "time": "09:55",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "10:40",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5037.0,
+      "end_bar_index_hint": 47,
+      "kind": "gap",
       "outcome": "success",
-      "outcome_reason": "gap up 10 gap bar bought to 5037",
-      "confidence": 0.6,
-      "evidence": "orange Gap arrows near the 09:40 and 10:15 shaded bull legs above the blue 5027.5 dotted line"
+      "raw_label": "Gap",
+      "start_bar_index_hint": 20
     },
     {
-      "label": "climax",
-      "raw_label": "Buy climax (11:50 high 5045)",
+      "conf": 0.65,
       "direction": "bull",
-      "start_time": {
-        "time": "11:25",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "12:00",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5045.0,
+      "end_bar_index_hint": 31,
+      "kind": "body_gap",
       "outcome": "success",
-      "outcome_reason": "buy climax at 5045 marked the top before profit taking",
-      "confidence": 0.7,
-      "evidence": "orange Buy climax text with orange arrow to the 11:45-11:50 green shaded climax bar and red sell setups after"
+      "raw_label": "Close of body gap Possible small pullback bull trend",
+      "start_bar_index_hint": 30
     },
     {
-      "label": "trading_range_begin",
-      "raw_label": "Late range chop (12:00-13:05 close 5042)",
-      "direction": "bull",
-      "start_time": {
-        "time": "12:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:05",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5040.0,
+      "conf": 0.7,
+      "direction": "bear",
+      "end_bar_index_hint": 62,
+      "kind": "climax",
       "outcome": "success",
-      "outcome_reason": "two red 2nd entry sell setups failed and the close was 5042",
-      "confidence": 0.6,
-      "evidence": "red arrows and shaded red sell setups at 11:55 and 12:05 with brown shaded 13:50 bar and close near 5042"
-    },
-    {
-      "label": "trading_range_end",
-      "raw_label": "Late range chop (12:00-13:05 close 5042)",
-      "direction": "bull",
-      "start_time": {
-        "time": "12:00",
-        "tz": "America/Los_Angeles"
-      },
-      "end_time": {
-        "time": "13:05",
-        "tz": "America/Los_Angeles"
-      },
-      "bar_index_hint": null,
-      "price_hint": 5040.0,
-      "outcome": "success",
-      "outcome_reason": "two red 2nd entry sell setups failed and the close was 5042",
-      "confidence": 0.6,
-      "evidence": "red arrows and shaded red sell setups at 11:55 and 12:05 with brown shaded 13:50 bar and close near 5042"
+      "raw_label": "Buy climax",
+      "start_bar_index_hint": 61
     }
   ],
-  "extraction_meta": {
-    "provider": "file",
-    "model_id": "muse-spark-opencode",
-    "prompt_version": "extract_v2"
-  }
+  "image_id": "3fe93407e2d4",
+  "scope_note": "",
+  "scope_ok": true
 }
