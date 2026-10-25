@@ -52,7 +52,7 @@ class SymbolCoverage:
     n_days: int
     n_complete_sessions: int
     missing_weekdays: list[str]
-    gaps_over_3_days: list[dict]
+    gaps_over_3_days: list[dict[str, object]]
 
 
 @runtime_checkable
@@ -145,7 +145,7 @@ class CsvMarketBarsRepository:
         for bar in bars:
             days.setdefault(bar.timestamp_server.date(), []).append(bar)
         missing: list[str] = []
-        gaps: list[dict] = []
+        gaps: list[dict[str, object]] = []
         sorted_days = sorted(days)
         for i in range(1, len(sorted_days)):
             prev, curr = sorted_days[i - 1], sorted_days[i]
@@ -173,7 +173,7 @@ class CsvMarketBarsRepository:
             gaps_over_3_days=gaps,
         )
 
-    def to_manifest_entry(self, symbol: str) -> dict | None:
+    def to_manifest_entry(self, symbol: str) -> dict[str, object] | None:
         cov = self.coverage(symbol)
         if cov is None:
             return None

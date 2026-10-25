@@ -6,7 +6,9 @@ Phase 2 adds ``schema-export``; later phases add ``extract`` etc.
 from __future__ import annotations
 
 import json
+from datetime import date
 from pathlib import Path
+from typing import Any
 
 import typer
 
@@ -650,8 +652,8 @@ def coverage_probe(
         typer.echo(f"No market data found under {raw_dir}")
         raise typer.Exit(code=1)
 
-    holidays_full: set = set()
-    holidays_half: set = set()
+    holidays_full: set[date] = set()
+    holidays_half: set[date] = set()
     cal_cfg = Path("config/calendar_us.yaml")
     if cal_cfg.exists():
         raw = yaml.safe_load(cal_cfg.read_text(encoding="utf-8")) or {}
@@ -663,7 +665,7 @@ def coverage_probe(
 
     offset = timedelta(hours=offset_hours) if offset_hours is not None else None
     ET = ZoneInfo("America/New_York")
-    report: dict = {
+    report: dict[str, Any] = {
         "raw_dir": str(raw_dir),
         "offset_hours": offset_hours,
         "symbols": {},
@@ -676,7 +678,7 @@ def coverage_probe(
         cov = repo.coverage(symbol)
         if cov is None:
             continue
-        entry: dict = {
+        entry: dict[str, Any] = {
             "file": cov.file,
             "sha256": cov.sha256,
             "n_rows": cov.n_rows,
@@ -741,10 +743,10 @@ def data_check(
     scripts_dir = Path(__file__).resolve().parents[2] / "scripts"
     if str(scripts_dir) not in sys.path:
         sys.path.insert(0, str(scripts_dir))
-    import market_validate as mv  # noqa: import_outside_top_level
+    import market_validate as mv  # type: ignore[import-not-found]  # noqa: import_outside_top_level
 
     repo = CsvMarketBarsRepository(raw_dir)
-    report: dict = {"raw_dir": str(raw_dir), "symbols": {}, "ok": True}
+    report: dict[str, Any] = {"raw_dir": str(raw_dir), "symbols": {}, "ok": True}
     for symbol in repo.symbols():
         path = raw_dir / f"rates_{symbol}_M5.csv"
         parsed = mv.parse_rates_csv(path)
@@ -766,7 +768,7 @@ def data_check(
     typer.echo(f"symbols={len(report['symbols'])} ok={report['ok']} -> {output}")
 
 
-def _parse_date(value: str):
+def _parse_date(value: str) -> date:
     from datetime import date
 
     return date.fromisoformat(value)

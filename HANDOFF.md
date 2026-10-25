@@ -6,7 +6,7 @@ _Last updated: 2026-10-22 by Muse Spark (opencode) - S2 batch-3 prep: batch-3 en
 
 Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd71…, method vv2.6)
 Current step: S3; STATUS.yaml updated: 2026-10-22
-Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (273 collected) / coverage ~91%
+Last gate: green - ruff ok / format ok / mypy --strict ok / pytest green (273 collected) / coverage 86.97%
 Counts: queue pairs 244/245, labels 243, quarantined 0, gold 32, gold open items 1, calibration sample 38
 
 <!-- STATUS:END -->
@@ -22,10 +22,13 @@ deterministic streaming engine (Python reference + MQL5 port). Plan of record:
 
 ## 2. Current status
 
-- Current step: S2 next (S0 done: `docs/evidence/S0.md`; S1 done: `docs/evidence/S1.md`) — see `docs/STATUS.yaml`
+- Current step: S3 in progress (Phase 5b: market data layer + session calendar + axis resolution) — see `docs/STATUS.yaml`; S0/S1/S2 done
 - Plan of record: docs/PLAN_V2.md (sha256 fd3cd030dd717d4c…, method v2.6, ADR-012); `docs/MASTER_PROMPT.md` superseded for phase order/sizing/process
-- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 done (status sync, public-safety scanner+history scan: 1 finding ACCEPTED by user, backups, hooks/CI plan-compliance); S1 done (core deps typer/pydantic/PyYAML/Pillow, extras restructured, wheelhouse offline-install proven in a fresh clone, engine stdlib-only guard)
-- Last green quality gate: 2026-10-19 (ruff ✓ / format ✓ / mypy --strict ✓ / pytest green, 180 collected / coverage 92.38% ≥85)
+- Phase status: predecessor phases 0-4 done; wave-2 fill-out done (queue 244/244, 162 labels); S0 done; S1 done; S2 done (commit 30c2ab1, tag S2-done)
+- Last green quality gate: 2026-10-25 (ruff ✓ / format ✓ / mypy --strict ✓ / pytest green, 273 collected / coverage 86.97% ≥85)
+- S3 infrastructure complete: `session_calendar.py` (DST/half-day/78-bar RTH), `market_bars.py` (CSV adapter + coverage), `axis_calibration.py` (placeholder), MQL5 export scripts (`ExportSymbols.mq5`, `ExportRatesM5.mq5`, `ParityExport.mq5`), `docs/MT5_EXPORT.md`, `scripts/resolve_axis.py`, `scripts/market_validate.py`, CLI `coverage` + `data-check`, config files (`broker_time.yaml`, `calendar_us.yaml`, `default.yaml`)
+- S3 tests: `test_session_calendar.py`, `test_market_bars.py`, `test_market_validate.py` — all passing
+- **BLOCKED at CHECKPOINT B:** no MT5 M5 CSVs in `data/market/raw/` yet. Need user to export US500 + SP500Z6 (+ siblings) per `docs/MT5_EXPORT.md` before broker-time validation, similarity gate, and coverage probe can run against real data.
 
 ## 3. What was done in this session
 
@@ -228,6 +231,8 @@ deterministic streaming engine (Python reference + MQL5 port). Plan of record:
   quarantined=1 -> 0, valid_rate 1.00, **162 batch-1 labels live**, failed dir
   empty. Calibration sample agreement 0.706 (34 comparable, unchanged);
   pytest 166 passed. Gate GREEN -> feat commit + push.
+
+- S3 session (2026-10-25): Fixed mypy strict type errors in `src/brooks_lab/infrastructure/market_bars.py` (`list[dict]` → `list[dict[str, object]]`, `-> dict | None` → `-> dict[str, object] | None`) and `src/brooks_lab/interfaces/cli.py` (`set` → `set[date]`, `dict` → `dict[str, Any]`, `import market_validate` type: ignore, `_parse_date` return type). Gate GREEN: ruff ✓ / format ✓ / mypy --strict ✓ / pytest 273 passed / coverage 86.97% ≥ 85. S3 infrastructure complete; blocked at CHECKPOINT B awaiting MT5 M5 CSV exports (US500, SP500Z6, siblings) from user.
 
 ## 4. Decisions made (link to ADR numbers)
 

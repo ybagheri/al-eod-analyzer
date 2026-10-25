@@ -33,8 +33,8 @@ legacy_phases:
   phase5a: {status: superseded_by_S2_S5, commit: 2300fe7}
 last_gate:
   result: green
-  when: "2026-10-22"
-  details: "ruff ok / format ok / mypy --strict ok / pytest green (273 collected) / coverage ~91%"
+  when: "2026-10-25"
+  details: "ruff ok / format ok / mypy --strict ok / pytest green (273 collected) / coverage 86.97%"
 counts:
   batch1_received: 2044
   batch1_usable: 2042
