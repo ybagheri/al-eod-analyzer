@@ -618,6 +618,160 @@ def review_apply(
         raise typer.Exit(code=1)
 
 
+@app.command(name="coverage-probe")
+def coverage_probe(
+    raw_dir: Path = typer.Option(
+        Path("data/market/raw"), "--raw-dir", help="Folder with rates_*_M5.csv exports."
+    ),
+    output: Path = typer.Option(
+        Path("artifacts/coverage.json"),
+        "--output",
+        help="Coverage report JSON to write.",
+    ),
+    offset_hours: int | None = typer.Option(
+        None,
+        "--offset-hours",
+        help="Broker server->ET offset in hours (e.g. -3). Required for RTH session alignment.",
+    ),
+) -> None:
+    """Probe market-data coverage and write artifacts/coverage.json (S3)."""
+    import json
+    from datetime import timedelta
+    from zoneinfo import ZoneInfo
+
+    import yaml
+
+    from brooks_lab.domain.session_calendar import SessionCalendar
+    from brooks_lab.infrastructure.market_bars import CsvMarketBarsRepository
+
+    repo = CsvMarketBarsRepository(raw_dir)
+    symbols = repo.symbols()
+    if not symbols:
+        typer.echo(f"No market data found under {raw_dir}")
+        raise typer.Exit(code=1)
+
+    holidays_full: set = set()
+    holidays_half: set = set()
+    cal_cfg = Path("config/calendar_us.yaml")
+    if cal_cfg.exists():
+        raw = yaml.safe_load(cal_cfg.read_text(encoding="utf-8")) or {}
+        for d in raw.get("holidays_full", []):
+            holidays_full.add(_parse_date(d))
+        for d in raw.get("holidays_half", []):
+            holidays_half.add(_parse_date(d))
+    calendar = SessionCalendar(holidays_full=holidays_full, holidays_half=holidays_half)
+
+    offset = timedelta(hours=offset_hours) if offset_hours is not None else None
+    ET = ZoneInfo("America/New_York")
+    report: dict = {
+        "raw_dir": str(raw_dir),
+        "offset_hours": offset_hours,
+        "symbols": {},
+        "n_cov": None,
+        "note": "RTH session completeness needs --offset-hours (broker-time rule, CHECKPOINT B)",
+    }
+
+    complete_counts: list[int] = []
+    for symbol in symbols:
+        cov = repo.coverage(symbol)
+        if cov is None:
+            continue
+        entry: dict = {
+            "file": cov.file,
+            "sha256": cov.sha256,
+            "n_rows": cov.n_rows,
+            "first_ts": cov.first_ts.isoformat(sep=" ") if cov.first_ts else None,
+            "last_ts": cov.last_ts.isoformat(sep=" ") if cov.last_ts else None,
+            "n_days": cov.n_days,
+            "n_complete_sessions": cov.n_complete_sessions,
+            "missing_weekdays": cov.missing_weekdays,
+            "gaps_over_3_days": cov.gaps_over_3_days,
+        }
+        if offset is not None and cov.first_ts and cov.last_ts:
+            n_full = 0
+            day = cov.first_ts.date()
+            last_day = cov.last_ts.date()
+            while day <= last_day:
+                if calendar.session_kind(day) == "regular":
+                    expected = calendar.bar_count(day)
+                    bars = repo.bars_for_day(symbol, day)
+                    et_bars = [
+                        b.timestamp_server.replace(tzinfo=ZoneInfo("UTC")) + offset for b in bars
+                    ]
+                    et_bars = [b.astimezone(ET) for b in et_bars]
+                    in_session = sum(
+                        1
+                        for b in et_bars
+                        if calendar.session_open_et(b.date())
+                        <= b
+                        < calendar.session_close_et(b.date())
+                    )
+                    if in_session == expected:
+                        n_full += 1
+                day = calendar.next_trading_day(day)
+            entry["n_complete_sessions"] = n_full
+            complete_counts.append(n_full)
+        report["symbols"][symbol] = entry
+
+    if complete_counts:
+        report["n_cov"] = min(complete_counts)
+    report["n_symbols"] = len(symbols)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    typer.echo(f"symbols={len(symbols)} n_cov={report['n_cov']} -> {output}")
+
+
+@app.command(name="data-check")
+def data_check(
+    raw_dir: Path = typer.Option(
+        Path("data/market/raw"), "--raw-dir", help="Folder with rates_*_M5.csv exports."
+    ),
+    output: Path = typer.Option(
+        Path("artifacts/data_check.json"),
+        "--output",
+        help="Data-quality report JSON to write.",
+    ),
+) -> None:
+    """Run CSV contract + coverage quality report -> artifacts/data_check.json (S3)."""
+    import json
+    import sys
+
+    from brooks_lab.infrastructure.market_bars import CsvMarketBarsRepository
+
+    scripts_dir = Path(__file__).resolve().parents[2] / "scripts"
+    if str(scripts_dir) not in sys.path:
+        sys.path.insert(0, str(scripts_dir))
+    import market_validate as mv  # noqa: import_outside_top_level
+
+    repo = CsvMarketBarsRepository(raw_dir)
+    report: dict = {"raw_dir": str(raw_dir), "symbols": {}, "ok": True}
+    for symbol in repo.symbols():
+        path = raw_dir / f"rates_{symbol}_M5.csv"
+        parsed = mv.parse_rates_csv(path)
+        row_issues = mv.validate_rows(parsed["rows"])
+        cov = repo.coverage(symbol)
+        entry = {
+            "n_rows": len(parsed["rows"]),
+            "parse_errors": parsed["errors"],
+            "row_anomalies": row_issues,
+            "n_days": cov.n_days if cov else 0,
+            "missing_weekdays": cov.missing_weekdays if cov else [],
+            "gaps_over_3_days": cov.gaps_over_3_days if cov else [],
+        }
+        if parsed["errors"] or row_issues:
+            report["ok"] = False
+        report["symbols"][symbol] = entry
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    typer.echo(f"symbols={len(report['symbols'])} ok={report['ok']} -> {output}")
+
+
+def _parse_date(value: str):
+    from datetime import date
+
+    return date.fromisoformat(value)
+
+
 def main() -> None:
     """Console-script entry point."""
     app()

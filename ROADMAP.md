@@ -11,7 +11,7 @@ history. Status legend: ⬜ not started · 🟨 in progress · ✅ done · ⛔ b
 | S0 | Re-plan, doc sync, safety rails, privacy | ✅ done | `0dc902f` |
 | S1 | Dependency and environment repair | ✅ done | `3fd83a8` |
 | S2 | Extraction v3: compact schema, validator-gated writes, anchors | ✅ done | `30c2ab1` |
-| S3 | Phase 5b: market data layer + session calendar + axis resolution | ⬜ pending | `—` |
+| S3 | Phase 5b: market data layer + session calendar + axis resolution | 🟨 in_progress | `—` |
 | S4 | Phase 5c: date alignment and label->bar attachment | ⬜ pending | `—` |
 | S5 | Phase 5a-reduced: Silver-Dev and Gold-Test labeling | ⬜ pending | `—` |
 | S6 | Phase 6: Python streaming engine v0 | ⬜ pending | `—` |

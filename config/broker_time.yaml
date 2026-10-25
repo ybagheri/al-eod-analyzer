@@ -1,0 +1,18 @@
+# Broker server-time -> exchange-time rule (S3, Phase 5b).
+#
+# POPULATED AFTER CHECKPOINT B: once MT5 M5 CSVs live in data/market/raw/,
+# derive empirically against real bars (highest average volume/range near the
+# US cash open = 09:30 ET) and fill in per-symbol rules here. Never trust
+# broker documentation alone; validate on all days.
+#
+# schema_version: 1
+# symbol_rules:
+#   US500:
+#     server_tz: null                 # e.g. "Etc/GMT-3" or derived zone name
+#     dst_rule: null                  # "us" | "none" | "eu" | null
+#     offset_standard_hours: null     # e.g. -3
+#     offset_dst_hours: null          # e.g. -2
+#     validated_on: null              # date last validated
+#     n_days_checked: 0
+#   SP500Z6:
+#     ...

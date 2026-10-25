@@ -7,12 +7,12 @@ plan:
   file: docs/PLAN_V2.md
   sha256: fd3cd030dd717d4c36cad41dd54181c1ed4de0092fa57ca89f61546eceebee74
   method_version: "v2.6"
-current_step: S2
+current_step: S3
 steps:
   S0: {name: "Re-plan, doc sync, safety rails, privacy", status: done, commit: 0dc902f}  # 0dc902f..5ef5d9e, tag S0-done
   S1: {name: "Dependency and environment repair", status: done, commit: 3fd83a8}  # 3fd83a8 + 0c776a4 + step-final; wheelhouse workflow offline-install demonstrated
-  S2: {name: "Extraction v3: compact schema, validator-gated writes, anchors", status: done, commit: 30c2ab1}
-  S3: {name: "Phase 5b: market data layer + session calendar + axis resolution", status: pending, commit: null}
+  S2: {name: "Extraction v3: compact schema, validator-gated writes, anchors", status: done, commit: 30c2ab1}  # ..63ddbc6 + b5f62ab + 3ff9a14; tag S2-done 3ff9a14
+  S3: {name: "Phase 5b: market data layer + session calendar + axis resolution", status: in_progress, commit: null}
   S4: {name: "Phase 5c: date alignment and label->bar attachment", status: pending, commit: null}
   S5: {name: "Phase 5a-reduced: Silver-Dev and Gold-Test labeling", status: pending, commit: null}
   S6: {name: "Phase 6: Python streaming engine v0", status: pending, commit: null}
