@@ -6,7 +6,6 @@
 //+------------------------------------------------------------------+
 #property copyright "al-eod-analyzer"
 #property version   "1.00"
-#property script_show_confirmations
 
 #define OUT_FILE "symbols_sp500.csv"
 
