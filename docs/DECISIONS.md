@@ -120,3 +120,27 @@
   rules (`taxonomy_migrations` + rule_id); loader emits `mapped_from`,
   `rule_id` and `needs_review_reason`; `scripts/migration_dryrun.py`
   produces `artifacts/migration_dryrun.json` on request.
+
+
+## ADR-014 - Broker time rule + similarity gate outcome (S3, Phase 5b, 2026-11-01, accepted)
+
+- Context: US500 M5 CSV exported from MT5 lives in data/market/raw/rates_US500_M5.csv
+  (2020-07-22 16:00 -> 2026-10-23 23:50, 394,817 rows, 1,619 server days). Phase 5b
+  needs the server->exchange-time offset to (a) align RTH sessions for coverage
+  counting and (b) run the similarity gate that sets the evaluation tolerance.
+- Empirical derivation (scripts/empirical_broker_offset.py): the 5-min bar with the
+  highest tick volume on each day aligns with 09:30 ET under server = ET + 7 h
+  (best fixed offset -7.0 h; both DST and non-DST regimes agree; 23.8% exact,
+  27.0% within 5 min, median error 10 min across 1,619 days). Equivalently the
+  broker server clock follows US DST: UTC+2 in standard time, UTC+3 in daylight.
+  Stored in config/broker_time.yaml (symbol_rules.US500 and SP500Z6).
+- Decision: adopt server = ET + 7 h (US DST) as the broker time rule. coverage-probe
+  uses DST-aware offsets (-2 h standard / -3 h daylight, since it treats server
+  timestamps as UTC before converting to ET). n_cov = 1,209 complete RTH sessions
+  (US500, DST-aware).
+- Similarity gate (scripts/similarity_gate.py): run on 9 labels with bar-index
+  anchors, 7 valid against real bars. Direction agreement 85.7% (6/7), median
+  |bar-index error| 0 bars. Gate decision: GO-STRUCTURAL (agreement 75-90%,
+  median error <= 3). Consequence: eval.tolerance_bars = 5 in config/default.yaml;
+  evaluation uses tolerance ±5 bars and "present within window" logic only.
+  Not STOP -> no USER CHECKPOINT C triggered.

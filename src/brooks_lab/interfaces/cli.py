@@ -630,10 +630,20 @@ def coverage_probe(
         "--output",
         help="Coverage report JSON to write.",
     ),
+    offset_hours_std: int | None = typer.Option(
+        None,
+        "--offset-hours-std",
+        help="Broker server->ET offset in hours for standard time (e.g. -2).",
+    ),
+    offset_hours_dst: int | None = typer.Option(
+        None,
+        "--offset-hours-dst",
+        help="Broker server->ET offset in hours for daylight time (e.g. -3).",
+    ),
     offset_hours: int | None = typer.Option(
         None,
         "--offset-hours",
-        help="Broker server->ET offset in hours (e.g. -3). Required for RTH session alignment.",
+        help="Deprecated single offset (applied to all days). Use --offset-hours-std/dst instead.",
     ),
 ) -> None:
     """Probe market-data coverage and write artifacts/coverage.json (S3)."""
@@ -663,14 +673,47 @@ def coverage_probe(
             holidays_half.add(_parse_date(d))
     calendar = SessionCalendar(holidays_full=holidays_full, holidays_half=holidays_half)
 
-    offset = timedelta(hours=offset_hours) if offset_hours is not None else None
+    # Resolve DST-aware server->UTC offsets (coverage-probe treats server time
+    # as UTC; offset is the negative of the broker's UTC offset so that
+    # server + offset = real UTC, then astimezone(ET) gives exchange time).
+    # Broker follows US DST: UTC+2 standard / UTC+3 daylight => offset -2 / -3.
+    if offset_hours_std is None and offset_hours_dst is None:
+        offset_h_std = offset_h_dst = offset_hours  # backward-compat single value
+    else:
+        offset_h_std = offset_hours_std
+        offset_h_dst = offset_hours_dst
+    offset_std = timedelta(hours=offset_h_std) if offset_h_std is not None else None
+    offset_dst = timedelta(hours=offset_h_dst) if offset_h_dst is not None else None
     ET = ZoneInfo("America/New_York")
+
+    def _us_dst(day: date) -> bool:
+        if day.month < 3 or day.month > 11:
+            return False
+        if 3 < day.month < 11:
+            return True
+        t = _dst_transition(day.year, day.month)
+        return day >= t if day.month == 3 else day < t
+
+    def _dst_transition(year: int, month: int) -> date:
+        first = date(year, month, 1)
+        wd = 6  # Sunday
+        offset = (wd - first.weekday()) % 7
+        n = 2 if month == 3 else 1
+        return first + timedelta(days=offset + 7 * (n - 1))
+
+    def offset_for(day: date) -> timedelta | None:
+        if offset_std is None or offset_dst is None:
+            return offset_std
+        return offset_dst if _us_dst(day) else offset_std
+
     report: dict[str, Any] = {
         "raw_dir": str(raw_dir),
-        "offset_hours": offset_hours,
+        "offset_hours_std": offset_h_std,
+        "offset_hours_dst": offset_h_dst,
+        "offset_hours_legacy": offset_hours,
         "symbols": {},
         "n_cov": None,
-        "note": "RTH session completeness needs --offset-hours (broker-time rule, CHECKPOINT B)",
+        "note": "RTH session completeness via DST-aware broker-time rule (CHECKPOINT B).",
     }
 
     complete_counts: list[int] = []
@@ -689,7 +732,7 @@ def coverage_probe(
             "missing_weekdays": cov.missing_weekdays,
             "gaps_over_3_days": cov.gaps_over_3_days,
         }
-        if offset is not None and cov.first_ts and cov.last_ts:
+        if cov.first_ts and cov.last_ts:
             n_full = 0
             day = cov.first_ts.date()
             last_day = cov.last_ts.date()
@@ -697,19 +740,21 @@ def coverage_probe(
                 if calendar.session_kind(day) == "regular":
                     expected = calendar.bar_count(day)
                     bars = repo.bars_for_day(symbol, day)
-                    et_bars = [
-                        b.timestamp_server.replace(tzinfo=ZoneInfo("UTC")) + offset for b in bars
-                    ]
-                    et_bars = [b.astimezone(ET) for b in et_bars]
-                    in_session = sum(
-                        1
-                        for b in et_bars
-                        if calendar.session_open_et(b.date())
-                        <= b
-                        < calendar.session_close_et(b.date())
-                    )
-                    if in_session == expected:
-                        n_full += 1
+                    off = offset_for(day)
+                    if off is not None:
+                        et_bars = [
+                            b.timestamp_server.replace(tzinfo=ZoneInfo("UTC")) + off for b in bars
+                        ]
+                        et_bars = [b.astimezone(ET) for b in et_bars]
+                        in_session = sum(
+                            1
+                            for b in et_bars
+                            if calendar.session_open_et(b.date())
+                            <= b
+                            < calendar.session_close_et(b.date())
+                        )
+                        if in_session == expected:
+                            n_full += 1
                 day = calendar.next_trading_day(day)
             entry["n_complete_sessions"] = n_full
             complete_counts.append(n_full)
@@ -740,7 +785,7 @@ def data_check(
 
     from brooks_lab.infrastructure.market_bars import CsvMarketBarsRepository
 
-    scripts_dir = Path(__file__).resolve().parents[2] / "scripts"
+    scripts_dir = Path(__file__).resolve().parents[3] / "scripts"
     if str(scripts_dir) not in sys.path:
         sys.path.insert(0, str(scripts_dir))
     import market_validate as mv  # type: ignore[import-not-found]  # noqa: import_outside_top_level

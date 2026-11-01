@@ -1,18 +1,33 @@
-# Broker server-time -> exchange-time rule (S3, Phase 5b).
+# Broker server-time -> exchange-time rule (S3, Phase 5b, item 3).
+# POPULATED AFTER CHECKPOINT B: derived empirically from real US500 M5 bars
+# (scripts/empirical_broker_offset.py). Validation: the 5-min bar with the
+# highest tick volume on each day aligns with 09:30 ET under this rule
+# (best fixed offset -7.0 h, both DST and non-DST regimes).
 #
-# POPULATED AFTER CHECKPOINT B: once MT5 M5 CSVs live in data/market/raw/,
-# derive empirically against real bars (highest average volume/range near the
-# US cash open = 09:30 ET) and fill in per-symbol rules here. Never trust
-# broker documentation alone; validate on all days.
-#
-# schema_version: 1
-# symbol_rules:
-#   US500:
-#     server_tz: null                 # e.g. "Etc/GMT-3" or derived zone name
-#     dst_rule: null                  # "us" | "none" | "eu" | null
-#     offset_standard_hours: null     # e.g. -3
-#     offset_dst_hours: null          # e.g. -2
-#     validated_on: null              # date last validated
-#     n_days_checked: 0
-#   SP500Z6:
-#     ...
+# The broker server clock follows US DST: server = ET + 7 h year-round,
+# i.e. server is UTC+2 in standard time and UTC+3 in daylight time.
+schema_version: 1
+source: "empirical: scripts/empirical_broker_offset.py (max-volume bar alignment, 1619 days)"
+derived_at: "2026-11-01"
+symbol_rules:
+  US500:
+    server_tz: null  # derived zone, follows US DST
+    dst_rule: "us"   # server DST follows US rules (2nd Sun Mar -> 1st Sun Nov, 02:00 local)
+    offset_standard_hours: 2   # server = UTC+2 when ET is standard (UTC-5)
+    offset_dst_hours: 3        # server = UTC+3 when ET is daylight (UTC-4)
+    server_to_et_hours: -7     # equivalent fixed offset: ET = server - 7 h (all year)
+    validated_on: "2026-10-23"
+    n_days_checked: 1619
+    alignment_within_5min_pct: 0.27
+    alignment_exact_pct: 0.238
+    median_error_min: 10.0
+  SP500Z6:
+    # Futures contract (expires ~Dec 2026). Same server as US500; stitch across
+    # roll using highest tick volume per session (S3 item 1).
+    server_tz: null
+    dst_rule: "us"
+    offset_standard_hours: 2
+    offset_dst_hours: 3
+    server_to_et_hours: -7
+    validated_on: null
+    n_days_checked: 0

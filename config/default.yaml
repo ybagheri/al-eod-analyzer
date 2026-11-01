@@ -8,7 +8,11 @@ session:
   timezone_axis: "America/Los_Angeles"
   regular_start_pt: "06:30"
   regular_end_pt: "13:00"
-  broker_time_note: "Configure broker UTC offset + DST rule before labelling/engine work (Phase 5)."
+  broker_time_note: "Broker server = ET + 7 h (US DST: UTC+2 standard / UTC+3 daylight); see config/broker_time.yaml (ADR-014)."
+eval:
+  # Similarity gate outcome (ADR-014): GO-STRUCTURAL → evaluate day-type, large structures,
+  # events with tolerance ±5 bars and "present within window" logic only.
+  tolerance_bars: 5
 
 engine:
   ema_period: 20
